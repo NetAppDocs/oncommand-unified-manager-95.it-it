@@ -1,0 +1,54 @@
+---
+permalink: performance-checker/task-displaying-information-about-a-performance-event.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare la pagina di inventario Eventi per visualizzare un elenco di tutti gli eventi di performance nuovi e obsoleti sui cluster monitorati da Unified Manager. La visualizzazione di queste informazioni consente di determinare gli eventi più critici e di eseguire il drill-down delle informazioni dettagliate per determinare la causa dell"evento.' 
+---
+= Visualizzazione di informazioni sugli eventi relativi alle performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la pagina di inventario Eventi per visualizzare un elenco di tutti gli eventi di performance nuovi e obsoleti sui cluster monitorati da Unified Manager. La visualizzazione di queste informazioni consente di determinare gli eventi più critici e di eseguire il drill-down delle informazioni dettagliate per determinare la causa dell'evento.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+* Devono essere presenti eventi di performance nuovi o obsoleti.
+
+
+
+
+== A proposito di questa attività
+
+L'elenco degli eventi viene ordinato in base all'ora rilevata, con gli eventi più recenti elencati per primi. È possibile fare clic sull'intestazione di una colonna per ordinare gli eventi in base a tale colonna. Ad esempio, è possibile ordinare gli eventi in base alla colonna Stato per visualizzarli in base alla gravità. Se si sta cercando un evento specifico o un tipo specifico di evento, è possibile utilizzare i meccanismi di filtro e ricerca per perfezionare l'elenco degli eventi visualizzati nell'elenco.
+
+Gli eventi di tutte le origini vengono visualizzati in questa pagina:
+
+* Policy di soglia delle performance definite dall'utente
+* Policy di soglia delle performance definite dal sistema
+* Soglia dinamica delle performance
+
+
+La colonna tipo di evento elenca l'origine dell'evento. È possibile selezionare un evento per visualizzarne i dettagli nella pagina Dettagli evento.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Eventi*.
+. Individuare un evento che si desidera analizzare e fare clic sul nome dell'evento.
++
+Viene visualizzata la pagina dei dettagli dell'evento.
+
++
+[NOTE]
+====
+È inoltre possibile visualizzare la pagina dei dettagli di un evento facendo clic sul collegamento relativo al nome dell'evento dalla pagina Performance Explorer e da un'email di avviso.
+
+====
+

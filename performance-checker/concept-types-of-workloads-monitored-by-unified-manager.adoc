@@ -1,0 +1,54 @@
+---
+permalink: performance-checker/concept-types-of-workloads-monitored-by-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare Unified Manager per monitorare le performance di due tipi di carichi di lavoro: Definiti dall"utente e definiti dal sistema.' 
+---
+= Tipi di workload monitorati da Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare Unified Manager per monitorare le performance di due tipi di carichi di lavoro: Definiti dall'utente e definiti dal sistema.
+
+* *_workload definiti dall'utente_*
++
+Il throughput di i/o dalle applicazioni al cluster. Si tratta di processi coinvolti nelle richieste di lettura e scrittura. Un volume FlexVol o un volume FlexGroup è un carico di lavoro definito dall'utente.
+
++
+[NOTE]
+====
+Unified Manager monitora solo l'attività del carico di lavoro sul cluster. Non esegue il monitoraggio delle applicazioni, dei client o dei percorsi tra le applicazioni e il cluster.
+
+====
++
+Se una o più delle seguenti affermazioni relative a un carico di lavoro sono vere, non possono essere monitorate da Unified Manager:
+
++
+** Si tratta di una copia di protezione dei dati (DP) in modalità di sola lettura. Si noti che quando si utilizza ONTAP 8.3 e versioni successive, i volumi DP vengono monitorati per il traffico generato dall'utente.
+** Si tratta di un volume infinito.
+** Si tratta di un clone dei dati offline.
+** Si tratta di un volume mirrorato in una configurazione MetroCluster.
+
+
+* *_workload definiti dal sistema_*
++
+I processi interni legati all'efficienza dello storage, alla replica dei dati e allo stato del sistema, tra cui:
+
++
+** Efficienza dello storage, come la deduplica
+** Integrità del disco, che include la ricostruzione RAID, lo scrubbing del disco e così via
+** Replica dei dati, ad esempio le copie SnapMirror
+** Attività di gestione
+** Integrità del file system, che include varie attività di WAFL
+** Scanner del file system, come ad esempio la scansione WAFL
+** Offload delle copie, ad esempio operazioni di efficienza dello storage offload da host VMware
+** Stato del sistema, ad esempio spostamenti di volumi, compressione dei dati e così via
+** Volumi non monitorati
+
+
+
+
+I dati sulle performance per i carichi di lavoro definiti dal sistema vengono visualizzati nella GUI solo quando il componente del cluster utilizzato da questi carichi di lavoro è in conflitto. Ad esempio, non è possibile cercare il nome di un carico di lavoro definito dal sistema per visualizzarne i dati sulle prestazioni nella GUI. Se vengono visualizzati più carichi di lavoro definiti dal sistema dello stesso tipo, viene aggiunta una lettera al nome del carico di lavoro. La lettera è destinata all'utilizzo da parte del personale di supporto.

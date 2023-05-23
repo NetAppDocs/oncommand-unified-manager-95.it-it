@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-what-the-timestamp-means-in-collected-data-and-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'L"indicatore data e ora visualizzato nei dati di salute e performance raccolti o visualizzato come ora di rilevamento di un evento si basa sull"ora del cluster ONTAP, regolata in base al fuso orario impostato nel browser Web.' 
+---
+= Cosa significa il timestamp nei dati e negli eventi raccolti
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'indicatore data e ora visualizzato nei dati di salute e performance raccolti o visualizzato come ora di rilevamento di un evento si basa sull'ora del cluster ONTAP, regolata in base al fuso orario impostato nel browser Web.
+
+Si consiglia vivamente di utilizzare un server NTP (Network Time Protocol) per sincronizzare l'ora sui server Unified Manager, sui cluster ONTAP e sui browser Web.
+
+[NOTE]
+====
+Se vengono visualizzati indicatori di data e ora non corretti per un determinato cluster, controllare che l'ora del cluster sia stata impostata correttamente.
+
+====

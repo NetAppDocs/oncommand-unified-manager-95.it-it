@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-understanding-rules-and-data-policy.html 
+sidebar: sidebar 
+keywords:  
+summary: La comprensione dei concetti relativi alle regole e alle policy sui dati consente di gestire i volumi Infinite in modo efficiente. 
+---
+= Comprensione di regole e policy sui dati
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La comprensione dei concetti relativi alle regole e alle policy sui dati consente di gestire i volumi Infinite in modo efficiente.

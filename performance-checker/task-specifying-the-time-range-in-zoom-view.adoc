@@ -1,0 +1,34 @@
+---
+permalink: performance-checker/task-specifying-the-time-range-in-zoom-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Il controllo Time Range (intervallo di tempo) nella finestra Counter Chart Zoom View (Vista zoom contatori grafici) consente di specificare una data e un intervallo di tempo per il grafico selezionato. In questo modo è possibile individuare rapidamente dati specifici in base a un intervallo di tempo preimpostato o a un intervallo di tempo personalizzato.' 
+---
+= Specifica dell'intervallo di tempo nella vista Zoom
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il controllo *Time Range* nella finestra Counter Chart Zoom View consente di specificare una data e un intervallo di tempo per il grafico selezionato. In questo modo è possibile individuare rapidamente dati specifici in base a un intervallo di tempo preimpostato o a un intervallo di tempo personalizzato.
+
+
+
+== A proposito di questa attività
+
+È possibile selezionare un intervallo di tempo compreso tra un'ora e 390 giorni. 13 mesi equivale a 390 giorni perché ogni mese viene conteggiato come 30 giorni. La specifica di un intervallo di data e ora fornisce maggiori dettagli e consente di eseguire lo zoom su eventi specifici relativi alle performance o a serie di eventi. La specifica di un intervallo di tempo consente inoltre di risolvere potenziali problemi di performance, poiché specificando un intervallo di date e di ore vengono visualizzati i dati relativi all'evento di performance in modo più dettagliato. Utilizzare il controllo *Time Range* per selezionare intervalli di data e ora predefiniti oppure specificare un intervallo di data e ora personalizzato fino a 390 giorni. I pulsanti per intervalli di tempo predefiniti variano da *ultima ora* a *ultimi 13 mesi*.
+
+Selezionando l'opzione *ultimi 13 mesi* o specificando un intervallo di date personalizzato superiore a 30 giorni, viene visualizzata una finestra di dialogo in cui viene segnalato che i dati relativi alle performance visualizzati per un periodo superiore a 30 giorni vengono inseriti utilizzando medie orarie e non il polling dei dati di 5 minuti. Pertanto, potrebbe verificarsi una perdita di granularità visiva della timeline. Se si fa clic sull'opzione *non mostrare più* nella finestra di dialogo, il messaggio non viene visualizzato quando si seleziona l'opzione *ultimi 13 mesi* o si specifica un intervallo di date personalizzato superiore a 30 giorni. I dati di riepilogo si applicano anche a un intervallo di tempo inferiore, se l'intervallo di tempo include un'ora/data che è più di 30 giorni da oggi.
+
+Quando si seleziona un intervallo di tempo (personalizzato o predefinito), gli intervalli di tempo di 30 giorni o meno si basano su campioni di dati a intervalli di 5 minuti. Gli intervalli di tempo superiori a 30 giorni si basano su campioni di dati a intervalli di un'ora.
+
+image::../media/time-range-selector.gif[selettore dell'intervallo di tempo]
+
+. Fare clic sulla casella a discesa *intervallo di tempo* per visualizzare il pannello intervallo di tempo.
+. Per selezionare un intervallo di tempo predefinito, fare clic su uno dei pulsanti *ultimo...* a destra del pannello *intervallo di tempo*. Quando si seleziona un intervallo di tempo predefinito, sono disponibili dati per un massimo di 13 mesi. Il pulsante dell'intervallo di tempo predefinito selezionato viene evidenziato e i giorni e l'ora corrispondenti vengono visualizzati nei calendari e nei selettori dell'ora.
+. Per selezionare un intervallo di date personalizzato, fare clic sulla data di inizio nel calendario *da* a sinistra. Fare clic su *<* o *>* per spostarsi in avanti o indietro nel calendario. Per specificare la data di fine, fare clic su una data nel calendario *a* a destra. Si noti che la data di fine predefinita è oggi, a meno che non si specifichi una data di fine diversa. Il pulsante *Custom Range* (intervallo personalizzato) a destra del pannello Time Range (intervallo di tempo) è evidenziato, a indicare che è stato selezionato un intervallo di date personalizzato.
+. Per selezionare un intervallo di tempo personalizzato, fare clic sul controllo *Time* sotto il calendario *From* e selezionare l'ora di inizio. Per specificare l'ora di fine, fare clic sul controllo *Time* sotto il calendario *To* a destra e selezionare l'ora di fine. Il pulsante *Custom Range* (intervallo personalizzato) a destra del pannello Time Range (intervallo di tempo) è evidenziato, a indicare che è stato selezionato un intervallo di tempo personalizzato.
+. Facoltativamente, è possibile specificare l'ora di inizio e di fine quando si seleziona un intervallo di date predefinito. Selezionare l'intervallo di date predefinito come descritto in precedenza, quindi selezionare l'ora di inizio e di fine come descritto in precedenza. Le date selezionate vengono evidenziate nei calendari, gli orari di inizio e di fine specificati vengono visualizzati nei controlli *Time* e il pulsante *Custom Range* viene evidenziato.
+. Dopo aver selezionato l'intervallo di data e ora, fare clic su *Apply Range* (Applica intervallo). Le statistiche delle performance per quell'intervallo di tempo vengono visualizzate nei grafici e nella timeline degli eventi .
+

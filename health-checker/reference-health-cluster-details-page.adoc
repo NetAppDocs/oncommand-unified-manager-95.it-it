@@ -1,0 +1,762 @@
+---
+permalink: health-checker/reference-health-cluster-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Health/Cluster Details (informazioni sullo stato/sul cluster) fornisce informazioni dettagliate su un cluster selezionato, ad esempio informazioni su stato, capacità e configurazione. È inoltre possibile visualizzare informazioni relative alle interfacce logiche (LIF), ai nodi, ai dischi, ai dispositivi correlati e agli avvisi correlati per il cluster.' 
+---
+= Pagina Health/Cluster Details
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Health/Cluster Details (informazioni sullo stato/sul cluster) fornisce informazioni dettagliate su un cluster selezionato, ad esempio informazioni su stato, capacità e configurazione. È inoltre possibile visualizzare informazioni sulle interfacce logiche (LIF), i nodi, i dischi, i dispositivi correlati e gli avvisi correlati per il cluster.
+
+Lo stato accanto al nome del cluster, ad esempio (buona), rappresenta lo stato della comunicazione; indica se Unified Manager può comunicare con il cluster. Non rappresenta lo stato di failover o lo stato generale del cluster.
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti attività per il cluster selezionato:
+
+* *Passa alla visualizzazione delle performance*
++
+Consente di accedere alla pagina dei dettagli di Performance/Cluster.
+
+* *image:../media/favorite-icon.gif[""]*
++
+Consente di aggiungere il cluster selezionato alla dashboard Preferiti.
+
+* *Azioni*
++
+** Add Alert (Aggiungi avviso): Apre la finestra di dialogo Add Alert (Aggiungi avviso), che consente di aggiungere un avviso al cluster selezionato.
+** Riscopri: Avvia un aggiornamento manuale del cluster, che consente a Unified Manager di rilevare le recenti modifiche apportate al cluster.
++
+Se Unified Manager è associato a OnCommand Workflow Automation, l'operazione di risDiscovery riacquisisce anche i dati memorizzati nella cache da WFA, se presenti.
+
++
+Una volta avviata l'operazione di riscoperta, viene visualizzato un collegamento ai dettagli del lavoro associato per consentire la registrazione dello stato del lavoro.
+
+** Annotate (Annotazione): Consente di annotare il cluster selezionato.
+
+
+* *Visualizza cluster*
++
+Consente di accedere alla pagina di inventario Health/Clusters.
+
+
+
+
+
+== Scheda Health (Salute)
+
+Visualizza informazioni dettagliate sui problemi di disponibilità dei dati e capacità dei dati di vari oggetti cluster, ad esempio nodi, SVM e aggregati. I problemi di disponibilità sono correlati alla funzionalità di erogazione dei dati degli oggetti del cluster. I problemi di capacità sono legati alla capacità di memorizzazione dei dati degli oggetti del cluster.
+
+È possibile fare clic sul grafico di un oggetto per visualizzare un elenco filtrato degli oggetti. Ad esempio, è possibile fare clic sul grafico della capacità SVM che visualizza gli avvisi per visualizzare un elenco filtrato di SVM. Questo elenco contiene SVM con volumi o qtree che presentano problemi di capacità con un livello di gravità di Warning. È inoltre possibile fare clic sul grafico della disponibilità delle SVM che visualizza gli avvisi per visualizzare l'elenco delle SVM che presentano problemi di disponibilità con un livello di gravità di avviso.
+
+* *Problemi di disponibilità*
++
+Visualizza graficamente il numero totale di oggetti, inclusi gli oggetti che presentano problemi di disponibilità e gli oggetti che non presentano problemi di disponibilità. I colori nel grafico rappresentano i diversi livelli di gravità dei problemi. Le informazioni riportate di seguito nel grafico forniscono dettagli sui problemi di disponibilità che possono avere un impatto o hanno già influito sulla disponibilità dei dati nel cluster. Ad esempio, vengono visualizzate informazioni sugli shelf di dischi inattivi e sugli aggregati offline.
+
++
+[NOTE]
+====
+I dati visualizzati per il grafico a barre SFO si basano sullo stato ha dei nodi. I dati visualizzati per tutti gli altri grafici a barre vengono calcolati in base agli eventi generati.
+
+====
+* *Problemi di capacità*
++
+Visualizza graficamente il numero totale di oggetti, inclusi gli oggetti che presentano problemi di capacità e gli oggetti che non presentano problemi di capacità. I colori nel grafico rappresentano i diversi livelli di gravità dei problemi. Le informazioni sotto il grafico forniscono dettagli sui problemi di capacità che possono avere un impatto o hanno già influito sulla capacità dei dati nel cluster. Ad esempio, vengono visualizzate informazioni sugli aggregati che potrebbero violare i valori di soglia impostati.
+
+
+
+
+
+== Scheda capacità
+
+Visualizza informazioni dettagliate sulla capacità del cluster selezionato.
+
+* *Capacità*
++
+Visualizza il grafico della capacità dei dati sulla capacità utilizzata e la capacità disponibile di tutti gli aggregati allocati:
+
++
+** Capacità totale
++
+Visualizza la capacità totale del cluster. Non include la capacità assegnata per la parità.
+
+** Utilizzato
++
+Visualizza la capacità utilizzata dai dati. Ciò non include la capacità utilizzata per parità, dimensionamento corretto e prenotazione.
+
+** Disponibile
++
+Visualizza la capacità disponibile per i dati.
+
+** Parti di ricambio
++
+Visualizza la capacità storage disponibile per lo storage in tutti i dischi spare.
+
+** Con provisioning
++
+Visualizza la capacità fornita per tutti i volumi sottostanti.
+
+
+
+* *Tier cloud*
++
+Visualizza i dettagli sulla capacità del Tier cloud per gli aggregati abilitati FabricPool nel cluster. Un FabricPool può essere concesso in licenza o senza licenza.
+
++
+** Utilizzato
++
+Visualizza lo spazio utilizzato dai dati nei Tier cloud configurati.
+
+** Grafico dei dati
++
+Per Amazon S3, Microsoft Azure Cloud, IBM Cloud Object Storage o Alibaba Cloud Object Storage, il grafico mostra la capacità totale dei dati concessa in licenza da questo cluster e la quantità utilizzata dagli aggregati.
+
++
+Per un StorageGRID, il grafico mostra solo la capacità totale utilizzata dagli aggregati.
+
+
+
+* *Dettagli*
++
+Visualizza informazioni dettagliate sulla capacità utilizzata e disponibile.
+
++
+** Capacità totale
++
+Visualizza la capacità totale del cluster. Non include la capacità assegnata per la parità.
+
+** Utilizzato
++
+Visualizza la capacità utilizzata dai dati. Ciò non include la capacità utilizzata per parità, dimensionamento corretto e prenotazione.
+
+** Disponibile
++
+Visualizza la capacità disponibile per i dati.
+
+** Con provisioning
++
+Visualizza la capacità fornita per tutti i volumi sottostanti.
+
+** Parti di ricambio
++
+Visualizza la capacità storage disponibile per lo storage in tutti i dischi spare.
+
+** Tier cloud
++
+Visualizza lo spazio utilizzato dai dati nei Tier cloud configurati. Per Amazon S3, Microsoft Azure Cloud, IBM Cloud Object Storage o Alibaba Cloud Object Storage, viene visualizzata anche la capacità totale dei dati concessa in licenza da questo cluster.
+
+
+
+* *Interruzione della capacità per tipo di disco*
++
+L'area Capacity Breakout by Disk Type (interruzione della capacità per tipo di disco) visualizza informazioni dettagliate sulla capacità dei dischi dei vari tipi nel cluster. Facendo clic sul tipo di disco, è possibile visualizzare ulteriori informazioni sul tipo di disco dalla scheda Disks (dischi).
+
++
+** Capacità totale utilizzabile
++
+Visualizza la capacità disponibile e la capacità di riserva dei dischi dati.
+
+** DISCO RIGIDO
++
+Visualizza graficamente la capacità utilizzata e la capacità disponibile di tutti i dischi dati HDD nel cluster. La linea tratteggiata rappresenta la capacità di riserva dei dischi dati nell'HDD.
+
+** Flash
++
+*** Dati SSD
++
+Visualizza graficamente la capacità utilizzata e la capacità disponibile dei dischi dati SSD nel cluster.
+
+*** Cache SSD
++
+Visualizza graficamente la capacità memorizzabile dei dischi della cache SSD nel cluster.
+
+*** SSD Spare
++
+Visualizza graficamente la capacità di riserva dei dischi SSD, dei dati e della cache nel cluster.
+
+
+
+** Dischi non assegnati
++
+Visualizza il numero di dischi non assegnati nel cluster.
+
+
+
+* *Elenco aggregati con problemi di capacità*
++
+Visualizza in formato tabulare i dettagli sulla capacità utilizzata e la capacità disponibile degli aggregati che presentano problemi di capacità.
+
++
+** Stato
++
+Indica che l'aggregato presenta un problema relativo alla capacità di una certa gravità.
+
++
+È possibile spostare il puntatore sullo stato per visualizzare ulteriori informazioni sull'evento o sugli eventi generati per l'aggregato.
+
++
+Se lo stato dell'aggregato è determinato da un singolo evento, è possibile visualizzare informazioni quali il nome dell'evento, l'ora e la data in cui è stato attivato l'evento, il nome dell'amministratore a cui è assegnato l'evento e la causa dell'evento. Fare clic sul pulsante *View Details* (Visualizza dettagli) per visualizzare ulteriori informazioni sull'evento.
+
++
+Se lo stato dell'aggregato è determinato da più eventi della stessa severità, vengono visualizzati i primi tre eventi con informazioni quali il nome dell'evento, l'ora e la data di attivazione degli eventi e il nome dell'amministratore a cui è assegnato l'evento. È possibile visualizzare ulteriori dettagli su ciascuno di questi eventi facendo clic sul nome dell'evento. È inoltre possibile fare clic sul collegamento *View All Events* (Visualizza tutti gli eventi) per visualizzare l'elenco degli eventi generati.
+
++
+[NOTE]
+====
+Un aggregato può avere più eventi correlati alla capacità con la stessa severità o con diverse severità. Tuttavia, viene visualizzato solo il livello di severità più elevato. Ad esempio, se un aggregato ha due eventi con livelli di gravità di errore e critico, viene visualizzata solo la severità critica.
+
+====
+** Aggregato
++
+Visualizza il nome dell'aggregato.
+
+** Capacità dei dati utilizzati
++
+Visualizza graficamente le informazioni sull'utilizzo della capacità aggregata (in percentuale).
+
+** Giorni al massimo
++
+Visualizza il numero stimato di giorni rimanenti prima che l'aggregato raggiunga la capacità completa.
+
+
+
+
+
+
+
+== Scheda Configuration (Configurazione)
+
+Visualizza i dettagli sul cluster selezionato, ad esempio indirizzo IP, numero di serie, contatto e posizione:
+
+* *Panoramica del cluster*
++
+** LIF di gestione
++
+Visualizza la LIF di gestione del cluster utilizzata da Unified Manager per connettersi al cluster. Viene visualizzato anche lo stato operativo del LIF.
+
+** Host Name (Nome host) o IP Address (Indirizzo IP
++
+Visualizza l'FQDN, il nome breve o l'indirizzo IP della LIF di gestione del cluster utilizzata da Unified Manager per connettersi al cluster.
+
+** FQDN
++
+Visualizza il nome di dominio completo (FQDN) del cluster.
+
+** Versione del sistema operativo
++
+Visualizza la versione di ONTAP in esecuzione nel cluster. Se i nodi del cluster eseguono versioni diverse di ONTAP, viene visualizzata la versione ONTAP più recente.
+
+** Numero di serie
++
+Visualizza il numero di serie del cluster.
+
+** Contatto
++
+Visualizza i dettagli dell'amministratore da contattare in caso di problemi con il cluster.
+
+** Posizione
++
+Visualizza la posizione del cluster.
+
+
+
+* *Panoramica del cluster remoto*
++
+Fornisce dettagli sul cluster remoto in una configurazione MetroCluster. Queste informazioni vengono visualizzate solo per le configurazioni MetroCluster.
+
++
+** Cluster
++
+Visualizza il nome del cluster remoto. È possibile fare clic sul nome del cluster per accedere alla pagina dei dettagli del cluster.
+
+** Nome host o indirizzo IP
++
+Visualizza l'FQDN, il nome breve o l'indirizzo IP del cluster remoto.
+
+** Numero di serie
++
+Visualizza il numero di serie del cluster remoto.
+
+** Posizione
++
+Visualizza la posizione del cluster remoto.
+
+
+
+* *Panoramica di MetroCluster*
++
+Fornisce dettagli sul cluster locale in una configurazione MetroCluster. Queste informazioni vengono visualizzate solo per le configurazioni MetroCluster.
+
++
+** Tipo
++
+Visualizza se il tipo di MetroCluster è a due o quattro nodi.
+
+** Configurazione
++
+Visualizza la configurazione MetroCluster, che può avere i seguenti valori:
+
++
+*** Configurazione stretch con cavi SAS
+*** Configurazione stretch con bridge FC-SAS
+*** Configurazione fabric con switch FC
+
+
+
+
++
+[NOTE]
+====
+Per un MetroCluster a quattro nodi, è supportata solo la configurazione fabric con switch FC.
+
+====
++
+** Switch over automatizzato non pianificato (AUSO)
++
+Visualizza se lo switchover automatizzato non pianificato è attivato per il cluster locale. Per impostazione predefinita, AUSO è abilitato per tutti i cluster in una configurazione MetroCluster a due nodi in Unified Manager. È possibile utilizzare l'interfaccia della riga di comando per modificare l'impostazione DI AUSO.
+
+
+
+* *Nodi*
++
+** Disponibilità
++
+Visualizza il numero di nodi attivi (image:../media/availability-up-um60.gif["Icona per la disponibilità LIF – Up"]) o verso il basso (image:../media/availability-down-um60.gif["Icona per la disponibilità LIF – non disponibile"]) nel cluster.
+
+** Versioni del sistema operativo
++
+Visualizza le versioni di ONTAP in esecuzione sui nodi e il numero di nodi in cui è in esecuzione una determinata versione di ONTAP. Ad esempio, 9.0 (2), 8.3 (1) specifica che due nodi eseguono ONTAP 9.0 e un nodo esegue ONTAP 8.3.
+
+
+
+* *Storage Virtual Machines*
++
+** Disponibilità
++
+Visualizza il numero di SVM attive (image:../media/availability-up-um60.gif["Icona per la disponibilità LIF – Up"]) o verso il basso (image:../media/availability-down-um60.gif["Icona per la disponibilità LIF – non disponibile"]) nel cluster.
+
+
+
+* *LIF*
++
+** Disponibilità
++
+Visualizza il numero di LIF non di dati in servizio (image:../media/availability-up-um60.gif["Icona per la disponibilità LIF – Up"]) o verso il basso (image:../media/availability-down-um60.gif["Icona per la disponibilità LIF – non disponibile"]) nel cluster.
+
+** LIF di gestione del cluster
++
+Visualizza il numero di LIF di gestione del cluster.
+
+** LIF di gestione dei nodi
++
+Visualizza il numero di LIF di gestione dei nodi.
+
+** LIF del cluster
++
+Visualizza il numero di LIF del cluster.
+
+** LIF di intercluster
++
+Visualizza il numero di LIF intercluster.
+
+
+
+* *Protocolli*
++
+** Protocolli dati
++
+Visualizza l'elenco dei protocolli dati concessi in licenza abilitati per il cluster. I protocolli dati includono iSCSI, CIFS, NFS, NVMe e FC/FCoE.
+
+
+
+* *Livelli di cloud*
++
+Elenca i nomi dei Tier cloud a cui è connesso il cluster. Elenca anche il tipo (Amazon S3, Microsoft Azure Cloud, IBM Cloud Object Storage, Alibaba Cloud Object Storage o StorageGRID) e gli stati dei Tier cloud (disponibili o non disponibili).
+
+
+
+
+
+== Scheda connettività MetroCluster
+
+Visualizza i problemi e lo stato di connettività dei componenti del cluster nella configurazione MetroCluster. Un cluster viene visualizzato in una casella rossa quando il partner per il disaster recovery del cluster presenta problemi.
+
+[NOTE]
+====
+La scheda connettività MetroCluster viene visualizzata solo per i cluster che si trovano in una configurazione MetroCluster.
+
+====
+È possibile accedere alla pagina dei dettagli di un cluster remoto facendo clic sul nome del cluster remoto. È inoltre possibile visualizzare i dettagli dei componenti facendo clic sul collegamento count di un componente. Ad esempio, facendo clic sul collegamento count del nodo nel cluster viene visualizzata la scheda Node (nodo) nella pagina Details (dettagli) del cluster. Facendo clic sul collegamento Count dei dischi nel cluster remoto, viene visualizzata la scheda Disk (disco) nella pagina Details (dettagli) del cluster remoto.
+
+[NOTE]
+====
+Quando si gestisce una configurazione MetroCluster a otto nodi, facendo clic sul collegamento Count del componente Disk Shelf vengono visualizzati solo gli shelf locali della coppia ha predefinita. Inoltre, non è possibile visualizzare gli shelf locali sull'altra coppia ha.
+
+====
+È possibile spostare il puntatore sui componenti per visualizzare i dettagli e lo stato di connettività dei cluster in caso di problemi e per visualizzare ulteriori informazioni sull'evento o sugli eventi generati per il problema.
+
+Se lo stato del problema di connettività tra i componenti è determinato da un singolo evento, è possibile visualizzare informazioni come il nome dell'evento, l'ora e la data in cui è stato attivato l'evento, il nome dell'amministratore a cui è assegnato l'evento e la causa dell'evento. Il pulsante View Details (Visualizza dettagli) fornisce ulteriori informazioni sull'evento.
+
+Se lo stato del problema di connettività tra i componenti è determinato da più eventi della stessa severità, vengono visualizzati i primi tre eventi con informazioni quali il nome dell'evento, l'ora e la data di attivazione degli eventi e il nome dell'amministratore a cui è assegnato l'evento. È possibile visualizzare ulteriori dettagli su ciascuno di questi eventi facendo clic sul nome dell'evento. È inoltre possibile fare clic sul collegamento *View All Events* (Visualizza tutti gli eventi) per visualizzare l'elenco degli eventi generati.
+
+
+
+== Scheda Replica MetroCluster
+
+Visualizza lo stato dei dati da replicare. È possibile utilizzare la scheda Replica MetroCluster per garantire la protezione dei dati eseguendo il mirroring sincrono dei dati con i cluster già in peering. Un cluster viene visualizzato in una casella rossa quando il partner per il disaster recovery del cluster presenta problemi.
+
+[NOTE]
+====
+La scheda Replica MetroCluster viene visualizzata solo per i cluster in una configurazione MetroCluster.
+
+====
+In un ambiente MetroCluster, è possibile utilizzare questa scheda per verificare le connessioni logiche e il peering del cluster locale con il cluster remoto. È possibile visualizzare la rappresentazione obiettiva dei componenti del cluster con le relative connessioni logiche. In questo modo è possibile identificare i problemi che potrebbero verificarsi durante il mirroring di metadati e dati.
+
+Nella scheda Replica MetroCluster, il cluster locale fornisce la rappresentazione grafica dettagliata del cluster selezionato e il partner MetroCluster fa riferimento al cluster remoto.
+
+
+
+== Scheda LIF
+
+Visualizza i dettagli di tutte le LIF non di dati create sul cluster selezionato.
+
+* *LIF*
++
+Visualizza il nome della LIF creata sul cluster selezionato.
+
+* *Stato operativo*
++
+Visualizza lo stato operativo della LIF, che può essere su (image:../media/lif-status-up.gif["Icona per lo stato LIF – Up"]), giù (image:../media/lif-status-down.gif["Icona dello stato LIF – inattivo"]) O Sconosciuto (image:../media/hastate-unknown.gif["Icona per lo stato ha – sconosciuto"]). Lo stato operativo di una LIF è determinato dallo stato delle sue porte fisiche.
+
+* *Stato amministrativo*
++
+Visualizza lo stato amministrativo della LIF, che può essere Up (image:../media/lif-status-up.gif["Icona per lo stato LIF – Up"]), giù (image:../media/lif-status-down.gif["Icona dello stato LIF – inattivo"]) O Sconosciuto (image:../media/hastate-unknown.gif["Icona per lo stato ha – sconosciuto"]). È possibile controllare lo stato amministrativo di una LIF quando si apportano modifiche alla configurazione o durante la manutenzione. Lo stato amministrativo può essere diverso dallo stato operativo. Tuttavia, se lo stato amministrativo di una LIF è inattivo, lo stato operativo è inattivo per impostazione predefinita.
+
+* *Indirizzo IP*
++
+Visualizza l'indirizzo IP del LIF.
+
+* *Ruolo*
++
+Visualizza il ruolo della LIF. I ruoli possibili sono LIF di gestione cluster, LIF di gestione nodi, LIF cluster e LIF intercluster.
+
+* *Porta home*
++
+Visualizza la porta fisica a cui è stato originariamente associato il LIF.
+
+* *Porta corrente*
++
+Visualizza la porta fisica a cui è attualmente associato il LIF. Dopo la migrazione LIF, la porta corrente potrebbe essere diversa dalla porta home.
+
+* *Policy di failover*
++
+Visualizza il criterio di failover configurato per LIF.
+
+* *Routing Groups*
++
+Visualizza il nome del gruppo di routing. È possibile visualizzare ulteriori informazioni sui percorsi e sul gateway di destinazione facendo clic sul nome del gruppo di routing.
+
++
+I gruppi di routing non sono supportati per ONTAP 8.3 o versioni successive e pertanto viene visualizzata una colonna vuota per questi cluster.
+
+* *Gruppo di failover*
++
+Visualizza il nome del gruppo di failover.
+
+
+
+
+
+== Scheda nodi
+
+Visualizza le informazioni sui nodi nel cluster selezionato. È possibile visualizzare informazioni dettagliate sulle coppie ha, sugli shelf di dischi e sulle porte:
+
+* *Dettagli ha*
++
+Fornisce una rappresentazione grafica dello stato ha e dello stato di salute dei nodi nella coppia ha. Lo stato di salute del nodo è indicato dai seguenti colori:
+
++
+** *Verde*
+
+
++
+Il nodo è in una condizione di funzionamento.
+
++
+** *Giallo*
+
+
++
+Il nodo ha assunto il controllo del nodo partner o il nodo deve affrontare alcuni problemi ambientali.
+
++
+** *Rosso*
+
+
++
+Il nodo non è attivo.
+
++
+È possibile visualizzare informazioni sulla disponibilità della coppia ha e intraprendere le azioni necessarie per prevenire eventuali rischi. Ad esempio, nel caso di una possibile operazione di Takeover, viene visualizzato il seguente messaggio: `Storage failover possible`.
+
++
+È possibile visualizzare un elenco degli eventi relativi alla coppia ha e al relativo ambiente, ad esempio ventole, alimentatori, batteria NVRAM, schede flash, service processor e connettività degli shelf di dischi. È inoltre possibile visualizzare l'ora in cui sono stati attivati gli eventi.
+
++
+È possibile visualizzare altre informazioni relative al nodo, ad esempio il numero di modello e il numero di serie.
+
++
+Se sono presenti cluster a nodo singolo, è possibile visualizzare anche i dettagli relativi ai nodi.
+
+* *Shelf di dischi*
++
+Visualizza le informazioni sugli shelf di dischi nella coppia ha.
+
++
+È inoltre possibile visualizzare gli eventi generati per gli shelf di dischi e i componenti ambientali e l'ora in cui sono stati attivati gli eventi.
+
++
+** *ID shelf*
++
+Visualizza l'ID dello shelf in cui si trova il disco.
+
+** *Stato del componente*
++
+Visualizza i dettagli ambientali degli shelf di dischi, come alimentatori, ventole, sensori di temperatura, sensori di corrente, connettività del disco, e sensori di tensione. I dettagli ambientali vengono visualizzati sotto forma di icone nei seguenti colori:
+
++
+*** *Verde*
++
+I componenti ambientali funzionano correttamente.
+
+*** *Grigio*
++
+Non sono disponibili dati per i componenti ambientali.
+
+*** *Rosso*
++
+Alcuni dei componenti ambientali sono inutilizzati.
+
+
+
+** *Stato*
++
+Visualizza lo stato dello shelf di dischi. Gli stati possibili sono Offline, Online, No status, Initialization Required, Missing, E Sconosciuto.
+
+** *Modello*
++
+Visualizza il numero di modello dello shelf di dischi.
+
+** *Local Disk Shelf*
++
+Indica se lo shelf di dischi si trova nel cluster locale o nel cluster remoto. Questa colonna viene visualizzata solo per i cluster in una configurazione MetroCluster.
+
+** *ID univoco*
++
+Visualizza l'identificatore univoco dello shelf di dischi.
+
+** *Versione firmware*
++
+Visualizza la versione del firmware dello shelf di dischi.
+
+
+
+* *Porte*
++
+Visualizza le informazioni relative alle porte FC, FCoE ed Ethernet associate. È possibile visualizzare i dettagli relativi alle porte e ai LIF associati facendo clic sulle icone delle porte.
+
++
+È inoltre possibile visualizzare gli eventi generati per le porte.
+
++
+È possibile visualizzare i seguenti dettagli della porta:
+
++
+** ID porta
++
+Visualizza il nome della porta. Ad esempio, i nomi delle porte possono essere e0M, e0a e e0b.
+
+** Ruolo
++
+Visualizza il ruolo della porta. I ruoli possibili sono Cluster, Data, Intercluster, Node-Management e Undefined.
+
+** Tipo
++
+Visualizza il protocollo di layer fisico utilizzato per la porta. I tipi possibili sono Ethernet, Fibre Channel e FCoE.
+
+** PN. WWN
++
+Visualizza il nome della porta universale (WWPN) della porta.
+
+** Rev. Firmware
++
+Visualizza la revisione del firmware della porta FC/FCoE.
+
+** Stato
++
+Visualizza lo stato corrente della porta. Gli stati possibili sono Up (su), Down (Giù), link Not Connected (collegamento non connesso). O Sconosciuto (image:../media/hastate-unknown.gif["Icona per lo stato ha – sconosciuto"]).
+
+
+
++
+È possibile visualizzare gli eventi relativi alle porte dall'elenco Eventi. È inoltre possibile visualizzare i dettagli LIF associati, ad esempio nome LIF, stato operativo, indirizzo IP o WWPN, protocolli, nome della SVM associata alla LIF, porta corrente, policy di failover e gruppo di failover.
+
+
+
+
+
+== Scheda Disks (dischi)
+
+Visualizza i dettagli relativi ai dischi nel cluster selezionato. È possibile visualizzare informazioni relative al disco, ad esempio il numero di dischi utilizzati, dischi di riserva, dischi rotti e dischi non assegnati. È inoltre possibile visualizzare altri dettagli, ad esempio il nome del disco, il tipo di disco e il nodo proprietario del disco.
+
+* *Riepilogo pool di dischi*
++
+Visualizza il numero di dischi classificati in base ai tipi effettivi (FCAL, SAS, SATA, MSATA, SSD, LUN array e VMDISK) e lo stato dei dischi. È inoltre possibile visualizzare altri dettagli, ad esempio il numero di aggregati, dischi condivisi, dischi di riserva, dischi rotti, dischi non assegnati, e dischi non supportati. Se si fa clic sul collegamento numero effettivo dei tipi di disco, vengono visualizzati i dischi dello stato selezionato e del tipo effettivo. Ad esempio, se si fa clic sul collegamento Count (Conteggio) per lo stato del disco rotto e il tipo effettivo SAS, vengono visualizzati tutti i dischi con lo stato del disco rotto e il tipo effettivo SAS.
+
+* *Disco*
++
+Visualizza il nome del disco.
+
+* *Gruppi RAID*
++
+Visualizza il nome del gruppo RAID.
+
+* *Nodo proprietario*
++
+Visualizza il nome del nodo a cui appartiene il disco. Se il disco non è assegnato, in questa colonna non viene visualizzato alcun valore.
+
+* *Stato*
++
+Visualizza lo stato del disco: Aggregato, condiviso, spare, interrotto, non assegnato, Non supportato o sconosciuto. Per impostazione predefinita, questa colonna viene ordinata per visualizzare gli stati nel seguente ordine: Interrotto, non assegnato, non supportato, Spare, aggregato, E condiviso.
+
+* *Disco locale*
++
+Visualizza Sì o No per indicare se il disco si trova nel cluster locale o nel cluster remoto. Questa colonna viene visualizzata solo per i cluster in una configurazione MetroCluster.
+
+* *Posizione*
++
+Visualizza la posizione del disco in base al tipo di contenitore, ad esempio Copia, dati o parità. Per impostazione predefinita, questa colonna è nascosta.
+
+* *Aggregati interessati*
++
+Visualizza il numero di aggregati interessati dal problema a causa del disco guasto. È possibile spostare il puntatore sul collegamento del conteggio per visualizzare gli aggregati interessati, quindi fare clic sul nome dell'aggregato per visualizzare i dettagli dell'aggregato. È inoltre possibile fare clic sul conteggio aggregato per visualizzare l'elenco degli aggregati interessati nella pagina Health/aggregates inventory.
+
++
+In questa colonna non viene visualizzato alcun valore per i seguenti casi:
+
++
+** Per i dischi rotti quando un cluster contenente tali dischi viene aggiunto a Unified Manager
+** Quando non ci sono dischi guasti
+
+
+* *Pool di storage*
++
+Visualizza il nome del pool di storage a cui appartiene l'SSD. È possibile spostare il puntatore sul nome del pool di storage per visualizzare i dettagli del pool di storage.
+
+* *Capacità memorizzabile*
++
+Visualizza la capacità del disco disponibile per l'utilizzo.
+
+* *Capacità raw*
++
+Visualizza la capacità del disco raw non formattato prima del dimensionamento corretto e della configurazione RAID. Per impostazione predefinita, questa colonna è nascosta.
+
+* *Tipo*
++
+Visualizza i tipi di dischi, ad esempio ATA, SATA, FCAL o VMDISK.
+
+* *Tipo effettivo*
++
+Visualizza il tipo di disco assegnato da ONTAP.
+
++
+Alcuni tipi di dischi ONTAP sono considerati equivalenti ai fini della creazione e dell'aggiunta di aggregati e della gestione delle spare. ONTAP assegna un tipo di disco effettivo per ciascun tipo di disco.
+
+* *Blocchi di riserva consumati in %*
++
+Visualizza in percentuale i blocchi di riserva consumati nel disco SSD. Questa colonna è vuota per i dischi diversi dai dischi SSD.
+
+* *Durata nominale utilizzata %*
++
+Visualizza in percentuale una stima della durata degli SSD utilizzati, in base all'utilizzo effettivo degli SSD e alla previsione del produttore della durata degli SSD. Un valore superiore a 99 indica che la durata stimata è stata consumata, ma potrebbe non indicare un guasto dell'unità SSD. Se il valore non è noto, il disco viene omesso.
+
+* *Firmware*
++
+Visualizza la versione del firmware del disco.
+
+* *GIRI/MIN*
++
+Visualizza i giri al minuto (RPM) del disco. Per impostazione predefinita, questa colonna è nascosta.
+
+* *Modello*
++
+Visualizza il numero di modello del disco. Per impostazione predefinita, questa colonna è nascosta.
+
+* *Venditore*
++
+Visualizza il nome del produttore del disco. Per impostazione predefinita, questa colonna è nascosta.
+
+* *ID shelf*
++
+Visualizza l'ID dello shelf in cui si trova il disco.
+
+* *Baia*
++
+Visualizza l'ID dell'alloggiamento in cui si trova il disco.
+
+
+
+
+
+== Riquadro delle annotazioni correlate
+
+Consente di visualizzare i dettagli delle annotazioni associati al cluster selezionato. I dettagli includono il nome dell'annotazione e i valori dell'annotazione applicati al cluster. È inoltre possibile rimuovere le annotazioni manuali dal pannello Annotazioni correlate.
+
+
+
+== Pannello Related Devices (dispositivi correlati)
+
+Consente di visualizzare i dettagli dei dispositivi associati al cluster selezionato.
+
+I dettagli includono le proprietà del dispositivo connesso al cluster, ad esempio il tipo di dispositivo, le dimensioni, il numero e lo stato di salute. È possibile fare clic sul collegamento del conteggio per ulteriori analisi su quel particolare dispositivo.
+
+È possibile utilizzare il pannello dei partner MetroCluster per ottenere il conteggio e i dettagli sul partner MetroCluster remoto insieme ai componenti del cluster associati, ad esempio nodi, aggregati e SVM. Il pannello dei partner MetroCluster viene visualizzato solo per i cluster in una configurazione MetroCluster.
+
+Il pannello Related Devices (dispositivi correlati) consente di visualizzare e accedere ai nodi, alle SVM e agli aggregati correlati al cluster:
+
+* *Partner MetroCluster*
++
+Visualizza lo stato di salute del partner MetroCluster. Utilizzando il collegamento count, è possibile spostarsi ulteriormente e ottenere informazioni sullo stato e la capacità dei componenti del cluster.
+
+* *Nodi*
++
+Visualizza il numero, la capacità e lo stato di salute dei nodi che appartengono al cluster selezionato. Capacità indica la capacità totale utilizzabile rispetto alla capacità disponibile.
+
+* *Storage Virtual Machines*
++
+Visualizza il numero di SVM appartenenti al cluster selezionato.
+
+* *Aggregati*
++
+Visualizza il numero, la capacità e lo stato di salute degli aggregati che appartengono al cluster selezionato.
+
+
+
+
+
+== Pannello gruppi correlati
+
+Consente di visualizzare l'elenco dei gruppi che include il cluster selezionato.
+
+
+
+== Pannello Avvisi correlati
+
+Il riquadro Related Alerts (Avvisi correlati) consente di visualizzare l'elenco degli avvisi per il cluster selezionato. È inoltre possibile aggiungere un avviso facendo clic sul collegamento Add Alert (Aggiungi avviso) o modificarne uno esistente facendo clic sul nome dell'avviso.

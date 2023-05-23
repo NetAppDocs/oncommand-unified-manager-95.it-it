@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-management-users-page-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Management/Users (Gestione/utenti) visualizza un elenco di utenti e gruppi e fornisce informazioni quali nome, tipo di utente e indirizzo di posta elettronica. È inoltre possibile utilizzare questa pagina per eseguire attività come l"aggiunta, la modifica, l"eliminazione e il test degli utenti.' 
+---
+= Pagina Management/Users (Gestione/utenti)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Management/Users (Gestione/utenti) visualizza un elenco di utenti e gruppi e fornisce informazioni quali nome, tipo di utente e indirizzo di posta elettronica. È inoltre possibile utilizzare questa pagina per eseguire attività come l'aggiunta, la modifica, l'eliminazione e il test degli utenti.
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti attività per gli utenti selezionati:
+
+* *Aggiungi*
++
+Visualizza la finestra di dialogo Aggiungi utente, che consente di aggiungere un utente locale, un utente remoto, un gruppo remoto o un utente di database.
+
++
+È possibile aggiungere utenti o gruppi remoti solo se il server di autenticazione è attivato e configurato.
+
+* *Modifica*
++
+Visualizza la finestra di dialogo Edit User (Modifica utente), che consente di modificare le impostazioni dell'utente selezionato.
+
+* *Elimina*
++
+Elimina gli utenti selezionati dal database del server di gestione.
+
+* *Test*
++
+Consente di verificare se nel server di autenticazione è presente un utente o un gruppo remoto.
+
++
+È possibile eseguire questa attività solo se il server di autenticazione è attivato e configurato.
+
+
+
+
+
+== Vista elenco
+
+La vista elenco visualizza, in formato tabulare, le informazioni sugli utenti creati. È possibile utilizzare i filtri di colonna per personalizzare i dati visualizzati.
+
+* *Nome*
++
+Visualizza il nome dell'utente o del gruppo.
+
+* *Tipo*
++
+Visualizza il tipo di utente: Local User (utente locale), Remote User (utente remoto), Remote Group (Gruppo remoto), Database User (utente database) o Maintenance User (utente manutenzione).
+
+* *E-mail*
++
+Visualizza l'indirizzo e-mail dell'utente.
+
+* *Ruolo*
++
+Visualizza il tipo di ruolo assegnato all'utente: Operatore, Amministratore dello storage, Amministratore OnCommand, Schema di integrazione o Schema di report.
+
+

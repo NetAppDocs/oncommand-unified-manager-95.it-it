@@ -1,0 +1,107 @@
+---
+permalink: online-help/reference-restore-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare la finestra di dialogo Restore (Ripristina) per ripristinare i dati in un volume da una copia Snapshot specifica.' 
+---
+= Finestra di dialogo Restore (Ripristina)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la finestra di dialogo Restore (Ripristina) per ripristinare i dati in un volume da una copia Snapshot specifica.
+
+
+
+== Ripristina da
+
+L'area Restore from (Ripristina da) consente di specificare da dove si desidera ripristinare i dati.
+
+* *Volume*
++
+Specifica il volume dal quale si desidera ripristinare i dati. Per impostazione predefinita, viene selezionato il volume su cui è stata avviata l'azione di ripristino. È possibile selezionare un volume diverso dall'elenco a discesa contenente tutti i volumi con relazioni di protezione con il volume su cui è stata avviata l'azione di ripristino.
+
+* *Copia Snapshot*
++
+Specifica quale copia Snapshot si desidera utilizzare per ripristinare i dati. Per impostazione predefinita, viene selezionata la copia Snapshot più recente. È inoltre possibile selezionare una copia Snapshot diversa dall'elenco a discesa. L'elenco di copie Snapshot cambia in base al volume selezionato.
+
+* *Elenca un massimo di 995 file e directory*
++
+Per impostazione predefinita, nell'elenco vengono visualizzati un massimo di 995 oggetti. È possibile deselezionare questa casella di controllo se si desidera visualizzare tutti gli oggetti all'interno del volume selezionato. Questa operazione potrebbe richiedere del tempo se il numero di elementi è molto elevato.
+
+
+
+
+
+== Selezionare gli elementi da ripristinare
+
+L'area Select ITEMS to restore (Seleziona elementi da ripristinare) consente di selezionare l'intero volume o i file e le cartelle specifici da ripristinare. È possibile selezionare un massimo di 10 file, cartelle o una combinazione di entrambi. Quando si seleziona il numero massimo di elementi, le caselle di controllo per la selezione degli elementi vengono disattivate.
+
+* *Campo percorso*
++
+Visualizza il percorso dei dati che si desidera ripristinare. È possibile accedere alla cartella e ai file da ripristinare oppure digitare il percorso. Questo campo è vuoto fino a quando non si seleziona o si digita un percorso. Fare clic su image:../media/icon-upfolder.gif[""] dopo aver scelto un percorso, si passa a un livello superiore nella struttura delle directory.
+
+* *Elenco cartelle e file*
++
+Visualizza il contenuto del percorso immesso. Per impostazione predefinita, viene visualizzata inizialmente la cartella root. Facendo clic sul nome di una cartella, viene visualizzato il contenuto della cartella.
+
+
+
+È possibile selezionare gli elementi da ripristinare nel modo seguente:
+
+* Quando si immette il percorso con un nome di file specifico specificato nel campo percorso, il file specificato viene visualizzato in cartelle e file.
+* Quando si immette un percorso senza specificare un determinato file, il contenuto della cartella viene visualizzato nell'elenco cartelle e file ed è possibile selezionare fino a 10 file, cartelle o una combinazione di entrambi da ripristinare.
++
+Se una cartella contiene più di 995 elementi, viene visualizzato un messaggio per indicare che sono presenti troppi elementi da visualizzare e, se si procede con l'operazione, vengono ripristinati tutti gli elementi della cartella specificata. Se si desidera visualizzare tutti gli oggetti all'interno del volume selezionato, è possibile deselezionare la casella di controllo "`Elenca un massimo di 995 file e directory`".
+
+
+
+[NOTE]
+====
+Non è possibile ripristinare i flussi di file NTFS.
+
+====
+
+
+== Ripristinare a.
+
+L'area Restore To (Ripristina in) consente di specificare dove si desidera ripristinare i dati.
+
+* *Posizione originale in `Volume_Name`*
++
+Ripristina i dati selezionati nella directory dell'origine da cui è stato eseguito il backup dei dati.
+
+* *Posizione alternativa*
++
+Ripristina i dati selezionati in una nuova posizione:
+
++
+** Percorso di ripristino
++
+Specifica un percorso alternativo per il ripristino dei dati selezionati. Il percorso deve già esistere. È possibile utilizzare il pulsante *Browse* (Sfoglia) per raggiungere la posizione in cui si desidera ripristinare i dati oppure inserire il percorso manualmente utilizzando il formato cluster://svm/volume/path.
+
+** Preservare la gerarchia di directory
++
+Quando questa opzione è selezionata, mantiene la struttura del file o della directory originale. Ad esempio, se l'origine è /A/B/C/myfile.txt e la destinazione è /X/Y/Z, Unified Manager ripristina i dati utilizzando la seguente struttura di directory sulla destinazione: /X/Y/Z/A/B/C/myfile.txt.
+
+
+
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti operazioni:
+
+* *Annulla*
++
+Elimina le selezioni e chiude la finestra di dialogo Restore (Ripristina).
+
+* *Ripristina*
++
+Applica le selezioni e avvia il processo di ripristino.
+
+

@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-configuring-global-volume-health-threshold-values.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile configurare i valori della soglia di integrità globale per tutti i volumi per tenere traccia di qualsiasi violazione di soglia. Gli eventi appropriati vengono generati per le violazioni delle soglie di salute ed è possibile adottare misure preventive in base a tali eventi. È possibile configurare i valori globali in base alle impostazioni delle Best practice per le soglie applicabili a tutti i volumi monitorati. 
+---
+= Configurazione dei valori delle soglie globali di integrità del volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile configurare i valori della soglia di integrità globale per tutti i volumi per tenere traccia di qualsiasi violazione di soglia. Gli eventi appropriati vengono generati per le violazioni delle soglie di salute ed è possibile adottare misure preventive in base a tali eventi. È possibile configurare i valori globali in base alle impostazioni delle Best practice per le soglie applicabili a tutti i volumi monitorati.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== A proposito di questa attività
+
+La maggior parte delle opzioni di soglia dispone di valori predefiniti per un migliore monitoraggio. Tuttavia, è possibile modificare i valori in base ai requisiti del proprio ambiente.
+
+Si noti che quando la funzione di crescita automatica è attivata su un volume, le soglie di capacità vengono considerate violate in base alle dimensioni massime del volume impostate dalla crescita automatica, non in base alle dimensioni originali del volume.
+
+
+
+== Fasi
+
+. Nel riquadro di spostamento di sinistra, fare clic su *Configurazione* > *soglie di integrità*.
+. Nella pagina *Configuration/Health Thresholds* (soglie di configurazione/integrità), fare clic su *Volumes* (volumi).
+. Configurare i valori di soglia appropriati per capacità, copie Snapshot, quote qtree, crescita del volume e inode.
+. Fare clic su *Save* (Salva).
+

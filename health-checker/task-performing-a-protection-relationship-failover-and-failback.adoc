@@ -1,0 +1,54 @@
+---
+permalink: health-checker/task-performing-a-protection-relationship-failover-and-failback.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Quando un volume di origine nella relazione di protezione viene disattivato a causa di un guasto hardware o di un disastro, è possibile utilizzare le funzionalità delle relazioni di protezione di Unified Manager per rendere la destinazione di protezione accessibile in lettura/scrittura e eseguire il failover su tale volume fino a quando l"origine non è nuovamente online; quindi, è possibile tornare all"origine originale quando è disponibile per la distribuzione dei dati.' 
+---
+= Esecuzione di failover e failback delle relazioni di protezione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando un volume di origine nella relazione di protezione viene disattivato a causa di un guasto hardware o di un disastro, è possibile utilizzare le funzionalità delle relazioni di protezione di Unified Manager per rendere la destinazione di protezione accessibile in lettura/scrittura e eseguire il failover su tale volume fino a quando l'origine non è nuovamente online; quindi, è possibile tornare all'origine originale quando è disponibile per la distribuzione dei dati.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+* Per eseguire questa operazione, è necessario aver configurato OnCommand Workflow Automation.
+
+
+
+
+== Fasi
+
+. xref:task-breaking-a-snapmirror-relationship-from-the-health-volume-details-page.adoc[Interrompere la relazione di SnapMirror].
++
+È necessario interrompere la relazione prima di poter convertire la destinazione da un volume di protezione dati a un volume di lettura/scrittura e prima di invertire la relazione.
+
+. xref:task-reversing-protection-relationships-from-the-health-volume-details-page.adoc[Invertire la relazione di protezione].
++
+Quando il volume di origine originale è nuovamente disponibile, è possibile decidere di ristabilire la relazione di protezione originale ripristinando il volume di origine. Prima di poter ripristinare l'origine, è necessario sincronizzarla con i dati scritti nella destinazione precedente. L'operazione di risincronizzazione inversa consente di creare una nuova relazione di protezione invertendo i ruoli della relazione originale e sincronizzando il volume di origine con la destinazione precedente. Viene creata una nuova copia Snapshot di riferimento per la nuova relazione.
+
++
+La relazione invertita appare simile a una relazione a cascata:
+
++
+image::../media/um-toplogy-reverse-resync.gif[risincronizzazione inversa della topologia]
+
+. xref:task-breaking-a-snapmirror-relationship-from-the-health-volume-details-page.adoc[Interrompere la relazione SnapMirror inversa].
++
+Quando il volume di origine originale viene risincronizzato e può nuovamente servire i dati, utilizzare l'operazione di interruzione per interrompere la relazione inversa.
+
+. xref:task-removing-a-protection-relationship-from-the-health-volume-details-page.adoc[Rimuovere la relazione].
++
+Quando la relazione invertita non è più necessaria, è necessario rimuovere tale relazione prima di ristabilire la relazione originale.
+
+. xref:task-resynchronizing-protection-relationships-from-the-health-volume-details-page.adoc[Risincronizzare la relazione].
++
+Utilizzare l'operazione di risincronizzazione per sincronizzare i dati dall'origine alla destinazione e ristabilire la relazione originale.
+
+

@@ -1,0 +1,198 @@
+---
+permalink: online-help/reference-metrocluster-connectivity-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi di connettività forniscono informazioni sulla connettività tra i componenti di un cluster e tra i cluster in una configurazione MetroCluster, in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all"area di impatto e includono il nome dell"evento e della trap, il livello di impatto, il tipo di origine e la severità.' 
+---
+= Eventi di connettività MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi di connettività forniscono informazioni sulla connettività tra i componenti di un cluster e tra i cluster in una configurazione MetroCluster, in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all'area di impatto e includono il nome dell'evento e della trap, il livello di impatto, il tipo di origine e la severità.
+
+
+
+== Area di impatto: Disponibilità
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Tutti i collegamenti inter-switch non attivi(ocumEvtMetroClusterAllISLBetweenSwitchesDown)
+ a| 
+Incidente
+ a| 
+Connessione MetroCluster inter-switch
+ a| 
+Critico
+
+
+
+ a| 
+Tutti i collegamenti tra i partner MetroCluster (ocumEvtMetroClusterAllLinksBetweenPartnersDown)
+ a| 
+Incidente
+ a| 
+Relazione MetroCluster
+ a| 
+Critico
+
+
+
+ a| 
+Collegamento tra bridge FC-SAS e stack di storage inattivo (ocumEvtBridgeSasPortDown)
+ a| 
+Incidente
+ a| 
+Connessione MetroCluster bridge stack
+ a| 
+Critico
+
+
+
+ a| 
+Configurazione MetroCluster commutata((ocumEvtMetroClusterDRStatusImpacted)
+ a| 
+Rischio
+ a| 
+Relazione MetroCluster
+ a| 
+Attenzione
+
+
+
+ a| 
+Configurazione MetroCluster parzialmente commutata (ocumEvtMetroClusterDRStatusPartiallyImpacted)
+ a| 
+Rischio
+ a| 
+Relazione MetroCluster
+ a| 
+Errore
+
+
+
+ a| 
+Funzionalità di disaster recovery MetroCluster interessata(ocumEvtMetroClusterDRStatusImpacted)
+ a| 
+Rischio
+ a| 
+Relazione MetroCluster
+ a| 
+Critico
+
+
+
+ a| 
+Partner MetroCluster non raggiungibili tramite rete peering(ocumEvtMetroClusterPartnersNotReachableOverPeeringNetwork)
+ a| 
+Incidente
+ a| 
+Relazione MetroCluster
+ a| 
+Critico
+
+
+
+ a| 
+Nodo a switch FC tutti i collegamenti di interconnessione FC-VI sono disattivi (ocumEvtMccNodeSwitchFcviLinksDown)
+ a| 
+Incidente
+ a| 
+Connessione dello switch del nodo MetroCluster
+ a| 
+Critico
+
+
+
+ a| 
+Nodo allo switch FC: Uno o più collegamenti FC-initiator non attivi (ocumEvtMccNodeSwitchFcLinksOneOrMoreDown)
+ a| 
+Rischio
+ a| 
+Connessione dello switch del nodo MetroCluster
+ a| 
+Attenzione
+
+
+
+ a| 
+Nodo a switch FC tutti i collegamenti FC-initiator non sono attivi (ocumEvtMccNodeSwitchFcLinksDown)
+ a| 
+Incidente
+ a| 
+Connessione dello switch del nodo MetroCluster
+ a| 
+Critico
+
+
+
+ a| 
+Switch to FC-SAS Bridge FC link Down (ocumEvtMccSwitchBridgeFcLinksDown)
+ a| 
+Incidente
+ a| 
+Connessione a ponte con switch MetroCluster
+ a| 
+Critico
+
+
+
+ a| 
+Tutti i collegamenti di interconnessione FC VI tra nodi non attivi (ocumEvtMccInterNodeLinksDown)
+ a| 
+Incidente
+ a| 
+Connessione tra nodi
+ a| 
+Critico
+
+
+
+ a| 
+Nodo interno uno o più collegamenti di interconnessione FC VI non attivi (ocumEvtMccInterNodeLinksOneOrMoreDown)
+ a| 
+Rischio
+ a| 
+Connessione tra nodi
+ a| 
+Attenzione
+
+
+
+ a| 
+Collegamento da nodo a ponte inattivo (ocumEvtMccNodeBridgeLinksDown)
+ a| 
+Incidente
+ a| 
+Connessione a bridge di nodi
+ a| 
+Critico
+
+
+
+ a| 
+Nodo a stack di storage tutti i collegamenti SAS non attivi ( ocumEvtMccNodeStackLinksDown)
+ a| 
+Incidente
+ a| 
+Connessione dello stack di nodi
+ a| 
+Critico
+
+
+
+ a| 
+Nodo a stack di storage uno o più collegamenti SAS non attivi ( ocumEvtMccNodeStackLinksOneOrMoreDown)
+ a| 
+Rischio
+ a| 
+Connessione dello stack di nodi
+ a| 
+Attenzione
+
+|===

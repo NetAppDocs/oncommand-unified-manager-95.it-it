@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-removing-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile rimuovere un cluster da Unified Manager utilizzando la pagina Configuration/Cluster Data Sources (origini dati cluster/configurazione). Ad esempio, è possibile rimuovere un cluster se il rilevamento del cluster non riesce o quando si desidera decommissionare un sistema storage.' 
+---
+= Rimozione dei cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile rimuovere un cluster da Unified Manager utilizzando la pagina Configuration/Cluster Data Sources (origini dati cluster/configurazione). Ad esempio, è possibile rimuovere un cluster se il rilevamento del cluster non riesce o quando si desidera decommissionare un sistema storage.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o di amministratore dello storage di OnCommand.
+
+
+
+== A proposito di questa attività
+
+Questa attività rimuove il cluster selezionato da Unified Manager. Una volta rimosso, il cluster non viene più monitorato. Anche l'istanza di Unified Manager registrata con il cluster rimosso non viene registrata dal cluster.
+
+La rimozione di un cluster elimina anche tutti gli oggetti di storage, i dati storici, i servizi di storage e tutti gli eventi associati da Unified Manager. Queste modifiche si riflettono sulle pagine di inventario e sui dettagli dopo il successivo ciclo di raccolta dei dati.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Configuration* > *Cluster Data Sources*.
+. Nella pagina *Configuration/Cluster Data Sources* (origini dati cluster/configurazione), selezionare il cluster che si desidera rimuovere e fare clic su *Remove* (Rimuovi).
+. Nella finestra di dialogo del messaggio *Remove Data Source* (Rimuovi origine dati), fare clic su *Remove* (Rimuovi) per confermare la richiesta di rimozione.
+

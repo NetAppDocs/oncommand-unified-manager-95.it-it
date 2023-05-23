@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-what-rbac-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'RBAC (role-based access control) offre la possibilità di controllare chi ha accesso a varie funzionalità e risorse nel server di gestione unificata di OnCommand.' 
+---
+= Cos'è RBAC
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+RBAC (role-based access control) offre la possibilità di controllare chi ha accesso a varie funzionalità e risorse nel server Unified Manager di OnCommand.

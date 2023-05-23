@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-understanding-more-about-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare l"opzione per eseguire, eliminare, esportare e importare i report. È inoltre possibile creare report personalizzati e salvare il report personalizzato. È possibile eseguire operazioni aggiuntive come filtraggio, ordinamento, raggruppamento e formattazione.' 
+---
+= Ulteriori informazioni sui report
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare l'opzione per eseguire, eliminare, esportare e importare i report. È inoltre possibile creare report personalizzati e salvare il report personalizzato. È possibile eseguire operazioni aggiuntive come filtraggio, ordinamento, raggruppamento e formattazione.

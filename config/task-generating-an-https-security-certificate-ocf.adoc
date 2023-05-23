@@ -1,0 +1,72 @@
+---
+permalink: config/task-generating-an-https-security-certificate-ocf.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile generare un nuovo certificato di protezione HTTPS per diversi motivi, ad esempio se si desidera firmare con un"autorità di certificazione diversa o se il certificato di protezione corrente è scaduto. Il nuovo certificato sostituisce quello esistente.' 
+---
+= Generazione di un certificato di protezione HTTPS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile generare un nuovo certificato di protezione HTTPS per diversi motivi, ad esempio se si desidera firmare con un'autorità di certificazione diversa o se il certificato di protezione corrente è scaduto. Il nuovo certificato sostituisce quello esistente.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore di OnCommand.
+
+
+
+== A proposito di questa attività
+
+Se non si dispone dell'accesso all'interfaccia utente Web di Unified Manager, è possibile rigenerare il certificato HTTPS con gli stessi valori utilizzando la console di manutenzione.
+
+
+
+== Fasi
+
+. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *HTTPS Certificate* (certificato HTTPS) dal menu *Setup*.
+. Fare clic su *Rigenera certificato HTTPS*.
++
+Viene visualizzata la finestra di dialogo Rigenera certificato HTTPS.
+
+. Selezionare una delle seguenti opzioni a seconda della modalità di generazione del certificato:
++
+|===
+| Se si desidera... | Eseguire questa operazione... 
+
+
+ a| 
+Rigenera il certificato con i valori correnti
+ a| 
+Fare clic sull'opzione *Rigenera using Current Certificate Attributes*.
+
+
+
+ a| 
+Generare il certificato utilizzando valori diversi
+ a| 
+ Click the *Update the Current Certificate Attributes* option.
+I campi Nome comune e nomi alternativi utilizzano i valori del certificato esistente se non vengono immessi nuovi valori. Gli altri campi non richiedono valori, ma è possibile immettere valori, ad esempio, per Città, Stato e Paese, se si desidera che tali valori vengano inseriti nel certificato.
+
+[NOTE]
+====
+Se si desidera rimuovere le informazioni di identificazione locali dal campo dei nomi alternativi del certificato, selezionare la casella di controllo "`Escludi informazioni di identificazione locali (ad es. Host locale)`". Quando questa casella di controllo è selezionata, solo i dati immessi nel campo vengono utilizzati nel campo nomi alternativi. Se lasciato vuoto, il certificato risultante non avrà alcun campo di nomi alternativi.
+
+====
++
+
+|===
+. Fare clic su *Sì* per rigenerare il certificato.
+. Riavviare il server Unified Manager in modo che il nuovo certificato abbia effetto.
+
+
+
+
+== Al termine
+
+Verificare le informazioni sul nuovo certificato visualizzando il certificato HTTPS.

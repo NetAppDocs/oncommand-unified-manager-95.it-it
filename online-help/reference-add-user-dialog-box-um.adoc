@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-add-user-dialog-box-um.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile creare utenti locali o utenti di database oppure aggiungere utenti remoti o gruppi remoti e assegnare ruoli in modo che questi utenti possano gestire oggetti e dati di storage utilizzando Unified Manager. 
+---
+= Finestra di dialogo Add User (Aggiungi utente)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile creare utenti locali o utenti di database oppure aggiungere utenti remoti o gruppi remoti e assegnare ruoli in modo che questi utenti possano gestire oggetti e dati di storage utilizzando Unified Manager.
+
+È possibile aggiungere un utente completando i seguenti campi:
+
+* *Tipo*
++
+Consente di specificare il tipo di utente che si desidera creare.
+
+* *Nome*
++
+Consente di specificare un nome utente che un utente può utilizzare per accedere a Unified Manager.
+
+* *Password*
++
+Consente di specificare una password per il nome utente specificato. Questo campo viene visualizzato solo quando si aggiunge un utente locale o un utente del database.
+
+* *Conferma password*
++
+Consente di immettere nuovamente la password per garantire la precisione di quanto immesso nel campo Password. Questo campo viene visualizzato solo quando si aggiunge un utente locale o un utente del database.
+
+* *E-mail*
++
+Consente di specificare un indirizzo e-mail per l'utente; l'indirizzo e-mail specificato deve essere univoco per il nome utente. Questo campo viene visualizzato solo quando si aggiunge un utente remoto o locale.
+
+* *Ruolo*
++
+Consente di assegnare un ruolo all'utente e definisce l'ambito delle attività che l'utente può eseguire. Il ruolo può essere Amministratore OnCommand, Amministratore dello storage, operatore, Schema di integrazione o Schema di report.
+
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti operazioni:
+
+* *Aggiungi*
++
+Aggiunge l'utente e chiude la finestra di dialogo Aggiungi utente.
+
+* *Annulla*
++
+Annulla le modifiche e chiude la finestra di dialogo Aggiungi utente.
+
+

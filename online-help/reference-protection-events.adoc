@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-protection-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi di protezione indicano se un lavoro è stato interrotto o non è riuscito, in modo da poter monitorare i problemi. Gli eventi sono raggruppati in base all"area di impatto e includono il nome dell"evento e della trap, il livello di impatto, il tipo di origine e la severità.' 
+---
+= Eventi di protezione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi di protezione indicano se un lavoro è stato interrotto o non è riuscito, in modo da poter monitorare i problemi. Gli eventi sono raggruppati in base all'area di impatto e includono il nome dell'evento e della trap, il livello di impatto, il tipo di origine e la severità.
+
+
+
+== Area di impatto: Protezione
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Processo di protezione non riuscito (ocumEvtProtectionJobTaskFailed)
+ a| 
+Incidente
+ a| 
+Servizio di storage o volume
+ a| 
+Critico
+
+
+
+ a| 
+Processo di protezione interrotto (ocumEvtProtectionJobAborted)
+ a| 
+Rischio
+ a| 
+Servizio di storage o volume
+ a| 
+Attenzione
+
+|===

@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-qtree-capacity-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Il report Qtree Capacity and Utilization (capacità e utilizzo Qtree) consente di analizzare la capacità e l"utilizzo dei qtree del sistema per comprendere i possibili rischi che potrebbero verificarsi a causa della ridotta capacità del cluster.' 
+---
+= Report su capacità e utilizzo del qtree
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il report Qtree Capacity and Utilization (capacità e utilizzo Qtree) consente di analizzare la capacità e l'utilizzo dei qtree del sistema per comprendere i possibili rischi che potrebbero verificarsi a causa della ridotta capacità del cluster.
+
+
+
+== Visualizzazione tabulare del report Qtree Capacity and Utilization (capacità e utilizzo qtree)
+
+* *Cluster*
++
+Visualizza il nome del cluster che contiene il qtree.
+
+* *Storage Virtual Machine*
++
+Visualizza il nome della macchina virtuale di storage (SVM) che contiene il qtree.
+
+* *Volume*
++
+Visualizza il nome del volume contenente il qtree.
+
+* *Qtree*
++
+Visualizza il nome del qtree.
+
+* *Tipo di quota*
++
+Specifica se la quota è per un utente, un gruppo di utenti o un qtree.
+
+* *Utente o gruppo*
++
+Visualizza il nome dell'utente o del gruppo di utenti. Sono disponibili più righe per ciascun utente e gruppo di utenti. Quando il tipo di quota è qtree, viene visualizzato _non applicabile_. Se la quota non è impostata, la colonna è vuota.
+
+* *Disco utilizzato %*
++
+Visualizza la percentuale dello spazio su disco utilizzato. Se viene impostato un limite massimo di dischi, questo valore si basa sul limite massimo di dischi. Se la quota viene impostata senza un limite massimo di dischi, il valore si basa sullo spazio dei dati del volume. Se la quota non è impostata o se le quote sono disattivate sul volume a cui appartiene il qtree, viene visualizzato _non applicabile_.
+
+* *Disco rigido*
++
+Visualizza lo spazio su disco massimo allocato per il qtree. Unified Manager genera un evento critico quando viene raggiunto questo limite e non sono consentite ulteriori scritture su disco. Il valore viene visualizzato come _Unlimited_ se la quota è impostata senza un limite massimo del disco, se la quota non è impostata o se le quote sono disattivate sul volume a cui appartiene il qtree.
+
+* *Disk Soft Limit*
++
+Visualizza lo spazio su disco allocato per il qtree prima che venga generato un evento di avviso. Il valore viene visualizzato come _Unlimited_ se la quota è impostata senza un limite di tolleranza del disco, se la quota non è impostata o se le quote sono disattivate sul volume a cui appartiene il qtree.
+
+* *File utilizzati %*
++
+Visualizza la percentuale di file utilizzati nel qtree. Se viene impostato il limite massimo del file, questo valore si basa sul limite massimo del file. Il valore viene visualizzato come _non applicabile_ se la quota non è impostata, se la quota è impostata senza un limite massimo di file o se le quote sono disattivate sul volume a cui appartiene il qtree.
+
+* *Limite massimo del file*
++
+Visualizza il limite massimo per il numero di file consentiti sui qtree. Il valore viene visualizzato come _Unlimited_ se la quota è impostata senza un limite massimo di file, se la quota non è impostata o se le quote sono disattivate sul volume a cui appartiene il qtree.
+
+* *Limite di software del file*
++
+Visualizza il soft limit per il numero di file consentiti sui qtree. Il valore viene visualizzato come _Unlimited_ se la quota è impostata senza un limite software del file, se la quota non è impostata o se le quote sono disattivate sul volume a cui appartiene il qtree.
+
+

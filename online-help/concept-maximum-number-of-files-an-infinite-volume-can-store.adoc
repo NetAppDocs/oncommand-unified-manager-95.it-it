@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-maximum-number-of-files-an-infinite-volume-can-store.html 
+sidebar: sidebar 
+keywords:  
+summary: Nella maggior parte dei casi, un volume infinito può contenere fino a 2 miliardi di file. Se un volume infinito è relativamente piccolo, il numero massimo di file potrebbe essere inferiore a 2 miliardi. 
+---
+= Numero massimo di file che un volume infinito può memorizzare
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Nella maggior parte dei casi, un volume infinito può contenere fino a 2 miliardi di file. Se un volume infinito è relativamente piccolo, il numero massimo di file potrebbe essere inferiore a 2 miliardi.
+
+Il numero massimo di file che un volume infinito può contenere è determinato dalla dimensione del relativo componente dello spazio dei nomi. Se il componente dello spazio dei nomi è di 10 TB, il volume Infinite può contenere 2 miliardi di file. Se il componente dello spazio dei nomi è inferiore a 10 TB, il volume Infinite può contenere un numero di file proporzionalmente inferiore.
+
+La dimensione del componente dello spazio dei nomi è approssimativamente proporzionale alla dimensione del volume infinito, a seconda di diversi fattori, come la dimensione massima di 10 TB del componente dello spazio dei nomi, lo spazio disponibile nell'aggregato che contiene il componente dello spazio dei nomi e l'impostazione SnapDiff.
+
+Per un Infinite Volume a due nodi o un Infinite Volume a più nodi senza SnapDiff abilitato, l'impostazione di Infinite Volume a una dimensione di 80 TB o superiore in genere crea un componente dello spazio dei nomi di 10 TB.
+
+Il numero di file non include solo i file normali, ma anche altre strutture del file system, come directory e collegamenti simbolici.

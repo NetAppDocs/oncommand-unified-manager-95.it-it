@@ -1,0 +1,166 @@
+---
+permalink: online-help/reference-aggregate-capacity-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Il report aggregato capacità e utilizzo consente di visualizzare informazioni sulla capacità e sull"utilizzo degli aggregati in un cluster. Queste informazioni consentono di comprendere i possibili rischi di capacità e di visualizzare la capacità configurata, utilizzata e inutilizzata degli aggregati.' 
+---
+= Report sulla capacità aggregata e sull'utilizzo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il report aggregato capacità e utilizzo consente di visualizzare informazioni sulla capacità e sull'utilizzo degli aggregati in un cluster. Queste informazioni consentono di comprendere i possibili rischi di capacità e di visualizzare la capacità configurata, utilizzata e inutilizzata degli aggregati.
+
+
+
+== Visualizzazione tabulare del report capacità e utilizzo aggregato
+
+* *Cluster*
++
+Visualizza il nome del cluster.
+
+* *Coppia ha*
++
+Visualizza il valore della coppia ha ottenuto formando due nodi.
+
+* *Aggregato*
++
+Visualizza il nome dell'aggregato.
+
+* *Capacità totale dei dati (GB)*
++
+Visualizza la capacità totale dei dati (utilizzata più disponibile).
+
+* *Capacità dati utilizzata (GB)*
++
+Visualizza la capacità dei dati utilizzata.
+
+* *Dati utilizzati %*
++
+Visualizza la capacità dei dati utilizzati in percentuale.
+
+* *Capacità dati disponibile (GB)*
++
+Visualizza la capacità dati disponibile.
+
+* *Dati disponibili %*
++
+Visualizza la capacità dei dati disponibile in percentuale.
+
+* *Tasso di crescita giornaliero %*
++
+Visualizza il tasso di crescita che si verifica ogni 24 ore nel volume.
+
+* *Giorni fino al completo*
++
+Visualizza il numero stimato di giorni rimanenti prima che l'aggregato raggiunga la capacità completa.
+
+* *Soglia spazio pieno*
++
+Visualizza la percentuale in cui un aggregato è pieno.
+
+* *Soglia spazio quasi pieno*
++
+Visualizza la percentuale in cui un aggregato è quasi pieno.
+
+* *Soglia tasso di crescita*
++
+Specifica che il tasso di crescita dell'aggregato è considerato normale prima che il sistema generi un evento aggregato di tasso di crescita anomalo.
+
+* *Soglia di sensibilità del tasso di crescita*
++
+Specifica il fattore applicato alla deviazione standard del tasso di crescita di un volume. Se il tasso di crescita supera la deviazione standard fattorizzata, viene generato un evento anomalo di Volume Growth Rate.
+
+* *Giorni fino alla soglia massima*
++
+Specifica il numero di giorni rimanenti prima che l'aggregato raggiunga la capacità completa.
+
+* *Capacità totale riserva Snapshot (GB)*
++
+Visualizza la capacità totale di riserva di snapshot dell'aggregato.
+
+* *Snapshot Reserve used Capacity (GB)*
++
+Visualizza la quantità di spazio utilizzata dalle copie Snapshot dalla riserva di Snapshot.
+
+* *Snapshot Reserve used %*
++
+Visualizza la quantità di spazio utilizzata dalle copie Snapshot dalla riserva di snapshot come percentuale.
+
+* *Snapshot Reserve Available Capacity (GB)*
++
+Visualizza la quantità di spazio disponibile per le copie Snapshot.
+
+* *Riserva Snapshot disponibile %*
++
+Visualizza la quantità di spazio disponibile per le copie Snapshot in percentuale.
+
+* *Snapshot Copies Reserve Full Threshold*
++
+Specifica la percentuale in cui un aggregato ha consumato tutto lo spazio riservato alle copie Snapshot.
+
+* *Capacità in eccesso %*
++
+Visualizza l'overcommitment aggregato come percentuale.
+
+* *Soglia di overcommit %*
++
+Visualizza la percentuale di overcommit di un aggregato.
+
+* *Soglia quasi in eccesso %*
++
+Visualizza la percentuale in cui un aggregato viene quasi sottoposto a overcommit.
+
+* *Tipo*
++
+Visualizza il tipo di aggregato:
+
++
+** DISCO RIGIDO
+** Ibrido
++
+Combina HDD e SSD, ma Flash Pool non è stato attivato.
+
+** Ibrido (Flash Pool)
++
+Combina HDD e SSD ed è stato attivato Flash Pool.
+
+** SSD
+** SSD (FabricPool)
++
+Combina SSD e un Tier cloud
+
+** VMDisk (SDS)
++
+Dischi virtuali all'interno di una macchina virtuale
+
+** VMDisk (FabricPool)
++
+Combina dischi virtuali e un Tier cloud
+
+** LUN (FlexArray) per i dischi standard e i dischi SSD, questa colonna è vuota quando il sistema storage monitorato esegue una versione di ONTAP precedente alla 8.3.
+
+
+* *Tipo RAID*
++
+Visualizza il tipo di configurazione RAID.
+
+* *Stato aggregato*
++
+Visualizza lo stato corrente dell'aggregato.
+
+* *Tipo SnapLock*
++
+Indica se l'aggregato è un aggregato SnapLock o non SnapLock.
+
+* *Cloud Tier Space used (GB)*
++
+Visualizza la quantità di capacità dei dati attualmente utilizzata nel Tier cloud.
+
+* *Tier cloud*
++
+Visualizza il nome del livello cloud quando è stato creato da ONTAP.
+
+

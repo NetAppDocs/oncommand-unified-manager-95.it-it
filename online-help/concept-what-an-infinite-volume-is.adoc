@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-an-infinite-volume-is.html 
+sidebar: sidebar 
+keywords:  
+summary: Un volume Infinite è un singolo volume scalabile in grado di memorizzare fino a 2 miliardi di file e decine di petabyte di dati. 
+---
+= Che cos'è un volume infinito
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un volume Infinite è un singolo volume scalabile in grado di memorizzare fino a 2 miliardi di file e decine di petabyte di dati.
+
+Con un volume Infinite, è possibile gestire diversi petabyte di dati in una grande entità logica e i client possono recuperare diversi petabyte di dati da un singolo percorso di giunzione per l'intero volume.
+
+Un volume infinito utilizza lo storage di più aggregati su più nodi. Puoi iniziare con un volume Infinite di piccole dimensioni ed espanderlo senza interruzioni aggiungendo più dischi ai suoi aggregati o fornendo più aggregati da utilizzare.

@@ -1,0 +1,44 @@
+---
+permalink: install/reference-vmware-software-and-installation-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: Il sistema VMware vSphere su cui si installa Unified Manager richiede versioni specifiche del sistema operativo e del software di supporto. 
+---
+= Software VMware e requisiti di installazione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il sistema VMware vSphere su cui si installa Unified Manager richiede versioni specifiche del sistema operativo e del software di supporto.
+
+
+
+== Software del sistema operativo
+
+Sono supportate le seguenti versioni di VMware ESXi:
+
+* ESXi 5.5, 6.0 e 6.5
+
+
+Sono supportate le seguenti versioni di vSphere:
+
+* VMware vCenter Server 5.5, 6.0 e 6.5
+
+
+Consulta la matrice di interoperabilità per l'elenco completo e aggiornato delle versioni di ESXi supportate.
+
+http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
+
+Affinché l'appliance virtuale funzioni correttamente, l'ora del server VMware ESXi deve coincidere con quella del server NTP. La sincronizzazione dell'ora del server VMware ESXi con l'ora del server NTP impedisce un errore di tempo.
+
+
+
+== Requisiti di installazione
+
+VMware High Availability per l'appliance virtuale Unified Manager è supportata.
+
+Se si implementa un datastore NFS su un sistema storage che esegue il software ONTAP, è necessario utilizzare il plug-in NFS per utilizzare il thick provisioning.
+
+Se l'implementazione non riesce utilizzando l'ambiente abilitato per l'alta disponibilità a causa di risorse insufficienti, potrebbe essere necessario modificare le opzioni della macchina virtuale delle funzionalità del cluster disattivando la priorità di riavvio della macchina virtuale e lasciando attiva la risposta di isolamento dell'host.

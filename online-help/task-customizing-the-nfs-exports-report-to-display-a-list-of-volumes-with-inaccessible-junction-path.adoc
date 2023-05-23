@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-nfs-exports-report-to-display-a-list-of-volumes-with-inaccessible-junction-path.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile personalizzare il report delle esportazioni NFS per visualizzare un elenco di volumi con un percorso di giunzione inaccessibile. 
+---
+= Personalizzazione del report delle esportazioni NFS per visualizzare un elenco di volumi con un percorso di giunzione inaccessibile
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report delle esportazioni NFS per visualizzare un elenco di volumi con un percorso di giunzione inaccessibile.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Per rimuovere il raggruppamento per cluster o volume, attenersi alla seguente procedura:
++
+.. Fare clic sulle colonne da rimuovere.
+.. Fare clic su image:../media/click-to-see-menu.gif[""] icona.
+.. Selezionare *Gruppo* > *Elimina gruppo interno*.
+
+
+. Per filtrare i volumi con un percorso di giunzione inaccessibile, fare clic nella colonna *Junction Path Active* (percorso di giunzione attivo) e aprire la finestra di dialogo *Filter* (filtro) facendo clic su image:../media/click-to-filter.gif[""] icona.
+. Dall'elenco *condizione*, selezionare *uguale a*.
+. Fare clic su *Select Values* (Seleziona valori) e selezionare *No*.
+. Fare clic su *OK*.
+

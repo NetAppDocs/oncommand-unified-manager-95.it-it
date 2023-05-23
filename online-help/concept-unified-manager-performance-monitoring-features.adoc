@@ -1,0 +1,27 @@
+---
+permalink: online-help/concept-unified-manager-performance-monitoring-features.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager raccoglie e analizza le statistiche delle performance dai sistemi che eseguono il software ONTAP. Utilizza soglie di performance dinamiche e soglie di performance definite dall"utente per monitorare una varietà di contatori di performance su molti componenti del cluster.' 
+---
+= Funzionalità di monitoraggio delle performance di Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager raccoglie e analizza le statistiche delle performance dai sistemi che eseguono il software ONTAP. Utilizza soglie di performance dinamiche e soglie di performance definite dall'utente per monitorare una varietà di contatori di performance su molti componenti del cluster.
+
+Un tempo di risposta elevato (latenza) indica che le prestazioni dell'oggetto storage, ad esempio un volume, sono più lente del normale. Questo problema indica anche che le performance sono diminuite per le applicazioni client che utilizzano il volume. Unified Manager identifica il componente di storage in cui si trova il problema delle performance e fornisce un elenco di azioni consigliate che è possibile intraprendere per risolvere il problema delle performance.
+
+Unified Manager include le seguenti funzionalità:
+
+* Monitora e analizza le statistiche delle performance dei carichi di lavoro da un sistema che esegue il software ONTAP.
+* Tiene traccia dei contatori delle performance per cluster, nodi, aggregati, porte, SVM, Volumi, LUN, spazi dei nomi NVMe e LIFF.
+* Visualizza grafici dettagliati che illustrano l'attività dei carichi di lavoro nel tempo, inclusi IOPS (operazioni), Mbps (throughput), latenza (tempo di risposta), utilizzo, capacità delle performance e rapporto cache.
+* Consente di creare criteri di soglia delle performance definiti dall'utente che attivano gli eventi e inviano avvisi via email quando le soglie vengono superate.
+* Utilizza soglie definite dal sistema e soglie di performance dinamiche che consentono di conoscere l'attività del carico di lavoro per identificare e avvisare l'utente in caso di problemi di performance.
+* Identifica chiaramente il componente del cluster in conflitto.
+* Identifica i carichi di lavoro che stanno utilizzando in eccesso i componenti del cluster e i carichi di lavoro le cui performance sono influenzate dall'aumento dell'attività.
+

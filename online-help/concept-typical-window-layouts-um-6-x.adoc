@@ -1,0 +1,28 @@
+---
+permalink: online-help/concept-typical-window-layouts-um-6-x.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La comprensione dei layout tipici delle finestre consente di navigare e utilizzare in modo efficace OnCommand Unified Manager. La maggior parte delle finestre di Unified Manager sono simili a uno dei due layout generali: Elenco oggetti o dettagli. L"impostazione di visualizzazione consigliata è di almeno 1280 x 1024 pixel.' 
+---
+= Layout tipici delle finestre
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La comprensione dei layout tipici delle finestre consente di navigare e utilizzare in modo efficace OnCommand Unified Manager. La maggior parte delle finestre di Unified Manager sono simili a uno dei due layout generali: Elenco oggetti o dettagli. L'impostazione di visualizzazione consigliata è di almeno 1280 x 1024 pixel.
+
+Non tutte le finestre contengono tutti gli elementi dei seguenti diagrammi.
+
+
+
+== Layout della finestra dell'elenco oggetti
+
+image::../media/object-list.gif[elenco di oggetti]
+
+
+
+== Layout della finestra Dettagli oggetto
+
+image::../media/object-details.gif[dettagli dell'oggetto]

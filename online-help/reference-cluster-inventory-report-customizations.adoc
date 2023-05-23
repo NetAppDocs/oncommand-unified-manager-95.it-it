@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-cluster-inventory-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile personalizzare i report di inventario per monitorare le risorse insufficienti sui componenti dei cluster. Ad esempio, è possibile personalizzare i report per monitorare informazioni come cluster che si avvicinano al limite di numero di SVM, nodi che eseguono versioni precedenti di ONTAP e nodi che raggiungono il limite massimo di dischi. 
+---
+= Personalizzazioni del Cluster Inventory Report
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare i report di inventario per monitorare le risorse insufficienti sui componenti dei cluster. Ad esempio, è possibile personalizzare i report per monitorare informazioni come cluster che si avvicinano al limite di numero di SVM, nodi che eseguono versioni precedenti di ONTAP e nodi che raggiungono il limite massimo di dischi.

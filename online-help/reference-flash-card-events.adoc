@@ -1,0 +1,33 @@
+---
+permalink: online-help/reference-flash-card-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi della scheda flash forniscono informazioni sullo stato delle schede flash installate nei nodi del data center, in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all"area di impatto e includono il nome dell"evento e della trap, il livello di impatto, il tipo di origine e la severità.' 
+---
+= Eventi della scheda flash
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi della scheda flash forniscono informazioni sullo stato delle schede flash installate nei nodi del data center, in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all'area di impatto e includono il nome dell'evento e della trap, il livello di impatto, il tipo di origine e la severità.
+
+
+
+== Area di impatto: Disponibilità
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Flash Card offline (ocumEvtFlashCardOffline)
+ a| 
+Incidente
+ a| 
+Nodo
+ a| 
+Critico
+
+|===

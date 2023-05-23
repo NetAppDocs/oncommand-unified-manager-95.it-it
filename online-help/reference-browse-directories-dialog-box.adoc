@@ -1,0 +1,54 @@
+---
+permalink: online-help/reference-browse-directories-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare la finestra di dialogo Sfoglia directory per ripristinare i dati in una directory di un cluster e in una SVM diversa dall"origine originale. Il cluster e il volume di origine originali vengono selezionati per impostazione predefinita.' 
+---
+= Finestra di dialogo Sfoglia directory
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la finestra di dialogo Sfoglia directory per ripristinare i dati in una directory di un cluster e in una SVM diversa dall'origine originale. Il cluster e il volume di origine originali vengono selezionati per impostazione predefinita.
+
+La finestra di dialogo Sfoglia directory consente di selezionare il cluster, la SVM, il volume e il percorso della directory in cui si desidera ripristinare i dati.
+
+* *Cluster*
++
+Elenca le destinazioni cluster disponibili per il ripristino. Per impostazione predefinita, viene selezionato il cluster del volume di origine originale.
+
+* *Elenco a discesa SVM*
++
+Elenca le SVM disponibili per il cluster selezionato. Per impostazione predefinita, viene selezionata la SVM del volume di origine originale.
+
+* *Volume*
++
+Elenca tutti i volumi di lettura/scrittura in una SVM selezionata. È possibile filtrare i volumi in base al nome e allo spazio disponibile. Il volume con più spazio viene elencato per primo, e così via, in ordine decrescente. Per impostazione predefinita, viene selezionato il volume di origine originale.
+
+* *Casella di testo percorso file*
++
+Consente di digitare il percorso del file in cui si desidera ripristinare i dati. Il percorso immesso deve già esistere.
+
+* *Nome*
++
+Visualizza i nomi delle cartelle disponibili per il volume selezionato. Se si fa clic su una cartella nell'elenco Nome, vengono visualizzate le eventuali sottocartelle. I file contenuti nelle cartelle non vengono visualizzati. Fare clic su image:../media/icon-upfolder.gif[""] una volta selezionata, una cartella si sposta verso l'alto di un livello nella struttura di directory.
+
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti operazioni:
+
+* *Selezionare la directory*
++
+Applica le selezioni e chiude la finestra di dialogo Sfoglia directory. Se non è selezionata alcuna directory, questo pulsante è disattivato.
+
+* *Annulla*
++
+Elimina le selezioni e chiude la finestra di dialogo Sfoglia directory.
+
+

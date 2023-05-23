@@ -1,0 +1,193 @@
+---
+permalink: online-help/reference-management-annotations-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Management/Annotations (Gestione/Annotazioni) consente di creare annotazioni in Unified Manager che possono essere utilizzate per annotare gli oggetti di storage oppure è possibile modificare o eliminare le annotazioni. È possibile annotare manualmente gli oggetti di storage con una coppia annotation=value o configurare le regole di annotazione. Gli oggetti di storage vengono annotati dinamicamente in base all"annotazione applicata.' 
+---
+= Pagina Gestione/Annotazioni
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Management/Annotations (Gestione/Annotazioni) consente di creare annotazioni in Unified Manager che possono essere utilizzate per annotare gli oggetti di storage oppure è possibile modificare o eliminare le annotazioni. È possibile annotare manualmente gli oggetti di storage con una coppia annotation=value o configurare le regole di annotazione. Gli oggetti di storage vengono annotati dinamicamente in base all'annotazione applicata.
+
+Quando si effettua l'accesso come operatore, si avrà accesso solo in lettura alla pagina. È possibile accedere ai pulsanti di aggiunta, modifica o eliminazione di ciascuna scheda quando si effettua l'accesso come amministratore dello storage o amministratore di Unified Manager.
+
+
+
+== Scheda Annotazioni
+
+La scheda Annotazioni consente di visualizzare, creare, modificare o eliminare le annotazioni in Unified Manager.
+
+* *Elenco delle annotazioni*
++
+Visualizza i nomi delle annotazioni predefinite e personalizzate. Viene visualizzato anche il conteggio dei valori di annotazione associati a ciascuna annotazione. È possibile fare clic sul nome dell'annotazione per visualizzare i dettagli dell'annotazione.
+
+
+
+
+
+== Area di riepilogo
+
+È possibile visualizzare i seguenti dettagli dell'annotazione selezionata:
+
+* *Descrizione*
++
+Visualizza la descrizione fornita per l'annotazione.
+
+* *Creato da*
++
+Visualizza il nome dell'utente che ha creato l'annotazione.
+
+* *Data di creazione*
++
+Visualizza la data in cui è stata creata l'annotazione.
+
+
+
+
+
+== Annotation=coppie di valori
+
+Visualizza l'elenco delle coppie valore-annotazione e degli oggetti di storage associati disponibili per l'annotazione selezionata.
+
+* *Valore*
++
+Visualizza il nome della coppia annotation=valore.
+
+* *Clusters applicabili*
++
+Visualizza il numero di cluster annotati con una particolare coppia annotation=value. È possibile fare clic sul numero per visualizzare la pagina dei cluster, che visualizza un elenco filtrato dei cluster associati a un valore specifico.
+
+* *SVM (Storage Virtual Machine) applicabili*
++
+Visualizza il numero di macchine virtuali storage (SVM) annotate con una particolare coppia annotation=valore. È possibile fare clic sul numero per visualizzare la pagina SVM (Storage Virtual Machine), che visualizza un elenco filtrato di SVM (Storage Virtual Machine) associate a un valore specifico.
+
+* *Volumi applicabili*
++
+Visualizza il numero di volumi annotati con una particolare coppia annotation=value. È possibile fare clic sul numero per visualizzare la pagina Volumes (volumi), che visualizza un elenco filtrato dei volumi associati a un valore specifico.
+
+
+
+
+
+== Associazioni di oggetti tramite regole
+
+Visualizza l'elenco delle regole di annotazione e gli oggetti di memorizzazione associati per l'annotazione selezionata.
+
+* *Classifica*
++
+Visualizza l'ordine delle regole di annotazione da applicare agli oggetti di storage.
+
+* *Regole*
++
+Visualizza il nome della regola di annotazione.
+
+* *Tipo di oggetto di destinazione*
++
+Visualizza il tipo di oggetto di storage a cui viene applicata la regola di annotazione.
+
+* *Valore di annotazione associato*
++
+Visualizza la coppia annotation=valore applicata all'oggetto di storage.
+
+* *Oggetti applicabili*
++
+Visualizza il numero di oggetti di storage annotati in base alla regola di annotazione.
+
+
+
+
+
+== Associazioni di oggetti manuali
+
+Visualizza l'elenco delle annotazioni configurate manualmente e associate agli oggetti di storage.
+
+* *Annotation=coppia di valori*
++
+Visualizza il nome dell'annotazione manuale e il valore.
+
+* *Clusters applicabili*
++
+Visualizza il numero di cluster annotati con un particolare valore di annotazione manuale. È possibile fare clic sul numero per visualizzare la pagina dei cluster, che visualizza un elenco filtrato dei cluster associati a un valore specifico.
+
+* *SVM (Storage Virtual Machine) applicabili*
++
+Visualizza il numero di macchine virtuali storage (SVM) annotate con un particolare valore di annotazione manuale. È possibile fare clic sul numero per visualizzare la pagina SVM (Storage Virtual Machine), che visualizza un elenco filtrato di SVM (Storage Virtual Machine) associate a un valore specifico.
+
+* *Volumi applicabili*
++
+Visualizza il numero di volumi annotati con un particolare valore di annotazione manuale. È possibile fare clic sul numero per visualizzare la pagina Volumes (volumi), che visualizza un elenco filtrato dei volumi associati a un valore specifico.
+
+
+
+
+
+== Pulsanti di comando
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand. Per le annotazioni predefinite, non è possibile aggiungere o eliminare valori.
+
+* *Aggiungi annotazione*
++
+Apre la finestra di dialogo Add Annotation (Aggiungi annotazione), che consente di creare nuove annotazioni personalizzate e assegnare valori all'annotazione.
+
+* *Azioni*
++
+Consente di modificare o eliminare la descrizione dell'annotazione selezionata.
+
+* *Modifica*
++
+Apre la finestra di dialogo Edit Annotation (Modifica annotazione), che consente di modificare il nome e la descrizione dell'annotazione.
+
+* *Elimina*
++
+Consente di eliminare il valore dell'annotazione. È possibile eliminare il valore solo quando non è associato a regole di annotazione o di gruppo.
+
+
+
+
+
+== Scheda Annotation Rules
+
+La scheda Annotations Rules (regole annotazioni) visualizza le regole di annotazione create per annotare gli oggetti di archiviazione. È possibile eseguire attività come l'aggiunta, la modifica, l'eliminazione o il riordinamento di una regola di annotazione. È inoltre possibile visualizzare il numero di oggetti di storage che soddisfano la regola di annotazione.
+
+
+
+== Pulsanti di comando
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+* *Aggiungi*
++
+Visualizza la finestra di dialogo Add Annotation Rule (Aggiungi regola annotazione), che consente di creare regole di annotazione per gli oggetti di storage.
+
+* *Modifica*
++
+Visualizza la finestra di dialogo Edit Annotation Rule (Modifica regola annotazione), che consente di riconfigurare le regole di annotazione precedentemente configurate.
+
+* *Elimina*
++
+Elimina le regole di annotazione selezionate.
+
+* *Riordina*
++
+Visualizza la finestra di dialogo Riordina regola annotazione, che consente di riorganizzare l'ordine delle regole di annotazione.
+
+
+
+
+
+== Vista elenco
+
+La vista elenco visualizza, in formato tabulare, le regole di annotazione create nel server Unified Manager. È possibile utilizzare i filtri di colonna per personalizzare i dati visualizzati. La vista elenco della scheda Annotation Rules (regole annotazione) e la vista elenco della sezione Associated Rules (regole associate) nella scheda Annotation (Annotazione) contengono le seguenti colonne:
+
+* Classifica
+* Nome
+* Tipo di oggetto di destinazione
+* Valore di annotazione associato
+* Oggetti applicabili
+
+
+Viene visualizzata un'ulteriore colonna per la scheda Annotation Rules (regole di annotazione), Associated Annotation (Annotazione associata), che visualizza il nome dell'annotazione applicata all'oggetto di archiviazione.

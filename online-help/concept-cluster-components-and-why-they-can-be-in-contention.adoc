@@ -1,0 +1,58 @@
+---
+permalink: online-help/concept-cluster-components-and-why-they-can-be-in-contention.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile identificare i problemi di performance del cluster quando un componente del cluster entra in conflitto. Le performance dei carichi di lavoro dei volumi che utilizzano il componente rallentano e il loro tempo di risposta (latenza) per le richieste dei client aumenta, il che attiva un evento in Unified Manager.' 
+---
+= Componenti del cluster e perché possono essere in conflitto
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile identificare i problemi di performance del cluster quando un componente del cluster entra in conflitto. Le performance dei carichi di lavoro dei volumi che utilizzano il componente rallentano e il loro tempo di risposta (latenza) per le richieste dei client aumenta, il che attiva un evento in Unified Manager.
+
+Un componente in conflitto non può funzionare a un livello ottimale. Le sue performance sono diminuite e le performance di altri componenti e carichi di lavoro del cluster, denominati _vittime_, potrebbero avere una maggiore latenza. Per eliminare un componente dai conflitti, è necessario ridurre il carico di lavoro o aumentare la capacità di gestire più lavoro, in modo che le performance possano tornare ai livelli normali. Poiché Unified Manager raccoglie e analizza le performance dei carichi di lavoro in intervalli di cinque minuti, rileva solo quando un componente del cluster viene costantemente utilizzato in eccesso. I picchi transitori di utilizzo eccessivo che durano solo per una breve durata nell'intervallo di cinque minuti non vengono rilevati.
+
+Ad esempio, un aggregato di storage potrebbe essere in conflitto perché uno o più carichi di lavoro su di esso sono in competizione per soddisfare le richieste di i/O. Altri carichi di lavoro sull'aggregato possono risentirne, causando una diminuzione delle performance. Per ridurre la quantità di attività sull'aggregato, è possibile eseguire diverse operazioni, ad esempio lo spostamento di uno o più carichi di lavoro in un aggregato meno occupato, per ridurre la domanda complessiva del carico di lavoro sull'aggregato corrente. Per un gruppo di policy QoS, è possibile regolare il limite di throughput o spostare i carichi di lavoro in un gruppo di policy diverso, in modo che i carichi di lavoro non vengano più rallentati.
+
+Unified Manager monitora i seguenti componenti del cluster per avvisare l'utente quando si trovano in conflitto:
+
+* *Rete*
++
+Rappresenta il tempo di attesa delle richieste di i/o da parte dei protocolli iSCSI o Fibre Channel (FC) sul cluster. Il tempo di attesa è il tempo trascorso in attesa del completamento delle transazioni iSCSI Ready to Transfer (R2T) o FCP Transfer Ready (XFER_RDY) prima che il cluster possa rispondere a una richiesta di i/O. Se il componente di rete è in conflitto, significa che il tempo di attesa elevato a livello di protocollo a blocchi influisce sulla latenza di uno o più carichi di lavoro.
+
+* *Elaborazione di rete*
++
+Rappresenta il componente software del cluster coinvolto nell'elaborazione i/o tra il livello di protocollo e il cluster. Il nodo che gestisce l'elaborazione di rete potrebbe essere cambiato da quando è stato rilevato l'evento. Se il componente di elaborazione di rete è in conflitto, significa che un utilizzo elevato nel nodo di elaborazione di rete influisce sulla latenza di uno o più carichi di lavoro.
+
+* *Policy QoS*
++
+Rappresenta il gruppo di criteri QoS (Quality of Service) dello storage di cui fa parte il carico di lavoro. Se il componente del gruppo di policy è in conflitto, significa che tutti i carichi di lavoro nel gruppo di policy vengono rallentati dal limite di throughput impostato, il che influisce sulla latenza di uno o più di tali carichi di lavoro.
+
+* *Interconnessione cluster*
++
+Rappresenta i cavi e gli adattatori con cui i nodi in cluster sono fisicamente connessi. Se il componente di interconnessione del cluster è in conflitto, significa che l'elevato tempo di attesa per le richieste di i/o dell'interconnessione del cluster influisce sulla latenza di uno o più carichi di lavoro.
+
+* *Elaborazione dei dati*
++
+Rappresenta il componente software del cluster coinvolto nell'elaborazione i/o tra il cluster e l'aggregato di storage che contiene il carico di lavoro. Il nodo che gestisce l'elaborazione dei dati potrebbe essere cambiato da quando è stato rilevato l'evento. Se il componente di elaborazione dei dati è in conflitto, significa che un utilizzo elevato nel nodo di elaborazione dei dati influisce sulla latenza di uno o più carichi di lavoro.
+
+* *Risorse MetroCluster*
++
+Rappresenta le risorse MetroCluster, tra cui NVRAM e ISL (Interswitch link), utilizzate per eseguire il mirroring dei dati tra cluster in una configurazione MetroCluster. Se il componente MetroCluster è in conflitto, significa che un elevato throughput di scrittura dai carichi di lavoro sul cluster locale o un problema di integrità del collegamento sta influenzando la latenza di uno o più carichi di lavoro sul cluster locale. Se il cluster non si trova in una configurazione MetroCluster, questa icona non viene visualizzata.
+
+* *Operazioni aggregate o aggregate SSD*
++
+Rappresenta l'aggregato di storage su cui vengono eseguiti i carichi di lavoro. Se il componente aggregato è in conflitto, significa che un utilizzo elevato dell'aggregato influisce sulla latenza di uno o più carichi di lavoro. Un aggregato è costituito da tutti gli HDD o da una combinazione di HDD e SSD (un aggregato di Flash Pool). Un "`Saggregato SD`" è costituito da tutti gli SSD (un aggregato all-flash) o da una combinazione di SSD e un Tier cloud (un aggregato FabricPool).
+
+* *Latenza cloud*
++
+Rappresenta il componente software del cluster coinvolto nell'elaborazione i/o tra il cluster e il livello cloud in cui vengono memorizzati i dati dell'utente. Se il componente di latenza del cloud è in conflitto, significa che una grande quantità di letture da volumi ospitati sul Tier cloud influisce sulla latenza di uno o più carichi di lavoro.
+
+* *Sync SnapMirror*
++
+Rappresenta il componente software del cluster coinvolto nella replica dei dati utente dal volume primario al volume secondario in una relazione sincrona di SnapMirror. Se il componente Sync SnapMirror è in conflitto, significa che l'attività delle operazioni di SnapMirror Synchronous influisce sulla latenza di uno o più carichi di lavoro.
+
+

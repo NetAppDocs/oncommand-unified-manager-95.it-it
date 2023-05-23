@@ -1,0 +1,90 @@
+---
+permalink: online-help/reference-capacity-all-clusters-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Health/Clusters Storage Summary consente di visualizzare informazioni riepilogative sulla capacità e sull"utilizzo dello storage in tutti i cluster. Queste informazioni ti aiutano a comprendere i possibili rischi di capacità e a intraprendere le azioni appropriate per ribilanciare i carichi di lavoro.' 
+---
+= Pagina di riepilogo dello storage di Health/Clusters
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Health/Clusters Storage Summary consente di visualizzare informazioni riepilogative sulla capacità e sull'utilizzo dello storage in tutti i cluster. Queste informazioni ti aiutano a comprendere i possibili rischi di capacità e a intraprendere le azioni appropriate per ribilanciare i carichi di lavoro.
+
+Utilizzare il pulsante *Export* per esportare i dettagli di tutti i cluster monitorati in valori separati da virgole (`.csv`).
+
+* *Cluster*
++
+Il nome del cluster.
+
+* *Coppia ha*
++
+Il valore di coppia ha ottenuto formando due nodi.
+
+* *Modello/famiglia*
++
+Il nome del modello o della famiglia del cluster.
+
+* *Versione del sistema operativo*
++
+La versione di ONTAP installata nel sistema.
+
+* *Capacità raw totale*
++
+Visualizza la capacità fisica totale di tutti i dischi dell'array.
+
+* *Capacità raw non configurata*
++
+Capacità non configurata dei dischi il cui tipo di container è diverso da aggregato, rotto, spare o condiviso. Questa capacità è sempre superiore alla capacità fisica del disco in ONTAP. Ad esempio, si consideri un disco da 2 TB. La capacità fisica del disco è di 1.6 TB in ONTAP, mentre la capacità raw non configurata in Unified Manager è di 1.8 TB.
+
+* *Capacità totale aggregata*
++
+La dimensione totale degli aggregati disponibili per l'utente. Ciò include la riserva di copia Snapshot.
+
+* *Capacità aggregata utilizzata*
++
+La capacità già in uso sugli aggregati. Ciò include la capacità consumata da volumi, LUN e altre spese generali per l'efficienza dello storage.
+
+* *Capacità non utilizzata aggregata*
++
+La capacità che potrebbe essere disponibile per l'archiviazione di dati aggiuntivi sull'aggregato. Ciò include la riserva di copia Snapshot.
+
+* *Capacità LUN allocata*
++
+La capacità delle LUN mappate.
+
+* *Capacità LUN non allocata*
++
+Capacità di tutti i LUN non mappati all'host.
+
+* *Capacità totale del volume*
++
+La capacità totale dei volumi (utilizzati più inutilizzati).
+
+* *Capacità volume utilizzata*
++
+La capacità utilizzata dei volumi.
+
+* *Capacità inutilizzata del volume*
++
+La capacità inutilizzata dei volumi.
+
+* *Capacità di protezione del volume*
++
+Capacità dei volumi con SnapMirror e SnapVault attivati.
+
+* *Cluster Licensed Cloud Tier Total*
++
+La capacità totale concessa in licenza nel Tier cloud. Questo campo viene visualizzato per i provider di storage che richiedono una licenza FabricPool, ad esempio Amazon S3, Microsoft Azure Cloud, IBM Cloud Object Storage o Alibaba Cloud Object Storage.
+
+* *Cluster Licensed Cloud Tier used*
++
+Lo spazio utilizzato dai dati nel Tier cloud per i provider di storage che richiedono una licenza FabricPool.
+
+* *Capacità StorageGRID del cluster utilizzata*
++
+Lo spazio utilizzato dai dati nel livello cloud per i provider di storage che non richiedono una licenza FabricPool, ad esempio StorageGRID.
+
+

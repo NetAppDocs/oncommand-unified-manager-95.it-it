@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-regenerate-https-certificate-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: La finestra di dialogo Rigenera certificato HTTPS consente di personalizzare le informazioni di protezione e generare un nuovo certificato HTTPS con tali informazioni. 
+---
+= Finestra di dialogo Rigenera certificato HTTPS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La finestra di dialogo Rigenera certificato HTTPS consente di personalizzare le informazioni di protezione e generare un nuovo certificato HTTPS con tali informazioni.
+
+In questa pagina vengono visualizzate le informazioni sul certificato corrente.
+
+La selezione "`Regenerate using Current Certificate Attributes`" e "`Update the Current Certificate Attributes`" consente di rigenerare il certificato con le informazioni correnti o di generare un certificato con nuove informazioni.
+
+* *Nome comune*
++
+Obbligatorio. Il nome di dominio completo (FQDN) che si desidera proteggere.
+
++
+Nelle configurazioni ad alta disponibilità di Unified Manager, utilizzare l'indirizzo IP virtuale.
+
+* *E-mail*
++
+Opzionale. Un indirizzo e-mail per contattare l'organizzazione, in genere l'indirizzo e-mail dell'amministratore dei certificati o del reparto IT.
+
+* *Azienda*
++
+Opzionale. In genere, il nome della società.
+
+* *Reparto*
++
+Opzionale. Il nome del reparto della società.
+
+* *Città*
++
+Opzionale. La località della tua azienda.
+
+* *Stato*
++
+Opzionale. L'ubicazione dello stato o della provincia, non abbreviata, dell'azienda.
+
+* *Paese*
++
+Opzionale. L'ubicazione del paese dell'azienda. Si tratta in genere di un codice ISO di due lettere del paese.
+
+* *Nomi alternativi*
++
+Obbligatorio. Nomi di dominio aggiuntivi non primari che possono essere utilizzati per accedere a questo server oltre all'host locale o ad altri indirizzi di rete esistenti. Separare ciascun nome alternativo con una virgola.
+
++
+Selezionare la casella di controllo "`Exclude local identifying information (e.g. localhost)`" (Escludi informazioni di identificazione locale) se si desidera rimuovere le informazioni di identificazione locale dal campo dei nomi alternativi nel certificato. Quando questa casella di controllo è selezionata, solo i dati immessi nel campo vengono utilizzati nel campo nomi alternativi. Se lasciato vuoto, il certificato risultante non avrà alcun campo di nomi alternativi.
+
+

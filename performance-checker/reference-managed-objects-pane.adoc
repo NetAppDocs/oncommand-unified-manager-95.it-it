@@ -1,0 +1,50 @@
+---
+permalink: performance-checker/reference-managed-objects-pane.html 
+sidebar: sidebar 
+keywords:  
+summary: Il riquadro Managed Objects della scheda Performance Summary fornisce una panoramica di primo livello dei tipi di oggetti di storage e dei conteggi per il cluster. Questo riquadro consente di tenere traccia dello stato degli oggetti in ciascun cluster. 
+---
+= Pannello Managed Objects (oggetti gestiti)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il riquadro Managed Objects della scheda Performance Summary fornisce una panoramica di primo livello dei tipi di oggetti di storage e dei conteggi per il cluster. Questo riquadro consente di tenere traccia dello stato degli oggetti in ciascun cluster.
+
+Il numero di oggetti gestiti è dato point-in-time dell'ultimo periodo di raccolta. I nuovi oggetti vengono rilevati a intervalli di 15 minuti.
+
+Facendo clic sul numero collegato per qualsiasi tipo di oggetto viene visualizzata la pagina di inventario delle performance degli oggetti per quel tipo di oggetto. La pagina dell'inventario degli oggetti viene filtrata per visualizzare solo gli oggetti di questo cluster.
+
+Gli oggetti gestiti sono:
+
+* *Nodi*
++
+Un sistema fisico in un cluster.
+
+* *Aggregati*
++
+Un set di più gruppi RAID (Redundant Array of Independent Disks) che possono essere gestiti come una singola unità per la protezione e il provisioning.
+
+* *Porte*
++
+Punto di connessione fisico sui nodi utilizzato per la connessione ad altri dispositivi in una rete.
+
+* *SVM*
++
+Una macchina virtuale che fornisce l'accesso alla rete attraverso indirizzi di rete univoci. Una SVM potrebbe servire i dati da uno spazio dei nomi distinto ed è amministrabile separatamente dal resto del cluster.
+
+* *Volumi*
++
+Entità logica che contiene dati utente accessibili attraverso uno o più protocolli di accesso supportati. Il conteggio include sia volumi FlexVol che volumi FlexGroup; non include FlexGroup costituenti o volumi Infinite.
+
+* *LUN*
++
+L'identificatore di un'unità logica Fibre Channel (FC) o di un'unità logica iSCSI. Un'unità logica corrisponde in genere a un volume di storage ed è rappresentata all'interno di un sistema operativo del computer come dispositivo.
+
+* *LIF*
++
+Interfaccia di rete logica che rappresenta un access point di rete per un nodo. Il conteggio include tutti i tipi di LIF.
+
+

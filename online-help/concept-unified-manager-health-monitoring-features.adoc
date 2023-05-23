@@ -1,0 +1,54 @@
+---
+permalink: online-help/concept-unified-manager-health-monitoring-features.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager si basa su un"infrastruttura server che offre scalabilità, supportabilità e funzionalità avanzate di monitoraggio e notifica. Unified Manager supporta il monitoraggio dei sistemi che eseguono il software ONTAP.' 
+---
+= Funzionalità di monitoraggio dello stato di Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager si basa su un'infrastruttura server che offre scalabilità, supportabilità e funzionalità avanzate di monitoraggio e notifica. Unified Manager supporta il monitoraggio dei sistemi che eseguono il software ONTAP.
+
+Unified Manager include le seguenti funzionalità:
+
+* Rilevamento, monitoraggio e notifiche per i sistemi installati con il software ONTAP:
++
+** Oggetti fisici: Nodi, dischi, shelf di dischi, coppie SFO, porte, E Flash cache
+** Oggetti logici: Cluster, storage virtual machine (SVM), aggregati, volumi, LUN, namespace, Qtree, LIF, copie Snapshot, percorsi di giunzione, esportazioni NFS, Condivisioni CIFS, quote di utenti e gruppi e gruppi di iniziatori
+** Protocolli: CIFS, NFS, FC, iSCSI, NVMe, E FCoE
+** Efficienza dello storage: Aggregati di SSD, aggregati di Flash Pool, aggregati di FabricPool, deduplica e compressione
+** Protezione: Relazioni SnapMirror (sincrone e asincrone) e relazioni SnapVault
+
+
+* Visualizzazione dello stato di rilevamento e monitoraggio del cluster
+* Configurazione MetroCluster: Visualizzazione e monitoraggio della configurazione, degli switch e dei bridge MetroCluster, problemi e stato di connettività dei componenti del cluster
+* Miglioramento dell'infrastruttura di avvisi, eventi e soglie
+* LDAP, LDAPS, autenticazione SAML e supporto utente locale
+* RBAC (per un set predefinito di ruoli)
+* AutoSupport e bundle di supporto
+* Dashboard migliorato per mostrare capacità, disponibilità, protezione e performance dell'ambiente
+* Interoperabilità dello spostamento del volume, cronologia dello spostamento del volume e cronologia delle modifiche del percorso di giunzione
+* Area di impatto che visualizza graficamente le risorse interessate da eventi come alcuni dischi non riusciti, mirroring aggregato MetroCluster degradato e dischi di riserva MetroCluster lasciati indietro
+* Possibile area di effetto che visualizza l'effetto degli eventi MetroCluster
+* Area azioni correttive consigliate che visualizza le azioni che possono essere eseguite per affrontare eventi come alcuni dischi non riusciti, mirroring aggregato MetroCluster degradato e dischi di riserva MetroCluster lasciati indietro
+* Area delle risorse che potrebbero essere interessate da questo problema che visualizza le risorse che potrebbero essere interessate da eventi come l'evento Volume Offline, l'evento Volume Restricted e l'evento Thin-Provised Volume Space at Risk
+* Supporto per SVM con:
++
+** Volumi FlexVol
+** Volumi FlexGroup
+** Volumi infiniti
+
+
+* Supporto per il monitoraggio dei volumi root dei nodi
+* Monitoraggio avanzato delle copie Snapshot, incluso il calcolo dello spazio recuperabile e l'eliminazione delle copie Snapshot
+* Annotazioni per gli oggetti di storage
+* Creazione di report e gestione di informazioni sugli oggetti storage, ad esempio capacità fisica e logica, utilizzo, risparmi di spazio ed eventi correlati
+* Integrazione con OnCommand Workflow Automation per l'esecuzione dei flussi di lavoro
++
+Il negozio di automazione dello storage contiene pacchetti di workflow automatizzati per lo storage certificati da NetApp sviluppati per l'utilizzo con OnCommand Workflow Automation (WFA). È possibile scaricare i pacchetti e importarli in WFA per eseguirli. I flussi di lavoro automatizzati sono disponibili all'indirizzo seguente link:https://automationstore.netapp.com["Storage Automation Store"]
+
+

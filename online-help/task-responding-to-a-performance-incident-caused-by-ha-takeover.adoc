@@ -1,0 +1,74 @@
+---
+permalink: online-help/task-responding-to-a-performance-incident-caused-by-ha-takeover.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare Unified Manager per analizzare un evento di performance causato dall"elaborazione di dati elevati su un nodo del cluster che si trova in una coppia ad alta disponibilità. È inoltre possibile utilizzare Unified Manager per controllare lo stato dei nodi e verificare se eventuali eventi di salute recenti rilevati sui nodi hanno contribuito all"evento delle performance.' 
+---
+= Risposta a un evento di performance dinamico causato da ha Takeover
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare Unified Manager per analizzare un evento di performance causato dall'elaborazione di dati elevati su un nodo del cluster che si trova in una coppia ad alta disponibilità (ha). È inoltre possibile utilizzare Unified Manager per controllare lo stato dei nodi e verificare se eventuali eventi di salute recenti rilevati sui nodi hanno contribuito all'evento delle performance.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+* Devono esserci eventi di performance nuovi, riconosciuti o obsoleti.
+
+
+
+
+== Fasi
+
+. Visualizzare la pagina *Dettagli evento* per visualizzare le informazioni relative all'evento.
+. Leggi la *Descrizione*, che descrive i carichi di lavoro coinvolti nell'evento e il componente del cluster in conflitto.
++
+Esiste un volume vittima la cui latenza è stata influenzata dal componente del cluster in conflitto. Il nodo di elaborazione dati, che ha preso il controllo di tutti i carichi di lavoro dal nodo partner, è la componente del cluster in conflitto. In Component in Contention (componente in conflitto), l'icona Data Processing (elaborazione dati) è evidenziata in rosso e il nome del nodo che stava gestendo l'elaborazione dei dati al momento dell'evento viene visualizzato tra parentesi.
+
+. Nel campo *Descrizione*, fare clic sul nome del volume della vittima.
++
+Viene visualizzata la pagina Performance/Volume Details (Dettagli performance/volume). Nella parte inferiore della pagina, nella barra degli orari degli eventi, un'icona di modifica dell'evento (image:../media/opm-change-icon.gif["Icona di modifica dell'evento"]) Indica l'ora in cui Unified Manager ha rilevato l'inizio del Takeover ha.
+
+. Puntare il cursore sull'icona dell'evento di modifica per il Takeover ha.
++
+I dettagli relativi al Takeover ha vengono visualizzati nella tabella elenco eventi. Nel grafico della latenza, un evento indica che il volume selezionato ha superato la soglia di performance a causa di un'elevata latenza circa nello stesso tempo del takeover ha.
+
+. Selezionare *Interrompi dati per*.
+. In *latenza*, selezionare ***componenti del cluster***.
+. Fare clic su *Invia*.
++
+Viene visualizzato il grafico dei componenti del cluster. Il grafico suddivide la latenza totale per componente del cluster.
+
+. Nella parte inferiore della pagina, puntare il cursore del mouse sull'icona di modifica dell'evento per l'inizio del takeover ha.
+. Nel grafico *Cluster Components*, confronta la latenza per l'elaborazione dei dati con la latenza totale nel grafico *latenza*.
++
+All'epoca del takeover di ha, si è verificato un picco nell'elaborazione dei dati dovuto all'aumento della domanda di workload sul nodo di elaborazione dei dati. L'aumento dell'utilizzo della CPU ha aumentato la latenza e attivato l'evento.
+
+. Dopo aver corretto il nodo guasto, utilizzare Gestione sistema OnCommand per eseguire un giveback ha, che sposta i carichi di lavoro dal nodo partner al nodo fisso.
+. Una volta completato il giveback ha, in Unified Manager, cercare l'ID evento registrato nella fase 2.
++
+L'evento attivato dal takeover ha viene visualizzato nella pagina Dettagli evento. L'evento ha ora uno stato obsoleto, che indica che l'evento è stato risolto.
+
+. Nel campo *Descrizione*, fare clic sul nome del volume della vittima.
++
+Viene visualizzata la pagina Performance/Volume Details (Dettagli performance/volume). Nella parte inferiore della pagina, nella barra degli orari degli eventi, un'icona di modifica dell'evento indica l'ora in cui Unified Manager ha rilevato il completamento del giveback ha.
+
+. Selezionare *Interrompi dati per*.
+. In *latenza*, selezionare ***componenti del cluster***.
++
+Viene visualizzato il grafico dei componenti del cluster.
+
+. Nella parte inferiore della pagina, puntare il cursore sull'icona di modifica dell'evento per il giveback ha.
++
+L'evento di modifica viene evidenziato nella tabella elenco eventi e indica che il giveback ha è stato completato correttamente.
+
+. Nel grafico *Cluster Components*, confronta la latenza per l'elaborazione dei dati con la latenza totale nel grafico *latenza*.
++
+La latenza nel componente di elaborazione dei dati è diminuita, il che ha ridotto la latenza totale. Il nodo utilizzato dal volume selezionato per l'elaborazione dei dati ha risolto l'evento.
+
+

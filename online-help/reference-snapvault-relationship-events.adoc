@@ -1,0 +1,99 @@
+---
+permalink: online-help/reference-snapvault-relationship-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi di relazione SnapVault forniscono informazioni sullo stato delle relazioni SnapVault in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all"area di impatto e includono il nome dell"evento e della trap, il livello di impatto, il tipo di origine e la severità.' 
+---
+= Eventi di relazione SnapVault
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi di relazione SnapVault forniscono informazioni sullo stato delle relazioni SnapVault in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all'area di impatto e includono il nome dell'evento e della trap, il livello di impatto, il tipo di origine e la severità.
+
+
+
+== Area di impatto: Protezione
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Vault asincrono non integro(ocumEvtSnapVaultRelationshipUnintegro)
+ a| 
+Rischio
+ a| 
+Relazione di SnapMirror
+ a| 
+Attenzione
+
+
+
+ a| 
+Vault asincrono interrotto(ocumEvtSnapVaultRelationshipStateBrokenoff)
+ a| 
+Rischio
+ a| 
+Relazione di SnapMirror
+ a| 
+Errore
+
+
+
+ a| 
+Inizializzazione asincrona del vault non riuscita (ocumEvtSnapVaultRelationshipInitializeFailed)
+ a| 
+Rischio
+ a| 
+Relazione di SnapMirror
+ a| 
+Errore
+
+
+
+ a| 
+Aggiornamento asincrono del vault non riuscito (ocumEvtSnapVaultRelationshipUpdateFailed)
+ a| 
+Rischio
+ a| 
+Relazione di SnapMirror
+ a| 
+Errore
+
+
+
+ a| 
+Errore di ritardo del vault asincrono (ocumEvtSnapVaultRelationshipLagError)
+ a| 
+Rischio
+ a| 
+Relazione di SnapMirror
+ a| 
+Errore
+
+
+
+ a| 
+Asincrono Vault Lag Warning(ocumEvtSnapVaultRelationshipLagWarning)
+ a| 
+Rischio
+ a| 
+Relazione di SnapMirror
+ a| 
+Attenzione
+
+
+
+ a| 
+Risincronizzazione asincrona del vault non riuscita (ocumEvtSnapvaultRelationshipResyncFailed)
+ a| 
+Rischio
+ a| 
+Relazione di SnapMirror
+ a| 
+Errore
+
+|===

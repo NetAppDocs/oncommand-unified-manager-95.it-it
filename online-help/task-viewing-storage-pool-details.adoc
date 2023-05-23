@@ -1,0 +1,45 @@
+---
+permalink: online-help/task-viewing-storage-pool-details.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile visualizzare i dettagli del pool di storage per monitorare lo stato del pool di storage, la cache totale e disponibile e le allocazioni utilizzate e disponibili. 
+---
+= Visualizzazione dei dettagli del pool di storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile visualizzare i dettagli del pool di storage per monitorare lo stato del pool di storage, la cache totale e disponibile e le allocazioni utilizzate e disponibili.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Health* > *aggregates*.
+. Fare clic su un nome aggregato.
++
+Vengono visualizzati i dettagli dell'aggregato selezionato.
+
+. Fare clic sulla scheda *Disk Information* (informazioni disco).
++
+Vengono visualizzate informazioni dettagliate sul disco.
+
++
+[NOTE]
+====
+La tabella cache viene visualizzata solo quando l'aggregato selezionato utilizza un pool di storage.
+
+====
+. Nella tabella cache, spostare il puntatore sul nome del pool di storage richiesto.
++
+Vengono visualizzati i dettagli del pool di storage.
+
+

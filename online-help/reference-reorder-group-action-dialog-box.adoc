@@ -1,0 +1,34 @@
+---
+permalink: online-help/reference-reorder-group-action-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare la finestra di dialogo Riordina azioni gruppo per modificare i rank di una o più azioni gruppo. La posizione di un"azione di gruppo nella griglia determina la posizione per l"azione di gruppo.' 
+---
+= Finestra di dialogo Riordina azioni gruppo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la finestra di dialogo Riordina azioni gruppo per modificare i rank di una o più azioni gruppo. La posizione di un'azione di gruppo nella griglia determina la posizione per l'azione di gruppo.
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+* *Classifica*
++
+Specifica l'ordine dell'azione di gruppo da applicare agli oggetti di storage di un gruppo.
+
+* *Nome*
++
+Specifica il nome dell'azione di gruppo.
+
+* *Tipo di azione*
++
+Specifica il tipo di azione che è possibile eseguire sugli oggetti di storage di un gruppo.
+
+* *Gruppo associato*
++
+Specifica il nome del gruppo per cui sono definite le azioni di gruppo.
+
+

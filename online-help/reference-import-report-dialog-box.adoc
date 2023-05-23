@@ -1,0 +1,60 @@
+---
+permalink: online-help/reference-import-report-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile utilizzare la finestra di dialogo Importa report per importare i report dai file .rptdesign. 
+---
+= Finestra di dialogo Importa report
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la finestra di dialogo Importa report da per importare i report `.rptdesign` file.
+
+
+
+== Proprietà
+
+È possibile importare un report specificando il nome del file di report, il nome del report e la descrizione del report.
+
+* *Selezionare il file di report*
++
+Consente di selezionare `.rptdesign` file che si desidera importare.
+
++
+[NOTE]
+====
+In Google Chrome `fakepath` di `.rptdesign` viene visualizzato il file. In Mozilla Firefox, solo il `.rptdesign` viene visualizzato il nome del file. In Internet Explorer, il percorso completo di `.rptdesign` viene visualizzato il file.
+
+====
+* *Nome*
++
+Visualizza il nome del report. Questo campo è vuoto per impostazione predefinita. È possibile immettere un nome per il report importato.
+
+* *Descrizione*
++
+Specifica la descrizione del report importato. La descrizione non può superare i 150 caratteri.
+
+* *Selezionare l'utente del database con ruolo di schema del report*
++
+Selezionare o creare un utente di database se si importano report da Storage Automation Store.
+
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti operazioni:
+
+* *Importa*
++
+Convalida la selezione `.rptdesign` e importa il report.
+
+* *Annulla*
++
+Annulla l'operazione di importazione e chiude la finestra di dialogo Importa report.
+
+

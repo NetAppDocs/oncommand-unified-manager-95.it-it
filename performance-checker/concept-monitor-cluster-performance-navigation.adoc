@@ -1,0 +1,31 @@
+---
+permalink: performance-checker/concept-monitor-cluster-performance-navigation.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager consente di monitorare le performance di tutti i cluster gestiti da Unified Manager. Il monitoraggio dei cluster offre una panoramica delle performance di cluster e oggetti e include il monitoraggio degli eventi delle performance. È possibile visualizzare performance ed eventi a un livello elevato, oppure esaminare ulteriormente eventuali dettagli relativi alle performance di cluster e oggetti e agli eventi relativi alle performance. 
+---
+= Monitorare la navigazione delle performance del cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager consente di monitorare le performance di tutti i cluster gestiti da Unified Manager. Il monitoraggio dei cluster offre una panoramica delle performance di cluster e oggetti e include il monitoraggio degli eventi delle performance. È possibile visualizzare performance ed eventi a un livello elevato, oppure esaminare ulteriormente eventuali dettagli relativi alle performance di cluster e oggetti e agli eventi relativi alle performance.
+
+Questo è un esempio di molti possibili percorsi di navigazione delle performance del cluster:
+
+. Nella pagina Dashboards/Performance (Dashboard/prestazioni), identificare il cluster che si desidera analizzare e fare clic su *View Cluster Details* (Visualizza dettagli cluster) per accedere alla landing page del cluster selezionato.
+. Dalla pagina Performance/Cluster Summary (Riepilogo prestazioni/cluster), identificare il tipo di oggetto che si desidera analizzare e fare clic su di esso per visualizzare la pagina Object Inventory (inventario oggetti).
++
+In questo esempio, viene selezionato *aggregati*, visualizzando la pagina di inventario Performance/aggregati.
+
+. Nella pagina Performance/Aggregates (prestazioni/aggregati), identificare l'aggregato che si desidera analizzare e fare clic sul nome dell'aggregato per accedere alla pagina Performance/aggregate Explorer (Esplora prestazioni/aggregato).
+. Se si desidera, selezionare altri oggetti da confrontare con questo aggregato nel menu Visualizza e confronta, quindi aggiungere uno degli oggetti al riquadro di confronto.
++
+Le statistiche per entrambi gli oggetti verranno visualizzate nei diagrammi dei contatori per il confronto.
+
+. Nel riquadro di confronto a destra della pagina Explorer, fare clic su *Zoom View* in uno dei diagrammi dei contatori per visualizzare i dettagli sulla cronologia delle performance per quell'aggregato.
+
+
+image::../media/monitor-cluster-performance.gif[monitorare le performance del cluster]

@@ -1,0 +1,62 @@
+---
+permalink: online-help/reference-lag-thresholds-for-unmanaged-relationships-page.html 
+sidebar: sidebar 
+keywords:  
+summary: La pagina Lag Thresholds for Unmanaged Relares consente di configurare i valori di avviso e soglia di errore relativi al ritardo globale per le relazioni di protezione non gestite, in modo da ricevere notifiche e intervenire in caso di ritardi o errori di soglia. Le modifiche a queste impostazioni vengono applicate durante il successivo aggiornamento pianificato. 
+---
+= Soglie di ritardo per la pagina delle relazioni non gestite
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Lag Thresholds for Unmanaged Relares consente di configurare i valori di avviso e soglia di errore relativi al ritardo globale per le relazioni di protezione non gestite, in modo da ricevere notifiche e intervenire in caso di ritardi o errori di soglia. Le modifiche a queste impostazioni vengono applicate durante il successivo aggiornamento pianificato.
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+Gli eventi vengono generati in caso di superamento di una soglia. È possibile intraprendere azioni correttive per tali eventi. Le impostazioni di soglia del ritardo per le relazioni non gestite sono attivate per impostazione predefinita.
+
+La soglia di ritardo specifica una percentuale che il tempo di ritardo non deve superare. Utilizzando un esempio di un'ora, se la soglia di ritardo è definita come 150%, si riceverà un evento quando il tempo di ritardo è superiore a 1.5 ore.
+
+
+
+== Soglie di ritardo per l'area delle relazioni non gestite
+
+L'area Lag consente di impostare soglie di ritardo delle relazioni non gestite per le seguenti condizioni:
+
+* *Attenzione*
++
+Specifica la percentuale in cui la durata del ritardo equivale o supera la soglia di avviso del ritardo:
+
++
+** Valore predefinito: 150 percento
+** Eventi generati: Avviso di ritardo relazione SnapMirror o avviso di ritardo relazione SnapVault
+** Severità dell'evento: Avviso
+
+
+* *Errore*
++
+Specifica la percentuale in cui la durata del ritardo equivale o supera la soglia di errore del ritardo:
+
++
+** Valore predefinito: 250 percento
+** Eventi generati: Errore ritardo relazione SnapMirror o errore ritardo relazione SnapVault
+** Severità evento: Errore
+
+
+
+
+
+
+== Pulsanti di comando
+
+* *Ripristina impostazioni predefinite*
++
+Consente di ripristinare i valori predefiniti delle impostazioni di configurazione.
+
+* *Salva*
++
+Salva le impostazioni di configurazione per l'opzione selezionata.
+
+

@@ -1,0 +1,35 @@
+---
+permalink: online-help/concept-what-available-iops-is.html 
+sidebar: sidebar 
+keywords:  
+summary: Il contatore IOPS disponibile identifica il numero rimanente di IOPS che è possibile aggiungere a un nodo o a un aggregato prima che la risorsa raggiunga il limite. Gli IOPS totali che un nodo può fornire si basano sulle caratteristiche fisiche del nodo, ad esempio il numero di CPU, la velocità della CPU e la quantità di RAM. Gli IOPS totali che un aggregato può fornire si basano sulle proprietà fisiche dei dischi, ad esempio un disco SATA, SAS o SSD. 
+---
+= Quali IOPS sono disponibili
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il contatore IOPS disponibile identifica il numero rimanente di IOPS che è possibile aggiungere a un nodo o a un aggregato prima che la risorsa raggiunga il limite. Gli IOPS totali che un nodo può fornire si basano sulle caratteristiche fisiche del nodo, ad esempio il numero di CPU, la velocità della CPU e la quantità di RAM. Gli IOPS totali che un aggregato può fornire si basano sulle proprietà fisiche dei dischi, ad esempio un disco SATA, SAS o SSD.
+
+Mentre il contatore di performance free fornisce la percentuale di una risorsa ancora disponibile, il contatore IOPS disponibile indica che è possibile aggiungere un numero esatto di IOPS (carichi di lavoro) a una risorsa prima di raggiungere la capacità di performance massima.
+
+Ad esempio, se si utilizza una coppia di sistemi storage FAS2520 e FAS8060, un valore del 30% senza capacità di performance significa che si dispone di una certa capacità di performance libera. Tuttavia, questo valore non fornisce visibilità sul numero di workload che è possibile implementare in tali nodi. Il contatore IOPS disponibile potrebbe indicare che sono disponibili 500 IOPS su FAS8060, ma solo 100 IOPS su FAS2520.
+
+[NOTE]
+====
+I dati IOPS disponibili sono disponibili solo quando i nodi di un cluster sono installati con il software ONTAP 9.0 o versione successiva.
+
+====
+Nella figura seguente viene mostrato un esempio di latenza rispetto alla curva IOPS per un nodo.
+
+image::../media/available-iops.gif[iops disponibili]
+
+Il numero massimo di IOPS che una risorsa può fornire è il numero di IOPS quando il contatore della capacità di performance utilizzata è al 100% (il punto ottimale). Il punto operativo indica che il nodo sta attualmente operando a 100.000 IOPS con latenza di 1.0 ms/op. In base alle statistiche acquisite dal nodo, Unified Manager determina che il numero massimo di IOPS per il nodo è 160K, il che significa che ci sono 60K IOPS liberi o disponibili. Pertanto, è possibile aggiungere più carichi di lavoro a questo nodo in modo che i sistemi vengano utilizzati in modo più efficiente.
+
+[NOTE]
+====
+Quando l'attività dell'utente nella risorsa è minima, il valore IOPS disponibile viene calcolato ipotizzando un carico di lavoro generico basato su circa 4,500 IOPS per core della CPU. Ciò è dovuto al fatto che Unified Manager non dispone dei dati necessari per stimare con precisione le caratteristiche del carico di lavoro che viene servito.
+
+====

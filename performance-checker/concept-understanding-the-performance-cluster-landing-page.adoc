@@ -1,0 +1,26 @@
+---
+permalink: performance-checker/concept-understanding-the-performance-cluster-landing-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La landing page Performance Cluster offre una panoramica delle performance di alto livello di un cluster selezionato, con particolare attenzione allo stato delle performance dei primi 10 oggetti all"interno del cluster. I problemi di performance vengono visualizzati nella parte superiore della pagina, nel pannello tutti gli eventi di questo cluster.' 
+---
+= Informazioni sulla pagina di destinazione del cluster di performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La landing page Performance Cluster offre una panoramica delle performance di alto livello di un cluster selezionato, con particolare attenzione allo stato delle performance dei primi 10 oggetti all'interno del cluster. I problemi di performance vengono visualizzati nella parte superiore della pagina, nel pannello tutti gli eventi di questo cluster.
+
+La landing page Performance Cluster fornisce una panoramica di alto livello di ogni cluster gestito da un'istanza di Unified Manager. Questa pagina fornisce informazioni su eventi e performance e consente di monitorare e risolvere i problemi dei cluster. L'immagine seguente mostra un esempio della pagina di destinazione del cluster Performance Cluster per il cluster chiamato opm-mobility:
+
+image::../media/opm-cluster-landing-page-draft.gif[bozza della landing page del cluster opm]
+
+Il numero di eventi nella pagina Cluster Summary (Riepilogo cluster) potrebbe non corrispondere al numero di eventi nella pagina Performance Event Inventory (inventario eventi performance). Questo perché la pagina Cluster Summary (Riepilogo cluster) può mostrare un evento ciascuno nelle barre di latenza e utilizzo quando le policy di soglia della combinazione sono state violate, mentre la pagina Performance Event Inventory (inventario eventi performance) mostra un solo evento quando una policy di combinazione è stata violata.
+
+[NOTE]
+====
+Se un cluster è stato rimosso dalla gestione da Unified Manager, lo stato *removed* viene visualizzato a destra del nome del cluster nella parte superiore della pagina.
+
+====

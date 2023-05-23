@@ -1,0 +1,16 @@
+---
+permalink: online-help/reference-resolving-performance-events.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile utilizzare le azioni suggerite per tentare di risolvere gli eventi relativi alle performance autonomamente. I primi tre suggerimenti vengono sempre visualizzati e le azioni sotto il quarto suggerimento sono specifiche per il tipo di evento visualizzato. 
+---
+= Risoluzione degli eventi relativi alle performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare le azioni suggerite per tentare di risolvere gli eventi relativi alle performance autonomamente. I primi tre suggerimenti vengono sempre visualizzati e le azioni sotto il quarto suggerimento sono specifiche per il tipo di evento visualizzato.
+
+I collegamenti *Aiutami a eseguire questa operazione* forniscono informazioni aggiuntive per ciascuna azione suggerita, incluse le istruzioni per eseguire un'azione specifica. Alcune delle azioni possono comportare l'utilizzo di Unified Manager, Gestore di sistema di OnCommand, OnCommand Workflow Automation, comandi CLI di ONTAP o una combinazione di questi strumenti.

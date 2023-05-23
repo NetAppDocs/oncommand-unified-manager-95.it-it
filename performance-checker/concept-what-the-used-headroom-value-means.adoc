@@ -1,0 +1,38 @@
+---
+permalink: performance-checker/concept-what-the-used-headroom-value-means.html 
+sidebar: sidebar 
+keywords:  
+summary: Il valore utilizzato per la capacità delle performance ti aiuta a identificare i nodi e gli aggregati che sono attualmente sovrautilizzati o sottoutilizzati. Ciò consente di ridistribuire i carichi di lavoro per rendere le risorse di storage più efficienti. 
+---
+= Cosa significa il valore utilizzato dalla capacità delle performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il valore utilizzato per la capacità delle performance ti aiuta a identificare i nodi e gli aggregati che sono attualmente sovrautilizzati o sottoutilizzati. Ciò consente di ridistribuire i carichi di lavoro per rendere le risorse di storage più efficienti.
+
+La figura seguente mostra la curva di latenza rispetto all'utilizzo di una risorsa e identifica, con punti colorati, tre aree in cui è possibile individuare il punto operativo corrente.
+
+image::../media/headroom-chart-over-under.gif[tabella dello spazio di testa sotto]
+
+* Una percentuale di performance utilizzata pari a 100 è al punto ottimale.
++
+A questo punto, le risorse vengono utilizzate in modo efficiente.
+
+* Una percentuale di performance utilizzata superiore a 100 indica che il nodo o l'aggregato è sovrautilizzato e che i carichi di lavoro ricevono performance non ottimali.
++
+Non aggiungere nuovi workload alla risorsa e potrebbe essere necessario ridistribuire i workload esistenti.
+
+* Una percentuale di performance utilizzata inferiore a 100 indica che il nodo o l'aggregato è sottoutilizzato e che le risorse non vengono utilizzate in modo efficace.
++
+È possibile aggiungere più carichi di lavoro alla risorsa.
+
+
+
+[NOTE]
+====
+A differenza dell'utilizzo, la percentuale di performance della capacità utilizzata può essere superiore al 100%. Non esiste una percentuale massima, ma le risorse in genere rientrano nell'intervallo compreso tra il 110% e il 140% quando vengono utilizzate in eccesso. Percentuali più elevate indicano una risorsa con problemi gravi.
+
+====

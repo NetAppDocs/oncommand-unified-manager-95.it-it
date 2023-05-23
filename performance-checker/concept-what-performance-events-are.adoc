@@ -1,0 +1,16 @@
+---
+permalink: performance-checker/concept-what-performance-events-are.html 
+sidebar: sidebar 
+keywords:  
+summary: Gli eventi relativi alle performance sono incidenti legati alle performance dei carichi di lavoro su un cluster. Ti aiutano a identificare i carichi di lavoro con tempi di risposta lenti. Insieme agli eventi di salute che si sono verificati contemporaneamente, è possibile determinare i problemi che potrebbero aver causato o contribuito a ridurre i tempi di risposta. 
+---
+= Quali sono gli eventi relativi alle performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi relativi alle performance sono incidenti legati alle performance dei carichi di lavoro su un cluster. Ti aiutano a identificare i carichi di lavoro con tempi di risposta lenti. Insieme agli eventi di salute che si sono verificati contemporaneamente, è possibile determinare i problemi che potrebbero aver causato o contribuito a ridurre i tempi di risposta.
+
+Quando Unified Manager rileva più occorrenze della stessa condizione di evento per lo stesso componente del cluster, considera tutte le ricorrenze come un singolo evento, non come eventi separati.

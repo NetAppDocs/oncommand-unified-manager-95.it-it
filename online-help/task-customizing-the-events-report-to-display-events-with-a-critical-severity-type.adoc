@@ -1,0 +1,34 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-events-with-a-critical-severity-type.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile personalizzare il report Eventi in modo da visualizzare gli eventi filtrati in base al tipo di severità e agli eventi non risolti per il periodo di tempo più lungo. 
+---
+= Personalizzazione del report Eventi per visualizzare gli eventi con un tipo di severità critica
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report Eventi in modo da visualizzare gli eventi filtrati in base al tipo di severità e agli eventi non risolti per il periodo di tempo più lungo.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Per filtrare gli eventi con tipo di severità critica, fare clic nella colonna *Status* e aprire la finestra di dialogo *Filter* facendo clic su image:../media/click-to-filter.gif[""] icona.
+. Dall'elenco *condizione*, selezionare *uguale a*.
+. Fare clic su *Select Values* (Seleziona valori) e selezionare *Critical* (critico).
+. Fare clic su *OK*.
+. Per ordinare gli eventi non risolti per il periodo di tempo più lungo, fare clic nella colonna *giorni in sospeso* e fare clic su image:../media/click-to-see-menu.gif[""] icona.
+. Selezionare *Filter* > *Top/Bottom N*.
+. Nella finestra di dialogo *Top/Bottom N*, selezionare *Top N* dal campo *Filter* e immettere un valore nel campo di testo.
+. Fare clic su *OK*.
+

@@ -1,0 +1,34 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-rate-report-to-view-volume-transfers-based-on-transfer-size.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile personalizzare il rapporto velocità di trasferimento del volume per visualizzare i dettagli del trasferimento del volume in base alle dimensioni totali del trasferimento del volume. 
+---
+= Personalizzazione del report Volume Transfer Rate (storico) per visualizzare i trasferimenti di volume in base alle dimensioni del trasferimento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report Volume Transfer Rate (storico) per visualizzare i dettagli del trasferimento del volume in base alle dimensioni totali del trasferimento del volume.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Rimuovi raggruppamento per cluster:
++
+.. Selezionare la colonna che si desidera separare.
+.. Fare clic su image:../media/click-to-see-menu.gif[""] icona.
+.. Selezionare *Gruppo* > *Elimina gruppo interno*.
+
+
+. Per ordinare i trasferimenti di volume in base alle dimensioni di trasferimento del volume, fare clic sulla colonna *Total Transfer Size (GB)*.
+

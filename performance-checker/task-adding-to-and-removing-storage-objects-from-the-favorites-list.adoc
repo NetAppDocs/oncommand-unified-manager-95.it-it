@@ -1,0 +1,43 @@
+---
+permalink: performance-checker/task-adding-to-and-removing-storage-objects-from-the-favorites-list.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile aggiungere oggetti di storage a un elenco Preferiti in modo da monitorare lo stato di salute, la capacità e le prestazioni degli oggetti. È possibile utilizzare lo stato degli oggetti nell"elenco Preferiti per determinare i problemi e risolverli prima che diventino critici. L"elenco Favorites (Preferiti) fornisce anche lo stato di monitoraggio più recente di un oggetto di storage. È possibile rimuovere gli oggetti di storage dall"elenco Preferiti quando non è più necessario che siano contrassegnati come preferiti.' 
+---
+= Aggiunta e rimozione di oggetti di storage dall'elenco Preferiti
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile aggiungere oggetti di storage a un elenco Preferiti in modo da monitorare lo stato di salute, la capacità e le prestazioni degli oggetti. È possibile utilizzare lo stato degli oggetti nell'elenco Preferiti per determinare i problemi e risolverli prima che diventino critici. L'elenco Favorites (Preferiti) fornisce anche lo stato di monitoraggio più recente di un oggetto di storage. È possibile rimuovere gli oggetti di storage dall'elenco Preferiti quando non è più necessario che siano contrassegnati come preferiti.
+
+
+
+== A proposito di questa attività
+
+È possibile aggiungere fino a 20 cluster, nodi, aggregati o volumi all'elenco Favorites (Preferiti). Quando si aggiunge un nodo all'elenco Favorites (Preferiti), viene visualizzato come cluster.
+
+
+
+== Fasi
+
+. Accedere alla pagina *Dettagli* dell'oggetto di storage che si desidera contrassegnare come preferito.
+. Fare clic sull'icona a forma di stella (image:../media/favorite-icon.gif[""]) Per aggiungere l'oggetto di archiviazione all'elenco Favorites (Preferiti).
+
+
+
+
+== Aggiunta di un aggregato all'elenco Favorites (Preferiti)
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Health* > *aggregates*.
+. Nella pagina Health/aggregates inventory (Stato/inventario aggregati), fare clic sull'aggregato che si desidera aggiungere all'elenco Favorites (Preferiti).
+. Nella pagina Health/aggregate details (informazioni sullo stato/aggregato), fare clic sull'icona a forma di stella (image:../media/favorite-icon.gif[""]).
+
+
+
+
+== Al termine
+
+Per rimuovere un oggetto di archiviazione dall'elenco Preferiti, accedere alla pagina elenco Preferiti e fare clic sull'icona a forma di stella (image:../media/favorite-icon.gif[""]) Sulla scheda oggetto che si desidera rimuovere, quindi selezionare l'opzione *Remove from Favorites* (Rimuovi da Preferiti).

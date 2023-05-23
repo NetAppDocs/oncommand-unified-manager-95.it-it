@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-relationships-inventory-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile personalizzare il report di inventario delle relazioni dei volumi per visualizzare i dettagli dei volumi filtrati in base all"origine dell"errore. È possibile utilizzare i filtri per visualizzare i dettagli dell"inventario delle relazioni dei volumi in base alle pianificazioni e per raggruppare i dettagli dell"inventario dei volumi in base ai problemi.' 
+---
+= Personalizzazioni dei report di inventario delle relazioni di volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report di inventario delle relazioni dei volumi per visualizzare i dettagli dei volumi filtrati in base all'origine dell'errore. È possibile utilizzare i filtri per visualizzare i dettagli dell'inventario delle relazioni dei volumi in base alle pianificazioni e per raggruppare i dettagli dell'inventario dei volumi in base ai problemi.

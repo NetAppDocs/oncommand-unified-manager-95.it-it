@@ -1,0 +1,29 @@
+---
+permalink: online-help/concept-collecting-data-and-monitoring-workload-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager raccoglie e analizza l"attività dei carichi di lavoro ogni 5 minuti per identificare gli eventi relativi alle performance e rileva le modifiche alla configurazione ogni 15 minuti. Conserva un massimo di 30 giorni di dati storici relativi alle performance e agli eventi di 5 minuti e utilizza questi dati per prevedere l"intervallo previsto per tutti i carichi di lavoro monitorati.' 
+---
+= Raccolta di dati e monitoraggio delle performance dei carichi di lavoro
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager raccoglie e analizza l'attività dei carichi di lavoro ogni 5 minuti per identificare gli eventi relativi alle performance e rileva le modifiche alla configurazione ogni 15 minuti. Conserva un massimo di 30 giorni di dati storici relativi alle performance e agli eventi di 5 minuti e utilizza questi dati per prevedere l'intervallo previsto per tutti i carichi di lavoro monitorati.
+
+[NOTE]
+====
+Questo capitolo descrive il funzionamento delle soglie dinamiche e il modo in cui vengono utilizzate per monitorare le performance dei carichi di lavoro. Questo capitolo non è applicabile a statistiche o eventi causati da violazioni delle soglie di performance definite dall'utente o dal sistema.
+
+====
+Unified Manager deve raccogliere un minimo di 3 giorni di attività del carico di lavoro prima che possa iniziare l'analisi e prima che l'intervallo previsto per i tempi di risposta i/o e le operazioni possa essere visualizzato nella pagina Performance/Volume Details (Dettagli performance/volume) e nella pagina Event Details (Dettagli evento). Durante la raccolta di questa attività, l'intervallo previsto non visualizza tutte le modifiche che si verificano dall'attività del carico di lavoro. Dopo aver raccolto 3 giorni di attività, Unified Manager regola l'intervallo previsto, ogni 24 ore alle 12:00, per riflettere le modifiche dell'attività del carico di lavoro e stabilire una soglia di performance più precisa.
+
+Nei primi 4 giorni in cui Unified Manager sta monitorando un volume, se sono trascorse più di 24 ore dall'ultima raccolta di dati, i grafici nella pagina Performance/Volume Details (Dettagli performance/volume) non visualizzano l'intervallo previsto per quel volume. Gli eventi rilevati prima dell'ultima raccolta sono ancora disponibili.
+
+[NOTE]
+====
+L'ora legale (DST) modifica l'ora del sistema, che modifica l'intervallo previsto di statistiche delle performance per i carichi di lavoro monitorati. Unified Manager inizia immediatamente a correggere l'intervallo previsto, che richiede circa 15 giorni. Durante questo periodo di tempo è possibile continuare a utilizzare Unified Manager, ma poiché Unified Manager utilizza l'intervallo previsto per rilevare gli eventi, alcuni eventi potrebbero non essere precisi. Gli eventi rilevati prima del cambiamento di orario non vengono influenzati. La modifica manuale dell'ora su un cluster o su un server Unified Manager in un momento precedente influisce anche sui risultati dell'analisi degli eventi.
+
+====

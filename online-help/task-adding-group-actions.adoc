@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-adding-group-actions.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile configurare le azioni di gruppo che si desidera applicare agli oggetti di storage di un gruppo. La configurazione delle azioni per un gruppo consente di risparmiare tempo, poiché non è necessario aggiungere queste azioni a ciascun oggetto singolarmente. 
+---
+= Aggiunta di azioni di gruppo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile configurare le azioni di gruppo che si desidera applicare agli oggetti di storage di un gruppo. La configurazione delle azioni per un gruppo consente di risparmiare tempo, poiché non è necessario aggiungere queste azioni a ciascun oggetto singolarmente.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== Fasi
+
+. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *Gestione* > *gruppi*.
+. Nella scheda *azioni gruppo*, fare clic su *Aggiungi*.
+. Nella finestra di dialogo *Aggiungi azione gruppo*, immettere un nome e una descrizione per l'azione.
+. Dal menu *Gruppo*, selezionare un gruppo per il quale si desidera configurare l'azione.
+. Dal menu *Action Type* (tipo di azione), selezionare un tipo di azione.
++
+La finestra di dialogo si espande, consentendo di configurare il tipo di azione selezionato con i parametri richiesti.
+
+. Immettere i valori appropriati per i parametri richiesti per configurare un'azione di gruppo.
+. Fare clic su *Aggiungi*.
+

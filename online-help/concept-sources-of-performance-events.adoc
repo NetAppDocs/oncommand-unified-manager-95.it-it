@@ -1,0 +1,39 @@
+---
+permalink: online-help/concept-sources-of-performance-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Gli eventi relativi alle performance sono problemi legati alle performance dei carichi di lavoro su un cluster. Consentono di identificare gli oggetti storage con tempi di risposta lenti, noti anche come alta latenza. Insieme ad altri eventi di salute che si sono verificati contemporaneamente, è possibile determinare i problemi che potrebbero aver causato o contribuito a ridurre i tempi di risposta. 
+---
+= Fonti di eventi relativi alle performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi relativi alle performance sono problemi legati alle performance dei carichi di lavoro su un cluster. Consentono di identificare gli oggetti storage con tempi di risposta lenti, noti anche come alta latenza. Insieme ad altri eventi di salute che si sono verificati contemporaneamente, è possibile determinare i problemi che potrebbero aver causato o contribuito a ridurre i tempi di risposta.
+
+Unified Manager riceve gli eventi relativi alle performance dalle seguenti fonti:
+
+* *Eventi del criterio di soglia delle performance definiti dall'utente*
++
+Problemi di performance basati su valori di soglia personalizzati impostati. È possibile configurare i criteri di soglia delle performance per gli oggetti storage, ad esempio aggregati e volumi, in modo che gli eventi vengano generati quando viene violato un valore di soglia per un contatore delle performance.
+
++
+Per ricevere questi eventi, è necessario definire un criterio di soglia delle performance e assegnarlo a un oggetto di storage.
+
+* *Eventi dei criteri di soglia delle performance definiti dal sistema*
++
+Problemi di performance basati su valori di soglia definiti dal sistema. Questi criteri di soglia sono inclusi nell'installazione di Unified Manager per coprire i problemi comuni di performance.
+
++
+Questi criteri di soglia sono attivati per impostazione predefinita e potrebbero essere visualizzati eventi poco dopo l'aggiunta di un cluster.
+
+* *Dynamic performance threshold events*
++
+Problemi di performance dovuti a guasti o errori in un'infrastruttura IT o a carichi di lavoro che utilizzano in modo eccessivo le risorse del cluster. La causa di questi eventi potrebbe essere un semplice problema che si corregge per un certo periodo di tempo o che può essere risolto con una riparazione o una modifica della configurazione. Un evento di soglia dinamico indica che i carichi di lavoro dei volumi su un sistema ONTAP sono lenti a causa di altri carichi di lavoro con un elevato utilizzo di componenti del cluster condivisi.
+
++
+Queste soglie sono attivate per impostazione predefinita e potrebbero verificarsi eventi dopo tre giorni di raccolta dei dati da un nuovo cluster.
+
+

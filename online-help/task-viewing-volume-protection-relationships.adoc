@@ -1,0 +1,49 @@
+---
+permalink: online-help/task-viewing-volume-protection-relationships.html 
+sidebar: sidebar 
+keywords:  
+summary: Dalla pagina delle relazioni protezione/volume, è possibile visualizzare lo stato delle relazioni SnapMirror e SnapVault del volume esistente. È inoltre possibile esaminare i dettagli relativi alle relazioni di protezione, tra cui lo stato di trasferimento e ritardo, i dettagli di origine e destinazione, le informazioni di pianificazione e policy e così via. 
+---
+= Visualizzazione delle relazioni di protezione dei volumi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dalla pagina delle relazioni protezione/volume, è possibile visualizzare lo stato delle relazioni SnapMirror e SnapVault del volume esistente. È inoltre possibile esaminare i dettagli relativi alle relazioni di protezione, tra cui lo stato di trasferimento e ritardo, i dettagli di origine e destinazione, le informazioni di pianificazione e policy e così via.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== A proposito di questa attività
+
+Da questa pagina è inoltre possibile avviare i comandi di relazione.
+
+
+
+== Fasi
+
+. Nel riquadro di spostamento di sinistra, fare clic su *protezione* > *Relazioni volume*.
++
+Viene visualizzata la pagina delle relazioni protezione/volume.
+
+. Scegliere uno dei seguenti metodi per visualizzare i dettagli della protezione del volume:
++
+** Per visualizzare le informazioni correnti su tutte le relazioni dei volumi, rimanere nella pagina predefinita *All Volume Relangs* (tutte le relazioni dei volumi).
+** Per visualizzare informazioni dettagliate sui trend di trasferimento dei volumi in un determinato periodo di tempo, nel menu View (Visualizza), selezionare *Volume Transfer Status (storico)*.
+** Per visualizzare informazioni dettagliate sull'attività di trasferimento del volume giorno per giorno, nel menu View (Visualizza), selezionare *Volume Transfer Rate (storico)*.
+
+
++
+[NOTE]
+====
+Le viste di trasferimento dei volumi visualizzano le informazioni solo per i volumi nelle relazioni asincrone, i volumi nelle relazioni sincrone non vengono visualizzati.
+
+====
+

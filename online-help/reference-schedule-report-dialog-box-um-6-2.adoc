@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-schedule-report-dialog-box-um-6-2.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile pianificare la generazione dei report su base ricorrente con una frequenza specificata dalla finestra di dialogo Schedule Report (Pianifica report). Il report viene inviato via email a uno o più utenti specificati nella finestra di dialogo Schedule Report.' 
+---
+= Finestra di dialogo Schedule Report
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile pianificare la generazione dei report su base ricorrente con una frequenza specificata dalla finestra di dialogo Schedule Report (Pianifica report). Il report viene inviato via email a uno o più utenti specificati nella finestra di dialogo Schedule Report.
+
+
+
+== Proprietà
+
+È possibile pianificare un report specificando proprietà come l'indirizzo e-mail dell'utente, il formato del report e la frequenza con cui viene generato.
+
+* *Utilizzando la pianificazione esistente*
++
+** *Nome pianificazione*
++
+Visualizza tutti i nomi dei piani di lavoro esistenti. Da qui è possibile selezionare una pianificazione esistente per i report.
+
+
+
+* *Crea nuovo programma*
++
+** *Nome pianificazione*
++
+Consente di immettere il nome del piano di lavoro durante la creazione di un nuovo piano di lavoro.
+
+** *Indirizzo e-mail destinatario*
++
+Specifica l'indirizzo e-mail dell'utente a cui si desidera inviare il report. È possibile specificare una o più voci, separate da virgole. Questo è un campo obbligatorio.
+
+** *Formato report*
++
+Specifica il formato in cui si desidera pianificare il report. L'opzione _PDF_ è selezionata per impostazione predefinita.
+
+** *Frequenza*
++
+Specifica la frequenza con cui si desidera pianificare il report. L'opzione _orario_ è selezionata per impostazione predefinita.
+
+
+
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti operazioni:
+
+* *Pianificazione*
++
+Pianifica il report con il modello salvato o aggiornato e chiude la finestra di dialogo Pianifica report.
+
+* *Annulla*
++
+Consente di chiudere la finestra di dialogo Schedule Report (rapporto pianificazione) mentre viene visualizzato un messaggio per salvare il modello di report di pianificazione.
+
+

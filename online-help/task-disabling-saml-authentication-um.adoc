@@ -1,0 +1,53 @@
+---
+permalink: online-help/task-disabling-saml-authentication-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile disattivare l"autenticazione SAML quando si desidera interrompere l"autenticazione degli utenti remoti tramite un provider di identità sicuro (IdP) prima che possano accedere all"interfaccia utente Web di Unified Manager. Quando l"autenticazione SAML è disattivata, i provider di servizi di directory configurati, ad esempio Active Directory o LDAP, eseguono l"autenticazione di accesso.' 
+---
+= Disattivazione dell'autenticazione SAML
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile disattivare l'autenticazione SAML quando si desidera interrompere l'autenticazione degli utenti remoti tramite un provider di identità sicuro (IdP) prima che possano accedere all'interfaccia utente Web di Unified Manager. Quando l'autenticazione SAML è disattivata, i provider di servizi di directory configurati, ad esempio Active Directory o LDAP, eseguono l'autenticazione di accesso.
+
+
+
+== A proposito di questa attività
+
+Una volta disattivata l'autenticazione SAML, gli utenti locali e gli utenti di manutenzione potranno accedere all'interfaccia grafica utente oltre agli utenti remoti configurati.
+
+Se non si dispone dell'accesso all'interfaccia utente grafica, è possibile disattivare l'autenticazione SAML anche utilizzando la console di manutenzione di Unified Manager.
+
+[NOTE]
+====
+Unified Manager viene riavviato automaticamente dopo la disattivazione dell'autenticazione SAML.
+
+====
+
+
+== Fasi
+
+. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *Authentication* nel menu Setup di sinistra.
+. Nella pagina *Setup/Authentication*, selezionare la scheda *SAML Authentication*.
+. Deselezionare la casella di controllo *Enable SAML Authentication* (attiva autenticazione SAML).
+. Fare clic su *Save* (Salva).
++
+Viene visualizzata una finestra di messaggio per confermare che si desidera completare la configurazione e riavviare Unified Manager.
+
+. Fare clic su *Confirm and Logout* (Conferma e Disconnetti) per riavviare Unified Manager.
+
+
+
+
+== Risultati
+
+La volta successiva che gli utenti remoti tenteranno di accedere all'interfaccia grafica di Unified Manager, inseriranno le proprie credenziali nella pagina di accesso di Unified Manager anziché nella pagina di accesso di IdP.
+
+
+
+== Al termine
+
+Accedere all'ID ed eliminare l'URI e i metadati del server Unified Manager.

@@ -1,0 +1,145 @@
+---
+permalink: online-help/reference-snapmirror-relationship-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi di relazione di SnapMirror forniscono informazioni sullo stato delle relazioni di SnapMirror, in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all"area di impatto e includono il nome dell"evento e della trap, il livello di impatto, il tipo di origine e la severità.' 
+---
+= Eventi di relazione SnapMirror
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi di relazione di SnapMirror forniscono informazioni sullo stato delle relazioni di SnapMirror, in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all'area di impatto e includono il nome dell'evento e della trap, il livello di impatto, il tipo di origine e la severità.
+
+
+
+== Area di impatto: Protezione
+
+Un asterisco (*) identifica gli eventi EMS che sono stati convertiti in eventi Unified Manager.
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Replica mirror non sana(ocumEvtSnapmirrorRelationshipUnsana)
+ a| 
+Rischio
+ a| 
+Relazione di SnapMirror
+ a| 
+Attenzione
+
+
+
+ a| 
+Replica mirror interrotta(ocumEvtSnapmirrorRelationshipStateBrokenoff)
+ a| 
+Rischio
+ a| 
+Relazione di SnapMirror
+ a| 
+Errore
+
+
+
+ a| 
+Inizializzazione replica mirror non riuscita (ocumEvtSnapmirrorRelationshipInitializeFailed)
+ a| 
+Rischio
+ a| 
+Relazione di SnapMirror
+ a| 
+Errore
+
+
+
+ a| 
+Aggiornamento replica mirror non riuscito (ocumEvtSnapmirrorRelationshipUpdateFailed)
+ a| 
+Rischio
+ a| 
+Relazione di SnapMirror
+ a| 
+Errore
+
+
+
+ a| 
+Errore ritardo replica mirror (ocumEvtSnapMirrorRelationshipLagError)
+ a| 
+Rischio
+ a| 
+Relazione di SnapMirror
+ a| 
+Errore
+
+
+
+ a| 
+Mirror Replication Lag Warning(ocumEvtSnapMirrorRelationshipLagWarning)
+ a| 
+Rischio
+ a| 
+Relazione di SnapMirror
+ a| 
+Attenzione
+
+
+
+ a| 
+Risincronizzazione replica mirror non riuscita (ocumEvtSnapmirrorRelationshipResyncFailed)
+ a| 
+Rischio
+ a| 
+Relazione di SnapMirror
+ a| 
+Errore
+
+
+
+ a| 
+Replica mirror DeletedocumEvtSnapmirrorRelationshipDeleted
+ a| 
+Rischio
+ a| 
+Relazione di SnapMirror
+ a| 
+Attenzione
+
+
+
+ a| 
+Replica sincrona fuori sincronizzazione *
+ a| 
+Rischio
+ a| 
+Relazione di SnapMirror
+ a| 
+Attenzione
+
+
+
+ a| 
+Replica sincrona ripristinata *
+ a| 
+Evento
+ a| 
+Relazione di SnapMirror
+ a| 
+Informazioni
+
+
+
+ a| 
+Risincronizzazione automatica replica sincrona non riuscita *
+ a| 
+Rischio
+ a| 
+Relazione di SnapMirror
+ a| 
+Errore
+
+|===

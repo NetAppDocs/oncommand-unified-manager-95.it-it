@@ -1,0 +1,28 @@
+---
+permalink: online-help/task-viewing-user-and-user-group-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina di inventario delle macchine virtuali di salute/storage visualizza informazioni sulle quote utente e gruppo di utenti configurate sulla SVM. È possibile visualizzare il nome dell"utente o del gruppo di utenti, i limiti impostati su dischi e file, lo spazio su disco e file utilizzato e l"indirizzo e-mail per la notifica.' 
+---
+= Visualizzazione delle quote di utenti e gruppi di utenti
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina di inventario delle macchine virtuali di salute/storage visualizza informazioni sulle quote utente e gruppo di utenti configurate sulla SVM. È possibile visualizzare il nome dell'utente o del gruppo di utenti, i limiti impostati su dischi e file, lo spazio su disco e file utilizzato e l'indirizzo e-mail per la notifica.
+
+
+
+== Prima di iniziare
+
+Per eseguire questa attività, è necessario disporre di uno dei seguenti ruoli: Operatore, Amministratore OnCommand o Amministratore dello storage.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Health* > *SVM*.
+. Nella pagina di inventario *Health/Storage Virtual Machines*, selezionare una SVM, quindi fare clic sulla scheda *User and Group quote* (quote utente e gruppo).
+

@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-event-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi ti avvisano di eventuali problemi nel tuo ambiente. È possibile utilizzare la pagina inventario eventi e la pagina Dettagli evento per monitorare tutti gli eventi. È possibile utilizzare la finestra di dialogo Opzioni di impostazione delle notifiche per configurare le notifiche. È possibile utilizzare la pagina Configuration/Manage Events (Configurazione/Gestione eventi) per disattivare o attivare gli eventi.' 
+---
+= Descrizione delle finestre di dialogo e degli eventi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi ti avvisano di eventuali problemi nel tuo ambiente. È possibile utilizzare la pagina inventario eventi e la pagina Dettagli evento per monitorare tutti gli eventi. È possibile utilizzare la finestra di dialogo Opzioni di impostazione delle notifiche per configurare le notifiche. È possibile utilizzare la pagina Configuration/Manage Events (Configurazione/Gestione eventi) per disattivare o attivare gli eventi.

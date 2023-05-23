@@ -1,0 +1,67 @@
+---
+permalink: performance-checker/concept-understanding-the-performance-panels-on-the-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: La dashboard delle performance di Unified Manager offre una panoramica di alto livello dello stato delle performance per tutti i cluster monitorati nel tuo ambiente. I cluster che presentano problemi di performance sono ordinati in cima alla pagina in base alla gravità. Le informazioni sul dashboard vengono aggiornate automaticamente ogni cinque minuti di raccolta delle performance. 
+---
+= Informazioni sulla dashboard delle performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La dashboard delle performance di Unified Manager offre una panoramica di alto livello dello stato delle performance per tutti i cluster monitorati nel tuo ambiente. I cluster che presentano problemi di performance sono ordinati in cima alla pagina in base alla gravità. Le informazioni sul dashboard vengono aggiornate automaticamente ogni cinque minuti di raccolta delle performance.
+
+L'immagine seguente mostra un esempio di dashboard delle performance di Unified Manager che monitora due cluster:
+
+image::../media/opm-2-dashboard-overview.gif[panoramica della dashboard di opm 2]
+
+Le icone di stato che rappresentano gli oggetti di storage possono trovarsi nei seguenti stati, ordinati dal livello di severità più alto al livello di severità più basso:
+
+* Critico (image:../media/sev-critical-um60.png["Icona per la severità dell'evento – critico"]): Per l'oggetto sono stati segnalati uno o più nuovi eventi critici relativi alle performance.
+* Avvertenza (image:../media/sev-warning-um60.png["Icona per la severità dell'evento – avviso"]): Sono stati segnalati uno o più nuovi eventi di avviso relativi alle prestazioni dell'oggetto.
+* Normale (image:../media/sev-normal-um60.png["Icona per la severità dell'evento – normale"]): Non sono stati segnalati nuovi eventi di performance per l'oggetto.
+
+
+[NOTE]
+====
+Il colore indica se esistono nuovi eventi per l'oggetto. Gli eventi che non sono più attivi, detti eventi obsoleti, non influiscono sul colore dell'icona.
+
+====
+
+
+== Contatori delle performance del cluster
+
+Per ciascun cluster vengono visualizzate le seguenti categorie di prestazioni:
+
+* Latenza
++
+Mostra la velocità con cui il cluster risponde alle richieste dell'applicazione client, in millisecondi per operazione.
+
+* IOPS
++
+Mostra la velocità operativa del cluster, in numero di operazioni di input/output al secondo.
+
+* Mbps
++
+Mostra la quantità di dati trasferiti da e verso il cluster, in megabyte al secondo.
+
+* Capacità di performance utilizzata
++
+Mostra se i nodi o gli aggregati stanno utilizzando in eccesso la capacità di performance disponibile.
+
+* Utilizzo
++
+Mostra se le risorse su nodi o aggregati sono state utilizzate in eccesso.
+
+
+
+Per analizzare le performance del cluster e degli oggetti di storage, è possibile eseguire una delle seguenti operazioni:
+
+* È possibile fare clic su *View Cluster Details* (Visualizza dettagli cluster) per visualizzare la pagina di destinazione del cluster, in cui è possibile visualizzare informazioni dettagliate sulle performance e sugli eventi per il cluster e gli oggetti di storage selezionati.
+* È possibile fare clic su una delle icone di stato rosse o gialle di un oggetto per visualizzare la pagina Inventory (inventario) dell'oggetto, in cui è possibile visualizzare i dettagli relativi all'oggetto di storage.
++
+Ad esempio, facendo clic sull'icona di un volume viene visualizzata la pagina Performance/Volume Inventory (inventario prestazioni/volumi) con un elenco di tutti i volumi nel cluster selezionato, ordinati dalle performance peggiori alle performance migliori.
+
+

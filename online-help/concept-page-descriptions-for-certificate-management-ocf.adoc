@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-page-descriptions-for-certificate-management-ocf.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare la pagina HTTPS Certificate (certificato HTTPS) per visualizzare i certificati di protezione correnti e generare nuovi certificati HTTPS.' 
+---
+= Descrizioni delle pagine per la gestione dei certificati
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la pagina HTTPS Certificate (certificato HTTPS) per visualizzare i certificati di protezione correnti e generare nuovi certificati HTTPS.

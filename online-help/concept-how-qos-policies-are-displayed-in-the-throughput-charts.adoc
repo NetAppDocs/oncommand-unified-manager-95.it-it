@@ -1,0 +1,64 @@
+---
+permalink: online-help/concept-how-qos-policies-are-displayed-in-the-throughput-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile visualizzare le impostazioni dei criteri QoS (Quality of Service) definite da ONTAP e applicate a un volume o LUN nei grafici IOPS, IOPS/TB e Mbps di Performance Explorer. Le informazioni visualizzate nei grafici variano a seconda del tipo di policy QoS applicata al carico di lavoro.' 
+---
+= Come vengono visualizzati diversi tipi di policy QoS in Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile visualizzare le impostazioni dei criteri di qualità del servizio (QoS) definite da ONTAP che sono state applicate a un volume o a un LUN nei grafici IOPS, IOPS/TB e Mbps di Performance Explorer. Le informazioni visualizzate nei grafici variano a seconda del tipo di policy QoS applicata al carico di lavoro.
+
+Un'impostazione di throughput "`soffitto`" definisce il throughput massimo che il carico di lavoro può consumare, limitando così l'impatto sui carichi di lavoro concorrenti per le risorse di sistema. Un'impostazione di throughput "`floor`" definisce il throughput minimo che deve essere disponibile per il carico di lavoro in modo che un carico di lavoro critico soddisfi gli obiettivi di throughput minimi indipendentemente dalla domanda dei carichi di lavoro concorrenti.
+
+Le policy QoS condivise e non condivise per IOPS e Mbps utilizzano i termini "`minimum`" e "`maximum`" per definire il pavimento e il soffitto. Le policy di QoS adattive per IOPS/TB, introdotte in ONTAP 9.3, utilizzano i termini "`previsto`" e "`picco`" per definire il pavimento e il soffitto.
+
+Mentre ONTAP consente di creare questi due tipi di policy di qualità del servizio, a seconda di come vengono applicate ai carichi di lavoro, esistono tre modi in cui la policy di qualità del servizio verrà visualizzata nei grafici delle performance.
+
+|===
+| Tipo di policy | Funzionalità | Indicatore nell'interfaccia di Unified Manager 
+
+
+ a| 
+Policy condivisa QoS assegnata a un singolo carico di lavoro o policy non condivisa QoS assegnata a un singolo carico di lavoro o a più carichi di lavoro
+ a| 
+Ogni carico di lavoro può utilizzare l'impostazione di throughput specificata
+ a| 
+Visualizza "`(QoS)`"
+
+
+
+ a| 
+Policy condivisa QoS assegnata a più carichi di lavoro
+ a| 
+Tutti i carichi di lavoro condividono l'impostazione di throughput specificata
+ a| 
+Visualizza "`(QoS Shared)`"
+
+
+
+ a| 
+Policy QoS adattiva assegnata a un singolo workload o a più workload
+ a| 
+Ogni carico di lavoro può utilizzare l'impostazione di throughput specificata
+ a| 
+Visualizza "`(QoS Adaptive)`"
+
+|===
+La figura seguente mostra un esempio di come le tre opzioni sono mostrate nei diagrammi dei contatori.
+
+image::../media/three-qos-policy-charts.gif[tre grafici di policy qos]
+
+Quando una normale policy di QoS definita in IOPS viene visualizzata nel grafico IOPS/TB per un carico di lavoro, ONTAP converte il valore IOPS in un valore IOPS/TB e visualizza tale policy nel grafico IOPS/TB insieme al testo "`QoS, defined in IOPS`".
+
+Quando una policy QoS adattiva definita in IOPS/TB viene visualizzata nel grafico IOPS per un carico di lavoro, ONTAP converte il valore IOPS/TB in un valore IOPS e visualizza tale policy nel grafico IOPS insieme al testo "`QoS adattiva, Definito in IOPS/TB utilizzati`" o "`QoS Adaptive, definito in IOPS/TB allocati`" a seconda di come è configurata l'impostazione di allocazione IOPS di picco. Quando l'impostazione di allocazione è impostata su "`allocated-space`", gli IOPS di picco vengono calcolati in base alle dimensioni del volume. Quando l'impostazione di allocazione è impostata su "`used-space`", gli IOPS di picco vengono calcolati in base alla quantità di dati memorizzati nel volume, tenendo conto dell'efficienza dello storage.
+
+[NOTE]
+====
+Il grafico IOPS/TB visualizza i dati sulle prestazioni solo quando la capacità logica utilizzata dal volume è maggiore o uguale a 1 TB. I gap vengono visualizzati nel grafico quando la capacità utilizzata scende al di sotto di 1 TB durante il periodo di tempo selezionato.
+
+====

@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-editing-individual-aggregate-health-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile modificare le impostazioni della soglia di integrità per capacità aggregata, crescita e copie Snapshot di uno o più aggregati. Quando viene superata una soglia, vengono generati avvisi e vengono ricevute notifiche. Queste notifiche consentono di adottare misure preventive in base all"evento generato.' 
+---
+= Modifica delle impostazioni delle singole soglie di integrità aggregate
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare le impostazioni della soglia di integrità per capacità aggregata, crescita e copie Snapshot di uno o più aggregati. Quando viene superata una soglia, vengono generati avvisi e vengono ricevute notifiche. Queste notifiche consentono di adottare misure preventive in base all'evento generato.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== A proposito di questa attività
+
+In base alle modifiche apportate ai valori di soglia, gli eventi vengono generati o resi obsoleti nel ciclo di monitoraggio successivo.
+
+Quando la funzione di crescita automatica è attivata sui volumi che risiedono nell'aggregato, le soglie della capacità aggregata vengono considerate violate in base alle dimensioni massime del volume impostate dalla funzione di crescita automatica, non in base alle dimensioni originali del volume.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Health* > *aggregates*.
+. Nella pagina di inventario *Health/aggregates*, selezionare uno o più aggregati, quindi fare clic su *Edit thresholds* (Modifica soglie).
+. Nella finestra di dialogo *Edit aggregate thresholds* (Modifica soglie aggregate), modificare le impostazioni di una delle seguenti soglie: Capacità, crescita o copie Snapshot selezionando la casella di controllo appropriata e modificando le impostazioni.
+. Fare clic su *Save* (Salva).
+

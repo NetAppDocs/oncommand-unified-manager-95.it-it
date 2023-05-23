@@ -1,0 +1,25 @@
+---
+permalink: online-help/concept-viewing-node-and-aggregate-available-iops-values.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile monitorare i valori IOPS disponibili per tutti i nodi o per tutti gli aggregati di un cluster oppure visualizzare i dettagli di un singolo nodo o aggregato. 
+---
+= Visualizzazione dei valori IOPS disponibili di nodo e aggregazione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile monitorare i valori IOPS disponibili per tutti i nodi o per tutti gli aggregati di un cluster oppure visualizzare i dettagli di un singolo nodo o aggregato.
+
+I valori IOPS disponibili vengono visualizzati nei grafici della pagina Performance Explorer (Esplora prestazioni). Ad esempio, quando si visualizza un nodo nella pagina Performance/Node Explorer (Esplora prestazioni/nodo), è possibile selezionare il grafico del contatore "`Available IOPS`" (IOPS disponibili) dall'elenco in modo da poter confrontare i valori IOPS disponibili per più aggregati su quel nodo.
+
+image::../media/available-iops-zoom.gif[zoom iops disponibile]
+
+Il monitoraggio del contatore IOPS disponibile consente di identificare:
+
+* I nodi o gli aggregati che hanno i valori IOPS più elevati disponibili per determinare dove è possibile implementare i carichi di lavoro futuri.
+* I nodi o gli aggregati che hanno i valori IOPS più piccoli disponibili per identificare le risorse da monitorare per potenziali problemi di performance futuri.
+* I volumi e le LUN più impegnativi su un aggregato con un valore IOPS ridotto.
+

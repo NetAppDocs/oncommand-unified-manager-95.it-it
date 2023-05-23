@@ -1,0 +1,74 @@
+---
+permalink: online-help/reference-cluster-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Utilizzare la pagina Performance/Cluster Information per visualizzare un elenco degli attributi fisici e logici del cluster. Queste informazioni potrebbero essere utili per rispondere alle domande relative alle performance. 
+---
+= Pagina Performance/Cluster Information (informazioni sulle performance/cluster)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilizzare la pagina Performance/Cluster Information per visualizzare un elenco degli attributi fisici e logici del cluster. Queste informazioni potrebbero essere utili per rispondere alle domande relative alle performance.
+
+
+
+== Attributi del cluster
+
+* *LIF di gestione*
++
+Il nome della LIF di gestione del cluster e se la LIF è attualmente disponibile (Up) o meno (Down).
+
+* *Indirizzo IP*
++
+L'indirizzo IPv4 o IPv6 della LIF di gestione del cluster.
+
+* *FQDN*
++
+Il nome di dominio completo (FQDN) della LIF di gestione del cluster.
+
+* *Versione del sistema operativo*
++
+La versione del software ONTAP installata sul cluster.
+
++
+[NOTE]
+====
+Se nei nodi del cluster sono installate versioni diverse del software ONTAP, la versione indicata corrisponde al numero di versione più basso. Consultare la pagina informazioni su prestazioni/nodi per visualizzare la versione del software ONTAP installata su ciascun nodo.
+
+====
+* *Numero di serie*
++
+Il numero di identificazione univoco del cluster.
+
+* *Modello / Famiglia*
++
+Il numero di modello della piattaforma e la famiglia di modelli di tutti i nodi del cluster.
+
+* *Capacità (libera/totale)*
++
+Lo storage totale disponibile per il cluster, in gigabyte, e la quantità di storage attualmente disponibile.
+
+* *Protocolli consentiti*
++
+L'elenco di tutti i protocolli che possono essere gestiti da questo cluster. I protocolli disponibili sono FC/FCoE, iSCSI, HTTP, NVMe, NDMP, NFS e CIFS.
+
+* *Nodi*
++
+Il numero di nodi in questo cluster. È possibile fare clic sul numero per visualizzare i nodi nella pagina Performance/Node Inventory (prestazioni/inventario nodi).
+
+* *Storage Virtual Machines*
++
+Il numero di SVM in questo cluster. È possibile fare clic sul numero per visualizzare le SVM nella pagina Performance/SVM Inventory (prestazioni/inventario SVM).
+
+* *LIF*
++
+Il numero di LIF in questo cluster. È possibile fare clic sul numero per visualizzare i LIF nella pagina Performance/LIF Inventory (prestazioni/inventario LIF).
+
+* *Contatto/sede*
++
+Se disponibile, il nome dell'amministratore dello storage da contattare in relazione al cluster e la posizione del cluster.
+
+

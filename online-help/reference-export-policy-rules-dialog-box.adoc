@@ -1,0 +1,36 @@
+---
+permalink: online-help/reference-export-policy-rules-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La finestra di dialogo Export Policy Rules (Esporta regole policy) visualizza i dettagli relativi ai criteri di esportazione, ai protocolli di autenticazione e all"accesso attivato sui volumi che appartengono alla macchina virtuale di storage (SVM). È possibile utilizzare i filtri per personalizzare la visualizzazione delle informazioni nell"elenco delle regole dei criteri di esportazione. Per impostazione predefinita, le informazioni vengono ordinate in base alla colonna dell"indice.' 
+---
+= Finestra di dialogo Esporta regole policy
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La finestra di dialogo Export Policy Rules (Esporta regole policy) visualizza i dettagli relativi ai criteri di esportazione, ai protocolli di autenticazione e all'accesso attivato sui volumi che appartengono alla macchina virtuale di storage (SVM). È possibile utilizzare i filtri per personalizzare la visualizzazione delle informazioni nell'elenco delle regole dei criteri di esportazione. Per impostazione predefinita, le informazioni vengono ordinate in base alla colonna dell'indice.
+
+* *Indice*
++
+Visualizza l'indice assegnato alle regole dei criteri di esportazione. Si tratta di un numero univoco.
+
+* *Protocolli di accesso*
++
+Visualizza i protocolli abilitati per le regole dei criteri di esportazione.
+
+* *Corrispondenza client*
++
+Visualizza i client che dispongono dell'autorizzazione per accedere ai dati sui volumi che appartengono a SVM.
+
+* *Accesso di sola lettura*
++
+Visualizza il protocollo di autenticazione utilizzato per leggere i dati sui volumi che appartengono a SVM.
+
+* *Accesso in lettura/scrittura*
++
+Visualizza il protocollo di autenticazione utilizzato per leggere o scrivere i dati sui volumi che appartengono alla SVM.
+
+

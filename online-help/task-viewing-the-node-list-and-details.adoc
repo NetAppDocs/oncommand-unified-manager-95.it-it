@@ -1,0 +1,56 @@
+---
+permalink: online-help/task-viewing-the-node-list-and-details.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare la pagina di inventario Health/Nodes per visualizzare l"elenco dei nodi nei cluster. È possibile utilizzare la pagina Health/Cluster Details per visualizzare informazioni dettagliate sui nodi che fanno parte del cluster monitorato.' 
+---
+= Visualizzazione dell'elenco dei nodi e dei dettagli
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la pagina di inventario Health/Nodes per visualizzare l'elenco dei nodi nei cluster. È possibile utilizzare la pagina Health/Cluster Details per visualizzare informazioni dettagliate sui nodi che fanno parte del cluster monitorato.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+
+
+
+== A proposito di questa attività
+
+È possibile visualizzare dettagli quali lo stato del nodo, il cluster che contiene il nodo, i dettagli della capacità aggregata (utilizzata e totale) e i dettagli della capacità raw (utilizzabile, spare e totale). È inoltre possibile ottenere informazioni su coppie ha, shelf di dischi e porte.
+
+
+
+== Fasi
+
+. Nel riquadro di spostamento di sinistra, fare clic su *Health* > *Nodes*.
+. Nella pagina di inventario *Health/Nodes*, fare clic sul nodo di cui si desidera visualizzare i dettagli.
++
+Le informazioni dettagliate per il nodo selezionato vengono visualizzate nella pagina Health/Cluster details (Dettagli integrità/cluster). Nel riquadro di sinistra viene visualizzato l'elenco delle coppie ha. Per impostazione predefinita, l'opzione ha Details (Dettagli ha) è aperta, che visualizza i dettagli dello stato ha e gli eventi correlati alla coppia ha selezionata.
+
+. Per visualizzare altri dettagli sul nodo, eseguire l'azione appropriata:
++
+|===
+| Per visualizzare... | Fare clic su... 
+
+
+ a| 
+Dettagli sugli shelf di dischi
+ a| 
+*Shelf di dischi*.
+
+
+
+ a| 
+Informazioni relative alla porta
+ a| 
+*Porte*.
+
+|===
+

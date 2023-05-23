@@ -1,0 +1,22 @@
+---
+permalink: online-help/reference-what-the-suggested-actions-section-displays.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La sezione azioni consigliate della pagina Dettagli evento fornisce i possibili motivi dell"evento e suggerisce alcune azioni per tentare di risolvere l"evento autonomamente. Le azioni suggerite sono personalizzate in base al tipo di evento o al tipo di soglia violato.' 
+---
+= Viene visualizzata la sezione azioni consigliate
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La sezione azioni consigliate della pagina Dettagli evento fornisce i possibili motivi dell'evento e suggerisce alcune azioni per tentare di risolvere l'evento autonomamente. Le azioni suggerite sono personalizzate in base al tipo di evento o al tipo di soglia violato.
+
+Questa area viene visualizzata solo per alcuni tipi di eventi.
+
+In alcuni casi, nella pagina sono disponibili collegamenti *Help* che fanno riferimento a informazioni aggiuntive per molte azioni suggerite, incluse le istruzioni per eseguire un'azione specifica. Alcune delle azioni possono comportare l'utilizzo di Unified Manager, Gestore di sistema di OnCommand, OnCommand Workflow Automation, comandi CLI di ONTAP o una combinazione di questi strumenti.
+
+In questo argomento della guida sono disponibili anche alcuni collegamenti.
+
+Le azioni suggerite in questo documento devono essere considerate solo una guida per la risoluzione di questo evento. L'azione intrapresa per risolvere questo evento deve basarsi sul contesto dell'ambiente.

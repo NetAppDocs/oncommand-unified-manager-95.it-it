@@ -1,0 +1,36 @@
+---
+permalink: health-checker/task-editing-group-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile modificare le regole di gruppo per modificare i gruppi di condizioni e le condizioni all"interno di un gruppo di condizioni per aggiungere o rimuovere oggetti di storage da o verso un gruppo specifico.' 
+---
+= Modifica delle regole di gruppo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare le regole di gruppo per modificare i gruppi di condizioni e le condizioni all'interno di un gruppo di condizioni per aggiungere o rimuovere oggetti di storage da o verso un gruppo specifico.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== Fasi
+
+. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *Gestione* > *gruppi*.
+. Nella scheda *regole di gruppo*, selezionare la regola di gruppo che si desidera modificare, quindi fare clic su *Modifica*.
+. Nella finestra di dialogo *Edit Group Rule* (Modifica regola gruppo), modificare il nome della regola di gruppo, il nome del gruppo associato, i gruppi di condizioni e le condizioni in base alle esigenze.
++
+[NOTE]
+====
+Non è possibile modificare il tipo di oggetto di destinazione per una regola di gruppo.
+
+====
+. Fare clic su *Save* (Salva).
+

@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-check-for-client-or-network-issues.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Quando i client connessi ai volumi su un cluster aumentano le richieste di i/o, il cluster deve lavorare di più per soddisfare la domanda. L"aumento della domanda sul cluster può mettere in conflitto un componente, aumentare la latenza dei carichi di lavoro che lo utilizzano e attivare un evento in Unified Manager.' 
+---
+= Verificare la presenza di problemi relativi al client o alla rete
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando i client connessi ai volumi su un cluster aumentano le richieste di i/o, il cluster deve lavorare di più per soddisfare la domanda. L'aumento della domanda sul cluster può mettere in conflitto un componente, aumentare la latenza dei carichi di lavoro che lo utilizzano e attivare un evento in Unified Manager.
+
+Nella pagina Event Details (Dettagli evento), la sezione System Diagnosis (Diagnosi del sistema) visualizza i principali carichi di lavoro del volume che utilizzano il componente in conflitto. Se si conosce il client che sta accedendo a un determinato volume, è possibile accedere al client per determinare se l'hardware client o un'applicazione non funziona come previsto o sta svolgendo più lavoro del solito. Potrebbe essere necessario contattare l'amministratore del client o il fornitore dell'applicazione per ricevere assistenza.
+
+È possibile controllare l'infrastruttura di rete per determinare se sono presenti problemi hardware, colli di bottiglia o carichi di lavoro concorrenti che potrebbero aver causato un rallentamento delle prestazioni delle richieste di i/o tra il cluster e i client connessi. Potrebbe essere necessario contattare l'amministratore di rete per assistenza.

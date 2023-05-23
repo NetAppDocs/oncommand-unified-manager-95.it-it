@@ -1,0 +1,56 @@
+---
+permalink: online-help/reference-create-or-clone-performance-threshold-policy-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare la pagina Create Threshold Policy (Crea policy di soglia) o la pagina Clone Threshold Policy (criterio di soglia clone) per creare un nuovo criterio di soglia delle prestazioni.' 
+---
+= Creare o clonare la pagina Performance Threshold Policy
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la pagina Create Threshold Policy (Crea policy di soglia) o la pagina Clone Threshold Policy (criterio di soglia clone) per creare un nuovo criterio di soglia delle prestazioni.
+
+È possibile completare i campi di questa pagina e fare clic su *Save* (Salva) per aggiungere un criterio di soglia delle prestazioni.
+
+* *Per tipo di oggetto*
++
+Selezionare il tipo di oggetto di storage per il quale si desidera creare un criterio di soglia.
+
+* *Nome policy*
++
+Immettere il nome del criterio di soglia. Il nome viene visualizzato nelle altre pagine di Unified Manager e deve fornire una breve descrizione della policy.
+
+* *Descrizione*
++
+(Facoltativo) inserire una descrizione dettagliata del criterio di soglia.
+
+* *Valori di soglia*
++
+Definire la condizione primaria e, facoltativamente, secondaria del contatore di soglia. L'inclusione di un contatore secondario richiede che entrambi i contatori superino i valori limite prima che la soglia venga considerata violata.
+
++
+** *Selezionare un contatore*
++
+Selezionare il contatore su cui si desidera impostare una soglia di performance.
+
+** *Attenzione*
++
+Inserire il valore limite per il contatore considerato un avviso.
+
+** *Critico*
++
+Inserire il valore limite per il contatore considerato critico.
+
+
+
++
+I valori di soglia validi sono compresi tra 0.001 e 10,000,000 per i numeri, 0.001-100 per le percentuali e 0.001-200 per le percentuali di utilizzo della capacità di performance.
+
+* *Durata*
++
+Selezionare il numero di minuti in cui il valore del contatore deve essere maggiore del valore di avviso o del limite critico. Poiché Unified Manager raccoglie i nuovi valori dei contatori delle performance ogni cinque minuti, il menu fornisce valori in multipli di cinque in base all'intervallo di refresh.
+
+

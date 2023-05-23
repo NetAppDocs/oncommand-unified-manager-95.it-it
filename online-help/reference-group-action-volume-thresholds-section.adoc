@@ -1,0 +1,196 @@
+---
+permalink: online-help/reference-group-action-volume-thresholds-section.html 
+sidebar: sidebar 
+keywords:  
+summary: La sezione Group action-volume thresholds consente di configurare le soglie di integrità a livello di gruppo per i volumi. Queste soglie vengono applicate a tutti i volumi di un gruppo. Quando le soglie di integrità del volume sono configurate a livello di gruppo, i valori della soglia di integrità globale non vengono influenzati. 
+---
+= Sezione Group action-volume thresholds
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La sezione Group action-volume thresholds consente di configurare le soglie di integrità a livello di gruppo per i volumi. Queste soglie vengono applicate a tutti i volumi di un gruppo. Quando le soglie di integrità del volume sono configurate a livello di gruppo, i valori della soglia di integrità globale non vengono influenzati.
+
+Per configurare un'azione di gruppo, è possibile configurare le seguenti soglie di integrità del volume:
+
+* Capacità
+* Crescita
+* Quota del qtree
+* Copie Snapshot
+* Inode
+
+
+I valori predefiniti globali vengono utilizzati se le soglie di integrità del volume non sono configurate per nessuna di queste categorie. È possibile impostare le soglie di integrità per:
+
+* Capacità
+* Crescita
+* Quota del qtree
+* Copie Snapshot
+* Inode
+
+
+
+
+== Sezione capacità
+
+È possibile impostare le condizioni per le seguenti soglie di integrità della capacità del volume:
+
+* *Spazio quasi pieno*
++
+Specifica la percentuale in cui un volume viene considerato quasi pieno:
+
++
+** Valore predefinito: 80 percento
++
+Il valore di questa soglia deve essere inferiore al valore della soglia Volume Full per consentire al server di gestione di generare un evento.
+
+** Evento generato: Volume quasi pieno
+** Severità dell'evento: Avviso
+
+
+* *Spazio pieno*
++
+Specifica la percentuale in cui un volume viene considerato pieno:
+
++
+** Valore predefinito: 90 percento
+** Evento generato: Volume pieno
+** Severità evento: Errore
+
+
+* *Impegnato in eccesso*
++
+Specifica la percentuale in cui un volume viene considerato come overcommit:
+
++
+** Valore predefinito: 100 percento
+** Evento generato: Volume overcommit
+** Severità evento: Errore
+
+
+
+
+
+
+== Sezione sulla crescita
+
+È possibile impostare le seguenti condizioni di soglia di integrità per la crescita del volume:
+
+* *Tasso di crescita*
++
+Specifica la percentuale in cui il tasso di crescita di un volume viene considerato normale prima che il sistema generi un evento anomalo di Volume Growth Rate:
+
++
+** Valore predefinito: 1 percento
+** Evento generato: Tasso di crescita del volume anomalo
+** Severità dell'evento: Avviso
+
+
+* *Growth Rate Sensitivity*
++
+Specifica il fattore applicato alla deviazione standard del tasso di crescita di un volume. Se il tasso di crescita supera la deviazione standard fattorizzata, viene generato un evento anomalo di Volume Growth Rate.
+
++
+Un valore inferiore per la sensibilità del tasso di crescita indica che l'aggregato è altamente sensibile alle variazioni del tasso di crescita. L'intervallo per la sensibilità del tasso di crescita è compreso tra 1 e 5.
+
++
+** Valore predefinito: 2
+
+
+
+
+
+
+== Sezione quota qtree
+
+È possibile impostare le seguenti condizioni di soglia di integrità per le quote di volume:
+
+* *Quasi impegnato*
++
+Specifica la percentuale in cui un volume viene considerato quasi overcommit dalle quote qtree:
+
++
+** Valore predefinito: 95 percento
+** Evento generato: Quota Qtree del volume quasi sovrascrittura
+** Severità dell'evento: Avviso
+
+
+* *Impegnato in eccesso*
++
+Specifica la percentuale in cui un volume viene considerato come overcommit dalle quote qtree:
+
++
+** Valore predefinito: 100 percento
+** Evento generato: Quota Qtree volume sovrascrittura
+** Severità evento: Errore
+
+
+
+
+
+
+== Sezione copie Snapshot
+
+È possibile impostare le seguenti condizioni di soglia di integrità per le copie Snapshot nel volume:
+
+* *Snapshot Reserve Full*
++
+Specifica la percentuale in cui lo spazio riservato per le copie Snapshot viene considerato pieno:
+
++
+** Valore predefinito: 90 percento
+** Evento generato: Riserva snapshot volume piena
+** Severità evento: Errore
+
+
+* *Giorni fino al completo*
++
+Specifica il numero di giorni rimanenti prima che lo spazio riservato per le copie Snapshot raggiunga la capacità massima:
+
++
+** Valore predefinito: 7
+** Evento generato: Volume Snapshot Reserve Days until Full (giorni riserva snapshot volume fino al pieno)
+** Severità evento: Errore
+
+
+* *Conteggio*
++
+Specifica il numero di copie Snapshot di un volume considerate troppe:
+
++
+** Valore predefinito: 250
+** Evento generato: Troppe copie Snapshot
+** Severità evento: Errore
+
+
+
+
+
+
+== Sezione inode
+
+È possibile impostare le seguenti condizioni di soglia di salute per gli inode:
+
+* *Quasi pieno*
++
+Specifica la percentuale in cui un volume viene considerato avere consumato la maggior parte degli inode:
+
++
+** Valore predefinito: 80 percento
+** Evento generato: Inode quasi pieno
+** Severità dell'evento: Avviso
+
+
+* *Completo*
++
+Specifica la percentuale in cui un volume viene considerato avere consumato tutti i suoi inode:
+
++
+** Valore predefinito: 90 percento
+** Evento generato: Inodes Full
+** Severità evento: Errore
+
+
+

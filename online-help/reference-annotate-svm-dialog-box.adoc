@@ -1,0 +1,30 @@
+---
+permalink: online-help/reference-annotate-svm-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La finestra di dialogo Annotate SVM (Annotazione SVM) consente di annotare manualmente gli oggetti di storage. È possibile selezionare una singola SVM o più SVM e annotare con una coppia di valori specifica dall"elenco esistente di annotazioni.' 
+---
+= Finestra di dialogo Annotate SVM (Annotazione SVM)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La finestra di dialogo Annotate SVM (Annotazione SVM) consente di annotare manualmente gli oggetti di storage. È possibile selezionare una singola SVM o più SVM e annotare con una coppia di valori specifica dall'elenco esistente di annotazioni.
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+* *Annotation=coppie di valori*
++
+Consente di selezionare l'annotazione richiesta per la SVM selezionata.
+
+* *Applica*
++
+Applica l'annotazione selezionata alla SVM.
+
+* *Annulla*
++
+Chiude la finestra di dialogo Annotate SVM (Annotazione SVM) senza salvare le modifiche.
+
+

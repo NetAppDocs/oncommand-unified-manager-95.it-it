@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-annotations-for-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile creare annotazioni in Unified Manager per annotare gli oggetti di storage. Le annotazioni consentono di identificare facilmente le risorse critiche e di intraprendere azioni appropriate, ad esempio aggiungendo risorse critiche a un gruppo e assegnando un"azione di gruppo o creando un report delle risorse annotate.' 
+---
+= Gestione delle annotazioni per gli oggetti di storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile creare annotazioni in Unified Manager per annotare gli oggetti di storage. Le annotazioni consentono di identificare facilmente le risorse critiche e di intraprendere azioni appropriate, ad esempio aggiungendo risorse critiche a un gruppo e assegnando un'azione di gruppo o creando un report delle risorse annotate.

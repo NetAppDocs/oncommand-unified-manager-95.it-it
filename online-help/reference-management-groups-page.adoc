@@ -1,0 +1,186 @@
+---
+permalink: online-help/reference-management-groups-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Management/Groups (Gestione/gruppi) consente di creare gruppi in Unified Manager per gestire facilmente gli oggetti di storage. Un gruppo è un insieme dinamico di oggetti storage (cluster, volumi e SVM), definito dalle regole di gruppo create per il gruppo.' 
+---
+= Pagina Management/Groups (Gestione/gruppi)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Management/Groups (Gestione/gruppi) consente di creare gruppi in Unified Manager per gestire facilmente gli oggetti di storage. Un gruppo è un insieme dinamico di oggetti storage (cluster, volumi e SVM), definito dalle regole di gruppo create per il gruppo.
+
+La pagina Gestione/gruppi include schede che consentono di aggiungere, eliminare o modificare un gruppo, regole di gruppo e azioni di gruppo. Quando si effettua l'accesso come operatore, si avrà accesso solo in lettura alla pagina. È possibile accedere ai pulsanti di aggiunta, modifica o eliminazione di ciascuna scheda quando si effettua l'accesso come amministratore dello storage o amministratore di Unified Manager.
+
+
+
+== Scheda gruppi
+
+La scheda gruppi visualizza il nome e la descrizione dei gruppi creati. È possibile eseguire attività come l'aggiunta, la modifica o l'eliminazione di un gruppo. La scheda visualizza anche il numero di regole di gruppo e di azioni di gruppo associate a un gruppo, il numero di cluster, SVM e volumi nel gruppo.
+
+
+
+== Pulsanti di comando
+
+* *Aggiungi*
++
+Visualizza la finestra di dialogo Aggiungi gruppo, che consente di aggiungere un gruppo e di fornire un nome e una descrizione per il gruppo.
+
++
+È inoltre possibile applicare le regole di gruppo in un secondo momento al gruppo per includere gli oggetti di storage.
+
+* *Modifica*
++
+Visualizza la finestra di dialogo Modifica gruppo, che consente di modificare il nome e la descrizione del gruppo selezionato.
+
+* *Elimina*
++
+Elimina il gruppo selezionato.
+
+
+
+
+
+== Vista elenco
+
+La vista elenco visualizza, in formato tabulare, i gruppi creati in Unified Manager. È possibile utilizzare i filtri di colonna per personalizzare i dati visualizzati. Per impostazione predefinita, l'elenco viene ordinato in base al nome del gruppo.
+
+* *Nome*
++
+Visualizza il nome del gruppo.
+
+* *Descrizione*
++
+Visualizza la descrizione del gruppo.
+
+* *Regole associate*
++
+Visualizza il numero di regole aggiunte al gruppo.
+
+* *Azioni associate*
++
+Visualizza il numero di azioni di gruppo aggiunte al gruppo.
+
+* *Clusters applicabili*
++
+Visualizza il numero di cluster inclusi nel gruppo.
+
+* *SVM applicabili*
++
+Visualizza il numero di SVM incluse nel gruppo.
+
+* *Volumi applicabili*
++
+Visualizza il numero di volumi inclusi nel gruppo.
+
+
+
+
+
+== Scheda regole di gruppo
+
+La scheda regole di gruppo visualizza le regole di gruppo create per i gruppi che contengono oggetti di storage. È possibile eseguire attività come l'aggiunta, la modifica o l'eliminazione di una regola di gruppo. La scheda visualizza anche il nome del gruppo per il quale viene creata la regola di gruppo e l'oggetto di storage per il quale viene applicata la regola. È inoltre possibile visualizzare il numero di oggetti di storage che soddisfano la regola di gruppo.
+
+
+
+== Pulsanti di comando
+
+* *Aggiungi*
++
+Visualizza la finestra di dialogo Aggiungi regola gruppo, che consente di creare regole di gruppo per gli oggetti di storage.
+
+* *Modifica*
++
+Visualizza la finestra di dialogo Modifica regola gruppo, che consente di riconfigurare le regole di gruppo precedentemente configurate.
+
+* *Elimina*
++
+Elimina la regola di gruppo selezionata.
+
+
+
+
+
+== Vista elenco
+
+La vista elenco visualizza, in formato tabulare, le regole di gruppo create per uno specifico oggetto di storage (cluster, volumi o SVM) e il numero di oggetti di storage che soddisfano la regola di gruppo definita.
+
+* *Nome*
++
+Visualizza il nome della regola.
+
+* *Gruppo associato*
++
+Visualizza il nome del gruppo per cui è definita la regola di gruppo.
+
+* *Tipo di oggetto di destinazione*
++
+Visualizza il tipo di oggetto di storage a cui viene applicata la regola di gruppo.
+
+* *Oggetti applicabili*
++
+Visualizza il numero di oggetti di storage inclusi nel gruppo in base alla regola di gruppo.
+
+
+
+
+
+== Scheda azioni di gruppo
+
+La scheda azioni gruppo visualizza il nome e il tipo di azioni di gruppo definite per i gruppi. È possibile eseguire attività come l'aggiunta, la modifica, l'eliminazione o il riordinamento delle azioni di gruppo. La scheda visualizza anche il nome del gruppo a cui viene applicata l'azione di gruppo.
+
+
+
+== Pulsanti di comando
+
+* *Aggiungi*
++
+Visualizza la finestra di dialogo Aggiungi azione, che consente di creare azioni di gruppo per un gruppo di oggetti di storage. Ad esempio, è possibile impostare i livelli di soglia degli oggetti di storage in un gruppo.
+
+* *Modifica*
++
+Visualizza la finestra di dialogo Modifica azione, che consente di riconfigurare le azioni di gruppo precedentemente configurate.
+
+* *Elimina*
++
+Elimina l'azione di gruppo selezionata.
+
+* *Riordina*
++
+Visualizza la finestra di dialogo Riordina azioni gruppo per riorganizzare l'ordine delle azioni del gruppo.
+
+
+
+
+
+== Vista elenco
+
+La vista elenco visualizza, in formato tabulare, le azioni di gruppo create per i gruppi nel server Unified Manager. È possibile utilizzare i filtri di colonna per personalizzare i dati visualizzati.
+
+* *Classifica*
++
+Visualizza l'ordine delle azioni di gruppo da applicare agli oggetti di storage di un gruppo.
+
+* *Nome*
++
+Visualizza il nome dell'azione di gruppo.
+
+* *Gruppo associato*
++
+Visualizza il nome del gruppo per cui è definita l'azione di gruppo.
+
+* *Tipo di azione*
++
+Visualizza il tipo di azione di gruppo che è possibile eseguire sugli oggetti di storage di un gruppo.
+
++
+Non è possibile creare più azioni di gruppo dello stesso tipo di azione per un gruppo. Ad esempio, è possibile creare un'azione di gruppo per impostare le soglie del volume per un gruppo. Tuttavia, non è possibile creare un'altra azione di gruppo per lo stesso gruppo per modificare le soglie del volume.
+
+* *Descrizione*
++
+Visualizza la descrizione dell'azione di gruppo.
+
+

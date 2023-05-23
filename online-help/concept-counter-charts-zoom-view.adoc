@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-counter-charts-zoom-view.html 
+sidebar: sidebar 
+keywords:  
+summary: I Counter Chart forniscono una vista Zoom che consente di ingrandire i dettagli delle performance nel periodo di tempo specificato. In questo modo è possibile visualizzare i dettagli delle performance e gli eventi con una granularità molto più elevata, il che è vantaggioso per la risoluzione dei problemi relativi alle performance. 
+---
+= Counter Chart Zoom View
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I Counter Chart forniscono una vista Zoom che consente di ingrandire i dettagli delle performance nel periodo di tempo specificato. In questo modo è possibile visualizzare i dettagli delle performance e gli eventi con una granularità molto più elevata, il che è vantaggioso per la risoluzione dei problemi relativi alle performance.
+
+Quando viene visualizzato in Zoom View, alcuni dei grafici di dettaglio forniscono informazioni aggiuntive rispetto a quelle visualizzate quando il grafico non è in Zoom View. Ad esempio, le pagine IOPS, IOPS/TB e visualizzazione zoom del grafico a discesa Mbps visualizzano i valori dei criteri QoS per volumi e LUN, se impostati in ONTAP.
+
+[NOTE]
+====
+Per le policy di soglia delle performance definite dal sistema, solo le policy "`Node resources over-utilizzed`" e "`QoS throughput limit violed`" sono disponibili nell'elenco *Policies*. Gli altri criteri di soglia definiti dal sistema non sono attualmente disponibili.
+
+====

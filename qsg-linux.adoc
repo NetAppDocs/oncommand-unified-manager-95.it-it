@@ -1,0 +1,60 @@
+---
+permalink: qsg-linux.html 
+sidebar: sidebar 
+keywords: quick start guide, getting started, QSG, Linux QSG, RHEL QSG, quick installation 
+summary: Guida rapida per Unified Manager su piattaforma Linux. 
+---
+= Istruzioni di avvio rapido per le installazioni Linux
+:allow-uri-read: 
+
+
+
+
+== Requisiti di sistema
+
+* Sistema operativo: Architettura Red Hat Enterprise Linux o CentOS 64-bit versione 7.x, installata utilizzando l'ambiente di base "Server with GUI" dall'opzione Software Selection del programma di installazione del sistema operativo
+* RAM: 12 GB
+* CPU: 9572 MHz in totale
+* Spazio libero su disco: 100 GB di spazio su disco per /opt, 50 GB per la partizione root
+
+
+Per informazioni dettagliate sui requisiti di sistema, vedere link:install/reference-red-hat-and-centos-software-and-installation-requirements.html["Requisiti di installazione e software Red Hat Enterprise Linux e CentOS"] e a. link:http://mysupport.netapp.com/matrix["Matrice di interoperabilità"].
+
+
+
+== Installazione di Gestione unificata di OnCommand
+
+
+
+=== Scaricare il programma di installazione
+
+. Scaricare il `OnCommandUnifiedManager-rhel7-9.5RC1.zip` pacchetto di installazione.
+. Nella directory in cui è stato scaricato il file di installazione, eseguire:
++
+`# unzip OnCommandUnifiedManager-rhel7-9.5RC1.zip`
+
+
+
+
+
+=== Verificare la configurazione del repository
+
+Le procedure per la configurazione dei repository Red Hat Enterprise Linux o CentOS sono specifiche del sito. È possibile utilizzare lo script pre_install_check.sh incluso nel pacchetto di installazione per verificare se il sistema operativo è configurato correttamente. Se il sistema è connesso a Internet, riceverai automaticamente le istruzioni per configurare i repository Red Hat Enterprise Linux e MySQL. Per informazioni su come eseguire l'installazione su un sistema senza connessione a Internet, vedere link:install/concept-install-upgrade-and-remove-unified-manager-software.html["Installazione, aggiornamento e rimozione del software Unified Manager su Red Hat o CentOS"].
+
+`# ./pre_install_check.sh`
+
+
+
+=== Installare Unified Manager
+
+Unified Manager utilizza `yum` utility per installare il software e qualsiasi software dipendente. Dato che esistono diverse immagini di Red Hat Enterprise Linux o CentOS in diverse organizzazioni, i pacchetti installati dipendono dal software presente nelle immagini. Il `yum` l'utility determina i pacchetti software dipendenti per l'installazione. Per ulteriori informazioni sui pacchetti software dipendenti, vedere link:install/concept-install-upgrade-and-remove-unified-manager-software.html["Installazione, aggiornamento e rimozione del software Unified Manager su Red Hat o CentOS"].
+
+Come utente root, o usando sudo, eseguire il seguente comando dalla directory in cui è stato decompresso il file di installazione:
+
+`# yum install *.rpm`
+
+oppure
+
+`% sudo yum install *.rpms`
+
+Al termine dell'installazione, vengono visualizzate le informazioni per la connessione all'interfaccia utente Web di Unified Manager. Se non si riesce a connettersi all'interfaccia utente Web, potrebbe essere necessario inserire la porta 443 nella lista bianca. Per ulteriori informazioni, contatta il tuo team di supporto tecnico.

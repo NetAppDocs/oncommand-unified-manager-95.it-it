@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-transfer-rate-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile personalizzare il rapporto velocità di trasferimento del volume per visualizzare i dettagli del trasferimento del volume in base alle dimensioni totali del trasferimento del volume. È inoltre possibile visualizzare i trasferimenti di volume per un giorno specifico della settimana. 
+---
+= Personalizzazioni del report Volume Transfer Rate (storico)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report velocità di trasferimento del volume (cronologia) per visualizzare i dettagli del trasferimento del volume in base alle dimensioni totali del trasferimento del volume. È inoltre possibile visualizzare i trasferimenti di volume per un giorno specifico della settimana.

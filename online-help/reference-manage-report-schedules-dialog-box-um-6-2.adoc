@@ -1,0 +1,94 @@
+---
+permalink: online-help/reference-manage-report-schedules-dialog-box-um-6-2.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile visualizzare, modificare o eliminare le pianificazioni di report esistenti e aggiungere nuove pianificazioni per i report dalla finestra di dialogo Gestisci pianificazioni report. 
+---
+= Finestra di dialogo Gestisci pianificazioni report
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile visualizzare, modificare o eliminare le pianificazioni di report esistenti e aggiungere nuove pianificazioni per i report dalla finestra di dialogo Gestisci pianificazioni report.
+
+
+
+== Proprietà
+
+È possibile selezionare una pianificazione esistente o creare una nuova pianificazione per i report. È possibile visualizzare, modificare o eliminare le pianificazioni dei report.
+
+* *Riquadro sinistro*
++
+** *Nome pianificazione*
++
+Visualizza le pianificazioni esistenti. Facendo clic su qualsiasi pianificazione, è possibile visualizzare i dettagli della pianificazione nel riquadro di destra. Per il primo accesso, non esistono pianificazioni.
+
+** *Aggiungi pianificazione*
++
+Visualizza il nuovo modulo di pianificazione nel riquadro di destra. È ora possibile aggiungere un nuovo programma.
+
+
+
+* *Riquadro destro*
++
+** *Nome pianificazione*
++
+Visualizza il nome del programma.
+
+** *Indirizzo e-mail destinatario*
++
+Visualizza l'indirizzo e-mail dell'utente a cui deve essere inviato il report. È possibile inserire più indirizzi e-mail separati da virgole.
+
+** *Formato report*
++
+Visualizza il formato in cui deve essere presentato il report. L'opzione PDF viene selezionata come formato di report predefinito. Se è selezionato il formato XHTML, aprire il report inviato tramite e-mail utilizzando un browser Web supportato.
+
+** *Frequenza*
++
+Visualizza la frequenza con cui il report viene pianificato.
+
+** *Categoria report*
++
+Visualizza i gruppi di categorie di report. Selezionando una categoria di report dall'elenco, vengono visualizzati i report che appartengono a tale categoria nella colonna Available Reports (Report disponibili).
+
+** *Report disponibili*
++
+Visualizza solo i report che appartengono alla categoria di report selezionata.
+
+** *Report selezionati*
++
+Visualizza i report selezionati ai quali si sceglie di applicare la pianificazione. È possibile selezionare i report richiesti dalla colonna Available Reports (Report disponibili). Selezionare almeno un report
+
+
+
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti operazioni:
+
+* *Aggiungi pianificazione*
++
+Consente di aggiungere una nuova pianificazione.
+
+* *Elimina pianificazione*
++
+Consente di eliminare la pianificazione attualmente visualizzata. Quando si crea una nuova pianificazione, questo pulsante non è disponibile.
+
+* *Salva*
++
+Salva la pianificazione visualizzata, modificata o aggiunta.
+
+* *Salva e chiudi*
++
+Salva la pianificazione visualizzata, modificata o aggiunta e chiude la finestra di dialogo Gestisci pianificazioni report.
+
+* *Annulla*
++
+Chiude la finestra di dialogo Gestisci pianificazioni report mentre viene visualizzato un messaggio per salvare la pianificazione.
+
+

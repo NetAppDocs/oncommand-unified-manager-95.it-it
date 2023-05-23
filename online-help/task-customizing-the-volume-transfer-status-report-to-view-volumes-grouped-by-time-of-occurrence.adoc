@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-status-report-to-view-volumes-grouped-by-time-of-occurrence.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile personalizzare il rapporto Volume Transfer Status (storico) per visualizzare l"elenco dei volumi raggruppati in base all"ora di ricorrenza tra due date.' 
+---
+= Personalizzazione del report Volume Transfer Status (Cronologia) per visualizzare i volumi raggruppati in base all'ora di esecuzione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report Stato trasferimento volume (storico) per visualizzare l'elenco dei volumi raggruppati in base all'ora in cui si verifica l'evento tra due date.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Rimuovi raggruppamento per cluster:
++
+.. Nella colonna che deve essere raggruppata, fare clic su image:../media/click-to-see-menu.gif[""] icona.
+.. Selezionare *Gruppo* > *Elimina gruppo interno*.
+
+
+. Nella colonna *ora di inizio*, aprire la finestra di dialogo *filtro* facendo clic su image:../media/click-to-filter.gif[""] icona.
+. Dall'elenco a discesa *Condition* (condizione), selezionare *between*.
+. Fare clic su *Select Values* (Seleziona valori) e scegliere i valori *Date from* (Data da) e *Date to* (Data da).
+. Fare clic su *OK*.
+

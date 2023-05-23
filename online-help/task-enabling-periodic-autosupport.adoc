@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-enabling-periodic-autosupport.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile scegliere di inviare messaggi specifici e predefiniti automaticamente al supporto tecnico per garantire il corretto funzionamento dell"ambiente e per aiutare l"utente a mantenere l"integrità dell"ambiente.' 
+---
+= Abilitazione di Periodic AutoSupport
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile scegliere di inviare messaggi specifici e predefiniti automaticamente al supporto tecnico per garantire il corretto funzionamento dell'ambiente e per aiutare l'utente a mantenere l'integrità dell'ambiente.
+
+
+
+== Prima di iniziare
+
+Devi essere connesso come utente di manutenzione.
+
+
+
+== A proposito di questa attività
+
+Per usufruire dei vantaggi di NetApp Active IQ, è necessario attivare AutoSupport.
+
+
+
+== Fasi
+
+. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *AutoSupport* dal menu *Setup*.
+. Selezionare la casella di controllo *Enable Periodic AutoSupport* (attiva protocollo periodico).
+. Se necessario, definire il nome, la porta e le informazioni di autenticazione per il server proxy HTTP.
+. Fare clic su *Save* (Salva).
+

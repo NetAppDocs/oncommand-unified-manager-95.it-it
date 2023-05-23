@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-viewing-the-cluster-list-and-details.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Puoi utilizzare la pagina di inventario Health/Clusters per visualizzare l"inventario dei cluster. La pagina Health/Clusters Storage Summary consente di visualizzare informazioni riepilogative sulla capacità e sull"utilizzo dello storage in tutti i cluster.' 
+---
+= Visualizzazione dell'elenco e dei dettagli del cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puoi utilizzare la pagina di inventario Health/Clusters per visualizzare l'inventario dei cluster. La pagina Health/Clusters Storage Summary consente di visualizzare informazioni riepilogative sulla capacità e sull'utilizzo dello storage in tutti i cluster.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile visualizzare i dettagli dei singoli cluster, ad esempio lo stato del cluster, la capacità, la configurazione, le LIF, i nodi, E dischi in quel cluster utilizzando la pagina Health/Cluster Details.
+
+I dettagli nella pagina di inventario di Health/Clusters, nella pagina di riepilogo dello storage di Health/Clusters e nella pagina dei dettagli di Health/Cluster consentono di pianificare lo storage. Ad esempio, prima di eseguire il provisioning di un nuovo aggregato, è possibile selezionare un cluster specifico dalla pagina di inventario Health/Clusters e ottenere i dettagli della capacità per determinare se il cluster dispone dello spazio richiesto.
+
+
+
+== Fasi
+
+. Nel riquadro di spostamento di sinistra, fare clic su *Health* > *Clusters*.
+. Nel menu *View* (Visualizza), selezionare *Storage Summary* (Riepilogo storage) per visualizzare i dettagli sulla capacità e l'utilizzo dello storage in tutti i cluster
+. Visualizzare i dettagli completi del cluster nella pagina dei dettagli *Health/Cluster* facendo clic sul nome del cluster.
+

@@ -1,0 +1,78 @@
+---
+permalink: online-help/reference-create-snapvault-policy-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La finestra di dialogo Crea criterio SnapVault consente di creare un criterio per impostare la priorità per i trasferimenti SnapVault. Le policy vengono utilizzate per massimizzare l"efficienza dei trasferimenti dal volume primario al volume secondario.' 
+---
+= Finestra di dialogo Crea policy SnapVault
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La finestra di dialogo Crea criterio SnapVault consente di creare un criterio per impostare la priorità per i trasferimenti SnapVault. Le policy vengono utilizzate per massimizzare l'efficienza dei trasferimenti dal volume primario al volume secondario.
+
+* *Cluster di destinazione*
++
+Il nome del cluster selezionato nella scheda SnapVault della finestra di dialogo Configura protezione.
+
+* *SVM di destinazione*
++
+Il nome della SVM selezionata nella scheda SnapVault della finestra di dialogo Configura protezione.
+
+* *Nome policy*
++
+Il nome fornito per la nuova policy. I nomi dei criteri possono essere costituiti dai caratteri Da A a Z, da a a z, da 0 a 9, punto (.), trattino (-), e il carattere di sottolineatura (_).
+
+* *Priorità trasferimento*
++
+La priorità di esecuzione del trasferimento. È possibile selezionare normale o basso. Relazioni di trasferimento con policy che specificano una normale priorità di trasferimento eseguite prima di quelle con policy che specificano una bassa priorità di trasferimento. L'impostazione predefinita è normale.
+
+* *Commento*
++
+Un campo facoltativo in cui è possibile aggiungere un commento di massimo 255 caratteri sulla policy SnapVault.
+
+* *Ignora tempo di accesso*
++
+Specifica se i trasferimenti incrementali vengono ignorati per i file che hanno modificato solo il tempo di accesso.
+
+* *Etichetta di replica*
++
+Elenca in una tabella le regole associate alle copie Snapshot selezionate da ONTAP che hanno un'etichetta di replica specifica in un criterio. Sono inoltre disponibili le seguenti informazioni e azioni:
+
++
+** Pulsanti di comando
++
+I pulsanti di comando consentono di eseguire le seguenti operazioni:
+
++
+*** Aggiungi
++
+Consente di creare un'etichetta di copia Snapshot e un numero di conservazione.
+
+*** Modifica Conteggio conservazione
++
+Consente di modificare il numero di conservazione per un'etichetta di copia Snapshot esistente. Il numero di conservazione deve essere compreso tra 1 e 251. La somma di tutti i conteggi di conservazione per tutte le regole non può superare 251.
+
+*** Eliminare
++
+Consente di eliminare un'etichetta di copia Snapshot esistente.
+
+
+
+** Etichetta di copia Snapshot
++
+Visualizza l'etichetta della copia Snapshot. Se si seleziona uno o più volumi con la stessa policy di copia Snapshot locale, viene visualizzata una voce per ciascuna etichetta della policy. Se si selezionano più volumi con due o più criteri di copia Snapshot locali, la tabella visualizza tutte le etichette di tutti i criteri
+
+** Pianificazione
++
+Visualizza la pianificazione associata a ciascuna etichetta di copia Snapshot. Se a un'etichetta sono associati più piani di lavoro, i piani di lavoro per tale etichetta vengono visualizzati in un elenco separato da virgole. Se si selezionano più volumi con la stessa etichetta ma con pianificazioni diverse, la pianificazione visualizza "`varie`" per indicare che più di una pianificazione è associata ai volumi selezionati.
+
+** Destination Retention Count
++
+Visualizza il numero di copie Snapshot con l'etichetta specificata che vengono conservate sul secondario SnapVault. Conteggi di conservazione per etichette con pianificazioni multiple Visualizza la somma dei conteggi di conservazione di ciascuna coppia di etichette e pianificazioni. Se si selezionano più volumi con due o più policy di copia Snapshot locali, il conteggio delle trattenuta è vuoto.
+
+
+
+

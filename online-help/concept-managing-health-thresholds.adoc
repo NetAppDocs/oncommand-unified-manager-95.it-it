@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-health-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile configurare i valori delle soglie di integrità globali per tutti gli aggregati, i volumi e i qtree per tenere traccia di eventuali violazioni delle soglie di integrità. 
+---
+= Gestione delle soglie di integrità
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile configurare i valori delle soglie di integrità globali per tutti gli aggregati, i volumi e i qtree per tenere traccia di eventuali violazioni delle soglie di integrità.

@@ -1,0 +1,270 @@
+---
+permalink: online-help/reference-relationship-all-relationships-view.html 
+sidebar: sidebar 
+keywords:  
+summary: La pagina delle relazioni protezione/volume visualizza informazioni sulle relazioni di protezione nel sistema storage. 
+---
+= Pagina delle relazioni protezione/volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina delle relazioni protezione/volume visualizza informazioni sulle relazioni di protezione nel sistema storage.
+
+Utilizzare il pulsante *Esporta* per esportare i dettagli di tutte le relazioni in valori separati da virgole (`.csv`).
+
+* *Stato relazione*
++
+Visualizza lo stato corrente della relazione di protezione.
+
++
+Lo stato può essere Error (image:../media/sev-error-um60.png[""]), Avviso (image:../media/sev-warning-um60.png[""]), o normale (image:../media/sev-normal-um60.png[""]).
+
+* *Stato Lag*
++
+Visualizza lo stato di ritardo per le relazioni gestite e per le relazioni non gestite che hanno una pianificazione associata a tale relazione. Lo stato di ritardo può essere:
+
++
+** Errore (image:../media/sev-error-um60.png[""])
++
+La durata del ritardo è maggiore o uguale alla soglia di errore del ritardo.
+
+** Avvertenza (image:../media/sev-warning-um60.png[""])
++
+La durata del ritardo è maggiore o uguale alla soglia di avviso del ritardo.
+
+** Normale (image:../media/sev-normal-um60.png[""])
++
+La durata del ritardo rientra nei limiti normali.
+
+** Non applicabile
++
+Lo stato di ritardo non è applicabile per le relazioni sincrone perché non è possibile configurare una pianificazione.
+
+
+
+* *Stato trasferimento*
++
+Visualizza lo stato di trasferimento per la relazione di protezione. Lo stato del trasferimento può essere uno dei seguenti:
+
++
+** Interruzione
++
+I trasferimenti SnapMirror sono attivati; tuttavia, è in corso un'operazione di interruzione del trasferimento che potrebbe includere la rimozione del checkpoint.
+
+** Verifica in corso
++
+Il volume di destinazione è sottoposto a un controllo diagnostico e non è in corso alcun trasferimento.
+
+** Finalizzazione
++
+I trasferimenti SnapMirror sono attivati. Il volume è attualmente in fase di post-trasferimento per i trasferimenti incrementali SnapVault.
+
+** Inattivo
++
+I trasferimenti sono attivati e non è in corso alcun trasferimento.
+
+** In-Sync
++
+I dati nei due volumi nella relazione sincrona vengono sincronizzati.
+
+** Out-of-Sync
++
+I dati nel volume di destinazione non vengono sincronizzati con il volume di origine.
+
+** Preparazione in corso
++
+I trasferimenti SnapMirror sono attivati. Il volume è attualmente in fase di pre-trasferimento per i trasferimenti incrementali SnapVault.
+
+** In coda
++
+I trasferimenti SnapMirror sono attivati. Nessun trasferimento in corso.
+
+** A Quiesced
++
+I trasferimenti SnapMirror sono disattivati. Nessun trasferimento in corso.
+
+** Quiescing
++
+È in corso un trasferimento SnapMirror. I trasferimenti aggiuntivi sono disattivati.
+
+** Trasferimento in corso
++
+I trasferimenti SnapMirror sono attivati e il trasferimento è in corso.
+
+** In transizione
++
+Il trasferimento asincrono dei dati dal volume di origine al volume di destinazione è completo e la transizione all'operazione sincrona è iniziata.
+
+** In attesa
++
+È stato avviato un trasferimento SnapMirror, ma alcune attività associate sono in attesa di essere accodate.
+
+
+
+* *Tipo di relazione*
++
+Visualizza il tipo di relazione utilizzato per replicare un volume. I tipi di relazione includono:
+
++
+** Mirror asincrono
+** Vault asincrono
+** StrictSync
+** Sincronizza
+
+
+* *SVM di origine*
++
+Visualizza il nome della SVM di origine.
+
++
+Se il messaggio `Resource-key not discovered` Potrebbe indicare che SVM esiste nel cluster ma non è ancora stato aggiunto all'inventario di Unified Manager o che SVM è stato creato dopo l'ultimo aggiornamento del cluster. Per aggiornare l'elenco delle risorse, è necessario assicurarsi che la SVM esista o eseguire una nuova ricerca nel cluster.
+
++
+È possibile spostare il puntatore sulla SVM di origine per visualizzare informazioni come il cluster, il tipo di volume, i protocolli consentiti e lo spazio utilizzato. È possibile visualizzare ulteriori dettagli sulla SVM facendo clic sul nome della SVM.
+
+* *Volume di origine*
++
+Visualizza il volume di origine protetto. È possibile visualizzare ulteriori dettagli sul volume di origine facendo clic sul nome del volume di origine.
+
++
+Se il messaggio `Resource-key not discovered` Potrebbe indicare che il volume esiste nel cluster ma non è stato ancora aggiunto all'inventario di Unified Manager o che il volume è stato creato dopo l'ultimo aggiornamento del cluster. Per aggiornare l'elenco delle risorse, è necessario assicurarsi che il volume esista o eseguire una nuova ricerca nel cluster.
+
+* *SVM di destinazione*
++
+Visualizza il nome della SVM di destinazione.
+
++
+È possibile spostare il puntatore sulla SVM di destinazione per visualizzare informazioni quali il cluster, il tipo di volume, i protocolli consentiti e lo spazio utilizzato. È possibile visualizzare ulteriori dettagli sulla SVM facendo clic sul nome della SVM.
+
+* *Volume di destinazione*
++
+Visualizza il nome del volume di destinazione.
+
++
+È possibile spostare il puntatore su un volume per visualizzare informazioni come l'aggregato contenente il volume, lo spazio di overcommit della quota qtree, lo stato dell'ultima operazione di spostamento del volume e lo spazio allocato nel volume. È inoltre possibile visualizzare i dettagli degli oggetti correlati, ad esempio la SVM a cui appartiene il volume, l'aggregato a cui appartiene il volume e tutti i volumi che appartengono a questo aggregato.
+
+* *Durata ritardo*
++
+Visualizza il periodo di tempo in cui i dati sul mirror si trovano indietro rispetto all'origine.
+
++
+La durata del ritardo deve essere vicina o uguale a 0 secondi per le relazioni StrictSync.
+
+* *Ultimo aggiornamento riuscito*
++
+Visualizza l'ora dell'ultima operazione SnapMirror o SnapVault eseguita correttamente.
+
++
+L'ultimo aggiornamento riuscito non è applicabile per le relazioni sincrone.
+
+* *Durata ultimo trasferimento*
++
+Visualizza il tempo necessario per il completamento dell'ultimo trasferimento dei dati.
+
++
+La durata del trasferimento non è applicabile per le relazioni StrictSync perché il trasferimento deve essere simultaneo.
+
+* *Dimensione ultimo trasferimento*
++
+Visualizza le dimensioni, in byte, dell'ultimo trasferimento di dati.
+
++
+La dimensione del trasferimento non è applicabile per le relazioni StrictSync.
+
+* *Relationship Health*
++
+Visualizza l'heath di relazione del cluster.
+
+* *Stato di relazione*
++
+Visualizza lo stato mirror della relazione SnapMirror.
+
+* *Motivo non corretto*
++
+Il motivo per cui la relazione si trova in uno stato malsano.
+
+* *Cluster di origine*
++
+Visualizza il nome del cluster di origine per la relazione SnapMirror.
+
+* *Nodo di origine*
++
+Visualizza il nome del nodo di origine per la relazione SnapMirror.
+
+* *Cluster di destinazione*
++
+Visualizza il nome del cluster di destinazione per la relazione SnapMirror.
+
+* *Nodo di destinazione*
++
+Visualizza il nome del nodo di destinazione per la relazione SnapMirror.
+
+* *Priorità trasferimento*
++
+Visualizza la priorità di esecuzione di un trasferimento. La priorità di trasferimento è normale o bassa. I trasferimenti con priorità normale vengono pianificati prima dei trasferimenti con priorità bassa.
+
++
+La priorità di trasferimento non è applicabile per le relazioni sincrone perché tutti i trasferimenti sono trattati con la stessa priorità.
+
+* *Policy*
++
+Visualizza il criterio di protezione per il volume. È possibile fare clic sul nome del criterio per visualizzare i dettagli associati a tale criterio, incluse le seguenti informazioni:
+
++
+** Priorità di trasferimento
++
+Specifica la priorità di esecuzione di un trasferimento per le operazioni asincrone. La priorità di trasferimento è normale o bassa. I trasferimenti con priorità normale vengono pianificati prima dei trasferimenti con priorità bassa. L'impostazione predefinita è normale.
+
+** Ignorare i tempi di accesso
++
+Si applica solo alle relazioni SnapVault. Specifica se i trasferimenti incrementali ignorano i file che hanno modificato solo il tempo di accesso. I valori sono vero o Falso. L'impostazione predefinita è Falso.
+
+** Quando la relazione non è sincronizzata
++
+Specifica l'azione che ONTAP esegue quando non è possibile sincronizzare una relazione sincrona. Le relazioni StrictSync limitano l'accesso al volume primario in caso di mancata sincronizzazione con il volume secondario. Le relazioni di sincronizzazione non limitano l'accesso al primario in caso di mancata sincronizzazione con il secondario.
+
+** Limite di tentativi
++
+Specifica il numero massimo di tentativi di trasferimento manuale o pianificato per una relazione SnapMirror. Il valore predefinito è 8.
+
+** Commenti
++
+Fornisce un campo di testo per i commenti specifici per il criterio selezionato.
+
+** Etichetta SnapMirror
++
+Specifica l'etichetta SnapMirror per la prima pianificazione associata alla policy di copia Snapshot. L'etichetta SnapMirror viene utilizzata dal sottosistema SnapVault quando si esegue il backup delle copie Snapshot in una destinazione SnapVault.
+
+** Impostazioni di conservazione
++
+Specifica il tempo di conservazione dei backup, in base al tempo o al numero di backup.
+
+** Copie Snapshot effettive
++
+Specifica il numero di copie Snapshot su questo volume che corrispondono all'etichetta specificata.
+
+** Conservare le copie Snapshot
++
+Specifica il numero di copie Snapshot di SnapVault che non vengono eliminate automaticamente anche se viene raggiunto il limite massimo per il criterio. I valori sono vero o Falso. L'impostazione predefinita è Falso.
+
+** Soglia di avviso di conservazione
++
+Specifica il limite di copia Snapshot al quale viene inviato un avviso per indicare che il limite massimo di conservazione è quasi raggiunto.
+
+
+
+* *Pianificazione*
++
+Visualizza il nome del programma di protezione assegnato alla relazione. È possibile fare clic sul nome della pianificazione per visualizzare i dettagli della pianificazione.
+
++
+La pianificazione non è applicabile per le relazioni sincrone.
+
+* *Replica flessibile versione*
++
+Visualizza Sì, Sì con opzione di backup o Nessuno.
+
+

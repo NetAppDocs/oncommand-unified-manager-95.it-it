@@ -1,0 +1,59 @@
+---
+permalink: online-help/task-installing-a-ca-signed-and-returned-https-certificate.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile caricare e installare un certificato di sicurezza dopo che un"autorità di certificazione ha firmato e restituito il certificato. Il file caricato e installato deve essere una versione firmata del certificato autofirmato esistente. Un certificato con firma CA aiuta a prevenire gli attacchi man-in-the-middle e offre una protezione migliore rispetto a un certificato autofirmato.' 
+---
+= Installazione di un certificato di protezione HTTPS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile caricare e installare un certificato di sicurezza dopo che un'autorità di certificazione ha firmato e restituito il certificato. Il file caricato e installato deve essere una versione firmata del certificato autofirmato esistente. Un certificato con firma CA aiuta a prevenire gli attacchi man-in-the-middle e offre una protezione migliore rispetto a un certificato autofirmato.
+
+
+
+== Prima di iniziare
+
+È necessario aver completato le seguenti operazioni:
+
+* Il file Certificate Signing Request è stato scaricato e firmato da un'autorità di certificazione
+* La catena di certificati è stata salvata in formato PEM
+* Inclusi tutti i certificati nella catena, dal certificato del server Unified Manager al certificato di firma root, inclusi eventuali certificati intermedi presenti
+
+
+È necessario disporre del ruolo di amministratore di OnCommand.
+
+
+
+== Fasi
+
+. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *HTTPS Certificate* (certificato HTTPS) dal menu *Setup*.
+. Fare clic su *Installa certificato HTTPS*.
+. Nella finestra di dialogo visualizzata, fare clic su *Scegli file...* per individuare il file da caricare.
+. Selezionare il file, quindi fare clic su *Installa* per installarlo.
+
+
+
+
+== Esempio di catena di certificati
+
+Nell'esempio seguente viene illustrato come potrebbe essere visualizzato il file di catena del certificato:
+
+[listing]
+----
+-----BEGIN CERTIFICATE-----
+<*Server certificate*>
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+<*Intermediate certificate \#1 \(if present\)*>
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+<*Intermediate certificate \#2 \(if present\)*>
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+<*Root signing certificate*>
+-----END CERTIFICATE-----
+----

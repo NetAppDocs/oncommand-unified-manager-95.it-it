@@ -1,0 +1,83 @@
+---
+permalink: online-help/reference-performance-all-lifs-view.html 
+sidebar: sidebar 
+keywords:  
+summary: La pagina di inventario Performance/LIF visualizza una panoramica degli eventi di performance, dei dati e delle informazioni di configurazione per ogni LIF monitorato da questa istanza di Unified Manager. Questa pagina consente di monitorare rapidamente le performance dei file LIF e di risolvere i problemi relativi alle performance e agli eventi di soglia. 
+---
+= Pagina di inventario delle performance/LIF
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina di inventario Performance/LIF visualizza una panoramica degli eventi di performance, dei dati e delle informazioni di configurazione per ogni LIF monitorato da questa istanza di Unified Manager. Questa pagina consente di monitorare rapidamente le performance dei file LIF e di risolvere i problemi relativi alle performance e agli eventi di soglia.
+
+A seconda di come si accede alla pagina di inventario Performance/LIF, nella parte superiore della pagina potrebbe essere visualizzato un titolo diverso per indicare se l'elenco è stato filtrato. Ad esempio, quando si visualizzano tutti i file LIF, il titolo è "`LIF`". Quando si visualizza un sottoinsieme di LIF restituito dalla pagina Threshold Policies (Criteri di soglia), il titolo è "`LIF su cui viene applicato il criterio: LIF_IOPS`".
+
+I pulsanti nella parte superiore della pagina consentono di eseguire ricerche per individuare dati specifici, creare e applicare filtri per restringere l'elenco dei dati visualizzati ed esportare i dati della pagina in un `.csv` e aggiungere o rimuovere colonne dalla pagina.
+
+Per impostazione predefinita, gli oggetti nelle pagine di inventario degli oggetti vengono ordinati in base alla criticità degli eventi di performance degli oggetti. Gli oggetti con eventi critici vengono elencati per primi e gli oggetti con eventi di avviso vengono elencati per secondi. Ciò fornisce un'indicazione visiva immediata dei problemi che devono essere risolti. I valori dei contatori delle prestazioni si basano su una media delle 72 ore precedenti o più di dati, come indicato nella pagina. È possibile fare clic sul pulsante Refresh (Aggiorna) per aggiornare i dati dell'inventario degli oggetti.
+
+È possibile assegnare criteri di soglia delle performance a qualsiasi oggetto presente nelle pagine di inventario degli oggetti o cancellare i criteri di soglia utilizzando i pulsanti *Assign Performance Threshold Policy* e *Clear PerformanceThreshold Policy*.
+
+[NOTE]
+====
+Le LIF elencate nella pagina di inventario Performance/LIF includono Data LIF, Cluster LIF, Node Management LIF e Intercluster LIF. Unified Manager non utilizza o visualizza le LIF di sistema.
+
+====
+
+
+== Colonne della pagina di inventario LIF
+
+La pagina di inventario Performance/LIF contiene le seguenti colonne per ogni LIF.
+
+* *Stato*
++
+Un oggetto integro senza eventi attivi visualizza un'icona con un segno di spunta verde (image:../media/sev-normal-um60.png["Icona per la severità dell'evento – normale"]). Se l'oggetto ha un evento attivo, l'icona dell'indicatore di evento identifica la severità dell'evento: Gli eventi critici sono rossi (image:../media/sev-critical-um60.png["Icona per la severità dell'evento – critico"]), gli eventi di errore sono di colore arancione (image:../media/sev-error-um60.png["Icona per la severità dell'evento – errore"]) e gli eventi di avviso sono gialli (image:../media/sev-warning-um60.png["Icona per la severità dell'evento – avviso"]).
+
+* *LIF*
++
+Puoi fare clic sul nome LIF per accedere alla pagina dei dettagli delle performance di tale LIF.
+
+* *Tipo*
++
+Il tipo LIF: Network (iSCSI, NFS, CIFS), FCP o NVMf FCP.
+
+* *Latenza*
++
+Il tempo medio di risposta per tutte le richieste di i/o, espresso in millisecondi per operazione. La latenza non è applicabile a LIF NFS e LIF CIFS e viene visualizzata come N/A per questi tipi.
+
+* *IOPS*
++
+Le operazioni di input/output al secondo. IOPS non è applicabile a LIF NFS e LIF CIFS e viene visualizzato come N/D per questi tipi.
+
+* *Mbps*
++
+Il throughput sulla LIF, misurato in megabyte al secondo.
+
+* *Cluster*
++
+Il cluster a cui appartiene la LIF. È possibile fare clic sul nome del cluster per accedere alla pagina dei dettagli del cluster.
+
+* *SVM*
++
+La macchina virtuale di storage a cui appartiene LIF. È possibile fare clic sul nome SVM per accedere alla pagina dei dettagli di SVM.
+
+* *Sede*
++
+La posizione iniziale della LIF, visualizzata come nome del nodo e nome della porta, separata dai due punti (:). Se la posizione viene visualizzata con i puntini di sospensione (...), è possibile posizionare il cursore sul nome della posizione per visualizzare l'intera posizione.
+
+* *Posizione corrente*
++
+La posizione corrente della LIF, visualizzata come nome del nodo e nome della porta, separata dai due punti (:). Se la posizione viene visualizzata con i puntini di sospensione (...), è possibile posizionare il cursore sul nome della posizione per visualizzare l'intera posizione.
+
+* *Ruolo*
++
+Il ruolo LIF: Dati, cluster, gestione nodi o Intercluster.
+
+* *Criterio di soglia*
++
+I criteri o i criteri di soglia delle performance definiti dall'utente che sono attivi su questo oggetto di storage. È possibile posizionare il cursore sui nomi dei criteri contenenti i puntini di sospensione (...) per visualizzare il nome completo del criterio o l'elenco dei nomi dei criteri assegnati. I pulsanti *Assign Performance Threshold Policy* e *Clear Performance Threshold Policy* rimangono disattivati finché non si selezionano uno o più oggetti facendo clic sulle caselle di controllo situate all'estrema sinistra.
+
+

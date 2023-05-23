@@ -1,0 +1,40 @@
+---
+permalink: online-help/reference-edit-annotation-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La finestra di dialogo Edit Annotation (Modifica annotazione) consente di modificare la descrizione di un"annotazione esistente.' 
+---
+= Finestra di dialogo Edit Annotation (Modifica annotazione)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La finestra di dialogo Edit Annotation (Modifica annotazione) consente di modificare la descrizione di un'annotazione esistente.
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+* *Nome annotazione*
++
+Visualizza il nome dell'annotazione. Questo campo non può essere modificato.
+
+* *Descrizione*
++
+Fornisce una descrizione significativa dell'annotazione. È possibile modificare questo campo quando si desidera modificare la descrizione corrente dell'annotazione.
+
+
+
+
+
+== Pulsanti di comando
+
+* *Salva e chiudi*
++
+Salva le modifiche apportate alla descrizione dell'annotazione e chiude la finestra di dialogo.
+
+* *Annulla*
++
+Chiude la finestra di dialogo Edit Annotation (Modifica annotazione) senza salvare le modifiche.
+
+

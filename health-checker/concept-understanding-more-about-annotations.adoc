@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-understanding-more-about-annotations.html 
+sidebar: sidebar 
+keywords:  
+summary: La comprensione dei concetti relativi alle annotazioni consente di gestire gli eventi correlati agli oggetti di storage nel proprio ambiente. 
+---
+= Ulteriori informazioni sulle annotazioni
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La comprensione dei concetti relativi alle annotazioni consente di gestire gli eventi correlati agli oggetti di storage nel proprio ambiente.

@@ -1,0 +1,31 @@
+---
+permalink: online-help/concept-storage-vm-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Performance/SVM Explorer (Esplora prestazioni/SVM) fornisce una panoramica dettagliata delle performance di tutte le macchine virtuali di storage in un cluster.' 
+---
+= Performance/SVM Explorer
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Performance/SVM Explorer (Esplora prestazioni/SVM) fornisce una panoramica dettagliata delle performance di tutte le macchine virtuali di storage (SVM) in un cluster.
+
+La pagina Performance/SVM Explorer (Esplora prestazioni/SVM) consente di tenere traccia e confrontare le prestazioni di SVM durante un periodo di tempo specifico, consentendo di eseguire il troubleshooting e di ottimizzare le prestazioni di SVM.
+
+Utilizzando la funzionalità di visualizzazione e confronto è possibile confrontare le prestazioni di questa SVM con:
+
+* Altre SVM sullo stesso cluster
+* I volumi su questa SVM
+* Le LIF su questa SVM
+
+
+La pagina Performance/SVM Explorer (Esplora prestazioni/SVM) consente di:
+
+* Visualizza i problemi relativi alle soglie e i relativi dettagli
+* Monitora e confronta i dati delle performance SVM
+* Analizzare e risolvere i problemi relativi alla soglia
+* Analizzare e risolvere i problemi relativi alle prestazioni
+

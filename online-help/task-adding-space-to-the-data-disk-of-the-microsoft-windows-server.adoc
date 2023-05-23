@@ -1,0 +1,65 @@
+---
+permalink: online-help/task-adding-space-to-the-data-disk-of-the-microsoft-windows-server.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Se è necessario aumentare la quantità di spazio su disco per il database di Unified Manager, è possibile aggiungere capacità all"unità logica su cui è installato Unified Manager.' 
+---
+= Aggiunta di spazio all'unità logica del server Microsoft Windows
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se è necessario aumentare la quantità di spazio su disco per il database di Unified Manager, è possibile aggiungere capacità all'unità logica su cui è installato Unified Manager.
+
+
+
+== Prima di iniziare
+
+È necessario disporre dei privilegi di amministratore di Windows.
+
+
+
+== A proposito di questa attività
+
+Si consiglia di eseguire il backup del database di Unified Manager prima di aggiungere spazio su disco.
+
+
+
+== Fasi
+
+. Accedere come amministratore al server Windows su cui si desidera aggiungere spazio su disco.
+. Seguire la procedura corrispondente al metodo che si desidera utilizzare per aggiungere ulteriore spazio:
++
+|===
+| Opzione | Descrizione 
+
+
+ a| 
+Su un server fisico, aggiungere capacità all'unità logica su cui è installato il server Unified Manager.
+ a| 
+Seguire la procedura descritta nell'argomento Microsoft:
+
+https://technet.microsoft.com/en-us/library/cc771473(v=ws.11).aspx["Estensione di un volume di base"]
+
+
+
+ a| 
+Su un server fisico, aggiungere un disco rigido.
+ a| 
+Seguire la procedura descritta nell'argomento Microsoft:
+
+https://msdn.microsoft.com/en-us/library/dd163551.aspx["Aggiunta di dischi rigidi"]
+
+
+
+ a| 
+Su una macchina virtuale, aumentare le dimensioni di una partizione del disco.
+ a| 
+Seguire la procedura descritta nell'argomento VMware:
+
+https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1004071["Aumento delle dimensioni di una partizione del disco"]
+
+|===
+

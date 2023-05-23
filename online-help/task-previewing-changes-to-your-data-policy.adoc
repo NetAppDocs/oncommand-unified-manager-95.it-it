@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-previewing-changes-to-your-data-policy.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Prima di inviare le modifiche alla policy dei dati a SVM con Infinite Volume per l"attivazione, è necessario visualizzare in anteprima le modifiche apportate alle regole in una policy dei dati.' 
+---
+= Anteprima delle modifiche apportate alla policy sui dati
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Prima di inviare le modifiche alla policy dei dati a SVM con Infinite Volume per l'attivazione, è necessario visualizzare in anteprima le modifiche apportate alle regole in una policy dei dati.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== A proposito di questa attività
+
+La scheda Data Policy (Policy dati) è visibile solo per una SVM con Infinite Volume (Volume infinito).
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Health* > *SVM*.
+. Nella pagina di inventario *Health/Storage Virtual Machines*, selezionare la SVM appropriata.
+. Fare clic su *Data Policy*.
++
+Viene visualizzato l'elenco delle regole nella policy dei dati per la SVM selezionata con volume infinito.
+
+. Modificare la policy dei dati secondo necessità.
++
+Le modifiche ai criteri dei dati possono includere la creazione di nuove regole, la modifica di regole esistenti, l'eliminazione di regole esistenti o il riordinamento delle regole.
+
+. Fare clic su *Activate* (attiva).
+. Nella finestra *Summary of Changes to Data Policy Configuration* (Riepilogo delle modifiche alla configurazione dei criteri dati), visualizzare un'anteprima delle modifiche apportate alla policy dei dati, quindi fare clic su *Activate* (attiva) per attivare le modifiche nella policy dei dati in SVM with Infinite Volume (SVM con volume infinito).
+

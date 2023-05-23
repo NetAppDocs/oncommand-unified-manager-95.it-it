@@ -1,0 +1,32 @@
+---
+permalink: health-checker/task-verifying-unified-manager-data-source-caching-in-workflow-automation.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile determinare se il caching dell"origine dati di Unified Manager funziona correttamente controllando se l"acquisizione dell"origine dati ha esito positivo in Workflow Automation. È possibile farlo quando si integra l"automazione del flusso di lavoro con Unified Manager per garantire che la funzionalità di automazione del flusso di lavoro sia disponibile dopo l"integrazione.' 
+---
+= Verifica del caching dell'origine dati di Unified Manager in Workflow Automation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile determinare se il caching dell'origine dati di Unified Manager funziona correttamente controllando se l'acquisizione dell'origine dati ha esito positivo in Workflow Automation. È possibile farlo quando si integra l'automazione del flusso di lavoro con Unified Manager per garantire che la funzionalità di automazione del flusso di lavoro sia disponibile dopo l'integrazione.
+
+
+
+== Prima di iniziare
+
+Per eseguire questa attività, è necessario assegnare il ruolo di amministratore o di architetto nell'automazione del flusso di lavoro.
+
+
+
+== Fasi
+
+. Dall'interfaccia utente di Workflow Automation, selezionare *esecuzione* > *origini dati*.
+. Fare clic con il pulsante destro del mouse sul nome dell'origine dati di Unified Manager, quindi selezionare *Acquire Now* (Acquisisci ora).
+. Verificare che l'acquisizione abbia esito positivo senza errori.
++
+Gli errori di acquisizione devono essere risolti affinché l'integrazione di Workflow Automation con Unified Manager abbia successo.
+
+

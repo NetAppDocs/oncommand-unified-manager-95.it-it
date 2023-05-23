@@ -1,0 +1,65 @@
+---
+permalink: online-help/task-customizing-the-cluster-inventory-report-to-display-nodes-reaching-maximum-disk-limit.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile personalizzare il report Cluster Inventory per visualizzare un elenco di nodi che stanno raggiungendo il limite massimo di dischi e ordinati in base all"ordine crescente.' 
+---
+= Personalizzazione del report Cluster Inventory per visualizzare i nodi che raggiungono il limite massimo di dischi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report Cluster Inventory per visualizzare un elenco di nodi che stanno raggiungendo il limite massimo di dischi e ordinati in base all'ordine crescente.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Per rimuovere il raggruppamento per cluster o nodo, attenersi alla seguente procedura:
++
+.. Fare clic sulle colonne da non raggruppare.
+.. Fare clic su image:../media/click-to-see-menu.gif[""] icona.
+.. Selezionare *Gruppo* > *Elimina gruppo interno*.
+
+
+. Per spostare la colonna *Disk Count* accanto alla colonna *Model*, attenersi alla seguente procedura:
++
+.. Fare clic sulla colonna *Disk Count*.
+.. Fare clic su image:../media/click-to-see-menu.gif[""] E selezionare *colonna* > *Riordina colonne*.
+.. Nella finestra di dialogo *Riordina colonne*, utilizzare i tasti freccia *su* e *giù* per spostare la colonna nella posizione desiderata.
+
+
+. Per aggiungere una nuova colonna calcolata, attenersi alla seguente procedura:
++
+.. Selezionare una colonna e fare clic su image:../media/click-to-see-menu.gif[""]E selezionare *column* > *New computed column* (Nuova colonna calcolata).
+.. Nella finestra di dialogo *Nuova colonna calcolata*, digitare `Maximum Disk Limit` Nel campo *etichetta colonna*.
+.. Dall'elenco Select Category (Seleziona categoria), selezionare *Comparison* (confronto).
+.. Dall'elenco *Select function* (Seleziona funzione), selezionare *Advanced* (Avanzate).
+.. Nel campo *Inserisci espressione*, digitare `IF([model]="FAS3250" , 960, 0)`.
+.. Fare clic su *OK*.
+
+
+. Per aggiungere una seconda nuova colonna, attenersi alla seguente procedura:
++
+.. Selezionare la colonna *Maximum Disk Limit*, quindi fare clic su image:../media/click-to-see-menu.gif[""] E selezionare *colonna* > *Nuova colonna calcolata*.
+.. Nella finestra di dialogo *Nuova colonna calcolata*, digitare `Available Volume` Nel campo *etichetta colonna*.
+.. Dall'elenco Select Category (Seleziona categoria), selezionare *Math*.
+.. Dall'elenco *Select function* (Seleziona funzione), selezionare *DIFFERENCE* (DIFFERENZA).
+.. Dall'elenco colonna 1, selezionare *Maximum Disk Limit* (limite massimo disco).
+.. Dall'elenco colonna 2, selezionare *Disk Count* (numero dischi).
+.. Fare clic su *OK*.
+
+
+. Per ordinare i valori, fare clic nella colonna *Volume disponibile* e fare clic su image:../media/click-to-see-menu.gif[""] icona.
+. Selezionare *Filter* > *Top/Bottom N*.
+. Nella finestra di dialogo *Top/Bottom N*, selezionare *Top N* dal campo *Filter* e immettere un valore nel campo di testo.
+. Fare clic su *OK*.
+

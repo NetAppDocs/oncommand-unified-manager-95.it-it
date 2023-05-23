@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-what-a-namespace-mirror-constituent-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Un componente mirror dello spazio dei nomi è una copia mirror di protezione dei dati intracluster del componente dello spazio dei nomi in un volume infinito. Il componente mirror dello spazio dei nomi svolge due ruoli: Fornisce la protezione dei dati del componente dello spazio dei nomi e supporta SnapDiff per il backup incrementale su nastro di volumi Infinite.' 
+---
+= Che cos'è un costituente mirror dello spazio dei nomi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un componente mirror dello spazio dei nomi è una copia mirror di protezione dei dati intracluster del componente dello spazio dei nomi in un volume infinito. Il componente mirror dello spazio dei nomi svolge due ruoli: Fornisce la protezione dei dati del componente dello spazio dei nomi e supporta SnapDiff per il backup incrementale su nastro di volumi Infinite.

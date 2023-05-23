@@ -1,0 +1,50 @@
+---
+permalink: install/task-upgrading-mysql-on-linux.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile eseguire l"aggiornamento a una versione più recente di MySQL sul server Linux su cui è installato Unified Manager per ottenere correzioni per le vulnerabilità della sicurezza.' 
+---
+= Aggiornamento di MySQL su Linux
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile eseguire l'aggiornamento a una versione più recente di MySQL sul server Linux su cui è installato Unified Manager per ottenere correzioni per le vulnerabilità della sicurezza.
+
+
+
+== Prima di iniziare
+
+È necessario disporre dei privilegi di root per il sistema Linux su cui è installato Unified Manager.
+
+
+
+== A proposito di questa attività
+
+È possibile eseguire l'aggiornamento solo a aggiornamenti minori di MySQL 5.7, ad esempio da 5.7.1 a 5.7.2 . Non è possibile eseguire l'aggiornamento alle versioni principali di MySQL, ad esempio alla versione 5.8.
+
+
+
+== Fasi
+
+. Accedere come utente root sul computer host di Unified Manager.
+. Scarica l'ultima versione di MySQL Community Server `.rpm` bundle sul sistema di destinazione.
+. Decomprimere il bundle in una directory del sistema di destinazione.
+. Ne otterrai più `.rpm` Pacchetti nella directory dopo aver aperto il bundle, ma Unified Manager richiede solo i seguenti pacchetti rpm:
++
+** mysql-community-client-5.7.x
+** mysql-community-libs-5.7.x
+** mysql-community-server-5.7.x
+** mysql-community-common-5.7.x
+** mysql-community-libs-compat-5.7.x Elimina tutti gli altri elementi `.rpm` pacchetti. L'installazione di tutti i pacchetti in un bundle rpm non causerà alcun problema.
+
+
+. Arrestare il servizio Unified Manager e il software MySQL associato nell'ordine indicato:
+. Richiamare l'aggiornamento di MySQL utilizzando il seguente comando: `yum install *.rpm`
++
+`*.rpm` si riferisce a. `.rpm` Pacchetti nella directory in cui hai scaricato la nuova versione di MySQL.
+
+. Avviare Unified Manager nell'ordine indicato:
+

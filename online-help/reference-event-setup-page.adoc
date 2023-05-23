@@ -1,0 +1,60 @@
+---
+permalink: online-help/reference-event-setup-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Configuration/Manage Events (Configurazione/Gestione eventi) visualizza l"elenco degli eventi disattivati e fornisce informazioni quali il tipo di oggetto associato e la gravità dell"evento. È inoltre possibile eseguire attività come la disattivazione o l"abilitazione di eventi a livello globale.' 
+---
+= Pagina Configuration/Manage Events (Configurazione/Gestione eventi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Configuration/Manage Events (Configurazione/Gestione eventi) visualizza l'elenco degli eventi disattivati e fornisce informazioni quali il tipo di oggetto associato e la gravità dell'evento. È inoltre possibile eseguire attività come la disattivazione o l'abilitazione di eventi a livello globale.
+
+È possibile accedere a questa pagina solo se si dispone del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti attività per gli eventi selezionati:
+
+* *Disattiva*
++
+Consente di aprire la finestra di dialogo Disable Events (Disattiva eventi), che può essere utilizzata per disattivare gli eventi.
+
+* *Enable* (attiva)
++
+Attiva gli eventi selezionati che si era scelto di disattivare in precedenza.
+
+* *Iscriviti agli eventi EMS*
++
+Apre la finestra di dialogo Iscriviti agli eventi EMS, che consente di iscriversi per ricevere eventi specifici del sistema di gestione degli eventi (EMS) dai cluster monitorati. EMS raccoglie informazioni sugli eventi che si verificano nel cluster. Quando si riceve una notifica per un evento EMS sottoscritto, viene generato un evento Unified Manager con la severità appropriata.
+
+* *Impostazioni conservazione eventi*
++
+Apre la finestra di dialogo Impostazioni conservazione eventi, che consente di specificare il periodo di conservazione dopo il quale le informazioni, gli eventi risolti e obsoleti vengono rimossi dal server di gestione. Il valore di conservazione predefinito è 180 giorni.
+
+
+
+
+
+== Vista elenco
+
+La vista elenco visualizza (in formato tabulare) le informazioni sugli eventi disattivati. È possibile utilizzare i filtri di colonna per personalizzare i dati visualizzati.
+
+* *Evento*
++
+Visualizza il nome dell'evento disattivato.
+
+* *Severità*
++
+Visualizza la severità dell'evento. La gravità può essere critica, errore, Avviso o informazioni.
+
+* *Tipo di origine*
++
+Visualizza il tipo di origine per cui viene generato l'evento.
+
+

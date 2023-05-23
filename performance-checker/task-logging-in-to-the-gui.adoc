@@ -1,0 +1,56 @@
+---
+permalink: performance-checker/task-logging-in-to-the-gui.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile accedere all"interfaccia utente di Unified Manager utilizzando un browser Web supportato.' 
+---
+= Accesso all'interfaccia utente
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile accedere all'interfaccia utente di Unified Manager utilizzando un browser Web supportato.
+
+
+
+== Prima di iniziare
+
+* Il browser Web deve soddisfare i requisiti minimi.
++
+Consultare la matrice di interoperabilità all'indirizzo http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"] per l'elenco completo delle versioni del browser supportate.
+
+* È necessario disporre dell'indirizzo IP o dell'URL del server Unified Manager.
+
+
+
+
+== A proposito di questa attività
+
+L'utente viene disconnesso automaticamente dalla sessione dopo 24 ore di inattività.
+
+
+
+== Fasi
+
+. Inserire l'URL nel browser Web, dove `URL` Indica l'indirizzo IP o il nome di dominio completo (FQDN) del server Unified Manager:
++
+** Per IPv4: `+https://URL/+`
+** Per IPv6: `https://[URL]/`Se il server utilizza un certificato digitale autofirmato, il browser potrebbe visualizzare un avviso che indica che il certificato non è attendibile. È possibile riconoscere il rischio di continuare l'accesso o installare un certificato digitale firmato dall'autorità di certificazione (CA) per l'autenticazione del server.
+
+
+. Nella schermata di accesso, inserire il nome utente e la password.
++
+Se l'accesso all'interfaccia utente di Unified Manager è protetto mediante l'autenticazione SAML, inserire le credenziali nella pagina di accesso del provider di identità (IdP) invece che nella pagina di accesso di Unified Manager.
+
++
+Viene visualizzata la pagina Dashboard/Panoramica.
+
++
+[NOTE]
+====
+Se il server Unified Manager non viene inizializzato, viene visualizzata una nuova finestra del browser con la procedura guidata per la prima esperienza. Immettere un destinatario e-mail iniziale a cui verranno inviati gli avvisi e-mail, il server SMTP che gestirà le comunicazioni e-mail e se AutoSupport è abilitato per inviare informazioni sull'installazione di Unified Manager al supporto tecnico. L'interfaccia utente di Unified Manager viene visualizzata dopo aver completato queste informazioni.
+
+====
+

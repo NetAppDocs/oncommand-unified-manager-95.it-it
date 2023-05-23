@@ -1,0 +1,100 @@
+---
+permalink: online-help/reference-management-station-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi delle stazioni di gestione forniscono informazioni sullo stato del server su cui è installato Unified Manager, in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all"area di impatto e includono il nome dell"evento e della trap, il livello di impatto, il tipo di origine e la severità.' 
+---
+= Eventi della stazione di gestione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi delle stazioni di gestione forniscono informazioni sullo stato del server su cui è installato Unified Manager, in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all'area di impatto e includono il nome dell'evento e della trap, il livello di impatto, il tipo di origine e la severità.
+
+
+
+== Area di impatto: Configurazione
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Spazio su disco di Unified Manager Server quasi pieno (ocumEvtUnifiedManagerDiskSpaceNearlyFull)
+ a| 
+Rischio
+ a| 
+Stazione di gestione
+ a| 
+Attenzione
+
+
+
+ a| 
+Spazio su disco di Unified Manager Server pieno (ocumEvtUnifiedManagerDiskSpaceFull)
+ a| 
+Incidente
+ a| 
+Stazione di gestione
+ a| 
+Critico
+
+
+
+ a| 
+Memoria su server Unified Manager bassa (ocumEvtUnifiedManagerMemoryLow)
+ a| 
+Rischio
+ a| 
+Stazione di gestione
+ a| 
+Attenzione
+
+
+
+ a| 
+Memoria quasi esaurita di Unified Manager Server (ocumEvtUnifiedManagerMemoryAlmostOut)
+ a| 
+Incidente
+ a| 
+Stazione di gestione
+ a| 
+Critico
+
+|===
+
+
+== Area di impatto: Performance
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Impatto sull'analisi dei dati delle performance (ocumEvtUnifiedManagerDataMissingAnalyze)
+ a| 
+Rischio
+ a| 
+Stazione di gestione
+ a| 
+Attenzione
+
+
+
+ a| 
+La raccolta dati sulle performance è interessata(ocumEvtUnifiedManagerDataMissingCollection)
+ a| 
+Incidente
+ a| 
+Stazione di gestione
+ a| 
+Critico
+
+|===
+[NOTE]
+====
+Questi ultimi due eventi relativi alle performance erano disponibili solo per Unified Manager 7.2. Se uno di questi eventi si trova nello stato New (nuovo) e si esegue l'aggiornamento a una versione più recente del software Unified Manager, gli eventi non verranno eliminati automaticamente. Sarà necessario spostare manualmente gli eventi nello stato Resolved (risolto).
+
+====

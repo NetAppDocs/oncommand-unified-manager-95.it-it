@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-inodes-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi inode forniscono informazioni quando l"inode è pieno o quasi pieno in modo da poter monitorare potenziali problemi. Gli eventi sono raggruppati in base all"area di impatto e includono il nome dell"evento e della trap, il livello di impatto, il tipo di origine e la severità.' 
+---
+= Eventi inode
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi inode forniscono informazioni quando l'inode è pieno o quasi pieno in modo da poter monitorare potenziali problemi. Gli eventi sono raggruppati in base all'area di impatto e includono il nome dell'evento e della trap, il livello di impatto, il tipo di origine e la severità.
+
+
+
+== Area di impatto: Capacità
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Inodes quasi pieno (ocumEvtInodesAlmostFull)
+ a| 
+Rischio
+ a| 
+Volume
+ a| 
+Attenzione
+
+
+
+ a| 
+Inodes Full (ocumEvtInodesFull)
+ a| 
+Rischio
+ a| 
+Volume
+ a| 
+Errore
+
+|===

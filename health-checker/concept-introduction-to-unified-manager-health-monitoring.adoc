@@ -1,0 +1,22 @@
+---
+permalink: health-checker/concept-introduction-to-unified-manager-health-monitoring.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager consente di monitorare un gran numero di sistemi che eseguono il software ONTAP attraverso un"interfaccia utente centralizzata. L"infrastruttura server di Unified Manager offre scalabilità, supportabilità e funzionalità avanzate di monitoraggio e notifica.' 
+---
+= Introduzione al monitoraggio dello stato di OnCommand Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager consente di monitorare un gran numero di sistemi che eseguono il software ONTAP attraverso un'interfaccia utente centralizzata. L'infrastruttura server di Unified Manager offre scalabilità, supportabilità e funzionalità avanzate di monitoraggio e notifica.
+
+Le funzionalità chiave di Unified Manager includono il monitoraggio, gli avvisi, la gestione della disponibilità e della capacità dei cluster, la gestione delle funzionalità di protezione, il monitoraggio delle performance, la configurazione e la gestione dei volumi Infinite, l'annotazione degli oggetti di storage e il raggruppamento dei dati diagnostici e l'invio al supporto tecnico.
+
+È possibile utilizzare Unified Manager per monitorare i cluster. Quando si verificano problemi nel cluster, Unified Manager notifica all'utente i dettagli di tali problemi attraverso gli eventi. Alcuni eventi forniscono anche un'azione correttiva che è possibile intraprendere per risolvere i problemi. È possibile configurare gli avvisi per gli eventi in modo che, quando si verificano problemi, si riceva una notifica tramite e-mail e trap SNMP.
+
+È possibile utilizzare Unified Manager per gestire gli oggetti di storage nel proprio ambiente associandoli alle annotazioni. È possibile creare annotazioni personalizzate e associare dinamicamente cluster, storage virtual machine (SVM) e volumi con le annotazioni attraverso le regole.
+
+È inoltre possibile pianificare i requisiti di storage degli oggetti cluster utilizzando le informazioni fornite nei grafici di capacità e integrità per il rispettivo oggetto cluster.

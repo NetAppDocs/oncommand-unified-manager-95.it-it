@@ -1,0 +1,104 @@
+---
+permalink: online-help/reference-volume-relationships-inventory-report.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Il report Volume Relanes Inventory consente di analizzare i dettagli dell"inventario dello storage in un cluster, comprendere il grado di protezione richiesto per i volumi e filtrare i dettagli del volume in base all"origine del guasto, al modello e alle pianificazioni.' 
+---
+= Report sull'inventario delle relazioni con i volumi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il report Volume Relanes Inventory consente di analizzare i dettagli dell'inventario dello storage in un cluster, comprendere il grado di protezione richiesto per i volumi e filtrare i dettagli del volume in base all'origine del guasto, al modello e alle pianificazioni.
+
+Il report Volume Relinters Inventory viene visualizzato in due formati:
+
+* Grafico a torta delle relazioni SnapMirror e grafico a torta delle relazioni SnapVault
+* Vista tabulare del report inventario relazioni volume
+
+
+
+
+== Grafici a torta SnapMirror e SnapVault
+
+Visualizza i dettagli di configurazione delle relazioni di volume presenti nel sistema di storage.
+
+
+
+== Vista tabulare dell'inventario delle relazioni dei volumi
+
+* *Relationship Health*
++
+Visualizza l'heath di relazione del cluster.
+
+* *Stato di relazione*
++
+Visualizza lo stato mirror della relazione SnapMirror.
+
+* *Stato trasferimento*
++
+Visualizza lo stato della relazione SnapMirror.
+
+* *Stato Lag*
++
+Visualizza lo stato di ritardo del volume.
+
+* *Cluster di origine*
++
+Visualizza il nome del cluster di origine per la relazione SnapMirror.
+
+* *SVM di origine*
++
+Visualizza il nome della SVM (Storage Virtual Machine) di origine per la relazione SnapMirror.
+
+* *Volume di origine*
++
+Visualizza il nome del volume di origine per la relazione SnapMirror.
+
+* *Cluster di destinazione*
++
+Visualizza il nome del cluster di destinazione per la relazione SnapMirror.
+
+* *SVM di destinazione*
++
+Visualizza il nome della SVM (Storage Virtual Machine) di destinazione per la relazione SnapMirror.
+
+* *Volume di destinazione*
++
+Visualizza il nome del volume di destinazione per la relazione SnapMirror.
+
+* *Tipo di relazione*
++
+Visualizza qualsiasi tipo di relazione, incluso SnapMirror o SnapVault.
+
+* *Ultimo aggiornamento riuscito*
++
+Visualizza l'ora dell'ultima operazione SnapMirror o SnapVault eseguita correttamente.
+
+* *Durata ultimo trasferimento (ore)*
++
+Visualizza il tempo necessario per il completamento dell'ultimo trasferimento dei dati.
+
+* *Dimensioni ultimo trasferimento (MB)*
++
+Visualizza le dimensioni, in byte, dell'ultimo trasferimento di dati.
+
+* *Ora di fine ultimo trasferimento*
++
+Visualizza l'ora in cui l'ultima operazione SnapMirror o SnapVault è stata completata correttamente.
+
+* *Motivo non corretto*
++
+Il motivo per cui la relazione si trova in uno stato malsano.
+
+* *Durata ritardo (ore)*
++
+Visualizza il periodo di tempo in cui i dati sul mirror si trovano indietro rispetto all'origine.
+
+* *Replica flessibile versione*
++
+Visualizza Sì, Sì con opzione di backup o Nessuno.
+
+

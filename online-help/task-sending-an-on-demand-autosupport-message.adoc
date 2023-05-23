@@ -1,0 +1,48 @@
+---
+permalink: online-help/task-sending-an-on-demand-autosupport-message.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile inviare le informazioni di sistema di Unified Manager al supporto tecnico per ottenere assistenza nella risoluzione dei problemi. Il messaggio AutoSupport contiene informazioni di sistema diagnostiche e dati dettagliati sul server Unified Manager. 
+---
+= Invio di messaggi AutoSupport on-demand
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile inviare le informazioni di sistema di Unified Manager al supporto tecnico per ottenere assistenza nella risoluzione dei problemi. Il messaggio AutoSupport contiene informazioni di sistema diagnostiche e dati dettagliati sul server Unified Manager.
+
+
+
+== Prima di iniziare
+
+Devi essere connesso come utente di manutenzione.
+
+
+
+== Fasi
+
+. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *AutoSupport* dal menu *Setup*.
+. Eseguire una o entrambe le operazioni seguenti:
++
+|===
+| Se si desidera inviare il messaggio AutoSupport a... | Eseguire questa operazione... 
+
+
+ a| 
+Supporto tecnico
+ a| 
+Selezionare la casella di controllo *Invia al supporto tecnico*.
+
+
+
+ a| 
+Un destinatario di posta elettronica specifico
+ a| 
+Selezionare la casella di controllo *Invia a destinatario e-mail* e immettere l'indirizzo e-mail del destinatario.
+
+|===
+. Se necessario, definire il nome, la porta e le informazioni di autenticazione per il server proxy HTTP, quindi fare clic su *Save* (Salva).
+. Fare clic su *generate and send AutoSupport* (genera e invia dati).
+

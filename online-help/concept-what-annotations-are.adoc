@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-annotations-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Un"annotazione è una stringa di testo assegnata a un"altra stringa di testo (il valore). Ogni coppia nome-valore dell"annotazione può essere associata dinamicamente agli oggetti di storage utilizzando regole di annotazione. Quando si associano oggetti di storage con annotazioni predefinite, è possibile filtrare e visualizzare gli eventi ad essi correlati. È possibile applicare annotazioni a cluster, volumi e macchine virtuali di storage.' 
+---
+= Quali sono le annotazioni
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un'annotazione è una stringa di testo (il nome) assegnata a un'altra stringa di testo (il valore). Ogni coppia nome-valore dell'annotazione può essere associata dinamicamente agli oggetti di storage utilizzando regole di annotazione. Quando si associano oggetti di storage con annotazioni predefinite, è possibile filtrare e visualizzare gli eventi ad essi correlati. È possibile applicare annotazioni a cluster, volumi e macchine virtuali di storage (SVM).
+
+Ogni nome di annotazione può avere più valori; ogni coppia nome-valore può essere associata a un oggetto di storage attraverso regole.
+
+Ad esempio, è possibile creare un'annotazione denominata "`dATA-center`" con i valori "`Boston`" e "`Canada`". È quindi possibile applicare l'annotazione "`data-center`" con il valore "`Boston`" al volume v1. Quando viene generato un avviso per qualsiasi evento su un volume v1 annotato con "`dATA-center`", l'email generata indica la posizione del volume, "`Boston`", che consente di assegnare priorità e risolvere il problema.

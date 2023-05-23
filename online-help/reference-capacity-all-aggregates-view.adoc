@@ -1,0 +1,164 @@
+---
+permalink: online-help/reference-capacity-all-aggregates-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Health/aggregates Capacity and Utilization (Stato/capacità e utilizzo aggregati) consente di visualizzare informazioni sulla capacità e sull"utilizzo degli aggregati in tutti i cluster. Queste informazioni consentono di comprendere i possibili rischi di capacità e di visualizzare la capacità configurata, utilizzata e inutilizzata degli aggregati.' 
+---
+= Pagina Health/aggregates Capacity and Utilization
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Health/aggregates Capacity and Utilization (Stato/capacità e utilizzo aggregati) consente di visualizzare informazioni sulla capacità e sull'utilizzo degli aggregati in tutti i cluster. Queste informazioni consentono di comprendere i possibili rischi di capacità e di visualizzare la capacità configurata, utilizzata e inutilizzata degli aggregati.
+
+Utilizzare il pulsante *Esporta* per esportare i dettagli di tutti gli aggregati monitorati in valori separati da virgole (`.csv`).
+
+* *Cluster*
++
+Il nome del cluster.
+
+* *Coppia ha*
++
+Il valore di coppia ha ottenuto formando due nodi.
+
+* *Aggregato*
++
+Il nome dell'aggregato.
+
+* *Capacità totale dei dati*
++
+La capacità totale dei dati (utilizzata più disponibile).
+
+* *Capacità dati utilizzata*
++
+La capacità dei dati utilizzata.
+
+* *Dati utilizzati %*
++
+La capacità dei dati utilizzata in percentuale.
+
+* *Capacità dati disponibile*
++
+La capacità dei dati disponibile.
+
+* *Dati disponibili %*
++
+La capacità dei dati disponibile in percentuale.
+
+* *Tasso di crescita giornaliero %*
++
+Il tasso di crescita che si verifica ogni 24 ore nell'aggregato.
+
+* *Giorni fino al completo*
++
+Il numero stimato di giorni rimanenti prima che l'aggregato raggiunga la capacità completa.
+
+* *Soglia spazio pieno %*
++
+La percentuale alla quale un aggregato viene considerato pieno.
+
+* *Soglia spazio quasi pieno %*
++
+La percentuale alla quale un aggregato viene considerato quasi pieno.
+
+* *Soglia tasso di crescita*
++
+Il tasso di crescita dell'aggregato che viene considerato normale prima che il sistema generi un evento aggregato di tasso di crescita anomalo.
+
+* *Soglia di sensibilità del tasso di crescita*
++
+Il fattore che viene applicato alla deviazione standard del tasso di crescita di un aggregato. Se il tasso di crescita supera la deviazione standard fattorizzata, viene generato un evento aggregato di tasso di crescita anomalo.
+
+* *Giorni fino alla soglia massima*
++
+Il numero di giorni rimanenti prima che l'aggregato raggiunga la capacità completa.
+
+* *Capacità totale riserva Snapshot*
++
+La capacità totale di riserva di snapshot dell'aggregato.
+
+* *Capacità utilizzata riserva Snapshot*
++
+La quantità di spazio utilizzata dalle copie Snapshot dalla riserva di Snapshot.
+
+* *Snapshot Reserve used %*
++
+La quantità di spazio utilizzata dalle copie Snapshot dalla riserva di snapshot in percentuale.
+
+* *Snapshot Reserve Available Capacity (capacità disponibile riserva snapshot)*
++
+La quantità di spazio disponibile per le copie Snapshot.
+
+* *Riserva Snapshot disponibile %*
++
+La quantità di spazio disponibile per le copie Snapshot in percentuale.
+
+* *Snapshot Copies Reserve Full Threshold %*
++
+La percentuale in cui un aggregato ha consumato tutto lo spazio riservato alle copie Snapshot.
+
+* *Capacità in eccesso %*
++
+L'overcommitment aggregato in percentuale.
+
+* *Soglia di overcommit %*
++
+La percentuale in cui un aggregato viene considerato overcommit.
+
+* *Soglia quasi in eccesso %*
++
+La percentuale in cui un aggregato viene considerato quasi overcommit.
+
+* *Tipo di aggregato*
++
+Il tipo di aggregato:
+
++
+** DISCO RIGIDO
+** Ibrido
++
+Combina HDD e SSD, ma Flash Pool non è stato attivato.
+
+** Ibrido (Flash Pool)
++
+Combina HDD e SSD ed è stato attivato Flash Pool.
+
+** SSD
+** SSD (FabricPool)
++
+Combina SSD e un Tier cloud
+
+** VMDisk (SDS)
++
+Dischi virtuali all'interno di una macchina virtuale
+
+** VMDisk (FabricPool)
++
+Combina dischi virtuali e un Tier cloud
+
+** LUN (FlexArray) per i dischi standard e i dischi SSD, questa colonna è vuota quando il sistema storage monitorato esegue una versione di ONTAP precedente alla 8.3.
+
+
+* *Tipo RAID*
++
+Il tipo di configurazione RAID.
+
+* *Stato aggregato*
++
+Lo stato corrente dell'aggregato.
+
+* *Tipo SnapLock*
++
+Se l'aggregato è un aggregato SnapLock o non SnapLock.
+
+* *Cloud Tier Space utilizzato*
++
+La quantità di capacità dei dati attualmente utilizzata nel Tier cloud.
+
+* *Tier cloud*
++
+Il nome dell'archivio di oggetti del livello cloud quando è stato creato da ONTAP.
+
+

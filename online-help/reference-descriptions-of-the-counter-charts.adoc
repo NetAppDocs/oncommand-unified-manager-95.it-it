@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-descriptions-of-the-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: I grafici dei contatori di Performance Explorer consentono di visualizzare e confrontare i dati relativi alle prestazioni per gli oggetti di storage selezionati. Questi grafici possono aiutarti a comprendere le tendenze delle performance e a isolare e risolvere i problemi di performance. 
+---
+= Descrizioni dei diagrammi dei contatori
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I grafici dei contatori di Performance Explorer consentono di visualizzare e confrontare i dati relativi alle prestazioni per gli oggetti di storage selezionati. Questi grafici possono aiutarti a comprendere le tendenze delle performance e a isolare e risolvere i problemi di performance.

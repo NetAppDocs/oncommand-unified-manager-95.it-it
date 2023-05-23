@@ -1,0 +1,14 @@
+---
+permalink: health-checker/task-using-the-maintenance-console.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile utilizzare la console di manutenzione per configurare le impostazioni di rete, configurare e gestire il sistema su cui è installato Unified Manager ed eseguire altre attività di manutenzione che consentono di prevenire e risolvere eventuali problemi. 
+---
+= Utilizzando la console di manutenzione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la console di manutenzione per configurare le impostazioni di rete, configurare e gestire il sistema su cui è installato Unified Manager ed eseguire altre attività di manutenzione che consentono di prevenire e risolvere eventuali problemi.

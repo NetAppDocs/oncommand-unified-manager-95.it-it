@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-viewing-unassigned-events.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile visualizzare gli eventi non assegnati e assegnarli a un utente in grado di risolverli. 
+---
+= Visualizzazione di eventi non assegnati
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile visualizzare gli eventi non assegnati e assegnarli a un utente in grado di risolverli.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Eventi*.
++
+Per impostazione predefinita, gli eventi nuovi e confermati vengono visualizzati nella pagina di inventario Eventi.
+
+. Nel riquadro *Filters*, selezionare l'opzione di filtro *Unassigned* nell'area *Assigned to*.
+

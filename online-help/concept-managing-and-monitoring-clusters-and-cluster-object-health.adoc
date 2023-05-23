@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-and-monitoring-clusters-and-cluster-object-health.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager utilizza query API periodiche e un motore di raccolta dati per raccogliere i dati dai cluster. Aggiungendo cluster al database di Unified Manager, è possibile monitorare e gestire questi cluster per rilevare eventuali rischi di disponibilità e capacità. 
+---
+= Gestione e monitoraggio dei cluster e dello stato degli oggetti del cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager utilizza query API periodiche e un motore di raccolta dati per raccogliere i dati dai cluster. Aggiungendo cluster al database di Unified Manager, è possibile monitorare e gestire questi cluster per rilevare eventuali rischi di disponibilità e capacità.

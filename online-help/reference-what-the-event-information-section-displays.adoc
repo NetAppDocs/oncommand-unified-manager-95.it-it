@@ -1,0 +1,164 @@
+---
+permalink: online-help/reference-what-the-event-information-section-displays.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La sezione informazioni evento della pagina Dettagli evento consente di visualizzare i dettagli relativi a un evento selezionato, ad esempio la gravità, il livello di impatto, l"area di impatto e l"origine dell"evento.' 
+---
+= Visualizzazione della sezione informazioni evento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La sezione informazioni evento della pagina Dettagli evento consente di visualizzare i dettagli relativi a un evento selezionato, ad esempio la gravità, il livello di impatto, l'area di impatto e l'origine dell'evento.
+
+I campi non applicabili al tipo di evento sono nascosti. È possibile visualizzare i seguenti dettagli dell'evento:
+
+* *Tempo di attivazione dell'evento*
++
+L'ora in cui è stato generato l'evento.
+
+* *Stato*
++
+Lo stato dell'evento: Nuovo, riconosciuto, risolto o obsoleto.
+
+* *Causa obsoleta*
++
+Le azioni che hanno causato l'obsoleto dell'evento, ad esempio, il problema è stato risolto.
+
+* *Durata evento*
++
+Per gli eventi attivi (nuovi e riconosciuti), si tratta del tempo che intercorre tra il rilevamento e l'ultima analisi dell'evento. Per gli eventi obsoleti, si tratta del tempo che intercorre tra il rilevamento e la risoluzione dell'evento.
+
++
+Questo campo viene visualizzato per tutti gli eventi relativi alle performance e per altri tipi di eventi solo dopo che sono stati risolti o resi obsoleti.
+
+* *Ultimo visto*
++
+La data e l'ora in cui l'evento è stato considerato come attivo per l'ultima volta.
+
++
+Per gli eventi relativi alle performance, questo valore potrebbe essere più recente del tempo di attivazione dell'evento, in quanto questo campo viene aggiornato dopo ogni nuova raccolta di dati relativi alle performance finché l'evento è attivo. Per altri tipi di eventi, quando si trova nello stato nuovo o confermato, questo contenuto non viene aggiornato e il campo viene quindi nascosto.
+
+* *Severità*
++
+La severità dell'evento: Critica (image:../media/sev-critical-um60.png[""]), errore (image:../media/sev-error-um60.png[""]), Avviso (image:../media/sev-warning-um60.png[""]) E informazioni (image:../media/sev-information-um60.gif[""]).
+
+* *Livello di impatto*
++
+Il livello di impatto dell'evento: Incidente, rischio o evento.
+
+* *Area di impatto*
++
+Area di impatto dell'evento: Disponibilità, capacità, performance, protezione o configurazione.
+
+* *Origine*
++
+Il nome dell'oggetto in cui si è verificato l'evento.
+
++
+Quando si visualizzano i dettagli di un evento di policy QoS condivisa, in questo campo vengono elencati fino a tre degli oggetti del carico di lavoro che consumano il maggior numero di IOPS o Mbps.
+
++
+È possibile fare clic sul collegamento del nome di origine per visualizzare la pagina dei dettagli relativi allo stato o alle prestazioni dell'oggetto.
+
+* *Annotazioni di origine*
++
+Visualizza il nome e il valore dell'annotazione per l'oggetto a cui è associato l'evento.
+
++
+Questo campo viene visualizzato solo per gli eventi di integrità su cluster, SVM e volumi.
+
+* *Gruppi di origine*
++
+Visualizza i nomi di tutti i gruppi di cui è membro l'oggetto interessato.
+
++
+Questo campo viene visualizzato solo per gli eventi di integrità su cluster, SVM e volumi.
+
+* *Tipo di origine*
++
+Il tipo di oggetto (ad esempio, SVM, Volume o Qtree) a cui è associato l'evento.
+
+* *Sul cluster*
++
+Il nome del cluster in cui si è verificato l'evento.
+
++
+È possibile fare clic sul collegamento del nome del cluster per visualizzare la pagina dei dettagli relativi allo stato o alle prestazioni del cluster.
+
+* *Conteggio oggetti interessati*
++
+Il numero di oggetti interessati dall'evento.
+
++
+È possibile fare clic sul collegamento Object (oggetto) per visualizzare la pagina di inventario contenente gli oggetti attualmente interessati dall'evento.
+
++
+Questo campo viene visualizzato solo per gli eventi relativi alle performance.
+
+* *Volumi interessati*
++
+Il numero di volumi interessati da questo evento.
+
++
+Questo campo viene visualizzato solo per gli eventi di performance su nodi o aggregati.
+
+* *Criterio attivato*
++
+Il nome del criterio di soglia che ha emesso l'evento.
+
++
+Per visualizzare i dettagli del criterio di soglia, spostare il cursore del mouse sul nome del criterio. Per i criteri QoS adattivi vengono visualizzati anche il criterio, la dimensione del blocco e il tipo di allocazione (spazio allocato o spazio utilizzato) definiti.
+
++
+Questo campo viene visualizzato solo per gli eventi relativi alle performance.
+
+* *Riconosciuto da*
++
+Il nome della persona che ha confermato l'evento e l'ora in cui l'evento è stato riconosciuto.
+
+* *Risolto da*
++
+Il nome della persona che ha risolto l'evento e l'ora in cui l'evento è stato risolto.
+
+* *Assegnato a*
++
+Il nome della persona assegnata all'evento.
+
+* *Impostazioni avvisi*
++
+Vengono visualizzate le seguenti informazioni sugli avvisi:
+
++
+** Se non sono presenti avvisi associati all'evento selezionato, viene visualizzato il collegamento *Add alert* (Aggiungi avviso).
++
+Per aprire la finestra di dialogo Aggiungi avviso, fare clic sul collegamento.
+
+** Se all'evento selezionato è associato un avviso, viene visualizzato il nome dell'avviso.
++
+Per aprire la finestra di dialogo Modifica avviso, fare clic sul collegamento.
+
+** Se all'evento selezionato sono associati più avvisi, viene visualizzato il numero di avvisi.
++
+È possibile aprire la pagina Configurazione/Avvisi facendo clic sul collegamento per visualizzare ulteriori dettagli su tali avvisi.
+
+
+
++
+Gli avvisi disattivati non vengono visualizzati.
+
+* *Ultima notifica inviata*
++
+La data e l'ora in cui è stata inviata la notifica di avviso più recente.
+
+* *Inviato tramite*
++
+Meccanismo utilizzato per inviare la notifica di avviso: Email o trap SNMP.
+
+* *Esecuzione script precedente*
++
+Il nome dello script eseguito al momento della generazione dell'avviso.
+
+

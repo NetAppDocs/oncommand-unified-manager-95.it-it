@@ -1,0 +1,84 @@
+---
+permalink: performance-checker/task-viewing-workload-qos-minimum-and-maximum-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile visualizzare le impostazioni dei criteri di qualità del servizio (QoS) definite da ONTAP su un volume o LUN nei grafici di Performance Explorer. Un"impostazione del throughput massimo limita l"impatto dei carichi di lavoro concorrenti sulle risorse di sistema. Un"impostazione di throughput minimo garantisce che un carico di lavoro critico soddisfi gli obiettivi di throughput minimi indipendentemente dalla domanda dei carichi di lavoro concorrenti.' 
+---
+= Visualizzazione delle impostazioni minime e massime di QoS del carico di lavoro
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile visualizzare le impostazioni dei criteri della qualità del servizio (QoS) definita da ONTAP su un volume o LUN nei grafici di Performance Explorer. Un'impostazione del throughput massimo limita l'impatto dei carichi di lavoro concorrenti sulle risorse di sistema. Un'impostazione di throughput minimo garantisce che un carico di lavoro critico soddisfi gli obiettivi di throughput minimi indipendentemente dalla domanda dei carichi di lavoro concorrenti.
+
+
+
+== A proposito di questa attività
+
+Le impostazioni di throughput QoS "`minimum`" e "`maximum`" IOPS e Mbps vengono visualizzate nei diagrammi dei contatori solo se sono state configurate in ONTAP. Le impostazioni minime di throughput sono disponibili solo sui sistemi che eseguono ONTAP 9.2 o software successivo, solo sui sistemi AFF e possono essere impostate solo per gli IOPS in questo momento.
+
+Le policy QoS adattive sono disponibili a partire da ONTAP 9.3 e vengono espresse utilizzando IOPS/TB invece di IOPS. Questi criteri regolano automaticamente il valore del criterio QoS in base alle dimensioni del volume, per ogni carico di lavoro, mantenendo così il rapporto tra IOPS e terabyte al variare delle dimensioni del volume. È possibile applicare un gruppo di criteri QoS adattivi solo ai volumi. La terminologia QoS "`previsto`" e "`picco`" vengono utilizzate per le policy QoS adattive invece che per quelle minime e massime.
+
+Unified Manager genera eventi di avviso per le violazioni delle policy QoS quando il throughput del carico di lavoro ha superato l'impostazione della policy QoS massima definita durante ciascun periodo di raccolta delle performance per l'ora precedente. Il throughput del carico di lavoro può superare la soglia QoS solo per un breve periodo di tempo durante ciascun periodo di raccolta, ma Unified Manager visualizza il throughput "`Average`" durante il periodo di raccolta sul grafico. Per questo motivo, è possibile che vengano visualizzati eventi QoS mentre il throughput di un carico di lavoro potrebbe non aver superato la soglia di policy indicata nel grafico.
+
+
+
+== Fasi
+
+. Nella pagina *Performance Explorer* relativa al volume o al LUN selezionato, eseguire le seguenti operazioni per visualizzare le impostazioni relative al limite di QoS e al piano:
++
+|===
+| Se si desidera... | Eseguire questa operazione... 
+
+
+ a| 
+Visualizza il tetto IOPS (QoS max)
+ a| 
+Nel grafico IOPS Total (totale IOPS) o Breakdown (dettaglio), fare clic su *Zoom View (Vista zoom)*.
+
+
+
+ a| 
+Visualizzare il limite di Mbps (QoS max)
+ a| 
+Nel grafico Mbps Total (totale Mbps) o Breakdown (dettaglio), fare clic su *Zoom View* (Vista zoom).
+
+
+
+ a| 
+Visualizza il piano IOPS (QoS min)
+ a| 
+Nel grafico IOPS Total (totale IOPS) o Breakdown (dettaglio), fare clic su *Zoom View (Vista zoom)*.
+
+
+
+ a| 
+Visualizza il tetto di IOPS/TB (il picco di QoS)
+ a| 
+Per i volumi, nel grafico IOPS/TB, fare clic su *Zoom View*.
+
+
+
+ a| 
+Visualizza il piano IOPS/TB (QoS previsto)
+ a| 
+Per i volumi, nel grafico IOPS/TB, fare clic su *Zoom View*.
+
+|===
++
+La linea orizzontale tratteggiata indica il valore massimo o minimo di throughput impostato in ONTAP. È inoltre possibile visualizzare quando sono state implementate le modifiche ai valori QoS.
+
+. Per visualizzare i valori IOPS e Mbps specifici rispetto all'impostazione QoS, spostare il cursore nell'area del grafico per visualizzare la finestra a comparsa.
+
+
+
+
+== Al termine
+
+Se si nota che alcuni volumi o LUN hanno IOPS o Mbps molto elevati e stanno sollecitando le risorse di sistema, è possibile utilizzare Gestione di sistema o l'interfaccia utente di ONTAP per regolare le impostazioni di QoS in modo che questi carichi di lavoro non influiscano sulle prestazioni di altri carichi di lavoro.
+
+Per ulteriori informazioni sulla regolazione delle impostazioni QoS, consultare la _Guida all'alimentazione per il monitoraggio delle prestazioni di ONTAP 9_.
+
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-perf-mon/home.html["Guida all'alimentazione per il monitoraggio delle performance di ONTAP 9"]

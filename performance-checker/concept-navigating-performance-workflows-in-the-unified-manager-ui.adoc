@@ -1,0 +1,29 @@
+---
+permalink: performance-checker/concept-navigating-performance-workflows-in-the-unified-manager-ui.html 
+sidebar: sidebar 
+keywords:  
+summary: 'L"interfaccia di Unified Manager fornisce molte pagine per la raccolta e la visualizzazione delle informazioni sulle performance. Il pannello di navigazione sinistro consente di accedere alle pagine della GUI e di visualizzare e configurare le informazioni utilizzando le schede e i collegamenti presenti nelle pagine.' 
+---
+= Navigazione nei flussi di lavoro delle performance nella GUI di Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'interfaccia di Unified Manager fornisce molte pagine per la raccolta e la visualizzazione delle informazioni sulle performance. Il pannello di navigazione sinistro consente di accedere alle pagine della GUI e di visualizzare e configurare le informazioni utilizzando le schede e i collegamenti presenti nelle pagine.
+
+Per monitorare e risolvere i problemi relativi alle prestazioni del cluster, utilizzare tutte le pagine seguenti:
+
+* pagine della dashboard
+* pagine di inventario degli oggetti di storage
+* landing page degli oggetti di storage (incluso performance explorer)
+* pagine di configurazione e configurazione
+* pagine di eventi
+
+
+[NOTE]
+====
+Una pagina di Unified Manager potrebbe visualizzare una grande quantità di informazioni. Per visualizzare tutte le informazioni disponibili, scorrere sempre fino alla fine della pagina.
+
+====

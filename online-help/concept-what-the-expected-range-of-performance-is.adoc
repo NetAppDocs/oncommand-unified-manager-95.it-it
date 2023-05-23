@@ -1,0 +1,32 @@
+---
+permalink: online-help/concept-what-the-expected-range-of-performance-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'L"intervallo di valori previsto è una previsione, o previsione, dei valori di performance superiori e inferiori previsti in un momento specifico. Per la latenza del carico di lavoro, i valori superiori costituiscono la soglia di performance. Quando il valore effettivo supera la soglia di performance, Unified Manager attiva un avviso di performance event.' 
+---
+= Qual è la gamma di performance prevista
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'intervallo di valori previsto è una previsione, o previsione, dei valori di performance superiori e inferiori previsti in un momento specifico. Per la latenza del carico di lavoro, i valori superiori costituiscono la soglia di performance. Quando il valore effettivo supera la soglia di performance, Unified Manager attiva un avviso di performance event.
+
+Ad esempio, durante le normali ore di lavoro tra le 9:00 e alle 17:00, la maggior parte dei dipendenti potrebbe controllare la posta elettronica tra le 9:00 e alle 10:30 L'aumento della domanda sui server di posta elettronica comporta un aumento dell'attività dei carichi di lavoro sullo storage back-end durante questo periodo. I dipendenti potrebbero notare tempi di risposta lenti dai propri client di posta elettronica.
+
+Durante l'ora di pranzo tra le 12:00 e alle 13:00 e alla fine della giornata lavorativa dopo le 17:00, la maggior parte dei dipendenti è probabilmente lontana dai computer. La domanda sui server di posta elettronica in genere diminuisce, diminuendo anche la domanda sullo storage back-end. In alternativa, potrebbero essere pianificate operazioni di carico di lavoro, come backup dello storage o scansione virus, che iniziano dopo le 17:00 e aumentare l'attività sullo storage back-end.
+
+Nel corso di diversi giorni, l'aumento e la diminuzione dell'attività del carico di lavoro determina l'intervallo di attività previsto, con limiti superiori e inferiori per un carico di lavoro. Quando l'attività effettiva del carico di lavoro di un oggetto si trova al di fuori dei limiti superiori o inferiori e rimane al di fuori dei limiti per un certo periodo di tempo, ciò potrebbe indicare che l'oggetto è stato utilizzato in eccesso o sottoutilizzato.
+
+
+
+== Come si forma l'intervallo previsto
+
+Unified Manager deve raccogliere un minimo di 3 giorni di attività del carico di lavoro prima che possa iniziare l'analisi e prima che l'intervallo previsto per i tempi di risposta e le operazioni di i/o possa essere visualizzato nella GUI. La raccolta dati minima richiesta non tiene conto di tutte le modifiche che si verificano dall'attività del carico di lavoro. Dopo aver raccolto i primi 3 giorni di attività, Unified Manager regola l'intervallo previsto, ogni 24 ore alle 12:00, per riflettere le modifiche dell'attività del carico di lavoro e stabilire una soglia di performance più precisa.
+
+[NOTE]
+====
+L'ora legale (DST) modifica l'ora del sistema, che modifica l'intervallo previsto di statistiche delle performance per i carichi di lavoro monitorati. Unified Manager inizia immediatamente a correggere l'intervallo previsto, che richiede circa 15 giorni. Durante questo periodo di tempo è possibile continuare a utilizzare Unified Manager, ma poiché Unified Manager utilizza l'intervallo previsto per rilevare gli eventi, alcuni eventi potrebbero non essere precisi. Gli eventi rilevati prima del cambiamento di orario non vengono influenzati. La modifica manuale dell'ora su un cluster o su un server Unified Manager in un momento precedente influisce anche sui risultati dell'analisi degli eventi.
+
+====

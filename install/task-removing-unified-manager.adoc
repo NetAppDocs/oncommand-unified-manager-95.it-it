@@ -1,0 +1,56 @@
+---
+permalink: install/task-removing-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Se è necessario rimuovere Unified Manager dall"host Red Hat Enterprise Linux o CentOS, è possibile arrestare e disinstallare Unified Manager con un singolo comando.' 
+---
+= Rimozione di Unified Manager dall'host Red Hat Enterprise Linux o CentOS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se è necessario rimuovere Unified Manager dall'host Red Hat Enterprise Linux o CentOS, è possibile arrestare e disinstallare Unified Manager con un singolo comando.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre dell'accesso dell'utente root al server dal quale si desidera rimuovere Unified Manager.
+* Security-Enhanced Linux (SELinux) deve essere disattivato sulla macchina Red Hat. Impostare la modalità runtime di SELinux su "`permissive`" utilizzando `setenforce 0` comando.
+* Tutti i cluster (origini dati) devono essere rimossi dal server Unified Manager prima di rimuovere il software.
+* Il server Unified Manager non deve disporre di una connessione attiva con un provider di dati esterno come Graphite.
++
+In tal caso, è necessario eliminare la connessione utilizzando la console di manutenzione di Unified Manager.
+
+
+
+
+
+== A proposito di questa attività
+
+Questi passaggi contengono informazioni sui sistemi configurati per l'alta disponibilità utilizzando Veritas Operation Manager. Se il sistema non è configurato per la disponibilità elevata, ignorare questi passaggi aggiuntivi.
+
+
+
+== Fasi
+
+. Accedere come utente root al nodo del cluster che possiede le risorse del cluster su cui si desidera rimuovere Unified Manager.
+. Arrestare tutti i servizi di Unified Manager utilizzando i comandi di VCS Operations Manager o VCS.
+. Arrestare e rimuovere Unified Manager dal server: `rpm -e netapp-ocum ocie-au ocie-server netapp-platform-base netapp-application-server ocie-serverbase`
++
+Questo passaggio rimuove tutti i pacchetti RPM NetApp associati. Non rimuove i moduli software prerequisiti, come Java, MySQL e p7zip.
+
+. Passare all'altro nodo utilizzando VCS Operations Manager.
+. Accedere al secondo nodo del cluster.
+. Arrestare tutti i servizi, quindi rimuovere Unified Manager dal secondo nodo: `rpm -e netapp-ocum ocie-au ocie-server netapp-platform-base netapp-application-server ocie-serverbase`
+. Impedire al gruppo di servizi di utilizzare i comandi VCS Operations Manager o VCS.
+. Se appropriato, rimuovere i moduli software di supporto, come Java, MySQL e p7zip: `rpm -e p7zip mysql-community-client mysql-community-server mysql-community-common mysql-community-libs java-x.y`
+
+
+
+
+== Risultati
+
+Una volta completata questa operazione, il software viene rimosso; tuttavia, i dati MySQL non vengono cancellati. Tutti i dati di `/opt/netapp/data` la directory viene spostata in `/opt/netapp/data/BACKUP` dopo la disinstallazione.

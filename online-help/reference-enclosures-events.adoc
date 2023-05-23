@@ -1,0 +1,101 @@
+---
+permalink: online-help/reference-enclosures-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi enclosure forniscono informazioni sullo stato degli shelf enclosure di dischi nel data center, in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all"area di impatto e includono il nome dell"evento e della trap, il livello di impatto, il tipo di origine e la severità.' 
+---
+= Eventi di enclosure
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi enclosure forniscono informazioni sullo stato degli shelf enclosure di dischi nel data center, in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all'area di impatto e includono il nome dell'evento e della trap, il livello di impatto, il tipo di origine e la severità.
+
+
+
+== Area di impatto: Disponibilità
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Ventole shelf disco non riuscite (ocumEvtShelfFanFailed)
+ a| 
+Incidente
+ a| 
+Shelf di storage
+ a| 
+Critico
+
+
+
+ a| 
+Alimentatori shelf di dischi non riusciti (ocumEvtShelfPowerSupplyFailed)
+ a| 
+Incidente
+ a| 
+Shelf di storage
+ a| 
+Critico
+
+
+
+ a| 
+Percorso multiplo shelf disco non configurato (ocumDiskShelfConnectivityNotInMultiPath)
+
+Questo evento non si applica a:
+
+* Cluster in una configurazione MetroCluster
+* Le seguenti piattaforme: FAS2554, FAS2552, FAS2520 e FAS2240
+
+ a| 
+Rischio
+ a| 
+Nodo
+ a| 
+Attenzione
+
+
+
+ a| 
+Errore percorso shelf disco (ocumDiskShelfConnectivityPathFailure)
+ a| 
+Rischio
+ a| 
+Shelf. Storage
+ a| 
+Attenzione
+
+|===
+
+
+== Area di impatto: Configurazione
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Shelf di dischi rilevato (non applicabile)
+ a| 
+Evento
+ a| 
+Nodo
+ a| 
+Informazioni
+
+
+
+ a| 
+Shelf di dischi rimossi (non applicabile)
+ a| 
+Evento
+ a| 
+Nodo
+ a| 
+Informazioni
+
+|===

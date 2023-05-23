@@ -1,0 +1,75 @@
+---
+permalink: online-help/task-removing-performance-threshold-policies-from-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile rimuovere un criterio di soglia delle performance definito dall"utente da un oggetto storage quando non si desidera più che Unified Manager monitori il valore del contatore delle performance.' 
+---
+= Rimozione dei criteri di soglia delle performance dagli oggetti storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile rimuovere un criterio di soglia delle performance definito dall'utente da un oggetto storage quando non si desidera più che Unified Manager monitori il valore del contatore delle performance.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore di OnCommand.
+
+
+
+== A proposito di questa attività
+
+È possibile rimuovere un solo criterio alla volta da un oggetto selezionato.
+
+È possibile rimuovere un criterio di soglia da più oggetti di storage selezionando più di un oggetto nell'elenco.
+
+
+
+== Fasi
+
+. Dalla pagina *inventario* di qualsiasi oggetto di storage, selezionare uno o più oggetti per i quali è stata applicata almeno una policy di soglia delle performance.
++
+|===
+| Per cancellare le soglie da... | Eseguire questa operazione... 
+
+
+ a| 
+Un singolo oggetto
+ a| 
+Selezionare la casella di controllo a sinistra dell'oggetto.
+
+
+
+ a| 
+Oggetti multipli
+ a| 
+Selezionare la casella di controllo a sinistra di ciascun oggetto.
+
+
+
+ a| 
+Tutti gli oggetti della pagina
+ a| 
+Fare clic su image:../media/select-dropdown-65-png.gif[""] E selezionare *Seleziona tutti gli oggetti in questa pagina*.
+
+
+
+ a| 
+Tutti gli oggetti dello stesso tipo
+ a| 
+Fare clic su image:../media/select-dropdown-65-png.gif[""] E selezionare *Seleziona tutti gli oggetti*.
+
+|===
+. Fare clic su *Cancella policy soglia performance*.
++
+Viene visualizzata la pagina Clear Threshold Policy (Elimina policy di soglia), che mostra un elenco di criteri di soglia attualmente assegnati agli oggetti di storage.
+
+. Selezionare il criterio di soglia che si desidera rimuovere dagli oggetti e fare clic su *Clear Policy*.
++
+Quando si seleziona un criterio di soglia, vengono visualizzati i dettagli del criterio in modo da poter confermare di aver selezionato il criterio appropriato.
+
+

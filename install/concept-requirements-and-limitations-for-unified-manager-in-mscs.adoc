@@ -1,0 +1,38 @@
+---
+permalink: install/concept-requirements-and-limitations-for-unified-manager-in-mscs.html 
+sidebar: sidebar 
+keywords:  
+summary: Prima di installare Unified Manager in un ambiente di clustering di failover, è necessario assicurarsi che i nodi del cluster siano configurati correttamente per supportare Unified Manager. 
+---
+= Requisiti per Unified Manager in un ambiente di clustering di failover
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Prima di installare Unified Manager in un ambiente di clustering di failover, è necessario assicurarsi che i nodi del cluster siano configurati correttamente per supportare Unified Manager.
+
+È necessario assicurarsi che la configurazione del cluster di failover soddisfi i seguenti requisiti:
+
+* Entrambi i nodi del cluster devono eseguire la stessa versione di Microsoft Windows Server.
+* La stessa versione di Unified Manager deve essere installata utilizzando lo stesso percorso su entrambi i nodi del cluster.
+* Il clustering di failover deve essere installato e attivato su entrambi i nodi.
++
+Per istruzioni, consultare la documentazione Microsoft.
+
+* È necessario utilizzare Fibre Channel Switched Fabric o storage basato su iSCSI per creare un disco dati condiviso come back-end dello storage
+* Facoltativo: Utilizzando SnapDrive per Windows, è necessario creare una posizione condivisa accessibile a entrambi i nodi nella configurazione ad alta disponibilità.
++
+Consultare la _Guida all'installazione di SnapDrive per Windows_ per informazioni sull'installazione e la creazione di una posizione condivisa.
+
++
+È inoltre possibile gestire le LUN utilizzando l'interfaccia della riga di comando del sistema di storage. Per ulteriori informazioni, consultare la matrice di compatibilità di SnapDrive per Windows.
+
+* Perl deve essere installato con `XML::LibXML` e. `File::chdir` moduli per il funzionamento degli script.
+* La configurazione del cluster deve contenere solo due nodi.
+* Il tipo di quorum "`node and disk maggioranza`" deve essere utilizzato per il clustering di failover.
+* Per accedere a Unified Manager, è necessario aver configurato un indirizzo IP condiviso con un FQDN corrispondente da utilizzare come indirizzo IP globale del cluster.
+* La password per l'utente di manutenzione di Unified Manager su entrambi i nodi deve essere la stessa.
+* È necessario utilizzare solo l'indirizzo IP IPv4.
+

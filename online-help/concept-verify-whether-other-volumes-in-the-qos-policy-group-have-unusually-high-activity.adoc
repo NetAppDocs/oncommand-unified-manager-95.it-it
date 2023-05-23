@@ -1,0 +1,26 @@
+---
+permalink: online-help/concept-verify-whether-other-volumes-in-the-qos-policy-group-have-unusually-high-activity.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile esaminare i carichi di lavoro nel gruppo di policy qualità del servizio (QoS) con il cambiamento più elevato nell"attività per determinare se l"evento è stato causato da più di un carico di lavoro. Puoi anche vedere se altri carichi di lavoro superano ancora il limite di throughput impostato o se rientrano nell"intervallo di attività previsto.' 
+---
+= Verificare se altri volumi nel gruppo di policy QoS hanno un'attività insolitamente elevata
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile esaminare i carichi di lavoro nel gruppo di policy qualità del servizio (QoS) con la più alta variazione di attività per determinare se l'evento è stato causato da più di un carico di lavoro. Puoi anche vedere se altri carichi di lavoro superano ancora il limite di throughput impostato o se rientrano nell'intervallo di attività previsto.
+
+Nella pagina Dettagli evento, nella sezione Diagnosi del sistema, è possibile ordinare i carichi di lavoro in base alla deviazione di picco nell'attività per visualizzare i carichi di lavoro con la variazione più alta nell'attività nella parte superiore della tabella. Questi carichi di lavoro potrebbero essere i "`bulli`" la cui attività ha superato il limite impostato e potrebbe aver causato l'evento.
+
+È possibile accedere alla pagina Performance/Volume Details (Dettagli performance/volume) per ciascun carico di lavoro del volume nel grafico per esaminare la relativa attività IOPS. Se il carico di lavoro ha periodi di attività operative molto elevate, potrebbe aver contribuito all'evento. È possibile modificare le impostazioni del gruppo di criteri per il carico di lavoro o spostare il carico di lavoro in un altro gruppo di criteri.
+
+È possibile utilizzare Gestione di sistema di OnCommand o i comandi dell'interfaccia utente di ONTAP per gestire i gruppi di criteri, come segue:
+
+* Creare un gruppo di criteri.
+* Aggiungere o rimuovere carichi di lavoro in un gruppo di policy.
+* Spostare un carico di lavoro tra gruppi di policy.
+* Modificare il limite di throughput di un gruppo di criteri.
+

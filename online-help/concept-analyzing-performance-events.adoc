@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-analyzing-performance-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile analizzare gli eventi relativi alle performance per identificare quando sono stati rilevati, se sono attivi (nuovi o riconosciuti) o obsoleti, i carichi di lavoro e i componenti del cluster coinvolti e le opzioni per la risoluzione degli eventi autonomamente.' 
+---
+= Analisi degli eventi relativi alle performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile analizzare gli eventi relativi alle performance per identificare quando sono stati rilevati, se sono attivi (nuovi o riconosciuti) o obsoleti, i carichi di lavoro e i componenti del cluster coinvolti e le opzioni per la risoluzione degli eventi autonomamente.

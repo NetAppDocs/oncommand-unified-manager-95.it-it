@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-cluster-inventory-report-to-display-nodes-running-older-versions-of-ontap.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile personalizzare il report di inventario dei cluster per visualizzare i nodi filtrati dalle versioni precedenti di ONTAP. 
+---
+= Personalizzazione del report di inventario dei cluster per visualizzare i nodi che eseguono versioni precedenti del software ONTAP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report di inventario dei cluster per visualizzare i nodi filtrati dalle versioni precedenti di ONTAP.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Per rimuovere il raggruppamento per cluster o nodo, attenersi alla seguente procedura:
++
+.. Fare clic nella colonna che deve essere raggruppata.
+.. Fare clic su image:../media/click-to-see-menu.gif[""] icona.
+.. Selezionare *Gruppo* > *Elimina gruppo interno*.
+
+
+. Per filtrare i nodi che non eseguono ONTAP 8.3, fare clic sulla colonna *versione ONTAP* e aprire la finestra di dialogo *filtro* facendo clic su image:../media/click-to-filter.gif[""] icona.
+. Dall'elenco a discesa *condizione*, selezionare *non uguale a*.
+. Fare clic su *Select Values* (Seleziona valori) e selezionare *8.3*.
+. Fare clic su *OK*.
+

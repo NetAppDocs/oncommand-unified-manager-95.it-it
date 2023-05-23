@@ -1,0 +1,39 @@
+---
+permalink: performance-checker/task-accessing-system-manager-from-the-um-interface.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Quando la risoluzione dei problemi richiede di apportare modifiche alla configurazione di un cluster, è possibile utilizzare l"interfaccia grafica di Gestore di sistema invece dell"interfaccia della riga di comando di ONTAP. System Manager è incluso in ONTAP come servizio Web, è attivato per impostazione predefinita ed è accessibile tramite un browser.' 
+---
+= Accesso a Gestore di sistema di OnCommand dall'interfaccia di Gestore unificato
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando la risoluzione dei problemi richiede di apportare modifiche alla configurazione di un cluster, è possibile utilizzare l'interfaccia grafica di Gestore di sistema invece dell'interfaccia della riga di comando di ONTAP. System Manager è incluso in ONTAP come servizio Web, è attivato per impostazione predefinita ed è accessibile tramite un browser.
+
+
+
+== Prima di iniziare
+
+È necessario disporre di un account utente del cluster configurato con `admin` e a. `http`, `ontapi`, e. `console` tipi di applicazioni.
+
+
+
+== Fasi
+
+. Nel riquadro di spostamento di sinistra, fare clic su *Dashboards* > *Cluster View*.
+. Nella pagina *Dashboards/Cluster View*, selezionare il cluster che si desidera gestire.
++
+Viene visualizzata una panoramica dello stato, della capacità e delle performance del monitoraggio per quel cluster.
+
+. Fare clic sull'icona *System Manager*.
++
+Se il cluster utilizza un certificato digitale autofirmato, il browser potrebbe visualizzare un avviso che indica che il certificato non è attendibile. È possibile riconoscere il rischio di continuare l'accesso o installare un certificato digitale firmato dall'autorità di certificazione (CA) sul cluster per l'autenticazione del server.
+
+. Accedere a System Manager utilizzando le credenziali di amministratore del cluster.
++
+Se l'accesso all'interfaccia utente di System Manager è protetto mediante l'autenticazione SAML, inserire le credenziali nella pagina di accesso del provider di identità (IdP) anziché nella pagina di accesso di System Manager.
+
+

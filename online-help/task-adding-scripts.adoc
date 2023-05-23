@@ -1,0 +1,51 @@
+---
+permalink: online-help/task-adding-scripts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile aggiungere script in Unified Manager e associarli agli avvisi. Questi script vengono eseguiti automaticamente quando viene generato un avviso e consentono di ottenere informazioni sugli oggetti di storage per i quali viene generato l"evento.' 
+---
+= Aggiunta di script
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile aggiungere script in Unified Manager e associarli agli avvisi. Questi script vengono eseguiti automaticamente quando viene generato un avviso e consentono di ottenere informazioni sugli oggetti di storage per i quali viene generato l'evento.
+
+
+
+== Prima di iniziare
+
+* È necessario aver creato e salvato gli script che si desidera aggiungere al server Unified Manager.
+* I formati di file supportati per gli script sono Perl, Shell, PowerShell e. `.bat` file.
++
+** Per gli script Perl, Perl deve essere installato sul server Unified Manager. Se Perl è stato installato dopo Unified Manager, è necessario riavviare il server Unified Manager.
+** Per gli script PowerShell, è necessario impostare sul server il criterio di esecuzione PowerShell appropriato per eseguire gli script.
+
+
++
+[NOTE]
+====
+Se lo script crea file di log per tenere traccia dell'avanzamento dello script di avviso, è necessario assicurarsi che i file di log non vengano creati in alcun punto della cartella di installazione di Unified Manager.
+
+====
+* È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+
+== A proposito di questa attività
+
+È possibile caricare script personalizzati e raccogliere i dettagli dell'evento relativi all'avviso.
+
+
+
+== Fasi
+
+. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *script* nel menu Gestione di sinistra.
+. Nella pagina *Gestione/script* , fare clic su *Aggiungi*.
+. Nella finestra di dialogo *Aggiungi script*, fare clic su *Sfoglia* per selezionare il file script.
+. Inserire una descrizione per lo script selezionato.
+. Fare clic su *Aggiungi*.
+

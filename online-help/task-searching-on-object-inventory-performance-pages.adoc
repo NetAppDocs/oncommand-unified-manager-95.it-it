@@ -1,0 +1,39 @@
+---
+permalink: online-help/task-searching-on-object-inventory-performance-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile cercare le stringhe nelle pagine Object Inventory Performance (prestazioni inventario oggetti). Utilizzare il campo Search (Cerca) situato in alto a destra della pagina per individuare rapidamente i dati in base al nome dell"oggetto o del criterio. In questo modo è possibile individuare rapidamente oggetti specifici e i relativi dati associati oppure individuare rapidamente le policy e visualizzare i dati degli oggetti policy associati.' 
+---
+= Ricerca nelle pagine Object Inventory Performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile cercare le stringhe nelle pagine Object Inventory Performance (prestazioni inventario oggetti). Utilizzare il campo *Search* situato nella parte superiore destra della pagina per individuare rapidamente i dati in base al nome dell'oggetto o del criterio. In questo modo è possibile individuare rapidamente oggetti specifici e i relativi dati associati oppure individuare rapidamente le policy e visualizzare i dati degli oggetti policy associati.
+
+
+
+== Fasi
+
+. Eseguire una delle seguenti opzioni in base ai requisiti di ricerca:
++
+|===
+| Per individuare... | Digitare questo... 
+
+
+ a| 
+Un oggetto specifico
+ a| 
+Il nome dell'oggetto nel campo *Search* e fare clic su *Search*. Viene visualizzato l'oggetto per il quale è stata eseguita la ricerca e i relativi dati.
+
+
+
+ a| 
+Una policy di soglia delle performance definita dall'utente
+ a| 
+Nome completo o parziale del criterio nel campo *Cerca* e fare clic su *Cerca*. Vengono visualizzati gli oggetti assegnati al criterio per il quale si è eseguita la ricerca.
+
+|===
+

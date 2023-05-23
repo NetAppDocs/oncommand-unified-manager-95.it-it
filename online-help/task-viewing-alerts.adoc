@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-viewing-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile visualizzare l"elenco degli avvisi creati per diversi eventi dalla pagina Configurazione/Avvisi. È inoltre possibile visualizzare le proprietà degli avvisi, ad esempio la descrizione, il metodo e la frequenza di notifica, gli eventi che attivano l"avviso, i destinatari degli avvisi e le risorse interessate, ad esempio cluster, aggregati e volumi.' 
+---
+= Visualizzazione degli avvisi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile visualizzare l'elenco degli avvisi creati per diversi eventi dalla pagina Configurazione/Avvisi. È inoltre possibile visualizzare le proprietà degli avvisi, ad esempio la descrizione, il metodo e la frequenza di notifica, gli eventi che attivano l'avviso, i destinatari degli avvisi e le risorse interessate, ad esempio cluster, aggregati e volumi.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Configurazione* > *Avvisi*.
++
+L'elenco degli avvisi viene visualizzato nella pagina Configurazione/Avvisi.
+
+

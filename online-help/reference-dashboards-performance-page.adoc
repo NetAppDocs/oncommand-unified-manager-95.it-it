@@ -1,0 +1,121 @@
+---
+permalink: online-help/reference-dashboards-performance-page.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile utilizzare Unified Manager Performance Dashboard per visualizzare lo stato delle performance di alto livello di tutti i cluster monitorati. La pagina Dashboards/Performance visualizza anche un messaggio banner quando Unified Manager non è in grado di comunicare con un cluster monitorato. 
+---
+= Dashboard/pagina delle performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare Unified Manager Performance Dashboard per visualizzare lo stato delle performance di alto livello di tutti i cluster monitorati. La pagina Dashboards/Performance visualizza anche un messaggio banner quando Unified Manager non è in grado di comunicare con un cluster monitorato.
+
+
+
+== Panoramica
+
+I cluster vengono ordinati in base alla severità utilizzando i seguenti criteri:
+
+. Se un cluster non è raggiungibile.
+. Se un cluster presenta uno o più eventi di performance critiche (icona dell'oggetto rossa).
+. Se un cluster presenta uno o più eventi attivi relativi alle prestazioni di avviso (icona dell'oggetto gialla).
+. Se i cluster non hanno eventi di performance attivi (icona oggetto verde): I cluster sono ordinati in base agli IOPS più elevati.
+
+
+Gli eventi critici vengono generati quando viene superato un limite critico in una policy di soglia delle performance definita dall'utente. Gli eventi di avviso vengono inviati quando viene superato un limite di avviso in un criterio di soglia delle prestazioni definito dall'utente o quando viene superato un criterio di soglia definito dal sistema o una soglia dinamica.
+
+[NOTE]
+====
+Il criterio di ordinamento è determinato dal numero totale di eventi attivi (nuovi o riconosciuti), non dal numero di oggetti che hanno eventi. Ad esempio, se il cluster A ha sette eventi critici di latenza del volume, Inoltre, il cluster B presenta due eventi critici di latenza del volume e due eventi critici di IOPS del nodo (per un totale di quattro eventi critici), il cluster A (con un'icona rossa dell'oggetto) viene visualizzato più in alto nell'elenco, anche se il cluster B presenta due icone rosse dell'oggetto.
+
+====
+Per ciascun cluster vengono visualizzati i seguenti tipi di eventi monitorati comunemente:
+
+* Eventi di latenza per macchine virtuali storage (SVM), volumi e LUN
+* Eventi IOPS per nodi e SVM
+* Eventi Mbps per nodi e SVM
+* La capacità di performance ha utilizzato eventi per nodi e aggregati
+* Eventi di utilizzo per nodi e aggregati
+
+
+Unified Manager può ricevere eventi relativi alle performance per altri oggetti e contatori di storage, ad esempio eventi Mbps per aggregati ed eventi IOPS per volumi. Se in un cluster sono presenti questi tipi di eventi, l'icona accanto al nome del cluster indica un evento di avviso (giallo) o critico (rosso). Questa icona potrebbe indicare la presenza di eventi quando nessuna delle cinque icone del pannello dei contatori è gialla o rossa perché questi tipi di eventi non rientrano nelle categorie esistenti del pannello dei contatori.
+
+È possibile fare clic sull'icona dell'oggetto per visualizzare la pagina Performance Inventory relativa a tale oggetto, in cui è possibile visualizzare tutti gli oggetti di quel tipo in questo cluster. Ad esempio, facendo clic sull'icona di un volume viene visualizzata la pagina Performance/Volume Inventory (prestazioni/inventario volume), che mostra un elenco di tutti i volumi nel cluster selezionato, ordinati dalle prestazioni peggiori a quelle migliori.
+
+
+
+== Contatori delle performance
+
+Sono disponibili cinque contatori delle prestazioni, ciascuno visualizzato in un pannello separato, per ogni cluster. Queste informazioni vengono aggiornate automaticamente dopo ogni periodo di raccolta di cinque minuti:
+
+|===
+| Contatore | Descrizione 
+
+
+ a| 
+Latenza
+ a| 
+Mostra la velocità con cui il cluster risponde alle richieste dell'applicazione client, in millisecondi per operazione (ms/op). L'area delle icone indica se SVM, volumi o LUN presentano eventi attivi in base al valore di latenza che supera un'impostazione di soglia.
+
+
+
+ a| 
+IOPS
+ a| 
+Indica la velocità operativa del sistema storage, in numero di operazioni di input/output al secondo (IOPS).
+
+* L'area delle icone indica se i nodi o le SVM presentano eventi attivi in base al numero di IOPS che attraversano un'impostazione di soglia.
+* Nell'area inferiore vengono visualizzati gli IOPS totali del cluster per gli ultimi cinque minuti di raccolta.
+
+
+
+
+ a| 
+Mbps
+ a| 
+Mostra la quantità di dati trasferiti da e verso il cluster, in megabyte al secondo (Mbps).
+
+* L'area delle icone indica se i nodi o le SVM presentano eventi attivi in base al valore di Mbps che supera un'impostazione di soglia.
+* L'area inferiore visualizza il throughput totale del cluster per gli ultimi cinque minuti di raccolta.
+
+
+
+
+ a| 
+Capacità di performance utilizzata
+ a| 
+Mostra se i nodi o gli aggregati stanno utilizzando in eccesso la capacità di performance disponibile.
+
+* L'area delle icone indica se i nodi o gli aggregati hanno eventi attivi in base al valore della capacità di performance utilizzata che supera un'impostazione di soglia.
+* Nell'area inferiore viene visualizzato il valore più elevato utilizzato per la capacità di performance dal nodo più affollato e dall'aggregato più affollato.
+
+
+[NOTE]
+====
+I dati relativi alla capacità delle performance sono disponibili solo quando i nodi di un cluster sono installati con il software ONTAP 9.0 o versione successiva.
+
+====
+
+
+ a| 
+Utilizzo
+ a| 
+Mostra se le risorse su nodi o aggregati sono state utilizzate in eccesso.
+
+* L'area delle icone indica se i nodi o gli aggregati hanno eventi attivi in base al valore di utilizzo che supera un'impostazione di soglia.
+* Nell'area inferiore viene visualizzato il valore di utilizzo più elevato del nodo più utilizzato e dell'aggregato più utilizzato.
+
+
+|===
+Puntini di sospensione (...) nell'area dell'intestazione indica che i dati relativi alle performance sono attualmente in corso di raccolta.
+
+È possibile fare clic su *View Cluster Details* (Visualizza dettagli cluster) per visualizzare la pagina Landing di Performance Cluster, in cui è possibile visualizzare informazioni dettagliate sulle performance del cluster e di altri oggetti storage.
+
+
+
+== Messaggi di stato del cluster
+
+Se un cluster gestito da Unified Manager non è più disponibile, viene visualizzato un banner del messaggio di stato sopra i contatori delle prestazioni. Se il cluster non è raggiungibile, a destra del banner del messaggio di stato viene visualizzato il pulsante *Dettagli*. Facendo clic sul pulsante *Dettagli* nel messaggio di stato, è possibile accedere alla pagina origini dati cluster, che mostra informazioni complete sul problema. Nella pagina origini dati cluster, è possibile trovare i dati necessari per risolvere il problema che ha reso il cluster non disponibile.

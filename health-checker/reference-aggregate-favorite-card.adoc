@@ -1,0 +1,59 @@
+---
+permalink: health-checker/reference-aggregate-favorite-card.html 
+sidebar: sidebar 
+keywords:  
+summary: La scheda aggregata preferita consente di visualizzare i dettagli di capacità e performance degli aggregati contrassegnati come preferiti. 
+---
+= Aggregare la carta preferita
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La scheda aggregata preferita consente di visualizzare i dettagli di capacità e performance degli aggregati contrassegnati come preferiti.
+
+
+
+== Aggregare gli attributi
+
+La scheda aggregata preferita visualizza i seguenti attributi aggregati:
+
+* *Stato di salute aggregato*
++
+Un'icona che indica lo stato di salute dell'aggregato. I valori possibili sono normale, Avviso, errore e critico.
+
+* *Nome aggregato*
++
+Nome dell'aggregato.
+
++
+Posizionare il cursore sul nome dell'aggregato per visualizzare il nome del cluster a cui appartiene l'aggregato.
+
+* *Capacità*
++
+Percentuale di spazio libero disponibile sull'aggregato e numero stimato di giorni fino al completamento dell'aggregato.
+
++
+Si noti che per gli aggregati FabricPool queste informazioni riflettono solo la capacità sul Tier di performance locale. Fare clic sul riquadro Capacity (capacità) per visualizzare informazioni dettagliate nella pagina Health/aggregate details (informazioni sullo stato/aggregato).
+
+* *Prestazioni*
++
+Dettagli sulle performance dell'aggregato.
+
++
+** *IOPS*
++
+Numero medio di operazioni i/o al secondo nelle ultime 72 ore.
+
+** *Throughput*
++
+Throughput medio nelle ultime 72 ore, in Mbps .
+
+** *Latenza*
++
+Tempo medio di risposta richiesto per un'operazione, in millisecondi.
+
+
+
+

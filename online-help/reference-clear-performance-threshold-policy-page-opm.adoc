@@ -1,0 +1,18 @@
+---
+permalink: online-help/reference-clear-performance-threshold-policy-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile utilizzare la pagina Clear Threshold Policy per rimuovere o cancellare un criterio di soglia delle performance da uno o più oggetti di storage. 
+---
+= Cancella la pagina Performance Threshold Policy
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la pagina Clear Threshold Policy per rimuovere o _clear_ un criterio di soglia delle performance da uno o più oggetti di storage.
+
+Nell'elenco dei criteri vengono inseriti solo i criteri utilizzati nell'oggetto o negli oggetti selezionati.
+
+Selezionare il criterio che si desidera rimuovere dall'oggetto o dagli oggetti di storage, quindi fare clic su *Clear Policy*.

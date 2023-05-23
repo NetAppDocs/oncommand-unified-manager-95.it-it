@@ -1,0 +1,16 @@
+---
+permalink: config/concept-configuring-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Dopo aver installato Unified Manager, è necessario completare la configurazione iniziale (chiamata anche procedura guidata per la prima esperienza) per accedere all"interfaccia utente Web. È quindi possibile eseguire ulteriori attività di configurazione, ad esempio l"aggiunta di cluster, la configurazione dell"autenticazione remota, l"aggiunta di utenti e l"aggiunta di avvisi.' 
+---
+= Configurazione di Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dopo aver installato Unified Manager, è necessario completare la configurazione iniziale (chiamata anche procedura guidata per la prima esperienza) per accedere all'interfaccia utente Web. È quindi possibile eseguire ulteriori attività di configurazione, ad esempio l'aggiunta di cluster, la configurazione dell'autenticazione remota, l'aggiunta di utenti e l'aggiunta di avvisi.
+
+Alcune delle procedure descritte in questo manuale sono necessarie per completare la configurazione iniziale dell'istanza di Unified Manager. Altre procedure sono le impostazioni di configurazione consigliate che sono utili per la configurazione sulla nuova istanza o che sono utili prima di iniziare il monitoraggio regolare dei sistemi ONTAP.

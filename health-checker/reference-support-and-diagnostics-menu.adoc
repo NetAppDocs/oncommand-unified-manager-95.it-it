@@ -1,0 +1,22 @@
+---
+permalink: health-checker/reference-support-and-diagnostics-menu.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Il menu Support and Diagnostics (supporto e diagnostica) consente di generare un pacchetto di supporto.' 
+---
+= Menu Support and Diagnostics (supporto e diagnostica)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il menu Support and Diagnostics (supporto e diagnostica) consente di generare un pacchetto di supporto.
+
+È disponibile la seguente opzione di menu:
+
+* *Genera bundle di supporto*
++
+Consente di creare un file 7-zip contenente informazioni diagnostiche complete nella home directory dell'utente di diagnostica. Il file include le informazioni generate da un messaggio AutoSupport, il contenuto del database di Unified Manager, i dati dettagliati sugli interni del server di Unified Manager e i registri a livello dettagliato non normalmente inclusi nei messaggi AutoSupport.
+
+

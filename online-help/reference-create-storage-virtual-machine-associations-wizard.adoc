@@ -1,0 +1,90 @@
+---
+permalink: online-help/reference-create-storage-virtual-machine-associations-wizard.html 
+sidebar: sidebar 
+keywords:  
+summary: La procedura guidata Crea associazioni di macchine virtuali di storage consente di associare le macchine virtuali di storage di origine e di destinazione da utilizzare nelle relazioni di protezione di SnapMirror e SnapVault. 
+---
+= Creazione guidata Storage Virtual Machine Associations
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La procedura guidata Crea associazioni di macchine virtuali di storage consente di associare le macchine virtuali di storage di origine e di destinazione per l'utilizzo nelle relazioni di protezione di SnapMirror e SnapVault.
+
+
+
+== Selezionare SVM di origine
+
+Il pannello Select Source Storage Virtual Machine (Seleziona macchina virtuale storage di origine) consente di selezionare la SVM di origine o principale nell'associazione SVM.
+
+* *Qualsiasi*
++
+Consente di creare un'associazione tra qualsiasi origine SVM a una o più destinazioni, o SVM secondaria. Ciò significa che tutte le SVM esistenti che attualmente richiedono protezione, nonché tutte le SVM create in futuro, sono associate alla SVM di destinazione specificata. Ad esempio, è possibile eseguire il backup di applicazioni provenienti da diverse origini in posizioni diverse su una o più SVM di destinazione in un'unica posizione.
+
+* *Singolo*
++
+Consente di associare una SVM di origine specifica a una o più SVM di destinazione. Ad esempio, se si forniscono servizi di storage a molti client i cui dati devono essere separati l'uno dall'altro, scegliere questa opzione per associare un'origine SVM specifica a una destinazione SVM specifica assegnata solo a quel client.
+
+* *Nessuno (esterno)*
++
+Consente di creare un'associazione tra una SVM di origine e un volume flessibile esterno di una SVM di destinazione.
+
++
+** Macchina virtuale per lo storage
++
+Elenca i nomi delle SVM di origine disponibili
+
+** Cluster
++
+Elenca i cluster su cui si trova ogni SVM
+
+
+
+* *Consentire questi tipi di relazioni*
++
+Consente di selezionare il tipo di relazione per l'associazione:
+
++
+** SnapMirror
++
+Specifica una relazione SnapMirror come tipo di associazione. La selezione di questa opzione attiva la replica dei dati dalle origini selezionate alle destinazioni selezionate.
+
+** SnapVault
++
+Specifica una relazione SnapVault come tipo di associazione. La selezione di questa opzione attiva i backup dalle posizioni primarie selezionate alle posizioni secondarie selezionate.
+
+
+
+
+
+
+
+== Selezionare Destinazioni di protezione
+
+Il pannello Select Protection Destinations della procedura guidata Create Storage Virtual Machine Associations consente di selezionare dove copiare o replicare i dati. È possibile creare un'associazione su una sola SVM di destinazione per cluster.
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti operazioni:
+
+* *Avanti*
++
+Consente di passare alla pagina successiva della procedura guidata.
+
+* *Indietro*
++
+Consente di tornare alla pagina precedente della procedura guidata.
+
+* *Fine*
++
+Applica le selezioni e crea l'associazione.
+
+* *Annulla*
++
+Elimina le selezioni e chiude la procedura guidata Create Storage Virtual Machine Associations.
+
+

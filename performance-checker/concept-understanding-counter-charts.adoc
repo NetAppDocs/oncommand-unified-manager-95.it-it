@@ -1,0 +1,45 @@
+---
+permalink: performance-checker/concept-understanding-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'I grafici nel riquadro Counter Chart consentono di visualizzare e confrontare i dati delle performance per l"oggetto root e per gli oggetti aggiunti dalla griglia Correlated Objects. Ciò può aiutarti a comprendere le tendenze delle performance e a isolare e risolvere i problemi di performance.' 
+---
+= Comprensione dei diagrammi di contatore
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I grafici nel riquadro Counter Chart consentono di visualizzare e confrontare i dati delle performance per l'oggetto root e per gli oggetti aggiunti dalla griglia Correlated Objects. Ciò può aiutarti a comprendere le tendenze delle performance e a isolare e risolvere i problemi di performance.
+
+I grafici dei contatori visualizzati per impostazione predefinita sono Eventi, latenza, IOPS e Mbps. I grafici opzionali che è possibile scegliere di visualizzare sono Utilization (utilizzo), Performance Capacity used (capacità di performance utilizzata), Available IOPS (IOPS disponibili), IOPS/TB (IOPS/TB) e cache Miss Ratio (rapporto errori cache). Inoltre, è possibile scegliere di visualizzare i valori totali o i valori di dettaglio per i grafici latenza, IOPS, Mbps e capacità di performance utilizzata.
+
+Per impostazione predefinita, Performance Explorer visualizza alcuni contatori, indipendentemente dal fatto che l'oggetto di storage li supporti tutti o meno. Quando un contatore non è supportato, il contatore è vuoto e il messaggio `Not applicable for <object>` viene visualizzato.
+
+I grafici mostrano i trend delle performance per l'oggetto root e per tutti gli oggetti selezionati nel pannello di confronto. I dati di ciascun grafico sono disposti come segue:
+
+* *Asse X*
++
+Visualizza il periodo di tempo specificato. Se non è stato specificato un intervallo di tempo, l'impostazione predefinita è il periodo di 72 ore precedente.
+
+* *Asse Y*
++
+Visualizza le unità del contatore univoche per l'oggetto o gli oggetti selezionati.
+
+
+
+I colori delle linee di tendenza corrispondono al colore del nome dell'oggetto visualizzato nel riquadro di confronto. È possibile posizionare il cursore su un punto di qualsiasi linea di trend per visualizzare i dettagli relativi all'ora e al valore di tale punto.
+
+Se si desidera esaminare un periodo di tempo specifico all'interno di un grafico, è possibile utilizzare uno dei seguenti metodi:
+
+* Utilizzare il pulsante *<* per espandere il riquadro Counter Charts (grafici contatore) per estendere la larghezza della pagina.
+* Utilizzare il cursore (quando passa a una lente di ingrandimento) per selezionare una parte dell'intervallo di tempo nel grafico per mettere a fuoco e ingrandire l'area. È possibile fare clic su Reset Chart Zoom (Ripristina zoom grafico) per riportare il grafico all'intervallo di tempo predefinito.
+* Utilizzare il pulsante *Zoom View* (Vista zoom) per visualizzare un singolo contatore grande che contiene dettagli ampliati e indicatori di soglia.
+
+
+[NOTE]
+====
+Occasionalmente, vengono visualizzate delle lacune nelle linee di trend. Le lacune indicano che Unified Manager non è riuscito a raccogliere dati sulle performance dal sistema storage o che Unified Manager potrebbe essere stato inattivo.
+
+====

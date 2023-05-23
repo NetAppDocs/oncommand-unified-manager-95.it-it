@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-object-monitoring-using-the-object-inventory-performance-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le pagine di inventario degli oggetti Performance consentono di monitorare le performance degli oggetti in base ai valori di specifici contatori delle performance o in base agli eventi delle performance. Ciò è vantaggioso perché l"identificazione degli oggetti con eventi di performance consente di analizzare la causa dei problemi di performance del cluster.' 
+---
+= Monitoraggio degli oggetti mediante le pagine di inventario degli oggetti Performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le pagine di inventario degli oggetti Performance consentono di monitorare le performance degli oggetti in base ai valori di specifici contatori delle performance o in base agli eventi delle performance. Ciò è vantaggioso perché l'identificazione degli oggetti con eventi di performance consente di analizzare la causa dei problemi di performance del cluster.
+
+Le pagine di inventario degli oggetti Performance visualizzano i contatori associati, gli oggetti associati e i criteri di soglia delle performance per tutti gli oggetti in tutti i cluster. Queste pagine consentono inoltre di applicare criteri di soglia delle performance agli oggetti. È possibile ordinare la pagina in base a qualsiasi colonna e cercare tutti i nomi o i dati degli oggetti.
+
+È possibile esportare i dati da queste pagine in valori separati da virgole (`.csv`) Utilizzando il pulsante *Esporta*, quindi utilizzare i dati esportati per creare i report.

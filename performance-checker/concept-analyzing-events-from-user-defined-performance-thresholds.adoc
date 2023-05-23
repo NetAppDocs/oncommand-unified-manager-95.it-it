@@ -1,0 +1,16 @@
+---
+permalink: performance-checker/concept-analyzing-events-from-user-defined-performance-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi generati dalle soglie definite dall"utente indicano che un contatore delle prestazioni per un determinato oggetto di storage, ad esempio un aggregato o un volume, ha superato la soglia definita nel criterio. Questo indica che l"oggetto cluster sta riscontrando un problema di performance.' 
+---
+= Analisi degli eventi dalle soglie di performance definite dall'utente
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi generati dalle soglie definite dall'utente indicano che un contatore delle prestazioni per un determinato oggetto di storage, ad esempio un aggregato o un volume, ha superato la soglia definita nel criterio. Questo indica che l'oggetto cluster sta riscontrando un problema di performance.
+
+La pagina Dettagli evento consente di analizzare l'evento relativo alle performance e, se necessario, di intraprendere azioni correttive per riportare le performance alla normalità.

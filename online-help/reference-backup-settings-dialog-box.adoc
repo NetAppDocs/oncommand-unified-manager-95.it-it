@@ -1,0 +1,77 @@
+---
+permalink: online-help/reference-backup-settings-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare la finestra di dialogo Database Backup Settings (Impostazioni backup database) per specificare un percorso di backup e un numero di conservazione e per attivare una pianificazione di backup per un"istanza di backup selezionata.' 
+---
+= Finestra di dialogo Database Backup Settings (Impostazioni backup database)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la finestra di dialogo Database Backup Settings (Impostazioni backup database) per specificare un percorso di backup e un numero di conservazione e per attivare una pianificazione di backup per un'istanza di backup selezionata.
+
+È possibile modificare le seguenti impostazioni di backup del database:
+
+* *Percorso*
++
+Specifica il percorso in cui memorizzare i file di backup. La seguente tabella specifica il formato del percorso di backup e le posizioni predefinite per i diversi sistemi operativi:
+
++
+|===
+| Sistema operativo host | Formato del percorso di backup 
+
+
+ a| 
+Appliance virtuale
+ a| 
+`/opt/netapp/data/ocum-backup`
+
+
+
+ a| 
+Red Hat Enterprise Linux o CentOS
+ a| 
+`/data/ocum-backup`
+
+
+
+ a| 
+Microsoft Windows
+ a| 
+`C:\ProgramData\NetApp\OnCommandAppData\ocum\backup\`
+
+|===
+* *Conteggio conservazione*
++
+Specifica il numero massimo di backup che devono essere conservati da Unified Manager. Il valore predefinito è dieci.
+
+* *Abilitazione frequenza pianificazione*
++
+Questa opzione consente di specificare quando pianificare un backup; è possibile scegliere ogni giorno o ogni settimana.
+
+* *Giornaliero*
++
+Specifica la pianificazione giornaliera del backup con l'ora.
+
+* *Settimanale*
++
+Specifica la pianificazione settimanale del backup con il giorno e l'ora.
+
+
+
+
+
+== Pulsanti di comando
+
+* *Salva e chiudi*
++
+Salva il file di backup e chiude la finestra di dialogo. Unified Manager salva il file di backup nel seguente formato: `um_um_version_backup_os_timestamp.7z`.
+
+* *Annulla*
++
+Chiude la finestra di dialogo Database Backup Settings (Impostazioni backup database) senza salvare le modifiche.
+
+

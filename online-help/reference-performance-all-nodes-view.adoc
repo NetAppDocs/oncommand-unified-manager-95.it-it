@@ -1,0 +1,90 @@
+---
+permalink: online-help/reference-performance-all-nodes-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina di inventario Performance/Nodes (prestazioni/nodi) visualizza una panoramica degli eventi di performance, dei dati e delle informazioni di configurazione per ciascun nodo monitorato da un"istanza di Unified Manager. In questo modo è possibile monitorare rapidamente le performance dei nodi e risolvere i problemi di performance e gli eventi di soglia.' 
+---
+= Pagina di inventario performance/nodi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina di inventario Performance/Nodes (prestazioni/nodi) visualizza una panoramica degli eventi di performance, dei dati e delle informazioni di configurazione per ciascun nodo monitorato da un'istanza di Unified Manager. In questo modo è possibile monitorare rapidamente le performance dei nodi e risolvere i problemi di performance e gli eventi di soglia.
+
+A seconda di come si accede a questa pagina, nella parte superiore della pagina potrebbe essere visualizzato un titolo diverso per indicare se l'elenco è stato filtrato. Ad esempio, quando si visualizzano tutti i nodi, il titolo è "`Nodes`". Quando si visualizza un sottoinsieme di nodi restituito dalla pagina Cluster Inventory, il titolo è "`Nodes on cluster: opm-cluster2`".
+
+I pulsanti nella parte superiore della pagina consentono di eseguire ricerche per individuare dati specifici, creare e applicare filtri per restringere l'elenco dei dati visualizzati ed esportare i dati della pagina in un `.csv` e aggiungere o rimuovere colonne dalla pagina.
+
+Per impostazione predefinita, gli oggetti nelle pagine di inventario degli oggetti vengono ordinati in base alla criticità degli eventi di performance degli oggetti. Gli oggetti con eventi critici vengono elencati per primi e gli oggetti con eventi di avviso vengono elencati per secondi. Ciò fornisce un'indicazione visiva immediata dei problemi che devono essere risolti. I valori dei contatori delle prestazioni si basano su una media delle 72 ore precedenti o più di dati, come indicato nella pagina. È possibile fare clic sul pulsante Refresh (Aggiorna) per aggiornare i dati dell'inventario degli oggetti.
+
+È possibile assegnare criteri di soglia delle performance a qualsiasi oggetto presente nelle pagine di inventario degli oggetti o cancellare i criteri di soglia utilizzando i pulsanti *Assign Performance Threshold Policy* e *Clear PerformanceThreshold Policy*.
+
+
+
+== Colonne della pagina di inventario dei nodi
+
+La pagina di inventario Performance/Nodes (prestazioni/nodi) contiene le seguenti colonne per ciascun nodo:
+
+* *Stato*
++
+Un oggetto integro senza eventi attivi visualizza un'icona con un segno di spunta verde (image:../media/sev-normal-um60.png["Icona per la severità dell'evento – normale"]). Se l'oggetto ha un evento attivo, l'icona dell'indicatore di evento identifica la severità dell'evento: Gli eventi critici sono rossi (image:../media/sev-critical-um60.png["Icona per la severità dell'evento – critico"]), gli eventi di errore sono di colore arancione (image:../media/sev-error-um60.png["Icona per la severità dell'evento – errore"]) e gli eventi di avviso sono gialli (image:../media/sev-warning-um60.png["Icona per la severità dell'evento – avviso"]).
+
+* Nodo *
++
+Il nome del nodo. È possibile fare clic sul nome del nodo per accedere alla pagina dei dettagli sulle prestazioni del nodo.
+
+* *Latenza*
++
+Il tempo di risposta medio per tutte le richieste i/o sul nodo, espresso in millisecondi per operazione.
+
+* *IOPS*
++
+La media delle operazioni di input/output al secondo sul nodo.
+
+* *Mbps*
++
+Il throughput sul nodo, misurato in megabyte al secondo.
+
+* *Flash cache legge*
++
+La percentuale di operazioni di lettura sul nodo che sono soddisfatte dalla cache, invece di essere restituite dal disco.
+
++
+[NOTE]
+====
+I dati di Flash cache vengono visualizzati solo per i nodi e solo quando nel nodo è installato un modulo Flash cache.
+
+====
+* *Capacità di performance utilizzata*
++
+La percentuale di capacità di performance consumata dal nodo.
+
++
+[NOTE]
+====
+I dati relativi alla capacità delle performance sono disponibili solo quando i nodi di un cluster sono installati con il software ONTAP 9.0 o versione successiva.
+
+====
+* *Utilizzo*
++
+Indica se la CPU o la memoria sul nodo è in uso in eccesso.
+
+* *Capacità libera*
++
+La capacità di storage inutilizzata del nodo, in gigabyte.
+
+* *Capacità totale*
++
+La capacità di storage totale del nodo, in gigabyte.
+
+* *Cluster*
++
+Il cluster a cui appartiene il nodo. È possibile fare clic sul nome del cluster per accedere alla pagina dei dettagli del cluster.
+
+* *Criterio di soglia*
++
+I criteri o i criteri di soglia delle performance definiti dall'utente che sono attivi su questo oggetto di storage. È possibile posizionare il cursore sui nomi dei criteri contenenti i puntini di sospensione (...) per visualizzare il nome completo del criterio o l'elenco dei nomi dei criteri assegnati. I pulsanti *Assign Performance Threshold Policy* e *Clear Performance Threshold Policy* rimangono disattivati finché non si selezionano uno o più oggetti facendo clic sulle caselle di controllo situate all'estrema sinistra.
+
+

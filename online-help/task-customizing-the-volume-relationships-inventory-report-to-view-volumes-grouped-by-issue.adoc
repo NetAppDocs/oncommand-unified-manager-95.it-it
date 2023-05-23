@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-customizing-the-volume-relationships-inventory-report-to-view-volumes-grouped-by-issue.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile personalizzare il report Volume Relationship Inventory per visualizzare i volumi raggruppati in base allo stato di salute della relazione del volume. 
+---
+= Personalizzazione del report Volume Relaces Inventory per visualizzare i volumi raggruppati per problema
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report Volume Relationship Inventory per visualizzare i volumi raggruppati in base allo stato di salute della relazione del volume.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Per filtrare i volumi in base allo stato di salute della relazione del volume, selezionare la colonna *Relationship Health* e fare clic su image:../media/click-to-filter.gif[""] icona.
+. Nella finestra di dialogo *filtro*, fare clic su *Seleziona valori*, quindi selezionare il valore desiderato dall'elenco a discesa.
++
+Vengono visualizzati i dettagli del volume per il valore selezionato.
+
+

@@ -1,0 +1,70 @@
+---
+permalink: install/task-uninstalling-unified-manager-win.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile disinstallare Unified Manager da Windows utilizzando la procedura guidata programmi e funzionalità o eseguendo una disinstallazione automatica dall"interfaccia della riga di comando.' 
+---
+= Disinstallazione di Unified Manager da Windows
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+:pp: &#43;&#43;
+
+
+[role="lead"]
+È possibile disinstallare Unified Manager da Windows utilizzando la procedura guidata programmi e funzionalità o eseguendo una disinstallazione automatica dall'interfaccia della riga di comando.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre dei privilegi di amministratore di Windows.
+* Tutti i cluster (origini dati) devono essere rimossi dal server Unified Manager prima di disinstallare il software.
+* Il server Unified Manager non deve disporre di una connessione attiva con un provider di dati esterno come Graphite.
++
+In tal caso, è necessario eliminare la connessione utilizzando la console di manutenzione di Unified Manager.
+
+
+
+
+
+== Fasi
+
+. Se installato in un'installazione ad alta disponibilità, rimuovere le risorse del gruppo di servizi ha ed eliminare il gruppo di servizi ha prima di disinstallare Unified Manager da entrambi i nodi.
+. Disinstallare Unified Manager scegliendo una delle seguenti opzioni:
++
+|===
+| Per disinstallare Unified Manager da... | Quindi... 
+
+
+ a| 
+Wizard programmi e funzionalità
+ a| 
+.. Accedere a *pannello di controllo* > *programmi e funzionalità*.
+.. Selezionare Gestore unificato OnCommand e fare clic su *Disinstalla*.
+
+
+
+
+ a| 
+Riga di comando
+ a| 
+.. Accedere alla riga di comando di Windows utilizzando i privilegi di amministratore.
+.. Accedere alla directory di gestione unificata di OnCommand ed eseguire il seguente comando: `+msiexec /x {A78760DB-7EC0-4305-97DB-E4A89CDFF4E1} /qn /l*v %systemdrive%\UmUnInstall.log+`
+
+
+|===
++
+Se il controllo dell'account utente (UAC) è attivato sul server e si è connessi come utente di dominio, è necessario utilizzare il metodo di disinstallazione dalla riga di comando.
+
++
+Unified Manager viene disinstallato dal sistema.
+
+. Disinstallare i seguenti pacchetti e dati di terze parti che non vengono rimossi durante la disinstallazione di Unified Manager:
++
+** Pacchetti di terze parti: JRE, MySQL, Microsoft Visual C& 43; 43; 2015 Redistributable e 7zip
+** Dati dell'applicazione MySQL generati da Unified Manager
+** Log delle applicazioni e contenuto della directory dei dati delle applicazioni
+
+
+

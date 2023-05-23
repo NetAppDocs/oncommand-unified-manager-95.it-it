@@ -1,0 +1,54 @@
+---
+permalink: health-checker/task-restoring-data-using-the-health-volumes-page.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile ripristinare file, directory o un intero volume sovrascritti o cancellati da una copia Snapshot utilizzando la funzione di ripristino nella pagina di inventario Health/Volumes. 
+---
+= Ripristino dei dati mediante la pagina di inventario Health/Volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile ripristinare file, directory o un intero volume sovrascritti o cancellati da una copia Snapshot utilizzando la funzione di ripristino nella pagina di inventario Health/Volumes.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== A proposito di questa attività
+
+Non è possibile ripristinare i flussi di file NTFS.
+
+L'opzione di ripristino non è disponibile quando:
+
+* L'ID del volume è sconosciuto: Ad esempio, quando si dispone di una relazione tra cluster e il cluster di destinazione non è stato ancora rilevato.
+* Il volume è un volume FlexGroup.
+* Il volume viene configurato per la replica sincrona di SnapMirror.
+
+
+
+
+== Fasi
+
+. Nella pagina di inventario *Health/Volumes*, selezionare un volume dal quale si desidera ripristinare i dati.
+. Dalla barra degli strumenti, fare clic su *Restore* (Ripristina).
++
+Viene visualizzata la finestra di dialogo Restore (Ripristino).
+
+. Selezionare il volume e la copia Snapshot da cui si desidera ripristinare i dati, se diversi da quelli predefiniti.
+. Selezionare gli elementi da ripristinare.
++
+È possibile ripristinare l'intero volume oppure specificare le cartelle e i file da ripristinare.
+
+. Selezionare la posizione in cui si desidera ripristinare gli elementi selezionati: *Posizione originale* o *posizione alternativa*.
+. Fare clic su *Restore* (Ripristina).
++
+Viene avviato il processo di ripristino.
+
+

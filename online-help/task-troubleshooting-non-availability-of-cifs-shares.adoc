@@ -1,0 +1,48 @@
+---
+permalink: online-help/task-troubleshooting-non-availability-of-cifs-shares.html 
+sidebar: sidebar 
+keywords:  
+summary: Potrebbe non essere possibile accedere alle condivisioni CIFS se gli oggetti di storage che forniscono queste condivisioni non sono disponibili. È necessario esaminare gli eventi di disponibilità come Volume Offline, Junction Path Offline o SVM CIFS Server Down che vengono generati quando questi oggetti non sono disponibili. 
+---
+= Risoluzione dei problemi di accesso alle condivisioni CIFS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Potrebbe non essere possibile accedere alle condivisioni CIFS se gli oggetti di storage che forniscono queste condivisioni non sono disponibili. È necessario esaminare gli eventi di disponibilità come Volume Offline, Junction Path Offline o SVM CIFS Server Down che vengono generati quando questi oggetti non sono disponibili.
+
+
+
+== Prima di iniziare
+
+Per eseguire questa attività, è necessario disporre del ruolo di Storage Administrator.
+
+
+
+== A proposito di questa attività
+
+Se è stato configurato un avviso appropriato, l'utente riceverà una notifica dell'evento di disponibilità tramite un'e-mail di avviso.
+
+
+
+== Fasi
+
+. Nella pagina *Dashboard/Panoramica*, fare clic sull'evento offline appropriato.
++
+Ad esempio, se si riceve un evento Volume Offline, fare clic su *`Volume_name` Volume Offline* nel pannello Availability dell'area Unresolved Incidents and Risks (incidenti e rischi non risolti).
+
+. Nella pagina dei dettagli *evento*, fare clic su *`Volume_name`* Nel campo *origine*.
+. Nella pagina dei dettagli *Health/Volume*, fare clic sul numero corrispondente alle condivisioni CIFS nel riquadro *Related Devices* (periferiche correlate).
+. Nella pagina dei dettagli di *Health/Storage Virtual Machine*, fare clic sulla scheda *CIFS Shares*.
++
+È possibile visualizzare il numero di condivisioni CIFS interessate.
+
+
+
+
+
+== Al termine
+
+È necessario risolvere gli errori utilizzando Gestione di sistema di OnCommand o l'interfaccia utente di ONTAP.

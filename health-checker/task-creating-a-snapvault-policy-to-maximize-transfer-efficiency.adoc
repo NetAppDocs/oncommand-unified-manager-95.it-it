@@ -1,0 +1,41 @@
+---
+permalink: health-checker/task-creating-a-snapvault-policy-to-maximize-transfer-efficiency.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile creare un nuovo criterio SnapVault per impostare la priorità per un trasferimento SnapVault. Le policy vengono utilizzate per massimizzare l"efficienza dei trasferimenti dal primario al secondario in una relazione di protezione.' 
+---
+= Creazione di una policy SnapVault per massimizzare l'efficienza del trasferimento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile creare un nuovo criterio SnapVault per impostare la priorità per un trasferimento SnapVault. Le policy vengono utilizzate per massimizzare l'efficienza dei trasferimenti dal primario al secondario in una relazione di protezione.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+* È necessario aver impostato l'automazione del flusso di lavoro.
+* È necessario aver già completato l'area Destination Information (informazioni destinazione) nella finestra di dialogo Configure Protection (Configura protezione).
+
+
+
+
+== Fasi
+
+. Dalla scheda *SnapVault* della finestra di dialogo *Configura protezione*, fare clic sul collegamento *Crea policy* nell'area *Impostazioni relazione*.
++
+Viene visualizzata la scheda SnapVault.
+
+. Nel campo *Policy Name*, digitare il nome che si desidera assegnare al criterio.
+. Nel campo *priorità trasferimento*, selezionare la priorità di trasferimento che si desidera assegnare al criterio.
+. Nel campo *Commento*, inserire un commento per la policy.
+. Nell'area *Replication Label*, aggiungere o modificare un'etichetta di replica, se necessario.
+. Fare clic su *Create* (Crea).
++
+Il nuovo criterio viene visualizzato nell'elenco a discesa Crea criterio.
+
+

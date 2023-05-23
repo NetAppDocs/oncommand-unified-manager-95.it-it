@@ -1,0 +1,50 @@
+---
+permalink: health-checker/task-configuring-a-connection-between-workflow-automation-and-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile configurare una connessione sicura tra OnCommand Workflow Automation e Unified Manager. La connessione all"automazione del flusso di lavoro consente di utilizzare funzionalità di protezione come i flussi di lavoro di configurazione di SnapMirror e SnapVault, oltre a comandi per la gestione delle relazioni di SnapMirror.' 
+---
+= Configurazione di una connessione tra Workflow Automation e Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile configurare una connessione sicura tra OnCommand Workflow Automation (Wfa) e Unified Manager. La connessione all'automazione del flusso di lavoro consente di utilizzare funzionalità di protezione come i flussi di lavoro di configurazione di SnapMirror e SnapVault, oltre a comandi per la gestione delle relazioni di SnapMirror.
+
+
+
+== Prima di iniziare
+
+* La versione installata di Workflow Automation deve essere 4.2 o superiore.
+* È necessario aver installato "`WFA Pack for Managing Clustered Data ONTAP`" versione 9.5.0 o successiva sul server WFA. È possibile scaricare il pacchetto richiesto da NetAppStorage Automation Store.
++
+https://automationstore.netapp.com/pack-list.shtml["PACCHETTO WFA per la gestione di ONTAP"]
+
+* Per supportare le connessioni WFA e Unified Manager, è necessario disporre del nome dell'utente del database creato in Unified Manager.
++
+A questo utente del database deve essere stato assegnato il ruolo utente Integration Schema.
+
+* È necessario assegnare il ruolo di amministratore o di architetto nell'automazione del flusso di lavoro.
+* Per la configurazione di Workflow Automation, è necessario disporre dell'indirizzo host, del numero di porta 443, del nome utente e della password.
+* È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+
+== Fasi
+
+. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *Workflow Automation* nel menu Setup di sinistra.
+. Nell'area *utente database di Unified Manager OnCommand* della pagina *Installazione/automazione del flusso di lavoro*, selezionare il nome e immettere la password dell'utente del database creato per supportare le connessioni di Unified Manager e automazione del flusso di lavoro.
+. Nell'area *credenziali OnCommand Workflow Automation* della pagina *Configurazione/automazione del flusso di lavoro*, immettere il nome host o l'indirizzo IP (IPv4 o IPv6) e il nome utente e la password per la configurazione dell'automazione del flusso di lavoro.
++
+È necessario utilizzare la porta del server Unified Manager (porta 443).
+
+. Fare clic su *Save* (Salva).
+. Se si utilizza un certificato autofirmato, fare clic su *Sì* per autorizzare il certificato di protezione.
++
+Viene visualizzata la pagina Setup/Workflow Automation.
+
+. Fare clic su *Sì* per ricaricare l'interfaccia utente Web e aggiungere le funzioni di automazione del flusso di lavoro.
+

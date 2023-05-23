@@ -1,0 +1,408 @@
+---
+permalink: online-help/reference-aggregate-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi aggregati forniscono informazioni sullo stato degli aggregati, in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all"area di impatto e includono il nome dell"evento e della trap, il livello di impatto, il tipo di origine e la severità.' 
+---
+= Aggregare gli eventi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi aggregati forniscono informazioni sullo stato degli aggregati, in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all'area di impatto e includono il nome dell'evento e della trap, il livello di impatto, il tipo di origine e la severità.
+
+
+
+== Area di impatto: Disponibilità
+
+Un asterisco (*) identifica gli eventi EMS che sono stati convertiti in eventi Unified Manager.
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Aggregato offline (ocumEvtAggregateStateOffline)
+ a| 
+Incidente
+ a| 
+Aggregato
+ a| 
+Critico
+
+
+
+ a| 
+Aggregato non riuscito (ocumEvtAggregateStateFailed)
+ a| 
+Incidente
+ a| 
+Aggregato
+ a| 
+Critico
+
+
+
+ a| 
+Aggregato con restrizioni (ocumEvtAggregateStateRestricted)
+ a| 
+Rischio
+ a| 
+Aggregato
+ a| 
+Attenzione
+
+
+
+ a| 
+Ricostruzione aggregata(ocumEvtAggregateRaidStateReconstructing)
+ a| 
+Rischio
+ a| 
+Aggregato
+ a| 
+Attenzione
+
+
+
+ a| 
+Aggregato degradato(ocumEvtAggregateRaidStateDegraded)
+ a| 
+Rischio
+ a| 
+Aggregato
+ a| 
+Attenzione
+
+
+
+ a| 
+Livello cloud parzialmente raggiungibile (ocumEventCloudTierPartiallyReachable)
+ a| 
+Rischio
+ a| 
+Aggregato
+ a| 
+Attenzione
+
+
+
+ a| 
+Livello cloud non raggiungibile (ocumEventCloudTierUnreachable)
+ a| 
+Rischio
+ a| 
+Aggregato
+ a| 
+Errore
+
+
+
+ a| 
+Aggregato MetroCluster lasciato dietro(ocumEvtMetroClusterAggregateLeftBehind)
+ a| 
+Rischio
+ a| 
+Aggregato
+ a| 
+Errore
+
+
+
+ a| 
+Mirroring aggregato MetroCluster degradato(ocumEvtMetroClusterAggregateMirrordegradato)
+ a| 
+Rischio
+ a| 
+Aggregato
+ a| 
+Errore
+
+
+
+ a| 
+Accesso agli archivi di oggetti negato per il trasferimento degli aggregati *
+ a| 
+Rischio
+ a| 
+Aggregato
+ a| 
+Errore
+
+
+
+ a| 
+Accesso agli archivi di oggetti negato per il trasferimento aggregato durante il failover dello storage *
+ a| 
+Rischio
+ a| 
+Aggregato
+ a| 
+Errore
+
+|===
+
+
+== Area di impatto: Capacità
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Spazio aggregato quasi pieno (ocumEvtAggregateNearlyFull)
+ a| 
+Rischio
+ a| 
+Aggregato
+ a| 
+Attenzione
+
+
+
+ a| 
+Spazio aggregato pieno (ocumEvtAggregateFull)
+ a| 
+Rischio
+ a| 
+Aggregato
+ a| 
+Errore
+
+
+
+ a| 
+Aggregate Days until Full (ocumEvtAggregateDaysUntilFullSoon)
+ a| 
+Rischio
+ a| 
+Aggregato
+ a| 
+Errore
+
+
+
+ a| 
+Aggregato con overcommit(ocumEvtAggregateOvercommit)
+ a| 
+Rischio
+ a| 
+Aggregato
+ a| 
+Errore
+
+
+
+ a| 
+Aggregare quasi in eccesso(ocumEvtAggregateAlmostOvercommit)
+ a| 
+Rischio
+ a| 
+Aggregato
+ a| 
+Attenzione
+
+
+
+ a| 
+Riserva snapshot aggregata completa (ocumEvtAggregateSnapReserveFull)
+ a| 
+Rischio
+ a| 
+Aggregato
+ a| 
+Attenzione
+
+
+
+ a| 
+Tasso di crescita aggregato anomalo(ocumEvtAggregateGrowthRateAbnormal)
+ a| 
+Rischio
+ a| 
+Aggregato
+ a| 
+Attenzione
+
+|===
+
+
+== Area di impatto: Configurazione
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Aggregato rilevato (non applicabile)
+ a| 
+Evento
+ a| 
+Aggregato
+ a| 
+Informazioni
+
+
+
+ a| 
+Aggregato rinominato (non applicabile)
+ a| 
+Evento
+ a| 
+Aggregato
+ a| 
+Informazioni
+
+
+
+ a| 
+Aggregato cancellato (non applicabile)
+ a| 
+Evento
+ a| 
+Nodo
+ a| 
+Informazioni
+
+|===
+
+
+== Area di impatto: Performance
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Violazione della soglia critica degli IOPS aggregati (ocumAggregateIopsIncident)
+ a| 
+Incidente
+ a| 
+Aggregato
+ a| 
+Critico
+
+
+
+ a| 
+Soglia di avviso IOPS aggregato violata (ocumAggregateIopsWarning)
+ a| 
+Rischio
+ a| 
+Aggregato
+ a| 
+Attenzione
+
+
+
+ a| 
+Violazione della soglia critica aggregata Mbps (ocumAggregateMbpsIncident)
+ a| 
+Incidente
+ a| 
+Aggregato
+ a| 
+Critico
+
+
+
+ a| 
+Limite di avviso aggregato Mbps superato( ocumAggregateMbpsWarning)
+ a| 
+Rischio
+ a| 
+Aggregato
+ a| 
+Attenzione
+
+
+
+ a| 
+Violazione della soglia critica di latenza aggregata (ocumAggregateLatencyIncident)
+ a| 
+Incidente
+ a| 
+Aggregato
+ a| 
+Critico
+
+
+
+ a| 
+Violazione della soglia di avviso di latenza aggregata ( ocumAggregateLatencyWarning)
+ a| 
+Rischio
+ a| 
+Aggregato
+ a| 
+Attenzione
+
+
+
+ a| 
+Performance aggregata Violazione della soglia critica utilizzata dalla capacità(ocumAggregatePerfCapacityUsedIncident)
+ a| 
+Incidente
+ a| 
+Aggregato
+ a| 
+Critico
+
+
+
+ a| 
+Performance aggregata Limite di avviso capacità utilizzata superato(ocumAggregatePerfCapacityUsedWarning)
+ a| 
+Rischio
+ a| 
+Aggregato
+ a| 
+Attenzione
+
+
+
+ a| 
+Violazione della soglia critica di utilizzo dell'aggregato (ocumAggregateUtilisationIncident)
+ a| 
+Incidente
+ a| 
+Aggregato
+ a| 
+Critico
+
+
+
+ a| 
+Soglia di avviso utilizzo aggregato violata (ocumAggregateUtilizationWarning)
+ a| 
+Rischio
+ a| 
+Aggregato
+ a| 
+Attenzione
+
+
+
+ a| 
+Violazione della soglia di utilizzo eccessivo dei dischi aggregati (ocumAggregateDisksOverUtilizedWarning)
+ a| 
+Rischio
+ a| 
+Aggregato
+ a| 
+Attenzione
+
+
+
+ a| 
+Violazione della soglia dinamica aggregata (ocumAggregateDynamicEventWarning)
+ a| 
+Rischio
+ a| 
+Aggregato
+ a| 
+Attenzione
+
+|===

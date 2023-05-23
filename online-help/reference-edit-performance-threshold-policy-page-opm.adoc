@@ -1,0 +1,53 @@
+---
+permalink: online-help/reference-edit-performance-threshold-policy-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare la pagina Edit Threshold Policy (Modifica policy di soglia) per modificare un criterio di soglia delle prestazioni esistente.' 
+---
+= Pagina Edit Performance Threshold Policy (Modifica policy di soglia
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la pagina Edit Threshold Policy (Modifica policy di soglia) per modificare un criterio di soglia delle prestazioni esistente.
+
+È possibile modificare i campi di questa pagina e fare clic su *Save* (Salva) per modificare un criterio di soglia delle prestazioni. Tutti gli oggetti cluster che attualmente utilizzano il criterio di soglia vengono aggiornati automaticamente per utilizzare la nuova definizione di policy.
+
+* *Per tipo di oggetto*
++
+Impossibile modificare il tipo di oggetto.
+
+* *Nome policy*
++
+Modificare il nome del criterio di soglia.
+
+* *Descrizione*
++
+Modificare la descrizione dettagliata del criterio di soglia.
+
+* *Valori di soglia*
++
+Modificare la condizione del contatore di soglia primario e, facoltativamente, secondario.
+
++
+** *Selezionare un contatore*
++
+Modificare il contatore su cui si desidera impostare una soglia di performance.
+
+** *Attenzione*
++
+Inserire il valore limite per il contatore considerato un avviso.
+
+** *Critico*
++
+Inserire il valore limite per il contatore considerato critico.
+
+
+
+* *Durata*
++
+Modificare il numero di minuti in cui il valore del contatore deve essere maggiore del valore di avviso o del limite critico.
+
+

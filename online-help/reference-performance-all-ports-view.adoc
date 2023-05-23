@@ -1,0 +1,75 @@
+---
+permalink: online-help/reference-performance-all-ports-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina di inventario Performance/Ports (prestazioni/Porte) visualizza una panoramica degli eventi di performance, dei dati e delle informazioni di configurazione per ciascuna porta monitorata da un"istanza di Unified Manager. In questo modo è possibile monitorare rapidamente le performance delle porte e risolvere i problemi di performance e gli eventi di soglia.' 
+---
+= Pagina di inventario delle performance/porte
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina di inventario Performance/Ports (prestazioni/Porte) visualizza una panoramica degli eventi di performance, dei dati e delle informazioni di configurazione per ciascuna porta monitorata da un'istanza di Unified Manager. In questo modo è possibile monitorare rapidamente le performance delle porte e risolvere i problemi di performance e gli eventi di soglia.
+
+[NOTE]
+====
+I valori dei contatori delle prestazioni vengono visualizzati solo per le porte fisiche. I valori dei contatori non vengono visualizzati per VLAN o gruppi di interfacce.
+
+====
+A seconda di come si accede a questa pagina, nella parte superiore della pagina potrebbe essere visualizzato un titolo diverso per indicare se l'elenco è stato filtrato. Ad esempio, quando si visualizzano tutte le porte, il titolo è "`Ports`". Quando si visualizza un sottoinsieme di porte restituito dalla pagina Threshold Policies (Criteri di soglia), il titolo è "`Ports on what policy: Port_IOPS is applied`".
+
+I pulsanti nella parte superiore della pagina consentono di eseguire ricerche per individuare dati specifici, creare e applicare filtri per restringere l'elenco dei dati visualizzati ed esportare i dati della pagina in un `.csv` e aggiungere o rimuovere colonne dalla pagina.
+
+Per impostazione predefinita, gli oggetti nelle pagine di inventario degli oggetti vengono ordinati in base alla criticità degli eventi di performance degli oggetti. Gli oggetti con eventi critici vengono elencati per primi e gli oggetti con eventi di avviso vengono elencati per secondi. Ciò fornisce un'indicazione visiva immediata dei problemi che devono essere risolti. I valori dei contatori delle prestazioni si basano su una media delle 72 ore precedenti o più di dati, come indicato nella pagina. È possibile fare clic sul pulsante Refresh (Aggiorna) per aggiornare i dati dell'inventario degli oggetti.
+
+È possibile assegnare criteri di soglia delle performance a qualsiasi oggetto presente nelle pagine di inventario degli oggetti o cancellare i criteri di soglia utilizzando i pulsanti *Assign Performance Threshold Policy* e *Clear PerformanceThreshold Policy*.
+
+
+
+== Colonne della pagina di inventario delle porte
+
+La pagina di inventario Performance/Ports (prestazioni/Porte) contiene le seguenti colonne per ciascuna porta:
+
+* *Stato*
++
+Un oggetto integro senza eventi attivi visualizza un'icona con un segno di spunta verde (image:../media/sev-normal-um60.png["Icona per la severità dell'evento – normale"]). Se l'oggetto ha un evento attivo, l'icona dell'indicatore di evento identifica la severità dell'evento: Gli eventi critici sono rossi (image:../media/sev-critical-um60.png["Icona per la severità dell'evento – critico"]), gli eventi di errore sono di colore arancione (image:../media/sev-error-um60.png["Icona per la severità dell'evento – errore"]) e gli eventi di avviso sono gialli (image:../media/sev-warning-um60.png["Icona per la severità dell'evento – avviso"]).
+
+* *Porta*
++
+È possibile fare clic sul nome della porta per accedere alla pagina dei dettagli sulle prestazioni della porta.
+
+* *Tipo*
++
+Il tipo di porta è Network (rete) o Fibre Channel Protocol (FCP).
+
+* *Mbps*
++
+Il throughput sulla porta, misurato in megabyte al secondo.
+
+* *Utilizzo*
++
+La percentuale della larghezza di banda disponibile della porta attualmente utilizzata.
+
+* *Cluster*
++
+Il cluster a cui appartiene la porta. È possibile fare clic sul nome del cluster per accedere alla pagina dei dettagli del cluster.
+
+* Nodo *
++
+Nodo a cui appartiene la porta. È possibile fare clic sul nome del nodo per accedere alla pagina dei dettagli del nodo.
+
+* *Velocità*
++
+La velocità massima di trasferimento dei dati per la porta.
+
+* *Ruolo*
++
+Funzione della porta di rete: Dati o cluster. Le porte FCP non possono avere un ruolo e il ruolo viene visualizzato come N/A.
+
+* *Criterio di soglia*
++
+I criteri o i criteri di soglia delle performance definiti dall'utente che sono attivi su questo oggetto di storage. È possibile posizionare il cursore sui nomi dei criteri contenenti i puntini di sospensione (...) per visualizzare il nome completo del criterio o l'elenco dei nomi dei criteri assegnati. I pulsanti *Assign Performance Threshold Policy* e *Clear Performance Threshold Policy* rimangono disattivati finché non si selezionano uno o più oggetti facendo clic sulle caselle di controllo situate all'estrema sinistra.
+
+

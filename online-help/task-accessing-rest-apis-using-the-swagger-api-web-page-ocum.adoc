@@ -1,0 +1,57 @@
+---
+permalink: online-help/task-accessing-rest-apis-using-the-swagger-api-web-page-ocum.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le API REST sono esposte attraverso la pagina web di Swagger. È possibile accedere alla pagina Web di Swagger per visualizzare la documentazione dell"API REST di Unified Manager e per eseguire manualmente una chiamata API.' 
+---
+= Accesso alle API REST tramite la pagina Web API Swagger
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le API REST sono esposte attraverso la pagina web di Swagger. È possibile accedere alla pagina Web di Swagger per visualizzare la documentazione dell'API REST di Unified Manager e per eseguire manualmente una chiamata API.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre di uno dei seguenti ruoli: Operatore, amministratore dello storage o amministratore di OnCommand.
+* È necessario conoscere l'indirizzo IP o il nome di dominio completo del server Unified Manager su cui si desidera eseguire le API REST.
+
+
+
+
+== A proposito di questa attività
+
+Viene fornito un esempio per ciascuna API REST nella pagina Web Swagger per spiegare gli oggetti e gli attributi che è possibile utilizzare per restituire le informazioni che si desidera esaminare.
+
+
+
+== Fasi
+
+. Accedere alle API REST di Unified Manager.
++
+|===
+| Opzione | Descrizione 
+
+
+ a| 
+Dall'interfaccia utente Web di Unified Manager:
+ a| 
+Dalla barra dei menu, fare clic sul pulsante *Help* (Guida), quindi selezionare *API Documentation* (documentazione API).
+
+
+
+ a| 
+Dalla finestra del browser:
+ a| 
+Utilizzando l'indirizzo IP o l'FQDN del server Unified Manager, inserire l'URL per accedere alla pagina API REST nel formato `https://<Unified_Manager_IP_address_or_name>/apidocs/`. Ad esempio, `+https://10.10.10.10/apidocs/+`
+
+|===
++
+Viene visualizzato un elenco di tipi o categorie di risorse API.
+
+. Fare clic su un tipo di risorsa API per visualizzare le API in quel tipo di risorsa.
+

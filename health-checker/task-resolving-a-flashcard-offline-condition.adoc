@@ -1,0 +1,45 @@
+---
+permalink: health-checker/task-resolving-a-flashcard-offline-condition.html 
+sidebar: sidebar 
+keywords:  
+summary: Questo flusso di lavoro fornisce un esempio di come si può risolvere una condizione offline della scheda flash. In questo scenario, sei un amministratore o un operatore che controlla la dashboard per verificare la presenza di problemi di disponibilità. Viene visualizzata una condizione di scheda flash offline e si desidera determinare la possibile causa del problema e risolverlo. 
+---
+= Risoluzione di una condizione di scheda flash offline
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Questo flusso di lavoro fornisce un esempio di come si può risolvere una condizione offline della scheda flash. In questo scenario, sei un amministratore o un operatore che controlla la dashboard per verificare la presenza di problemi di disponibilità. Viene visualizzata una condizione di scheda flash offline e si desidera determinare la possibile causa del problema e risolverlo.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+
+
+
+== A proposito di questa attività
+
+Le informazioni sugli eventi e i collegamenti visualizzati nell'area disponibilità della pagina Unified ManagerDashboards/Overview monitorano la disponibilità generale delle risorse di storage dei dati sui cluster monitorati, consentendo di diagnosticare eventi specifici che potrebbero influire su tale disponibilità.
+
+In questo scenario, la pagina Dashboards/Overview (Dashboard/Panoramica) visualizza l'evento Flash Cards Offline nella sezione Availability Incidents (incidenti disponibilità). Se una scheda flash non è in linea, la disponibilità dei dati memorizzati viene ostacolata perché le prestazioni del nodo del cluster su cui è installata sono compromesse. Per localizzare e identificare il potenziale problema, procedere come segue:
+
+
+
+== Fasi
+
+. Dal pannello *disponibilità* della sezione *incidenti e rischi non risolti*, fare clic sul collegamento ipertestuale visualizzato per Flash Cards Offline.
++
+Viene visualizzata la pagina Dettagli evento per l'incidente di disponibilità.
+
+. Nella pagina dei dettagli *evento*, è possibile esaminare le informazioni visualizzate nel campo causa ed eseguire una o più delle seguenti operazioni:
++
+** Assegnare l'evento a un amministratore. xref:task-assigning-events-to-specific-users.adoc[Assegnazione di eventi]
+** Fare clic sull'origine dell'evento, in questo caso sul nodo del cluster su cui si trova la scheda flash offline, per ottenere ulteriori informazioni su tale nodo. xref:task-performing-corrective-action-for-a-flashcard-offline.adoc[Esecuzione dell'azione correttiva per una scheda flash offline]
+** Riconoscere l'evento. xref:task-acknowledging-and-resolving-events.adoc[Riconoscimento e risoluzione degli eventi]
+
+
+

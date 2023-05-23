@@ -1,0 +1,130 @@
+---
+permalink: online-help/reference-cluster-setup-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Configuration/Cluster Data Sources (origini dati di configurazione/cluster) visualizza informazioni sui cluster attualmente monitorati da Unified Manager. Questa pagina consente di aggiungere cluster aggiuntivi, modificare le impostazioni del cluster e rimuovere i cluster.' 
+---
+= Pagina Configuration/Cluster Data Sources
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Configuration/Cluster Data Sources (origini dati di configurazione/cluster) visualizza informazioni sui cluster attualmente monitorati da Unified Manager. Questa pagina consente di aggiungere cluster aggiuntivi, modificare le impostazioni del cluster e rimuovere i cluster.
+
+Un messaggio nella parte inferiore della pagina indica la frequenza con cui Unified Manager raccoglie i dati sulle performance dai cluster. L'intervallo di raccolta predefinito è di cinque minuti, ma è possibile modificarlo tramite la console di manutenzione se si rileva che le raccolte di cluster di grandi dimensioni non vengono completate in tempo.
+
+
+
+== Pulsanti di comando
+
+* *Aggiungi*
++
+Apre la finestra di dialogo Add Cluster (Aggiungi cluster), che consente di aggiungere cluster.
+
+* *Modifica*
++
+Apre la finestra di dialogo Edit Cluster (Modifica cluster), che consente di modificare le impostazioni del cluster selezionato.
+
+* *Rimuovi*
++
+Rimuove il cluster selezionato e tutti gli eventi e gli oggetti di storage associati. Una volta rimosso, il cluster non viene più monitorato.
+
++
+[NOTE]
+====
+Il cluster, i relativi oggetti di storage e tutti gli eventi associati vengono rimossi e il cluster non viene più monitorato da Unified Manager. Anche l'istanza di Unified Manager registrata con il cluster rimosso non viene registrata dal cluster.
+
+====
+* *Riscopri*
++
+Forza un'operazione di riscoperta del cluster in modo da poter aggiornare la raccolta di dati di stato e performance.
+
+
+
+
+
+== Elenco dei cluster
+
+L'elenco Clusters visualizza le proprietà di tutti i cluster rilevati. È possibile fare clic sull'intestazione di una colonna per ordinare i cluster in base a tale colonna.
+
+* *Stato*
++
+Visualizza lo stato corrente del rilevamento dell'origine dati. Lo stato può essere Failed (image:../media/sev-error-um60.png["Icona per la severità dell'evento – errore"]), completato (image:../media/sev-normal-um60.png["Icona per la severità dell'evento – normale"]), o in corso (image:../media/in-progress.gif[""]).
+
+* *Nome*
++
+Visualizza il nome del cluster.
+
++
+Tenere presente che la visualizzazione del nome potrebbe richiedere almeno quindici minuti dopo l'aggiunta del cluster.
+
+* *Modalità di manutenzione*
++
+Consente di specificare il periodo di tempo, o "`mfinestra di manutenzione`", quando un cluster sarà inattivo per la manutenzione, in modo da non ricevere avvisi dal cluster durante la manutenzione.
+
++
+Quando la modalità di manutenzione è programmata per il futuro, questo campo visualizza "`Scheduled`" (pianificato) ed è possibile spostare il cursore del mouse sul campo per visualizzare l'ora pianificata. Quando il cluster si trova nella finestra di manutenzione, questo campo mostra "`Active`".
+
+* *Nome host o Indirizzo IP*
++
+Visualizza il nome host, il nome di dominio completo (FQDN), il nome breve o l'indirizzo IP della LIF di gestione del cluster utilizzata per la connessione al cluster.
+
+* *Protocollo*
++
+Visualizza il tipo di protocollo che è possibile configurare sul cluster: HTTP o HTTPS (per una connessione sicura).
+
++
+Se si stabilisce una connessione con il cluster utilizzando entrambi i protocolli, HTTPS viene scelto su HTTP. L'impostazione predefinita è HTTPS.
+
+* *Porta*
++
+Visualizza il numero di porta del cluster.
+
++
+Se la porta non viene specificata, viene utilizzata la porta predefinita per il protocollo selezionato (80 per HTTP o 443 per HTTPS).
+
+* *Nome utente*
++
+Visualizza il nome utente che può essere utilizzato per accedere al cluster.
+
+* *Operazione*
++
+Visualizza l'operazione corrente supportata dall'origine dati del cluster.
+
++
+L'origine dati supporta le seguenti operazioni:
+
++
+** Discovery (rilevamento)
++
+Specifica l'operazione al momento del rilevamento dell'origine dati.
+
+** Sondaggio salute
++
+Specifica l'operazione quando l'origine dati viene rilevata correttamente e ha avviato il campionamento dei dati.
+
+** Eliminazione
++
+Specifica l'operazione quando l'origine dati (cluster) viene eliminata dal rispettivo elenco di oggetti di storage.
+
+
+
+* *Stato operazione*
++
+Visualizza lo stato dell'operazione corrente. Lo stato può essere non riuscito, completato o in corso.
+
+* *Ora di inizio dell'operazione*
++
+La data e l'ora di inizio dell'operazione.
+
+* *Ora di fine dell'operazione*
++
+La data e l'ora di fine dell'operazione.
+
+* *Descrizione*
++
+Qualsiasi messaggio relativo all'operazione.
+
+

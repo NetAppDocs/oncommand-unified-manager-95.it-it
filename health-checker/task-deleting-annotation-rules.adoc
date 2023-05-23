@@ -1,0 +1,35 @@
+---
+permalink: health-checker/task-deleting-annotation-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile eliminare le regole di annotazione da Gestione unificata di OnCommand quando le regole non sono più necessarie. 
+---
+= Eliminazione delle regole di annotazione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile eliminare le regole di annotazione da Gestione unificata di OnCommand quando le regole non sono più necessarie.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== A proposito di questa attività
+
+Quando si elimina una regola di annotazione, l'annotazione viene disassociata e rimossa dagli oggetti di archiviazione.
+
+
+
+== Fasi
+
+. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *Annotazioni* nel menu Gestione di sinistra.
+. Nella scheda *Annotation Rules* (regole annotazione), selezionare la regola di annotazione che si desidera eliminare, quindi fare clic su *Delete* (Elimina).
+. Nella finestra di dialogo *Avviso*, fare clic su *Sì* per confermare l'eliminazione.
+

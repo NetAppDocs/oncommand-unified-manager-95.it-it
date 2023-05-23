@@ -1,0 +1,32 @@
+---
+permalink: online-help/task-creating-an-email-notification-format-for-user-and-user-group-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile creare un formato di notifica per i messaggi e-mail inviati a un utente o a un gruppo di utenti in caso di problemi relativi alla quota (limite minimo violato o limite massimo raggiunto).' 
+---
+= Creazione di un formato di notifica e-mail per le quote di utenti e gruppi di utenti
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile creare un formato di notifica per i messaggi e-mail inviati a un utente o a un gruppo di utenti in caso di problemi relativi alla quota (limite minimo superato o limite massimo raggiunto).
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== Fasi
+
+. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *quota Email* nel menu Setup di sinistra.
+. Nella pagina delle opzioni *Setup*, fare clic su *Notification Format* (formato notifica), quindi immettere o modificare i dettagli nei campi *From* (da), *Subject* (oggetto) e *Email Details* (Dettagli e-mail).
+. Fare clic su *Preview* (Anteprima) per visualizzare l'anteprima della notifica via email.
+. Fare clic su *Chiudi* per chiudere la finestra di anteprima.
+. Modificare il contenuto della notifica via email, se necessario.
+. Fare clic su *Save and Close* (Salva e chiudi).
+

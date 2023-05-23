@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-understanding-capacity-events-and-thresholds-for-node-root-aggregates.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile monitorare l"aggregato root del nodo utilizzando Unified Manager. La Best practice consiste nel fornire in maniera spessa il volume root nell"aggregato root per evitare che il nodo si arresti.' 
+---
+= Informazioni su eventi e soglie per gli aggregati root di nodi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile monitorare l'aggregato root del nodo utilizzando Unified Manager. La Best practice consiste nel fornire in maniera spessa il volume root nell'aggregato root per evitare che il nodo si arresti.
+
+Per impostazione predefinita, gli eventi di capacità e performance non vengono generati per gli aggregati root. Inoltre, i valori di soglia utilizzati da Unified Manager non sono applicabili agli aggregati root del nodo. Solo un rappresentante del supporto tecnico può modificare le impostazioni per questi eventi da generare. Quando le impostazioni vengono modificate dal rappresentante del supporto tecnico, i valori di soglia della capacità vengono applicati all'aggregato root del nodo.
+
+È possibile intraprendere le azioni appropriate per impedire l'arresto del nodo utilizzando Gestore di sistema di OnCommand o l'interfaccia utente di ONTAP.

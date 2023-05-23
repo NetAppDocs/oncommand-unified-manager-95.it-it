@@ -1,0 +1,16 @@
+---
+permalink: install/concept-overview-of-the-installation-process-on-red-hat.html 
+sidebar: sidebar 
+keywords:  
+summary: Il flusso di lavoro di installazione descrive le attività da eseguire prima di poter utilizzare Unified Manager. 
+---
+= Panoramica del processo di installazione su Red Hat o CentOS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il flusso di lavoro di installazione descrive le attività da eseguire prima di poter utilizzare Unified Manager.
+
+image::../media/install-flow-on-rhel.gif[installare il flusso su rhel]

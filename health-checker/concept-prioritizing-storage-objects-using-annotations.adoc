@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-prioritizing-storage-objects-using-annotations.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile creare e applicare regole di annotazione agli oggetti di storage in modo da identificare e filtrare tali oggetti in base al tipo di annotazione applicata e alla relativa priorità. 
+---
+= Assegnazione di priorità agli eventi degli oggetti di storage utilizzando le annotazioni
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile creare e applicare regole di annotazione agli oggetti di storage in modo da identificare e filtrare tali oggetti in base al tipo di annotazione applicata e alla relativa priorità.

@@ -1,0 +1,70 @@
+---
+permalink: health-checker/task-changing-or-canceling-a-scheduled-maintenance-window.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Se è stata configurata una finestra di manutenzione di Unified Manager in modo che si verifichi in futuro, è possibile modificare l"ora di inizio e di fine o annullare la finestra di manutenzione.' 
+---
+= Modifica o annullamento di una finestra di manutenzione pianificata
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se è stata configurata una finestra di manutenzione di Unified Manager in modo che si verifichi in futuro, è possibile modificare l'ora di inizio e di fine o annullare la finestra di manutenzione.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== A proposito di questa attività
+
+L'annullamento di una finestra di manutenzione attualmente in esecuzione è utile se la manutenzione del cluster è stata completata prima dell'ora di fine della finestra di manutenzione pianificata e si desidera iniziare nuovamente a ricevere eventi e avvisi dal cluster.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Configuration* > *Cluster Data Sources*.
+. Nella colonna *Maintenance Mode* del cluster:
++
+|===
+| Se si desidera... | Eseguire questo passaggio... 
+
+
+ a| 
+Modificare l'intervallo di tempo per una finestra di manutenzione pianificata
+ a| 
+.. Fare clic sul testo "`Scheduled`" (pianificato) accanto al pulsante del dispositivo di scorrimento.
+.. Modificare la data e l'ora di inizio e/o di fine e fare clic su *Apply* (Applica).
+
+
+
+
+ a| 
+Estendere la lunghezza di una finestra di manutenzione attiva
+ a| 
+.. Fare clic sul testo "`Active`" (attivo) accanto al pulsante del dispositivo di scorrimento.
+.. Modificare la data e l'ora di fine e fare clic su *Apply* (Applica).
+
+
+
+
+ a| 
+Consente di annullare una finestra di manutenzione programmata
+ a| 
+Selezionare il pulsante a scorrimento e spostarlo verso sinistra.
+
+
+
+ a| 
+Consente di annullare una finestra di manutenzione attiva
+ a| 
+Selezionare il pulsante a scorrimento e spostarlo verso sinistra.
+
+|===
+

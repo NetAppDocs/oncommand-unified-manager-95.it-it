@@ -1,0 +1,34 @@
+---
+permalink: online-help/concept-add-disks-and-reallocate-data.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile aggiungere dischi a un aggregato per aumentare la capacità di storage e le performance di tale aggregato. Dopo aver aggiunto i dischi, si otterrà un miglioramento delle prestazioni di lettura solo dopo aver riallocato i dati tra i dischi aggiunti. 
+---
+= Aggiungere dischi e riallocare i dati
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile aggiungere dischi a un aggregato per aumentare la capacità di storage e le performance di tale aggregato. Dopo aver aggiunto i dischi, si otterrà un miglioramento delle prestazioni di lettura solo dopo aver riallocato i dati tra i dischi aggiunti.
+
+È possibile utilizzare queste istruzioni quando Unified Manager ha ricevuto eventi aggregati attivati da soglie dinamiche o da soglie di performance definite dal sistema:
+
+* Una volta ricevuto un evento di soglia dinamica, nella pagina Dettagli evento, l'icona del componente del cluster che rappresenta l'aggregato in conflitto viene evidenziata in rosso.
++
+Sotto l'icona, tra parentesi, si trova il nome dell'aggregato, che identifica l'aggregato a cui è possibile aggiungere dischi.
+
+* Una volta ricevuto un evento di soglia definito dal sistema, nella pagina Dettagli evento, il testo della descrizione dell'evento elenca il nome dell'aggregato che ha il problema.
++
+È possibile aggiungere dischi e riallocare i dati su questo aggregato.
+
+
+
+I dischi aggiunti all'aggregato devono già esistere nel cluster. Se il cluster non dispone di dischi aggiuntivi, potrebbe essere necessario contattare l'amministratore o acquistare altri dischi. È possibile utilizzare Gestione di sistema di OnCommand o i comandi ONTAP per aggiungere dischi a un aggregato.
+
+[NOTE]
+====
+È necessario riallocare i dati solo quando si utilizzano aggregati HDD e Flash Pool. Non riallocare i dati su aggregati SSD o FabricPool.
+
+====

@@ -1,0 +1,53 @@
+---
+permalink: online-help/concept-components-of-the-object-landing-pages-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: Le pagine di destinazione degli oggetti forniscono dettagli su tutti gli eventi critici, di avviso e informativi. Forniscono una vista dettagliata delle performance di tutti gli oggetti del cluster, consentendo di selezionare e confrontare singoli oggetti in diversi periodi di tempo. 
+---
+= Componenti delle pagine di destinazione degli oggetti
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le pagine di destinazione degli oggetti forniscono dettagli su tutti gli eventi critici, di avviso e informativi. Forniscono una vista dettagliata delle performance di tutti gli oggetti del cluster, consentendo di selezionare e confrontare singoli oggetti in diversi periodi di tempo.
+
+Le pagine di destinazione degli oggetti consentono di esaminare le prestazioni complessive di tutti gli oggetti e di confrontare i dati delle performance degli oggetti in un formato affiancato. Ciò è vantaggioso per la valutazione delle performance e per la risoluzione dei problemi relativi agli eventi.
+
+[NOTE]
+====
+I dati visualizzati nei pannelli di riepilogo dei contatori e nei grafici dei contatori si basano su un intervallo di campionamento di cinque minuti. I dati visualizzati nella griglia di inventario degli oggetti sul lato sinistro della pagina si basano su un intervallo di campionamento di un'ora.
+
+====
+L'immagine seguente mostra un esempio di pagina di destinazione degli oggetti che visualizza le informazioni di Esplora risorse:
+
+image::../media/perf-manager-page-1.gif[pagina 1 di perf manager]
+
+A seconda dell'oggetto di storage visualizzato, la pagina di destinazione degli oggetti può avere le seguenti schede che forniscono i dati relativi alle prestazioni dell'oggetto:
+
+* Riepilogo
++
+Visualizza tre o quattro diagrammi dei contatori contenenti gli eventi e le prestazioni per oggetto per il periodo di 72 ore precedente, inclusa una linea di trend che mostra i valori alti e bassi durante il periodo.
+
+* Esplora risorse
++
+Visualizza una griglia di oggetti di storage correlati all'oggetto corrente, che consente di confrontare i valori delle performance dell'oggetto corrente con quelli degli oggetti correlati. Questa scheda include fino a undici diagrammi di contatore e un selettore di intervalli di tempo, che consentono di eseguire una vasta gamma di confronti.
+
+* Informazioni
++
+Visualizza i valori per gli attributi di configurazione non relativi alle performance dell'oggetto storage, tra cui la versione installata del software ONTAP, il nome del partner ha e il numero di porte e LIF.
+
+* Migliori prestazioni
++
+Per i cluster: Visualizza gli oggetti storage con le performance più elevate o più basse, in base al contatore delle performance selezionato.
+
+* Pianificazione del failover
++
+Per i nodi: Visualizza la stima dell'impatto delle performance su un nodo se il partner ha del nodo si guasta.
+
+* Dettagli
++
+Per i volumi: Visualizza statistiche dettagliate sulle performance per tutte le attività e le operazioni di i/o per il carico di lavoro del volume selezionato. Questa scheda è disponibile per FlexVol Volumes, FlexGroup Volumes e i componenti di FlexGroup.
+
+

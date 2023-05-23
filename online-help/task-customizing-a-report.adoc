@@ -1,0 +1,45 @@
+---
+permalink: online-help/task-customizing-a-report.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile personalizzare i report nella pagina Dettagli report e salvarli con un nome diverso. 
+---
+= Personalizzazione di un report
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare i report nella pagina Dettagli report e salvarli con un nome diverso.
+
+
+
+== A proposito di questa attività
+
+Dopo aver salvato un report personalizzato, non è possibile modificare i filtri applicati per creare il report perché il report è considerato "`new`". Assicurarsi quindi di essere soddisfatti di tutte le modifiche prima di salvare il report. Tuttavia, è possibile applicare nuovi filtri al report.
+
+
+
+== Fasi
+
+. Nel riquadro di spostamento di sinistra, fare clic su *Report*, quindi su *Esegui report* per il report che si desidera personalizzare.
++
+Viene visualizzata la pagina Dettagli report.
+
+. Personalizzare il report in base alle necessità, quindi fare clic su *azioni* > *Salva report personalizzato con nome*.
+. Nella finestra di dialogo *Salva report personalizzato con nome*, immettere un nome per il report personalizzato e una breve descrizione della personalizzazione in modo che altri comprendano il report visualizzato.
++
+Per impostazione predefinita, viene visualizzato il nome del report corrente.
+
+. Fare clic su *Save* (Salva).
++
+Se viene visualizzato il messaggio di errore "`Impossibile salvare il report personalizzato. Il file richiesto non è stato creato`", attendere alcuni istanti, quindi fare nuovamente clic su *Salva*. Questo problema si verifica quando la connessione tra il browser Web e il server Unified Manager è lenta.
+
+
+
+
+
+== Risultati
+
+Il report personalizzato viene salvato e visualizzato nella relativa categoria nella pagina Dettagli report.

@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-understanding-the-user-interface.html 
+sidebar: sidebar 
+keywords:  
+summary: 'L"interfaccia utente di Unified Manager è costituita principalmente da una dashboard che fornisce una vista a colpo d"occhio degli oggetti monitorati. L"interfaccia utente consente inoltre di visualizzare tutti gli oggetti del cluster.' 
+---
+= Comprensione dell'interfaccia utente
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'interfaccia utente di Unified Manager è costituita principalmente da una dashboard che fornisce una vista a colpo d'occhio degli oggetti monitorati. L'interfaccia utente consente inoltre di visualizzare tutti gli oggetti del cluster.
+
+È possibile selezionare una vista preferita e utilizzare i pulsanti di azione, se necessario. La configurazione dello schermo viene salvata in un'area di lavoro in modo che tutte le funzionalità richieste siano disponibili all'avvio di Unified Manager. Tuttavia, quando si passa da una vista all'altra e poi si torna indietro, la vista potrebbe non essere la stessa.

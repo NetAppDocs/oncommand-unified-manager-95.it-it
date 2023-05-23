@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-customizing-the-volume-capacity-and-utilization-report-to-display-the-least-consumed-volumes-with-thin-provisioning-disabled.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile personalizzare il report Volume Capacity and Utilization (capacità e utilizzo dei volumi) per visualizzare i volumi in base al loro consumo di volume.' 
+---
+= Personalizzazione del report Volume Capacity and Utilization (capacità e utilizzo dei volumi) per visualizzare i volumi meno consumati con il thin provisioning disattivato
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report Volume Capacity and Utilization (capacità e utilizzo dei volumi) per visualizzare i volumi in base al loro consumo di volume.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Per rimuovere il raggruppamento in base a SVM, cluster o volume, attenersi alla seguente procedura:
++
+.. Fare clic nella colonna che deve essere raggruppata.
+.. Fare clic su image:../media/click-to-see-menu.gif[""] icona.
+.. Selezionare *Gruppo* > *Elimina gruppo interno*.
+
+
+. Per ordinare i volumi in base alla percentuale di consumo, fare clic nella colonna *dati utilizzati %* e fare clic su image:../media/sort-asc.gif[""] icona.
+. Per filtrare i volumi con il thin provisioning disattivato, fare clic nella colonna *thin provisioning* e aprire la finestra di dialogo *filtro* facendo clic su image:../media/click-to-filter.gif[""] icona.
+. Dall'elenco *condizione*, selezionare *uguale a*.
+. Fare clic su *Select Values* (Seleziona valori) e selezionare *No*.
+. Fare clic su *OK*.
+

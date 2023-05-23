@@ -1,0 +1,22 @@
+---
+permalink: performance-checker/concept-using-a-threshold-policy-with-the-node-failover-planning-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile creare un criterio di soglia del nodo in modo da ricevere una notifica nella pagina Performance/Node failover Planning (Pianificazione delle performance/failover del nodo) quando un potenziale failover degraderebbe le prestazioni del nodo di Takeover a un livello inaccettabile.' 
+---
+= Utilizzo di un criterio di soglia con la pagina Node failover Planning (Pianificazione del failover del nodo)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile creare un criterio di soglia del nodo in modo da ricevere una notifica nella pagina Performance/Node failover Planning (Pianificazione delle performance/failover del nodo) quando un potenziale failover degraderebbe le prestazioni del nodo di Takeover a un livello inaccettabile.
+
+La policy di soglia delle performance definita dal sistema, denominata "`Node ha Pair over-utilizzed`", genera un evento di avviso se la soglia viene violata per sei periodi di raccolta consecutivi (30 minuti). La soglia viene considerata violata se la capacità di performance combinata utilizzata dai nodi in una coppia ha supera il 200%.
+
+L'evento del criterio di soglia definito dal sistema avvisa l'utente del fatto che un failover causa un aumento della latenza del nodo di Takeover a un livello inaccettabile. Quando viene visualizzato un evento generato da questo criterio per un nodo specifico, è possibile accedere alla pagina Performance/Node failover Planning per quel nodo per visualizzare il valore di latenza previsto dovuto a un failover.
+
+Oltre a utilizzare questo criterio di soglia definito dal sistema, è possibile creare criteri di soglia utilizzando il contatore "`Performance Capacity Used - Takeover`", quindi applicare il criterio ai nodi selezionati. La specifica di una soglia inferiore al 200% consente di ricevere un evento prima che venga violata la soglia per la policy definita dal sistema. È inoltre possibile specificare il periodo di tempo minimo per il quale la soglia viene superata, inferiore a 30 minuti, se si desidera ricevere una notifica prima che venga generato l'evento di policy definito dal sistema.
+
+Ad esempio, è possibile definire un criterio di soglia per generare un evento di avviso se la capacità di performance combinata utilizzata dai nodi in una coppia ha supera il 175% per più di 10 minuti. È possibile applicare questo criterio a Node1 e Node2, che formano una coppia ha. Dopo aver ricevuto una notifica di evento di avviso per Node1 o Node2, è possibile visualizzare la pagina Performance/Node failover Planning per quel nodo per valutare l'impatto stimato delle performance sul nodo di Takeover. È possibile intraprendere azioni correttive per evitare di sovraccaricare il nodo di Takeover in caso di failover. Se si interviene quando la capacità di performance combinata utilizzata dai nodi è inferiore al 200%, la latenza del nodo di Takeover non raggiunge un livello inaccettabile anche se si verifica un failover durante questo periodo di tempo.

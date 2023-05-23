@@ -1,0 +1,80 @@
+---
+permalink: online-help/reference-storage-vm-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Utilizzare la pagina Performance/SVM Information (informazioni sulle prestazioni/SVM) per visualizzare un elenco degli attributi configurati della SVM. Queste informazioni potrebbero essere utili per rispondere alle domande relative alle performance.' 
+---
+= Pagina Performance/SVM Information (informazioni sulle performance/SVM)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilizzare la pagina Performance/SVM Information (informazioni sulle prestazioni/SVM) per visualizzare un elenco degli attributi configurati della SVM. Queste informazioni potrebbero essere utili per rispondere alle domande relative alle performance.
+
+
+
+== Attributi SVM
+
+* *Indirizzo IP*
++
+Se definito, questo è l'indirizzo IPv4 o IPv6 della LIF di gestione SVM.
+
+* *IPSpace*
++
+L'IPSpace in cui risiede questa SVM.
+
+* *Nome dominio*
++
+Il nome di dominio completo (FQDN) della LIF di gestione SVM.
+
+* *Tipo di servizio*
++
+Il tipo di SVM.
+
++
+I valori possibili includono: "`Admin`" per la SVM di gestione a livello di cluster, "`SSystem`" per le comunicazioni a livello di cluster in un IPSpace, "`Data`" per la SVM di servizio dei dati e "`Node`" per la SVM di gestione dei nodi.
+
+* *Capacità (libera/totale)*
++
+Lo storage totale disponibile per la SVM, in gigabyte, e la quantità di storage attualmente disponibile.
+
+* *Cluster*
++
+Il nome del cluster a cui appartiene l'SVM. È possibile fare clic sul nome per visualizzare i dettagli del cluster nella pagina Performance/Cluster Explorer (Esplora prestazioni/cluster).
+
+* *Volumi*
++
+Il numero di volumi nella SVM. È possibile fare clic sul numero per visualizzare i volumi nella pagina Performance/Volume Inventory.
+
+* *LIF*
++
+Il numero di LIF disponibili per SVM. È possibile fare clic sul numero per visualizzare i LIF nella pagina Performance/LIF Inventory (prestazioni/inventario LIF).
+
+* *LIF dati*
++
+Il numero e il tipo di LIF dati disponibili per SVM.
+
+* *Tipo di volume consentito*
++
+Il tipo di volume che è possibile creare su SVM.
+
++
+Le SVM possono contenere uno o più volumi FlexVol o FlexGroup. Il tipo di FlexGroup è consentito quando si utilizza ONTAP 9.1 o versione successiva.
+
++
+[NOTE]
+====
+Le pagine delle performance di Unified Manager non supportano i volumi Infinite.
+
+====
+* *Protocolli consentiti*
++
+L'elenco di tutti i protocolli che possono essere serviti da questa SVM. I protocolli disponibili sono FC/FCoE, iSCSI, HTTP, NDMP, NVMe, NFS e CIFS.
+
+* *Set di porte*
++
+Se definito per i protocolli FCP o iSCSI, il set di porte assegnato a questa SVM.
+
+

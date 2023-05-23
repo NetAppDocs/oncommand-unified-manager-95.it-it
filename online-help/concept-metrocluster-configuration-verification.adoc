@@ -1,0 +1,26 @@
+---
+permalink: online-help/concept-metrocluster-configuration-verification.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile prevenire i problemi di performance per i carichi di lavoro mirrorati in una configurazione MetroCluster garantendo che la configurazione MetroCluster sia impostata correttamente. È inoltre possibile migliorare le performance dei carichi di lavoro modificando la configurazione o aggiornando i componenti software o hardware. 
+---
+= Verifica della configurazione MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile prevenire i problemi di performance per i carichi di lavoro mirrorati in una configurazione MetroCluster garantendo che la configurazione MetroCluster sia impostata correttamente. È inoltre possibile migliorare le performance dei carichi di lavoro modificando la configurazione o aggiornando i componenti software o hardware.
+
+La _Guida all'installazione e alla configurazione di MetroCluster_ fornisce istruzioni per la configurazione dei cluster nella configurazione MetroCluster, inclusi switch Fibre Channel (FC), cavi e ISL (Inter-Switch link). Inoltre, consente di configurare il software MetroCluster in modo che i cluster locali e remoti possano comunicare con i dati del volume mirror.
+
+È possibile confrontare la configurazione di MetroCluster con i requisiti della _Guida all'installazione e alla configurazione di MetroCluster_ per determinare se la modifica o l'aggiornamento dei componenti nella configurazione di MetroCluster potrebbe migliorare le prestazioni dei carichi di lavoro. Questo confronto può aiutarti a rispondere alle seguenti domande:
+
+* I controller sono appropriati per i carichi di lavoro?
+* Hai bisogno di aggiornare i bundle ISL a una larghezza di banda più ampia per gestire un throughput maggiore?
+* È possibile regolare i crediti buffer-to-buffer (BBC) sugli switch per aumentare la larghezza di banda?
+* Se i tuoi carichi di lavoro hanno un elevato throughput di scrittura su storage SSD (Solid state Drive), devi aggiornare i bridge FC-SAS per adattarli al throughput?
+
+
+Per informazioni sulla sostituzione o l'aggiornamento dei componenti di MetroCluster, consultare la _Guida ai servizi MetroCluster_.

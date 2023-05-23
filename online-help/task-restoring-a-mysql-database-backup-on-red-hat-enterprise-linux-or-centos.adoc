@@ -1,0 +1,57 @@
+---
+permalink: online-help/task-restoring-a-mysql-database-backup-on-red-hat-enterprise-linux-or-centos.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: In caso di perdita o danneggiamento dei dati, è possibile ripristinare Unified Manager allo stato stabile precedente con una perdita minima di dati. È possibile ripristinare il database di Unified Manager su un sistema Red Hat Enterprise Linux o CentOS locale o remoto. 
+---
+= Ripristino di un backup del database su un sistema Linux
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+In caso di perdita o danneggiamento dei dati, è possibile ripristinare Unified Manager allo stato stabile precedente con una perdita minima di dati. È possibile ripristinare il database di Unified Manager su un sistema Red Hat Enterprise Linux o CentOS locale o remoto.
+
+
+
+== Prima di iniziare
+
+* Unified Manager deve essere installato su un server.
+* È necessario disporre delle credenziali dell'utente root per l'host Linux su cui è installato Unified Manager.
+* È necessario aver copiato il file di backup di Unified Manager e il contenuto della directory del repository del database nel sistema su cui verrà eseguita l'operazione di ripristino.
++
+Si consiglia di copiare il file di backup nella directory predefinita `/data/ocum-backup`. I file del repository del database devono essere copiati in `/database-dumps-repo` sotto la sottodirectory `/ocum-backup` directory.
+
+* I file di backup devono essere di `.7z` tipo.
+
+
+
+
+== A proposito di questa attività
+
+La funzionalità di ripristino è specifica della piattaforma e della versione. È possibile ripristinare un backup di Unified Manager solo sulla stessa versione di Unified Manager. È possibile ripristinare un file di backup Linux o un file di backup di un'appliance virtuale su un sistema Red Hat Enterprise Linux o CentOS.
+
+[TIP]
+====
+Se il nome della cartella di backup contiene uno spazio, è necessario includere il percorso assoluto o relativo tra virgolette doppie.
+
+====
+
+
+== Fasi
+
+. Se si esegue un ripristino su un nuovo server, dopo aver installato Unified Manager non avviare l'interfaccia utente né configurare cluster, utenti o impostazioni di autenticazione al termine dell'installazione. Il file di backup inserisce queste informazioni durante il processo di ripristino.
+. Accedere come utente root all'host su cui è installato Unified Manager.
+. Se Unified Manager è installato nell'installazione di VCS, arrestare i servizi ocie e ocieau di Unified Manager utilizzando Veritas Operations Manager.
+. Al prompt dei comandi, ripristinare il backup: `um backup restore -f <backup_file_path>/<backup_file_name>`
++
+`um backup restore -f /data/ocum-backup/UM_9.4.N151113.1348_backup_rhel_02-20-2018-04-45.7z`
+
+
+
+
+
+== Al termine
+
+Una volta completata l'operazione di ripristino, è possibile accedere a Unified Manager.

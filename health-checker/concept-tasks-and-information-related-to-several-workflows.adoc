@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-tasks-and-information-related-to-several-workflows.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Alcune attività e testi di riferimento che possono aiutarti a comprendere e completare un workflow sono comuni a molti dei flussi di lavoro di Unified Manager, tra cui l"aggiunta e la revisione di note su un evento, l"assegnazione di un evento, il riconoscimento e la risoluzione di eventi, nonché dettagli su volumi, macchine virtuali di storage, aggregati, e così via.' 
+---
+= Attività e informazioni relative a diversi flussi di lavoro
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Alcune attività e testi di riferimento che possono aiutarti a comprendere e completare un workflow sono comuni a molti dei flussi di lavoro di Unified Manager, tra cui l'aggiunta e la revisione di note su un evento, l'assegnazione di un evento, il riconoscimento e la risoluzione di eventi e dettagli su volumi, storage virtual machine (SVM), aggregati, e così via.

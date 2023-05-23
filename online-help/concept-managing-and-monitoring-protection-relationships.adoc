@@ -1,0 +1,28 @@
+---
+permalink: online-help/concept-managing-and-monitoring-protection-relationships.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand consente di creare relazioni di protezione, monitorare e risolvere i problemi delle relazioni SnapMirror e SnapVault sui cluster gestiti e ripristinare i dati quando vengono sovrascritti o persi. 
+---
+= Gestione e monitoraggio delle relazioni di protezione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand consente di creare relazioni di protezione, monitorare e risolvere i problemi delle relazioni SnapMirror e SnapVault sui cluster gestiti e ripristinare i dati quando vengono sovrascritti o persi.
+
+Per le operazioni di SnapMirror sono disponibili due tipi di replica:
+
+* Asincrono
++
+La replica dal volume primario al volume secondario è determinata da una pianificazione.
+
+* Sincrono
++
+La replica viene eseguita simultaneamente sul volume primario e secondario.
+
+
+
+È possibile eseguire fino a 10 lavori di protezione contemporaneamente senza alcun impatto sulle performance. Si potrebbe riscontrare un certo impatto sulle performance quando si eseguono contemporaneamente da 11 a 30 job. Si sconsiglia di eseguire più di 30 lavori contemporaneamente.

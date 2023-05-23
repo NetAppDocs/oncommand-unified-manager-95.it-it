@@ -1,0 +1,55 @@
+---
+permalink: online-help/reference-snapshot-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi Snapshot forniscono informazioni sullo stato delle snapshot che consentono di monitorare le snapshot per individuare potenziali problemi. Gli eventi sono raggruppati per area di impatto e includono nome dell"evento, nome della trap, livello di impatto, tipo di origine e severità.' 
+---
+= Eventi Snapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi Snapshot forniscono informazioni sullo stato delle snapshot che consentono di monitorare le snapshot per individuare potenziali problemi. Gli eventi sono raggruppati per area di impatto e includono nome dell'evento, nome della trap, livello di impatto, tipo di origine e severità.
+
+
+
+== Area di impatto: Disponibilità
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Eliminazione automatica di Snapshot disattivata (non applicabile)
+ a| 
+Evento
+ a| 
+Volume
+ a| 
+Informazioni
+
+
+
+ a| 
+Eliminazione automatica snapshot abilitata (non applicabile)
+ a| 
+Evento
+ a| 
+Volume
+ a| 
+Informazioni
+
+
+
+ a| 
+Configurazione dell'eliminazione automatica di Snapshot modificata (non applicabile)
+ a| 
+Evento
+ a| 
+Volume
+ a| 
+Informazioni
+
+|===

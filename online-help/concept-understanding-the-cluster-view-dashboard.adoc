@@ -1,0 +1,37 @@
+---
+permalink: online-help/concept-understanding-the-cluster-view-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La dashboard panoramica di Unified ManagerCluster View fornisce informazioni di alto livello sullo stato dei cluster gestiti. La dashboard Cluster View è composta da due sezioni principali: Cluster gestiti (a sinistra) e Dettagli cluster (a destra).' 
+---
+= Informazioni sulla dashboard di Cluster View
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La dashboard panoramica di Unified ManagerCluster View fornisce informazioni di alto livello sullo stato dei cluster gestiti. La dashboard Cluster View è composta da due sezioni principali: Cluster gestiti (a sinistra) e Dettagli cluster (a destra).
+
+L'immagine seguente mostra un esempio di dashboard di Unified ManagerCluster View che monitora otto cluster:
+
+image::../media/dashboard-clusterview-um.gif[dashboard clusterview um]
+
+L'icona di stato accanto a ciascun nome del cluster può trovarsi nei seguenti stati:
+
+* Critico (image:../media/sev-critical-um60.png["Icona per la severità dell'evento – critico"]): Sono stati segnalati uno o più eventi critici attivi per il cluster.
+* Errore (image:../media/sev-error-um60.png["Icona per la severità dell'evento – errore"]): Sono stati segnalati uno o più eventi di errore attivi per il cluster.
+* Avvertenza (image:../media/sev-warning-um60.png["Icona per la severità dell'evento – avviso"]): Sono stati segnalati uno o più eventi di avviso attivi per il cluster.
+* Normale (image:../media/sev-normal-um60.png["Icona per la severità dell'evento – normale"]): Non sono stati segnalati eventi attivi per il cluster.
+
+
+[NOTE]
+====
+Il colore indica se esistono eventi attivi (nuovi o riconosciuti) per l'oggetto. Gli eventi che non sono più attivi, detti eventi obsoleti, non influiscono sul colore dell'icona.
+
+====
+Per visualizzare ulteriori informazioni su un cluster, è possibile eseguire una delle seguenti operazioni:
+
+* È possibile fare clic sul nome di un cluster per visualizzare informazioni generali sullo stato del monitoraggio, sullo stato della capacità e sullo stato delle performance del cluster.
+* È possibile fare clic su *Manage Clusters* (Gestisci cluster) per visualizzare la pagina Configuration/Cluster Data Sources (origini dati di configurazione/cluster), in cui è possibile visualizzare informazioni dettagliate sullo stato di tutti i cluster gestiti da questa istanza di Unified Manager.
+

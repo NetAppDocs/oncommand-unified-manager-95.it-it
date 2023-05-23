@@ -1,0 +1,34 @@
+---
+permalink: online-help/concept-what-lifs-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Una LIF (interfaccia logica) è un indirizzo IP o WWPN con caratteristiche associate, ad esempio un ruolo, una porta home, un nodo home, un elenco di porte a cui eseguire il failover e una policy firewall. È possibile configurare le LIF sulle porte su cui il cluster invia e riceve le comunicazioni sulla rete.' 
+---
+= Cosa sono i LIF
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Una LIF (interfaccia logica) è un indirizzo IP o WWPN con caratteristiche associate, ad esempio un ruolo, una porta home, un nodo home, un elenco di porte a cui eseguire il failover e una policy firewall. È possibile configurare le LIF sulle porte su cui il cluster invia e riceve le comunicazioni sulla rete.
+
+Le LIF possono essere ospitate sulle seguenti porte:
+
+* Porte fisiche che non fanno parte di gruppi di interfacce
+* Gruppi di interfacce
+* VLAN
+* Porte fisiche o gruppi di interfacce che ospitano VLAN
+* Porte VIP (Virtual IP)
++
+A partire da ONTAP 9.5, le LIF VIP sono supportate e sono ospitate su porte VIP.
+
+
+
+Durante la configurazione di protocolli SAN come FC su un LIF, questo verrà associato a un WWPN.
+
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html["Guida all'amministrazione DI ONTAP 9 SAN"]
+
+La seguente figura illustra la gerarchia di porte in un sistema ONTAP:
+
+image::../media/port-hierarchy-in-a-cluster-mode-system.gif[Immagine che illustra la gerarchia di porte in un sistema Data ONTAP in cluster]

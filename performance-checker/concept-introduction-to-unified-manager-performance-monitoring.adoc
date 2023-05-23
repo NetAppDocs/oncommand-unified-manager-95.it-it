@@ -1,0 +1,28 @@
+---
+permalink: performance-checker/concept-introduction-to-unified-manager-performance-monitoring.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Unified Manager offre funzionalità di monitoraggio delle performance e analisi delle cause principali degli eventi per i sistemi che eseguono il software NetApp ONTAP. 
+---
+= Introduzione al monitoraggio delle performance di Unified Manager di OnCommand
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Unified Manager offre funzionalità di monitoraggio delle performance e analisi delle cause principali degli eventi per i sistemi che eseguono il software NetApp ONTAP.
+
+Unified Manager ti aiuta a identificare i carichi di lavoro che stanno utilizzando in eccesso i componenti del cluster e a ridurre le performance di altri carichi di lavoro sul cluster. La definizione dei criteri di soglia delle performance consente inoltre di specificare i valori massimi per determinati contatori delle performance in modo che gli eventi vengano generati quando la soglia viene superata. Unified Manager avvisa l'utente in merito a questi eventi di performance in modo da poter intraprendere azioni correttive e riportare le performance ai normali livelli operativi. È possibile visualizzare e analizzare gli eventi nell'interfaccia utente di Unified Manager.
+
+Unified Manager monitora le performance di due tipi di carichi di lavoro:
+
+* Carichi di lavoro definiti dall'utente
++
+Questi carichi di lavoro sono costituiti da volumi FlexVol e volumi FlexGroup creati nel cluster.
+
+* Carichi di lavoro definiti dal sistema
++
+Questi carichi di lavoro sono costituiti da attività di sistema interne.
+
+

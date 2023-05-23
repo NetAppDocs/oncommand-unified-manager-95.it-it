@@ -1,0 +1,18 @@
+---
+permalink: install/concept-requirements-for-installing-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: Prima di poter installare Unified Manager, è necessario assicurarsi che il server su cui si intende installare Unified Manager soddisfi requisiti specifici di software, hardware, CPU e memoria. 
+---
+= Requisiti per l'installazione di Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Prima di poter installare Unified Manager, è necessario assicurarsi che il server su cui si intende installare Unified Manager soddisfi requisiti specifici di software, hardware, CPU e memoria.
+
+*Informazioni correlate*
+
+http://mysupport.netapp.com/matrix["Tool di matrice di interoperabilità NetApp"]

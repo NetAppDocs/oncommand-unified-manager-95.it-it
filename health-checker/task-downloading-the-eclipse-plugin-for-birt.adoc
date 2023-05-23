@@ -1,0 +1,27 @@
+---
+permalink: health-checker/task-downloading-the-eclipse-plugin-for-birt.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Per creare e importare report in Unified Manager, è necessario prima scaricare Eclipse Business Intelligence and Reporting Tools (BIRT).' 
+---
+= Download di Eclipse Business Intelligence and Reporting Tools (BIRT)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per creare e importare report in Unified Manager, è necessario prima scaricare Eclipse Business Intelligence and Reporting Tools (BIRT).
+
+
+
+== Fasi
+
+. Scaricare il software BIRT all'indirizzo `+http://download.eclipse.org/birt/downloads/+`.
+
+
+
+
+== Al termine
+
+Dopo aver scaricato il software BIRT, è necessario estrarre il file .zip risultante.

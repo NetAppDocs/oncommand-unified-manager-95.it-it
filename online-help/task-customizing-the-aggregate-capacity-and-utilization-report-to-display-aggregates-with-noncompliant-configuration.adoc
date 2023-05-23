@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-aggregate-capacity-and-utilization-report-to-display-aggregates-with-noncompliant-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile personalizzare il report aggregato capacità e utilizzo per visualizzare gli aggregati filtrati in base alla soglia completa. In questo modo è possibile visualizzare gli aggregati che potrebbero non essere conformi alle policy aziendali. 
+---
+= Personalizzazione del report aggregato capacità e utilizzo per visualizzare aggregati con configurazione non conforme
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report aggregato capacità e utilizzo per visualizzare gli aggregati filtrati in base alla soglia completa. In questo modo è possibile visualizzare gli aggregati che potrebbero non essere conformi alle policy aziendali.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Per rimuovere il raggruppamento in base al cluster o alla coppia ha, attenersi alla seguente procedura:
++
+.. Fare clic nella colonna che deve essere raggruppata.
+.. Fare clic su image:../media/click-to-see-menu.gif[""] icona.
+.. Selezionare *Gruppo* > *Elimina gruppo interno*.
+
+
+. Per filtrare la soglia degli aggregati non superiore al 85%, fare clic nella colonna *Space Full Threshold* (soglia spazio pieno) e aprire la finestra di dialogo *Filter* (filtro) facendo clic sul pulsante image:../media/click-to-filter.gif[""] icona.
+. Dall'elenco *condizione*, selezionare *maggiore di*.
+. Fare clic su *Select Values* (Seleziona valori) e selezionare *85*.
+. Fare clic su *OK*.
+

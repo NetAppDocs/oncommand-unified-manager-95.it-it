@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-report-scheduling-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile pianificare la generazione di un report a una data e un"ora specifiche utilizzando l"opzione Schedule (Pianificazione). Il report viene inviato automaticamente via email a uno o più destinatari in base alla pianificazione.' 
+---
+= Che cos'è la pianificazione dei report
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile pianificare la generazione di un report a una data e un'ora specifiche utilizzando l'opzione *Schedule*. Il report viene inviato automaticamente via email a uno o più destinatari in base alla pianificazione.
+
+Programmando un report, è possibile ridurre al minimo lo sforzo di generazione e invio manuale dei report. È possibile garantire che lo stato corrente dello storage venga monitorato a intervalli specificati dagli amministratori che non vengono altrimenti notificati da Unified Manager.

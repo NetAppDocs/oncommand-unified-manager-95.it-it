@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-cluster-summary-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Performance Cluster Summary (Riepilogo cluster di prestazioni) fornisce un riepilogo degli eventi attivi, delle performance IOPS e delle performance Mbps per un cluster. Questa pagina include anche il conteggio totale degli oggetti di storage nel cluster.' 
+---
+= Pagina Performance Cluster Summary
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Performance Cluster Summary (Riepilogo cluster di prestazioni) fornisce un riepilogo degli eventi attivi, delle performance IOPS e delle performance Mbps per un cluster. Questa pagina include anche il conteggio totale degli oggetti di storage nel cluster.

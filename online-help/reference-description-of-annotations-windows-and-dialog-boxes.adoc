@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-annotations-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile visualizzare e gestire tutte le annotazioni dalla pagina Gestione/Annotazioni. È inoltre possibile configurare le regole di annotazione per gli oggetti di storage dalla scheda Annotation Rules (regole di annotazione).' 
+---
+= Descrizione delle finestre di dialogo e delle annotazioni
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile visualizzare e gestire tutte le annotazioni dalla pagina Gestione/Annotazioni. È inoltre possibile configurare le regole di annotazione per gli oggetti di storage dalla scheda Annotation Rules (regole di annotazione).

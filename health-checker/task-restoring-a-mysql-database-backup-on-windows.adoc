@@ -1,0 +1,56 @@
+---
+permalink: health-checker/task-restoring-a-mysql-database-backup-on-windows.html 
+sidebar: sidebar 
+keywords:  
+summary: In caso di perdita o danneggiamento dei dati, è possibile utilizzare la funzione di ripristino per ripristinare Unified Manager allo stato stabile precedente con una perdita minima. È possibile ripristinare il database di Unified Manager in un sistema Windows locale o in un sistema Windows remoto utilizzando il comando restore. 
+---
+= Ripristino di un backup del database su Windows
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+In caso di perdita o danneggiamento dei dati, è possibile utilizzare la funzione di ripristino per ripristinare Unified Manager allo stato stabile precedente con una perdita minima. È possibile ripristinare il database di Unified Manager in un sistema Windows locale o in un sistema Windows remoto utilizzando il comando restore.
+
+
+
+== Prima di iniziare
+
+* Unified Manager deve essere installato su un server.
+* È necessario disporre dei privilegi di amministratore di Windows.
+* È necessario aver copiato il file di backup di Unified Manager e il contenuto della directory del repository del database nel sistema su cui verrà eseguita l'operazione di ripristino.
++
+Si consiglia di copiare il file di backup nella directory predefinita `\ProgramData\NetApp\OnCommandAppData\ocum\backup`. I file del repository del database devono essere copiati in `\database_dumps_repo` sotto la sottodirectory `\backup` directory.
+
+* I file di backup devono essere di `.7z` tipo.
+
+
+
+
+== A proposito di questa attività
+
+La funzionalità di ripristino è specifica della piattaforma e della versione. È possibile ripristinare un backup di Unified Manager solo sulla stessa versione di Unified Manager e un backup di Windows può essere ripristinato solo su una piattaforma Windows.
+
+[TIP]
+====
+Se i nomi delle cartelle contengono uno spazio, è necessario includere il percorso assoluto o relativo del file di backup tra virgolette doppie.
+
+====
+
+
+== Fasi
+
+. Se si esegue un ripristino su un nuovo server, dopo aver installato Unified Manager non avviare l'interfaccia utente né configurare cluster, utenti o impostazioni di autenticazione al termine dell'installazione. Il file di backup inserisce queste informazioni durante il processo di ripristino.
+. Accedere alla console di Unified Manager come amministratore: `um cli login -u maint_username`
+. Al prompt dei comandi, ripristinare il backup: `um backup restore -f <backup_file_path>/<backup_file_name>`
++
+`um backup restore -f \ProgramData\NetApp\OnCommandAppData\ocum\backup\UM_9.4.N151118.2300_backup_windows_02-20-2018-02-51.7z`
+
+
+
+
+
+== Al termine
+
+Una volta completata l'operazione di ripristino, è possibile accedere a Unified Manager.

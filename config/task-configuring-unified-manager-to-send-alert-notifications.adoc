@@ -1,0 +1,52 @@
+---
+permalink: config/task-configuring-unified-manager-to-send-alert-notifications.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile configurare Unified Manager in modo che invii notifiche che avvisano l"utente in merito a eventi nel proprio ambiente. Prima di poter inviare le notifiche, è necessario configurare diverse altre opzioni di Unified Manager.' 
+---
+= Configurazione di Unified Manager per l'invio di notifiche di avviso
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile configurare Unified Manager in modo che invii notifiche che avvisano l'utente in merito a eventi nel proprio ambiente. Prima di poter inviare le notifiche, è necessario configurare diverse altre opzioni di Unified Manager.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore di OnCommand.
+
+
+
+== A proposito di questa attività
+
+Dopo aver implementato Unified Manager e aver completato la configurazione iniziale, è necessario configurare l'ambiente in modo da attivare avvisi e generare messaggi e-mail di notifica o trap SNMP in base alla ricezione degli eventi.
+
+
+
+== Fasi
+
+. xref:task-configuring-event-notification-settings.adoc[Configurare le impostazioni di notifica degli eventi]
++
+Se si desidera inviare notifiche di avviso quando si verificano determinati eventi nell'ambiente, è necessario configurare un server SMTP e fornire un indirizzo e-mail da cui inviare la notifica di avviso. Se si desidera utilizzare i trap SNMP, è possibile selezionare tale opzione e fornire le informazioni necessarie.
+
+. xref:task-enabling-remote-authentication.adoc[Abilitare l'autenticazione remota]
++
+Se si desidera che gli utenti LDAP o Active Directory remoti accedano all'istanza di Unified Manager e ricevano notifiche di avviso, è necessario attivare l'autenticazione remota.
+
+. xref:task-adding-authentication-servers.adoc[Aggiungere server di autenticazione]
++
+È possibile aggiungere server di autenticazione in modo che gli utenti remoti all'interno del server di autenticazione possano accedere a Unified Manager.
+
+. xref:task-adding-users.adoc[Aggiungere utenti]
++
+È possibile aggiungere diversi tipi di utenti locali o remoti e assegnare ruoli specifici. Quando si crea un avviso, si assegna a un utente la ricezione delle notifiche.
+
+. xref:task-adding-alerts.adoc[Aggiungere avvisi]
++
+Dopo aver aggiunto l'indirizzo e-mail per l'invio delle notifiche, aver aggiunto gli utenti per la ricezione delle notifiche, aver configurato le impostazioni di rete e configurato le opzioni SMTP e SNMP necessarie per l'ambiente, è possibile assegnare gli avvisi.
+
+

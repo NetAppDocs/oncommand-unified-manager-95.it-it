@@ -1,0 +1,41 @@
+---
+permalink: online-help/concept-port-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Performance/Port Explorer (Esplora prestazioni/porta) fornisce una panoramica dettagliata delle performance di tutte le porte di un cluster.' 
+---
+= Pagina Performance/Port Explorer (Esplora prestazioni/porta)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Performance/Port Explorer (Esplora prestazioni/porta) fornisce una panoramica dettagliata delle performance di tutte le porte di un cluster.
+
+[NOTE]
+====
+I valori dei contatori delle prestazioni vengono visualizzati solo per le porte fisiche. I valori dei contatori non vengono visualizzati per VLAN o gruppi di interfacce.
+
+====
+La pagina Performance/Port Explorer (Esplora prestazioni/porta) consente di tenere traccia e confrontare le prestazioni delle porte durante un periodo di tempo specifico, consentendo di risolvere i problemi e ottimizzare le prestazioni delle porte.
+
+Utilizzando la funzionalità di visualizzazione e confronto è possibile confrontare le prestazioni di questa porta con:
+
+* altre porte sullo stesso nodo
+* il nodo su cui risiede la porta
+* Le LIF presenti sulla porta
+
+
+[NOTE]
+====
+Quando si effettua il filtraggio utilizzando l'opzione "`LIF su questa porta`", vengono visualizzate solo le LIF dei cluster e dei dati. Non vengono visualizzate le LIF di intercluster.
+
+====
+La pagina Performance/Port Explorer (Esplora prestazioni/porta) consente di:
+
+* Visualizza i problemi relativi alle soglie e i relativi dettagli
+* Tenere traccia e confrontare i dati relativi alle performance delle porte
+* Analizzare e risolvere i problemi relativi alla soglia
+* Analizzare e risolvere i problemi relativi alle prestazioni
+

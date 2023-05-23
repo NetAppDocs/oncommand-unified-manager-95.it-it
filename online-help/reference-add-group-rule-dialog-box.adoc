@@ -1,0 +1,64 @@
+---
+permalink: online-help/reference-add-group-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: La finestra di dialogo Add Group Rule consente di creare regole di gruppo in Unified Manager per raggruppare dinamicamente gli oggetti di storage. In seguito, è possibile configurare e applicare le azioni di gruppo per il gruppo. 
+---
+= Finestra di dialogo Add Group Rule (Aggiungi regola gruppo)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La finestra di dialogo Add Group Rule consente di creare regole di gruppo in Unified Manager per raggruppare dinamicamente gli oggetti di storage. In seguito, è possibile configurare e applicare le azioni di gruppo per il gruppo.
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+* *Nome*
++
+Specifica il nome della regola di gruppo.
+
+* *Tipo di oggetto di destinazione*
++
+Specifica il tipo di oggetti di storage da includere nel gruppo.
+
+* *Gruppo*
++
+Specifica il nome del gruppo per cui viene creata la regola di gruppo.
+
+* *Condizioni*
++
+Specifica le condizioni che determinano quali oggetti di storage possono essere inclusi in un gruppo.
+
+* *Gruppo di condizioni*
++
+Specifica i gruppi di condizioni con una o più condizioni definite per l'inclusione di oggetti di storage in un gruppo.
+
+
+
+
+
+== Pulsanti di comando
+
+* *Salva e Aggiungi*
++
+Aggiunge la regola di gruppo e consente di aggiungere un'altra regola di gruppo senza chiudere la finestra di dialogo.
+
+* *Aggiungi*
++
+Aggiunge la regola di gruppo e chiude la finestra di dialogo Aggiungi regola gruppo.
+
+* *Annulla*
++
+Annulla le modifiche e chiude la finestra di dialogo Aggiungi regola gruppo.
+
+* *Aggiungi condizione*
++
+Aggiunge una condizione per definire la regola di gruppo.
+
+* *Aggiungi gruppo di condizioni*
++
+Aggiunge un gruppo di condizioni per definire le condizioni per la regola di gruppo.
+
+

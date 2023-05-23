@@ -1,0 +1,158 @@
+---
+permalink: online-help/reference-edit-volume-thresholds-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile configurare gli avvisi per inviare notifiche quando viene generato un evento correlato alla capacità di un volume ed eseguire azioni correttive per l"evento. Ad esempio, per la soglia Volume Full, è possibile configurare un avviso per inviare una notifica quando la condizione persiste in un periodo specificato.' 
+---
+= Finestra di dialogo Modifica soglie volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile configurare gli avvisi per inviare notifiche quando viene generato un evento relativo alla capacità di un volume ed eseguire azioni correttive per l'evento. Ad esempio, per la soglia Volume Full, è possibile configurare un avviso per inviare una notifica quando la condizione persiste in un periodo specificato.
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+La finestra di dialogo Edit Volume Thresholds (Modifica soglie volume) consente di configurare le soglie del livello del volume applicate ai volumi selezionati. Quando le soglie sono configurate a livello di volume, hanno la priorità sulle soglie a livello di gruppo o sui valori di soglia a livello globale.
+
+È possibile configurare le impostazioni di soglia per capacità, copie Snapshot, quota qtree, crescita e inode a livello di volume. Quando viene configurata un'azione di gruppo di tipo di soglia del volume, i valori di soglia dell'azione di gruppo vengono utilizzati per le impostazioni non configurate a livello di volume. Se non è configurata alcuna azione di gruppo per il tipo di soglia del volume, le aree della finestra di dialogo Edit Volume Thresholds (Modifica soglie volume) non configurate utilizzano valori di soglia globali.
+
+
+
+== Area di capacità
+
+L'area Capacity (capacità) consente di impostare le seguenti condizioni di soglia della capacità del volume:
+
+* *Spazio quasi pieno*
++
+Specifica la percentuale in cui un volume viene considerato quasi pieno. Visualizza anche le dimensioni del volume corrispondenti al valore di soglia specificato.
+
++
+È inoltre possibile utilizzare il dispositivo di scorrimento per impostare il valore di soglia.
+
+* *Spazio pieno*
++
+Specifica la percentuale in cui un volume viene considerato pieno. Visualizza anche le dimensioni del volume corrispondenti al valore di soglia specificato.
+
++
+È inoltre possibile utilizzare il dispositivo di scorrimento per impostare il valore di soglia.
+
+* *Giorni fino al completo*
++
+Specifica il numero di giorni rimanenti prima che il volume raggiunga la capacità massima.
+
+
+
+
+
+== Copie Snapshot
+
+L'area copie Snapshot consente di impostare le seguenti condizioni di soglia per le copie Snapshot nel volume.
+
+* *Snapshot Reserve Full*
++
+Specifica la percentuale in cui lo spazio riservato per le copie Snapshot viene considerato pieno.
+
+* *Giorni fino al completo*
++
+Specifica il numero di giorni rimanenti prima che lo spazio riservato per le copie Snapshot raggiunga la capacità massima.
+
+* *Conteggio*
++
+Specifica il numero di copie Snapshot di un volume considerate troppe.
+
+
+
+
+
+== Area di quota del qtree
+
+L'area di quota Qtree consente di impostare le seguenti condizioni di soglia della quota qtree per i volumi selezionati:
+
+* *Quasi impegnato*
++
+Specifica la percentuale in cui un volume viene considerato quasi overcommit dalle quote qtree.
+
+* *Impegnato in eccesso*
++
+Specifica la percentuale in cui un volume viene considerato overcommit dalle quote qtree.
+
+
+
+
+
+== Area di crescita
+
+L'area di crescita consente di impostare la seguente condizione di soglia per la crescita del volume:
+
+* *Tasso di crescita*
++
+Specifica la percentuale in cui il tasso di crescita di un volume viene considerato normale prima che il sistema generi un evento anomalo di Volume Growth Rate.
+
+* *Growth Rate Sensitivity*
++
+Specifica il fattore applicato alla deviazione standard del tasso di crescita di un volume. Se il tasso di crescita supera la deviazione standard fattorizzata, viene generato un evento anomalo di Volume Growth Rate.
+
++
+Un valore inferiore per la sensibilità del tasso di crescita indica che il volume è altamente sensibile alle variazioni del tasso di crescita.
+
++
+[NOTE]
+====
+Se si modifica la sensibilità del tasso di crescita per i volumi al livello di soglia globale, la modifica viene applicata anche alla sensibilità del tasso di crescita per gli aggregati al livello di soglia globale.
+
+====
+
+
+
+
+== Area degli inode
+
+L'area nodi consente di impostare le seguenti condizioni di soglia per gli inode:
+
+* *Quasi pieno*
++
+Specifica la percentuale in cui un volume viene considerato avere consumato la maggior parte degli inode.
+
++
+È inoltre possibile utilizzare i dispositivi di scorrimento per impostare il valore di soglia.
+
+* *Completo*
++
+Specifica la percentuale in cui un volume viene considerato avere consumato tutti i suoi inode.
+
++
+È inoltre possibile utilizzare i dispositivi di scorrimento per impostare il valore di soglia.
+
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti operazioni per un volume selezionato:
+
+* *Ripristina valori predefiniti*
++
+Consente di ripristinare i valori di soglia su uno dei seguenti:
+
++
+** Valori di gruppo, se il volume appartiene a un gruppo e tale gruppo ha un tipo di azione di soglia del volume.
+** Valori globali, se il volume non appartiene ad alcun gruppo o se appartiene ad un gruppo che non dispone di un tipo di azione di soglia del volume.
+
+
+* *Salva*
++
+Salva tutte le impostazioni di soglia.
+
+* *Salva e chiudi*
++
+Salva tutte le impostazioni di soglia e chiude la finestra di dialogo.
+
+* *Annulla*
++
+Ignora le modifiche (se presenti) alle impostazioni di soglia e chiude la finestra di dialogo.
+
+

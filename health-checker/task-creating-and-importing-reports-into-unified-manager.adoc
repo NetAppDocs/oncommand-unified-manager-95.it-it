@@ -1,0 +1,28 @@
+---
+permalink: health-checker/task-creating-and-importing-reports-into-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Mentre Unified Manager offre funzionalità di reporting, potrebbe essere necessario creare nuovi report specifici per il proprio ambiente. È possibile creare nuovi report utilizzando Eclipse Business Intelligence and Reporting Tools (BIRT), quindi importarli in Unified Manager per visualizzarli e gestirli.' 
+---
+= Creazione e importazione di report in Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mentre Unified Manager offre funzionalità di reporting, potrebbe essere necessario creare nuovi report specifici per il proprio ambiente. È possibile creare nuovi report utilizzando Eclipse Business Intelligence and Reporting Tools (BIRT), quindi importarli in Unified Manager per visualizzarli e gestirli.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore di OnCommand.
+
+È necessario aver scaricato e installato MySQL Connector/J. È necessario disporre della posizione del file mysql-connector-java-5.1.32-bin.jar per creare l'origine dati JBDC, che connette il report a Unified Manager.
+
+
+
+== A proposito di questa attività
+
+Per informazioni più dettagliate sulla creazione di report, consultare il sito Web di Eclipse BIRT.

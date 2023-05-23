@@ -1,0 +1,30 @@
+---
+permalink: performance-checker/task-sorting-on-the-object-inventory-performance-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile ordinare tutti i dati nelle pagine Object Inventory Performance in base a qualsiasi colonna in ordine crescente o decrescente. Ciò consente di individuare rapidamente i dati di inventario degli oggetti, cosa utile quando si esaminano le prestazioni o si avvia un processo di risoluzione dei problemi. 
+---
+= Ordinamento nelle pagine Object Inventory Performance (prestazioni inventario oggetti)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile ordinare tutti i dati nelle pagine Object Inventory Performance in base a qualsiasi colonna in ordine crescente o decrescente. Ciò consente di individuare rapidamente i dati di inventario degli oggetti, cosa utile quando si esaminano le prestazioni o si avvia un processo di risoluzione dei problemi.
+
+
+
+== A proposito di questa attività
+
+La colonna selezionata per l'ordinamento è indicata da un nome di intestazione di colonna evidenziato e da un'icona a forma di freccia che indica la direzione di ordinamento a destra del nome. Una freccia rivolta verso l'alto indica l'ordine crescente, mentre una freccia rivolta verso il basso indica l'ordine decrescente. Il criterio di ordinamento predefinito è per *Status* (criticità evento) in ordine decrescente, con gli eventi di performance più critici elencati per primi.
+
+
+
+== Fasi
+
+. È possibile fare clic sul nome di una colonna per alternare l'ordinamento della colonna in ordine crescente o decrescente.
++
+I contenuti della pagina Object Inventory Performance sono ordinati in ordine crescente o decrescente, in base alla colonna selezionata.
+
+

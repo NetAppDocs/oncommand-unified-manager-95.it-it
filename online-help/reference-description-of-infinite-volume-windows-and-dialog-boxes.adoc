@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-infinite-volume-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile monitorare le SVM con Infinite Volume dalla relativa pagina dei dettagli di Health/Storage Virtual Machine. È possibile gestire regole e policy dei dati dalla finestra di dialogo Crea regola. È inoltre possibile modificare le soglie delle classi di storage dalla finestra di dialogo Edit Storage Class Thresholds (Modifica soglie classe di storage).' 
+---
+= Descrizione delle finestre e delle finestre di dialogo Infinite Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile monitorare le SVM con Infinite Volume dalla relativa pagina dei dettagli di Health/Storage Virtual Machine. È possibile gestire regole e policy dei dati dalla finestra di dialogo Crea regola. È inoltre possibile modificare le soglie delle classi di storage dalla finestra di dialogo Edit Storage Class Thresholds (Modifica soglie classe di storage).

@@ -1,0 +1,52 @@
+---
+permalink: online-help/task-determining-whether-a-workload-has-a-performance-issue.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare Unified Manager per determinare se un evento di performance rilevato è stato effettivamente causato da un problema di performance sul cluster. L"evento potrebbe essere stato causato da un picco di attività, ad esempio, che ha aumentato i tempi di risposta, ma ora il tempo di risposta è tornato ai livelli abituali.' 
+---
+= Determinare se un carico di lavoro presenta un problema di performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare Unified Manager per determinare se un evento di performance rilevato è stato effettivamente causato da un problema di performance sul cluster. L'evento potrebbe essere stato causato da un picco di attività, ad esempio, che ha aumentato i tempi di risposta, ma ora il tempo di risposta è tornato ai livelli abituali.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+* È necessario aver identificato il nome del volume o del LUN associato che si desidera analizzare.
+* Unified Manager deve aver raccolto e analizzato almeno cinque giorni di statistiche sulle performance dal cluster.
+
+
+
+
+== A proposito di questa attività
+
+Se si sta visualizzando la pagina Dettagli evento, è possibile fare clic sul collegamento relativo al nome di un volume per accedere direttamente alla pagina Dettagli volume/prestazioni.
+
+
+
+== Fasi
+
+. Nella barra *Cerca*, digitare almeno i primi tre caratteri del nome del volume.
++
+Il nome del volume viene visualizzato nei risultati della ricerca.
+
+. Fare clic sul nome del volume.
++
+Il volume viene visualizzato nella pagina Performance/Volume Details.
+
+. Nel grafico *dati storici*, fare clic su *5d* per visualizzare gli ultimi cinque giorni di dati storici.
+. Consulta il grafico *latenza* per rispondere alle seguenti domande:
++
+** Ci sono nuovi eventi relativi alle performance?
+** Esistono eventi di performance cronologici che indicano che il volume ha avuto problemi in passato?
+** Ci sono picchi nel tempo di risposta, anche se i picchi rientrano nell'intervallo previsto?
+** Sono state apportate modifiche alla configurazione del cluster che potrebbero aver influito sulle performance? Se il tempo di risposta per il volume non visualizza eventi di performance, picchi di attività o modifiche recenti della configurazione che potrebbero aver influito sul tempo di risposta, è possibile escludere il problema di performance causato dal cluster.
+
+
+

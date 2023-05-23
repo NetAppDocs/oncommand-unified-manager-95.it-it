@@ -1,0 +1,61 @@
+---
+permalink: online-help/task-creating-a-snapmirror-relationship-with-version-flexible-replication.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile creare una relazione SnapMirror con replica flessibile della versione. La replica flessibile della versione consente di implementare la protezione SnapMirror anche se i volumi di origine e di destinazione vengono eseguiti con versioni diverse di ONTAP. 
+---
+= Creazione di una relazione SnapMirror con replica flessibile della versione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile creare una relazione SnapMirror con replica flessibile della versione. La replica flessibile della versione consente di implementare la protezione SnapMirror anche se i volumi di origine e di destinazione vengono eseguiti con versioni diverse di ONTAP.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+* È necessario aver impostato l'automazione del flusso di lavoro.
+* Le SVM di origine e di destinazione devono disporre di una licenza SnapMirror abilitata.
+* Le SVM di origine e di destinazione devono essere eseguite con una versione del software ONTAP che supporti la replica flessibile dalla versione.
+
+
+
+
+== A proposito di questa attività
+
+SnapMirror con replica flessibile della versione consente di implementare la protezione di SnapMirror anche in ambienti di storage eterogenei in cui non tutto lo storage viene eseguito con una sola versione di ONTAP; tuttavia, le operazioni di mirroring eseguite con SnapMirror con replica flessibile della versione non vengono eseguite con la stessa velocità con la replica a blocchi tradizionale di SnapMirror.
+
+
+
+== Fasi
+
+. Visualizzare la finestra di dialogo *Configura protezione* per il volume che si desidera proteggere.
++
+** Se si visualizza la scheda protezione della pagina Health/Volume Details (Dettagli stato/volume), fare clic con il pulsante destro del mouse nella vista topologia che ha il nome di un volume che si desidera proteggere e selezionare *Protect* > *SnapMirror* dal menu.
+** Se si sta visualizzando la pagina Health/Volumes Inventory, individuare un volume che si desidera proteggere e fare clic con il pulsante destro del mouse, quindi selezionare *Protect* > *SnapMirror* dal menu. Viene visualizzata la finestra di dialogo Configura protezione.
+
+
+. Fare clic su *SnapMirror* per visualizzare la scheda *SnapMirror*.
+. Completare l'area *Destination Information* (informazioni destinazione) e l'area *Relationship Settings* (Impostazioni relazione) nella finestra di dialogo *Configure Protection* (Configura protezione).
++
+Se si specifica una SVM di destinazione che viene eseguita con una versione precedente di ONTAP rispetto al volume di origine che si sta proteggendo e se tale versione precedente supporta la replica flessibile della versione, questa attività configura automaticamente SnapMirror con replica flessibile della versione.
+
+. Se si specifica una SVM di destinazione che viene eseguita con la stessa versione di ONTAP del volume di origine, ma si desidera comunque configurare SnapMirror con la replica flessibile della versione, fare clic su *Avanzate* per attivare la replica flessibile della versione, quindi fare clic su *Applica*.
+. Fare clic su *Apply* (Applica).
++
+Viene visualizzata nuovamente la pagina Health/Volume Details (Dettagli salute/volume).
+
+. Fare clic sul collegamento al processo di configurazione della protezione nella parte superiore della pagina dei dettagli *Health/Volume*.
++
+Le attività e i dettagli dei lavori vengono visualizzati nella pagina protezione/Dettagli lavoro.
+
+. Nella pagina dei dettagli *protezione/lavoro*, fare clic su *Aggiorna* per aggiornare l'elenco delle attività e i dettagli delle attività associati al processo di configurazione della protezione e determinare quando il processo è completo.
+. Una volta completate le attività di lavoro, fare clic su *Indietro* nel browser per tornare alla pagina dei dettagli *Health/Volume*.
++
+La nuova relazione viene visualizzata nella vista topologia della pagina Health/Volume Details (Dettagli stato/volume).
+
+

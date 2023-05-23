@@ -1,0 +1,53 @@
+---
+permalink: health-checker/task-creating-rules-using-templates.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile aggiungere nuove regole utilizzando i modelli di regola definiti da Unified Manager per determinare il posizionamento dei dati scritti su SVM con Infinite Volume. È possibile creare regole in base a tipi di file, percorsi di directory o proprietari. 
+---
+= Creazione di regole mediante modelli
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile aggiungere nuove regole utilizzando i modelli di regola definiti da Unified Manager per determinare il posizionamento dei dati scritti su SVM con Infinite Volume. È possibile creare regole in base a tipi di file, percorsi di directory o proprietari.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+* Il cluster contenente SVM con Infinite Volume con classi di storage deve essere aggiunto al database di Unified Manager.
+
+
+
+
+== A proposito di questa attività
+
+La scheda Data Policy (Policy dati) è visibile solo per una SVM con Infinite Volume (Volume infinito).
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Health* > *SVM*.
+. Nella pagina di inventario *Health/Storage Virtual Machines*, selezionare la SVM appropriata.
+. Fare clic sulla scheda *Data Policy*.
++
+Viene visualizzato l'elenco delle regole nella policy dei dati per la SVM selezionata con volume infinito.
+
+. Fare clic su *Create* (Crea).
+. Nella finestra di dialogo *Crea regola*, scegliere un modello di regola appropriato dall'elenco a discesa.
++
+Il modello si basa su tre categorie: Tipo di file, proprietario o percorso di directory.
+
+. In base al modello selezionato, aggiungere le condizioni necessarie nell'area *Criteri di corrispondenza*.
+. Selezionare una classe di storage appropriata dall'elenco a discesa *inserire il contenuto corrispondente nella classe di storage*.
+. Fare clic su *Create* (Crea).
++
+La nuova regola creata viene visualizzata nella scheda Data Policy (Criteri dati).
+
+. Visualizzare in anteprima qualsiasi altra modifica apportata alla policy dei dati.
+. Fare clic su *Activate* (attiva) per attivare le modifiche alle proprietà della regola nella SVM.
+

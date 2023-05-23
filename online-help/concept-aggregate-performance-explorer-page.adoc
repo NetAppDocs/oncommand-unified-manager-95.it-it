@@ -1,0 +1,38 @@
+---
+permalink: online-help/concept-aggregate-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Performance/aggregate Explorer (Esplora performance/aggregato) fornisce una panoramica dettagliata delle performance di tutti gli aggregati di un cluster.' 
+---
+= Pagina Explorer performance/aggregate
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Performance/aggregate Explorer (Esplora performance/aggregato) fornisce una panoramica dettagliata delle performance di tutti gli aggregati di un cluster.
+
+La pagina Esplora performance/aggregate consente di tenere traccia e confrontare le performance aggregate durante un periodo di tempo specifico, contribuendo alla risoluzione dei problemi e alla messa a punto delle performance di un aggregato.
+
+[NOTE]
+====
+Gli aggregati root non vengono visualizzati in questa pagina.
+
+====
+Utilizzando la funzionalità di visualizzazione e confronto è possibile confrontare le performance di questo aggregato con:
+
+* altri aggregati sullo stesso nodo
+* altri aggregati sullo stesso cluster
+* il nodo su cui risiede l'aggregato
+* tutti i nodi del cluster che utilizzano questo aggregato
+* i volumi che risiedono su questo aggregato
+
+
+La pagina Explorer performance/aggregate consente di:
+
+* Visualizza i problemi relativi alle soglie e i relativi dettagli
+* Tieni traccia e confronta i dati delle performance aggregate
+* Analizzare e risolvere i problemi relativi alla soglia
+* Analizzare e risolvere i problemi relativi alle prestazioni
+

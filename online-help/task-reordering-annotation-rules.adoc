@@ -1,0 +1,39 @@
+---
+permalink: online-help/task-reordering-annotation-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile modificare l"ordine in cui Unified Manager applica le regole di annotazione agli oggetti di storage. Le regole di annotazione vengono applicate agli oggetti di storage in modo sequenziale in base al loro rango. Quando si configura una regola di annotazione, il grado è minimo. Tuttavia, è possibile modificare il rango della regola di annotazione in base alle proprie esigenze.' 
+---
+= Riordinamento delle regole di annotazione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare l'ordine in cui Unified Manager applica le regole di annotazione agli oggetti di storage. Le regole di annotazione vengono applicate agli oggetti di storage in modo sequenziale in base al loro rango. Quando si configura una regola di annotazione, il grado è minimo. Tuttavia, è possibile modificare il rango della regola di annotazione in base alle proprie esigenze.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== A proposito di questa attività
+
+È possibile selezionare una singola riga o più righe ed eseguire molte operazioni di trascinamento per modificare il rango delle regole di annotazione. Tuttavia, è necessario salvare le modifiche per visualizzare la nuova priorità nella scheda Annotation Rules (regole di annotazione).
+
+
+
+== Fasi
+
+. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *Annotazioni* nel menu Gestione di sinistra.
+. Nella scheda *Annotation Rules* (regole annotazione), fare clic su *Reorder* (Riordina).
+. Nella finestra di dialogo *Riordina regola annotazione*, trascinare una o più righe per riordinare la sequenza delle regole di annotazione.
+. Fare clic su *Save* (Salva).
++
+È necessario salvare le modifiche per visualizzare il riordino.
+
+

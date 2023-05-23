@@ -1,0 +1,41 @@
+---
+permalink: health-checker/task-deleting-annotations.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile eliminare le annotazioni personalizzate e i relativi valori quando non sono più necessari. 
+---
+= Eliminazione delle annotazioni
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile eliminare le annotazioni personalizzate e i relativi valori quando non sono più necessari.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+* I valori delle annotazioni non devono essere utilizzati in altre annotazioni o regole di gruppo.
+
+
+
+
+== Fasi
+
+. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *Annotazioni* nel menu Gestione di sinistra.
+. Nella scheda *Annotazioni*, selezionare l'annotazione che si desidera eliminare.
++
+Vengono visualizzati i dettagli dell'annotazione selezionata.
+
+. Fare clic su *azioni* > *Elimina* per eliminare l'annotazione selezionata e il relativo valore.
+. Nella finestra di dialogo di avviso, fare clic su *Sì* per confermare l'eliminazione.
+
+
+
+
+== Risultati
+
+L'annotazione selezionata e il relativo valore vengono cancellati.

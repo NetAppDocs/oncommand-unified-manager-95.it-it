@@ -1,0 +1,84 @@
+---
+permalink: online-help/reference-setup-autosupport-page.html 
+sidebar: sidebar 
+keywords:  
+summary: La pagina Setup/AutoSupport consente di visualizzare la descrizione del AutoSupport, attivare il AutoSupport periodico o inviare un messaggio AutoSupport on-demand. 
+---
+= Pagina Setup/AutoSupport
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Setup/AutoSupport consente di visualizzare la descrizione del AutoSupport, attivare il AutoSupport periodico o inviare un messaggio AutoSupport on-demand.
+
+
+
+== Area delle informazioni
+
+* *ID sistema*
++
+Visualizza l'ID di sistema per questo server Unified Manager.
+
+
+
+
+
+== Area Periodic AutoSupport
+
+Consente di ricevere messaggi specifici e predefiniti al supporto tecnico per la diagnosi e la risoluzione dei problemi generati periodicamente.
+
+* *Attiva AutoSupport periodico*
++
+Indica che si desidera attivare la funzionalità AutoSupport periodica.
+
+
+
+
+
+== Area di AutoSupport on-demand
+
+È possibile generare e inviare un messaggio on-demand al supporto tecnico, a un destinatario e-mail specificato o a entrambi:
+
+* *Invia al supporto tecnico*
++
+Indica che si desidera inviare un messaggio on-demand al supporto tecnico per qualsiasi problema verificatosi.
+
+* *Invia a destinatario e-mail*
++
+Indica che si desidera inviare un messaggio on-demand a un destinatario specificato per qualsiasi problema verificatosi.
+
+* *Genera e invia AutoSupport*
++
+Genera e invia un messaggio on-demand al supporto tecnico, a un destinatario e-mail specificato o a entrambi per qualsiasi problema verificatosi.
+
+
+
+
+
+== Area del proxy HTTP
+
+È possibile designare un proxy per fornire l'accesso a Internet per inviare il contenuto AutoSupport al supporto se l'ambiente non fornisce l'accesso diretto dal server Unified Manager.
+
+* *Usa proxy HTTP*
++
+Selezionare questa casella per identificare il server utilizzato come proxy HTTP.
+
++
+Immettere il nome host o l'indirizzo IP del server proxy e il numero di porta utilizzato per connettersi al server.
+
+* *Usa autenticazione*
++
+Selezionare questa casella se si desidera fornire informazioni di autenticazione per accedere al server utilizzato come proxy HTTP.
+
++
+Immettere il nome utente e la password richiesti per l'autenticazione con il proxy HTTP.
+
+
+
+[NOTE]
+====
+I proxy HTTP che forniscono solo l'autenticazione di base non sono supportati.
+
+====

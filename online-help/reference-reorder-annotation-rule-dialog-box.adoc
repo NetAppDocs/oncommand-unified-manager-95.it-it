@@ -1,0 +1,56 @@
+---
+permalink: online-help/reference-reorder-annotation-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare la finestra di dialogo Riordina regola annotazione per specificare l"ordine in cui si desidera applicare le regole di annotazione agli oggetti di storage.' 
+---
+= Finestra di dialogo Riordina regola annotazione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la finestra di dialogo Riordina regola annotazione per specificare l'ordine in cui si desidera applicare le regole di annotazione agli oggetti di storage.
+
+
+
+== Pulsanti di comando
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+* *Salva*
++
+Salva le modifiche apportate alle regole di annotazione e chiude la finestra di dialogo Riordina regola annotazione.
+
+* *Annulla*
++
+Chiude la finestra di dialogo Riordina regola annotazione senza salvare le modifiche apportate.
+
+
+
+
+
+== Vista elenco
+
+* *Classifica*
++
+Visualizza l'ordine in cui le regole di annotazione verranno applicate agli oggetti di storage.
+
+* *Nome*
++
+Visualizza il nome della regola di annotazione.
+
+* *Tipo di oggetto di destinazione*
++
+Visualizza il tipo di oggetto di storage a cui viene applicata la regola di annotazione.
+
+* *Annotazioni associate*
++
+Visualizza il nome dell'annotazione applicata all'oggetto di storage.
+
+* *Valore di annotazione associato*
++
+Visualizza il valore dell'annotazione per l'oggetto di storage.
+
+

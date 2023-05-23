@@ -1,0 +1,24 @@
+---
+permalink: performance-checker/concept-unified-manager-administration-navigation.html 
+sidebar: sidebar 
+keywords:  
+summary: La funzionalità di amministrazione di Unified Manager consente di gestire utenti e origini dati. È inoltre possibile eseguire attività di configurazione come autenticazione, AutoSupport, e-mail, certificati HTTPS, reti, E server NTP utilizzando la pagina di amministrazione di Unified Manager. 
+---
+= Navigazione nell'amministrazione di Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La funzionalità di amministrazione di Unified Manager consente di gestire utenti e origini dati. È inoltre possibile eseguire attività di configurazione come autenticazione, AutoSupport, e-mail, certificati HTTPS, reti, E server NTP utilizzando la pagina di amministrazione di Unified Manager.
+
+Questo è un esempio di molti possibili percorsi di navigazione per l'amministrazione. Per aggiungere o rimuovere una connessione a un server Workflow Automation, seguire questo esempio di navigazione:
+
+image::../media/admin-navigation.gif[navigazione amministrativa]
+
+[NOTE]
+====
+Fare clic sull'icona *Home* per tornare alla pagina di navigazione principale di Unified Manager.
+
+====

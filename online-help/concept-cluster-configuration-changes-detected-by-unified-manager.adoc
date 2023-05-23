@@ -1,0 +1,36 @@
+---
+permalink: online-help/concept-cluster-configuration-changes-detected-by-unified-manager.html 
+sidebar: sidebar 
+keywords: Performance Manager 
+summary: 'Unified Manager monitora i cluster per verificare la presenza di modifiche alla configurazione per determinare se una modifica potrebbe aver causato o contribuito a un evento di performance. Le pagine Performance Explorer (Esplora prestazioni) visualizzano un"icona di modifica dell"evento per indicare la data e l"ora in cui è stata rilevata la modifica.' 
+---
+= Modifiche alla configurazione rilevate da Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager monitora i cluster per verificare la presenza di modifiche alla configurazione per determinare se una modifica potrebbe aver causato o contribuito a un evento di performance. Le pagine Performance Explorer (Esplora prestazioni) visualizzano un'icona di modifica dell'evento (image:../media/opm-change-icon.gif["Icona di modifica dell'evento"]) per indicare la data e l'ora in cui è stata rilevata la modifica.
+
+È possibile esaminare i grafici delle prestazioni nelle pagine Performance Explorer e nella pagina Performance/Volume Details per verificare se l'evento di modifica ha influito sulle prestazioni dell'oggetto cluster selezionato. Se la modifica è stata rilevata in corrispondenza o intorno a un evento di performance, la modifica potrebbe aver contribuito al problema, causando l'attivazione dell'avviso di evento.
+
+Unified Manager è in grado di rilevare i seguenti eventi di cambiamento, classificati come eventi informativi:
+
+* Un volume si sposta tra gli aggregati.
++
+Unified Manager è in grado di rilevare quando lo spostamento è in corso, completato o non riuscito. Se Unified Manager è inattivo durante lo spostamento di un volume, durante il backup rileva lo spostamento del volume e visualizza un evento di modifica.
+
+* Il limite di throughput (Mbps o IOPS) di un gruppo di policy QoS che contiene una o più modifiche dei carichi di lavoro monitorati.
++
+La modifica del limite di un gruppo di criteri può causare picchi intermittenti della latenza (tempo di risposta), che potrebbero anche attivare eventi per il gruppo di criteri. La latenza ritorna gradualmente alla normalità e tutti gli eventi causati dai picchi diventano obsoleti.
+
+* Un nodo in una coppia ha assume il controllo o restituisce lo storage del nodo partner.
++
+Unified Manager è in grado di rilevare quando l'operazione di Takeover, Takeover parziale o giveback è stata completata. Se il takeover è causato da un nodo in Panicked, Unified Manager non rileva l'evento.
+
+* Un'operazione di aggiornamento o revert ONTAP è stata completata correttamente.
++
+Vengono visualizzate la versione precedente e la nuova.
+
+

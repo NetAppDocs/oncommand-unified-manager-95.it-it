@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-dashboard-windows.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile utilizzare le pagine della dashboard per visualizzare rapidamente gli oggetti monitorati. 
+---
+= Descrizione delle finestre della dashboard
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare le pagine della dashboard per visualizzare rapidamente gli oggetti monitorati.

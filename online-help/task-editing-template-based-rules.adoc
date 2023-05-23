@@ -1,0 +1,64 @@
+---
+permalink: online-help/task-editing-template-based-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile modificare una regola creata utilizzando i modelli di regola dalla finestra di dialogo Modifica regola. È possibile aggiungere, modificare o eliminare le proprietà delle regole, ad esempio i percorsi di directory, i tipi di file e i proprietari. È inoltre possibile modificare il nome della regola e la classe di storage associata alla regola. 
+---
+= Modifica delle regole basate su modelli
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare una regola creata utilizzando i modelli di regola dalla finestra di dialogo Modifica regola. È possibile aggiungere, modificare o eliminare le proprietà delle regole, ad esempio i percorsi di directory, i tipi di file e i proprietari. È inoltre possibile modificare il nome della regola e la classe di storage associata alla regola.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Health* > *SVM*.
+. Nella pagina di inventario *Health/Storage Virtual Machines*, selezionare una SVM appropriata.
+. Fare clic su *Data Policy*.
++
+Viene visualizzato l'elenco delle regole nella policy dei dati per la SVM selezionata con volume infinito.
+
+. Selezionare la regola per la quale si desidera includere nuove condizioni o set di condizioni.
+. Fare clic su *Edit* (Modifica).
+. Nella finestra di dialogo *Modifica regola*, modificare la regola come richiesto:
++
+|===
+| Se si desidera... | Eseguire questa operazione... 
+
+
+ a| 
+Aggiungere una nuova proprietà della regola
+ a| 
+Fare clic su *Aggiungi*.
+
+
+
+ a| 
+Eliminare una proprietà della regola
+ a| 
+Fare clic su *Delete* (Elimina) selezionando la proprietà della regola appropriata.
+
+
+
+ a| 
+Modificare la proprietà di una regola
+ a| 
+Fare doppio clic sulla proprietà della regola appropriata, quindi modificarla secondo necessità.
+
+|===
+. Fare clic su *Aggiorna*.
+. Verificare che le modifiche siano applicate alla regola espandendo la regola nella scheda *Data Policy*.
+. Visualizzare in anteprima qualsiasi altra modifica apportata alla policy dei dati.
+. Fare clic su *Activate* (attiva) per attivare le modifiche alle proprietà della regola nella SVM.
+

@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-performance-monitoring-of-metrocluster-configurations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager consente di monitorare il throughput di scrittura tra i cluster in una configurazione MetroCluster per identificare i carichi di lavoro con un"elevata quantità di throughput in scrittura. Se questi carichi di lavoro dalle performance elevate causano elevati tempi di risposta i/o per altri volumi nel cluster locale, Unified Manager attiva gli eventi relativi alle performance per ricevere una notifica.' 
+---
+= Monitoraggio delle performance delle configurazioni MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager consente di monitorare il throughput di scrittura tra i cluster in una configurazione MetroCluster per identificare i carichi di lavoro con un'elevata quantità di throughput in scrittura. Se questi carichi di lavoro dalle performance elevate causano elevati tempi di risposta i/o per altri volumi nel cluster locale, Unified Manager attiva gli eventi relativi alle performance per ricevere una notifica.
+
+Quando un cluster locale in una configurazione MetroCluster esegue il mirroring dei dati nel cluster partner, i dati vengono scritti nella NVRAM e quindi trasferiti attraverso i collegamenti interswitch (ISL) agli aggregati remoti. Unified Manager analizza la NVRAM per identificare i carichi di lavoro il cui throughput di scrittura elevato sta utilizzando la NVRAM in eccesso, mettendo la NVRAM in conflitto.
+
+I carichi di lavoro la cui deviazione nel tempo di risposta ha superato la soglia di performance sono denominati _vittime_ e i carichi di lavoro la cui deviazione nel throughput di scrittura nella NVRAM è superiore al solito, causando il conflitto, sono denominati _bullies_. Poiché solo le richieste di scrittura vengono mirrorate al cluster partner, Unified Manager non analizza il throughput in lettura.
+
+Unified Manager tratta i cluster in una configurazione MetroCluster come singoli cluster. Non distingue i cluster che sono partner o correlano il throughput di scrittura da ciascun cluster.

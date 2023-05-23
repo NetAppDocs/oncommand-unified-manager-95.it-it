@@ -1,0 +1,51 @@
+---
+permalink: health-checker/task-determining-if-a-volume-is-offline-because-of-broken-disks-in-an-aggregate.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare l"interfaccia utente Web di Unified Manager per confermare o eliminare la possibilità che un volume sia offline perché i problemi del disco RAID hanno portato l"aggregato host offline.' 
+---
+= Determinare se un volume è offline a causa di dischi rotti in un aggregato
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare l'interfaccia utente Web di Unified Manager per confermare o eliminare la possibilità che un volume sia offline perché i problemi del disco RAID hanno portato l'aggregato host offline.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+
+
+
+== A proposito di questa attività
+
+Per determinare se la condizione di volume offline è causata da problemi del disco RAID che stanno portando l'aggregato di hosting offline, eseguire le seguenti operazioni:
+
+
+
+== Fasi
+
+. Individuare e fare clic sul collegamento ipertestuale visualizzato sotto aggregato nel riquadro *Related Devices* (dispositivi correlati) della pagina dei dettagli *Health/Volume*.
++
+La pagina Health/aggregate details (informazioni sullo stato dell'aggregato di hosting) visualizza lo stato online o offline dell'aggregato di hosting. Se lo stato aggregato è online, i problemi del disco RAID non sono la causa della offline del volume.
+
+. Se lo stato aggregato non è in linea, fare clic su *Disk Information* (informazioni disco) e cercare gli eventi del disco guasti nell'elenco *Events* (Eventi) nella scheda *Disk Information* (informazioni disco).
+. Per identificare ulteriormente i dischi rotti, fare clic sul collegamento ipertestuale visualizzato sotto Cluster nel pannello *Related Devices* (periferiche correlate).
++
+Viene visualizzata la pagina Health/Cluster Details (informazioni sullo stato/sul cluster).
+
+. Fare clic su *Disks*, quindi selezionare *Broken* nel pannello *Filters* per visualizzare tutti i dischi in stato di rottura.
++
+Se i dischi in stato interrotto hanno causato lo stato offline dell'aggregato host, il nome dell'aggregato viene visualizzato nella colonna aggregato interessato.
+
+
+
+
+
+== Al termine
+
+Dopo aver confermato che la condizione di volume offline è causata da dischi RAID rotti e dal conseguente aggregato di host offline, contattare l'amministratore o l'operatore appropriato per sostituire manualmente i dischi rotti e riportare l'aggregato online.

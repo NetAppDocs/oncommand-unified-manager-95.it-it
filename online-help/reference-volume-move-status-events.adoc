@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-volume-move-status-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi di stato dello spostamento del volume indicano lo stato dello spostamento del volume in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all"area di impatto e includono il nome dell"evento e della trap, il livello di impatto, il tipo di origine e la severità.' 
+---
+= Eventi di stato dello spostamento del volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi di stato dello spostamento del volume indicano lo stato dello spostamento del volume in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all'area di impatto e includono il nome dell'evento e della trap, il livello di impatto, il tipo di origine e la severità.
+
+
+
+== Area di impatto: Capacità
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Stato spostamento volume: In corso (non applicabile)
+ a| 
+Evento
+ a| 
+Volume
+ a| 
+Informazioni
+
+
+
+ a| 
+Stato spostamento volume - non riuscito (ocumEvtVolumeMoveFailed)
+ a| 
+Rischio
+ a| 
+Volume
+ a| 
+Errore
+
+
+
+ a| 
+Stato spostamento volume: Completato (non applicabile)
+ a| 
+Evento
+ a| 
+Volume
+ a| 
+Informazioni
+
+
+
+ a| 
+Spostamento del volume - Cutover rinviato (ocumEvtVolumeMoveCutoverrinviato)
+ a| 
+Rischio
+ a| 
+Volume
+ a| 
+Attenzione
+
+|===

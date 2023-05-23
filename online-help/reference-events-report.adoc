@@ -1,0 +1,126 @@
+---
+permalink: online-help/reference-events-report.html 
+sidebar: sidebar 
+keywords:  
+summary: Il report Eventi consente di visualizzare informazioni sui trend degli eventi in un determinato periodo di tempo. Queste informazioni consentono di confrontare le attività recenti con quelle precedenti, ad esempio modifiche alla configurazione, aggiornamenti e così via. Le informazioni consentono inoltre di determinare gli eventi in sospeso. 
+---
+= Report sugli eventi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il report Eventi consente di visualizzare informazioni sui trend degli eventi in un determinato periodo di tempo. Queste informazioni consentono di confrontare le attività recenti con quelle precedenti, ad esempio modifiche alla configurazione, aggiornamenti e così via. Le informazioni consentono inoltre di determinare gli eventi in sospeso.
+
+
+
+== Vista a grafico del report degli eventi
+
+Il report Eventi viene visualizzato in due formati:
+
+* Vista a grafico del report degli eventi
+* Visualizzazione tabulare del report degli eventi
+
+
+Il grafico degli eventi viene visualizzato in due formati:
+
+* Trend di severità degli eventi (tutti gli eventi aperti)
+* Trend stato evento
+
+
+Il grafico mostra i trend di severità degli eventi per tutti gli eventi aperti in un determinato periodo di tempo. Il numero di eventi viene visualizzato sull'asse verticale (y) e la data viene visualizzata sull'asse orizzontale (x). È possibile visualizzare i dettagli di punti specifici del grafico posizionando il cursore su un punto specifico. I dettagli visualizzano la severità dell'evento, il numero di eventi del tipo di severità specifico e la data dell'evento.
+
+I tipi di gravità degli eventi visualizzati sono critico, errore e Avviso. I livelli di gravità degli eventi sono differenziati in base a colori diversi. Può esserci lo stesso numero di eventi nella stessa data in stati diversi.
+
+* *Conteggio*
++
+Visualizza il numero di eventi.
+
+* *Data*
++
+Visualizza la data. L'asse x mostra i dati dall'ora in cui si è verificato l'evento fino alla data corrente. Puoi fare clic e ingrandire la mappa per ottenere i dettagli.
+
+
+
+Il grafico mostra l'andamento giornaliero dello stato degli eventi in un determinato periodo di tempo. Il numero di eventi viene visualizzato sull'asse verticale (y) e la data viene visualizzata sull'asse orizzontale (x). I dettagli visualizzano lo stato dell'evento, il numero di eventi dello stato specifico e la data dell'evento.
+
+Lo stato dell'evento è nuovo, confermato e risolto. Lo stato dell'evento è differenziato in base a colori diversi.
+
+Il grafico mostra i nuovi eventi generati giornalmente su base cumulativa in un grafico a barre rappresentato in verde. Il numero di eventi riconosciuti e risolti viene visualizzato come e quando vengono riconosciuti e risolti su base giornaliera.
+
+Le mappe includono una funzionalità di zoom. Questa funzione consente di ingrandire un punto specifico della mappa per una maggiore chiarezza.
+
+* *Origine*
++
+Visualizza l'origine di un evento.
+
+* *Stato*
++
+Visualizza la severità dell'evento. È possibile filtrare questa colonna per visualizzare gli eventi di un tipo di severità specifico. I tipi di gravità dell'evento sono critico, errore o Avviso.
+
+* *Stato*
++
+Visualizza lo stato dell'evento: Nuovo, confermato, risolto o obsoleto. È possibile filtrare questa colonna per visualizzare gli eventi di uno stato specifico.
+
+* *Evento*
++
+Visualizza i nomi degli eventi.
+
+* *Tempo di attivazione*
++
+Visualizza l'ora in cui è stato generato l'evento. Vengono visualizzate sia l'ora che la data.
+
+* *Giorni in sospeso*
++
+Visualizza il numero di giorni che intercorrono tra un evento e la sua risoluzione o designazione come obsoleta.
+
+* *Tipo di origine*
++
+Visualizza il tipo di oggetto (ad esempio Storage Virtual Machine (SVM), volume o qtree) a cui è associato l'evento.
+
+* *Priorità dei dati*
++
+Visualizza il tipo di annotazione, in base alla priorità dei dati dell'oggetto di storage.
+
+* *Livello di impatto*
++
+Visualizza se l'evento è classificato come incidente, rischio o informazione.
+
+* *Area di impatto*
++
+Visualizza se si tratta di un evento di capacità, disponibilità, performance, protezione o configurazione.
+
+* *Assegnato a*
++
+Visualizza il nome dell'utente a cui è assegnato l'evento.
+
+* *Tempo assegnato*
++
+Visualizza l'ora in cui l'evento è stato assegnato a un utente.
+
+* *Note*
++
+Visualizza il numero di note aggiunte per un evento.
+
+* *Riconosciuto da*
++
+Visualizza il nome dell'utente che ha confermato l'evento. Il campo è vuoto se l'evento non viene riconosciuto.
+
+* *Tempo riconosciuto*
++
+Visualizza il tempo trascorso dalla conferma dell'evento. Se il tempo trascorso supera una settimana, l'indicatore data e ora viene visualizzato quando l'evento è stato confermato.
+
+* *Risolto da*
++
+Visualizza il nome dell'utente che ha risolto l'evento. Il campo è vuoto se l'evento non viene risolto.
+
+* *Tempo di risoluzione*
++
+Visualizza il tempo trascorso da quando l'evento è stato risolto. Se il tempo trascorso supera una settimana, l'indicatore data e ora viene visualizzato quando l'evento è stato risolto.
+
+* *Tempo obsoleto*
++
+Visualizza l'ora in cui lo stato dell'evento è diventato obsoleto.
+
+

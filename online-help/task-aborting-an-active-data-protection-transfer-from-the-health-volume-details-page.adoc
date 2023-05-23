@@ -1,0 +1,55 @@
+---
+permalink: online-help/task-aborting-an-active-data-protection-transfer-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile interrompere un trasferimento di protezione dei dati attivo quando si desidera interrompere una replica SnapMirror in corso. È inoltre possibile cancellare il checkpoint di riavvio per un trasferimento se non si tratta di un trasferimento di riferimento. È possibile interrompere un trasferimento in caso di conflitto con un"altra operazione, ad esempio uno spostamento del volume.' 
+---
+= Interruzione di un trasferimento di protezione dei dati attivo dalla pagina Health/Volume Details (Dettagli salute/volume)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile interrompere un trasferimento di protezione dei dati attivo quando si desidera interrompere una replica SnapMirror in corso. È inoltre possibile cancellare il checkpoint di riavvio per un trasferimento se non si tratta di un trasferimento di riferimento. È possibile interrompere un trasferimento in caso di conflitto con un'altra operazione, ad esempio uno spostamento del volume.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+* È necessario aver impostato l'automazione del flusso di lavoro.
+
+
+
+
+== A proposito di questa attività
+
+L'azione di interruzione non viene visualizzata nei seguenti casi:
+
+* Se le impostazioni RBAC non consentono questa azione: Ad esempio, se si dispone solo di privilegi operatore
+* Quando l'ID del volume è sconosciuto: Ad esempio, quando si dispone di una relazione tra cluster e il cluster di destinazione non è stato ancora rilevato
+
+
+Non è possibile cancellare il checkpoint di riavvio per un trasferimento di riferimento.
+
+
+
+== Fasi
+
+. Nella scheda *Protection* della pagina dei dettagli *Health/Volume*, fare clic con il pulsante destro del mouse sulla relazione nella vista della topologia per il trasferimento dei dati che si desidera interrompere e selezionare *Abort* (Interrompi).
++
+Viene visualizzata la finestra di dialogo Interrompi trasferimento.
+
+. Se si desidera cancellare il checkpoint di riavvio per un trasferimento che non è un trasferimento di riferimento, selezionare *Clear Checkpoint*.
+. Fare clic su *continua*.
++
+La finestra di dialogo Interrompi trasferimento viene chiusa e lo stato dell'operazione di interruzione viene visualizzato nella parte superiore della pagina Health/Volume Details (Dettagli stato/volume) insieme a un collegamento ai dettagli del processo.
+
+. Fare clic sul collegamento *View details* (Visualizza dettagli) per accedere alla pagina *Protection/Job* Details (Dettagli protezione/lavoro) per ulteriori dettagli e per visualizzare l'avanzamento del lavoro.
+. Fare clic su ciascuna attività per visualizzarne i dettagli.
+. Fare clic sulla freccia Indietro del browser per tornare alla pagina dei dettagli *Health/Volume*.
++
+L'operazione di interruzione viene completata al termine di tutte le attività di lavoro.
+
+

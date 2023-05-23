@@ -1,0 +1,91 @@
+---
+permalink: online-help/reference-advanced-secondary-setting-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare la finestra di dialogo Advanced Secondary Settings (Impostazioni secondarie avanzate) per attivare la replica flessibile della versione, il backup di più copie e le impostazioni relative allo spazio su un volume secondario. È possibile utilizzare la finestra di dialogo Advanced Secondary Settings (Impostazioni secondarie avanzate) per modificare le impostazioni correnti.' 
+---
+= Finestra di dialogo Advanced Secondary Settings (Impostazioni secondarie avanzate
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la finestra di dialogo Advanced Secondary Settings (Impostazioni secondarie avanzate) per attivare la replica flessibile della versione, il backup di più copie e le impostazioni relative allo spazio su un volume secondario. È possibile utilizzare la finestra di dialogo Advanced Secondary Settings (Impostazioni secondarie avanzate) per modificare le impostazioni correnti.
+
+Le impostazioni relative allo spazio massimizzano la quantità di dati memorizzati, tra cui: Deduplica, compressione dei dati, crescita automatica e garanzia di spazio.
+
+La finestra di dialogo include i seguenti campi:
+
+* *Abilita replica flessibile versione*
++
+Attiva SnapMirror con replica flessibile della versione. La replica flessibile della versione consente la protezione SnapMirror di un volume di origine anche se il volume di destinazione viene eseguito con una versione precedente di ONTAP rispetto a quella del volume di origine, purché sia l'origine che la destinazione eseguano ONTAP 8.3 o versione successiva.
+
++
+** Abilitare il backup
++
+Se è attivata la replica flessibile della versione, consente anche il trasferimento e la conservazione di più copie Snapshot dei dati di origine di SnapMirror nella destinazione di SnapMirror.
+
+
+
+* *Attiva deduplica*
++
+Consente la deduplica sul volume secondario in una relazione SnapVault in modo da eliminare i blocchi di dati duplicati per ottenere risparmi di spazio. È possibile utilizzare la deduplica quando i risparmi di spazio sono pari almeno al 10% e quando il tasso di sovrascrittura dei dati non è rapido. La deduplica viene spesso utilizzata per ambienti virtualizzati, condivisioni di file e dati di backup. Questa impostazione è disattivata per impostazione predefinita. Se attivata, questa operazione viene avviata dopo ogni trasferimento.
+
++
+** Attiva compressione
++
+Consente la compressione trasparente dei dati. È possibile utilizzare la compressione quando i risparmi di spazio sono pari ad almeno il 10%, quando il potenziale overhead è accettabile e quando sono disponibili risorse di sistema sufficienti per il completamento della compressione durante le ore non di punta. In una relazione SnapVault, questa impostazione è disattivata per impostazione predefinita. La compressione è disponibile solo quando è selezionata la deduplica.
+
+** Compressione in linea
++
+Consente risparmi immediati di spazio comprimendo i dati prima di scrivere i dati su disco. È possibile utilizzare la compressione inline quando il sistema non ha più del 50% di utilizzo durante le ore di punta e quando il sistema può ospitare nuove scritture e CPU aggiuntive durante le ore di punta. Questa impostazione è disponibile solo se è selezionato "`Enable Compression`" (Abilita compressione).
+
+
+
+* *Attiva crescita automatica*
++
+Consente di espandere automaticamente il volume di destinazione quando la percentuale di spazio libero è inferiore alla soglia specificata, purché lo spazio sia disponibile sull'aggregato associato.
+
+* *Dimensione massima*
++
+Imposta la percentuale massima alla quale un volume può crescere. Il valore predefinito è superiore del 20% rispetto alle dimensioni del volume di origine. Un volume non cresce automaticamente se la dimensione corrente è maggiore o uguale alla percentuale massima di crescita automatica. Questo campo è attivato solo quando è attivata l'impostazione di crescita automatica.
+
+* *Dimensione incremento*
++
+Specifica l'incremento percentuale in base al quale il volume cresce automaticamente prima di raggiungere la percentuale massima del volume di origine.
+
+* *Garanzia di spazio*
++
+Garantisce che sul volume secondario sia allocato spazio sufficiente per garantire il successo dei trasferimenti di dati. L'impostazione della garanzia di spazio può essere una delle seguenti:
+
++
+** File
+** Volume
+** Nessuno ad esempio, un volume da 200 GB contiene file per un totale di 50 GB; tuttavia, tali file contengono solo 10 GB di dati. La garanzia del volume assegna 200 GB al volume di destinazione, indipendentemente dal contenuto dell'origine. La garanzia del file assegna 50 GB per garantire che lo spazio riservato ai file sull'origine sia sufficiente; selezionando Nessuno in questo scenario, sulla destinazione vengono allocati solo 10 GB per lo spazio effettivo utilizzato dai dati del file sull'origine.
+
+
++
+La garanzia di spazio è impostata su Volume per impostazione predefinita.
+
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti operazioni:
+
+* *Applica*
++
+Salva le impostazioni di efficienza selezionate e le applica facendo clic su *Apply* (Applica) nella finestra di dialogo Configure Protection (Configura protezione).
+
+* *Annulla*
++
+Elimina le selezioni e chiude la finestra di dialogo Advanced Destination Settings (Impostazioni di destinazione avanzate).
+
+
+
+*Informazioni correlate*
+
+http://www.netapp.com/us/media/tr-3966.pdf["Report tecnico NetApp 3966: Guida all'implementazione e all'implementazione della compressione e deduplica dei dati NetApp (Clustered Data ONTAP)"]

@@ -1,0 +1,31 @@
+---
+permalink: online-help/concept-backup-and-restore-using-a-mysql-database-dump.html 
+sidebar: sidebar 
+keywords:  
+summary: Un backup è una copia del database e dei file di configurazione di Unified Manager che è possibile utilizzare in caso di guasto del sistema o perdita di dati. È possibile pianificare la scrittura di un backup in una destinazione locale o remota. Si consiglia di definire una postazione remota esterna al sistema host di Unified Manager. 
+---
+= Che cos'è un backup del database
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un backup è una copia del database e dei file di configurazione di Unified Manager che è possibile utilizzare in caso di guasto del sistema o perdita di dati. È possibile pianificare la scrittura di un backup in una destinazione locale o remota. Si consiglia di definire una postazione remota esterna al sistema host di Unified Manager.
+
+Un backup è costituito da un singolo file nella directory di backup e da uno o più file nella directory del repository del database. Il file nella directory di backup è molto piccolo perché contiene solo un puntatore ai file che si trovano nella directory del repository del database necessari per ricreare il backup.
+
+La prima volta che si genera un backup, viene creato un singolo file nella directory di backup e viene creato un file di backup completo nella directory del repository del database. Alla successiva generazione di un backup, nella directory di backup viene creato un singolo file e nella directory del repository del database viene creato un file di backup incrementale che contiene le differenze rispetto al file di backup completo. Questo processo continua con la creazione di backup aggiuntivi, fino all'impostazione di conservazione massima, come mostrato nella figura seguente.
+
+image::../media/database-backup.gif[backup del database]
+
+[NOTE]
+====
+Non rinominare o rimuovere i file di backup in queste due directory, altrimenti le successive operazioni di ripristino non avranno esito positivo.
+
+====
+Se si scrivono i file di backup nel sistema locale, è necessario avviare un processo per copiare i file di backup in una posizione remota in modo che siano disponibili in caso di problemi di sistema che richiedono un ripristino completo.
+
+Prima di iniziare un'operazione di backup, Unified Manager esegue un controllo di integrità per verificare che tutti i file di backup e le directory di backup richiesti esistano e siano scrivibili. Inoltre, verifica che vi sia spazio sufficiente nel sistema per creare il file di backup.
+
+Nota: È possibile ripristinare un backup solo sulla stessa versione di Unified Manager. Ad esempio, se è stato creato un backup su Unified Manager 9.4, il backup può essere ripristinato solo sui sistemi Unified Manager 9.4.

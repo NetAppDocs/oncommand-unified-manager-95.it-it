@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-the-default-rule-is.html 
+sidebar: sidebar 
+keywords:  
+summary: La regola predefinita è la regola presente nel criterio dati di una macchina virtuale di storage con Infinite Volume. Viene utilizzato per determinare il posizionamento dei dati scritti nel volume infinito quando nessuna delle condizioni nelle regole esistenti corrisponde ai dati scritti. 
+---
+= Qual è la regola predefinita
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La regola predefinita è la regola presente nel criterio dati di una macchina virtuale di storage (SVM) con Infinite Volume. Viene utilizzato per determinare il posizionamento dei dati scritti nel volume infinito quando nessuna delle condizioni nelle regole esistenti corrisponde ai dati scritti.
+
+La regola predefinita è sempre l'ultima regola di un criterio dati e non può essere riordinata. Ad esempio, si consideri una policy sui dati con tre regole. La regola 1 inserisce tutti i file .pdf nella classe __high_performance__storage. La regola 2 colloca tutti i file di proprietà dell'amministratore e i nomi dei file che terminano con *.xls nella classe di storage _archival_costituente_. La terza regola è la regola predefinita con la classe di storage _low_performance_.
+
+Quando un insieme di file *.jpg non di proprietà dell'amministratore viene scritto nel volume Infinite, viene utilizzata la regola predefinita per inserire questi file .jpg nella classe di storage _low_performance_. Le regole 1 e 2 non vengono utilizzate perché i dati scritti non corrispondono a queste regole.

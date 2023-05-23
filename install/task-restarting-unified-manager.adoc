@@ -1,0 +1,35 @@
+---
+permalink: install/task-restarting-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: Potrebbe essere necessario riavviare Unified Manager dopo aver apportato modifiche alla configurazione. 
+---
+= Riavvio di Unified Manager in Red Hat Enterprise Linux o CentOS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Potrebbe essere necessario riavviare Unified Manager dopo aver apportato modifiche alla configurazione.
+
+
+
+== Prima di iniziare
+
+È necessario disporre dell'accesso utente root al server Red Hat Enterprise Linux o CentOS su cui è installato Unified Manager.
+
+
+
+== Fasi
+
+. Accedere come utente root al server sul quale si desidera riavviare il servizio Unified Manager.
+. Arrestare il servizio Unified Manager e il software MySQL associato nell'ordine indicato:
++
+Quando viene installato in un'installazione ad alta disponibilità, arrestare il servizio Unified Manager utilizzando i comandi di VCS Operations Manager o VCS.
+
+. Avviare Unified Manager nell'ordine indicato:
++
+Una volta installato in una configurazione ad alta disponibilità, avviare il servizio Unified Manager utilizzando i comandi di VCS Operations Manager o VCS.
+
+

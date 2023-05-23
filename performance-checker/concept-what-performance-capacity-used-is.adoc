@@ -1,0 +1,29 @@
+---
+permalink: performance-checker/concept-what-performance-capacity-used-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Il contatore delle performance utilizzate consente di identificare se le performance di un nodo o di un aggregato stanno raggiungendo un punto in cui le performance potrebbero degradarsi se i carichi di lavoro aumentano. Può anche mostrare se un nodo o un aggregato è attualmente in uso in eccesso durante periodi di tempo specifici. La capacità di performance utilizzata è simile all"utilizzo, ma la prima fornisce maggiori informazioni sulle capacità di performance disponibili in una risorsa fisica per un carico di lavoro specifico.' 
+---
+= Qual è la capacità di performance utilizzata
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il contatore delle performance utilizzate consente di identificare se le performance di un nodo o di un aggregato stanno raggiungendo un punto in cui le performance potrebbero degradarsi se i carichi di lavoro aumentano. Può anche mostrare se un nodo o un aggregato è attualmente in uso in eccesso durante periodi di tempo specifici. La capacità di performance utilizzata è simile all'utilizzo, ma la prima fornisce maggiori informazioni sulle capacità di performance disponibili in una risorsa fisica per un carico di lavoro specifico.
+
+[NOTE]
+====
+I dati relativi alla capacità delle performance sono disponibili solo quando i nodi di un cluster sono installati con il software ONTAP 9.0 o versione successiva.
+
+====
+La capacità di performance ottimale utilizzata è il punto in cui un nodo o un aggregato ha un utilizzo e una latenza ottimali (tempo di risposta) e viene utilizzato in modo efficiente. Nella figura seguente viene mostrata una curva di latenza rispetto all'utilizzo di esempio per un aggregato.
+
+image::../media/headroom-chart.gif[tabella dello spazio di testa]
+
+In questo esempio, il _punto operativo_ indica che l'aggregato sta attualmente operando al 50% di utilizzo con una latenza di 1.0 ms/op. In base alle statistiche acquisite dall'aggregato, Unified Manager determina che è disponibile una capacità di performance aggiuntiva per questo aggregato. In questo esempio, il _punto ottimale_ viene identificato come il punto in cui l'aggregato è al 80% di utilizzo con latenza di 2.0 ms/op. Pertanto, è possibile aggiungere più volumi e LUN a questo aggregato in modo che i sistemi vengano utilizzati in modo più efficiente.
+
+Si prevede che il contatore della capacità di performance utilizzata sia un numero maggiore del contatore "`Utilization`", in quanto la capacità di performance aumenta l'impatto sulla latenza. Ad esempio, se si utilizza un nodo o un aggregato al 70%, il valore della capacità delle performance può essere compreso tra il 80% e il 100%, a seconda del valore di latenza.
+
+In alcuni casi, tuttavia, il contatore di utilizzo potrebbe essere più elevato nella pagina Dashboard/Performance. Questo è normale perché il dashboard aggiorna i valori correnti del contatore in ogni periodo di raccolta; non visualizza le medie in un periodo di tempo come le altre pagine nell'interfaccia utente di Unified Manager. Il contatore della capacità di performance utilizzata viene utilizzato al meglio come indicatore delle performance medie in un periodo di tempo, mentre il contatore di utilizzo viene utilizzato al meglio per determinare l'utilizzo istantaneo di una risorsa.

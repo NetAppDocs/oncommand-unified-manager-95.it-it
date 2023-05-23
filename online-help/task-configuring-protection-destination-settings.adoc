@@ -1,0 +1,39 @@
+---
+permalink: online-help/task-configuring-protection-destination-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile configurare le impostazioni di efficienza della destinazione come deduplica, compressione, crescita automatica e garanzia di spazio su una destinazione di protezione utilizzando la finestra di dialogo Advanced Destination Settings (Impostazioni di destinazione avanzate). Queste impostazioni vengono utilizzate quando si desidera massimizzare l"utilizzo dello spazio su un volume di destinazione o secondario.' 
+---
+= Configurazione delle impostazioni di efficienza della destinazione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile configurare le impostazioni di efficienza della destinazione come deduplica, compressione, crescita automatica e garanzia di spazio su una destinazione di protezione utilizzando la finestra di dialogo Advanced Destination Settings (Impostazioni di destinazione avanzate). Queste impostazioni vengono utilizzate quando si desidera massimizzare l'utilizzo dello spazio su un volume di destinazione o secondario.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== A proposito di questa attività
+
+Per impostazione predefinita, le impostazioni di efficienza corrispondono a quelle del volume di origine, ad eccezione delle impostazioni di compressione in una relazione SnapVault, disattivate per impostazione predefinita.
+
+
+
+== Fasi
+
+. Fare clic sulla scheda *SnapMirror* o *SnapVault* nella finestra di dialogo *Configura protezione*, a seconda del tipo di relazione che si sta configurando.
+. Fare clic su *Advanced* (Avanzate) nell'area *Destination Information* (informazioni destinazione).
++
+Viene visualizzata la finestra di dialogo Advanced Destination Settings (Impostazioni di destinazione avanzate).
+
+. Attivare o disattivare le impostazioni di efficienza per deduplica, compressione, crescita automatica e garanzia di spazio, secondo necessità.
+. Fare clic su *Apply* (Applica) per salvare le selezioni e tornare alla finestra di dialogo *Configure Protection* (Configura protezione).
+

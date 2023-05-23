@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-service-processor-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi del Service Processor forniscono informazioni sullo stato del processore, in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all"area di impatto e includono il nome dell"evento e della trap, il livello di impatto, il tipo di origine e la severità.' 
+---
+= Eventi del Service Processor
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi del Service Processor forniscono informazioni sullo stato del processore, in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all'area di impatto e includono il nome dell'evento e della trap, il livello di impatto, il tipo di origine e la severità.
+
+
+
+== Area di impatto: Disponibilità
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Service Processor non configurato(ocumEvtServiceProcessorNotConfigured)
+ a| 
+Rischio
+ a| 
+Nodo
+ a| 
+Attenzione
+
+
+
+ a| 
+Service Processor offline (ocumEvtServiceProcessoroffline)
+ a| 
+Rischio
+ a| 
+Nodo
+ a| 
+Errore
+
+|===

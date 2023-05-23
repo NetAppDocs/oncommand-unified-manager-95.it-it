@@ -1,0 +1,28 @@
+---
+permalink: online-help/concept-how-group-actions-work-on-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Un"azione di gruppo è un"operazione eseguita su tutti gli oggetti di storage di un gruppo. Ad esempio, è possibile configurare un"azione di gruppo di soglie del volume per modificare contemporaneamente i valori di soglia di tutti i volumi di un gruppo.' 
+---
+= Come funzionano le azioni di gruppo sugli oggetti storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un'azione di gruppo è un'operazione eseguita su tutti gli oggetti di storage di un gruppo. Ad esempio, è possibile configurare un'azione di gruppo di soglie del volume per modificare contemporaneamente i valori di soglia di tutti i volumi di un gruppo.
+
+I gruppi supportano tipi di azione di gruppo univoci. È possibile disporre di un gruppo con un solo tipo di azione di gruppo per la soglia di integrità del volume. Tuttavia, è possibile configurare un diverso tipo di azione di gruppo, se disponibile, per lo stesso gruppo. Il rango di un'azione di gruppo determina l'ordine in cui l'azione viene applicata agli oggetti di storage. La pagina dei dettagli di un oggetto di storage fornisce informazioni sull'azione di gruppo applicata all'oggetto di storage.
+
+
+
+== Esempio di azioni di gruppo univoche
+
+Si consideri un volume A che appartiene ai gruppi G1 e G2 e le seguenti azioni di gruppo relative alla soglia di integrità del volume sono configurate per questi gruppi:
+
+* `Change_capacity_threshold` azione di gruppo con rango 1, per configurare la capacità del volume
+* `Change_snapshot_copies` Azione di gruppo con rango 2, per la configurazione delle copie Snapshot del volume
+
+
+Il `Change_capacity_threshold` l'azione di gruppo ha sempre la priorità su `Change_snapshot_copies` Azione di gruppo e viene applicata al volume A. Quando Unified Manager completa un ciclo di monitoraggio, gli eventi relativi alla soglia di integrità del volume A vengono rivalutati per `Change_capacity_threshold` azione di gruppo. Non è possibile configurare un altro tipo di azione di gruppo per la soglia del volume per il gruppo G1 o G2.

@@ -1,0 +1,55 @@
+---
+permalink: online-help/reference-storage-shelf-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi relativi agli shelf di storage indicano se lo shelf di storage presenta anomalie, in modo da poter monitorare potenziali problemi. Gli eventi sono raggruppati in base all"area di impatto e includono il nome dell"evento e della trap, il livello di impatto, il tipo di origine e la severità.' 
+---
+= Eventi di shelf storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi relativi agli shelf di storage indicano se lo shelf di storage presenta anomalie, in modo da poter monitorare potenziali problemi. Gli eventi sono raggruppati in base all'area di impatto e includono il nome dell'evento e della trap, il livello di impatto, il tipo di origine e la severità.
+
+
+
+== Area di impatto: Disponibilità
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Intervallo di tensione anomalo (ocumEvtShelfVoltageAbnormal)
+ a| 
+Rischio
+ a| 
+Shelf di storage
+ a| 
+Attenzione
+
+
+
+ a| 
+Intervallo di corrente anomalo (ocumEvtShelfCurrentAbnormal)
+ a| 
+Rischio
+ a| 
+Shelf di storage
+ a| 
+Attenzione
+
+
+
+ a| 
+Temperatura anomala(ocumEvtShelfTemperatureAbnormal)
+ a| 
+Rischio
+ a| 
+Shelf di storage
+ a| 
+Attenzione
+
+|===

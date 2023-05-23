@@ -1,0 +1,51 @@
+---
+permalink: online-help/reference-add-action-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: La finestra di dialogo Aggiungi azione di gruppo consente di configurare le azioni di gruppo che possono essere applicate agli oggetti di storage di un gruppo selezionato. 
+---
+= Finestra di dialogo Add Group Action (Aggiungi azione di gruppo)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La finestra di dialogo Aggiungi azione di gruppo consente di configurare le azioni di gruppo che possono essere applicate agli oggetti di storage di un gruppo selezionato.
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+* *Nome*
++
+Specifica il nome dell'azione.
+
+* *Descrizione*
++
+Specifica la descrizione dell'azione.
+
+* *Gruppo*
++
+Specifica il gruppo per cui è configurata l'azione.
+
+* *Tipo di azione*
++
+Specifica il tipo di azione configurato. In base al tipo di azione selezionato, la finestra di dialogo Add Group Action (Aggiungi azione di gruppo) si espande, consentendo di configurare un'azione di gruppo fornendo i valori richiesti.
+
++
+Al momento Unified Manager supporta solo il tipo di azione di soglia del volume.
+
+
+
+
+
+== Pulsanti di comando
+
+* *Aggiungi*
++
+Aggiunge la nuova azione e chiude la finestra di dialogo.
+
+* *Annulla*
++
+Chiude la finestra di dialogo Aggiungi azione gruppo senza salvare le modifiche.
+
+

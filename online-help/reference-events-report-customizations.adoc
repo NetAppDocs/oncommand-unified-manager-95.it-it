@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-events-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile creare report per monitorare gli eventi in sospeso su un cluster. 
+---
+= Personalizzazioni dei report degli eventi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile creare report per monitorare gli eventi in sospeso su un cluster.

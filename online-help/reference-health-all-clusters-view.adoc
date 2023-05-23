@@ -1,0 +1,128 @@
+---
+permalink: online-help/reference-health-all-clusters-view.html 
+sidebar: sidebar 
+keywords:  
+summary: La pagina di inventario Health/Clusters consente di aggiungere cluster e visualizzare informazioni dettagliate sui cluster monitorati. 
+---
+= Pagina di inventario di salute/cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina di inventario Health/Clusters consente di aggiungere cluster e visualizzare informazioni dettagliate sui cluster monitorati.
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== Pulsanti di comando
+
+* *Visualizza stato di monitoraggio*
++
+Consente di visualizzare gli stati di monitoraggio dei cluster selezionati accedendo alla pagina Configurazione/origini dati cluster.
+
+* *Annota*
++
+Consente di annotare il cluster selezionato.
+
+* *Aggiorna elenco*
++
+Aggiorna l'elenco dei cluster e le proprietà associate al cluster.
+
+* *Esporta*
++
+Consente di esportare i dettagli di tutti i cluster monitorati in valori separati da virgole (`.csv`).
+
+
+
+
+
+== Tabella dei cluster
+
+La tabella Clusters visualizza le proprietà di tutti i cluster rilevati. È possibile utilizzare i filtri di colonna per personalizzare i dati visualizzati:
+
+* *Stato*
++
+Icona che identifica lo stato corrente del cluster. Lo stato può essere critico (image:../media/sev-critical-um60.png[""]), errore (image:../media/sev-error-um60.png[""]), Avviso (image:../media/sev-warning-um60.png[""]), o normale (image:../media/sev-normal-um60.png[""]).
+
++
+È possibile posizionare il cursore sull'icona per visualizzare ulteriori informazioni sull'evento o sugli eventi generati per il cluster.
+
++
+Se lo stato del cluster si basa su un singolo evento, è possibile visualizzare informazioni quali il nome dell'evento, l'ora e la data in cui è stato generato l'evento, il nome dell'amministratore a cui è assegnato l'evento e la causa dell'evento. Fare clic sul pulsante *View Details* (Visualizza dettagli) per visualizzare ulteriori informazioni sull'evento.
+
++
+Se lo stato del cluster si basa su più eventi della stessa severità, vengono visualizzati i primi tre eventi, insieme a informazioni quali il nome dell'evento, l'ora e la data in cui vengono generati gli eventi e il nome dell'amministratore a cui è assegnato l'evento. È possibile visualizzare ulteriori dettagli su ciascuno di questi eventi facendo clic sul nome dell'evento. È inoltre possibile fare clic sul collegamento**View All Events** (Visualizza tutti gli eventi) per visualizzare l'elenco degli eventi generati.
+
+* *Cluster*
++
+Il nome del cluster.
+
+* *Stato della comunicazione*
++
+Se il cluster è raggiungibile o meno.
+
++
+Se il cluster è raggiungibile, lo stato viene visualizzato correttamente. Se il cluster non è raggiungibile o le credenziali di accesso non sono valide, lo stato viene visualizzato come non raggiungibile.
+
+* *Stato del sistema*
++
+Informazioni di alto livello sullo stato del cluster, che vengono calcolate in base allo stato dei vari sottosistemi del cluster.
+
++
+I valori possibili sono OK, OK con sospeso, degradato e componenti non raggiungibili. Questi valori sono determinati dai monitor di stato nel software ONTAP.
+
+* *Nome host o Indirizzo IP*
++
+L'FQDN, il nome breve o l'indirizzo IP della LIF di gestione del cluster utilizzata per la connessione al cluster.
+
+* *FQDN*
++
+Il nome di dominio completo (FQDN) del cluster.
+
+* *Versione del sistema operativo*
++
+Versione di ONTAP in esecuzione nel cluster.
+
++
+Se i nodi del cluster eseguono versioni diverse di ONTAP, viene visualizzata la versione ONTAP più recente.
+
+* *Numero di nodi*
++
+Il numero di nodi che appartengono al cluster.
+
+* *Ora dell'ultimo aggiornamento*
++
+Indicazione dell'ora dell'ultima raccolta dei campioni di monitoraggio del cluster.
+
+* *Numero di serie*
++
+Il numero di serie del cluster.
+
+* *Contatto*
++
+Le informazioni di contatto del cluster.
+
+* *Posizione*
++
+La posizione del cluster.
+
+* *FIPS attivato*
++
+Se la modalità FIPS è attivata sul cluster.
+
+
+
+
+
+== Pannello Filters (filtri)
+
+Il pannello filtri consente di impostare i filtri per personalizzare la visualizzazione delle informazioni nell'elenco dei cluster. È possibile selezionare i filtri nelle colonne Status (Stato), Communication Status (Stato comunicazione), System Health (Stato sistema) e Annotation (Annotazione).
+
+[NOTE]
+====
+I filtri specificati nel pannello filtri sovrascrivono i filtri specificati per le colonne nell'elenco dei cluster.
+
+====

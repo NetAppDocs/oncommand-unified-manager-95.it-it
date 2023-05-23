@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-quotas-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare l"opzione appropriata nella scheda quote utente e gruppo della pagina di inventario delle macchine virtuali di salute/storage per configurare il formato della notifica e-mail che viene inviata quando si verifica un problema relativo alla quota e per configurare le regole per specificare gli indirizzi e-mail in base alla quota utente.' 
+---
+= Descrizione delle finestre di dialogo quote
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare l'opzione appropriata nella scheda quote utente e gruppo della pagina di inventario delle macchine virtuali di salute/storage per configurare il formato della notifica e-mail che viene inviata quando si verifica un problema relativo alla quota e per configurare le regole per specificare gli indirizzi e-mail in base alla quota utente.

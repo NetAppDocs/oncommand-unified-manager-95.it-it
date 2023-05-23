@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-deleting-resource-pools.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile eliminare i pool di risorse quando non sono più necessari. Ad esempio, è possibile ridistribuire gli aggregati dei membri da un pool di risorse a diversi altri pool di risorse, rendendo obsoleto il pool di risorse originale. 
+---
+= Eliminazione dei pool di risorse
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile eliminare i pool di risorse quando non sono più necessari. Ad esempio, è possibile ridistribuire gli aggregati dei membri da un pool di risorse a diversi altri pool di risorse, rendendo obsoleto il pool di risorse originale.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== A proposito di questa attività
+
+Il pulsante *Delete* (Elimina) è attivato solo quando è selezionato almeno un pool di risorse.
+
+
+
+== Fasi
+
+. Nel riquadro di spostamento di sinistra, fare clic su *Protection* > *Resource Pools*.
+. Selezionare il pool di risorse che si desidera eliminare.
+. Fare clic su *Delete* (Elimina).
++
+Il pool di risorse viene rimosso dall'elenco dei pool di risorse e i relativi aggregati vengono rimossi dall'elenco dei membri.
+
+

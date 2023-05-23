@@ -1,0 +1,50 @@
+---
+permalink: health-checker/task-creating-custom-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: In base ai requisiti del data center, è possibile creare regole personalizzate e aggiungerle a una policy sui dati per determinare il posizionamento dei dati scritti su SVM con Infinite Volume. È possibile creare regole personalizzate dalla finestra di dialogo Crea regola senza utilizzare alcun modello esistente. 
+---
+= Creazione di regole personalizzate
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+In base ai requisiti del data center, è possibile creare regole personalizzate e aggiungerle a una policy sui dati per determinare il posizionamento dei dati scritti su SVM con Infinite Volume. È possibile creare regole personalizzate dalla finestra di dialogo Crea regola senza utilizzare alcun modello esistente.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+* Il cluster contenente SVM con Infinite Volume con classi di storage deve essere aggiunto al database di Unified Manager.
+
+
+
+
+== A proposito di questa attività
+
+La scheda Data Policy (Policy dati) è visibile solo per una SVM con Infinite Volume (Volume infinito).
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Health* > *SVM*.
+. Nella pagina di inventario *Health/Storage Virtual Machines*, selezionare la SVM appropriata.
+. Fare clic su *Data Policy*.
+. Fare clic su *Create* (Crea).
+. Nella finestra di dialogo *Crea regola*, selezionare *regola personalizzata* dall'elenco *modello*.
+. Nell'area *Criteri di corrispondenza*, aggiungere le condizioni necessarie.
++
+Le condizioni consentono di creare una regola in base a tipi di file, percorsi di directory o proprietari. Una combinazione di queste condizioni è il set di condizioni. Ad esempio, è possibile disporre di una regola: "`inserire tutti i file .mp3 di proprietà di John nella classe di storage Bronze`".
+
+. Selezionare una classe di storage appropriata dall'elenco a discesa *inserire il contenuto corrispondente nella classe di storage*.
+. Fare clic su *Create* (Crea).
++
+La nuova regola creata viene visualizzata nella scheda Data Policy (Criteri dati).
+
+. Visualizzare in anteprima qualsiasi altra modifica apportata alla policy dei dati.
+. Fare clic su *Activate* (attiva) per attivare le modifiche alle proprietà della regola nella SVM.
+

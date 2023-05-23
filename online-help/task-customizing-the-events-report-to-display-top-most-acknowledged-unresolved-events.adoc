@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-top-most-acknowledged-unresolved-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile personalizzare il report Eventi per visualizzare gli eventi più riconosciuti, filtrati in base allo stato dell"evento. È possibile ordinarli in ordine decrescente per visualizzare il numero di giorni in sospeso.' 
+---
+= Personalizzazione del report Eventi per visualizzare gli eventi non risolti più riconosciuti
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report Eventi per visualizzare gli eventi più riconosciuti, filtrati in base allo stato dell'evento. È possibile ordinarli in ordine decrescente per visualizzare il numero di giorni in sospeso.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Per filtrare gli eventi confermati, fare clic nella colonna *Stato* e aprire la finestra di dialogo *filtro* facendo clic su image:../media/click-to-filter.gif[""] icona.
+. Dall'elenco a discesa *condizione*, selezionare *uguale a*.
+. Fare clic su *Select Values* (Seleziona valori) e selezionare *Acknowledged*
+. Fare clic su *OK*.
+. Per filtrare ulteriormente il report, fare clic nella colonna *confermato da* e aprire la finestra di dialogo *filtro* facendo clic su image:../media/click-to-filter.gif[""] icona.
+. Dall'elenco a discesa *condizione*, selezionare *uguale a*.
+. Fare clic su *Select Values* (Seleziona valori) e selezionare *Name* (Nome).
+. Fare clic su *OK*.
+. Per ordinare gli eventi in sospeso per il maggior numero di giorni, fare clic sulla colonna *giorni in sospeso* e fare clic su image:../media/click-to-see-menu.gif[""].
+. Selezionare *Filter* > *Top/Bottom N*.
+. Nella finestra di dialogo *Top/Bottom N*, selezionare *Top N* dal campo *Filter* e immettere un valore nel campo di testo.
+. Fare clic su *OK*.
+

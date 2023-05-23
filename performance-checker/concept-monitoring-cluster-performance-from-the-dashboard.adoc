@@ -1,0 +1,14 @@
+---
+permalink: performance-checker/concept-monitoring-cluster-performance-from-the-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: Il pannello di controllo delle prestazioni di Gestore di sistema di OnCommand visualizza lo stato delle performance di alto livello di tutti i cluster monitorati da questa istanza di Gestore unificato. Consente di valutare le performance generali dei cluster gestiti e di annotare, individuare o assegnare rapidamente per la risoluzione eventuali eventi specifici identificati. 
+---
+= Monitoraggio delle performance del cluster dalla dashboard delle performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il pannello di controllo delle prestazioni di Gestore di sistema di OnCommand visualizza lo stato delle performance di alto livello di tutti i cluster monitorati da questa istanza di Gestore unificato. Consente di valutare le performance generali dei cluster gestiti e di annotare, individuare o assegnare rapidamente per la risoluzione eventuali eventi specifici identificati.

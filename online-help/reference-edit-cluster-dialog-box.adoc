@@ -1,0 +1,38 @@
+---
+permalink: online-help/reference-edit-cluster-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La finestra di dialogo Edit Cluster (Modifica cluster) consente di modificare le impostazioni di connessione di un cluster esistente, inclusi l"indirizzo IP, la porta e il protocollo.' 
+---
+= Finestra di dialogo Edit Cluster (Modifica cluster)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La finestra di dialogo Edit Cluster (Modifica cluster) consente di modificare le impostazioni di connessione di un cluster esistente, inclusi l'indirizzo IP, la porta e il protocollo.
+
+È possibile modificare i seguenti campi:
+
+* *Nome host o Indirizzo IP*
++
+Consente di specificare l'FQDN, il nome breve o l'indirizzo IP (IPv4 o IPv6) della LIF di gestione del cluster utilizzata per la connessione al cluster.
+
+* *Nome utente*
++
+Consente di specificare un nome utente da utilizzare per accedere al cluster.
+
+* *Password*
++
+Consente di specificare una password per il nome utente specificato.
+
+* *Protocollo*
++
+Consente di specificare il tipo di protocollo che è possibile configurare sul cluster. È possibile attivare HTTP o HTTPS (per una connessione sicura). La connessione viene stabilita con il cluster utilizzando entrambi i protocolli e HTTPS viene scelto su HTTP. Per impostazione predefinita, HTTPS è attivato con la porta predefinita 443.
+
+* *Porta*
++
+Consente di specificare il numero di porta utilizzato per la connessione al cluster. Se la porta non viene specificata, viene utilizzata la porta predefinita per il protocollo selezionato (80 per HTTP o 443 per HTTPS).
+
+

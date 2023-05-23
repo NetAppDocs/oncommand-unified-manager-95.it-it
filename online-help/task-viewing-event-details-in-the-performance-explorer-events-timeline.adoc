@@ -1,0 +1,56 @@
+---
+permalink: online-help/task-viewing-event-details-in-the-performance-explorer-events-timeline.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile visualizzare tutti gli eventi e i relativi dettagli nel riquadro Cronologia eventi di Performance Explorer. Si tratta di un metodo rapido ed efficiente per visualizzare tutti gli eventi relativi allo stato di salute e alle prestazioni che si sono verificati sull"oggetto root durante un intervallo di tempo specificato, che può essere utile per la risoluzione dei problemi relativi alle prestazioni.' 
+---
+= Visualizzazione dei dettagli dell'evento nella cronologia degli eventi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile visualizzare tutti gli eventi e i relativi dettagli nel riquadro Cronologia eventi di Performance Explorer. Si tratta di un metodo rapido ed efficiente per visualizzare tutti gli eventi relativi allo stato di salute e alle prestazioni che si sono verificati sull'oggetto root durante un intervallo di tempo specificato, che può essere utile per la risoluzione dei problemi relativi alle prestazioni.
+
+
+
+== A proposito di questa attività
+
+Il riquadro Cronologia eventi mostra eventi critici, di errore, di avviso e informativi che si sono verificati sull'oggetto root durante l'intervallo di tempo selezionato. Ogni severità di evento ha una propria tempistica. Gli eventi singoli e multipli sono rappresentati da un punto sulla timeline. Per visualizzare i dettagli dell'evento, posizionare il cursore su un punto dell'evento. Per aumentare la granularità visiva di più eventi, è possibile ridurre l'intervallo di tempo. In questo modo, è possibile distribuire più eventi in singoli eventi, in modo da visualizzare e analizzare separatamente ciascun evento.
+
+Ogni punto dell'evento relativo alle performance sulla timeline degli eventi si allinea verticalmente con un picco corrispondente nelle linee di trend dei grafici dei contatori visualizzate sotto la timeline degli eventi. In questo modo si ottiene una correlazione visiva diretta tra gli eventi e le performance complessive. Anche gli eventi di salute vengono visualizzati sulla timeline, ma questi tipi di eventi non si allineano necessariamente con un picco in uno dei grafici delle performance.
+
+
+
+== Fasi
+
+. Nel riquadro *Timeline eventi*, posizionare il cursore su un punto dell'evento su una timeline per visualizzare un riepilogo dell'evento o degli eventi in quel punto.
++
+Una finestra di dialogo a comparsa visualizza informazioni sui tipi di evento, la data e l'ora in cui si sono verificati gli eventi, lo stato e la durata dell'evento.
+
+. Visualizza i dettagli completi dell'evento per uno o più eventi:
++
+|===
+| A tal fine... | Fare clic qui... 
+
+
+ a| 
+Visualizza i dettagli di un singolo evento
+ a| 
+*Visualizza dettagli evento* nella finestra di dialogo a comparsa.
+
+
+
+ a| 
+Visualizza i dettagli di più eventi
+ a| 
+*Visualizza dettagli evento* nella finestra di dialogo a comparsa.
+
+[NOTE]
+====
+Facendo clic su un singolo evento nella finestra di dialogo Multiple events (più eventi) viene visualizzata la pagina Event Details (Dettagli evento) appropriata.
+
+====
+|===
+

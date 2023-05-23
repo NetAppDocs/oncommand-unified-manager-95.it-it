@@ -1,0 +1,51 @@
+---
+permalink: online-help/reference-cluster-connectivity-status-definitions.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La connettività tra i cluster in una configurazione MetroCluster può essere uno dei seguenti stati: Ottimale, interessato o inattivo. La comprensione degli stati di connettività consente di gestire in modo efficace le configurazioni MetroCluster.' 
+---
+= Definizioni dello stato di connettività del cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La connettività tra i cluster in una configurazione MetroCluster può essere uno dei seguenti stati: Ottimale, interessato o inattivo. La comprensione degli stati di connettività consente di gestire in modo efficace le configurazioni MetroCluster.
+
+|===
+| Stato della connettività | Descrizione | Icona visualizzata 
+
+
+ a| 
+Ottimale
+ a| 
+La connettività tra i cluster nella configurazione MetroCluster è normale.
+ a| 
+image:../media/metrocluster-connectivity-optimal.gif[""]
+
+
+
+ a| 
+Interessato
+ a| 
+Uno o più errori compromettono lo stato di disponibilità del failover; tuttavia, entrambi i cluster nella configurazione MetroCluster sono ancora in funzione. Ad esempio, quando il collegamento ISL non è attivo, quando il collegamento IP dell'intercluster non è attivo o quando il cluster partner non è raggiungibile.
+ a| 
+image:../media/metrocluster-connectivity-impacted.gif[""]
+
+
+
+ a| 
+Giù
+ a| 
+La connettività tra i cluster nella configurazione MetroCluster non è attiva perché uno o entrambi i cluster sono in stato di inattività o i cluster sono in modalità di failover. Ad esempio, quando il cluster del partner è inattivo a causa di un disastro o quando è previsto uno switchover a scopo di test.
+ a| 
+Switchover con errori:
+
+image::../media/metrocluster-connectivity-down.gif[connettività MetroCluster non attiva]
+
+Switchover riuscito:
+
+image::../media/metrocluster-connectivity-failover.gif[failover della connettività MetroCluster]
+
+|===

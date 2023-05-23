@@ -1,0 +1,35 @@
+---
+permalink: online-help/reference-relationship-last-1-month-transfer-rate-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Protection/Volume Transfer Rate (storico) consente di analizzare la quantità di volume di dati che viene trasferita quotidianamente. Questa pagina fornisce inoltre informazioni dettagliate sui trasferimenti di volumi giornalieri e sul tempo necessario per completare l"operazione di trasferimento.' 
+---
+= Pagina Protection/Volume Transfer Rate (storico)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Protection/Volume Transfer Rate (Cronologia) consente di analizzare la quantità di volume di dati che viene trasferita quotidianamente. Questa pagina fornisce inoltre informazioni dettagliate sui trasferimenti di volumi giornalieri e sul tempo necessario per completare l'operazione di trasferimento.
+
+Utilizzare il pulsante *Esporta* per esportare i dettagli di tutti i volumi monitorati in valori separati da virgole (`.csv`).
+
+[NOTE]
+====
+Questa pagina visualizza le informazioni relative ai volumi solo nelle relazioni asincrone: I volumi nelle relazioni sincrone non vengono visualizzati.
+
+====
+* *Dimensione trasferimento totale*
++
+Visualizza le dimensioni totali del trasferimento del volume in gigabyte.
+
+* *Giorno*
++
+Visualizza il giorno in cui è stato avviato il trasferimento del volume.
+
+* *Ora di fine*
++
+Visualizza l'ora di fine del trasferimento del volume con la data.
+
+

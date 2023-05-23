@@ -1,0 +1,71 @@
+---
+permalink: online-help/reference-edit-qtree-thresholds-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile configurare gli avvisi per inviare notifiche quando viene generato un evento correlato alla capacità di un qtree ed eseguire azioni correttive per l"evento. Ad esempio, per la soglia Qtree Full, è possibile configurare un avviso per inviare una notifica quando la condizione persiste in un periodo specificato.' 
+---
+= Finestra di dialogo Edit Qtree Thresholds (Modifica soglie Q
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile configurare gli avvisi per inviare notifiche quando viene generato un evento relativo alla capacità di un qtree ed è possibile intraprendere azioni correttive per l'evento. Ad esempio, per la soglia Qtree Full, è possibile configurare un avviso per inviare una notifica quando la condizione persiste in un periodo specificato.
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+La finestra di dialogo Edit Qtree thresholds (Modifica soglie Qtree) consente di configurare le soglie a livello di qtree applicate ai qtree selezionati. Quando le soglie sono configurate a livello di qtree, hanno la priorità sulle soglie a livello di gruppo o sui valori di soglia a livello globale.
+
+È possibile configurare le impostazioni di soglia per la capacità a livello di qtree. Quando viene configurata un'azione di gruppo di tipo di soglia qtree, i valori di soglia dell'azione di gruppo vengono utilizzati per le impostazioni non configurate a livello di qtree. Quando non è configurata alcuna azione di gruppo di tipo di soglia qtree, le aree della finestra di dialogo Modifica soglie Qtree non configurate, utilizzano valori di soglia globali.
+
+
+
+== Area di capacità
+
+L'area Capacity (capacità) consente di impostare le seguenti condizioni di soglia della capacità del qtree:
+
+* *Spazio quasi pieno*
++
+Specifica la percentuale in cui un qtree viene considerato quasi pieno. Visualizza anche la dimensione del qtree corrispondente al valore di soglia specificato.
+
++
+È inoltre possibile utilizzare il dispositivo di scorrimento per impostare il valore di soglia.
+
+* *Spazio pieno*
++
+Specifica la percentuale in cui un qtree viene considerato pieno. Visualizza anche la dimensione del qtree corrispondente al valore di soglia specificato.
+
++
+È inoltre possibile utilizzare il dispositivo di scorrimento per impostare il valore di soglia.
+
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti operazioni per un qtree selezionato:
+
+* *Ripristina valori predefiniti*
++
+Consente di ripristinare i valori di soglia su uno dei seguenti:
+
++
+** Valori di gruppo, se il qtree appartiene a un gruppo e tale gruppo ha un tipo di azione di soglia qtree.
+** Valori globali, se il qtree non appartiene ad alcun gruppo o se appartiene ad un gruppo che non ha un tipo di azione di soglia qtree.
+
+
+* *Salva*
++
+Salva tutte le impostazioni di soglia.
+
+* *Salva e chiudi*
++
+Salva tutte le impostazioni di soglia e chiude la finestra di dialogo.
+
+* *Annulla*
++
+Ignora le modifiche (se presenti) alle impostazioni di soglia e chiude la finestra di dialogo.
+
+

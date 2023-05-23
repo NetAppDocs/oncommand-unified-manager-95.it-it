@@ -1,0 +1,25 @@
+---
+permalink: online-help/concept-managing-performance-using-perf-capacity-and-available-iops-information.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Performance Capacity (capacità delle performance) indica la quantità di throughput che è possibile ottenere da una risorsa senza superare le performance utili di tale risorsa. Quando viene visualizzata utilizzando i contatori delle performance esistenti, la capacità delle performance è il punto in cui si ottiene il massimo utilizzo da un nodo o aggregato prima che la latenza diventi un problema.' 
+---
+= Gestire le performance utilizzando la capacità delle performance e le informazioni IOPS disponibili
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+_Performance Capacity_ indica la quantità di throughput che è possibile ottenere da una risorsa senza superare le utili performance di tale risorsa. Quando viene visualizzata utilizzando i contatori delle performance esistenti, la capacità delle performance è il punto in cui si ottiene il massimo utilizzo da un nodo o aggregato prima che la latenza diventi un problema.
+
+Unified Manager raccoglie le statistiche sulla capacità delle performance dai nodi e dagli aggregati di ciascun cluster. _Capacità di performance utilizzata_ è la percentuale di capacità di performance attualmente utilizzata e _capacità di performance libera_ è la percentuale di capacità di performance ancora disponibile.
+
+Mentre la capacità delle performance libera fornisce una percentuale della risorsa ancora disponibile, _IOPS disponibili_ indica il numero di IOPS che possono essere aggiunti alla risorsa prima di raggiungere la capacità di performance massima. Utilizzando questa metrica, puoi essere sicuro di poter aggiungere carichi di lavoro di un numero predeterminato di IOPS a una risorsa.
+
+Il monitoraggio delle informazioni sulla capacità delle performance offre i seguenti vantaggi:
+
+* Fornisce assistenza per il provisioning e il bilanciamento del workflow.
+* Consente di evitare di sovraccaricare un nodo o di spingerne le risorse oltre il punto ottimale, riducendo così la necessità di eseguire il troubleshooting.
+* Consente di determinare con maggiore precisione dove potrebbero essere necessarie apparecchiature di storage aggiuntive.
+

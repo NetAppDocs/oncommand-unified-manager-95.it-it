@@ -1,0 +1,21 @@
+---
+permalink: online-help/concept-monitoring-and-managing-clusters-from-the-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le dashboard forniscono informazioni cumulative a colpo d"occhio sullo stato di salute del sistema. Le dashboard consentono di valutare la disponibilità generale, la capacità, le performance e lo stato di protezione dei cluster gestiti e di annotare, individuare, diagnosticare o assegnare rapidamente eventuali problemi specifici che potrebbero verificarsi.' 
+---
+= Monitoraggio dello stato e delle performance del cluster dalle dashboard
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le dashboard forniscono informazioni cumulative a colpo d'occhio sullo stato di salute del sistema. Le dashboard consentono di valutare la disponibilità generale, la capacità, le performance e lo stato di protezione dei cluster gestiti e di annotare, individuare, diagnosticare o assegnare rapidamente eventuali problemi specifici che potrebbero verificarsi.
+
+Tre dashboard offrono viste uniche sullo stato di salute e sulle performance dei cluster:
+
+* La pagina Dashboards/Overview fornisce informazioni sullo stato e le performance degli oggetti storage.
+* La pagina Dashboards/Performance fornisce uno stato di performance di alto livello per tutti i cluster monitorati.
+* La pagina Dashboards/Cluster View fornisce informazioni sui singoli cluster.
+

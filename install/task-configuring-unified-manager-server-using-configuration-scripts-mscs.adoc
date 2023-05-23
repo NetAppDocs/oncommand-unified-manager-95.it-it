@@ -1,0 +1,79 @@
+---
+permalink: install/task-configuring-unified-manager-server-using-configuration-scripts-mscs.html 
+sidebar: sidebar 
+keywords:  
+summary: Dopo aver installato Unified Manager su entrambi i nodi del cluster, è possibile configurare Unified Manager con failover Cluster Manager utilizzando gli script di configurazione. 
+---
+= Configurazione del server Unified Manager con MSCS mediante script di configurazione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dopo aver installato Unified Manager su entrambi i nodi del cluster, è possibile configurare Unified Manager con failover Cluster Manager utilizzando gli script di configurazione.
+
+
+
+== Prima di iniziare
+
+È necessario aver creato un LUN condiviso di dimensioni sufficienti per ospitare i dati di origine di Unified Manager.
+
+
+
+== Fasi
+
+. Accedere al primo nodo del cluster.
+. Creare un ruolo in Windows 2012 o Windows 2016 utilizzando failover Cluster Manager:
++
+.. Avviare failover Cluster Manager.
+.. Creare il ruolo vuoto facendo clic su *ruoli* > *Crea ruolo vuoto*.
+.. Aggiungere l'indirizzo IP globale al ruolo facendo clic con il pulsante destro del mouse su *ruolo* > *Aggiungi risorse* > *altre risorse* > *indirizzo IP*.
++
+[NOTE]
+====
+Entrambi i nodi devono essere in grado di eseguire il ping di questo indirizzo IP perché Unified Manager viene avviato utilizzando questo indirizzo IP dopo la configurazione della disponibilità elevata.
+
+====
+.. Aggiungere il disco dati al ruolo facendo clic con il pulsante destro del mouse su *ruolo* > *Aggiungi storage*.
+
+
+. Eseguire `ha_setup.pl` script sul primo nodo: `perl ha_setup.pl --first -t mscs -g group_name -i ip address -n fully_qualified_domain_cluster_name -f shared_location_path -k data_disk -u user_name -p password`
++
+`C:\Program Files\NetApp\ocum\bin>perl .\ha_setup.pl --first -t mscs -g umgroup -i "IP Address" -n spr38457002.eng.company.com -k "Cluster Disk 2" -f E:\ -u admin -p wx17yz`
+
++
+Lo script è disponibile all'indirizzo `Install_Dir\NetApp\ocum\bin`.
+
++
+** È possibile ottenere il valore di `-g`, `-k`, e. `-i` opzioni tramite `cluster res` comando.
+** Il `-n` L'opzione deve essere l'FQDN dell'indirizzo IP globale che può essere ping da entrambi i nodi.
+
+
+. Verificare che i servizi server, il disco dati e l'indirizzo IP del cluster di Unified Manager siano aggiunti al gruppo di cluster utilizzando la console Web di failover Cluster Manager.
+. Arrestare tutti i servizi server di Unified Manager (MySQL, ocie e ocieau) utilizzando `services.msc` comando.
+. Impostare il gruppo di servizi sul secondo nodo in failover Cluster Manager.
+. Eseguire il comando `perl ha_setup.pl --join -t mscs -f``shared_location_path` Sul secondo nodo del cluster per puntare ai dati del server Unified Manager verso il LUN.
++
+`perl ha_setup.pl --join -t mscs -f E:\`
+
+. Portare tutti i servizi di Unified Manager online utilizzando failover Cluster Manager.
+. Passare manualmente all'altro nodo di Microsoft Cluster Server.
+. Verificare che i servizi del server di Unified Manager si stiano avviando correttamente sull'altro nodo del cluster.
+. Rigenerare il certificato di Unified Manager dopo aver eseguito gli script di configurazione per ottenere l'indirizzo IP globale.
++
+.. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *HTTPS Certificate* (certificato HTTPS) dal menu *Setup*.
+.. Fare clic su *Rigenera certificato HTTPS*.
+
+
++
+Il certificato rigenerato fornisce l'indirizzo IP del cluster, non il nome di dominio completo (FQDN). Per configurare Unified Manager per l'alta disponibilità, è necessario utilizzare l'indirizzo IP globale.
+
+. Accedere all'interfaccia utente di Unified Manager utilizzando quanto segue: `https://<FQDN of Global IP>`
+
+
+
+
+== Al termine
+
+Una volta configurata la disponibilità elevata, è necessario creare una posizione di backup condivisa. La posizione condivisa è necessaria per contenere i backup prima e dopo il failover. Entrambi i nodi della configurazione ad alta disponibilità devono essere in grado di accedere alla posizione condivisa.

@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-editing-the-group-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile modificare il nome e la descrizione di un gruppo creato in Unified Manager. 
+---
+= Modifica di gruppi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare il nome e la descrizione di un gruppo creato in Unified Manager.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== A proposito di questa attività
+
+Quando si modifica un gruppo per aggiornare il nome, è necessario specificare un nome univoco; non è possibile utilizzare un nome di gruppo esistente.
+
+
+
+== Fasi
+
+. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *Gestione* > *gruppi*.
+. Nella scheda *gruppi*, selezionare il gruppo che si desidera modificare, quindi fare clic su *Modifica*.
+. Nella finestra di dialogo *Modifica gruppo*, modificare il nome, la descrizione o entrambi per il gruppo.
+. Fare clic su *Save* (Salva).
+

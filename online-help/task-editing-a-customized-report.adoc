@@ -1,0 +1,26 @@
+---
+permalink: online-help/task-editing-a-customized-report.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile apportare ulteriori modifiche a un report già personalizzato e salvarlo. Non è possibile modificare il nome del report dopo averlo salvato. 
+---
+= Modifica di un report personalizzato
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile apportare ulteriori modifiche a un report già personalizzato e salvarlo. Non è possibile modificare il nome del report dopo averlo salvato.
+
+
+
+== Fasi
+
+. Nel riquadro di spostamento di sinistra, fare clic su *Report*, quindi fare clic su *Esegui report* per il report che si desidera modificare.
++
+Viene visualizzata la pagina Dettagli report.
+
+. Modificare il report in base alle necessità, quindi fare clic su *azioni* > *Salva report personalizzato*.
+. Nella finestra di dialogo *Save Custom Report* (Salva report personalizzato), inserire una breve descrizione delle modifiche apportate al report personalizzato e fare clic su *Save* (Salva).
+

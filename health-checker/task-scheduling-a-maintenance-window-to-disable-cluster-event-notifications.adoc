@@ -1,0 +1,49 @@
+---
+permalink: health-checker/task-scheduling-a-maintenance-window-to-disable-cluster-event-notifications.html 
+sidebar: sidebar 
+keywords:  
+summary: Se si dispone di un downtime pianificato per un cluster, ad esempio per aggiornare il cluster o per spostare uno dei nodi, è possibile eliminare gli eventi e gli avvisi che normalmente verrebbero generati durante tale periodo di tempo, programmando una finestra di manutenzione di Unified Manager. 
+---
+= Pianificazione di una finestra di manutenzione per disattivare le notifiche degli eventi del cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se si dispone di un downtime pianificato per un cluster, ad esempio per aggiornare il cluster o per spostare uno dei nodi, è possibile eliminare gli eventi e gli avvisi che normalmente verrebbero generati durante tale periodo di tempo, programmando una finestra di manutenzione di Unified Manager.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== A proposito di questa attività
+
+Durante una finestra di manutenzione, gli eventi correlati a tutti gli oggetti del cluster vengono ancora generati, ma non vengono visualizzati nella pagina degli eventi e non vengono inviati avvisi o altri tipi di notifica per tali eventi.
+
+L'ora immessa per la finestra di manutenzione si basa sull'ora del server Unified Manager.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Configuration* > *Cluster Data Sources*.
+. Nella colonna *modalità di manutenzione* del cluster, selezionare il pulsante a scorrimento e spostarlo verso destra.
++
+Viene visualizzata la finestra del calendario.
+
+. Selezionare la data e l'ora di inizio e di fine della finestra di manutenzione e fare clic su *Apply* (Applica).
++
+Il messaggio "`Scheduled`" viene visualizzato accanto al pulsante di scorrimento.
+
+
+
+
+
+== Risultati
+
+Una volta raggiunta l'ora di inizio, il cluster passa alla modalità di manutenzione e viene generato un evento "`Object Maintenance Window Started`".

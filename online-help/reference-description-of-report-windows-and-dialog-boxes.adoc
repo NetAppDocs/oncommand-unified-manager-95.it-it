@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-report-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile utilizzare le opzioni per pianificare, condividere, gestire, salvare e importare i report. 
+---
+= Descrizione delle finestre di report e delle finestre di dialogo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare le opzioni per pianificare, condividere, gestire, salvare e importare i report.

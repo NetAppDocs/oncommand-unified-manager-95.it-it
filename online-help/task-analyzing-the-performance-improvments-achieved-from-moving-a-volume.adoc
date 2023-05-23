@@ -1,0 +1,63 @@
+---
+permalink: online-help/task-analyzing-the-performance-improvments-achieved-from-moving-a-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare Unified Manager per analizzare l"impatto di un"operazione di spostamento del volume sulla latenza (tempo di risposta) di altri volumi nel cluster. Lo spostamento di un volume dalle performance elevate in un aggregato meno occupato o in un aggregato con storage flash abilitato consente al volume di funzionare in modo più efficiente.' 
+---
+= Analisi dei miglioramenti delle performance ottenuti dallo spostamento di un volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare Unified Manager per analizzare l'impatto di un'operazione di spostamento del volume sulla latenza (tempo di risposta) di altri volumi nel cluster. Lo spostamento di un volume dalle performance elevate in un aggregato meno occupato o in un aggregato con storage flash abilitato consente al volume di funzionare in modo più efficiente.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+* È necessario aver identificato il nome del volume o del LUN associato che si desidera analizzare.
+* Unified Manager deve aver raccolto e analizzato sette giorni di dati.
+
+
+
+
+== A proposito di questa attività
+
+Unified Manager identifica quando un volume passa da un aggregato all'altro. È in grado di rilevare quando lo spostamento del volume è avvenuto, completato o non riuscito. La pagina Performance/Volume Details (Dettagli performance/volume) visualizza un'icona di evento di modifica per ogni stato dello spostamento del volume, che consente di tenere traccia dell'avvenuta operazione di spostamento e di determinare se potrebbe aver contribuito a un evento di performance.
+
+Se si visualizza la pagina Dettagli evento, è possibile fare clic sul nome di un volume per accedere direttamente alla pagina Dettagli volume/prestazioni.
+
+
+
+== Fasi
+
+. Nella barra *Cerca*, digitare il nome del volume.
+. Fare clic sul nome del volume.
++
+Il volume viene visualizzato nella pagina Performance/Volume Details.
+
+. Nel grafico *dati storici*, regola i cursori per mostrare l'attività della settimana lavorativa precedente.
+. Analizza il grafico *latenza* e il grafico *IOPS* per vedere le performance del volume negli ultimi giorni.
++
+Si supponga di notare un modello coerente di tempi di risposta medi molto elevati di oltre 42 millisecondi per operazione (ms/op), con eventi di performance, ogni giorno della settimana e di decidere di spostare il volume su un aggregato meno occupato per migliorare le performance. Con Gestore di sistema di OnCommand, è possibile spostare il volume in un aggregato con Flash Pool abilitato per un aumento delle performance. Circa un'ora dopo il completamento dello spostamento del volume, è possibile tornare a Unified Manager per confermare che l'operazione di spostamento è stata completata correttamente e che la latenza è migliorata.
+
+. Se la pagina *Performance/Volume Details* non viene visualizzata, cercare il volume che si desidera visualizzare.
+. Nel grafico *dati storici*, fare clic su *1d* per visualizzare l'attività dell'ultimo giorno, alcune ore dopo il completamento dello spostamento del volume.
++
+Nella parte inferiore della pagina, nella barra degli orari degli eventi, un'icona di modifica dell'evento (image:../media/opm-change-icon.gif["Icona di modifica dell'evento"]) viene visualizzato per indicare l'ora in cui è stata completata l'operazione di spostamento del volume. Viene inoltre visualizzata una linea verticale nera dall'icona dell'evento di cambiamento al grafico di latenza.
+
+. Puntare il cursore sull'icona di modifica dell'evento per visualizzare i dettagli dell'evento nell'elenco *Eventi*.
++
+Poiché il volume è stato spostato in un aggregato con Flash Pool attivato, è possibile vedere la modifica nell'i/o di lettura e scrittura nella cache.
+
+. Nel menu *Interrompi dati per*, sotto *Mbps*, selezionare *cache hit ratio*.
++
+Il grafico cache Hit Ratio (rapporto di hit cache) visualizza le statistiche relative alle letture e alle scritture nella cache.
+
++
+Il volume è stato spostato correttamente in un aggregato meno occupato e l'evento di modifica viene evidenziato nell'elenco degli eventi a destra. La latenza media è diminuita significativamente da oltre 42 ms/op a circa 24 ms/op. La latenza corrente è di circa 1.5 ms/op. Nel grafico cache Hit Ratio, la quantità di accessi di lettura e scrittura riusciti alla cache è ora al 100% perché il volume è ora su un aggregato con Flash Pool abilitato.
+
+

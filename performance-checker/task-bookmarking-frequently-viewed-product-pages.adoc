@@ -1,0 +1,30 @@
+---
+permalink: performance-checker/task-bookmarking-frequently-viewed-product-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile aggiungere ai preferiti le pagine dei prodotti utilizzate di frequente dall"interfaccia utente di Unified Manager. In questo modo è possibile tornare rapidamente a queste pagine. Quando si visualizza la pagina in un secondo momento, vengono visualizzati i dati più recenti.' 
+---
+= Aggiunta di segnalibri alle pagine dei prodotti visualizzate di frequente
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile aggiungere ai preferiti le pagine dei prodotti utilizzate di frequente dall'interfaccia utente di Unified Manager. In questo modo è possibile tornare rapidamente a queste pagine. Quando si visualizza la pagina in un secondo momento, vengono visualizzati i dati più recenti.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile copiare il collegamento (URL) alla pagina del prodotto corrente in modo da poterlo incollare in un'e-mail o in un'altra applicazione per condividerlo con altre persone.
+
+
+
+== Fasi
+
+. Creare un segnalibro utilizzando qualsiasi passaggio necessario per aggiungere un segnalibro a una pagina nel browser.
++
+Il collegamento per la pagina viene salvato con i dettagli relativi alla pagina, ma è possibile personalizzare il testo del segnalibro per identificare la pagina: Ad esempio "`Unified Manager | Node: Node-01`" o "`Unified Manager | User-defined Threshold Event: IOPS volume1`".
+
+

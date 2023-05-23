@@ -1,0 +1,79 @@
+---
+permalink: online-help/reference-performance-capacity-used-performance-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'I grafici dei contatori Performance ExplorerPerformance Capacity used (capacità di analisi delle performance utilizzata) visualizzano la percentuale di capacità delle performance consumata dal nodo o dall"aggregato.' 
+---
+= Performance Capacity utilizza i grafici dei contatori delle performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I grafici dei contatori Performance ExplorerPerformance Capacity used (capacità di analisi delle performance utilizzata) visualizzano la percentuale di capacità delle performance consumata dal nodo o dall'aggregato.
+
+[NOTE]
+====
+I dati relativi alla capacità delle performance sono disponibili solo quando i nodi di un cluster sono installati con il software ONTAP 9.0 o versione successiva.
+
+====
+Questi grafici si applicano solo quando l'oggetto selezionato è un nodo o aggregato.
+
+La finestra a comparsa visualizzata quando il cursore si trova nell'area del grafico mostra i valori specifici del contatore in orari specifici.
+
+Nella parte inferiore della pagina del grafico vengono visualizzate le informazioni relative alla capacità di performance minima, massima, media e 95° percentile utilizzata per l'intervallo di tempo selezionato.
+
+Sono disponibili due tipi di grafici delle capacità di performance utilizzate:
+
+
+
+== Performance Capacity used - grafico contatore totale
+
+Visualizza la percentuale di capacità delle performance consumata dal nodo o dall'aggregato.
+
+* Zona verde
++
+Il valore della capacità è al di sotto della soglia di avviso impostata in Unified Manager.
+
+* Zona gialla
++
+Il valore della capacità si sta avvicinando alla soglia di avviso impostata in Unified Manager.
+
+* Zona rossa
++
+Il valore della capacità è superiore alla soglia di avviso e si avvicina alla soglia massima impostata in Unified Manager.
+
+
+
+
+
+== Performance Capacity used (capacità di performance utilizzata) - grafico del contatore dei guasti
+
+Visualizza la stessa percentuale di capacità di performance separata in protocolli utente, processi di sistema in background e la quantità di capacità di performance libera.
+
+
+
+== Pulsante *Zoom View*
+
+Visualizza una vista ingrandita dei dati del contatore.
+
+* Eventi
++
+Il verificarsi di eventi critici, di avviso e informativi è indicato sulle righe temporali sopra i grafici.
+
+* Soglie
++
+La linea orizzontale tratteggiata indica il valore di soglia dell'avviso di capacità impostato in Unified Manager.
+
++
+La linea rossa fissa indica il valore della soglia critica di capacità impostato in Unified Manager.
+
++
+La linea nera continua al 100% è il valore massimo consigliato per la capacità di performance utilizzata.
+
+* Contatori
++
+I contatori nel riquadro di sinistra indicano i valori dei contatori visualizzati. Deselezione o selezione di image:../media/eye-icon.gif[""] che è associato a un contatore può limitare il confronto.
+
+

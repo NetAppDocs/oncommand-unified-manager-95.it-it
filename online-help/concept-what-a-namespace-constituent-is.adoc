@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-a-namespace-constituent-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Ogni Infinite Volume dispone di un singolo componente dello spazio dei nomi che associa le informazioni di directory e i nomi dei file alla posizione fisica dei dati del file all"interno del volume Infinite.' 
+---
+= Che cos'è un costituente dello spazio dei nomi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ogni Infinite Volume dispone di un singolo componente dello spazio dei nomi che associa le informazioni di directory e i nomi dei file alla posizione fisica dei dati del file all'interno del volume Infinite.
+
+I client non sono a conoscenza del componente dello spazio dei nomi e non interagiscono direttamente con esso. Il costituente dello spazio dei nomi è un componente interno del volume infinito.

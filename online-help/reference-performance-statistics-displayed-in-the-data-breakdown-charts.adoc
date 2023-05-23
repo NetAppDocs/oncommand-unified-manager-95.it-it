@@ -1,0 +1,124 @@
+---
+permalink: online-help/reference-performance-statistics-displayed-in-the-data-breakdown-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare i grafici per visualizzare i trend delle performance di un volume. È inoltre possibile visualizzare le statistiche di lettura e scrittura, l"attività del protocollo di rete, l"impatto della limitazione del gruppo di policy QoS sulla latenza, il rapporto di lettura e scrittura nello storage della cache, il tempo totale della CPU del cluster utilizzato da un carico di lavoro e componenti specifici del cluster.' 
+---
+= Statistiche delle performance visualizzate nei grafici di analisi dei dati
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare i grafici per visualizzare i trend delle performance di un volume. È inoltre possibile visualizzare le statistiche di lettura e scrittura, l'attività del protocollo di rete, l'impatto della limitazione del gruppo di policy QoS sulla latenza, il rapporto di lettura e scrittura nello storage della cache, il tempo totale della CPU del cluster utilizzato da un carico di lavoro e componenti specifici del cluster.
+
+Queste visualizzazioni visualizzano un massimo di 30 giorni di statistiche del giorno corrente. Nel grafico dei dati storici, se si seleziona un intervallo di tempo superiore a 1 giorno, a seconda della risoluzione dello schermo, i grafici visualizzano i valori massimi di latenza e IOPS nel numero di giorni.
+
+[NOTE]
+====
+È possibile utilizzare la casella di controllo *Select All* (Seleziona tutto) per selezionare o deselezionare tutte le opzioni del grafico elencate.
+
+====
+* *Latenza*
++
+I seguenti grafici illustrano in dettaglio le informazioni relative alla latenza o al tempo di risposta per il carico di lavoro selezionato:
+
++
+** *Componenti del cluster*
++
+Visualizza un grafico del tempo impiegato in ciascun componente del cluster utilizzato dal volume selezionato.
+
++
+Il grafico consente di determinare l'impatto della latenza per ciascun componente in relazione alla latenza totale. È possibile utilizzare la casella di controllo accanto a ciascun componente per visualizzare e nascondere il grafico.
+
++
+Per i gruppi di criteri QoS, i dati vengono visualizzati solo per i gruppi di criteri definiti dall'utente. Vengono visualizzati degli zero per i gruppi di criteri definiti dal sistema, ad esempio i gruppi di criteri predefiniti.
+
+** *Latenza di lettura/scrittura*
++
+Visualizza un grafico delle latenze delle richieste di lettura e scrittura riuscite dal carico di lavoro del volume selezionato nell'arco di tempo selezionato.
+
++
+Le richieste di scrittura sono una riga arancione e le richieste di lettura sono una riga blu. Le richieste sono specifiche della latenza per il carico di lavoro del volume selezionato, non per tutti i carichi di lavoro nel cluster.
+
++
+[NOTE]
+====
+Le statistiche di lettura e scrittura potrebbero non essere sempre aggiuntive rispetto alle statistiche di latenza totali visualizzate nel grafico di latenza. Questo è il comportamento previsto in base al modo in cui Unified Manager raccoglie e analizza le statistiche di lettura e scrittura per un carico di lavoro.
+
+====
+** *Impatto del gruppo di policy*
++
+Visualizza un grafico della percentuale di latenza per il carico di lavoro del volume selezionato che è influenzato dal limite di throughput nel relativo gruppo di policy QoS.
+
++
+Se il carico di lavoro viene rallentato, la percentuale indica quanto la limitazione ha contribuito alla latenza in un determinato momento. I valori percentuali indicano la quantità di rallentamento:
+
++
+*** 0% = nessun rallentamento
+*** > 0% = rallentamento
+*** > 20% = rallentamento critico se il cluster è in grado di gestire più lavoro, è possibile ridurre la limitazione aumentando il limite del gruppo di policy. Un'altra opzione consiste nello spostare il carico di lavoro su un aggregato meno occupato.
+
+
+
+
++
+[NOTE]
+====
+Il grafico viene visualizzato per i carichi di lavoro in un gruppo di policy QoS definito dall'utente con solo un limite di throughput impostato. Non viene visualizzato se i carichi di lavoro si trovano in un gruppo di criteri definito dal sistema, ad esempio il gruppo di criteri predefinito o un gruppo di criteri che non ha un limite di QoS. Per un gruppo di criteri QoS, è possibile puntare il cursore sul nome del gruppo di criteri per visualizzarne il limite di throughput e l'ultima volta che è stato modificato. Se il gruppo di criteri è stato modificato prima dell'aggiunta del cluster associato a Unified Manager, l'ora dell'ultima modifica corrisponde alla data e all'ora in cui Unified Manager ha rilevato il cluster per la prima volta.
+
+====
+* *IOPS*
++
+I seguenti grafici descrivono in dettaglio i dati IOPS per il carico di lavoro selezionato:
+
++
+** *Letture/scritture/altro*
++
+Visualizza un grafico che mostra il numero di IOPS di lettura e scrittura e di altri IOPS, al secondo, nel periodo di tempo selezionato.
+
++
+Altri IOPS sono attività di protocollo avviate dal client che non sono di lettura o scrittura. Ad esempio, in un ambiente NFS, potrebbero essere operazioni di metadati come getattro, setattro o fsstat. In un ambiente CIFS, potrebbero essere ricerche di attributi, elenchi di directory o scansioni antivirus. Gli IOPS di scrittura sono una riga arancione e le richieste di lettura sono una riga blu. Le richieste sono specifiche di tutte le operazioni per il carico di lavoro del volume selezionato, non di tutte le operazioni sul cluster.
+
+
+
+* *Mbps*
++
+I seguenti grafici descrivono in dettaglio i dati di throughput per il carico di lavoro selezionato:
+
++
+** *Percentuale di hit della cache*
++
+Visualizza un grafico della percentuale di richieste di lettura dalle applicazioni client soddisfatte dalla cache nel periodo di tempo selezionato.
+
++
+La cache potrebbe essere su schede Flash cache o dischi a stato solido (SSD) negli aggregati di Flash Pool. Un hit della cache, in blu, è una lettura dalla cache. Una mancanza di cache, in arancione, è una lettura da un disco nell'aggregato. Le richieste sono specifiche per il carico di lavoro del volume selezionato, non per tutti i carichi di lavoro nel cluster.
+
++
+È possibile visualizzare informazioni più dettagliate sull'utilizzo della cache del volume nelle pagine sullo stato di salute di Unified Manager e in Gestore di sistema di OnCommand.
+
+
+
+* *Componenti*
++
+I seguenti grafici descrivono in dettaglio i dati per componente del cluster utilizzato dal carico di lavoro selezionato:
+
++
+** *Tempo CPU del cluster*
++
+Visualizza un grafico del tempo di utilizzo della CPU, in ms, per tutti i nodi del cluster utilizzati dal carico di lavoro selezionato.
+
++
+Il grafico mostra il tempo di utilizzo combinato della CPU per l'elaborazione della rete e dei dati. È incluso anche il tempo CPU per i carichi di lavoro definiti dal sistema associati al carico di lavoro selezionato e che utilizzano gli stessi nodi per l'elaborazione dei dati. È possibile utilizzare il grafico per determinare se il carico di lavoro è un consumatore elevato delle risorse della CPU nel cluster. È inoltre possibile utilizzare il grafico, in combinazione con il grafico della latenza di lettura/scrittura nel grafico della latenza, o il grafico di lettura/scrittura/altro nel grafico IOPS, per determinare in che modo le modifiche all'attività del carico di lavoro nel tempo influiscono sull'utilizzo della CPU del cluster.
+
+** *Utilizzo del disco*
++
+Visualizza un grafico che mostra la percentuale di utilizzo sui dischi di dati nell'aggregato di storage nel periodo di tempo selezionato.
+
++
+L'utilizzo include richieste di lettura e scrittura dei dischi solo dal carico di lavoro del volume selezionato. Le letture dalla cache non sono incluse. L'utilizzo è specifico per il carico di lavoro del volume selezionato, non per tutti i carichi di lavoro presenti sui dischi. Se un volume monitorato è coinvolto in uno spostamento del volume, i valori di utilizzo in questo grafico si riferiscono all'aggregato di destinazione in cui il volume è stato spostato.
+
+
+
+

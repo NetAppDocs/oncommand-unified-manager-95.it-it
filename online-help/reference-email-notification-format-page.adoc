@@ -1,0 +1,87 @@
+---
+permalink: online-help/reference-email-notification-format-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Email Notification Format (formato notifica e-mail) visualizza le regole del messaggio e-mail inviato a un utente o a un gruppo di utenti quando si verifica un problema relativo alla quota (limite minimo violato o limite massimo raggiunto).' 
+---
+= Pagina formato notifica email
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina formato notifica e-mail visualizza le regole del messaggio e-mail inviato a un utente o a un gruppo di utenti quando si verifica un problema relativo alla quota (limite minimo violato o limite massimo raggiunto).
+
+La notifica e-mail viene inviata solo quando vengono generati i seguenti eventi di quota utente o gruppo di utenti: Limite di spazio su disco per quota utente o gruppo superato, limite di tolleranza per il numero di file per quota utente o gruppo superato, limite di tolleranza per lo spazio su disco per quota utente o gruppo raggiunto o limite massimo per il numero di file per quota utente o gruppo raggiunto.
+
+* *Da*
++
+Visualizza l'indirizzo e-mail da cui viene inviato il messaggio e-mail, che è possibile modificare. Per impostazione predefinita, si tratta dell'indirizzo e-mail specificato nella pagina Configurazione/Notifiche.
+
+* *Soggetto*
++
+Visualizza l'oggetto dell'e-mail di notifica.
+
+* *Dettagli e-mail*
++
+Visualizza il testo dell'e-mail di notifica. È possibile modificare il testo in base alle proprie esigenze. Ad esempio, è possibile fornire informazioni relative agli attributi di quota e ridurre il numero di parole chiave. Tuttavia, non modificare le parole chiave.
+
++
+Le parole chiave valide sono le seguenti:
+
++
+** NOME_EVENTO
++
+Specifica il nome dell'evento che ha causato la notifica via email.
+
+** QUOTA_DESTINAZIONE
++
+Specifica il qtree o il volume su cui è applicabile la quota.
+
+** QUOTA_UTILIZZATA_PERCENTUALE DOLLARI
++
+Specifica la percentuale di limite hard disk, soft limit disk, hard limit file o soft limit file utilizzata dall'utente o dal gruppo di utenti.
+
+** QUOTA_LIMITE
++
+Specifica il limite massimo del disco rigido o del file raggiunto dall'utente o dal gruppo di utenti e viene generato uno dei seguenti eventi:
+
++
+*** Limite massimo di spazio su disco per quota utente o gruppo raggiunto
+*** Limite di spazio su disco per quota utente o gruppo raggiunto
+*** Numero di file di quota utente o gruppo - limite massimo raggiunto
+*** Limite minimo di numero file quota utente o gruppo raggiunto
+
+
+** QUOTA_UTILIZZATA
++
+Specifica lo spazio su disco utilizzato o il numero di file creati dall'utente o dal gruppo di utenti.
+
+** QUOTA_UTENTE
++
+Specifica il nome dell'utente o del gruppo di utenti.
+
+
+
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di visualizzare in anteprima, salvare o annullare le modifiche apportate al formato di notifica e-mail:
+
+* *Anteprima*
++
+Visualizza un'anteprima dell'email di notifica.
+
+* *Ripristina impostazioni predefinite*
++
+Consente di ripristinare i valori predefiniti del formato di notifica.
+
+* *Salva*
++
+Salva le modifiche apportate al formato di notifica.
+
+

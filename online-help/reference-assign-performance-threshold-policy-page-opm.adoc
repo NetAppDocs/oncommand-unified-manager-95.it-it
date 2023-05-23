@@ -1,0 +1,30 @@
+---
+permalink: online-help/reference-assign-performance-threshold-policy-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile utilizzare la pagina Assegna criterio di soglia per assegnare un criterio di soglia delle prestazioni a uno o più oggetti di storage. 
+---
+= Pagina Assegna criterio soglia performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la pagina Assegna criterio di soglia per assegnare un criterio di soglia delle prestazioni a uno o più oggetti di storage.
+
+Nell'elenco dei criteri vengono inseriti solo i criteri validi per il tipo di oggetto di storage.
+
+Selezionare il criterio che si desidera applicare all'oggetto o agli oggetti, quindi fare clic su *Apply Policy* (Applica policy).
+
+In alcuni casi, quando si tenta di applicare una policy, potrebbe essere visualizzato un messaggio di errore:
+
+* Quando si applica un criterio che utilizza il contatore capacità di performance utilizzata a un nodo o aggregato non installato con il software ONTAP 9.0 o versione successiva.
++
+Le versioni del software ONTAP precedenti alla 9.0 non supportano i contatori di capacità delle prestazioni.
+
+* Quando si applica un criterio di combinazione a un volume FlexGroup, in cui il secondo contatore include un nodo o un oggetto aggregato.
++
+Poiché i volumi FlexGroup possono essere distribuiti su più nodi e aggregati, questa operazione non è consentita.
+
+

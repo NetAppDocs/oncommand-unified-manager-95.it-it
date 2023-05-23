@@ -1,0 +1,32 @@
+---
+permalink: health-checker/concept-unified-manager-interfaces-used-to-manage-storage-system-health.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Questa sezione contiene informazioni sulle due interfacce utente fornite da OnCommand Unified Manager per la risoluzione dei problemi di capacità, disponibilità e protezione dello storage dei dati. Le due interfacce utente sono l"interfaccia utente Web di Unified Manager e la console di manutenzione.' 
+---
+= Interfacce di Unified Manager utilizzate per gestire lo stato di salute del sistema storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Questa sezione contiene informazioni sulle due interfacce utente fornite da OnCommand Unified Manager per la risoluzione dei problemi di capacità, disponibilità e protezione dello storage dei dati. Le due interfacce utente sono l'interfaccia utente Web di Unified Manager e la console di manutenzione.
+
+Se si desidera utilizzare le funzioni di protezione di Unified Manager, è necessario installare e configurare anche OnCommand Workflow Automation (Wfa).
+
+
+
+== UI Web di Unified Manager
+
+L'interfaccia utente Web di Unified Manager consente a un amministratore di monitorare e risolvere i problemi del cluster relativi a capacità, disponibilità e protezione dello storage dei dati.
+
+Questa sezione descrive alcuni flussi di lavoro comuni che un amministratore può seguire per risolvere i problemi di capacità dello storage, disponibilità dei dati o protezione visualizzati nell'interfaccia utente Web di Unified Manager.
+
+
+
+== Console di manutenzione
+
+La console di manutenzione consente a un amministratore di monitorare, diagnosticare e risolvere i problemi del sistema operativo, i problemi di aggiornamento della versione, i problemi di accesso dell'utente e i problemi di rete relativi al server Unified Manager stesso. Se l'interfaccia utente Web di Unified Manager non è disponibile, la console di manutenzione è l'unica forma di accesso a Unified Manager.
+
+Questa sezione fornisce istruzioni per accedere alla console di manutenzione e utilizzarla per risolvere i problemi relativi al funzionamento del server Unified Manager.

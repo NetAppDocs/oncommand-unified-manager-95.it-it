@@ -1,0 +1,38 @@
+---
+permalink: health-checker/task-configuring-lag-threshold-settings-for-unmanaged-protection-relationships.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile modificare le impostazioni globali predefinite di avviso di ritardo e soglia di stato degli errori per le relazioni di protezione non gestite in modo che gli eventi vengano generati a intervalli appropriati alle proprie esigenze. 
+---
+= Modifica delle impostazioni della soglia di integrità del ritardo per le relazioni di protezione non gestite
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare le impostazioni globali predefinite di avviso di ritardo e soglia di stato degli errori per le relazioni di protezione non gestite in modo che gli eventi vengano generati a intervalli appropriati alle proprie esigenze.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== A proposito di questa attività
+
+Il tempo di ritardo non deve superare l'intervallo di pianificazione del trasferimento definito. Ad esempio, se la pianificazione del trasferimento è oraria, il tempo di ritardo non deve essere superiore a un'ora. La soglia di ritardo specifica una percentuale che il tempo di ritardo non deve superare. Utilizzando l'esempio di un'ora, se la soglia di ritardo è definita come 150%, si riceverà un evento quando il tempo di ritardo è superiore a 1.5 ore.
+
+Le impostazioni descritte in questa attività vengono applicate globalmente a tutte le relazioni di protezione non gestite. Le impostazioni non possono essere specificate e applicate esclusivamente a una relazione di protezione non gestita.
+
+
+
+== Fasi
+
+. Nel riquadro di spostamento di sinistra, fare clic su *Configurazione* > *soglie di integrità*.
+. Nella pagina *Configuration/Health Thresholds* (soglie di configurazione/integrità), fare clic su *Relationes* (Relazioni).
+. Aumentare o ridurre la percentuale di tempo di avviso o ritardo degli errori predefinita globale, secondo necessità.
+. Fare clic su *Save* (Salva).
+

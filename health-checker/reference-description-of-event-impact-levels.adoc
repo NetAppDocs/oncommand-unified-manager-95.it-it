@@ -1,0 +1,28 @@
+---
+permalink: health-checker/reference-description-of-event-impact-levels.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Ogni evento è associato a un livello di impatto (incidente, rischio o evento) per aiutarti a definire la priorità degli eventi che richiedono un"azione correttiva immediata.' 
+---
+= Descrizione dei livelli di impatto degli eventi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ogni evento è associato a un livello di impatto (incidente, rischio o evento) per aiutarti a definire le priorità degli eventi che richiedono un'azione correttiva immediata.
+
+* *Incidente*
++
+Un incidente è un insieme di eventi che possono causare l'interruzione della fornitura dei dati al client da parte di un cluster e l'esaurimento dello spazio per l'archiviazione dei dati. Gli eventi con un livello di impatto dell'incidente sono i più gravi. È necessario intraprendere un'azione correttiva immediata per evitare interruzioni del servizio.
+
+* *Rischio*
++
+Un rischio è costituito da una serie di eventi che possono potenzialmente causare l'interruzione della fornitura dei dati al client da parte di un cluster e l'esaurimento dello spazio per l'archiviazione dei dati. Gli eventi con un livello di rischio di impatto possono causare interruzioni del servizio. Potrebbe essere necessaria un'azione correttiva.
+
+* *Evento*
++
+Un evento è un cambiamento di stato o stato degli oggetti di storage e dei relativi attributi. Gli eventi con un livello di impatto dell'evento sono informativi e non richiedono azioni correttive.
+
+

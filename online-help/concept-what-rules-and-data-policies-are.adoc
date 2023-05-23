@@ -1,0 +1,27 @@
+---
+permalink: online-help/concept-what-rules-and-data-policies-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Una regola determina il posizionamento dei file (dati) in una macchina virtuale di storage con Infinite Volume. Una raccolta di tali regole è nota come policy sui dati.' 
+---
+= Quali sono le regole e le policy relative ai dati
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Una _regola_ determina il posizionamento dei file (dati) in una macchina virtuale di storage (SVM) con Infinite Volume. Una raccolta di tali regole è nota come _data policy_.
+
+* *Regola*
++
+Le regole consistono principalmente in un insieme di condizioni e informazioni predefinite che determinano dove posizionare i file nel volume infinito. Quando un file viene inserito nel volume infinito, gli attributi del file vengono associati all'elenco di regole. Se gli attributi corrispondono alle regole, le informazioni di posizionamento della regola determinano la classe di storage in cui viene posizionato il file. Una regola predefinita nel criterio dati viene utilizzata per determinare il posizionamento dei file se gli attributi non corrispondono a nessuna regola nell'elenco delle regole.
+
++
+Ad esempio, se si dispone di una regola, "`inserire tutti i file di tipo .mp3 nella classe di storage bronze.`", tutti i file .mp3 scritti nel volume infinito verranno inseriti nella classe di storage bronze.
+
+* *Data policy*
++
+Una policy sui dati è un elenco di regole. Ogni SVM con Infinite Volume dispone di una propria policy sui dati. Ogni file aggiunto al volume infinito viene confrontato con le regole della relativa policy dei dati per determinare dove collocare il file. La policy sui dati consente di filtrare i file in entrata in base agli attributi dei file e di posizionarli nelle classi di storage appropriate.
+
+

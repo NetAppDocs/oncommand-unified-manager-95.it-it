@@ -1,0 +1,60 @@
+---
+permalink: online-help/reference-add-annotation-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La finestra di dialogo Add Annotation Rule (Aggiungi regola annotazione) consente di creare regole di annotazione in Unified Manager per annotare dinamicamente gli oggetti di storage.' 
+---
+= Finestra di dialogo Add Annotation Rule (Aggiungi regola annotazione)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La finestra di dialogo Add Annotation Rule (Aggiungi regola annotazione) consente di creare regole di annotazione in Unified Manager per annotare dinamicamente gli oggetti di storage.
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+* *Nome*
++
+Specifica il nome della regola di annotazione.
+
+* *Tipo di oggetto di destinazione*
++
+Specifica il tipo di oggetti storage (SVM, Storage Virtual Machine), volumi o cluster) che si desidera annotare.
+
+* *Applica annotazione*
++
+Specifica l'annotazione e il valore che è possibile utilizzare per annotare gli oggetti di storage quando vengono soddisfatte tutte le condizioni.
+
+* *Condizioni*
++
+Specifica le condizioni che determinano quali oggetti di storage è possibile annotare.
+
+
+
+
+
+== Pulsanti di comando
+
+* *Salva e Aggiungi*
++
+Aggiunge la regola di annotazione creata e consente di aggiungere un'altra regola di annotazione senza chiudere la finestra di dialogo.
+
+* *Aggiungi*
++
+Aggiunge la regola di annotazione e chiude la finestra di dialogo Add Annotation Rule (Aggiungi regola annotazione).
+
+* *Annulla*
++
+Annulla le modifiche e chiude la finestra di dialogo Add Annotation Rule (Aggiungi regola annotazione).
+
+* *Aggiungi condizione*
++
+Aggiunge una condizione per definire la regola di annotazione.
+
+* *Aggiungi gruppo di condizioni*
++
+Aggiunge un gruppo di condizioni per definire le condizioni per la regola di annotazione.
+
+

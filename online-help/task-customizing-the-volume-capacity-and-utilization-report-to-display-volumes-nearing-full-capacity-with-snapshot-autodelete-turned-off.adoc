@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-customizing-the-volume-capacity-and-utilization-report-to-display-volumes-nearing-full-capacity-with-snapshot-autodelete-turned-off.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile personalizzare il report Volume Capacity and Utilization (capacità e utilizzo dei volumi) per visualizzare i volumi ordinati in base all"ordine crescente di utilizzo della capacità dei volumi. In questo modo è possibile visualizzare i volumi che raggiungono la piena capacità.' 
+---
+= Personalizzazione del report Volume Capacity and Utilization (capacità e utilizzo del volume) per visualizzare i volumi quasi alla capacità massima con l'opzione Snapshot Autodelete (eliminazione automatica snapshot) disattivata
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report Volume Capacity and Utilization (capacità e utilizzo dei volumi) per visualizzare i volumi ordinati in base all'ordine crescente di utilizzo della capacità dei volumi. In questo modo è possibile visualizzare i volumi che raggiungono la piena capacità.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Per rimuovere il raggruppamento in base a SVM, cluster o volume, attenersi alla seguente procedura:
++
+.. Fare clic nella colonna che deve essere raggruppata.
+.. Fare clic su image:../media/click-to-see-menu.gif[""] icona.
+.. Selezionare *Gruppo* > *Elimina gruppo interno*.
+
+
+. Per ordinare i volumi che si stanno avvicinando alla capacità massima, fare clic nella colonna *giorni a pieno* e fare clic sul pulsante image:../media/sort-asc.gif[""] icona.
+. Per filtrare i volumi per i quali è stata disattivata la funzione di eliminazione automatica delle snapshot, fare clic nella colonna *eliminazione automatica delle snapshot* e aprire la finestra di dialogo *filtro* facendo clic su image:../media/click-to-filter.gif[""] icona.
+. Dall'elenco *condizione*, selezionare *uguale a*.
+. Fare clic su *Seleziona valori* e selezionare *Disattivato*.
+. Fare clic su *OK*.
+

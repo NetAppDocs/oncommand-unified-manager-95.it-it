@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-configuring-global-health-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile configurare le condizioni delle soglie di integrità globali per capacità, crescita, Snapshot Reserve, quote e inode per monitorare in modo efficace le dimensioni di aggregato, volume e qtree. È inoltre possibile modificare le impostazioni per la generazione di eventi per il superamento delle soglie di ritardo. 
+---
+= Configurazione delle impostazioni della soglia di integrità globale
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile configurare le condizioni delle soglie di integrità globali per capacità, crescita, Snapshot Reserve, quote e inode per monitorare in modo efficace le dimensioni di aggregato, volume e qtree. È inoltre possibile modificare le impostazioni per la generazione di eventi per il superamento delle soglie di ritardo.
+
+
+
+== A proposito di questa attività
+
+Le impostazioni della soglia di integrità globale si applicano a tutti gli oggetti a cui sono associati, ad esempio aggregati, volumi e così via. Quando vengono superate le soglie, viene generato un evento e, se sono configurati avvisi, viene inviata una notifica di avviso. Le soglie predefinite sono impostate sui valori consigliati, ma è possibile modificarle in modo da generare eventi a intervalli per soddisfare le esigenze specifiche. Quando le soglie vengono modificate, gli eventi vengono generati o resi obsoleti nel ciclo di monitoraggio successivo.
+
+È possibile accedere alle impostazioni della soglia di integrità globale dalla pagina Configuration/Health Thresholds (soglie di configurazione/integrità). È inoltre possibile modificare le impostazioni di soglia per singoli oggetti, dalla pagina di inventario o dalla pagina dei dettagli dell'oggetto.
+
+
+
+== Scelte
+
+* xref:task-configuring-global-aggregate-health-threshold-values.adoc[Configurazione dei valori globali di soglia di integrità degli aggregati]
++
+È possibile configurare le impostazioni della soglia di integrità per capacità, crescita e copie Snapshot per tutti gli aggregati per tenere traccia di qualsiasi violazione di soglia.
+
+* xref:task-configuring-global-volume-health-threshold-values.adoc[Configurazione dei valori delle soglie globali di integrità del volume]
++
+È possibile modificare le impostazioni della soglia di integrità per capacità, copie Snapshot, quote qtree, crescita del volume, spazio di riserva di sovrascrittura, e inode per tutti i volumi per tenere traccia di qualsiasi violazione di soglia.
+
+* xref:task-configuring-global-qtree-health-threshold-values.adoc[Configurazione dei valori globali delle soglie di integrità del qtree]
++
+È possibile modificare le impostazioni della soglia di integrità per la capacità di tutti i qtree per tenere traccia di qualsiasi violazione di soglia.
+
+* xref:task-configuring-lag-threshold-settings-for-unmanaged-protection-relationships.adoc[Modifica delle impostazioni della soglia di integrità del ritardo per le relazioni di protezione non gestite]
++
+È possibile aumentare o ridurre la percentuale di tempo di avviso o ritardo degli errori in modo che gli eventi vengano generati a intervalli più adatti alle proprie esigenze.
+
+

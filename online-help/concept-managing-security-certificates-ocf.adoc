@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-security-certificates-ocf.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile configurare HTTPS nel server Unified Manager per monitorare e gestire i cluster su una connessione sicura. 
+---
+= Gestione dei certificati di sicurezza
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile configurare HTTPS nel server Unified Manager per monitorare e gestire i cluster su una connessione sicura.

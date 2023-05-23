@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-configuring-event-retention-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile specificare il numero di giorni in cui un evento viene conservato nel server di Unified Manager prima che venga eliminato automaticamente. Vengono eliminati solo gli eventi risolti, obsoleti o di tipo informazioni. È inoltre possibile specificare la frequenza con cui questi eventi vengono cancellati oppure eliminarli manualmente. 
+---
+= Configurazione delle impostazioni di conservazione degli eventi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile specificare il numero di giorni in cui un evento viene conservato nel server di Unified Manager prima che venga eliminato automaticamente. Vengono eliminati solo gli eventi risolti, obsoleti o di tipo informazioni. È inoltre possibile specificare la frequenza con cui questi eventi vengono cancellati oppure eliminarli manualmente.
+
+
+
+== Prima di iniziare
+
+Per modificare le impostazioni degli eventi, è necessario disporre del ruolo di amministratore di OnCommand.
+
+
+
+== A proposito di questa attività
+
+La conservazione degli eventi per più di 180 giorni influisce sulle prestazioni del server e non è consigliabile. Il limite inferiore per il periodo di conservazione dell'evento è di 7 giorni; non esiste alcun limite superiore.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Configurazione* > *Gestisci eventi*.
+. Nella pagina *Configurazione/Gestione eventi*, fare clic sul pulsante *Impostazioni conservazione eventi*.
+. Configurare le impostazioni appropriate nella finestra di dialogo *Impostazioni conservazione eventi*.
+. Fare clic su *Save and Close* (Salva e chiudi).
+

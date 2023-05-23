@@ -1,0 +1,22 @@
+---
+permalink: online-help/task-bookmarking-your-favorite-help-topics-onc.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Nella scheda Help Favorites (Preferiti della Guida), è possibile aggiungere ai preferiti gli argomenti della Guida utilizzati di frequente. I segnalibri di aiuto consentono di accedere rapidamente ai tuoi argomenti preferiti.' 
+---
+= Aggiunta di segnalibri agli argomenti della guida preferiti
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Nella scheda Help Favorites (Preferiti della Guida), è possibile aggiungere ai preferiti gli argomenti della Guida utilizzati di frequente. I segnalibri di aiuto consentono di accedere rapidamente ai tuoi argomenti preferiti.
+
+
+
+== Fasi
+
+. Accedere all'argomento della Guida che si desidera aggiungere come preferito.
+. Fare clic su *Preferiti*, quindi su *Aggiungi*.
+

@@ -1,0 +1,63 @@
+---
+permalink: online-help/task-editing-custom-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile modificare una regola per includere nuove condizioni o set di condizioni nella regola. Ad esempio, se si desidera includere nuovi percorsi di directory insieme ai nomi dei proprietari, è possibile farlo dalla finestra di dialogo Modifica regola. 
+---
+= Modifica di regole personalizzate
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare una regola per includere nuove condizioni o set di condizioni nella regola. Ad esempio, se si desidera includere nuovi percorsi di directory insieme ai nomi dei proprietari, è possibile farlo dalla finestra di dialogo Modifica regola.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== A proposito di questa attività
+
+La scheda Data Policy (Policy dati) è visibile solo per una SVM con Infinite Volume (Volume infinito).
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Health* > *SVM*.
+. Nella pagina di inventario *Health/Storage Virtual Machines*, selezionare una SVM appropriata.
+. Fare clic su *Data Policy*.
++
+Viene visualizzato l'elenco delle regole nella policy dei dati per la SVM selezionata con volume infinito.
+
+. Selezionare la regola per la quale si desidera includere nuove condizioni o set di condizioni.
+. Fare clic su *Edit* (Modifica).
+. Nella finestra di dialogo *Modifica regola*, aggiungere nuove condizioni o set di condizioni:
++
+|===
+| Se si desidera aggiungere... | Fare clic su... 
+
+
+ a| 
+Una nuova condizione
+ a| 
+Il image:../media/customrulecreate.gif[""] icona.
+
+
+
+ a| 
+Un nuovo set di condizioni
+ a| 
+*Aggiungi set di condizioni*.
+
+|===
+. Fare clic su *Aggiorna*.
+. Verificare che le modifiche siano applicate alla regola espandendo la regola nella scheda *Data Policy*.
+. Visualizzare in anteprima qualsiasi altra modifica apportata alla policy dei dati.
+. Fare clic su *Activate* (attiva) per attivare le modifiche alle proprietà della regola nella SVM.
+

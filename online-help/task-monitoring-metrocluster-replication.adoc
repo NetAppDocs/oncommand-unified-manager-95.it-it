@@ -1,0 +1,50 @@
+---
+permalink: online-help/task-monitoring-metrocluster-replication.html 
+sidebar: sidebar 
+keywords: MetroCluster Replication,Mirroring 
+summary: È possibile monitorare e diagnosticare le condizioni generali di salute delle connessioni logiche durante il mirroring dei dati. È possibile identificare i problemi o i rischi che interrompono il mirroring dei componenti del cluster come aggregati, nodi e macchine virtuali di storage. 
+---
+= Monitoraggio della replica MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile monitorare e diagnosticare le condizioni generali di salute delle connessioni logiche durante il mirroring dei dati. È possibile identificare i problemi o i rischi che interrompono il mirroring dei componenti del cluster come aggregati, nodi e macchine virtuali di storage.
+
+
+
+== Prima di iniziare
+
+Il cluster locale e remoto nella configurazione MetroCluster deve essere aggiunto a Unified Manager
+
+
+
+== A proposito di questa attività
+
+È possibile utilizzare le informazioni visualizzate nella pagina Health/Cluster Details per correggere eventuali problemi di replica.
+
+Spostando il puntatore sull'icona, è possibile visualizzare informazioni dettagliate sull'evento generato.
+
+Unified Manager utilizza gli avvisi di stato del sistema per monitorare lo stato dei componenti e la connettività nella configurazione di MetroCluster.
+
+
+
+== Fasi
+
+. Nel riquadro di spostamento di sinistra, fare clic su *Health* > *Clusters*.
++
+Viene visualizzato un elenco dei cluster monitorati.
+
+. Dalla pagina di inventario *Salute/Clusters*, fare clic sul nome del cluster per il quale si desidera visualizzare i dettagli della replica MetroCluster, quindi fare clic sulla scheda *Replica MetroCluster*.
++
+La topologia della configurazione MetroCluster da replicare viene visualizzata nel sito locale nell'area oggetto cluster corrispondente con le informazioni sul sito remoto in cui viene eseguito il mirroring dei dati.
+
+
+
+
+
+== Al termine
+
+Se si riscontrano problemi di mirroring nella configurazione di MetroCluster, è necessario accedere a Gestore di sistema o all'interfaccia utente di ONTAP per risolvere i problemi.

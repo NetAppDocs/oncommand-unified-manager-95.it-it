@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-data-constituents-are.html 
+sidebar: sidebar 
+keywords:  
+summary: In un volume infinito, i dati vengono memorizzati in più componenti separati. I componenti dei dati memorizzano solo i dati di un file, non il nome del file. 
+---
+= Quali sono i componenti dei dati
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+In un volume infinito, i dati vengono memorizzati in più componenti separati. I componenti dei dati memorizzano solo i dati di un file, non il nome del file.
+
+I client non sono a conoscenza dei componenti dei dati. Quando un client richiede un file da un volume infinito, il nodo recupera i dati del file da un costituente di dati e restituisce il file al client.
+
+Ogni volume Infinite ha in genere decine di componenti di dati. Ad esempio, un volume Infinite da 6 PB che contiene 1 miliardo di file potrebbe avere 60 componenti dati localizzati su aggregati di 6 nodi.

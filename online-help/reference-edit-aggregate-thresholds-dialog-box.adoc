@@ -1,0 +1,121 @@
+---
+permalink: online-help/reference-edit-aggregate-thresholds-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile configurare gli avvisi per inviare notifiche quando viene generato un evento correlato alla capacità di un aggregato ed eseguire azioni correttive per l"evento. Ad esempio, per la soglia completa aggregata, è possibile configurare un avviso per inviare una notifica quando la condizione persiste in un periodo specificato.' 
+---
+= Finestra di dialogo Edit aggregate thresholds (Modifica soglie
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile configurare gli avvisi per inviare notifiche quando viene generato un evento correlato alla capacità di un aggregato ed eseguire azioni correttive per l'evento. Ad esempio, per la soglia completa aggregata, è possibile configurare un avviso per inviare una notifica quando la condizione persiste in un periodo specificato.
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+La finestra di dialogo Edit aggregate thresholds (Modifica soglie aggregate) consente di configurare le soglie a livello di aggregato applicate agli aggregati selezionati. Se si configurano soglie a livello di aggregato, queste hanno la priorità sui valori di soglia a livello globale. È possibile configurare le impostazioni di soglia per capacità, crescita e copie Snapshot a livello di aggregato. Se queste impostazioni non sono configurate, vengono applicati i valori di soglia globali.
+
+[NOTE]
+====
+I valori di soglia non sono applicabili all'aggregato root del nodo.
+
+====
+
+
+== Area di capacità
+
+L'area Capacity (capacità) consente di impostare le seguenti condizioni di soglia della capacità aggregata:
+
+* *Spazio quasi pieno*
++
+Specifica la percentuale in cui un aggregato viene considerato quasi pieno. Visualizza anche la dimensione dell'aggregato corrispondente al valore di soglia specificato.
+
++
+È inoltre possibile utilizzare il dispositivo di scorrimento per impostare il valore di soglia.
+
+* *Spazio pieno*
++
+Specifica la percentuale in cui un aggregato viene considerato pieno. Visualizza anche la dimensione dell'aggregato corrispondente al valore di soglia specificato.
+
++
+È inoltre possibile utilizzare il dispositivo di scorrimento per impostare il valore di soglia.
+
+* *Quasi impegnato*
++
+Specifica la percentuale in cui un aggregato viene considerato quasi overcommit.
+
+* *Impegnato in eccesso*
++
+Specifica la percentuale in cui un aggregato viene considerato come overcommit.
+
+* *Giorni fino al completo*
++
+Specifica il numero di giorni rimanenti prima che l'aggregato raggiunga la capacità completa.
+
+
+
+
+
+== Area di crescita
+
+L'area di crescita consente di impostare la seguente condizione di soglia per la crescita aggregata:
+
+* *Tasso di crescita*
++
+Specifica la percentuale in cui il tasso di crescita di un aggregato viene considerato normale prima che il sistema generi un evento aggregato di tasso di crescita anomalo.
+
+* *Growth Rate Sensitivity*
++
+Specifica il fattore applicato alla deviazione standard del tasso di crescita di un aggregato. Se il tasso di crescita supera la deviazione standard fattorizzata, viene generato un evento aggregato di tasso di crescita anomalo.
+
++
+Un valore inferiore per la sensibilità del tasso di crescita indica che l'aggregato è altamente sensibile alle variazioni del tasso di crescita.
+
++
+[NOTE]
+====
+Se si modifica la sensibilità del tasso di crescita per gli aggregati al livello di soglia globale, la modifica viene applicata anche alla sensibilità del tasso di crescita per i volumi al livello di soglia globale.
+
+====
+
+
+
+
+== Area delle copie Snapshot
+
+L'area Snapshot Copies (copie Snapshot) consente di impostare le seguenti condizioni di soglia Snapshot Reserve:
+
+* *Snapshot Reserve Full*
++
+Specifica la percentuale in cui un aggregato ha consumato tutto lo spazio riservato alle copie Snapshot.
+
++
+È inoltre possibile utilizzare il dispositivo di scorrimento per impostare il valore di soglia.
+
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti attività per un aggregato selezionato:
+
+* *Ripristina valori predefiniti*
++
+Consente di ripristinare i valori di soglia del livello aggregato sui valori globali.
+
+* *Salva*
++
+Salva tutte le impostazioni di soglia.
+
+* *Salva e chiudi*
++
+Salva tutte le impostazioni di soglia e chiude la finestra di dialogo.
+
+* *Annulla*
++
+Ignora le modifiche (se presenti) alle impostazioni di soglia e chiude la finestra di dialogo.
+
+

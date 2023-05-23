@@ -1,0 +1,86 @@
+---
+permalink: online-help/task-creating-annotation-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile creare regole di annotazione utilizzate da Unified Manager per annotare dinamicamente oggetti di storage come volumi, cluster o macchine virtuali di storage (SVM).' 
+---
+= Creazione di regole di annotazione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile creare regole di annotazione utilizzate da Unified Manager per annotare dinamicamente oggetti di storage come volumi, cluster o macchine virtuali di storage (SVM).
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== A proposito di questa attività
+
+Gli oggetti di storage attualmente monitorati vengono annotati non appena viene creata la regola di annotazione. I nuovi oggetti vengono annotati solo dopo il completamento del ciclo di monitoraggio.
+
+
+
+== Fasi
+
+. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *Annotazioni* nel menu Gestione di sinistra.
+. Nella scheda *Annotation Rules* (regole annotazione), fare clic su *Add* (Aggiungi).
+. Nella finestra di dialogo *Add Annotation Rule* (Aggiungi regola annotazione), specificare un nome per la regola di annotazione.
+. Nel campo *Target Object Type*, selezionare il tipo di oggetto di storage che si desidera annotare.
+. Nei campi *Apply Annotation* (Applica annotazione), selezionare il valore di annotazione che si desidera utilizzare.
+. Nella sezione *Condizioni*, eseguire l'azione appropriata per creare una condizione, un gruppo di condizioni o entrambi:
++
+|===
+| Per creare... | Eseguire questa operazione... 
+
+
+ a| 
+Una condizione
+ a| 
+.. Selezionare un operando dall'elenco.
+.. Selezionare *contains* o *is* come operatore.
+.. Inserire un valore o selezionarlo dall'elenco Available (disponibili).
+
+
+
+
+ a| 
+Un gruppo di condizioni
+ a| 
+.. Fare clic su *Aggiungi gruppo di condizioni*.
+.. Selezionare un operando dall'elenco.
+.. Selezionare *contains* o *is* come operatore.
+.. Inserire un valore o selezionarlo dall'elenco Available (disponibili).
+.. Fare clic su *Add Condition* (Aggiungi condizione) per creare ulteriori condizioni, se necessario, e ripetere i passaggi da a a d per ciascuna condizione.
+
+
+|===
+. Fare clic su *Aggiungi*.
+
+
+
+
+== Esempio di creazione di una regola di annotazione
+
+Per creare una regola di annotazione, inclusa la configurazione di una condizione e l'aggiunta di un gruppo di condizioni, eseguire le seguenti operazioni nella finestra di dialogo Aggiungi regola annotazione:
+
+. Specificare un nome per la regola di annotazione.
+. Selezionare il tipo di oggetto di destinazione come SVM (Storage Virtual Machine).
+. Selezionare un'annotazione dall'elenco e specificare un valore.
+. Nella sezione Condizioni, selezionare *Nome oggetto* come operando.
+. Selezionare *contiene* come operatore.
+. Inserire il valore con nome `svm_data`.
+. Fare clic su *Aggiungi gruppo di condizioni*.
+. Selezionare *Nome oggetto* come operando.
+. Selezionare *contiene* come operatore.
+. Inserire il valore con nome `vol`.
+. Fare clic su *Aggiungi condizione*.
+. Ripetere i passi da 8 a 10 selezionando *data-priority* come operando nel passo 8, *is* come operatore nel passo 9 e *mission-critical* come valore nel passo 10.
+. Fare clic su *Aggiungi*.
+

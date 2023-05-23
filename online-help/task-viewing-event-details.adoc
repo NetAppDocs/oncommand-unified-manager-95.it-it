@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-viewing-event-details.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile visualizzare i dettagli di un evento attivato da Unified Manager per intraprendere azioni correttive. Ad esempio, se è presente un evento di salute Volume Offline, è possibile fare clic su tale evento per visualizzare i dettagli ed eseguire azioni correttive. 
+---
+= Visualizzazione dei dettagli dell'evento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile visualizzare i dettagli di un evento attivato da Unified Manager per intraprendere azioni correttive. Ad esempio, se è presente un evento di salute Volume Offline, è possibile fare clic su tale evento per visualizzare i dettagli ed eseguire azioni correttive.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+
+
+
+== A proposito di questa attività
+
+I dettagli dell'evento includono informazioni quali l'origine dell'evento, la causa dell'evento e eventuali note correlate all'evento.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Eventi*.
+. Nella pagina di inventario *Eventi*, fare clic sul nome dell'evento per il quale si desidera visualizzare i dettagli.
++
+I dettagli dell'evento vengono visualizzati nella pagina Dettagli evento.
+
+

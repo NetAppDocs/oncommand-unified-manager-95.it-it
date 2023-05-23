@@ -1,0 +1,126 @@
+---
+permalink: online-help/reference-performance-all-aggregates-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina di inventario Performance/Aggregates (prestazioni/aggregati) visualizza una panoramica degli eventi di performance, dei dati e delle informazioni di configurazione per ciascun aggregato monitorato da un"istanza di Unified Manager. Questa pagina consente di monitorare le performance degli aggregati e di risolvere i problemi relativi alle performance e agli eventi di soglia.' 
+---
+= Pagina di inventario performance/aggregati
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina di inventario Performance/Aggregates (prestazioni/aggregati) visualizza una panoramica degli eventi di performance, dei dati e delle informazioni di configurazione per ciascun aggregato monitorato da un'istanza di Unified Manager. Questa pagina consente di monitorare le performance degli aggregati e di risolvere i problemi relativi alle performance e agli eventi di soglia.
+
+A seconda di come si accede a questa pagina, sulla pagina potrebbe essere visualizzato un titolo diverso per indicare se l'elenco è stato filtrato. Ad esempio, quando si visualizzano tutti gli aggregati, il titolo è "`aggregati`". Quando si visualizza un sottoinsieme di aggregati restituiti dalla pagina Threshold Policies (Criteri di soglia), il titolo è "`aggregates on which policy aggr_IOPS is applied`".
+
+I pulsanti nella parte superiore della pagina consentono di eseguire ricerche per individuare dati specifici, creare e applicare filtri per restringere l'elenco dei dati visualizzati ed esportare i dati della pagina in un `.csv` e aggiungere o rimuovere colonne dalla pagina.
+
+Per impostazione predefinita, gli oggetti nelle pagine di inventario degli oggetti vengono ordinati in base alla criticità degli eventi di performance degli oggetti. Gli oggetti con eventi critici vengono elencati per primi e gli oggetti con eventi di avviso vengono elencati per secondi. Ciò fornisce un'indicazione visiva immediata dei problemi che devono essere risolti. I valori dei contatori delle prestazioni si basano su una media delle 72 ore precedenti o più di dati, come indicato nella pagina. È possibile fare clic sul pulsante Refresh (Aggiorna) per aggiornare i dati dell'inventario degli oggetti.
+
+È possibile assegnare criteri di soglia delle performance a qualsiasi oggetto presente nelle pagine di inventario degli oggetti o cancellare i criteri di soglia utilizzando i pulsanti *Assign Performance Threshold Policy* e *Clear PerformanceThreshold Policy*.
+
+[NOTE]
+====
+Gli aggregati root non vengono visualizzati in questa pagina.
+
+====
+
+
+== Aggrega le colonne delle pagine di inventario
+
+La pagina di inventario Performance/Aggregates contiene le seguenti colonne per ciascun aggregato.
+
+* *Stato*
++
+Un oggetto integro senza eventi attivi visualizza un'icona con un segno di spunta verde (image:../media/sev-normal-um60.png["Icona per la severità dell'evento – normale"]). Se l'oggetto ha un evento attivo, l'icona dell'indicatore di evento identifica la severità dell'evento: Gli eventi critici sono rossi (image:../media/sev-critical-um60.png["Icona per la severità dell'evento – critico"]), gli eventi di errore sono di colore arancione (image:../media/sev-error-um60.png["Icona per la severità dell'evento – errore"]) e gli eventi di avviso sono gialli (image:../media/sev-warning-um60.png["Icona per la severità dell'evento – avviso"]).
+
+* *Aggregato*
++
+È possibile fare clic sul nome dell'aggregato per accedere alla pagina dei dettagli sulle prestazioni dell'aggregato.
+
+* *Tipo di aggregato*
++
+Il tipo di aggregato:
+
++
+** DISCO RIGIDO
+** Ibrido
++
+Combina HDD e SSD, ma Flash Pool non è stato attivato.
+
+** Ibrido (Flash Pool)
++
+Combina HDD e SSD ed è stato attivato Flash Pool.
+
+** SSD
+** SSD (FabricPool)
++
+Combina SSD e un Tier cloud
+
+** VMDisk (SDS)
++
+Dischi virtuali all'interno di una macchina virtuale
+
+** VMDisk (FabricPool)
++
+Combina dischi virtuali e un Tier cloud
+
+** LUN (FlexArray) questa colonna visualizza "`non disponibile`" quando il sistema di storage monitorato esegue una versione di ONTAP precedente alla 8.3.
+
+
+* *Latenza*
++
+Il tempo di risposta medio per tutte le richieste di i/o nell'aggregato, espresso in millisecondi per operazione.
+
+* *IOPS*
++
+Le operazioni di input/output al secondo sull'aggregato.
+
+* *Mbps*
++
+Il throughput sull'aggregato, misurato in megabyte al secondo.
+
+* *Capacità di performance utilizzata*
++
+La percentuale di capacità di performance utilizzata dall'aggregato.
+
++
+[NOTE]
+====
+I dati relativi alla capacità delle performance sono disponibili solo quando i nodi di un cluster sono installati con il software ONTAP 9.0 o versione successiva.
+
+====
+* *Utilizzo*
++
+La percentuale di dischi dell'aggregato attualmente in uso.
+
+* *Capacità libera*
++
+La capacità di storage inutilizzata per questo aggregato, in gigabyte.
+
+* *Capacità totale*
++
+La capacità di storage totale per questo aggregato, in gigabyte.
+
+* *Inactive Data Reporting*
++
+Se la funzionalità di reporting dei dati inattivi è attivata o disattivata su questo aggregato. Quando questa opzione è attivata, i volumi di questo aggregato visualizzano la quantità di dati cold nella pagina di inventario Performance/Volumes.
+
++
+Il valore in questo campo è "`N/A`" quando la versione di ONTAP non supporta il reporting dei dati inattivi.
+
+* *Cluster*
++
+Il cluster a cui appartiene l'aggregato. È possibile fare clic sul nome del cluster per accedere alla pagina dei dettagli del cluster.
+
+* Nodo *
++
+Nodo a cui appartiene l'aggregato. È possibile fare clic sul nome del nodo per accedere alla pagina dei dettagli del nodo.
+
+* *Criterio di soglia*
++
+I criteri o i criteri di soglia delle performance definiti dall'utente che sono attivi su questo oggetto di storage. È possibile posizionare il cursore sui nomi dei criteri contenenti i puntini di sospensione (...) per visualizzare il nome completo del criterio o l'elenco dei nomi dei criteri assegnati. I pulsanti *Assign Performance Threshold Policy* e *Clear Performance Threshold Policy* rimangono disattivati finché non si selezionano uno o più oggetti facendo clic sulle caselle di controllo situate all'estrema sinistra.
+
+

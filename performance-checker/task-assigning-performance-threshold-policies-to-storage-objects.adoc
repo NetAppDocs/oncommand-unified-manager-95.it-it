@@ -1,0 +1,94 @@
+---
+permalink: performance-checker/task-assigning-performance-threshold-policies-to-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Si assegna un criterio di soglia delle performance definito dall"utente a un oggetto storage in modo che Unified Manager rifera un evento se il valore del contatore delle performance supera l"impostazione del criterio.' 
+---
+= Assegnazione di criteri di soglia delle performance agli oggetti di storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si assegna un criterio di soglia delle performance definito dall'utente a un oggetto storage in modo che Unified Manager rifera un evento se il valore del contatore delle performance supera l'impostazione del criterio.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore di OnCommand.
+
+I criteri di soglia delle prestazioni che si desidera applicare all'oggetto devono esistere.
+
+
+
+== A proposito di questa attività
+
+È possibile applicare un solo criterio di performance alla volta a un oggetto o a un gruppo di oggetti.
+
+È possibile assegnare un massimo di tre criteri di soglia a ciascun oggetto di storage. Quando si assegnano criteri a più oggetti, se uno qualsiasi degli oggetti ha già assegnato il numero massimo di criteri, Unified Manager esegue le seguenti azioni:
+
+* Applica il criterio a tutti gli oggetti selezionati che non hanno raggiunto il massimo
+* Ignora gli oggetti che hanno raggiunto il numero massimo di criteri
+* Visualizza un messaggio che indica che il criterio non è stato assegnato a tutti gli oggetti
+
+
+Inoltre, se alcuni oggetti non supportano il contatore rilevato nel criterio di soglia, il criterio non viene applicato a tale oggetto. Ad esempio, se si crea un criterio di soglia "`capacità di performance utilizzata`" e si tenta di assegnarlo a un nodo che non dispone di software ONTAP 9.0 o versione successiva, il criterio non viene applicato a tale nodo.
+
+
+
+== Fasi
+
+. Dalla pagina Performance Inventory di qualsiasi oggetto di storage, selezionare l'oggetto o gli oggetti a cui si desidera assegnare un criterio di soglia:
++
+|===
+| Per assegnare le soglie a... | Fare clic su... 
+
+
+ a| 
+Un singolo oggetto
+ a| 
+La casella di controllo a sinistra dell'oggetto.
+
+
+
+ a| 
+Oggetti multipli
+ a| 
+La casella di controllo a sinistra di ciascun oggetto.
+
+
+
+ a| 
+Tutti gli oggetti della pagina
+ a| 
+Il image:../media/select-dropdown-65-png.gif[""] E scegliere *Seleziona tutti gli oggetti in questa pagina*.
+
+
+
+ a| 
+Tutti gli oggetti dello stesso tipo
+ a| 
+Il image:../media/select-dropdown-65-png.gif[""] E scegliere *Seleziona tutti gli oggetti*.
+
+|===
++
+È possibile utilizzare la funzionalità di ordinamento e filtraggio per perfezionare l'elenco di oggetti nella pagina di inventario per semplificare l'applicazione di criteri di soglia a molti oggetti.
+
+. Effettuare la selezione, quindi fare clic su *Assign Performance Threshold Policy*.
++
+Viene visualizzata la pagina Assign Threshold Policy (Assegna criterio di soglia), che mostra un elenco di criteri di soglia esistenti per quel tipo specifico di oggetto di storage.
+
+. Fare clic su ciascun criterio per visualizzare i dettagli delle impostazioni delle soglie delle prestazioni e verificare di aver selezionato il criterio di soglia corretto.
+. Dopo aver selezionato il criterio di soglia appropriato, fare clic su *Assign Policy* (Assegna policy).
++
+Un messaggio di esito positivo visualizzato nella parte superiore della pagina conferma che il criterio di soglia è stato assegnato all'oggetto o agli oggetti e fornisce un collegamento alla pagina Avvisi in modo da poter configurare le impostazioni degli avvisi per questo oggetto e criterio.
+
+
+
+
+
+== Al termine
+
+Se si desidera che gli avvisi vengano inviati tramite e-mail o come trap SNMP, per notificare che è stato generato un particolare evento di performance, è necessario configurare le impostazioni degli avvisi nella pagina Configurazione/Avvisi.

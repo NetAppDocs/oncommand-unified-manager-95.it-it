@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-customizing-the-svm-inventory-report-to-display-a-list-of-stopped-svms.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile personalizzare il report di inventario SVM per visualizzare un elenco di SVM interrotte. Il report filtra le SVM in base al loro stato. 
+---
+= Personalizzazione del report di inventario SVM per visualizzare un elenco di SVM interrotte
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report di inventario SVM per visualizzare un elenco di SVM interrotte. Il report filtra le SVM in base al loro stato.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Per filtrare le SVM in base allo stato, fare clic sulla colonna *Stato* e aprire la finestra di dialogo *filtro* facendo clic sul image:../media/click-to-filter.gif[""] icona.
+. Dall'elenco *condizione*, selezionare *uguale a*.
+. Fare clic su *Select Values* (Seleziona valori) e selezionare *Stopped* (interrotto)
+. Fare clic su *OK*.
+

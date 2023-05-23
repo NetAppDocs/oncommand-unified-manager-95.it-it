@@ -1,0 +1,55 @@
+---
+permalink: online-help/task-moving-lifs-manually.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le macchine virtuali di storage contengono volumi di dati e una o più interfacce logiche attraverso le quali la SVM fornisce i dati ai client. È possibile spostare i dati LIF da una porta fisica a un"altra all"interno della stessa SVM. Questa operazione potrebbe essere utile per migliorare il bilanciamento del carico o per assistere le operazioni di manutenzione e l"ottimizzazione delle performance.' 
+---
+= Spostamento manuale di LIF
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le macchine virtuali di storage (SVM) contengono volumi di dati e una o più interfacce logiche (LIFF) attraverso le quali la SVM fornisce i dati ai client. È possibile spostare i dati LIF da una porta fisica a un'altra all'interno della stessa SVM. Questa operazione potrebbe essere utile per migliorare il bilanciamento del carico o per assistere le operazioni di manutenzione e l'ottimizzazione delle performance.
+
+
+
+== A proposito di questa attività
+
+Esistono i seguenti tipi di LIF:
+
+* Data LIF: Associato a una SVM e utilizzato per comunicare con i client.
+* Cluster Management LIF: Utilizzato per la gestione di nodi, SVM e il cluster stesso.
+* Cluster LIF: Utilizzato per il traffico intra-luster.
+* LIF intercluster: Utilizzato per la comunicazione tra cluster.
+* LIF Intracluster: Utilizzati per la comunicazione tra coppie ha.
+* LIF di gestione SVM: LIF dei dati associati a una SVM e utilizzati per la gestione di tale SVM.
+
+
+image::../media/cluster-network-types.gif[tipi di rete del cluster]
+
+Questo flusso di lavoro descrive come spostare le LIF dei dati. Questo vale per le LIF NAS (NFS e CIFS), ma non PER le LIF SAN (FC e iSCSI).
+
+[NOTE]
+====
+Quando si sposta una LIF connessa alle condivisioni CIFS, i client che accedono alle condivisioni CIFS vengono disconnessi. Qualsiasi richiesta di lettura o scrittura alle condivisioni CIFS verrà interrotta.
+
+====
+[NOTE]
+====
+Per informazioni su come spostare altri tipi di ONTAP, inclusi i dettagli sullo spostamento delle condivisioni LIFS collegate a LIFS, consultare la documentazione di LIFS Networking.
+
+====
+È possibile eseguire le seguenti azioni di base relative ai dati LIF:
+
+* Visualizzare tutti i dati LIF.
+* Identificare i LIF più impegnativi.
+* Identificare il nodo migliore per accettare una LIF occupata.
+* Modificare la porta home o il nodo di una LIF per modificarne la posizione preferita nel cluster.
++
+È consigliabile spostare una LIF piuttosto che migrare una LIF per ottenere un cambiamento più duraturo. Per tornare alla porta home originale, ripristinare la LIF.
+
+* Eseguire la migrazione di un LIF dati a un'altra porta per una modifica temporanea che potrebbe essere utilizzata in caso di problemi alla porta o al nodo principale o in caso di manutenzione pianificata.
+* Ripristinare una LIF dati alla porta home.
+

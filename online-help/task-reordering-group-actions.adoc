@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-reordering-group-actions.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile modificare l"ordine delle azioni di gruppo da applicare agli oggetti di storage di un gruppo. Le azioni di gruppo vengono applicate agli oggetti storage in sequenza in base al loro rango. Il livello più basso viene assegnato all"azione di gruppo configurata per ultima. È possibile modificare la classificazione dell"azione di gruppo in base alle proprie esigenze.' 
+---
+= Riordinamento delle azioni di gruppo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare l'ordine delle azioni di gruppo da applicare agli oggetti di storage di un gruppo. Le azioni di gruppo vengono applicate agli oggetti storage in sequenza in base al loro rango. Il livello più basso viene assegnato all'azione di gruppo configurata per ultima. È possibile modificare la classificazione dell'azione di gruppo in base alle proprie esigenze.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== A proposito di questa attività
+
+È possibile selezionare una singola riga o più righe, quindi eseguire più operazioni di trascinamento per modificare il rango delle azioni di gruppo. Tuttavia, è necessario salvare le modifiche affinché la nuova priorità venga riflessa nella griglia delle azioni di gruppo.
+
+
+
+== Fasi
+
+. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *Gestione* > *gruppi*.
+. Nella scheda *azioni gruppo*, fare clic su *Riordina*.
+. Nella finestra di dialogo *Riordina azioni gruppo*, trascinare le righe per riorganizzare la sequenza delle azioni gruppo secondo necessità.
+. Fare clic su *Save* (Salva).
+

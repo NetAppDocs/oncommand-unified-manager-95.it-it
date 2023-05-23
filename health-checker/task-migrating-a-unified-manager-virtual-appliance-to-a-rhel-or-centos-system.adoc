@@ -1,0 +1,81 @@
+---
+permalink: health-checker/task-migrating-a-unified-manager-virtual-appliance-to-a-rhel-or-centos-system.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: 'Se si desidera modificare il sistema operativo host su cui è in esecuzione Unified Manager, è possibile ripristinare un backup del database di Unified Manager da un"appliance virtuale a un sistema Red Hat Enterprise Linux o CentOS Linux.' 
+---
+= Migrazione di un'appliance virtuale Unified Manager a un sistema Linux
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se si desidera modificare il sistema operativo host su cui è in esecuzione Unified Manager, è possibile ripristinare un backup del database di Unified Manager da un'appliance virtuale a un sistema Red Hat Enterprise Linux o CentOS Linux.
+
+
+
+== Prima di iniziare
+
+* Sull'appliance virtuale:
++
+** Per creare il backup, è necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+** È necessario conoscere il nome dell'utente di manutenzione di Unified Manager per l'operazione di ripristino.
+
+
+* Sul sistema Linux:
++
+** Unified Manager deve essere installato su un server RHEL o CentOS seguendo le istruzioni della Guida all'installazione.
+** La versione di Unified Manager su questo server deve essere uguale a quella dell'appliance virtuale da cui si utilizza il file di backup.
+** Non avviare l'interfaccia utente né configurare cluster, utenti o impostazioni di autenticazione sul sistema Linux dopo l'installazione. Il file di backup inserisce queste informazioni durante il processo di ripristino.
+** È necessario disporre delle credenziali dell'utente root per l'host Linux.
+
+
+
+
+
+
+== A proposito di questa attività
+
+Questi passaggi descrivono come creare un file di backup sull'appliance virtuale, copiare i file di backup nel sistema Red Hat Enterprise Linux o CentOS e ripristinare il backup del database nel nuovo sistema.
+
+
+
+== Fasi
+
+. Nella barra degli strumenti dell'appliance virtuale, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *Gestione* > *Backup database*.
+. Nella pagina *Gestione/Backup database*, fare clic su *azioni* > *Impostazioni backup database*.
+. Impostare il percorso di backup su `/jail/support`.
+. Nella sezione *Schedule Frequency* (frequenza pianificazione), selezionare la casella di controllo *Enable* (attiva), selezionare *Daily* (giornaliero) e inserire un intervallo di tempo che deve trascorrere alcuni minuti prima dell'ora corrente, in modo che il backup venga creato a breve.
+. Fare clic su *Save and Close* (Salva e chiudi).
+. Attendere alcune ore per la creazione del backup.
++
+Un backup completo può superare 1 GB e può richiedere da tre a quattro ore per il completamento.
+
+. Accedere come utente root all'host Linux su cui è installato Unified Manager e copiare i file di backup da `/support` Sull'appliance virtuale che utilizza SCP.`root@<rhel_server>:/# scp -r admin@<vapp_server_ip_address>:/support/* .`
++
+`root@ocum_rhel-21:/# scp -r admin@10.10.10.10:/support/* .`
+
++
+Assicurarsi di aver copiato `.7z` file di backup e tutti `.7z` repository dei file in `/database-dumps-repo` sottodirectory.
+
+. Al prompt dei comandi, ripristinare il backup: `um backup restore -f /<backup_file_path>/<backup_file_name>`
++
+`um backup restore -f /UM_9.4.N151113.1348_backup_unix_02-12-2018-04-16.7z`
+
+. Al termine dell'operazione di ripristino, accedere all'interfaccia utente Web di Unified Manager.
+
+
+
+
+== Al termine
+
+È necessario eseguire le seguenti operazioni:
+
+* Generare un nuovo certificato di sicurezza HTTPS e riavviare il server Unified Manager.
+* Modificare il percorso di backup impostando l'impostazione predefinita per il sistema Linux (`/data/ocum-backup`), o verso un nuovo percorso di vostra scelta, perché non c'è `/jail/support` Percorso sul sistema Linux.
+* Riconfigurare entrambi i lati della connessione di Workflow Automation, se si utilizza WFA.
+* Riconfigurare le impostazioni di autenticazione SAML, se si utilizza SAML.
+
+
+Dopo aver verificato che tutto funziona come previsto sul sistema Linux, è possibile arrestare e rimuovere l'appliance virtuale Unified Manager.

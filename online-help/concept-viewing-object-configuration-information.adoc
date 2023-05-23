@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-viewing-object-configuration-information.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le pagine Object Information (informazioni sugli oggetti), situate nella landing page di ciascun oggetto, visualizzano i valori degli attributi di configurazione non relativi alle prestazioni di ciascun oggetto di storage. Alcuni degli attributi sono impostazioni di configurazione fisiche, mentre altri attributi possono influire sulle prestazioni dell"oggetto.' 
+---
+= Visualizzazione delle informazioni di configurazione degli oggetti
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le pagine Object Information (informazioni sugli oggetti), che si trovano nella landing page di ciascun oggetto, visualizzano i valori per gli attributi di configurazione non relativi alle prestazioni di ciascun oggetto di storage. Alcuni degli attributi sono impostazioni di configurazione fisiche, mentre altri attributi possono influire sulle prestazioni dell'oggetto.
+
+Ad esempio, è utile conoscere la quantità di spazio disponibile per un aggregato o per un nodo. Conoscere l'impostazione della velocità per una determinata porta può essere utile quando si esegue la diagnosi di un problema di performance.

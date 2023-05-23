@@ -1,0 +1,135 @@
+---
+permalink: online-help/concept-how-group-rules-work-for-groups.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Una regola di gruppo è un criterio definito per consentire l"inclusione di oggetti storage (volumi, cluster o SVM) in un gruppo specifico. È possibile utilizzare i gruppi di condizioni o le condizioni per definire una regola di gruppo per un gruppo.' 
+---
+= Funzionamento delle regole di gruppo per i gruppi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Una regola di gruppo è un criterio definito per consentire l'inclusione di oggetti storage (volumi, cluster o SVM) in un gruppo specifico. È possibile utilizzare i gruppi di condizioni o le condizioni per definire una regola di gruppo per un gruppo.
+
+* È necessario associare una regola di gruppo a un gruppo.
+* È necessario associare un tipo di oggetto per una regola di gruppo; per una regola di gruppo è associato un solo tipo di oggetto.
+* Gli oggetti di storage vengono aggiunti o rimossi dal gruppo dopo ogni ciclo di monitoraggio o quando una regola viene creata, modificata o eliminata.
+* Una regola di gruppo può avere uno o più gruppi di condizioni e ciascun gruppo di condizioni può avere una o più condizioni.
+* Gli oggetti di storage possono appartenere a più gruppi in base alle regole di gruppo create dall'utente.
+
+
+
+
+== Condizioni
+
+È possibile creare più gruppi di condizioni e ciascun gruppo di condizioni può avere una o più condizioni. È possibile applicare tutti i gruppi di condizioni definiti in una regola di gruppo per i gruppi al fine di specificare quali oggetti di storage sono inclusi nel gruppo.
+
+Le condizioni all'interno di un gruppo di condizioni vengono eseguite utilizzando AND logico. Tutte le condizioni di un gruppo di condizioni devono essere soddisfatte. Quando si crea o si modifica una regola di gruppo, viene creata una condizione che applica, seleziona e raggruppa solo gli oggetti di storage che soddisfano tutte le condizioni del gruppo Condition. È possibile utilizzare più condizioni all'interno di un gruppo di condizioni quando si desidera limitare l'ambito degli oggetti di storage da includere in un gruppo.
+
+È possibile creare condizioni con oggetti di storage utilizzando i seguenti operandi e operatore e specificando il valore richiesto.
+
+|===
+| Tipo di oggetto storage | Operandi applicabili 
+
+
+ a| 
+Volume
+ a| 
+* Nome dell'oggetto
+* Nome del cluster proprietario
+* Nome SVM proprietario
+* Annotazioni
+
+
+
+
+ a| 
+SVM
+ a| 
+* Nome dell'oggetto
+* Nome del cluster proprietario
+* Annotazioni
+
+
+
+
+ a| 
+Cluster
+ a| 
+* Nome dell'oggetto
+* Annotazioni
+
+
+|===
+Quando si seleziona un'annotazione come operando per qualsiasi oggetto di storage, è disponibile l'operatore "`is`". Per tutti gli altri operandi, è possibile selezionare "`is`" o "`contains`" come operatore.
+
+* Operando
++
+L'elenco degli operandi in Unified Manager cambia in base al tipo di oggetto selezionato. L'elenco include il nome dell'oggetto, il nome del cluster proprietario, il nome SVM proprietario e le annotazioni definite in Unified Manager.
+
+* Operatore
++
+L'elenco degli operatori cambia in base all'operando selezionato per una condizione. Gli operatori supportati in Unified Manager sono "`is`" e "`contains`".
+
++
+Quando si seleziona l'operatore "`is`", la condizione viene valutata per la corrispondenza esatta del valore dell'operando con il valore fornito per l'operando selezionato.
+
++
+Quando si seleziona l'operatore "`contains`", la condizione viene valutata per soddisfare uno dei seguenti criteri:
+
++
+** Il valore dell'operando corrisponde esattamente al valore fornito per l'operando selezionato
+** Il valore dell'operando contiene il valore fornito per l'operando selezionato
+
+
+* Valore
++
+Il campo valore cambia in base all'operando selezionato.
+
+
+
+
+
+== Esempio di una regola di gruppo con condizioni
+
+Considerare un gruppo di condizioni per un volume con le seguenti due condizioni:
+
+* Il nome contiene "`vol`"
+* Il nome SVM è "`dATA_svm`"
+
+
+Questo gruppo di condizioni seleziona tutti i volumi che includono "`vol`" nei loro nomi e che sono ospitati su SVM con il nome "`data_svm`".
+
+
+
+== Gruppi di condizioni
+
+I gruppi di condizioni vengono eseguiti utilizzando OR logico e quindi applicati agli oggetti di storage. Gli oggetti di storage devono soddisfare uno dei gruppi di condizioni da includere in un gruppo. Gli oggetti di storage di tutti i gruppi di condizioni vengono combinati. È possibile utilizzare i gruppi di condizioni per aumentare l'ambito degli oggetti di storage da includere in un gruppo.
+
+
+
+== Esempio di una regola di gruppo con gruppi di condizioni
+
+Prendere in considerazione due gruppi di condizioni per un volume, ciascuno dei quali contiene le seguenti due condizioni:
+
+* Gruppo di condizioni 1
++
+** Il nome contiene "`vol`"
+** Il nome SVM è "`dATA_svm`". Il gruppo di condizioni 1 seleziona tutti i volumi che includono "`vol`" nei loro nomi e che sono ospitati sulle SVM con il nome "`dATA_svm`".
+
+
+* Gruppo di condizioni 2
++
+** Il nome contiene "`vol`"
+** Il valore di annotazione della priorità dei dati è "`critico`". Il gruppo di condizioni 2 seleziona tutti i volumi che includono "`vol`" nei loro nomi e che sono annotati con il valore di annotazione della priorità dei dati come "`critico`".
+
+
+
+
+Quando una regola di gruppo contenente questi due gruppi di condizioni viene applicata agli oggetti di storage, i seguenti oggetti di storage vengono aggiunti a un gruppo selezionato:
+
+* Tutti i volumi che includono "`vol`" nei loro nomi e che sono ospitati sulla SVM con il nome "`data_svm`".
+* Tutti i volumi che includono "`vol`" nei loro nomi e che sono annotati con il valore di annotazione della priorità dei dati "`critical`".
+

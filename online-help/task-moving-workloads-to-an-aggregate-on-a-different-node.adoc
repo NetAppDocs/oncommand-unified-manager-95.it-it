@@ -1,0 +1,100 @@
+---
+permalink: online-help/task-moving-workloads-to-an-aggregate-on-a-different-node.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile utilizzare Unified Manager per identificare un aggregato su un nodo diverso meno occupato rispetto al nodo in cui sono attualmente in esecuzione i carichi di lavoro, quindi è possibile spostare volumi selezionati in tale aggregato. Lo spostamento di carichi di lavoro dalle performance elevate in un aggregato su un nodo meno occupato consente ai carichi di lavoro su entrambi i nodi di funzionare in modo più efficiente. 
+---
+= Spostamento dei carichi di lavoro in un aggregato su un nodo diverso
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare Unified Manager per identificare un aggregato su un nodo diverso meno occupato rispetto al nodo in cui sono attualmente in esecuzione i carichi di lavoro, quindi è possibile spostare volumi selezionati in tale aggregato. Lo spostamento di carichi di lavoro dalle performance elevate in un aggregato su un nodo meno occupato consente ai carichi di lavoro su entrambi i nodi di funzionare in modo più efficiente.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+* È necessario aver registrato il nome del nodo che sta riscontrando un problema di performance.
+* È necessario aver registrato la data e l'ora in cui il nodo ha ricevuto l'evento di performance.
+* È necessario aver registrato l'ID evento, ad esempio "`p-sdt-clus1-Nod-6982`".
+* Unified Manager deve aver raccolto e analizzato almeno un mese di dati relativi alle performance.
+
+
+
+
+== A proposito di questa attività
+
+Questi passaggi consentono di identificare le seguenti risorse in modo da poter spostare i carichi di lavoro dalle performance elevate in un nodo meno utilizzato:
+
+* I nodi dello stesso cluster meno utilizzati
+* Gli aggregati sul nuovo nodo che sono i meno utilizzati
+* I volumi dalle performance più elevate sul nodo corrente
+
+
+
+
+== Fasi
+
+. Identificare un nodo nel cluster meno utilizzato:
++
+.. Nella pagina dei dettagli *evento*, fare clic sul nome del cluster in cui risiede il nodo.
++
+I dettagli del cluster vengono visualizzati nella pagina Landing di Performance/Cluster.
+
+.. Nella pagina *Riepilogo*, fare clic su *nodi* dal riquadro *oggetti gestiti*.
++
+Viene visualizzato l'elenco dei nodi di questo cluster.
+
+.. Fare clic sulla colonna *Utilization* (utilizzo) per ordinare i nodi in base ai meno utilizzati.
++
+È inoltre possibile identificare i nodi che hanno la capacità massima * libera*. In questo modo viene fornito un elenco dei nodi potenziali in cui è possibile spostare i carichi di lavoro.
+
+.. Annotare il nome del nodo in cui si desidera spostare i carichi di lavoro.
+
+
+. Identificare un aggregato sul nuovo nodo meno utilizzato:
++
+.. Nel riquadro di navigazione a sinistra, fare clic su *Performance* > *aggregati*.
++
+Viene visualizzata la pagina Performance/Aggregates (prestazioni/aggregati).
+
+.. Fare clic su *Filtering*, selezionare *Node* dal menu a discesa a sinistra, digitare il nome del nodo nel campo di testo, quindi fare clic su *Apply Filter* (Applica filtro).
++
+Le performance/aggregati vengono visualizzate nuovamente con l'elenco degli aggregati disponibili su questo nodo.
+
+.. Fare clic sulla colonna *Utilization* (utilizzo) per ordinare gli aggregati in base al minor utilizzo.
++
+È inoltre possibile identificare gli aggregati che hanno la capacità massima * libera*. In questo modo viene fornito un elenco di potenziali aggregati in cui è possibile spostare i carichi di lavoro.
+
+.. Annotare il nome dell'aggregato in cui si desidera spostare i carichi di lavoro.
+
+
+. Identificare i carichi di lavoro dalle performance elevate dal nodo che ha ricevuto l'evento:
++
+.. Torna alla pagina dei dettagli *evento* per l'evento.
+.. Nel campo *volumi interessati*, fare clic sul collegamento relativo al numero di volumi.
++
+Viene visualizzata la pagina Performance/Volumes (prestazioni/volumi) con un elenco filtrato dei volumi su quel nodo.
+
+.. Fare clic sulla colonna *capacità totale* per ordinare i volumi in base allo spazio allocato più grande.
++
+In questo modo viene visualizzato un elenco dei volumi potenziali che si desidera spostare.
+
+.. Annotare i nomi dei volumi che si desidera spostare e i nomi degli aggregati correnti in cui risiedono.
+
+
+. Spostare i volumi negli aggregati identificati come a basso utilizzo sul nuovo nodo.
++
+È possibile eseguire l'operazione di spostamento utilizzando Gestione sistema di OnCommand, OnCommand Workflow Automation, comandi ONTAP o una combinazione di questi strumenti.
+
+
+
+
+
+== Al termine
+
+Dopo alcuni giorni, verificare se si stanno ricevendo lo stesso tipo di eventi da questo nodo o aggregato.

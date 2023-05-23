@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-confirm-that-the-response-time-is-within-the-expected-range.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Quando un componente del cluster è in conflitto, i carichi di lavoro dei volumi che lo utilizzano potrebbero aver ridotto i tempi di risposta (latenza). È possibile esaminare la latenza di ciascun carico di lavoro della vittima sul componente in conflitto per verificare che la latenza effettiva rientri nell"intervallo previsto. È inoltre possibile fare clic sul nome di un volume per visualizzare i dati storici del volume.' 
+---
+= Conferma che la latenza rientra nell'intervallo previsto
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando un componente del cluster è in conflitto, i carichi di lavoro dei volumi che lo utilizzano potrebbero aver ridotto il tempo di risposta (latenza). È possibile esaminare la latenza di ciascun carico di lavoro della vittima sul componente in conflitto per verificare che la latenza effettiva rientri nell'intervallo previsto. È inoltre possibile fare clic sul nome di un volume per visualizzare i dati storici del volume.
+
+Se l'evento relativo alle performance si trova nello stato obsoleto, la latenza di ciascuna vittima coinvolta nell'evento potrebbe essere tornata entro l'intervallo previsto.

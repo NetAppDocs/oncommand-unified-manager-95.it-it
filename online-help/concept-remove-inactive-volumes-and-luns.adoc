@@ -1,0 +1,34 @@
+---
+permalink: online-help/concept-remove-inactive-volumes-and-luns.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Una volta identificato lo spazio libero aggregato come un problema, è possibile cercare volumi e LUN inutilizzati ed eliminarli dall"aggregato. Questo può aiutare a ridurre il problema dello spazio su disco insufficiente.' 
+---
+= Rimuovere volumi e LUN inattivi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Una volta identificato lo spazio libero aggregato come un problema, è possibile cercare volumi e LUN inutilizzati ed eliminarli dall'aggregato. Questo può aiutare a ridurre il problema dello spazio su disco insufficiente.
+
+Se un evento di performance su un aggregato è causato da uno spazio su disco insufficiente, esistono alcuni modi per determinare quali volumi e LUN non vengono più utilizzati.
+
+Per identificare i volumi inutilizzati:
+
+* Nella pagina Dettagli evento, il campo *Conteggio oggetti interessati* fornisce un collegamento che visualizza l'elenco dei volumi interessati.
++
+Fare clic sul collegamento per visualizzare i volumi nella pagina Performance/Volumes (prestazioni/volumi). Da qui è possibile ordinare i volumi interessati in base a *IOPS* per vedere quali volumi non sono stati attivi.
+
+
+
+Per identificare le LUN inutilizzate:
+
+. Nella pagina Dettagli evento, annotare il nome dell'aggregato in cui si è verificato l'evento.
+. Nel riquadro di navigazione a sinistra, fare clic su *Performance* > *LUN*.
+. Fare clic su *Filtering*, selezionare *aggregate* dal menu a discesa a sinistra, digitare il nome dell'aggregato nel campo di testo, quindi fare clic su *Apply Filter* (Applica filtro).
+. Ordinare l'elenco risultante dei LUN interessati in base a *IOPS* per visualizzare i LUN non attivi.
+
+
+Una volta identificati i volumi e le LUN inutilizzati, è possibile utilizzare Gestione di sistema di OnCommand o i comandi ONTAP per eliminare tali oggetti.

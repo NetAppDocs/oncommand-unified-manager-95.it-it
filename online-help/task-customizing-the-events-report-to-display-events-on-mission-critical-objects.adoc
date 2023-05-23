@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-events-on-mission-critical-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile personalizzare il report Eventi per visualizzare gli eventi filtrati in base alla priorità dei dati mission-critical. 
+---
+= Personalizzazione del report Eventi per visualizzare gli eventi su oggetti mission-critical
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report Eventi per visualizzare gli eventi filtrati in base alla priorità dei dati mission-critical.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Per filtrare gli eventi con priorità dei dati mission-critical, fare clic nella colonna *Data Priority* (priorità dati) e aprire la finestra di dialogo *Filter* (filtro) facendo clic su image:../media/click-to-filter.gif[""] icona.
+. Dall'elenco *condizione*, selezionare *uguale a*.
+. Fare clic su *Select Values* (Seleziona valori) e selezionare *Mission-critical*.
+. Fare clic su *OK*.
+

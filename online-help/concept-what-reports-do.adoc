@@ -1,0 +1,41 @@
+---
+permalink: online-help/concept-what-reports-do.html 
+sidebar: sidebar 
+keywords:  
+summary: I report visualizzano informazioni dettagliate sugli oggetti di storage, che consentono di esaminare e identificare potenziali problemi. 
+---
+= Cosa fanno i report
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I report visualizzano informazioni dettagliate sugli oggetti di storage, che consentono di esaminare e identificare potenziali problemi.
+
+È possibile salvare, eliminare, condividere, pianificare e importare i report. È inoltre possibile cercare report specifici. È possibile personalizzare i report in base a casi di utilizzo specifici e salvarli per un utilizzo futuro. È possibile eseguire operazioni aggiuntive come filtraggio, ordinamento, raggruppamento e formattazione.
+
+Per impostazione predefinita, ciascun gruppo di report viene visualizzato in base al tipo e alla descrizione del report. È possibile eseguire report per visualizzare un gruppo di report specifico.
+
+Dopo aver eseguito un report, è possibile personalizzarlo ulteriormente e salvarlo. È possibile visualizzare i report personalizzati salvati nella pagina Report, raggruppati sotto la categoria di report specifica.
+
+È possibile pianificare l'invio di report o condividerli in uno dei formati supportati: PDF, XHTML, CSV, XLS o testo.
+
+È possibile esportare i report in diversi formati e salvarli sul desktop. È possibile esportare i dati delle singole colonne dai report generati.
+
+È possibile importare i file di progettazione dei report (`.rptdesign` E salvare i report importati nella pagina Report. È possibile eliminare i report personalizzati e importati.
+
+È possibile importare i seguenti report:
+
+* Report con più intestazioni con un intervallo di colonne impostato su uno
+* Solo report con grafici
+* Solo report con elenchi e griglie
+
+
+I report in formato testo, CSV ed Excel sono supportati nei seguenti scenari:
+
+* Table Element (elemento tabella) solo in `.rptdesign` file
+* Una tabella con una sola intestazione come riga
+
+
+Non è possibile importare report con un intervallo di colonne superiore a uno. Se un report in formato testo, CSV o Excel ha più di una riga di intestazione, viene presa in considerazione solo la prima riga di intestazione e le righe rimanenti vengono ignorate.

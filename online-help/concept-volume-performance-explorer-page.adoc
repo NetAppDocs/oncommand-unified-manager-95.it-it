@@ -1,0 +1,60 @@
+---
+permalink: online-help/concept-volume-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Questa pagina fornisce informazioni dettagliate sulle prestazioni di un volume in un cluster. Il titolo di questa pagina dipende dalla visualizzazione di un volume FlexVol o FlexGroup. 
+---
+= Pagina Performance/Volume o Performance/FlexGroup Explorer
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Questa pagina fornisce informazioni dettagliate sulle prestazioni di un volume in un cluster. Il titolo di questa pagina dipende dalla visualizzazione di un volume FlexVol o FlexGroup.
+
+La pagina Esplora volume o FlexGroup consente di tenere traccia e confrontare le prestazioni del volume durante un periodo di tempo specifico, consentendo di risolvere i problemi e ottimizzare le prestazioni del volume.
+
+[NOTE]
+====
+I volumi root non vengono visualizzati in questa pagina.
+
+====
+Utilizzando la funzionalità Visualizza e confronta:
+
+* Per i volumi FlexVol, è possibile confrontare le prestazioni di questo volume con:
++
+** altri volumi sullo stesso aggregato
+** l'aggregato su cui risiede questo volume
+** SVM su cui risiede questo volume
+** LUN presenti in questo volume
+
+
+* Per i volumi FlexGroup, è possibile confrontare le prestazioni di questo FlexGroup con:
++
+** Gli aggregati su cui risiede FlexGroup
+** SVM su cui risiede FlexGroup
+** I volumi costitutivi di FlexGroup
+
+
+
+
+Le statistiche nei grafici vengono aggiornate dopo ogni periodo di raccolta, che per impostazione predefinita è ogni 5 minuti. Il selettore View statistics in (Visualizza statistiche in) offre un'opzione per visualizzare le statistiche mediate nell'ora precedente. Questa funzionalità consente di visualizzare il grafico della latenza a supporto del programma "`Performance Guarantee`" di NetApp.
+
+La pagina Performance/Volume Explorer (Esplora prestazioni/volume) o Performance/FlexGroup Explorer (Esplora prestazioni/FlexGroup) consente di:
+
+* Visualizza i problemi relativi alle soglie e i relativi dettagli
+* Tieni traccia e confronta i dati sulle performance dei volumi
+* Analizzare e risolvere i problemi relativi alla soglia
+* Analizzare e risolvere i problemi relativi alle prestazioni
+* Avviare System Manager per apportare una modifica alla configurazione del volume
++
+Il pulsante *Configura volume* è disponibile se si è connessi a Unified Manager con il ruolo di amministratore dello storage o amministratore dello storage di OnCommand e quando si utilizza ONTAP 9.5 o versione successiva.
+
+
+
+[NOTE]
+====
+Per i volumi di data Protection (DP), vengono visualizzati solo i valori dei contatori per il traffico generato dall'utente. Quando il cluster viene installato con una versione del software ONTAP precedente alla 8.3, non viene visualizzato alcun valore del contatore.
+
+====

@@ -1,0 +1,16 @@
+---
+permalink: config/concept-overview-of-the-configuration-sequence.html 
+sidebar: sidebar 
+keywords:  
+summary: Il flusso di lavoro di configurazione descrive le attività da eseguire prima di poter utilizzare Unified Manager. 
+---
+= Panoramica della sequenza di configurazione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il flusso di lavoro di configurazione descrive le attività da eseguire prima di poter utilizzare Unified Manager.
+
+image::../media/post-install-flow.gif[flusso post-installazione]

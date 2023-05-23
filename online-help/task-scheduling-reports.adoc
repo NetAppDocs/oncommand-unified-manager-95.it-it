@@ -1,0 +1,45 @@
+---
+permalink: online-help/task-scheduling-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile pianificare i report dalla pagina Dettagli report e inviarli tramite e-mail a uno o più destinatari in un formato specifico con una frequenza specificata. Ad esempio, è possibile pianificare l"invio di un report via email, in formato PDF, ogni lunedì.' 
+---
+= Pianificazione dei report
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile pianificare i report dalla pagina Dettagli report e inviarli tramite e-mail a uno o più destinatari in un formato specifico con una frequenza specificata. Ad esempio, è possibile pianificare l'invio di un report via email, in formato PDF, ogni lunedì.
+
+
+
+== Fasi
+
+. Nel riquadro di spostamento di sinistra, fare clic su *Report*, quindi fare clic su *Esegui report* per il report desiderato.
++
+Viene visualizzata la pagina Dettagli report.
+
+. Fare clic su *azioni* > *Pianifica report*.
+. Nella finestra di dialogo *Schedule Report*, selezionare una delle pianificazioni preferite per il report:
++
+|===
+| Se si desidera... | Quindi... 
+
+
+ a| 
+Selezionare una pianificazione dall'elenco esistente
+ a| 
+Fare clic su *Use Existing Schedule* (Usa pianificazione esistente) e selezionare la pianificazione.
+
+
+
+ a| 
+Creare una nuova pianificazione
+ a| 
+Fare clic su *Create New Schedule* (Crea nuova pianificazione), quindi immettere il nome del programma, specificare l'indirizzo e-mail, selezionare il formato e la frequenza del report e immettere l'ora o il giorno in cui si desidera eseguire il report. È possibile specificare uno o più indirizzi e-mail, separati da virgole. L'opzione _PDF_ viene selezionata come formato predefinito del report. L'opzione _orario_ è selezionata come frequenza predefinita.
+
+|===
+. Fare clic su *Schedule*.
+

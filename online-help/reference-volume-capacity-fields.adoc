@@ -1,0 +1,204 @@
+---
+permalink: online-help/reference-volume-capacity-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Il report Volume Capacity and Utilization (capacità e utilizzo dei volumi) consente di visualizzare informazioni sulla capacità e sull"utilizzo dei volumi in un cluster. Queste informazioni consentono di comprendere i possibili rischi di capacità e di visualizzare la capacità configurata, utilizzata e inutilizzata degli aggregati. Inoltre, il report consente di prendere decisioni sull"attivazione di funzionalità per il risparmio di spazio, come deduplica e thin provisioning.' 
+---
+= Volume Capacity and Utilization (capacità e utilizzo dei volumi)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il report Volume Capacity and Utilization (capacità e utilizzo dei volumi) consente di visualizzare informazioni sulla capacità e sull'utilizzo dei volumi in un cluster. Queste informazioni consentono di comprendere i possibili rischi di capacità e di visualizzare la capacità configurata, utilizzata e inutilizzata degli aggregati. Inoltre, il report consente di prendere decisioni sull'attivazione di funzionalità per il risparmio di spazio, come deduplica e thin provisioning.
+
+
+
+== Visualizzazione tabulare del report Volume Capacity and Utilization (capacità e utilizzo dei volumi)
+
+* *Cluster*
++
+Visualizza il nome del cluster.
+
+* *Storage Virtual Machine*
++
+Visualizza il nome della macchina virtuale di storage (SVM) che contiene il volume.
+
+* *Volume*
++
+Visualizza il nome del volume.
+
+* *Capacità totale dei dati*
++
+Visualizza la capacità totale dei dati (utilizzata più disponibile) in un volume.
+
+* *Capacità dati utilizzata*
++
+Visualizza la capacità dei dati utilizzati in un volume.
+
+* *Dati utilizzati %*
++
+Visualizza i dati utilizzati in un volume in percentuale.
+
+* *Capacità dati disponibile*
++
+Visualizza la capacità dati disponibile in un volume.
+
+* *Dati disponibili %*
++
+Visualizza la capacità dei dati disponibile in un volume in percentuale.
+
+* *Tasso di crescita giornaliero %*
++
+Visualizza il tasso di crescita che si verifica ogni 24 ore nel volume.
+
+* *Giorni fino al completo*
++
+Visualizza il numero stimato di giorni rimanenti prima che il volume raggiunga la capacità massima.
+
+* *Soglia spazio pieno %*
++
+Specifica il limite al volume considerato pieno.
+
+* *Soglia spazio quasi pieno %*
++
+Specifica il limite al volume considerato quasi pieno.
+
+* *Soglia tasso di crescita %*
++
+Specifica che il tasso di crescita dell'aggregato è considerato normale prima che il sistema generi un evento aggregato di tasso di crescita anomalo.
+
+* *Soglia di sensibilità del tasso di crescita*
++
+Specifica il fattore applicato alla deviazione standard del tasso di crescita di un volume. Se il tasso di crescita supera la deviazione standard fattorizzata, viene generato un evento anomalo di Volume Growth Rate.
+
+* *Giorni fino alla soglia massima*
++
+Specifica il numero di giorni rimanenti prima di raggiungere la capacità completa.
+
+* *Snapshot overflow %*
++
+Visualizza la percentuale dello spazio dati utilizzato dalle copie Snapshot.
+
+* *Capacità utilizzata riserva Snapshot*
++
+Visualizza la quantità di spazio utilizzata dalle copie Snapshot nel volume.
+
+* *Snapshot Reserve used %*
++
+Visualizza la quantità di spazio utilizzata dalle copie Snapshot nel volume come percentuale.
+
+* *Snapshot Reserve Available Capacity (capacità disponibile riserva snapshot)*
++
+Visualizza la quantità di spazio disponibile per le copie Snapshot nel volume.
+
+* *Riserva Snapshot disponibile %*
++
+Visualizza la quantità di spazio disponibile per le copie Snapshot nel volume come percentuale.
+
+* *Capacità totale riserva Snapshot*
++
+Visualizza la capacità di copia Snapshot totale nel volume.
+
+* *Snapshot Copies Reserve Full Threshold %*
++
+Specifica la percentuale in cui lo spazio riservato per le copie Snapshot viene considerato pieno.
+
+* *Soglia numero copie Snapshot*
++
+Specifica il numero di copie Snapshot di un volume considerate troppe.
+
+* *Snapshot copia i giorni fino alla soglia completa*
++
+Specifica il numero di giorni rimanenti prima che lo spazio riservato per le copie Snapshot raggiunga la capacità massima.
+
+* *Numero di nodi*
++
+Visualizza il numero di inode nel volume.
+
+* *Utilizzo inode %*
++
+Specifica la percentuale di spazio di inode utilizzata nel volume.
+
+* *Inodi Full Threshold*
++
+Specifica la percentuale in cui un volume viene considerato avere consumato tutti i suoi inode.
+
+* *Inode quasi alla soglia massima*
++
+Specifica la percentuale in cui un volume viene considerato avere consumato la maggior parte degli inode.
+
+* *Capacità di quota impegnata*
++
+Visualizza lo spazio riservato nei volumi.
+
+* *Quota capacità in eccesso*
++
+Visualizza la quantità di spazio che è possibile utilizzare prima che il sistema generi l'evento Volume quota Overcommit.
+
+* *Quota Overcommit Threshold %*
++
+Specifica la percentuale di overcommit del volume.
+
+* *Quota quasi in eccesso soglia %*
++
+Specifica la percentuale in cui lo spazio del volume è quasi overcommit.
+
+* *Eliminazione automatica Snapshot*
++
+Visualizza se l'eliminazione automatica delle copie Snapshot è attivata o disattivata.
+
+* *Deduplica*
++
+Visualizza se la deduplica è attivata o disattivata per il volume.
+
+* *Riduzione dello spazio di deduplica*
++
+Visualizza la quantità di spazio salvato in un volume utilizzando la deduplica.
+
+* *Compressione*
++
+Visualizza se la compressione è attivata o disattivata per il volume.
+
+* *Risparmi di spazio di compressione*
++
+Visualizza la quantità di spazio salvato in un volume utilizzando la compressione.
+
+* *Policy di caching*
++
+Visualizza il criterio di caching associato al volume selezionato. Il criterio fornisce informazioni su come avviene il caching di Flash Pool per il volume. Per ulteriori informazioni sulle policy di caching, consulta la pagina Health/Volumes Inventory.
+
+* *Priorità di conservazione della cache*
++
+Visualizza la priorità utilizzata per conservare i pool memorizzati nella cache.
+
+* *Thin provisioning*
++
+Visualizza se la garanzia di spazio è impostata per il volume selezionato. I valori validi sono Sì e No
+
+* *Crescita automatica*
++
+Consente di visualizzare se il volume FlexVol aumenta automaticamente le dimensioni quando lo spazio è esaurito.
+
+* *Garanzia di spazio*
++
+Visualizza il controllo delle impostazioni del volume FlexVol quando un volume rimuove i blocchi liberi da un aggregato.
+
+* *Stato*
++
+Visualizza lo stato del volume che si sta esportando.
+
+* *Tipo SnapLock*
++
+Indica se il volume è un volume SnapLock o non SnapLock.
+
+* *Data di scadenza*
++
+La data di scadenza del SnapLock.
+
+* *Policy di tiering*
++
+Se questo volume viene distribuito su un aggregato abilitato a FabricPool, viene visualizzato il set di criteri di tiering per il volume.
+
+

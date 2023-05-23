@@ -1,0 +1,46 @@
+---
+permalink: online-help/reference-save-custom-report-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare la finestra di dialogo Save Custom Report (Salva report personalizzato) per salvare un report personalizzato dopo aver apportato ulteriori modifiche al report personalizzato.' 
+---
+= Finestra di dialogo Save Custom Report (Salva report personalizzato)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la finestra di dialogo Save Custom Report (Salva report personalizzato) per salvare un report personalizzato dopo aver apportato ulteriori modifiche al report personalizzato.
+
+
+
+== Proprietà
+
+È possibile salvare un report personalizzato specificando proprietà come la descrizione.
+
+* *Nome report*
++
+Visualizza il nome del report personalizzato. Questo campo non può essere modificato.
+
+* *Descrizione*
++
+Specifica la descrizione della personalizzazione effettuata sul report personalizzato. La descrizione non può superare i 150 caratteri .
+
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti operazioni:
+
+* *Salva*
++
+Salva il report personalizzato .
+
+* *Annulla*
++
+Annulla le modifiche recenti e chiude la finestra di dialogo Salva report personalizzato.
+
+

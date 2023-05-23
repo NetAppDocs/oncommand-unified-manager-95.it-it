@@ -1,0 +1,49 @@
+---
+permalink: online-help/reference-utilization-performance-counter-chart.html 
+sidebar: sidebar 
+keywords:  
+summary: Il grafico del contatore di utilizzo di Performance Explorer visualizza la percentuale media della risorsa selezionata utilizzata. 
+---
+= Grafico dei contatori delle performance di utilizzo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il grafico del contatore di utilizzo di Performance Explorer visualizza la percentuale media della risorsa selezionata utilizzata.
+
+La finestra a comparsa visualizzata quando il cursore si trova nell'area del grafico mostra i valori specifici del contatore in orari specifici.
+
+Nella parte inferiore della pagina del grafico vengono visualizzate le informazioni relative all'utilizzo minimo, massimo, medio e 95° percentile per l'intervallo di tempo selezionato.
+
+
+
+== Utilizzo - grafico contatore totale
+
+Visualizza la percentuale media della risorsa selezionata utilizzata. Per i nodi, indica l'utilizzo delle risorse dei nodi (CPU e RAM), per gli aggregati indica l'utilizzo dei dischi nell'aggregato e per le porte indica l'utilizzo della larghezza di banda della porta.
+
+Questa opzione di grafico si applica quando l'oggetto selezionato è un nodo, un aggregato o una porta.
+
+
+
+== Pulsante *Zoom View*
+
+Visualizza una vista ingrandita dei dati del contatore.
+
+* Eventi
++
+Il verificarsi di eventi critici, di avviso e informativi è indicato sulle righe temporali sopra i grafici.
+
+* Soglie
++
+La linea orizzontale tratteggiata indica il valore di soglia dell'avviso di utilizzo impostato in Unified Manager.
+
++
+La linea rossa fissa indica il valore della soglia critica di utilizzo impostato in Unified Manager.
+
+* Contatori
++
+I contatori nel riquadro di sinistra indicano i valori dei contatori visualizzati. Deselezione o selezione di image:../media/eye-icon.gif[""] associato a un contatore, nasconde e mostra le informazioni del contatore dal grafico e può essere di aiuto nel confronto dell'utilizzo degli oggetti.
+
+

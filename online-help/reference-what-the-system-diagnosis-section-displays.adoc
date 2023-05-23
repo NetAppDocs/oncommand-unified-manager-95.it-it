@@ -1,0 +1,29 @@
+---
+permalink: online-help/reference-what-the-system-diagnosis-section-displays.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La sezione Diagnosi del sistema della pagina Dettagli evento fornisce informazioni utili per diagnosticare i problemi che potrebbero essere stati responsabili dell"evento.' 
+---
+= Viene visualizzata la sezione Diagnosi del sistema
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La sezione Diagnosi del sistema della pagina Dettagli evento fornisce informazioni utili per diagnosticare i problemi che potrebbero essere stati responsabili dell'evento.
+
+Quest'area viene visualizzata solo per alcuni eventi.
+
+Alcuni eventi relativi alle performance forniscono grafici rilevanti per l'evento specifico che è stato attivato. In genere, questo include un grafico IOPS o Mbps e un grafico di latenza per i dieci giorni precedenti. Se disposti in questo modo, puoi vedere quali componenti dello storage influenzano maggiormente la latenza o sono influenzati dalla latenza, quando l'evento è attivo.
+
+Per gli eventi di performance dinamiche, vengono visualizzati i seguenti grafici:
+
+* Latenza del carico di lavoro - Visualizza la cronologia della latenza per i carichi di lavoro più importanti delle vittime, dei carichi di lavoro più voluminosi o degli squali nel componente in conflitto.
+* Workload Activity (attività del carico di lavoro) - Visualizza i dettagli sull'utilizzo del carico di lavoro del componente del cluster in conflitto.
+* Resource Activity (attività risorsa) - Visualizza le statistiche cronologiche delle performance per il componente del cluster in conflitto.
+
+
+Altri grafici vengono visualizzati quando alcuni componenti del cluster sono in conflitto.
+
+Altri eventi forniscono una breve descrizione del tipo di analisi che il sistema sta eseguendo sull'oggetto di storage. In alcuni casi ci saranno una o più righe, una per ogni componente analizzato, per policy di performance definite dal sistema che analizzano più contatori di performance. In questo scenario, accanto alla diagnosi viene visualizzata un'icona verde o rossa per indicare se è stato rilevato o meno un problema in quella particolare diagnosi.

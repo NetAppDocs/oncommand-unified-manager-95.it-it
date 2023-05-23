@@ -1,0 +1,63 @@
+---
+permalink: online-help/task-responding-to-a-system-defined-qos-policy-group-performance-event.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager genera eventi di avviso relativi ai criteri QoS quando il throughput del carico di lavoro (IOPS, IOPS/TB o Mbps) supera l"impostazione dei criteri QoS ONTAP e la latenza del carico di lavoro viene compromessa. Questi eventi definiti dal sistema offrono l"opportunità di correggere potenziali problemi di performance prima che molti carichi di lavoro siano influenzati dalla latenza.' 
+---
+= Risposta agli eventi di performance del gruppo di policy QoS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager genera eventi di avviso relativi ai criteri QoS quando il throughput del carico di lavoro (IOPS, IOPS/TB o Mbps) supera l'impostazione del criterio QoS ONTAP definito e la latenza del carico di lavoro ne risulta compromessa. Questi eventi definiti dal sistema offrono l'opportunità di correggere potenziali problemi di performance prima che molti carichi di lavoro siano influenzati dalla latenza.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+* Devono esserci eventi di performance nuovi, riconosciuti o obsoleti.
+
+
+
+
+== A proposito di questa attività
+
+Unified Manager genera eventi di avviso per le violazioni delle policy QoS quando il throughput del carico di lavoro ha superato l'impostazione delle policy QoS definite durante ciascun periodo di raccolta delle performance dell'ora precedente. Il throughput del carico di lavoro può superare la soglia QoS solo per un breve periodo di tempo durante ciascun periodo di raccolta, ma Unified Manager visualizza solo il throughput "`Average`" durante il periodo di raccolta sul grafico. Per questo motivo, è possibile che si ricevano eventi QoS mentre il throughput di un carico di lavoro potrebbe non aver superato la soglia di policy indicata nel grafico.
+
+È possibile utilizzare Gestione sistema o i comandi ONTAP per gestire i gruppi di criteri, incluse le seguenti attività:
+
+* Creazione di un nuovo gruppo di policy per il carico di lavoro
+* Aggiunta o rimozione di workload in un gruppo di policy
+* Spostamento di un workload tra gruppi di policy
+* Modifica del limite di throughput di un gruppo di criteri
+* Spostamento di un workload in un aggregato o nodo diverso
+
+
+
+
+== Fasi
+
+. Visualizzare la pagina dei dettagli *evento* per visualizzare le informazioni sull'evento.
+. Esaminare la *Descrizione*, che descrive la violazione di soglia che ha causato l'evento.
++
+Ad esempio, il messaggio "`valore IOPS di 1,352 IOPS su vol1_NFS1 ha attivato un evento DI AVVISO per identificare potenziali problemi di performance per il carico di lavoro`" indica che si è verificato un evento QoS Max IOPS sul volume vol1_NFS1.
+
+. Consultare la sezione *informazioni evento* per ulteriori informazioni su quando si è verificato l'evento e per quanto tempo l'evento è stato attivo.
++
+Inoltre, per i volumi o le LUN che condividono il throughput di una policy di QoS, è possibile visualizzare i nomi dei tre principali carichi di lavoro che consumano il maggior numero di IOPS o Mbps.
+
+. Nella sezione *System Diagnosis* (Diagnosi del sistema), esaminare i due grafici: Uno per la media totale di IOPS o Mbps (a seconda dell'evento) e uno per la latenza. Una volta sistemati in questo modo, è possibile vedere quali componenti del cluster influiscono maggiormente sulla latenza quando il carico di lavoro ha raggiunto il limite massimo di QoS.
++
+Per un evento di policy QoS condivisa, i tre carichi di lavoro principali sono mostrati nel grafico del throughput. Se più di tre carichi di lavoro condividono la policy QoS, i carichi di lavoro aggiuntivi vengono aggiunti insieme in una categoria "`altri carichi di lavoro`". Inoltre, il grafico della latenza mostra la latenza media su tutti i carichi di lavoro che fanno parte della policy QoS.
+
++
+Si noti che per gli eventi del criterio QoS adattiva, i grafici IOPS e Mbps mostrano i valori IOPS o Mbps che ONTAP ha convertito dal criterio di soglia IOPS/TB assegnato in base alle dimensioni del volume.
+
+. Nella sezione *azioni consigliate*, esaminare i suggerimenti e determinare le azioni da eseguire per evitare un aumento della latenza per il carico di lavoro.
++
+Se necessario, fare clic sul pulsante *Help* (Guida) per visualizzare ulteriori dettagli sulle azioni consigliate che è possibile eseguire per tentare di risolvere l'evento relativo alle performance.
+
+

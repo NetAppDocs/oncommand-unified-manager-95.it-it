@@ -1,0 +1,81 @@
+---
+permalink: online-help/reference-volume-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Utilizzare questa pagina per visualizzare un elenco degli attributi fisici e logici del volume. Queste informazioni potrebbero essere utili per rispondere alle domande relative alle performance. Il titolo di questa pagina dipende dalla visualizzazione di un volume FlexVol o FlexGroup. 
+---
+= Pagina Performance/Volume o Performance/FlexGroup Information
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilizzare questa pagina per visualizzare un elenco degli attributi fisici e logici del volume. Queste informazioni potrebbero essere utili per rispondere alle domande relative alle performance. Il titolo di questa pagina dipende dalla visualizzazione di un volume FlexVol o FlexGroup.
+
+
+
+== Attributi del volume
+
+* *Tipo*
++
+Il tipo del volume: Lettura-scrittura (RW) o protezione dati (DP).
+
+* *Stile*
++
+Lo stile del volume, FlexVol o FlexGroup.
+
++
+[NOTE]
+====
+Le pagine delle performance di Unified Manager non supportano i volumi Infinite.
+
+====
+* *Cluster*
++
+Il nome del cluster a cui appartiene questo volume FlexVol o FlexGroup. È possibile fare clic sul nome per visualizzare i dettagli del cluster nella pagina Performance/Cluster Explorer (Esplora prestazioni/cluster).
+
+* *Aggregati*
++
+Il nome dell'aggregato su cui risiede questo volume FlexVol o il numero di aggregati su cui risiede questo volume FlexGroup.
+
++
+Per i volumi FlexVol, fare clic sul nome per visualizzare i dettagli dell'aggregato nella pagina Esplora prestazioni/aggregato. Per i volumi FlexGroup, è possibile fare clic sul numero per visualizzare gli aggregati utilizzati in questo volume FlexGroup nella pagina prestazioni/inventario aggregato.
+
+* *Storage Virtual Machine*
++
+Il nome della SVM a cui appartiene questo volume FlexVol o FlexGroup. È possibile fare clic sul nome per visualizzare i dettagli SVM nella pagina Performance/SVM Explorer (Esplora prestazioni/SVM).
+
+* *Policy di tiering*
++
+Il criterio di tiering impostato sul volume. Il criterio viene applicato solo quando il volume viene distribuito su un aggregato FabricPool. Le policy disponibili sono:
+
++
+** Nessuno. I dati di questo volume rimangono sempre nel Tier di performance.
+** Solo Snapshot. Solo i dati Snapshot vengono spostati automaticamente nel Tier cloud. Tutti gli altri dati rimangono nel Tier di performance.
+** Backup. Sui volumi di data Protection, tutti i dati utente trasferiti iniziano nel Tier cloud, ma le letture client successive possono causare lo spostamento dei dati hot nel Tier di performance.
+** Automatico. I dati su questo volume vengono spostati automaticamente tra il livello di performance e il livello cloud quando ONTAP determina che i dati sono "`hot`" o "`cold`".
+
+
+* *Tipo RAID*
++
+Il tipo di ridondanza utilizzato nel Tier di performance dell'aggregato in cui risiede questo volume. Tipi possibili:
+
++
+** RAID0
+** RAID4
+** RAID-DP
+** RAID-TEC
+
+
++
+[NOTE]
+====
+Il valore "`non applicabile`" viene visualizzato per i volumi FlexGroup perché i volumi costituenti possono trovarsi su aggregati di diversi tipi di RAID.
+
+====
+* *Capacità (libera/totale)*
++
+Lo storage totale disponibile nel volume, in gigabyte, e la quantità di storage attualmente disponibile.
+
+

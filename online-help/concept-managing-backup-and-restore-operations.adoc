@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-backup-and-restore-operations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile creare backup di Unified Manager e utilizzare la funzione di ripristino per ripristinare il backup sullo stesso sistema (locale) o su un nuovo sistema (remoto) in caso di guasto del sistema o perdita di dati.' 
+---
+= Configurazione delle operazioni di backup e ripristino
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile creare backup di Unified Manager e utilizzare la funzione di ripristino per ripristinare il backup sullo stesso sistema (locale) o su un nuovo sistema (remoto) in caso di guasto del sistema o perdita di dati.

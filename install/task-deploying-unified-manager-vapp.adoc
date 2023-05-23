@@ -1,0 +1,50 @@
+---
+permalink: install/task-deploying-unified-manager-vapp.html 
+sidebar: sidebar 
+keywords:  
+summary: 'L"implementazione di Unified Manager include il download del software, l"implementazione dell"appliance virtuale, la creazione di un nome utente e di una password di manutenzione e l"esecuzione della configurazione iniziale nell"interfaccia utente Web.' 
+---
+= Implementazione di Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'implementazione di Unified Manager include il download del software, l'implementazione dell'appliance virtuale, la creazione di un nome utente e di una password di manutenzione e l'esecuzione della configurazione iniziale nell'interfaccia utente Web.
+
+
+
+== Prima di iniziare
+
+* È necessario aver completato i requisiti di sistema per l'implementazione.
++
+xref:concept-requirements-for-installing-unified-manager.adoc[Requisiti di sistema]
+
+* È necessario disporre delle seguenti informazioni:
++
+** Credenziali di accesso per il NetApp Support Site
+** Credenziali per l'accesso a VMware vCenter Server e vSphere Web Client (per vSphere versione 6.5) o vSphere Client (per vSphere versione 5.5 o 6.0)
+** Indirizzo IP del server ESXi su cui si sta implementando l'appliance virtuale Unified Manager
+** Dettagli sul data center, ad esempio lo spazio di storage nel datastore e i requisiti di memoria
+** IPv6 deve essere attivato sull'host se si intende utilizzare l'indirizzamento IPv6.
+** CD-ROM o immagine ISO di VMware Tools
+
+
+
+
+
+
+== A proposito di questa attività
+
+È possibile implementare Unified Manager come appliance virtuale su un server VMware ESXi.
+
+È necessario accedere alla console di manutenzione utilizzando la console VMware e non SSH.
+
+Gli strumenti VMware non sono inclusi in Unified Manager``.ova`` e devono essere installati separatamente.
+
+
+
+== Al termine
+
+Al termine dell'implementazione e della configurazione iniziale, è possibile aggiungere cluster o configurare impostazioni di rete aggiuntive nella console di manutenzione e accedere all'interfaccia utente Web.

@@ -1,0 +1,53 @@
+---
+permalink: performance-checker/task-using-the-perf-capacity-used-breakdown-chart-for-failover-planning.html 
+sidebar: sidebar 
+keywords:  
+summary: Il grafico dettagliato della capacità di performance utilizzata - ripartizione mostra la capacità di performance utilizzata per il nodo primario e il nodo partner. Mostra inoltre la quantità di capacità di performance libera sul nodo Estimated Takeover. Queste informazioni consentono di determinare se si potrebbero verificare problemi di performance in caso di guasto del nodo partner. 
+---
+= Utilizzo del grafico di dettaglio Performance Capacity Used per la pianificazione del failover
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il grafico dettagliato della capacità di performance utilizzata - ripartizione mostra la capacità di performance utilizzata per il nodo primario e il nodo partner. Mostra inoltre la quantità di capacità di performance libera sul nodo Estimated Takeover. Queste informazioni consentono di determinare se si potrebbero verificare problemi di performance in caso di guasto del nodo partner.
+
+
+
+== A proposito di questa attività
+
+Oltre a mostrare la capacità di performance totale utilizzata per i nodi, il grafico di ripartizione suddivide i valori per ciascun nodo in protocolli utente e processi in background.
+
+* I protocolli utente sono le operazioni di i/o dalle applicazioni utente al e dal cluster.
+* I processi in background sono i processi interni del sistema coinvolti nell'efficienza dello storage, nella replica dei dati e nello stato di salute del sistema.
+
+
+Questo livello di dettaglio aggiuntivo consente di determinare se un problema di performance è causato dall'attività dell'applicazione dell'utente o dai processi di sistema in background, come deduplica, ricostruzione RAID, scrubbing del disco e copie SnapMirror.
+
+
+
+== Fasi
+
+. Accedere alla pagina *Performance/Node failover Planning* del nodo che fungerà da nodo Estimated Takeover.
+. Dal selettore *intervallo di tempo*, scegliere il periodo di tempo per il quale le statistiche storiche vengono visualizzate nella griglia del contatore e nei grafici dei contatori.
++
+Vengono visualizzati i grafici dei contatori con le statistiche per il nodo primario, il nodo partner e il nodo Takeover stimato.
+
+. Dall'elenco *Scegli grafici*, selezionare *Perf. Capacità utilizzata*.
+. Nel campo *Perf. Grafico capacità utilizzata*, selezionare *dettaglio* e fare clic su *Vista zoom*.
++
+Il grafico dettagliato per Perf. Viene visualizzato Capacity used (capacità utilizzata).
+
++
+image::../media/headroom-advanced-zoom-chart.gif[tabella con zoom avanzato]
+
+. Spostare il cursore sul grafico dettagliato per visualizzare le informazioni sulla capacità di performance utilizzata nella finestra a comparsa.
++
+Il Perf. La percentuale di Capacity Free è la capacità di performance disponibile sul nodo Estimated Takeover. Indica la capacità di performance rimasta nel nodo di Takeover dopo un failover. Se è pari a 0%, un failover causerà un aumento della latenza a un livello inaccettabile sul nodo di Takeover.
+
+. Prendere in considerazione azioni correttive per evitare una percentuale di capacità senza capacità a basse performance.
++
+Se si prevede di avviare un failover per la manutenzione del nodo, scegliere un periodo di tempo in cui il nodo partner non riesce quando la percentuale di capacità libera dalle performance non è pari a 0.
+
+

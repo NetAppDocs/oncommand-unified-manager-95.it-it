@@ -1,0 +1,44 @@
+---
+permalink: online-help/concept-understanding-the-health-overview-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La dashboard di panoramica dello stato di salute di Unified Manager fornisce informazioni cumulative a colpo d"occhio sullo stato di salute dello storage e dell"ambiente virtualizzato. La pagina Dashboards/Overview fornisce informazioni sullo stato degli oggetti storage separati in quattro categorie di stato: Disponibilità, capacità, performance e protezione degli oggetti storage.' 
+---
+= Informazioni sulla dashboard di Health Overview
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La dashboard di panoramica dello stato di salute di Unified Manager fornisce informazioni cumulative a colpo d'occhio sullo stato di salute dello storage e dell'ambiente virtualizzato. La pagina Dashboards/Overview fornisce informazioni sullo stato degli oggetti storage separati in quattro categorie di stato: Disponibilità, capacità, performance e protezione degli oggetti storage.
+
+La seguente immagine illustra i riquadri visualizzati nella pagina Dashboard/Panoramica:
+
+image::../media/dashboard-um72.gif[dashboard um72]
+
+
+
+== Area Health Overview (Panoramica salute)
+
+Visualizza, sotto forma di grafico, informazioni sullo stato degli oggetti storage, ad esempio cluster, aggregati e macchine virtuali di storage (SVM), nonché sullo stato delle relazioni di protezione. La pagina Dashboard/Panoramica visualizza gli eventi generati per le seguenti categorie:
+
+Facendo clic sul numero sopra uno dei grafici a barre gialli o rossi, viene visualizzata la pagina dell'inventario degli eventi, che include solo gli eventi. Facendo clic sul numero sotto uno dei grafici viene visualizzata la pagina di inventario degli oggetti, inclusi solo gli oggetti.
+
+* *Disponibilità*
++
+Visualizza informazioni sulla disponibilità di cluster, SVM e aggregati monitorati da Unified Manager. In base agli eventi relativi alla disponibilità generati, gli oggetti storage vengono classificati come sani, a rischio o con incidenti.
+
+* *Capacità*
++
+Visualizza informazioni sulla capacità delle SVM e degli aggregati monitorati da Unified Manager. In base agli eventi relativi alla capacità generati, gli oggetti storage vengono classificati come sani, a rischio o con incidenti.
+
+* *Prestazioni*
++
+Visualizza informazioni sulle performance di cluster, SVM e volumi monitorati da Unified Manager. In base agli incidenti relativi alle performance generati, gli oggetti storage vengono classificati come sani, a rischio o con incidenti.
+
+* *Protezione*
++
+Visualizza informazioni sulle relazioni di protezione monitorate da Unified Manager. In base agli eventi correlati alla protezione generati, le relazioni di protezione vengono classificate come sane, Warning o Error.
+
+

@@ -1,0 +1,46 @@
+---
+permalink: health-checker/task-resolving-a-protection-job-failure.html 
+sidebar: sidebar 
+keywords:  
+summary: Questo flusso di lavoro fornisce un esempio di come è possibile identificare e risolvere un errore di un processo di protezione dalla dashboard di Unified Manager. 
+---
+= Risoluzione di un errore di un lavoro di protezione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Questo flusso di lavoro fornisce un esempio di come è possibile identificare e risolvere un errore di un processo di protezione dalla dashboard di Unified Manager.
+
+
+
+== Prima di iniziare
+
+Poiché alcune attività di questo flusso di lavoro richiedono l'accesso mediante il ruolo di amministratore di OnCommand, è necessario conoscere i ruoli richiesti per utilizzare le varie funzionalità, come descritto in xref:reference-unified-manager-roles-and-capabilities.adoc[Ruoli e funzionalità degli utenti di Unified Manager].
+
+
+
+== A proposito di questa attività
+
+In questo scenario, si accede alla pagina Dashboards/Overview (Dashboard/Panoramica) per verificare la presenza di eventuali problemi con i processi di protezione. Nell'area incidente di protezione, si noterà la presenza di un incidente con interruzione del processo, che mostra un errore di errore relativo al processo di protezione non riuscito su un volume. Esaminare questo errore per determinare la possibile causa e la potenziale risoluzione.
+
+
+
+== Fasi
+
+. Nel pannello *incidenti di protezione* dell'area Dashboard *incidenti e rischi non risolti*, fare clic sull'evento *errore del processo di protezione*.
++
+[TIP]
+====
+Il testo associato all'evento viene scritto nel modulo `object_name:/object_name - Error Name`, ad esempio `cluster2_src_svm:/cluster2_src_vol2 - Protection Job Failed`.
+
+====
++
+Viene visualizzata la pagina Dettagli evento relativa al processo di protezione non riuscito.
+
+. Esaminare il messaggio di errore nel campo cause dell'area *Summary* per determinare il problema e valutare le potenziali azioni correttive.
++
+Vedere xref:task-identifying-the-problem-and-performing-corrective-actions-for-a-failed-protection-job.adoc[Identificazione del problema ed esecuzione di azioni correttive per un lavoro di protezione non riuscito].
+
+

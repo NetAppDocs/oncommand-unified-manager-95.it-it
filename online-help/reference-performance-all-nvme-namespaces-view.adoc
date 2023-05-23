@@ -1,0 +1,89 @@
+---
+permalink: online-help/reference-performance-all-nvme-namespaces-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina di inventario Namespaces visualizza una panoramica degli eventi di performance, dei dati e delle informazioni di configurazione per ogni namespace monitorato da un"istanza di Unified Manager. Ciò consente di monitorare rapidamente le performance e lo stato dei namespace e di risolvere i problemi e gli eventi di soglia.' 
+---
+= Pagina di inventario namespaces
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina di inventario Namespaces visualizza una panoramica degli eventi di performance, dei dati e delle informazioni di configurazione per ogni namespace monitorato da un'istanza di Unified Manager. Ciò consente di monitorare rapidamente le performance e lo stato dei namespace e di risolvere i problemi e gli eventi di soglia.
+
+A seconda di come si accede a questa pagina, nella parte superiore della pagina potrebbe essere visualizzato un titolo diverso per indicare se l'elenco è stato filtrato. Ad esempio, quando si visualizzano tutti gli spazi dei nomi, il titolo è "`spazi dei nomi`". Quando si visualizza un sottoinsieme di namespace restituito dalla pagina Threshold Policies, il titolo è "`Namespaces on what policy: Namespace_IOPS is applied`".
+
+I pulsanti nella parte superiore della pagina consentono di eseguire ricerche per individuare dati specifici, creare e applicare filtri per restringere l'elenco dei dati visualizzati ed esportare i dati della pagina in un `.csv` e aggiungere o rimuovere colonne dalla pagina.
+
+Per impostazione predefinita, gli oggetti nelle pagine di inventario degli oggetti vengono ordinati in base alla criticità degli eventi di performance degli oggetti. Gli oggetti con eventi critici vengono elencati per primi e gli oggetti con eventi di avviso vengono elencati per secondi. Ciò fornisce un'indicazione visiva immediata dei problemi che devono essere risolti. I valori dei contatori delle prestazioni si basano su una media delle 72 ore precedenti o più di dati, come indicato nella pagina. È possibile fare clic sul pulsante Refresh (Aggiorna) per aggiornare i dati dell'inventario degli oggetti.
+
+È possibile assegnare criteri di soglia delle performance a qualsiasi oggetto presente nelle pagine di inventario degli oggetti o cancellare i criteri di soglia utilizzando i pulsanti *Assign Performance Threshold Policy* e *Clear PerformanceThreshold Policy*.
+
+
+
+== Spazio dei nomi delle colonne della pagina di inventario
+
+La pagina di inventario Namespaces contiene le seguenti colonne per ogni namespace:
+
+* *Sottosistema*
++
+Sottosistema dello spazio dei nomi.
+
+* *Stato*
++
+Un oggetto integro senza eventi attivi visualizza un'icona con un segno di spunta verde (image:../media/sev-normal-um60.png["Icona per la severità dell'evento – normale"]). Se l'oggetto ha un evento attivo, l'icona dell'indicatore di evento identifica la severità dell'evento: Gli eventi critici sono rossi (image:../media/sev-critical-um60.png["Icona per la severità dell'evento – critico"]), gli eventi di errore sono di colore arancione (image:../media/sev-error-um60.png["Icona per la severità dell'evento – errore"]) e gli eventi di avviso sono gialli (image:../media/sev-warning-um60.png["Icona per la severità dell'evento – avviso"]).
+
+* *Namespace*
++
+È possibile fare clic sul nome dello spazio dei nomi per accedere alla pagina dei dettagli sulle prestazioni dello spazio dei nomi.
+
+* *Stato*
++
+Lo stato corrente dello spazio dei nomi.
+
++
+** Offline - non è consentito l'accesso in lettura o scrittura allo spazio dei nomi.
+** Online - è consentito l'accesso in lettura e scrittura allo spazio dei nomi.
+** NVFail - lo spazio dei nomi è stato automaticamente disattivato a causa di un errore della NVRAM.
+** Errore di spazio - lo spazio dei nomi è esaurito.
+
+
+* *SVM*
++
+La SVM (Storage Virtual Machine) a cui appartiene lo spazio dei nomi. È possibile fare clic sul nome SVM per accedere alla pagina dei dettagli di SVM.
+
+* *Cluster*
++
+Il cluster a cui appartiene lo spazio dei nomi. È possibile fare clic sul nome del cluster per accedere alla pagina dei dettagli del cluster.
+
+* *Volume*
++
+Il volume a cui appartiene lo spazio dei nomi. È possibile fare clic sul nome del volume per accedere alla pagina dei dettagli del volume.
+
+* *Capacità totale*
++
+La capacità di storage totale dello spazio dei nomi, in gigabyte.
+
+* *Capacità libera*
++
+La capacità di storage inutilizzata dello spazio dei nomi, in gigabyte.
+
+* *IOPS*
++
+Le operazioni di input/output al secondo per lo spazio dei nomi.
+
+* *Latenza*
++
+Il tempo di risposta medio per tutte le richieste di i/o nello spazio dei nomi, espresso in millisecondi per operazione.
+
+* *Mbps*
++
+Il throughput nello spazio dei nomi, misurato in megabyte al secondo.
+
+* *Criterio di soglia*
++
+I criteri o i criteri di soglia delle performance definiti dall'utente che sono attivi su questo oggetto di storage. È possibile posizionare il cursore sui nomi dei criteri contenenti i puntini di sospensione (...) per visualizzare il nome completo del criterio o l'elenco dei nomi dei criteri assegnati. I pulsanti *Assign Performance Threshold Policy* e *Clear Performance Threshold Policy* rimangono disattivati finché non si selezionano uno o più oggetti facendo clic sulle caselle di controllo situate all'estrema sinistra.
+
+

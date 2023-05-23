@@ -1,0 +1,18 @@
+---
+permalink: install/concept-setting-up-unified-manager-within-mscs-environment.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile configurare l"alta disponibilità per Unified Manager utilizzando il clustering di failover. La configurazione ad alta disponibilità offre funzionalità di failover.' 
+---
+= Configurazione di Unified Manager in un ambiente di clustering di failover
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile configurare l'alta disponibilità per Unified Manager utilizzando il clustering di failover. La configurazione ad alta disponibilità offre funzionalità di failover.
+
+In questa configurazione, solo un nodo possiede tutte le risorse del cluster. Quando un nodo si disattiva o uno qualsiasi dei servizi configurati non riesce a collegarsi, il servizio cluster di failover riconosce questo evento e trasferisce immediatamente il controllo all'altro nodo. Il secondo nodo del setup diventa attivo e inizia a fornire i servizi. Il processo di failover è automatico e non è necessario eseguire alcuna azione.
+
+Un cluster di failover configurato con il server Unified Manager è costituito da due nodi, ciascuno dei quali esegue la stessa versione del server Unified Manager. Tutti i dati del server Unified Manager devono essere configurati per l'accesso da un disco dati condiviso.

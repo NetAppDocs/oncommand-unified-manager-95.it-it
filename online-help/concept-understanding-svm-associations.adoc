@@ -1,0 +1,32 @@
+---
+permalink: online-help/concept-understanding-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le associazioni SVM (Storage Virtual Machine) sono mappature da una SVM di origine a una SVM di destinazione utilizzate dalle applicazioni partner per la selezione delle risorse e il provisioning di volumi secondari.' 
+---
+= Comprensione delle associazioni SVM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le associazioni SVM (Storage Virtual Machine) sono mappature da una SVM di origine a una SVM di destinazione utilizzate dalle applicazioni partner per la selezione delle risorse e il provisioning di volumi secondari.
+
+Le associazioni vengono sempre create tra una SVM di origine e una SVM di destinazione, indipendentemente dal fatto che la SVM di destinazione sia una destinazione secondaria o una destinazione terziaria. Non è possibile utilizzare una SVM di destinazione secondaria come origine per creare un'associazione con una SVM di destinazione terziaria.
+
+È possibile associare le SVM in tre modi:
+
+* Associare qualsiasi SVM
++
+È possibile creare un'associazione tra qualsiasi SVM di origine primaria e una o più SVM di destinazione. Ciò significa che tutte le SVM esistenti che attualmente richiedono protezione, nonché tutte le SVM create in futuro, sono associate alle SVM di destinazione specificate. Ad esempio, è possibile che venga eseguito il backup di applicazioni provenienti da diverse origini in posizioni diverse su una o più SVM di destinazione in un'unica posizione.
+
+* Associare una specifica SVM
++
+È possibile creare un'associazione tra una SVM di origine specifica e una o più SVM di destinazione specifiche. Ad esempio, se si forniscono servizi di storage a molti client i cui dati devono essere separati l'uno dall'altro, è possibile scegliere questa opzione per associare una SVM di origine specifica a una SVM di destinazione specifica assegnata solo a quel client.
+
+* Associazione a una SVM esterna
++
+È possibile creare un'associazione tra una SVM di origine e un volume flessibile esterno di una SVM di destinazione.
+
+

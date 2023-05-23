@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-analyzing-a-performance-incident-on-a-remote-cluster-in-a-metrocluster-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare Unified Manager per analizzare gli eventi di performance dinamiche su un cluster remoto in una configurazione MetroCluster. L"analisi consente di determinare se un evento nel cluster remoto ha causato un evento nel cluster del partner.' 
+---
+= Analisi di un evento di performance dinamica per un cluster remoto su una configurazione MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare Unified Manager per analizzare gli eventi di performance dinamiche su un cluster remoto in una configurazione MetroCluster. L'analisi consente di determinare se un evento nel cluster remoto ha causato un evento nel cluster del partner.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+* È necessario aver analizzato un evento di performance su un cluster locale in una configurazione MetroCluster e aver ottenuto il tempo di rilevamento degli eventi.
+* È necessario aver controllato lo stato del cluster locale e del cluster partner coinvolti nell'evento delle performance e aver ottenuto il nome del cluster partner.
+
+
+
+
+== Fasi
+
+. Accedere all'istanza di Unified Manager che sta monitorando il cluster partner.
+. Nel riquadro di spostamento di sinistra, fare clic su *Eventi* per visualizzare l'elenco degli eventi.
+. Dal selettore *intervallo di tempo*, selezionare *ultima ora*, quindi fare clic su *Applica intervallo*.
+. Nel selettore *Filtering*, selezionare *Cluster* dal menu a discesa a sinistra, digitare il nome del cluster partner nel campo di testo, quindi fare clic su *Apply Filter* (Applica filtro).
++
+Se non sono presenti eventi per il cluster selezionato nell'ultima ora, significa che il cluster non ha riscontrato problemi di performance durante il momento in cui l'evento è stato rilevato sul partner.
+
+. Se nel cluster selezionato sono stati rilevati eventi nell'ultima ora, confrontare l'ora di rilevamento degli eventi con l'ora di rilevamento dell'evento nel cluster locale.
++
+Se questi eventi coinvolgono carichi di lavoro ingombranti che causano conflitti sul componente di elaborazione dei dati, uno o più di questi problemi potrebbero aver causato l'evento nel cluster locale. È possibile fare clic sull'evento per analizzarlo ed esaminare le azioni suggerite per risolverlo nella pagina Dettagli evento.
+
++
+Se questi eventi non coinvolgono carichi di lavoro ingombranti, non hanno causato l'evento delle performance sul cluster locale.
+
+

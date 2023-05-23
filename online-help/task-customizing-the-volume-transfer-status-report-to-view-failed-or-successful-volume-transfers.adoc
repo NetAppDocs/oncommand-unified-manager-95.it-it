@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-status-report-to-view-failed-or-successful-volume-transfers.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile personalizzare il report Stato trasferimento volume per visualizzare i dettagli dei trasferimenti di volume non riusciti o riusciti. 
+---
+= Personalizzazione del report Volume Transfer Status (Cronologia) per visualizzare i trasferimenti di volume non riusciti o riusciti
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report Stato trasferimento volume (storico) per visualizzare i dettagli dei trasferimenti di volume non riusciti o riusciti.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Rimuovi raggruppamento per cluster:
++
+.. Selezionare la colonna che si desidera separare.
+.. Fare clic su image:../media/click-to-see-menu.gif[""] icona.
+.. Selezionare *Gruppo* > *Elimina gruppo interno*.
+
+
+. Per ordinare i trasferimenti di volume in base all'errore o al successo, fare clic sulla colonna *risultato operativo*, quindi fare clic su image:../media/click-to-see-menu.gif[""] icona.
+. Selezionare *Filter* (filtro).
+. Nella finestra di dialogo *filtro*, fare clic su *Seleziona valori*, quindi selezionare *operazione riuscita* o *operazione non riuscita*.
+

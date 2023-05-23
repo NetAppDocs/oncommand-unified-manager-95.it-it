@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-removing-a-protection-relationship-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile rimuovere una relazione di protezione per eliminare in modo permanente una relazione esistente tra l"origine e la destinazione selezionate, ad esempio quando si desidera creare una relazione utilizzando una destinazione diversa. Questa operazione rimuove tutti i metadati e non può essere annullata.' 
+---
+= Rimozione di una relazione di protezione dalla pagina Health/Volume Details
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile rimuovere una relazione di protezione per eliminare in modo permanente una relazione esistente tra l'origine e la destinazione selezionate, ad esempio quando si desidera creare una relazione utilizzando una destinazione diversa. Questa operazione rimuove tutti i metadati e non può essere annullata.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+* È necessario aver impostato l'automazione del flusso di lavoro.
+
+
+
+
+== Fasi
+
+. Nella scheda *Protection* della pagina dei dettagli *Health/Volume*, selezionare dalla topologia la relazione SnapMirror che si desidera rimuovere.
+. Fare clic con il pulsante destro del mouse sul nome della destinazione e selezionare *Remove* (Rimuovi) dal menu.
++
+Viene visualizzata la finestra di dialogo Rimuovi relazione.
+
+. Fare clic su *continua* per rimuovere la relazione.
++
+La relazione viene rimossa dalla pagina Health/Volume Details (Dettagli salute/volume).
+
+

@@ -1,0 +1,73 @@
+---
+permalink: performance-checker/task-defining-the-list-of-correlated-objects-for-comparison-graphing.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile definire un elenco di oggetti correlati per il confronto di dati e performance nel riquadro Counter Chart. Ad esempio, se la macchina virtuale di storage presenta un problema di performance, è possibile confrontare tutti i volumi nella SVM per identificare il volume che potrebbe causare il problema. 
+---
+= Definizione dell'elenco degli oggetti correlati per il grafico di confronto
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile definire un elenco di oggetti correlati per il confronto di dati e performance nel riquadro Counter Chart. Ad esempio, se la macchina virtuale di storage (SVM) presenta un problema di performance, è possibile confrontare tutti i volumi nella SVM per identificare il volume che potrebbe causare il problema.
+
+
+
+== A proposito di questa attività
+
+È possibile aggiungere qualsiasi oggetto nella griglia oggetti correlati ai riquadri confronto e grafico contatore. In questo modo è possibile visualizzare e confrontare i dati di più oggetti e con l'oggetto root. È possibile aggiungere e rimuovere oggetti da e verso la griglia degli oggetti correlati; tuttavia, l'oggetto root nel pannello di confronto non è rimovibile.
+
+[NOTE]
+====
+L'aggiunta di molti oggetti al pannello di confronto può avere un impatto negativo sulle performance. Per mantenere le performance, è necessario selezionare un numero limitato di grafici per il confronto dei dati.
+
+====
+
+
+== Fasi
+
+. Nella griglia oggetti, individuare l'oggetto che si desidera aggiungere e fare clic sul pulsante *Aggiungi*.
++
+Il pulsante *Add* diventa grigio e l'oggetto viene aggiunto all'elenco degli oggetti aggiuntivi nel riquadro di confronto. I dati dell'oggetto vengono aggiunti ai grafici nei riquadri Counter Chart. Il colore dell'icona dell'occhio dell'oggetto (image:../media/eye-icon.gif[""]) corrisponde al colore della linea di trend dei dati dell'oggetto nei grafici.
+
+. Nascondere o mostrare i dati per gli oggetti selezionati:
++
+|===
+| A tal fine... | Eseguire questa azione... 
+
+
+ a| 
+Nascondere un oggetto selezionato
+ a| 
+Fare clic sull'icona dell'occhio dell'oggetto selezionato (image:../media/eye-icon.gif[""]) Nel riquadro di confronto. I dati dell'oggetto vengono nascosti e l'icona dell'occhio per l'oggetto diventa grigia.
+
+
+
+ a| 
+Mostra un oggetto nascosto
+ a| 
+Fare clic sull'icona a occhio grigio dell'oggetto selezionato nel riquadro di confronto. L'icona occhio torna al colore originale e i dati dell'oggetto vengono aggiunti di nuovo ai grafici nel riquadro Counter Chart.
+
+|===
+. Rimuovi gli oggetti selezionati dal riquadro *confronto*:
++
+|===
+| A tal fine... | Eseguire questa azione... 
+
+
+ a| 
+Rimuovere un oggetto selezionato
+ a| 
+Passare il mouse sul nome dell'oggetto selezionato nel pannello di confronto per visualizzare il pulsante Remove Object (*X*), quindi fare clic sul pulsante. L'oggetto viene rimosso dal riquadro di confronto e i relativi dati vengono cancellati dai diagrammi dei contatori.
+
+
+
+ a| 
+Rimuovi tutti gli oggetti selezionati
+ a| 
+Fare clic sul pulsante Remove all object's (*X*) nella parte superiore del pannello di confronto. Tutti gli oggetti selezionati e i relativi dati vengono rimossi, lasciando solo l'oggetto root.
+
+|===
+

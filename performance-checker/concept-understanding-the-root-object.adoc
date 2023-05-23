@@ -1,0 +1,24 @@
+---
+permalink: performance-checker/concept-understanding-the-root-object.html 
+sidebar: sidebar 
+keywords:  
+summary: 'L"oggetto root è la base rispetto alla quale vengono effettuati altri confronti tra oggetti. Ciò consente di visualizzare e confrontare i dati di altri oggetti con l"oggetto root, fornendo un"analisi dei dati delle performance che consente di risolvere i problemi e migliorare le performance degli oggetti.' 
+---
+= Comprensione dell'oggetto root
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'oggetto root è la base rispetto alla quale vengono effettuati altri confronti tra oggetti. Ciò consente di visualizzare e confrontare i dati di altri oggetti con l'oggetto root, fornendo un'analisi dei dati delle performance che consente di risolvere i problemi e migliorare le performance degli oggetti.
+
+Il nome dell'oggetto root viene visualizzato nella parte superiore del pannello di confronto. Gli oggetti aggiuntivi vengono visualizzati sotto l'oggetto root. Sebbene non vi sia alcun limite al numero di oggetti aggiuntivi che è possibile aggiungere al pannello di confronto, è consentito un solo oggetto root. I dati dell'oggetto root vengono visualizzati automaticamente nei grafici nel riquadro Counter Chart.
+
+Non è possibile modificare l'oggetto root, che viene sempre impostato sulla pagina oggetto visualizzata. Ad esempio, se si apre la pagina Volume Performance Explorer di Volume1, Volume1 è l'oggetto root e non può essere modificato. Se si desidera eseguire un confronto con un oggetto root diverso, fare clic sul collegamento di un oggetto e aprire la relativa landing page.
+
+[NOTE]
+====
+Gli eventi e le soglie vengono visualizzati solo per gli oggetti root.
+
+====

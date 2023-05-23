@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-reverting-a-lif-to-its-home-port-using-oncommand-system-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile ripristinare una LIF dalla porta corrente alla porta home dopo il failover o la migrazione a una porta diversa manualmente o automaticamente. Puoi farlo usando Gestione di sistema di OnCommand. 
+---
+= Ripristino di una LIF alla porta home utilizzando Gestione di sistema di OnCommand
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile ripristinare una LIF dalla porta corrente alla porta home dopo il failover o la migrazione a una porta diversa manualmente o automaticamente. Puoi farlo usando Gestione di sistema di OnCommand.
+
+
+
+== A proposito di questa attività
+
+Quando si crea una LIF, l'amministratore specifica una porta home e un nodo home da utilizzare come posizione preferita della LIF. Se il nodo home non è disponibile o la porta home subisce un'interruzione fisica del collegamento, la LIF viene automaticamente migrata in una nuova posizione. La nuova posizione viene segnalata, ad esempio in Gestore di sistema di OnCommand, come la porta corrente per la LIF. A meno che non sia attivata l'opzione di indirizzamento automatico, la LIF rimarrà in questa nuova posizione fino a quando non viene ripristinata.
+
+
+
+== Fasi
+
+. Aprire Gestore di sistema di OnCommand.
+. Dalla scheda *Home*, fare doppio clic sul sistema di storage.
+. Nel riquadro di navigazione, espandere la gerarchia *Storage Virtual Machines*.
+. Nel riquadro di navigazione, selezionare la SVM e fare clic su *Configurazione* > *interfacce di rete*.
+. Cercare i dati LIF che visualizzano un'icona casa con una croce rossa, nella colonna *Current Port* (porta corrente), come nell'immagine seguente.
++
+image::../media/systemmgr-lifs-networkinterfaces-jpg.gif[Vista Network Interfaces (interfacce di rete)]
+
+. Selezionare la LIF e fare clic su *Invia a casa*.
++
+Questa opzione è abilitata solo quando l'interfaccia selezionata è ospitata su una porta non home e quando la porta home è disponibile.
+
+

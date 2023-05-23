@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare le quote utente e di gruppo per limitare la quantità di spazio su disco o il numero di file che un utente o un gruppo di utenti può utilizzare. È possibile visualizzare le informazioni sulle quote di utenti e gruppi di utenti, ad esempio l"utilizzo di dischi e file e i vari limiti impostati sui dischi.' 
+---
+= Gestione delle quote
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare le quote utente e di gruppo per limitare la quantità di spazio su disco o il numero di file che un utente o un gruppo di utenti può utilizzare. È possibile visualizzare le informazioni sulle quote di utenti e gruppi di utenti, ad esempio l'utilizzo di dischi e file e i vari limiti impostati sui dischi.

@@ -1,0 +1,24 @@
+---
+permalink: online-help/reference-certain-special-characters-do-not-work-with-reporting-search.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= Alcuni caratteri speciali non funzionano con la ricerca di report
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+* *Problema*
++
+L'utilizzo dei caratteri speciali % e _ durante la ricerca all'interno di un report causa l'errore dell'operazione.
+
+* *Azione correttiva*
++
+Se si cerca una stringa contenente % o _, utilizzare una doppia barra rovesciata prima del carattere specificato.
+
++
+Ad esempio, per trovare una stringa contenente S_10, immettere S 10.
+
+

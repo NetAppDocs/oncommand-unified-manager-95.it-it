@@ -1,0 +1,64 @@
+---
+permalink: health-checker/task-creating-a-jdbc-data-source-using-birt.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: 'Dopo aver creato il nuovo report utilizzando BIRT, è necessario creare un"origine dati per connettere il report a Unified Manager.' 
+---
+= Creazione di un'origine dati JDBC utilizzando BIRT
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dopo aver creato il nuovo report utilizzando BIRT, è necessario creare un'origine dati per connettere il report a Unified Manager.
+
+
+
+== Prima di iniziare
+
+È necessario aver creato un report utilizzando BIRT.
+
+È necessario aver scaricato e installato MySQL Connector/J.
+
+È necessario aver creato un utente di database con il ruolo Schema report.
+
+
+
+== Fasi
+
+. In Eclipse, selezionare *Esplora dati* > *origini dati* > *Nuova origine dati*.
+. Selezionare *Crea da un tipo di origine dati nell'elenco seguente*.
+. Selezionare *origine dati JDBC*, quindi fare clic su *Avanti*.
+. Nella finestra di dialogo *nuovo profilo origine dati JDBC*, selezionare *com.mysql.jdbc.driver(v5.1)*.
++
+.. Se il driver MySQL non viene visualizzato, fare clic su *Manage Drivers* (Gestisci driver).
+.. Nella finestra di dialogo *Gestisci driver JDBC*, fare clic su *Aggiungi*.
+.. Individuare la posizione in cui si trova MySQL Connector/J. `.jar` il file è stato installato, quindi selezionarlo.
+.. Fare clic su *OK*.
++
+Dovresti essere in grado di visualizzare e selezionare il driver MySQL.
+
+
+
+. Inserire il nome host completo o l'indirizzo IP dell'istanza di Unified Manager utilizzando il formato appropriato:
++
+|===
+| Tipo di indirizzo | Formato 
+
+
+ a| 
+IPv4
+ a| 
+`jdbc:mysql://xx.xx.xx.xx:3306/ocum_report`
+
+
+
+ a| 
+IPv6
+ a| 
+`jdbc:mysql://address=(protocol=tcp)(host=xx:xx:xx:xx:xx:xx:xx:xx)(port=3306)/ocum_report`
+
+|===
+. Immettere il nome utente dell'utente del database, immettere la password, quindi fare clic su *fine*.
+

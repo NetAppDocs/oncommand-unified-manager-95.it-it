@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-event-retention-settings-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile configurare le impostazioni degli eventi in modo che eliminino automaticamente gli eventi (informazioni, risolti o obsoleti) dopo un"ora specificata e con una frequenza specificata. È anche possibile eliminare questi eventi manualmente.' 
+---
+= Finestra di dialogo Impostazioni conservazione eventi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile configurare le impostazioni degli eventi in modo che eliminino automaticamente gli eventi (informazioni, risolti o obsoleti) dopo un'ora specificata e con una frequenza specificata. È anche possibile eliminare questi eventi manualmente.
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== Impostazioni evento
+
+È possibile configurare le seguenti opzioni:
+
+* *Elimina informazioni, eventi risolti e obsoleti precedenti a*
++
+Consente di specificare il periodo di conservazione dopo il quale gli eventi contrassegnati come informazioni, risolti o obsoleti vengono rimossi dal server di gestione.
+
++
+Il valore predefinito è 180 giorni. La conservazione degli eventi per più di 180 giorni influisce sulle performance e non è consigliabile. Il limite inferiore per il periodo di conservazione degli eventi è di 7 giorni, anche se non esiste un limite superiore.
+
+* *Elimina pianificazione*
++
+Consente di specificare la frequenza con cui tutti gli eventi contrassegnati come informazioni, risolti o obsoleti e che hanno superato il limite di età vengono automaticamente cancellati dal server di gestione. I valori possibili sono giornaliero, settimanale o mensile.
+
++
+Il valore predefinito è Daily (giornaliero).
+
+* *Elimina ora*
++
+Consente di eliminare manualmente tutte le informazioni, gli eventi risolti e obsoleti che hanno superato il periodo di conservazione specificato.
+
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di salvare o annullare le opzioni di configurazione:
+
+* *Salva e chiudi*
++
+Salva le impostazioni di configurazione per l'opzione selezionata e chiude la finestra di dialogo.
+
+* *Annulla*
++
+Annulla le modifiche recenti e chiude la finestra di dialogo.
+
+

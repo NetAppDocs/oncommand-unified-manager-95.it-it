@@ -1,0 +1,56 @@
+---
+permalink: online-help/reference-edit-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile utilizzare la finestra di dialogo Modifica regola per modificare le proprietà di una regola, ad esempio i tipi di file, i percorsi di directory o i proprietari. È inoltre possibile selezionare una classe di storage appropriata per la regola. Ad esempio, quando un determinato percorso di file non è più valido, è possibile eliminare il percorso di file dalla regola corrispondente. 
+---
+= Finestra di dialogo Edit Rule (Modifica regola)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la finestra di dialogo Modifica regola per modificare le proprietà di una regola, ad esempio i tipi di file, i percorsi di directory o i proprietari. È inoltre possibile selezionare una classe di storage appropriata per la regola. Ad esempio, quando un determinato percorso di file non è più valido, è possibile eliminare il percorso di file dalla regola corrispondente.
+
+
+
+== Nome regola
+
+Visualizza il nome della regola.
+
+
+
+== Criteri di corrispondenza
+
+Visualizza un elenco di condizioni relative al modello di regola selezionato. L'elenco delle condizioni cambia in base al modello di regola selezionato.
+
+* *Aggiungi*
++
+Consente di aggiungere una nuova proprietà della regola, un nuovo tipo di file, un percorso file o un nuovo proprietario. Ad esempio, se è stato specificato il modello di regola "`inserire tutti i file con i nomi dei proprietari specificati in una classe di storage adatta`", il pulsante Add (Aggiungi) consente di aggiungere il nome del proprietario.
+
+* *Elimina*
++
+Consente di eliminare una proprietà della regola selezionata.
+
+
+
+
+
+== Area di posizionamento dei contenuti
+
+Visualizza l'elenco delle classi di storage. È possibile selezionare una classe di storage appropriata per la regola selezionata.
+
+
+
+== Pulsanti di comando
+
+* *Aggiorna*
++
+Aggiorna le modifiche apportate alla regola e chiude la finestra di dialogo Modifica regola.
+
+* *Annulla*
++
+Annulla le modifiche recenti apportate alla regola e chiude la finestra di dialogo Modifica regola.
+
+

@@ -1,0 +1,80 @@
+---
+permalink: health-checker/task-accessing-the-maintenance-console.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Se l"interfaccia utente di Unified Manager non è in funzione o se è necessario eseguire funzioni non disponibili nell"interfaccia utente, è possibile accedere alla console di manutenzione per gestire il sistema Unified Manager.' 
+---
+= Accesso alla console di manutenzione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se l'interfaccia utente di Unified Manager non è in funzione o se è necessario eseguire funzioni non disponibili nell'interfaccia utente, è possibile accedere alla console di manutenzione per gestire il sistema Unified Manager.
+
+
+
+== Prima di iniziare
+
+Unified Manager deve essere installato e configurato.
+
+
+
+== A proposito di questa attività
+
+Dopo 15 minuti di inattività, la console di manutenzione si disconnette.
+
+[NOTE]
+====
+Una volta installato su VMware, se si è già effettuato l'accesso come utente di manutenzione tramite la console VMware, non è possibile effettuare l'accesso simultaneo utilizzando Secure Shell.
+
+====
+
+
+== Fasi
+
+. Per accedere alla console di manutenzione, procedere come segue:
++
+|===
+| Su questo sistema operativo... | Attenersi alla procedura descritta di seguito... 
+
+
+ a| 
+VMware
+ a| 
+.. Utilizzando Secure Shell, connettersi all'indirizzo IP o al nome di dominio completo dell'appliance virtuale Unified Manager.
+.. Accedere alla console di manutenzione utilizzando il nome utente e la password di manutenzione.
+
+
+
+
+ a| 
+Linux
+ a| 
+.. Utilizzando Secure Shell, connettersi all'indirizzo IP o al nome di dominio completo del sistema Unified Manager.
+.. Accedere al sistema con il nome utente di manutenzione (umadmin) e la password.
+.. Immettere il comando `maintenance_console` E premere Invio.
+
+
+
+
+ a| 
+Windows
+ a| 
+.. Accedere al sistema Unified Manager con le credenziali di amministratore.
+.. Avviare PowerShell come amministratore di Windows.
+.. Immettere il comando `maintenance_console` E premere Invio.
++
+[NOTE]
+====
+In Microsoft Windows Server 2012, se si riceve un errore relativo al criterio di esecuzione, immettere il seguente comando e riprovare al passo c: `PowerShell.exe -ExecutionPolicy RemoteSigned`
+
+====
+
+
+|===
++
+Viene visualizzato il menu della console di manutenzione di Unified Manager.
+
+

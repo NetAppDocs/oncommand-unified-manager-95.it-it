@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-volume-transfer-rate-historical-report.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Il rapporto Volume Transfer Rate (storico) consente di analizzare la quantità di volume di dati che viene trasferita quotidianamente. Il report fornisce inoltre informazioni dettagliate sui trasferimenti giornalieri di volumi e sul tempo necessario per completare l"operazione di trasferimento.' 
+---
+= Rapporto Volume Transfer Rate (storico)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il report Volume Transfer Rate (storico) consente di analizzare la quantità di volume di dati che viene trasferita quotidianamente. Il report fornisce inoltre informazioni dettagliate sui trasferimenti giornalieri di volumi e sul tempo necessario per completare l'operazione di trasferimento.
+
+Il rapporto Volume Transfer Rate (storico) viene visualizzato in due formati:
+
+* Grafico a barre della velocità di trasferimento del volume
+* Vista tabulare Volume Transfer Rate (velocità di trasferimento del volume)
+
+
+
+
+== Grafico a barre della velocità di trasferimento del volume
+
+Visualizza i dettagli della velocità di trasferimento del volume tracciando la dimensione totale del trasferimento in base al numero di ore. È inoltre possibile visualizzare i dettagli della quantità di dati trasferiti quotidianamente.
+
+
+
+== Vista tabulare Volume Transfer Rate (velocità di trasferimento del volume)
+
+* *Dimensione totale trasferimento (GB)*
++
+Visualizza le dimensioni totali del trasferimento del volume in gigabyte.
+
+* *Giorno*
++
+Visualizza il giorno in cui è stato avviato il trasferimento del volume.
+
+* *Ora di fine*
++
+Visualizza l'ora di fine del trasferimento del volume con la data.
+
+

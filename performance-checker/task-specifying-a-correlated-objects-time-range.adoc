@@ -1,0 +1,20 @@
+---
+permalink: performance-checker/task-specifying-a-correlated-objects-time-range.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Il selettore Time Range (intervallo di tempo) nella pagina Performance Explorer (Esplora prestazioni) consente di specificare l"intervallo di tempo per il confronto dei dati a oggetti. Specificando un intervallo di tempo, il contenuto delle pagine di Performance Explorer viene ridefinito in modo da visualizzare solo i dati dell"oggetto entro l"intervallo di tempo specificato.' 
+---
+= Specifica di un intervallo di tempo per gli oggetti correlati
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il selettore Time Range (intervallo di tempo) nella pagina Performance Explorer (Esplora prestazioni) consente di specificare l'intervallo di tempo per il confronto dei dati a oggetti. Specificando un intervallo di tempo, il contenuto delle pagine di Performance Explorer viene ridefinito in modo da visualizzare solo i dati dell'oggetto entro l'intervallo di tempo specificato.
+
+
+
+== A proposito di questa attività
+
+La rifinitura dell'intervallo di tempo offre un metodo efficiente per visualizzare solo i dati relativi alle performance di cui si è interessati. È possibile selezionare un intervallo di tempo predefinito o specificare un intervallo di tempo personalizzato. L'intervallo di tempo predefinito è quello delle 72 ore precedenti.

@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-changing-home-port-and-nodes-for-a-lif-using-oncommand-system-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile modificare la posizione preferita di una LIF modificando la porta home e il nodo home. Si tratta di una configurazione più duratura rispetto alla migrazione di una LIF, che viene in genere utilizzata per spostare temporaneamente una LIF in un nodo diverso durante la manutenzione pianificata. 
+---
+= Modifica della porta home e dei nodi per un LIF utilizzando Gestione di sistema di OnCommand
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare la posizione preferita di una LIF modificando la porta home e il nodo home. Si tratta di una configurazione più duratura rispetto alla migrazione di una LIF, che viene in genere utilizzata per spostare temporaneamente una LIF in un nodo diverso durante la manutenzione pianificata.
+
+
+
+== A proposito di questa attività
+
+La seguente immagine mostra la porta home LIF e il nodo, la porta home e il nodo dopo la modifica. La porta home LIF originale è stata modificata da e1a a e3a e LF2 è stato modificato da e4a a e2a.
+
+image::../media/diagram-cluster-lifs-move-jpg.gif[Modifica della porta home LIF e del nodo]
+
+
+
+== Fasi
+
+. Aprire Gestore di sistema di OnCommand.
+. Dalla scheda *Home*, fare doppio clic sul sistema di storage.
+. Nel riquadro di navigazione, espandere la gerarchia *SVM*.
+. Nel riquadro di navigazione, selezionare le SVM e fare clic su *Configurazione* > *interfacce di rete*.
+. Selezionare la LIF e fare clic su *Edit* (Modifica).
+. Nella finestra di dialogo**Edit Interface** (Modifica interfaccia), inserire la porta home e l'indirizzo di rete della porta di destinazione.
++
+image::../media/systemmgr-lif-edit-jpg.gif[Finestra di dialogo Edit Interface (Modifica interfaccia)]
+
++
+[NOTE]
+====
+In ONTAP 8.2.1, il campo porta principale è disattivato.
+
+====
+. Fare clic su *Save and Close* (Salva e chiudi).
+

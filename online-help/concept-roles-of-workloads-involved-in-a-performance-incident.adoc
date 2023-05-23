@@ -1,0 +1,49 @@
+---
+permalink: online-help/concept-roles-of-workloads-involved-in-a-performance-incident.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager utilizza i ruoli per identificare il coinvolgimento di un workload in un evento di performance. I ruoli includono vittime, tori e squali. Un carico di lavoro definito dall"utente può essere una vittima, un bullo e uno squalo allo stesso tempo.' 
+---
+= Ruoli dei carichi di lavoro coinvolti in un evento di performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager utilizza i ruoli per identificare il coinvolgimento di un workload in un evento di performance. I ruoli includono vittime, tori e squali. Un carico di lavoro definito dall'utente può essere una vittima, un bullo e uno squalo allo stesso tempo.
+
+|===
+| Ruolo | Descrizione 
+
+
+ a| 
+Vittima
+ a| 
+Un carico di lavoro definito dall'utente le cui performance sono diminuite a causa di altri carichi di lavoro, detti "bulli", che utilizzano in modo eccessivo un componente del cluster. Solo i workload definiti dall'utente sono identificati come vittime. Unified Manager identifica i carichi di lavoro delle vittime in base alla loro deviazione nella latenza, in cui la latenza effettiva, durante un evento, è notevolmente aumentata rispetto all'intervallo di latenza previsto.
+
+
+
+ a| 
+Bully
+ a| 
+Un workload definito dall'utente o dal sistema il cui utilizzo eccessivo di un componente del cluster ha causato la diminuzione delle performance di altri workload, denominati vittime. Unified Manager identifica i carichi di lavoro ingombranti in base alla loro deviazione nell'utilizzo di un componente del cluster, in cui l'utilizzo effettivo, durante un evento, è notevolmente aumentato rispetto all'intervallo di utilizzo previsto.
+
+
+
+ a| 
+Squalo
+ a| 
+Un carico di lavoro definito dall'utente con il massimo utilizzo di un componente del cluster rispetto a tutti i carichi di lavoro coinvolti in un evento. Unified Manager identifica i carichi di lavoro di Shark in base all'utilizzo di un componente del cluster durante un evento.
+
+|===
+I carichi di lavoro su un cluster possono condividere molti dei componenti del cluster, come gli aggregati di storage e la CPU per l'elaborazione di dati e reti. Quando un carico di lavoro, ad esempio un volume, aumenta l'utilizzo di un componente del cluster al punto che il componente non riesce a soddisfare in modo efficiente le richieste di carico di lavoro, il componente è in conflitto. Il carico di lavoro che sta utilizzando in eccesso un componente del cluster è un'operazione molto importante. Gli altri carichi di lavoro che condividono tali componenti e le cui performance sono influenzate dal problema sono le vittime. Anche le attività dei carichi di lavoro definiti dal sistema, come la deduplica o le copie Snapshot, possono essere sottoposte a escalation in "`bullismo`".
+
+Quando Unified Manager rileva un evento, identifica tutti i carichi di lavoro e i componenti del cluster coinvolti, inclusi i carichi di lavoro ingombranti che hanno causato l'evento, il componente del cluster in conflitto e i carichi di lavoro vittime le cui performance sono diminuite a causa dell'aumento dell'attività dei carichi di lavoro ingombranti.
+
+[NOTE]
+====
+Se Unified Manager non riesce a identificare i carichi di lavoro ingombrante, avvisa solo sui carichi di lavoro vittime e sul componente del cluster interessato.
+
+====
+Unified Manager è in grado di identificare i carichi di lavoro vittime di carichi di lavoro ingombranti e di identificare anche i casi in cui questi stessi carichi di lavoro diventano carichi di lavoro ingombranti. Un carico di lavoro può essere un'attività molto ingombrante per se stesso. Ad esempio, un carico di lavoro dalle performance elevate che viene rallentato da un limite di gruppo di policy causa la limitazione di tutti i workload del gruppo di policy, anche se stesso. Un carico di lavoro ingombrante o vittima di un evento di performance in corso potrebbe cambiare il proprio ruolo o non essere più un partecipante all'evento. Nella pagina Performance/Volume Details (Dettagli performance/volume), nella tabella Events List (elenco eventi), quando il volume selezionato cambia ruolo partecipante, vengono visualizzate la data e l'ora della modifica del ruolo.

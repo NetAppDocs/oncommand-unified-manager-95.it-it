@@ -1,0 +1,114 @@
+---
+permalink: online-help/reference-notifications-page.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile configurare il server Unified Manager in modo che invii notifiche quando viene generato un evento o quando viene assegnato a un utente. È inoltre possibile configurare i meccanismi di notifica. Ad esempio, le notifiche possono essere inviate come e-mail o trap SNMP. 
+---
+= Pagina Setup/Notifiche
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile configurare il server Unified Manager in modo che invii notifiche quando viene generato un evento o quando viene assegnato a un utente. È inoltre possibile configurare i meccanismi di notifica. Ad esempio, le notifiche possono essere inviate come e-mail o trap SNMP.
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== E-mail
+
+Questa area consente di configurare le seguenti impostazioni e-mail per la notifica degli avvisi:
+
+* *Indirizzo mittente*
++
+Specifica l'indirizzo e-mail da cui viene inviata la notifica di avviso. Questo valore viene utilizzato anche come indirizzo di origine per un report quando condiviso. Se l'indirizzo da è pre-compilato con l'indirizzo "`OnCommand@localhost.com`", devi cambiarlo in un indirizzo e-mail reale e funzionante per assicurarti che tutte le notifiche e-mail siano inviate correttamente.
+
+
+
+
+
+== Server SMTP
+
+Questa sezione consente di configurare le seguenti impostazioni del server SMTP:
+
+* *Nome host o Indirizzo IP*
++
+Specifica il nome host del server host SMTP utilizzato per inviare la notifica di avviso ai destinatari specificati.
+
+* *Nome utente*
++
+Specifica il nome utente SMTP. Il nome utente SMTP è obbligatorio solo se SMTPAUTH è attivato nel server SMTP.
+
+* *Password*
++
+Specifica la password SMTP. Il nome utente SMTP è obbligatorio solo se SMTPAUTH è attivato nel server SMTP.
+
+* *Porta*
++
+Specifica la porta utilizzata dal server host SMTP per inviare la notifica di avviso.
+
++
+Il valore predefinito è 25.
+
+* *Utilizzare STARTTLS*
++
+La selezione di questa casella consente una comunicazione sicura tra il server SMTP e il server di gestione utilizzando i protocolli TLS/SSL (noti anche come start_tls e STARTTLS).
+
+* *Usa SSL*
++
+Selezionando questa casella si attiva la comunicazione sicura tra il server SMTP e il server di gestione mediante il protocollo SSL.
+
+
+
+
+
+== SNMP
+
+Quest'area consente di configurare le seguenti impostazioni di trap SNMP:
+
+* *Versione*
++
+Specifica la versione SNMP che si desidera utilizzare in base al tipo di protezione richiesto. Le opzioni includono versione 1, versione 3, versione 3 con autenticazione e versione 3 con autenticazione e crittografia. Il valore predefinito è versione 1.
+
+* *Host di destinazione trap*
++
+Specifica il nome host o l'indirizzo IP (IPv4 o IPv6) che riceve i trap SNMP inviati dal server di gestione.
+
+* *Outbound Trap Port* (porta trap in uscita)
++
+Specifica la porta attraverso la quale il server SNMP riceve i trap inviati dal server di gestione.
+
++
+Il valore predefinito è 162.
+
+* *Comunità*
++
+Stringa di comunità per accedere all'host.
+
+* *ID motore*
++
+Specifica l'identificatore univoco dell'agente SNMP e viene generato automaticamente dal server di gestione. L'ID motore è disponibile con SNMP versione 3, SNMP versione 3 con autenticazione e SNMP versione 3 con autenticazione e crittografia.
+
+* *Nome utente*
++
+Specifica il nome utente SNMP. Il nome utente è disponibile con SNMP versione 3, SNMP versione 3 con autenticazione e SNMP versione 3 con autenticazione e crittografia.
+
+* *Protocollo di autenticazione*
++
+Specifica il protocollo utilizzato per autenticare un utente. Le opzioni del protocollo includono MD5 e SHA. MD5 è il valore predefinito. Il protocollo di autenticazione è disponibile con SNMP versione 3 con autenticazione e SNMP versione 3 con autenticazione e crittografia.
+
+* *Password di autenticazione*
++
+Specifica la password utilizzata per l'autenticazione di un utente. La password di autenticazione è disponibile con SNMP versione 3 con autenticazione e SNMP versione 3 con autenticazione e crittografia.
+
+* *Protocollo sulla privacy*
++
+Specifica il protocollo di privacy utilizzato per crittografare i messaggi SNMP. Le opzioni del protocollo includono AES 128 e DES. Il valore predefinito è AES 128. Il protocollo Privacy è disponibile con SNMP versione 3 con autenticazione e crittografia.
+
+* *Password privacy*
++
+Specifica la password quando si utilizza il protocollo di privacy. La password per la privacy è disponibile con SNMP versione 3 con autenticazione e crittografia.
+
+

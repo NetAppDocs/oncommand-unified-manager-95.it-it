@@ -1,0 +1,16 @@
+---
+permalink: performance-checker/concept-setting-up-a-connection-between-unified-manager-and-an-external-data-provider.html 
+sidebar: sidebar 
+keywords:  
+summary: La connessione tra un server Unified Manager e un provider di dati esterno consente di inviare i dati delle performance del cluster a un server esterno in modo che i responsabili dello storage possano tracciare le metriche delle performance utilizzando software di terze parti. 
+---
+= Impostazione di una connessione tra un server Unified Manager e un provider di dati esterno
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La connessione tra un server Unified Manager e un provider di dati esterno consente di inviare i dati delle performance del cluster a un server esterno in modo che i responsabili dello storage possano tracciare le metriche delle performance utilizzando software di terze parti.
+
+La connessione tra un server Unified Manager e un provider di dati esterno viene stabilita tramite l'opzione di menu "`External Data Provider`" nella console di manutenzione.

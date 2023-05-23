@@ -1,0 +1,16 @@
+---
+permalink: health-checker/concept-what-storage-capacity-health-thresholds-are.html 
+sidebar: sidebar 
+keywords:  
+summary: Una soglia di stato della capacità di storage è il punto in cui il server Unified Manager genera eventi per segnalare qualsiasi problema di capacità con gli oggetti di storage. È possibile configurare gli avvisi in modo che inviino notifiche ogni volta che si verificano tali eventi. 
+---
+= Quali sono le soglie di stato della capacità dello storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Una soglia di stato della capacità di storage è il punto in cui il server Unified Manager genera eventi per segnalare qualsiasi problema di capacità con gli oggetti di storage. È possibile configurare gli avvisi in modo che inviino notifiche ogni volta che si verificano tali eventi.
+
+Le soglie di integrità della capacità di storage per tutti gli aggregati, i volumi e i qtree sono impostate sui valori predefiniti. È possibile modificare le impostazioni in base alle esigenze di un oggetto o di un gruppo di oggetti.

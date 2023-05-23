@@ -1,0 +1,124 @@
+---
+permalink: online-help/reference-add-alert-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile creare avvisi per notificare quando viene generato un determinato evento, in modo da poter risolvere il problema rapidamente e ridurre al minimo l"impatto sull"ambiente. È possibile creare avvisi per una singola risorsa o un set di risorse e per eventi di un particolare tipo di severità. È inoltre possibile specificare il metodo di notifica e la frequenza degli avvisi.' 
+---
+= Finestra di dialogo Add Alert (Aggiungi avviso)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile creare avvisi per notificare quando viene generato un determinato evento, in modo da poter risolvere il problema rapidamente e ridurre al minimo l'impatto sull'ambiente. È possibile creare avvisi per una singola risorsa o un set di risorse e per eventi di un particolare tipo di severità. È inoltre possibile specificare il metodo di notifica e la frequenza degli avvisi.
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== Nome
+
+Questa area consente di specificare un nome e una descrizione per l'avviso:
+
+* *Nome avviso*
++
+Consente di specificare un nome di avviso.
+
+* *Descrizione avviso*
++
+Consente di specificare una descrizione per l'avviso.
+
+
+
+
+
+== Risorse
+
+Quest'area consente di selezionare una singola risorsa o di raggruppare le risorse in base a una regola dinamica per la quale si desidera attivare l'avviso. Una _regola dinamica_ è l'insieme di risorse filtrate in base alla stringa di testo specificata. È possibile cercare le risorse selezionando un tipo di risorsa dall'elenco a discesa oppure specificare il nome esatto della risorsa per visualizzare una risorsa specifica.
+
+Se si crea un avviso da una qualsiasi delle pagine dei dettagli dell'oggetto di storage, l'oggetto di storage viene automaticamente incluso nell'avviso.
+
+* *Include*
++
+Consente di includere le risorse per le quali si desidera attivare gli avvisi. È possibile specificare una stringa di testo per raggruppare le risorse che corrispondono alla stringa e selezionare questo gruppo da includere nell'avviso. Ad esempio, è possibile raggruppare tutti i volumi il cui nome contiene la stringa "`abc`".
+
+* *Escludi*
++
+Consente di escludere le risorse per le quali non si desidera attivare avvisi. Ad esempio, è possibile escludere tutti i volumi il cui nome contiene la stringa "`xyz`".
+
++
+La scheda Escludi viene visualizzata solo quando si selezionano tutte le risorse di un particolare tipo di risorsa: Ad esempio, <<All Volumes>> oppure <<All Volumes whose name contains '_xyz_'>>.
+
++
+Se una risorsa è conforme alle regole di inclusione ed esclusione specificate, la regola di esclusione ha la precedenza sulla regola di inclusione e l'avviso non viene generato per l'evento.
+
+
+
+
+
+== Eventi
+
+Quest'area consente di selezionare gli eventi per i quali si desidera creare gli avvisi. È possibile creare avvisi per gli eventi in base a una determinata severità o a una serie di eventi.
+
+Per selezionare più eventi, tenere premuto il tasto Ctrl mentre si effettuano le selezioni.
+
+* *Severità evento*
++
+Consente di selezionare gli eventi in base al tipo di severità, che può essere critico, errore o Avviso.
+
+* *Il nome dell'evento contiene*
++
+Consente di selezionare eventi il cui nome contiene caratteri specifici.
+
+
+
+
+
+== Azioni
+
+Questa area consente di specificare gli utenti che si desidera notificare quando viene attivato un avviso. È inoltre possibile specificare il metodo di notifica e la frequenza di notifica.
+
+* *Avvisa questi utenti*
++
+Consente di specificare l'indirizzo e-mail o il nome utente dell'utente per ricevere le notifiche.
+
++
+Se si modifica l'indirizzo di posta elettronica specificato per l'utente e si riapre l'avviso per la modifica, il campo Nome appare vuoto perché l'indirizzo di posta elettronica modificato non è più associato all'utente precedentemente selezionato. Inoltre, se l'indirizzo e-mail dell'utente selezionato è stato modificato dalla pagina Management/Users (Gestione/utenti), l'indirizzo e-mail modificato non viene aggiornato per l'utente selezionato.
+
+* *Frequenza di notifica*
++
+Consente di specificare la frequenza con cui il server di gestione invia le notifiche fino a quando l'evento non viene riconosciuto, risolto o spostato nello stato obsoleto.
+
++
+È possibile scegliere i seguenti metodi di notifica:
+
++
+** Notifica solo una volta
+** Notifica a una frequenza specificata
+** Notifica a una frequenza specificata entro l'intervallo di tempo specificato
+
+
+* *Problema trap SNMP*
++
+La selezione di questa casella consente di specificare se inviare trap SNMP all'host SNMP configurato a livello globale.
+
+* *Esegui script*
++
+Consente di aggiungere lo script personalizzato all'avviso. Questo script viene eseguito quando viene generato un avviso.
+
+
+
+
+
+== Pulsanti di comando
+
+* *Salva*
++
+Crea un avviso e chiude la finestra di dialogo.
+
+* *Annulla*
++
+Elimina le modifiche e chiude la finestra di dialogo.
+
+

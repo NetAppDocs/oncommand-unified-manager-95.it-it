@@ -1,0 +1,37 @@
+---
+permalink: install/concept-requirements-for-unified-manager-in-vcs.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Prima di installare Unified Manager in un ambiente Veritas Cluster Server (VCS), è necessario assicurarsi che i nodi del cluster siano configurati correttamente per supportare Unified Manager.' 
+---
+= Requisiti per Unified Manager in VCS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Prima di installare Unified Manager in un ambiente Veritas Cluster Server (VCS), è necessario assicurarsi che i nodi del cluster siano configurati correttamente per supportare Unified Manager.
+
+È necessario assicurarsi che la configurazione VCS soddisfi i seguenti requisiti:
+
+* Entrambi i nodi del cluster devono eseguire una versione del sistema operativo supportata.
+* La stessa versione di Unified Manager deve essere installata utilizzando lo stesso percorso su entrambi i nodi del cluster.
+* L'utente MySQL su entrambi i nodi deve avere lo stesso ID utente e ID gruppo.
+* È necessario utilizzare i file system ext3, ext4 e Logical Volume Manager (LVM) nativi.
+* Unified Manager deve essere connesso al sistema storage tramite Fibre Channel (FC) o iSCSI.
++
+È inoltre necessario assicurarsi che il collegamento FC sia attivo e che le LUN create sui sistemi storage siano accessibili a entrambi i nodi del cluster.
+
+* Il disco dati condiviso deve disporre di spazio sufficiente (minimo 80 GB) per il database, i report, i certificati e le cartelle dei plug-in di Unified Manager.
+* È necessario impostare almeno due interfacce di rete su ciascun sistema: Una per la comunicazione nodo-nodo e l'altra per la comunicazione nodo-client.
++
+Il nome dell'interfaccia di rete utilizzata per la comunicazione nodo-client deve essere lo stesso su entrambi i sistemi.
+
+* È necessario stabilire un collegamento heartbeat separato tra i nodi del cluster; in caso contrario, l'interfaccia di rete viene utilizzata per comunicare tra i nodi del cluster.
+* Facoltativo: SnapDrive per UNIX deve essere utilizzato per creare una posizione condivisa accessibile a entrambi i nodi in una configurazione ad alta disponibilità.
++
+Consultare la _Guida all'installazione e all'amministrazione di SnapDrive per UNIX_ per informazioni sull'installazione e la creazione di una posizione condivisa. È inoltre possibile gestire le LUN utilizzando SnapDrive o l'interfaccia della riga di comando del sistema di storage. Per ulteriori informazioni, consultare la matrice di compatibilità di SnapDrive per UNIX.
+
+* Per le applicazioni SnapDrive e VCS deve essere disponibile ulteriore RAM.
+

@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-metrocluster-bridge-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi del bridge MetroCluster forniscono informazioni sullo stato dei bridge in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all"area di impatto e includono il nome dell"evento e della trap, il livello di impatto, il tipo di origine e la severità.' 
+---
+= Eventi del bridge MetroCluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi del bridge MetroCluster forniscono informazioni sullo stato dei bridge in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all'area di impatto e includono il nome dell'evento e della trap, il livello di impatto, il tipo di origine e la severità.
+
+
+
+== Area di impatto: Disponibilità
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Bridge Unreachable (ocumEvtBridgeUnreachable) (Bridge non raggiungibile)
+ a| 
+Incidente
+ a| 
+Ponte di MetroCluster
+ a| 
+Critico
+
+
+
+ a| 
+Anomalia temperatura ponte (ocumEvtBridgeTemperaturaAbnormalità)
+ a| 
+Incidente
+ a| 
+Ponte di MetroCluster
+ a| 
+Critico
+
+|===

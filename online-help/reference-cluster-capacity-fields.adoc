@@ -1,0 +1,100 @@
+---
+permalink: online-help/reference-cluster-capacity-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: Il report Storage Summary consente di visualizzare informazioni riepilogative sulla capacità dello storage nelle coppie ha. Queste informazioni ti aiutano a comprendere i possibili rischi di capacità e a intraprendere le azioni appropriate per ribilanciare il carico di lavoro. Le informazioni sul cluster a nodo singolo non sono visibili nel report. 
+---
+= Report Storage Summary
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il report Storage Summary consente di visualizzare informazioni riepilogative sulla capacità dello storage nelle coppie ha. Queste informazioni ti aiutano a comprendere i possibili rischi di capacità e a intraprendere le azioni appropriate per ribilanciare il carico di lavoro. Le informazioni sul cluster a nodo singolo non sono visibili nel report.
+
+
+
+== Vista a grafico del report Storage Summary
+
+Il report Storage Summary viene visualizzato in due formati:
+
+* Vista a grafico del report Storage Summary
+* Visualizzazione tabulare del report di riepilogo dello storage
+
+
+Il grafico mostra l'andamento della capacità dei dati utilizzati e non utilizzati degli aggregati in un determinato periodo di tempo. La capacità totale dei dati viene visualizzata sull'asse verticale (y) e il nome del cluster sull'asse orizzontale (x). Pertanto, ogni barra del grafico rappresenta un cluster. È possibile visualizzare i dettagli di punti specifici del grafico posizionando il cursore su un punto specifico.
+
+* *Nome cluster*
++
+Visualizza il nome del cluster.
+
+* *Coppia ha*
++
+Visualizza il valore della coppia ha ottenuto formando due nodi.
+
+* *Modello*
++
+Visualizza il nome del modello.
+
+* *Versione del sistema operativo*
++
+Visualizza la versione di ONTAP utilizzata.
+
+* *Capacità raw totale*
++
+Visualizza la capacità fisica totale di tutti i dischi dell'array.
+
+* *Capacità raw non configurata*
++
+Visualizza la capacità non configurata dei dischi il cui tipo di container è diverso da aggregato, rotto, spare o condiviso. Questa capacità è sempre superiore alla capacità fisica del disco in ONTAP. Ad esempio, si consideri un disco da 2 TB. La capacità fisica del disco è di 1.6 TB in ONTAP, mentre la capacità raw non configurata in Unified Manager è di 1.8 TB.
+
+* *Capacità totale aggregata*
++
+Visualizza la dimensione totale degli aggregati disponibili per l'utente. Ciò include la riserva di copia Snapshot.
+
+* *Capacità aggregata utilizzata*
++
+Visualizza la capacità già in uso sugli aggregati. Ciò include la capacità consumata da volumi, LUN e altre spese generali per l'efficienza dello storage.
+
+* *Capacità non utilizzata aggregata*
++
+Visualizza la capacità che potrebbe essere disponibile per l'archiviazione di dati aggiuntivi sull'aggregato. Ciò include la riserva di copia Snapshot.
+
+* *Capacità LUN allocata*
++
+Visualizza la capacità delle LUN mappate.
+
+* *Capacità LUN non allocata*
++
+Visualizza la capacità di tutti i LUN non mappati all'host.
+
+* *Capacità totale del volume*
++
+Visualizza la capacità totale dei volumi (utilizzati più inutilizzati).
+
+* *Capacità volume utilizzata*
++
+Visualizza la capacità utilizzata dei volumi.
+
+* *Capacità inutilizzata del volume*
++
+Visualizza la capacità inutilizzata dei volumi.
+
+* *Capacità di protezione del volume*
++
+Visualizza la capacità dei volumi con SnapMirror e SnapVault attivati.
+
+* *Cluster Licensed Cloud Tier Total*
++
+Visualizza la capacità totale concessa in licenza nel Tier cloud. Questo campo viene visualizzato per i provider di storage che richiedono una licenza FabricPool, ad esempio Amazon S3, IBM Cloud Object Storage, Microsoft Azure Cloud o Alibaba Cloud Object Storage.
+
+* *Cluster Licensed Cloud Tier used*
++
+Visualizza lo spazio utilizzato dai dati nel livello cloud per i provider di storage che richiedono una licenza FabricPool.
+
+* *Capacità StorageGRID del cluster utilizzata*
++
+Visualizza lo spazio utilizzato dai dati nel livello cloud per i provider di storage che non richiedono una licenza FabricPool, ad esempio StorageGRID.
+
+

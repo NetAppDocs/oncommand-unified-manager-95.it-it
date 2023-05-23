@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-capacity-and-utilization-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile creare report per monitorare una vasta gamma di informazioni sulla capacità e sull"utilizzo dei volumi. Ad esempio, è possibile creare report per visualizzare i volumi utilizzati, la capacità totale, il tasso di crescita giornaliero e la capacità di copia di Snapshot, che possono aiutare a determinare se un volume sta esaurendo lo spazio o se è stato utilizzato in eccesso o sottoutilizzato.' 
+---
+= Personalizzazioni dei report Volume Capacity and Utilization (capacità e utilizzo dei volumi)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile creare report per monitorare una vasta gamma di informazioni sulla capacità e sull'utilizzo dei volumi. Ad esempio, è possibile creare report per visualizzare i volumi utilizzati, la capacità totale, il tasso di crescita giornaliero e la capacità di copia di Snapshot, che possono aiutare a determinare se un volume sta esaurendo lo spazio o se è stato utilizzato in eccesso o sottoutilizzato.

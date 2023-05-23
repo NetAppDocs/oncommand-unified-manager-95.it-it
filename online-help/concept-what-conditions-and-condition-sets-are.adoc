@@ -1,0 +1,36 @@
+---
+permalink: online-help/concept-what-conditions-and-condition-sets-are.html 
+sidebar: sidebar 
+keywords:  
+summary: Le condizioni sono un insieme di criteri di corrispondenza basati sulle proprietà della regola, ad esempio il nome del file, il percorso della directory e il proprietario, che definiscono una regola. Un insieme di tali condizioni è noto come insieme di condizioni. È possibile utilizzare le condizioni e i set di condizioni solo per le regole personalizzate per determinare dove posizionare il contenuto scritto nel volume Infinite. 
+---
+= Quali sono le condizioni e i set di condizioni
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+_Condizioni_ sono un insieme di criteri di corrispondenza basati sulle proprietà della regola, ad esempio il nome del file, il percorso della directory e il proprietario, che definiscono una regola. Un insieme di tali condizioni è noto come _set di condizioni_. È possibile utilizzare le condizioni e i set di condizioni solo per le regole personalizzate per determinare dove posizionare il contenuto scritto nel volume Infinite.
+
+
+
+== Condizioni
+
+Per una regola personalizzata, è possibile specificare le condizioni in base alle proprietà della regola, ad esempio il nome del file, il percorso della directory o il proprietario o una combinazione di tutte le proprietà della regola. La logica è simile a un'operazione booleana AND. Ad esempio, utilizzando le condizioni, è possibile creare una regola personalizzata con cui inserire i file `.mp3` Estensioni e file di proprietà di John nel percorso di directory che inizia con `/NS/`.
+
+
+
+== Set di condizioni
+
+La logica utilizzata per i set di condizioni è simile a un'operazione booleana O O. Ad esempio, utilizzando le condizioni e i set di condizioni, è possibile creare una complessa regola personalizzata che corrisponda a una delle seguenti condizioni:
+
+* condizione-1
++
+Tutti i file di proprietà di Mary e vengono inseriti in `/NS/Eng/`
+
+* condizione-2
++
+Tutti i file con nomi che terminano con ``.pdf``E di proprietà di Mary
+
+

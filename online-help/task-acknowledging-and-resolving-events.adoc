@@ -1,0 +1,71 @@
+---
+permalink: online-help/task-acknowledging-and-resolving-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È necessario riconoscere un evento prima di iniziare a lavorare sul problema che ha generato l"evento, in modo da non continuare a ricevere notifiche di avviso ripetute. Dopo aver eseguito un"azione correttiva per un determinato evento, è necessario contrassegnare l"evento come risolto.' 
+---
+= Riconoscimento e risoluzione degli eventi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È necessario riconoscere un evento prima di iniziare a lavorare sul problema che ha generato l'evento, in modo da non continuare a ricevere notifiche di avviso ripetute. Dopo aver eseguito un'azione correttiva per un determinato evento, è necessario contrassegnare l'evento come risolto.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+
+
+
+== A proposito di questa attività
+
+È possibile riconoscere e risolvere più eventi contemporaneamente.
+
+[NOTE]
+====
+Non è possibile riconoscere gli eventi relativi alle informazioni.
+
+====
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Eventi*.
+. Dall'elenco degli eventi, eseguire le seguenti azioni per riconoscere gli eventi:
++
+|===
+| Se si desidera... | Eseguire questa operazione... 
+
+
+ a| 
+Riconoscere e contrassegnare un singolo evento come risolto
+ a| 
+.. Fare clic sul nome dell'evento.
+.. Dalla pagina Dettagli evento, determinare la causa dell'evento.
+.. Fare clic su *Conferma*.
+.. Intraprendere un'azione correttiva appropriata.
+.. Fare clic su *Contrassegna come risolto*.
+
+
+
+
+ a| 
+Riconoscere e contrassegnare più eventi come risolti
+ a| 
+.. Determinare la causa degli eventi dalla relativa pagina Dettagli evento.
+.. Selezionare gli eventi.
+.. Fare clic su *Conferma*.
+.. Intraprendere le azioni correttive appropriate.
+.. Fare clic su *Contrassegna come risolto*.
+
+
+|===
++
+Una volta contrassegnato come risolto, l'evento viene spostato nell'elenco degli eventi risolti.
+
+. Nell'area *Note e aggiornamenti*, aggiungere una nota sulla modalità di gestione dell'evento, quindi fare clic su *Post*.
+

@@ -1,0 +1,62 @@
+---
+permalink: online-help/task-managing-report-schedules.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile gestire le pianificazioni dei report dalla finestra di dialogo Gestisci pianificazioni report. È possibile aggiungere una nuova pianificazione e visualizzare, modificare o eliminare le pianificazioni esistenti. 
+---
+= Gestione delle pianificazioni dei report
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile gestire le pianificazioni dei report dalla finestra di dialogo Gestisci pianificazioni report. È possibile aggiungere una nuova pianificazione e visualizzare, modificare o eliminare le pianificazioni esistenti.
+
+
+
+== Fasi
+
+. Nel riquadro di spostamento di sinistra, fare clic su *Report*, quindi su *Gestisci pianificazioni report*.
+. Nella finestra di dialogo *Gestisci pianificazioni report*,
++
+|===
+| Se si desidera... | Quindi... 
+
+
+ a| 
+Visualizzare o modificare una pianificazione esistente
+ a| 
+.. Selezionare la pianificazione dall'elenco visualizzato nel riquadro di sinistra.
++
+Vengono visualizzati i dettagli del programma.
+
+.. Apportare le modifiche necessarie.
+.. Fare clic su *Salva* o *Salva e chiudi*.
+
+
+
+
+ a| 
+Eliminare una pianificazione esistente
+ a| 
+.. Selezionare la pianificazione dall'elenco visualizzato nel riquadro di sinistra.
++
+Vengono visualizzati i dettagli del programma.
+
+.. Fare clic su *Elimina pianificazione*.
+
+
+
+
+ a| 
+Aggiungere una nuova pianificazione
+ a| 
+.. Fare clic su *Aggiungi pianificazione*.
+.. Viene visualizzato un nuovo modulo di pianificazione nel riquadro di destra.
+.. Inserire il nome del programma, l'indirizzo e-mail del destinatario, il formato e la frequenza del report e selezionare i report da pianificare.
+.. Fare clic su *Save* (Salva). La nuova pianificazione verrà aggiunta nell'elenco delle pianificazioni.
+
+
+|===
+

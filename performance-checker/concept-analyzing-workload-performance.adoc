@@ -1,0 +1,20 @@
+---
+permalink: performance-checker/concept-analyzing-workload-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager consente di monitorare e analizzare le performance i/o dei carichi di lavoro dei volumi sui cluster. È possibile determinare se il problema riguarda le performance del cluster e se il problema riguarda lo storage. 
+---
+= Analisi delle performance dei carichi di lavoro
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager consente di monitorare e analizzare le performance i/o dei carichi di lavoro dei volumi sui cluster. È possibile determinare se il problema riguarda le performance del cluster e se il problema riguarda lo storage.
+
+[NOTE]
+====
+Questo capitolo descrive come analizzare le performance dei carichi di lavoro utilizzando la pagina Performance/Volume Details (Dettagli performance/volume) e la pagina Event Details (Dettagli evento).
+
+====

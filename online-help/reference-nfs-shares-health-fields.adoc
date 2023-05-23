@@ -1,0 +1,114 @@
+---
+permalink: online-help/reference-nfs-shares-health-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: Il report delle esportazioni NFS consente di controllare le informazioni sulle policy di esportazione NFS e le relative regole associate per i volumi nel sistema storage. 
+---
+= Report delle esportazioni NFS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il report delle esportazioni NFS consente di controllare le informazioni sulle policy di esportazione NFS e le relative regole associate per i volumi nel sistema storage.
+
+
+
+== NFS esporta la vista tabulare del report
+
+* *Cluster*
++
+Visualizza il nome del cluster.
+
+* *Storage Virtual Machine*
++
+Visualizza il nome della SVM con i criteri di esportazione NFS.
+
+* *Volume*
++
+Visualizza il nome del volume con i criteri di esportazione NFS.
+
+* *Qtree*
++
+Visualizza il nome del qtree su un volume con criteri di esportazione NFS.
+
+* *Stato del volume*
++
+Visualizza lo stato corrente del volume. Lo stato può essere offline, online o limitato.
+
++
+** Offline
++
+Non è consentito l'accesso in lettura o scrittura al volume.
+
+** Online
++
+È consentito l'accesso in lettura e scrittura al volume.
+
+** Limitato
++
+Sono consentite operazioni limitate, come la ricostruzione della parità, ma non è consentito l'accesso ai dati.
+
+
+
+* *Percorso di giunzione*
++
+Visualizza il percorso su cui è montato il volume.
+
+* *Percorso di giunzione attivo*
++
+Visualizza se il percorso per accedere al volume montato è attivo o inattivo.
+
+* *Politica di esportazione*
++
+Visualizza le regole che definiscono l'autorizzazione di accesso per i volumi esportati.
+
+* *Indice delle regole*
++
+Visualizza le regole associate ai criteri di esportazione, ad esempio i protocolli di autenticazione e l'autorizzazione di accesso.
+
+* *Protocolli di accesso*
++
+Visualizza i protocolli abilitati per le regole dei criteri di esportazione.
+
+* *Corrispondenza client*
++
+Visualizza i client che dispongono dell'autorizzazione per accedere ai dati sui volumi.
+
+* *Accesso di sola lettura*
++
+Visualizza il protocollo di autenticazione utilizzato per leggere i dati sui volumi.
+
+* *Accesso in lettura/scrittura*
++
+Visualizza il protocollo di autenticazione utilizzato per leggere o scrivere i dati sui volumi.
+
+* *Stile di sicurezza*
++
+Visualizza l'autorizzazione di accesso per i volumi esportati. Lo stile di sicurezza può essere UNIX, Unified, NTFS o Mixed.
+
++
+** UNIX (client NFS)
++
+I file e le directory del volume dispongono delle autorizzazioni UNIX.
+
+** Unificato
++
+I file e le directory del volume hanno uno stile di sicurezza unificato.
+
+** NTFS (client CIFS)
++
+I file e le directory del volume dispongono delle autorizzazioni NTFS di Windows.
+
+** Misto
++
+I file e le directory del volume possono disporre di autorizzazioni UNIX o NTFS di Windows.
+
+
+
+* *Autorizzazione Unix*
++
+Visualizza i bit di autorizzazione UNIX in un formato di stringa ottale, impostato per i volumi esportati. È simile ai bit di permesso di stile UNIX.
+
+

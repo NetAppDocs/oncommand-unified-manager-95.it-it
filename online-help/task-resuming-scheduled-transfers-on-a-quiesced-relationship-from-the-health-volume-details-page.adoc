@@ -1,0 +1,41 @@
+---
+permalink: online-help/task-resuming-scheduled-transfers-on-a-quiesced-relationship-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Dopo aver interrotto una relazione per impedire il verificarsi di trasferimenti pianificati, è possibile utilizzare Riprendi nella pagina Health/Volume Details (Dettagli stato/volume) per riabilitare i trasferimenti pianificati in modo da proteggere i dati sul volume primario o di origine. I trasferimenti vengono ripristinati da un checkpoint, se presente, al successivo intervallo di trasferimento pianificato.' 
+---
+= Ripresa dei trasferimenti pianificati su una relazione quiescente dalla pagina Health/Volume Details (Dettagli salute/volume)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dopo aver interrotto una relazione per impedire il verificarsi di trasferimenti pianificati, è possibile utilizzare *Riprendi* nella pagina Health/Volume Details (Dettagli stato/volume) per riabilitare i trasferimenti pianificati in modo da proteggere i dati sul volume primario o di origine. I trasferimenti vengono ripristinati da un checkpoint, se presente, al successivo intervallo di trasferimento pianificato.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+* È necessario aver impostato l'automazione del flusso di lavoro.
+
+
+
+
+== Fasi
+
+. Nella scheda *Protection* della pagina dei dettagli *Health/Volume*, fare clic con il pulsante destro del mouse nella vista della topologia per visualizzare una relazione che si desidera riprendere.
++
+In alternativa, selezionare *Riprendi* dal menu *azioni* > *relazione*.
+
+. Nella finestra di dialogo *Riprendi*, fare clic su *continua*.
++
+Viene visualizzata nuovamente la pagina Health/Volume Details (Dettagli salute/volume).
+
+. Per visualizzare le attività di lavoro correlate e monitorarne l'avanzamento, fare clic sul collegamento visualizzato nella parte superiore della pagina dei dettagli *Health/Volume*.
+. Nella pagina dei dettagli *protezione/lavoro*, fare clic su *Aggiorna* per aggiornare l'elenco delle attività e i dettagli delle attività associati al processo di configurazione della protezione e determinare quando il processo è completo.
++
+Una volta completati i lavori, i trasferimenti di dati vengono ripristinati al successivo intervallo di trasferimento pianificato.
+
+

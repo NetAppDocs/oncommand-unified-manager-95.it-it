@@ -1,0 +1,26 @@
+---
+permalink: online-help/concept-what-a-storage-class-is.html 
+sidebar: sidebar 
+keywords:  
+summary: Una classe di storage è una definizione delle caratteristiche di aggregato e delle impostazioni dei volumi. È possibile definire diverse classi di storage e associare una o più classi di storage a un Infinite Volume. È necessario utilizzare OnCommand Workflow Automation per definire i flussi di lavoro in base ai requisiti della classe di storage e per assegnare le classi di storage ai volumi Infinite. 
+---
+= Che cos'è una classe di storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Una classe di storage è una definizione delle caratteristiche di aggregato e delle impostazioni dei volumi. È possibile definire diverse classi di storage e associare una o più classi di storage a un Infinite Volume. È necessario utilizzare OnCommand Workflow Automation per definire i flussi di lavoro in base ai requisiti della classe di storage e per assegnare le classi di storage ai volumi Infinite.
+
+È possibile definire le seguenti caratteristiche per una classe di storage:
+
+* Caratteristiche di aggregazione, come il tipo di dischi da utilizzare
+* Impostazioni dei volumi, come compressione, deduplica e garanzia dei volumi
+
+
+Ad esempio, è possibile definire una classe di storage che utilizza solo aggregati con dischi SAS e le seguenti impostazioni di volume: Thin provisioning con compressione e deduplica attivate.
+
+Il seguente diagramma illustra un volume infinito che si estende su più nodi e utilizza le seguenti classi di storage: gold, Silver e Bronze. Ogni classe di storage può comprendere due o più nodi all'interno di un Infinite Volume. Il diagramma illustra anche il posizionamento dei componenti dei dati in ciascuna classe di storage.
+
+image::../media/infinite-volume-with-storage-classes.gif[Questo grafico è descritto dal testo circostante]

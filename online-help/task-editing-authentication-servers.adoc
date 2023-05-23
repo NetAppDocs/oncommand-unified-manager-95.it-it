@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-editing-authentication-servers.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile modificare la porta utilizzata dal server Unified Manager per comunicare con il server di autenticazione. 
+---
+= Modifica dei server di autenticazione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare la porta utilizzata dal server Unified Manager per comunicare con il server di autenticazione.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore di OnCommand.
+
+
+
+== Fasi
+
+. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *Authentication* nel menu Setup di sinistra.
+. Nella pagina *Setup/Authentication*, selezionare la casella *Disable Nested Group Lookup* (Disattiva ricerca gruppi nidificati).
+. Nell'area *Authentication Servers* (Server di autenticazione), selezionare il server di autenticazione che si desidera modificare, quindi fare clic su *Edit* (Modifica).
+. Nella finestra di dialogo *Edit Authentication Server* (Modifica server di autenticazione), modificare i dettagli della porta.
+. Fare clic su *Save* (Salva).
+

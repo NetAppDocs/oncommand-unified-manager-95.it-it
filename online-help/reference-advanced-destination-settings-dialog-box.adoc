@@ -1,0 +1,32 @@
+---
+permalink: online-help/reference-advanced-destination-settings-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare la finestra di dialogo Advanced Destination Settings (Impostazioni destinazione avanzate) per attivare le impostazioni di garanzia dello spazio su un volume di destinazione. È possibile selezionare le impostazioni avanzate quando la garanzia di spazio è disattivata sull"origine, ma si desidera attivarla sulla destinazione. Le impostazioni di deduplica, compressione e crescita automatica in una relazione SnapMirror vengono ereditate dal volume di origine e non possono essere modificate.' 
+---
+= Finestra di dialogo Advanced Destination Settings
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la finestra di dialogo Advanced Destination Settings (Impostazioni destinazione avanzate) per attivare le impostazioni di garanzia dello spazio su un volume di destinazione. È possibile selezionare le impostazioni avanzate quando la garanzia di spazio è disattivata sull'origine, ma si desidera attivarla sulla destinazione. Le impostazioni di deduplica, compressione e crescita automatica in una relazione SnapMirror vengono ereditate dal volume di origine e non possono essere modificate.
+
+
+
+== Garanzia di spazio
+
+Garantisce che sul volume di destinazione sia allocato spazio sufficiente per garantire il successo dei trasferimenti di dati. L'impostazione della garanzia di spazio può essere una delle seguenti:
+
+* File
++
+La garanzia di spazio per i file non è disponibile in ONTAP 8.3.
+
+* Volume
+* Nessuno
+
+
+Ad esempio, è possibile che si disponga di un volume da 200 GB contenente file per un totale di 50 GB; tuttavia, tali file contengono solo 10 GB di dati. La garanzia del volume assegna 200 GB al volume di destinazione, indipendentemente dal contenuto dell'origine. La garanzia del file assegna 50 GB per garantire che lo spazio riservato ai file di origine sulla destinazione sia sufficiente; selezionando *Nessuno* in questo scenario, sulla destinazione vengono allocati solo 10 GB per lo spazio effettivo utilizzato dai dati del file sull'origine.
+
+La garanzia di spazio è impostata su Volume per impostazione predefinita.

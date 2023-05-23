@@ -1,0 +1,37 @@
+---
+permalink: performance-checker/reference-performance-event-severity-types.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Ogni evento di performance è associato a un tipo di severità per aiutarti a definire la priorità degli eventi che richiedono un"azione correttiva immediata.' 
+---
+= Tipi di severità degli eventi relativi alle performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ogni evento di performance è associato a un tipo di severità per aiutarti a definire la priorità degli eventi che richiedono un'azione correttiva immediata.
+
+* *Critico*
++
+Si è verificato un evento di performance che potrebbe portare a un'interruzione del servizio se non viene intrapresa immediatamente un'azione correttiva.
+
++
+Gli eventi critici vengono inviati solo dalle soglie definite dall'utente.
+
+* *Attenzione*
++
+Un contatore delle performance per un oggetto cluster non rientra nell'intervallo normale e deve essere monitorato per assicurarsi che non raggiunga la severità critica. Gli eventi di questo livello di gravità non causano interruzioni del servizio e potrebbero non essere necessarie azioni correttive immediate.
+
++
+Gli eventi di avviso vengono inviati da soglie definite dall'utente, definite dal sistema o dinamiche.
+
+* *Informazioni*
++
+L'evento si verifica quando viene rilevato un nuovo oggetto o quando viene eseguita un'azione dell'utente. Ad esempio, quando un oggetto di storage viene cancellato o quando vengono apportate modifiche alla configurazione, viene generato l'evento con tipo di severità informazioni.
+
++
+Gli eventi informativi vengono inviati direttamente da ONTAP quando rileva una modifica della configurazione.
+
+

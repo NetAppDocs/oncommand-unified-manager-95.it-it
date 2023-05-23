@@ -1,0 +1,52 @@
+---
+permalink: online-help/task-customizing-the-aggregate-capacity-and-utilization-report-to-display-aggregates-with-overcommitted-threshold-breached.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile personalizzare il report aggregato capacità e utilizzo per visualizzare gli aggregati ordinati per percentuale di capacità in eccesso, che consente di visualizzare lo spazio di storage ancora disponibile negli aggregati. 
+---
+= Personalizzazione del report aggregato capacità e utilizzo per visualizzare aggregati con superamento della soglia
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report aggregato capacità e utilizzo per visualizzare gli aggregati ordinati per percentuale di capacità in eccesso, che consente di visualizzare lo spazio di storage ancora disponibile negli aggregati.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Per rimuovere il raggruppamento in base al cluster o alla coppia ha, attenersi alla seguente procedura:
++
+.. Fare clic nella colonna che deve essere raggruppata.
+.. Fare clic su image:../media/click-to-see-menu.gif[""] icona.
+.. Selezionare *Gruppo* > *Elimina gruppo interno*.
+
+
+. Per visualizzare la differenza tra la percentuale di overcommit utilizzata e la soglia di overcommit, aggiungere una nuova colonna.
++
+.. Selezionare una colonna e fare clic su image:../media/click-to-see-menu.gif[""].
+.. Selezionare *colonna* > *Nuova colonna calcolata*.
+.. Nella finestra di dialogo *Nuova colonna calcolata*, immettere un'etichetta di colonna.
+.. Dall'elenco Select Category (Seleziona categoria), selezionare *Math*.
+.. Dall'elenco *Select function* (Seleziona funzione), selezionare *DIFFERENCE* (DIFFERENZA).
+.. Dall'elenco colonna 1, selezionare *soglia di overcommit (%)*.
+.. Dall'elenco della colonna 2, selezionare *capacità di overcommit %*.
+.. Fare clic su *OK*.
+
+
+. Per filtrare i valori superiori a zero nella nuova colonna, fare clic su *New Computed column* (Nuova colonna calcolata) e aprire la finestra di dialogo *Filter* (filtro) facendo clic su image:../media/click-to-filter.gif[""] icona.
+. Dall'elenco *condizione*, selezionare *maggiore di*.
+. Nel campo *valore*, digitare `0` E fare clic su *OK*.
+. Per ordinare i valori, fare clic all'interno di *Nuova colonna calcolata* e fare clic su image:../media/click-to-see-menu.gif[""] icona.
+. Selezionare *Filter* > *Top/Bottom N*.
+. Nella finestra di dialogo *Top/Bottom N*, selezionare *Top N* dal campo *Filter* e immettere un valore nel campo di testo.
+. Fare clic su *OK*.
+

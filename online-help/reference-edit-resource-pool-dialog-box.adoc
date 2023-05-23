@@ -1,0 +1,46 @@
+---
+permalink: online-help/reference-edit-resource-pool-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile utilizzare la finestra di dialogo Modifica pool di risorse per modificare il nome e la descrizione di un pool di risorse esistente. Ad esempio, se il nome e la descrizione originali sono imprecisi o non corretti, è possibile modificarli in modo che siano più precisi. 
+---
+= Finestra di dialogo Edit Resource Pool
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la finestra di dialogo Modifica pool di risorse per modificare il nome e la descrizione di un pool di risorse esistente. Ad esempio, se il nome e la descrizione originali sono imprecisi o non corretti, è possibile modificarli in modo che siano più precisi.
+
+
+
+== Caselle di testo
+
+Le caselle di testo consentono di modificare le seguenti informazioni per il pool di risorse selezionato:
+
+* *Nome pool di risorse*
++
+Consente di immettere un nuovo nome.
+
+* *Descrizione*
++
+Consente di inserire una nuova descrizione.
+
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti operazioni:
+
+* *Salva*
++
+Salva le modifiche apportate al nome e alla descrizione del pool di risorse.
+
+* *Annulla*
++
+Elimina le modifiche e chiude la finestra di dialogo Modifica pool di risorse.
+
+

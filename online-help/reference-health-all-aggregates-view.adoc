@@ -1,0 +1,285 @@
+---
+permalink: online-help/reference-health-all-aggregates-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Health/aggregates inventory (Stato/inventario aggregati) visualizza informazioni sugli aggregati monitorati e consente di visualizzare e modificare le impostazioni di soglia.' 
+---
+= Pagina di inventario salute/aggregati
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Health/aggregates inventory (Stato/inventario aggregati) visualizza informazioni sugli aggregati monitorati e consente di visualizzare e modificare le impostazioni di soglia.
+
+
+
+== Pulsanti di comando
+
+* *Modifica soglie*
++
+Visualizza la finestra di dialogo Modifica soglie aggregate, che consente di modificare le impostazioni di soglia per uno o più aggregati.
+
+* *Esporta*
++
+Consente di esportare i dettagli di tutti gli aggregati monitorati in valori separati da virgole (`.csv`).
+
+
+
+
+
+== Elenco aggregati
+
+Visualizza, in formato tabulare, le proprietà di tutti gli aggregati rilevati. È possibile utilizzare i filtri di colonna per personalizzare i dati visualizzati:
+
+* *Stato*
++
+Lo stato corrente dell'aggregato. Lo stato può essere critico (image:../media/sev-critical-um60.png["Icona per la severità dell'evento – critico"]), errore (image:../media/sev-error-um60.png["Icona per la severità dell'evento – errore"]), Avviso (image:../media/sev-warning-um60.png["Icona per la severità dell'evento – avviso"]), o normale (image:../media/sev-normal-um60.png["Icona per la severità dell'evento – normale"]).
+
++
+È possibile spostare il puntatore sullo stato per visualizzare ulteriori informazioni sull'evento o sugli eventi generati per l'aggregato.
+
++
+Se lo stato dell'aggregato è determinato da un singolo evento, è possibile visualizzare informazioni quali il nome dell'evento, l'ora e la data in cui è stato attivato l'evento, il nome dell'amministratore a cui è assegnato l'evento e la causa dell'evento. Fare clic sul pulsante *View Details* (Visualizza dettagli) per visualizzare ulteriori informazioni sull'evento.
+
++
+Se lo stato dell'aggregato è determinato da più eventi della stessa severità, vengono visualizzati i primi tre eventi con informazioni quali il nome dell'evento, l'ora e la data di attivazione degli eventi e il nome dell'amministratore a cui è assegnato l'evento. È possibile visualizzare ulteriori dettagli su ciascuno di questi eventi facendo clic sul nome dell'evento. È inoltre possibile fare clic sul collegamento *View All Events* (Visualizza tutti gli eventi) per visualizzare l'elenco degli eventi generati.
+
+* *Aggregato*
++
+Il nome dell'aggregato.
+
++
+È possibile spostare il puntatore su un aggregato per visualizzare informazioni come l'ultimo evento generato, il nodo che contiene l'aggregato, il tipo di RAID, la riserva Snapshot, le copie Snapshot e lo spazio allocato nell'aggregato. È inoltre possibile visualizzare il numero di operazioni di spostamento del volume attualmente in corso.
+
+* *Stato*
++
+Lo stato corrente dell'aggregato:
+
++
+** Offline
++
+Non è consentito l'accesso in lettura o scrittura.
+
+** Online
++
+È consentito l'accesso in lettura e scrittura ai volumi ospitati su questo aggregato.
+
+** Limitato
++
+Sono consentite operazioni limitate, come la ricostruzione della parità, ma non è consentito l'accesso ai dati.
+
+** Creazione in corso
++
+L'aggregato è in fase di creazione.
+
+** Distruggere
++
+L'aggregato viene distrutto.
+
+** Non riuscito
++
+L'aggregato non può essere portato online.
+
+** Congelato
++
+L'aggregato (temporaneamente) non fornisce richieste.
+
+** Incoerente
++
+L'aggregato è stato contrassegnato come corrotto; contattare il supporto tecnico.
+
+** Ferro limitato
++
+Gli strumenti di diagnostica non possono essere eseguiti sull'aggregato.
+
+** Montaggio
++
+L'aggregato è in fase di montaggio.
+
+** Parziale
++
+È stato trovato almeno un disco per l'aggregato, ma mancano due o più dischi.
+
+** A Quiesced
++
+L'aggregato viene messo a punto.
+
+** Quiescing
++
+L'aggregato viene messo a punto.
+
+** Invertito
++
+L'operazione di revert dell'aggregato è stata completata.
+
+** Non montato
++
+L'aggregato non è in linea.
+
+** Smontaggio
++
+L'aggregato viene portato offline.
+
+** Sconosciuto
++
+Specifica che l'aggregato viene rilevato, ma le informazioni aggregate non vengono ancora recuperate dal server Unified Manager.
+
+
+
+* Nodo *
++
+Il nome dello storage controller che contiene l'aggregato.
+
+* *Stato mirror*
++
+Lo stato mirror dell'aggregato:
+
++
+** Mirrorato
++
+I dati aggregati plex vengono mirrorati.
+
+** Mirror degradato
++
+I dati aggregati plex non possono essere mirrorati.
+
+** Risincronizzazione del mirror
++
+Viene eseguito il mirroring dei dati aggregati plex.
+
+** Non riuscito
++
+Il mirroring dei dati aggregato plex non è riuscito.
+
+** Configurazione non valida
++
+Lo stato iniziale prima della creazione di un aggregato.
+
+** Non inizializzato
++
+L'aggregato è in fase di creazione.
+
+** Senza mirror
++
+L'aggregato non viene mirrorato.
+
+** Controllo del conteggio CP in corso
++
+L'aggregato è stato assimilato e Unified Manager sta convalidando che i conteggi CP per i plessi sono simili.
+
+** Limbo
++
+Si è verificato un problema con le etichette aggregate. Il sistema ONTAP identifica l'aggregato ma non può assimilarlo con precisione.
+
+** Richiede il controllo del conteggio CP
++
+L'aggregato viene assimilato, ma i conteggi CP su entrambi i plessi non sono ancora validati per essere simili.
+
+
+
++
+Quando un aggregato si trova nello stato mirror_resincronizing, viene visualizzata anche la percentuale di risincronizzazione.
+
+* *In transizione*
++
+Se l'aggregato ha completato o meno la transizione.
+
+* *Tipo*
++
+Il tipo di aggregato:
+
++
+** DISCO RIGIDO
+** Ibrido
++
+Combina HDD e SSD, ma Flash Pool non è stato attivato.
+
+** Ibrido (Flash Pool)
++
+Combina HDD e SSD ed è stato attivato Flash Pool.
+
+** SSD
+** SSD (FabricPool)
++
+Combina SSD e un Tier cloud
+
+** VMDisk (SDS)
++
+Dischi virtuali all'interno di una macchina virtuale
+
+** VMDisk (FabricPool)
++
+Combina dischi virtuali e un Tier cloud
+
+** LUN (FlexArray) per i dischi standard e i dischi SSD, questa colonna è vuota quando il sistema storage monitorato esegue una versione di ONTAP precedente alla 8.3.
+
+
+* *Tipo SnapLock*
++
+Il tipo di SnapLock aggregato. I valori possibili sono Compliance, Enterprise, non SnapLock.
+
+* *Capacità dati utilizzata*
++
+La quantità di spazio utilizzata per i dati nell'aggregato.
+
+* *Dati utilizzati %*
++
+La percentuale di spazio utilizzata per i dati nell'aggregato.
+
+* *Capacità dati disponibile*
++
+La quantità di spazio disponibile per i dati nell'aggregato.
+
+* *Dati disponibili %*
++
+La percentuale di spazio disponibile per i dati nell'aggregato.
+
+* *Capacità totale dei dati*
++
+La dimensione totale dei dati dell'aggregato.
+
+* *Capacità impegnata*
++
+Lo spazio totale impegnato per tutti i volumi nell'aggregato.
+
++
+Quando la funzione di crescita automatica è attivata sui volumi che risiedono nell'aggregato, la capacità impegnata si basa sulle dimensioni massime del volume impostate dalla funzione di crescita automatica, non sulla dimensione originale del volume. Per gli aggregati FabricPool, questo valore è rilevante solo per la capacità locale o di livello di performance. La quantità di spazio disponibile nel Tier cloud non viene riflessa in questo valore.
+
+* *Risparmio di spazio*
++
+Il rapporto di efficienza dello storage basato sullo spazio logico totale utilizzato per memorizzare i dati e sullo spazio fisico totale necessario per memorizzare i dati senza utilizzare le tecnologie di efficienza dello storage ONTAP.
+
++
+Questo campo viene compilato solo quando il sistema storage monitorato esegue ONTAP versione 9.0 o superiore e solo per gli aggregati non root.
+
+* *Tipo RAID*
++
+Il tipo di configurazione RAID:
+
++
+** RAID 0: Tutti i gruppi RAID sono di tipo RAID 0.
+** RAID 4: Tutti i gruppi RAID sono di tipo RAID 4.
+** RAID-DP: Tutti i gruppi RAID sono di tipo RAID-DP.
+** RAID-TEC: Tutti i gruppi RAID sono di tipo RAID-TEC.
+** RAID misto: L'aggregato contiene gruppi RAID di diversi tipi RAID (RAID 0, RAID 4, RAID-DP e RAID-TEC).
+
+
+* *Cloud Tier Space utilizzato*
++
+La quantità di spazio utilizzata nel Tier cloud, se l'aggregato è un aggregato FabricPool.
+
+
+
+
+
+== Pannello Filters (filtri)
+
+Consente di impostare filtri per personalizzare il modo in cui le informazioni vengono visualizzate nell'elenco aggregati. È possibile selezionare i filtri correlati alla colonna Status (Stato).
+
+[NOTE]
+====
+I filtri specificati nel pannello filtri sovrascrivono i filtri specificati per le colonne nell'elenco aggregati.
+
+====

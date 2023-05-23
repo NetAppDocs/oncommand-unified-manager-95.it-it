@@ -1,0 +1,36 @@
+---
+permalink: config/task-restarting-the-unified-manager-virtual-machine.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile riavviare la macchina virtuale dalla console di manutenzione di Unified Manager. Riavviare dopo aver generato un nuovo certificato di protezione o in caso di problemi con la macchina virtuale. 
+---
+= Riavvio della macchina virtuale di Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile riavviare la macchina virtuale dalla console di manutenzione di Unified Manager. Riavviare dopo aver generato un nuovo certificato di protezione o in caso di problemi con la macchina virtuale.
+
+
+
+== Prima di iniziare
+
+L'appliance virtuale è accesa.
+
+Si è connessi alla console di manutenzione come utente di manutenzione.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile riavviare la macchina virtuale da vSphere utilizzando l'opzione **Restart Guest**. Per ulteriori informazioni, consultare la documentazione di VMware.
+
+
+
+== Fasi
+
+. Accedere alla console di manutenzione.
+. Selezionare *Configurazione del sistema* > *riavvio della macchina virtuale*.
+

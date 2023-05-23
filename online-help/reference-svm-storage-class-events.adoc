@@ -1,0 +1,86 @@
+---
+permalink: online-help/reference-svm-storage-class-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi di classe storage SVM forniscono informazioni sullo stato delle classi di storage, in modo da poter monitorare eventuali problemi. Le classi di storage SVM esistono solo nelle SVM con Infinite Volume. Gli eventi sono raggruppati in base all"area di impatto e includono il nome dell"evento e della trap, il livello di impatto, il tipo di origine e la severità.' 
+---
+= Eventi di classe storage SVM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi di classe storage SVM forniscono informazioni sullo stato delle classi di storage, in modo da poter monitorare eventuali problemi. Le classi di storage SVM esistono solo nelle SVM con Infinite Volume. Gli eventi sono raggruppati in base all'area di impatto e includono il nome dell'evento e della trap, il livello di impatto, il tipo di origine e la severità.
+
+I seguenti eventi di classe storage SVM si applicano solo alle SVM con Infinite Volume.
+
+
+
+== Area di impatto: Disponibilità
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Classe di storage SVM non disponibile (ocumEvtVserverStorageClassNotAvailable)
+ a| 
+Incidente
+ a| 
+Classe di storage
+ a| 
+Critico
+
+
+
+ a| 
+Classe di storage SVM parzialmente disponibile (ocumEvtVserverStorageClassPartiallyAvailable)
+ a| 
+Rischio
+ a| 
+Classe di storage
+ a| 
+Errore
+
+|===
+
+
+== Area di impatto: Capacità
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Spazio di classe storage SVM quasi pieno (ocumEvtVserverStorageClassNearlyFull)
+ a| 
+Rischio
+ a| 
+Classe di storage
+ a| 
+Attenzione
+
+
+
+ a| 
+Spazio di classe storage SVM completo (ocumEvtVserverStorageClassFull)
+ a| 
+Rischio
+ a| 
+Classe di storage
+ a| 
+Errore
+
+
+
+ a| 
+Limite di utilizzo Snapshot classe di storage SVM superato(ocumEvtVserverStorageClassSnapshotUsageExceed)
+ a| 
+Rischio
+ a| 
+Classe di storage
+ a| 
+Attenzione
+
+|===

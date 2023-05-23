@@ -1,0 +1,46 @@
+---
+permalink: health-checker/task-performing-diagnotstic-actions-for-volume-offline-conditions.html 
+sidebar: sidebar 
+keywords:  
+summary: Dopo aver aperto la pagina Health/Volume Details di un volume che risulta offline, è possibile cercare ulteriori informazioni utili per la diagnosi della condizione offline del volume. 
+---
+= Esecuzione di azioni diagnostiche per condizioni di volume offline
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dopo aver aperto la pagina Health/Volume Details di un volume che risulta offline, è possibile cercare ulteriori informazioni utili per la diagnosi della condizione offline del volume.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+
+
+
+== A proposito di questa attività
+
+Se il volume segnalato offline non è stato portato deliberatamente offline, il volume potrebbe essere offline per diversi motivi.
+
+Partendo dalla pagina Health/Volume Details del volume offline, è possibile accedere ad altre pagine e riquadri per confermare o eliminare le possibili cause:
+
+
+
+== Scelte
+
+* Fare clic sui collegamenti della pagina dei dettagli *Health/Volume* per determinare se il volume non è in linea perché il nodo host è inattivo e se si è verificato un errore anche nel failover dello storage verso il partner ha Pair.
++
+Vedere xref:task-determining-if-a-volume-offline-condition-is-caused-by-a-down-cluster-node.adoc[Determinare se una condizione di volume offline è causata da un nodo inattivo].
+
+* Fare clic sui collegamenti della pagina dei dettagli *Health/Volume* per determinare se il volume non è in linea e se la relativa SVM (host Storage Virtual Machine) viene arrestata a causa della disattivazione del nodo che ospita il volume root di tale SVM.
++
+Vedere xref:task-determining-if-a-volume-is-offline-and-its-svm-is-stopped-because-a-cluster-node-is-down.adoc[Determinare se un volume è offline e SVM viene arrestato perché un nodo non è attivo].
+
+* Fare clic sui collegamenti della pagina dei dettagli *Health/Volume* per determinare se il volume non è in linea a causa di dischi rotti nel relativo aggregato host.
++
+Vedere xref:task-determining-if-a-volume-is-offline-because-of-broken-disks-in-an-aggregate.adoc[Determinare se un volume è offline a causa di dischi rotti in un aggregato].
+
+

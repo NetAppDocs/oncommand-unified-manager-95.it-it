@@ -1,0 +1,155 @@
+---
+permalink: online-help/reference-protection-jobs-page.html 
+sidebar: sidebar 
+keywords:  
+summary: La pagina protezione/processi consente di visualizzare lo stato corrente e altre informazioni su tutti i processi di protezione delle applicazioni partner attualmente in esecuzione, nonché i processi completati. È possibile utilizzare queste informazioni per verificare quali lavori sono ancora in esecuzione e se un lavoro ha avuto esito positivo o negativo. 
+---
+= Pagina Protection/Jobs (protezione/lavori)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina protezione/processi consente di visualizzare lo stato corrente e altre informazioni su tutti i processi di protezione delle applicazioni partner attualmente in esecuzione, nonché i processi completati. È possibile utilizzare queste informazioni per verificare quali lavori sono ancora in esecuzione e se un lavoro ha avuto esito positivo o negativo.
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti operazioni:
+
+* *Interrompi*
++
+Interrompe il lavoro selezionato. Questa opzione è disponibile solo se il processo selezionato è in esecuzione.
+
+* *Riprova*
++
+Riavvia un processo non riuscito di tipo Configurazione protezione o operazione relazione protezione. È possibile riprovare solo un processo non riuscito alla volta. Se vengono selezionati più processi non riusciti, il pulsante *Riprova* viene disattivato. Non è possibile riprovare i processi del servizio di storage non riusciti.
+
+* *Aggiorna*
++
+Aggiorna l'elenco dei job e le informazioni ad essi associate.
+
+
+
+
+
+== Elenco dei job
+
+L'elenco lavori visualizza, in formato tabulare, un elenco dei lavori in corso. Per impostazione predefinita, l'elenco visualizza solo i lavori generati nell'ultima settimana. È possibile utilizzare l'ordinamento e il filtraggio delle colonne per personalizzare i lavori da visualizzare.
+
+* *Stato*
++
+Visualizza lo stato corrente di un lavoro. Lo stato può essere Error (image:../media/sev-error.gif[""]) O normale (image:../media/sev-normal.gif[""]).
+
+* *ID lavoro*
++
+Visualizza il numero di identificazione del lavoro. Per impostazione predefinita, questa colonna è nascosta.
+
++
+Il numero di identificazione del lavoro è univoco e viene assegnato dal server all'avvio del lavoro. È possibile cercare un lavoro specifico immettendo il numero di identificazione del lavoro nella casella di testo fornita dal filtro di colonna.
+
+* *Nome*
++
+Visualizza il nome del lavoro.
+
+* *Tipo*
++
+Visualizza il tipo di lavoro. I tipi di lavoro sono i seguenti:
+
++
+** *Cluster Acquisition* (acquisizione cluster)
++
+Un lavoro di Workflow Automation sta riscoprendo un cluster.
+
+** *Configurazione della protezione*
++
+Un processo di protezione sta avviando i flussi di lavoro di Workflow Automation, ad esempio pianificazioni cron, creazione di policy SnapMirror e così via.
+
+** *Operazione di relazione di protezione*
++
+Un processo di protezione esegue le operazioni SnapMirror.
+
+** *Catena del flusso di lavoro di protezione*
++
+Un lavoro di automazione del flusso di lavoro sta eseguendo più flussi di lavoro.
+
+** *Ripristina*
++
+Processo di ripristino in esecuzione.
+
+** *Pulizia*
++
+Il processo sta eliminando gli elementi del membro del servizio di storage che non sono più necessari per il ripristino.
+
+** *Conforme*
++
+Il lavoro sta verificando la configurazione dei membri del servizio di storage per verificarne la conformità.
+
+** *Distruggere*
++
+Il lavoro sta distruggendo un servizio di storage.
+
+** *Importa*
++
+Il processo sta importando oggetti di storage non gestiti in un servizio di storage esistente.
+
+** *Modifica*
++
+Il processo sta modificando gli attributi di un servizio di storage esistente.
+
+** *Iscriviti*
++
+Il processo sta sottoscrivendo i membri a un servizio di storage.
+
+** *Annulla iscrizione*
++
+Il processo sta annullando l'iscrizione dei membri a un servizio di storage.
+
+** *Aggiorna*
++
+È in esecuzione un processo di aggiornamento della protezione.
+
+** *Configurazione WFA*
++
+Un lavoro di automazione del flusso di lavoro sta spingendo le credenziali del cluster e sincronizzando le cache del database.
+
+
+
+* *Stato*
++
+Visualizza lo stato di esecuzione del lavoro. Le opzioni di stato sono le seguenti:
+
++
+** *Interrotto*
++
+Il lavoro è stato interrotto.
+
+** *Aborting*
++
+Il lavoro è in fase di interruzione.
+
+** *Completato*
++
+Il lavoro è terminato.
+
+** *In esecuzione*
++
+Il processo è in esecuzione.
+
+
+
+* *Ora di invio*
++
+Visualizza l'ora in cui il lavoro è stato inoltrato.
+
+* *Durata*
++
+Visualizza la quantità di tempo necessaria per il completamento del lavoro. Questa colonna viene visualizzata per impostazione predefinita.
+
+* *Tempo di completamento*
++
+Visualizza l'ora in cui il lavoro è stato completato. Per impostazione predefinita, questa colonna è nascosta.
+
+

@@ -1,0 +1,87 @@
+---
+permalink: online-help/task-adding-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile aggiungere un cluster a Gestione unificata di OnCommand in modo da poter monitorare il cluster. Ciò include la possibilità di ottenere informazioni sul cluster, come lo stato di salute, la capacità, le performance e la configurazione del cluster, in modo da individuare e risolvere eventuali problemi che potrebbero verificarsi. 
+---
+= Aggiunta di cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile aggiungere un cluster a Gestione unificata di OnCommand in modo da poter monitorare il cluster. Ciò include la possibilità di ottenere informazioni sul cluster, come lo stato di salute, la capacità, le performance e la configurazione del cluster, in modo da individuare e risolvere eventuali problemi che potrebbero verificarsi.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre del ruolo di amministratore dello storage o di amministratore dello storage di OnCommand.
+* È necessario disporre del nome host o dell'indirizzo IP di gestione del cluster (IPv4 o IPv6) per il cluster.
++
+Quando si utilizza il nome host, deve essere risolto nell'indirizzo IP di gestione del cluster per la LIF di gestione del cluster. Se si utilizza una LIF di gestione dei nodi, l'operazione non riesce.
+
+* Per accedere al cluster, è necessario disporre del nome utente e della password.
++
+Questo account deve avere il ruolo _admin_ con l'accesso dell'applicazione impostato su _ontapi_, _ssh_ e _http_.
+
+* È necessario conoscere il tipo di protocollo (HTTP o HTTPS) da configurare sul cluster e il numero di porta utilizzato per la connessione al cluster.
+* È necessario disporre di spazio sufficiente sul server Unified Manager. Non è possibile aggiungere un cluster al server quando oltre il 90% dello spazio è già occupato.
+
+
+[NOTE]
+====
+È possibile aggiungere cluster protetti da NAT/firewall utilizzando l'indirizzo IP NAT di Unified Manager. Tutti i sistemi di automazione del flusso di lavoro o SnapProtect collegati devono essere protetti da NAT/firewall e le chiamate API SnapProtect devono utilizzare l'indirizzo IP NAT per identificare il cluster.
+
+====
+
+
+== A proposito di questa attività
+
+* Ogni cluster in una configurazione MetroCluster deve essere aggiunto separatamente.
+* Una singola istanza di Unified Manager può supportare un numero specifico di nodi. Se è necessario monitorare un ambiente che supera il numero di nodi supportato, è necessario installare un'istanza aggiuntiva di Unified Manager per monitorare alcuni dei cluster.
+* È possibile monitorare un singolo cluster mediante due istanze di Unified Manager, a condizione che sia stata configurata una seconda LIF di gestione del cluster sul cluster in modo che ogni istanza di Unified Manager si connetta attraverso una LIF diversa.
+
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Configuration* > *Cluster Data Sources*.
+. Nella pagina *Configuration/Cluster Data Sources* (origini dati cluster/configurazione), fare clic su *Add* (Aggiungi).
+. Nella finestra di dialogo *Aggiungi cluster*, specificare i valori richiesti, quindi fare clic su *Invia*.
+. Se si seleziona HTTPS, attenersi alla seguente procedura:
++
+.. Nella finestra di dialogo *Authorize host* (autorizza host), fare clic su *View Certificate* (Visualizza certificato) per visualizzare le informazioni sul certificato del cluster.
+.. Fare clic su *Sì*.
++
+Unified Manager controlla il certificato solo quando il cluster viene aggiunto inizialmente. Unified Manager non controlla il certificato per ogni chiamata API a ONTAP.
+
++
+Se il certificato è scaduto, non è possibile aggiungere un nuovo cluster. È necessario prima rinnovare il certificato SSL e quindi aggiungere il cluster.
+
+
+
+
+
+
+
+== Risultati
+
+Una volta individuati tutti gli oggetti di un nuovo cluster (circa 15 minuti), Unified Manager inizia a raccogliere dati storici sulle performance per i 15 giorni precedenti. Queste statistiche vengono raccolte utilizzando la funzionalità di raccolta della continuità dei dati. Questa funzionalità fornisce oltre due settimane di informazioni sulle performance per un cluster subito dopo l'aggiunta. Una volta completato il ciclo di raccolta della continuità dei dati, i dati delle performance del cluster in tempo reale vengono raccolti, per impostazione predefinita, ogni cinque minuti.
+
+[NOTE]
+====
+Dato che la raccolta di 15 giorni di dati sulle performance richiede un uso intensivo della CPU, si consiglia di eseguire l'aggiunta di nuovi cluster in modo che i sondaggi per la raccolta della continuità dei dati non vengano eseguiti su troppi cluster contemporaneamente. Inoltre, se si riavvia Unified Manager durante il periodo di raccolta della continuità dei dati, la raccolta viene interrotta e vengono visualizzate lacune nei grafici delle performance per il periodo di tempo mancante.
+
+====
+[TIP]
+====
+Se viene visualizzato un messaggio di errore che indica che non è possibile aggiungere il cluster, controllare se si verificano i seguenti problemi:
+
+* Se gli orologi dei due sistemi non sono sincronizzati e la data di inizio del certificato HTTPS di Unified Manager è successiva alla data sul cluster. È necessario assicurarsi che gli orologi siano sincronizzati utilizzando NTP o un servizio simile.
+* Se il cluster ha raggiunto il numero massimo di destinazioni di notifica EMS, l'indirizzo di Unified Manager non può essere aggiunto. Per impostazione predefinita, nel cluster è possibile definire solo 20 destinazioni di notifica EMS.
+
+
+====

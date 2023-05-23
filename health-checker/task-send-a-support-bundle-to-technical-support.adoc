@@ -1,0 +1,33 @@
+---
+permalink: health-checker/task-send-a-support-bundle-to-technical-support.html 
+sidebar: sidebar 
+keywords:  
+summary: Quando un problema richiede informazioni di diagnosi e risoluzione dei problemi più dettagliate rispetto a quelle fornite da un messaggio AutoSupport, è possibile inviare un pacchetto di supporto al supporto tecnico. 
+---
+= Invio di un pacchetto di supporto al supporto tecnico
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando un problema richiede informazioni di diagnosi e risoluzione dei problemi più dettagliate rispetto a quelle fornite da un messaggio AutoSupport, è possibile inviare un pacchetto di supporto al supporto tecnico.
+
+
+
+== Prima di iniziare
+
+È necessario disporre dell'accesso al pacchetto di supporto per inviarlo al supporto tecnico.
+
+È necessario disporre di un numero di caso generato tramite il sito Web del supporto tecnico.
+
+
+
+== Fasi
+
+. Accedere al sito di supporto NetApp.
+. Caricare il file.
++
+https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/How_to_upload_a_file_to_NetApp["Come caricare un file su NetApp"]
+
+

@@ -1,0 +1,99 @@
+---
+permalink: online-help/task-identifying-lifs-with-the-most-connections-using-the-cli.html 
+sidebar: sidebar 
+keywords:  
+summary: Se presenta un carico o un throughput elevati, è possibile migrare una LIF di dati. Per decidere se migrare un LIF, è possibile visualizzare il carico sui LIF, il numero di connessioni sulla porta, il throughput e i cicli della CPU sul nodo. 
+---
+= Identificazione di LIF con la maggior parte delle connessioni utilizzando la CLI
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se presenta un carico o un throughput elevati, è possibile migrare una LIF di dati. Per decidere se migrare un LIF, è possibile visualizzare il carico sui LIF, il numero di connessioni sulla porta, il throughput e i cicli della CPU sul nodo.
+
+
+
+== Fasi
+
+. Accedere alla CLI come amministratore del cluster.
+. Impostare il livello di privilegio su Advanced immettendo il seguente comando: `set -privilege advanced`
++
+Per ulteriori informazioni sull'utilizzo della CLI in modalità avanzata, consultare la sezione _System Administration Reference_.
+
+. Per trovare il peso di ciascun LIF, immettere il seguente comando: `network interface lif-weights show`
++
+Un LIF occupato è quello che ha il peso più basso.
+
+. Per trovare le connessioni attive su un nodo, immettere il seguente comando: `network connections active show-clients`
++
+Tenere presente il numero massimo di client per nodo.
+
++
+[listing]
+----
+cluster1::> network connections active show-clients
+Node    Client IP Address     Count
+------  -----------------     ------
+node1   192.0.2.253               12
+        192.0.2.252                9
+        192.0.2.251               12
+
+node2   192.0.2.250               12
+        192.0.2.252                9
+        192.0.2.253                9
+
+node3   customer.example.com       2
+        customer.example.net       2
+        customer.example.org       2
+----
+. Per trovare le connessioni attive per LIF su un nodo e SVM, immettere il seguente comando: `network connections active show-lifs`
++
+Tenere presente il numero massimo di client per LIF.
+
++
+[listing]
+----
+cluster1::> network connections active show-lifs
+Node      Vserver Name  Interface Name  Count
+--------  ------------  --------------- ------
+node1
+          vs1           clus1              30
+
+node2
+          vs2           clus1              30
+
+node3
+          vs3           lif1                2
+          vs4           clus1              30
+----
+. Controllare le LIF che condividono la stessa porta home e lo stesso nodo home per identificare le LIF con la maggior parte delle connessioni.
+. Per scegliere la migliore porta dati, immettere quanto segue: `statistics show -object port`
++
+Il comando statistics fornisce informazioni su throughput e larghezza di banda per le porte Ethernet. Ogni riga fornisce un contatore separato di informazioni univoche. Value è il valore del tipo di oggetto dall'ultima cancellazione del contatore (dall'ultimo avvio di ONTAP).
+
++
+[listing]
+----
+cluster1::> statistics show -object port
+Object: port
+Instance: e0a
+Start-time: 10/11/2013 13:51:41
+End-time: 10/11/2013 13:51:41
+Node: node1
+
+    Counter                                           Value
+    -------------------------------------------------------
+    recv-data                                            0B
+    recv-packets                                         0
+    recv-mcasts                                          0
+    recv-errors                                          0
+    recv-dropped                                         0
+    sent-data                                            0B
+    sent-packets                                         0
+    sent-mcasts                                          0
+    sent-errors                                          0
+    collisions                                           0
+----
+

@@ -1,0 +1,34 @@
+---
+permalink: config/task-accessing-oncommand-unified-manager-web-ui.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Dopo aver installato Unified Manager, è possibile accedere all"interfaccia utente Web per configurare Unified Manager in modo da poter iniziare il monitoraggio dei sistemi ONTAP.' 
+---
+= Accesso all'interfaccia utente Web di Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dopo aver installato Unified Manager, è possibile accedere all'interfaccia utente Web per configurare Unified Manager in modo da poter iniziare il monitoraggio dei sistemi ONTAP.
+
+
+
+== Prima di iniziare
+
+* Se si accede per la prima volta all'interfaccia utente Web, è necessario effettuare l'accesso come utente di manutenzione (o come utente umadmin per le installazioni Linux).
+* Se si prevede di consentire agli utenti di accedere a Unified Manager utilizzando il nome breve invece di utilizzare il nome di dominio completo (FQDN) o l'indirizzo IP, la configurazione di rete deve risolvere questo nome breve in un FQDN valido.
+* Se il server utilizza un certificato digitale autofirmato, il browser potrebbe visualizzare un avviso che indica che il certificato non è attendibile. È possibile riconoscere il rischio di continuare l'accesso o installare un certificato digitale firmato dall'autorità di certificazione (CA) per l'autenticazione del server.
+
+
+
+
+== Fasi
+
+. Avviare l'interfaccia utente Web di Unified Manager dal browser utilizzando l'URL visualizzato al termine dell'installazione. L'URL è l'indirizzo IP o FQDN (Fully Qualified Domain Name) del server Unified Manager.
++
+Il link è nel seguente formato: https://`URL`.
+
+. Accedere all'interfaccia utente Web di Unified Manager utilizzando le credenziali utente di manutenzione.
+

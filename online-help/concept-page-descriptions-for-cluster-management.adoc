@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-page-descriptions-for-cluster-management.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile visualizzare e gestire i cluster, ad esempio aggiungendo, modificando, riscoprendo e rimuovendo i cluster, da una singola pagina. 
+---
+= Descrizioni delle pagine per la gestione dell'origine dati
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile visualizzare e gestire i cluster, ad esempio aggiungendo, modificando, riscoprendo e rimuovendo i cluster, da una singola pagina.

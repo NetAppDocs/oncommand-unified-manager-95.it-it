@@ -1,0 +1,29 @@
+---
+permalink: online-help/task-customizing-the-volume-relationships-inventory-report-to-view-volumes-by-source-of-failure.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile personalizzare il report Volume Relaces Inventory per visualizzare i volumi raggruppati in base all"origine del guasto.' 
+---
+= Personalizzazione del report Volume Relaces Inventory per visualizzare i volumi raggruppati in base all'origine dell'errore
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report Volume Relaces Inventory per visualizzare i volumi raggruppati in base all'origine del guasto.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Selezionare la colonna *Relationship Health*.
+. Per visualizzare i dettagli del volume per i volumi danneggiati, fare clic sul segno -- accanto alla colonna *Bad*.
+. Per visualizzare i dettagli del volume per i volumi buoni, fare clic sul segno -- accanto alla colonna *buona*.
+

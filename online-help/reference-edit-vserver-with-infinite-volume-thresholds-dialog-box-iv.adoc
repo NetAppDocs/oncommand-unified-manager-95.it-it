@@ -1,0 +1,64 @@
+---
+permalink: online-help/reference-edit-vserver-with-infinite-volume-thresholds-dialog-box-iv.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare la finestra di dialogo Edit SVM with Infinite Volume Thresholds (Modifica SVM con Infinite Volume Thresholds) per modificare i valori di soglia predefiniti di ogni SVM con Infinite Volume, in base ai requisiti dell"organizzazione. I valori di soglia predefiniti indicano il livello di attività che deve essere raggiunto sulla SVM prima che venga attivato un evento.' 
+---
+= Finestra di dialogo Edit SVM with Infinite Volume Thresholds
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la finestra di dialogo Edit SVM with Infinite Volume Thresholds (Modifica SVM con Infinite Volume Thresholds) per modificare i valori di soglia predefiniti di ogni SVM con Infinite Volume, in base ai requisiti dell'organizzazione. I valori di soglia predefiniti indicano il livello di attività che deve essere raggiunto sulla SVM prima che venga attivato un evento.
+
+
+
+== Capacità
+
+L'area Capacity (capacità) consente di impostare le condizioni di soglia della capacità per la SVM selezionata con Infinite Volume (Volume infinito):
+
+* *Spazio quasi pieno*
++
+Specifica la percentuale in cui SVM con Infinite Volume viene considerato quasi pieno. Visualizza anche lo spazio corrispondente (in GB, MB o TB) nel volume infinito. Ad esempio, se si dispone di un volume infinito di 10 GB e la soglia spazio quasi pieno è del 80%, vengono visualizzate le seguenti informazioni: (8 GB di 10 GB).
+
++
+È inoltre possibile utilizzare il dispositivo di scorrimento per impostare il valore di soglia.
+
+* *Spazio pieno*
++
+Specifica la percentuale in cui SVM con Infinite Volume viene considerato pieno. Visualizza anche lo spazio corrispondente (in GB, MB o TB) nel volume infinito. Ad esempio, se si dispone di un volume infinito di 10 GB e la soglia spazio pieno è del 90%, vengono visualizzate le seguenti informazioni: (9 GB di 10 GB).
+
++
+È inoltre possibile utilizzare il dispositivo di scorrimento per impostare il valore di soglia.
+
+* *Limite di utilizzo Snapshot*
++
+Specifica il limite, in percentuale, di spazio riservato per le copie Snapshot nel volume infinito.
+
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti operazioni:
+
+* *Ripristina impostazioni predefinite globali*
++
+Consente di ripristinare le impostazioni di soglia ai valori correnti impostati a livello globale.
+
+* *Salva*
++
+Salva tutte le impostazioni di soglia.
+
+* *Salva e chiudi*
++
+Salva tutte le impostazioni di soglia, quindi chiude la finestra di dialogo Edit SVM with Infinite Volume Thresholds (Modifica SVM con soglie volume infinito).
+
+* *Annulla*
++
+Ignora qualsiasi modifica apportata alle impostazioni di soglia e chiude la finestra di dialogo Edit SVM with Infinite Volume Thresholds (Modifica SVM con soglie volume infinito).
+
+

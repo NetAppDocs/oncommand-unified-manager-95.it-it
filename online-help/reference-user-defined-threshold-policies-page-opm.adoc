@@ -1,0 +1,81 @@
+---
+permalink: online-help/reference-user-defined-threshold-policies-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare la pagina Configuration/Performance Thresholds (soglie di configurazione/prestazioni) per visualizzare tutti i criteri di soglia delle performance attualmente definiti. Questa pagina fornisce inoltre le funzionalità per creare, clonare, modificare ed eliminare i criteri di soglia.' 
+---
+= Pagina soglie di configurazione/prestazioni
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la pagina Configuration/Performance Thresholds (soglie di configurazione/prestazioni) per visualizzare tutti i criteri di soglia delle performance attualmente definiti. Questa pagina fornisce inoltre le funzionalità per creare, clonare, modificare ed eliminare i criteri di soglia.
+
+L'elenco dei criteri di soglia delle performance è ordinato in ordine alfabetico in base al nome del criterio. È possibile fare clic sull'intestazione di una colonna per ordinare i criteri in base a tale colonna. Se si sta cercando una policy specifica, è possibile utilizzare i meccanismi di filtro e ricerca per perfezionare l'elenco delle policy di soglia che appaiono nell'elenco di inventario.
+
+
+
+== Barra dei filtri e di ricerca
+
+Il pulsante *Filtering* consente di perfezionare l'elenco dei criteri di soglia visualizzando solo i criteri corrispondenti a determinati criteri.
+
+Il pulsante *Cerca* consente di cercare determinate policy inserendo nomi completi o parziali per perfezionare l'elenco delle policy di soglia visualizzate nell'elenco di inventario.
+
+
+
+== Pulsanti di comando
+
+* *Crea*
++
+Crea un nuovo criterio di soglia delle performance.
+
+* *Clone*
++
+Crea un nuovo criterio di soglia delle prestazioni basato su una copia del criterio selezionato.
+
+* *Modifica*
++
+Modifica il criterio di soglia delle prestazioni selezionato. Tutti gli oggetti di storage che utilizzano il criterio vengono aggiornati per utilizzare il criterio modificato.
+
+* *Elimina*
++
+Elimina il criterio di soglia delle prestazioni selezionato. Il criterio viene rimosso da tutti gli oggetti di storage che utilizzano il criterio. È possibile fare clic sull'elemento nella colonna oggetti associati per visualizzare gli oggetti che attualmente utilizzano questo criterio.
+
+
+
+
+
+== Elenco dei criteri di soglia
+
+* *Nome policy*
++
+Visualizza il nome del criterio di soglia. È possibile posizionare il cursore sul nome del criterio per visualizzare i dettagli del criterio.
+
+* *Descrizione*
++
+Visualizza una breve descrizione del criterio di soglia.
+
+* *Prima condizione*
++
+Visualizza la condizione principale per il criterio di soglia, inclusi il contatore delle prestazioni definito, i valori di attivazione degli avvisi e i valori di attivazione critici. Per visualizzare i dettagli della condizione, posizionare il cursore sul nome della condizione.
+
+* *Seconda condizione*
++
+Visualizza la condizione del criterio di soglia secondario, se definita. Per visualizzare i dettagli della condizione, posizionare il cursore sul nome della condizione. Se una seconda condizione non è definita, questa colonna è vuota.
+
++
+[NOTE]
+====
+Quando viene definita una seconda condizione, viene generato un evento solo quando entrambe le condizioni vengono violate.
+
+====
+* *Oggetti associati*
++
+Visualizza il tipo di oggetto di storage a cui è possibile applicare il criterio di soglia e il numero di oggetti che utilizzano il criterio. Questo campo rimane vuoto fino a quando non si assegna il criterio ad almeno un oggetto.
+
++
+È possibile fare clic sull'intestazione della colonna per ordinare i criteri in base al tipo di oggetto: Volume, LUN, aggregato e così via. È possibile fare clic sul nome del criterio per visualizzare la pagina di inventario contenente gli oggetti che attualmente utilizzano il criterio di soglia.
+
+

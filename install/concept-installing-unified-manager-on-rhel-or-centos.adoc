@@ -1,0 +1,14 @@
+---
+permalink: install/concept-installing-unified-manager-on-rhel-or-centos.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È importante comprendere che la sequenza dei passaggi per scaricare e installare Unified Manager varia in base allo scenario di installazione. Prima di installare Unified Manager su Red Hat Enterprise Linux o CentOS, puoi decidere se configurare Unified Manager per l"alta disponibilità.' 
+---
+= Installazione di Unified Manager su Red Hat Enterprise Linux o CentOS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È importante comprendere che la sequenza dei passaggi per scaricare e installare Unified Manager varia in base allo scenario di installazione. Prima di installare Unified Manager su Red Hat Enterprise Linux o CentOS, puoi decidere se configurare Unified Manager per l'alta disponibilità.

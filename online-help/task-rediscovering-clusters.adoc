@@ -1,0 +1,39 @@
+---
+permalink: online-help/task-rediscovering-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile riscoprire manualmente un cluster dalla pagina Configuration/Cluster Data Sources (origini dati cluster/configurazione) per ottenere le informazioni più aggiornate sullo stato di salute, sullo stato di monitoraggio e sullo stato delle performance del cluster.' 
+---
+= Riscoprendo i cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile riscoprire manualmente un cluster dalla pagina Configuration/Cluster Data Sources (origini dati cluster/configurazione) per ottenere le informazioni più aggiornate sullo stato di salute, sullo stato di monitoraggio e sullo stato delle performance del cluster.
+
+
+
+== A proposito di questa attività
+
+È possibile riscoprire manualmente un cluster quando si desidera aggiornare il cluster, ad esempio aumentando le dimensioni di un aggregato quando lo spazio è insufficiente, e si desidera che Unified Manager rilevi le modifiche apportate.
+
+Quando Unified Manager viene associato a OnCommand Workflow Automation (WFA), l'associazione attiva la riacquisizione dei dati memorizzati nella cache da WFA.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Configuration* > *Cluster Data Sources*.
+. Nella pagina *Configurazione/origini dati cluster*, fare clic su *riscopri*.
++
+Unified Manager rileva nuovamente il cluster selezionato e visualizza lo stato di salute e delle performance più recenti.
+
++
+[NOTE]
+====
+È possibile ottenere lo stato di monitoraggio del cluster dal riquadro destro della pagina Dashboard/visualizzazione cluster.
+
+====
+

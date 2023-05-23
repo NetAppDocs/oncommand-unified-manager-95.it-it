@@ -1,0 +1,42 @@
+---
+permalink: online-help/reference-edit-group-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: La finestra di dialogo Modifica gruppo consente di modificare il nome e la descrizione di un gruppo. 
+---
+= Finestra di dialogo Edit Group (Modifica gruppo)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La finestra di dialogo Modifica gruppo consente di modificare il nome e la descrizione di un gruppo.
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+* *Nome gruppo*
++
+Visualizza il nome del gruppo. Quando si modifica il nome del gruppo, non è necessario utilizzare un nome di gruppo esistente.
+
+* *Descrizione*
++
+Fornisce una descrizione significativa del gruppo. È possibile modificare questo campo quando si desidera modificare la descrizione corrente del gruppo.
+
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di salvare o annullare le modifiche apportate al gruppo.
+
+* *Salva*
++
+Salva le modifiche apportate e chiude la finestra di dialogo.
+
+* *Annulla*
++
+Chiude la finestra di dialogo Modifica gruppo senza salvare le modifiche.
+
+

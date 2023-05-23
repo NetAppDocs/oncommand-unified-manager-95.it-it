@@ -1,0 +1,63 @@
+---
+permalink: online-help/reference-qtree-thresholds-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Configuration/Health Thresholds (soglie di configurazione/integrità) per Qtree consente di configurare i valori delle soglie di integrità globali per i qtree monitorati. Gli eventi vengono generati per un qtree solo quando è stata impostata una quota Qtree o una quota predefinita nel qtree. Gli eventi non vengono generati se lo spazio definito in una quota utente o di gruppo ha superato la soglia.' 
+---
+= Pagina Configuration/Health Thresholds per Qtree
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Configuration/Health Thresholds (soglie di configurazione/integrità) per Qtree consente di configurare i valori delle soglie di integrità globali per i qtree monitorati. Gli eventi vengono generati per un qtree solo quando è stata impostata una quota Qtree o una quota predefinita nel qtree. Gli eventi non vengono generati se lo spazio definito in una quota utente o di gruppo ha superato la soglia.
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+Gli eventi vengono generati in caso di superamento di una soglia. È possibile intraprendere azioni correttive per tali eventi.
+
+
+
+== Area di capacità
+
+L'area Capacity (capacità) consente di impostare le seguenti condizioni di soglia della capacità del qtree.
+
+* *Spazio quasi pieno*
++
+Specifica la percentuale in cui un qtree viene considerato quasi pieno:
+
++
+** Valore predefinito: 80 percento
++
+Il valore di questa soglia deve essere inferiore al valore della soglia Qtree Full.
+
+** Evento generato: Qtree quasi pieno
+** Severità dell'evento: Avviso
+
+
+* *Spazio pieno*
++
+Specifica la percentuale in cui un qtree viene considerato pieno:
+
++
+** Valore predefinito: 90 percento
+** Evento generato: Qtree Full
+** Severità evento: Errore
+
+
+
+
+
+
+== Pulsanti di comando
+
+* *Ripristina impostazioni predefinite*
++
+Consente di ripristinare i valori predefiniti delle impostazioni di configurazione.
+
+* *Salva*
++
+Salva le impostazioni di configurazione per l'opzione selezionata.
+
+

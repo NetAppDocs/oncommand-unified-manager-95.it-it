@@ -1,0 +1,52 @@
+---
+permalink: online-help/task-quiescing-a-protection-relationship-from-the-volume-relationships-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Dalla pagina Protection/Volume Relationship (Relazioni protezione/volume), è possibile interrompere una relazione di protezione per impedire temporaneamente il trasferimento dei dati. È possibile interrompere una relazione quando si desidera creare una copia Snapshot di un volume di destinazione SnapMirror che contiene un database e si desidera assicurarsi che il contenuto sia stabile durante l"operazione di copia Snapshot.' 
+---
+= Interrompere una relazione di protezione dalla pagina delle relazioni protezione/volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dalla pagina Protection/Volume Relationship (Relazioni protezione/volume), è possibile interrompere una relazione di protezione per impedire temporaneamente il trasferimento dei dati. È possibile interrompere una relazione quando si desidera creare una copia Snapshot di un volume di destinazione SnapMirror che contiene un database e si desidera assicurarsi che il contenuto sia stabile durante l'operazione di copia Snapshot.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+* È necessario aver impostato l'automazione del flusso di lavoro.
+
+
+
+
+== A proposito di questa attività
+
+L'azione di quiesce non viene visualizzata nei seguenti casi:
+
+* Se le impostazioni RBAC non consentono questa azione, ad esempio se si dispone solo di privilegi operatore
+* Quando l'ID del volume è sconosciuto, ad esempio quando si dispone di una relazione tra cluster e il cluster di destinazione non è stato ancora rilevato
+* Se non si dispone dell'associazione tra Workflow Automation e Unified Manager
+
+
+
+
+== Fasi
+
+. Per interrompere i trasferimenti per una o più relazioni di protezione, dalla pagina *Relazioni protezione/volume*, selezionare uno o più volumi e, sulla barra degli strumenti, fare clic su *Quiesce*.
++
+Viene visualizzata la finestra di dialogo Quiesce.
+
+. Fare clic su *continua*.
++
+Lo stato del lavoro di quiete viene visualizzato nella parte superiore della pagina Health/Volume Details (Dettagli stato/volume), insieme a un collegamento ai dettagli del lavoro.
+
+. Fare clic sul collegamento *View details* (Visualizza dettagli) per accedere alla pagina *Protection/Job* Details (Dettagli protezione/lavoro) per ulteriori dettagli e avanzamento del lavoro.
+. Fare clic sulla freccia *Indietro* del browser per tornare alla pagina *protezione/Relazioni volume*.
++
+Il lavoro di quiesce viene terminato quando tutte le attività di lavoro vengono completate correttamente.
+
+

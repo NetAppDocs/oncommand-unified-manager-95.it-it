@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-using-the-unified-manager-help.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La Guida contiene informazioni su tutte le funzioni incluse in Gestione unificata di OnCommand. È possibile utilizzare il sommario, l"indice o lo strumento di ricerca per trovare informazioni sulle funzionalità e su come utilizzarle.' 
+---
+= Utilizzo della Guida di Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La Guida contiene informazioni su tutte le funzioni incluse in Gestione unificata di OnCommand. È possibile utilizzare il sommario, l'indice o lo strumento di ricerca per trovare informazioni sulle funzionalità e su come utilizzarle.
+
+
+
+== A proposito di questa attività
+
+La Guida è disponibile da ciascuna scheda e dalla barra dei menu dell'interfaccia utente di Unified Manager.
+
+Lo strumento di ricerca nella Guida non funziona per parole parziali.
+
+
+
+== Scelte
+
+* Per informazioni su campi o parametri specifici, fare clic su image:../media/helpicon-um60.gif["Icona per la guida sensibile al contesto"].
+* Per visualizzare tutti i contenuti della Guida, fare clic su *image:../media/helpicon-um60.gif["Icona per la guida sensibile al contesto"]* > *Guida/documentazione* nella barra dei menu.
++
+È possibile trovare informazioni più dettagliate espandendo qualsiasi parte del sommario nel riquadro di navigazione.
+
+* Per cercare nel contenuto della Guida, fare clic sulla scheda *Cerca* nel riquadro di navigazione, digitare la parola o la serie di parole che si desidera trovare e fare clic su *Vai!*
+* Per stampare gli argomenti della Guida, fare clic sull'icona della stampante.
+

@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-storage-summary-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile personalizzare i report Storage Summary per visualizzare e analizzare le informazioni sulla capacità dello storage in coppie ha. È possibile utilizzare i filtri per visualizzare l"utilizzo dello storage in base al modello di cluster, la capacità delle LUN più non assegnate e la capacità delle coppie ha disponibili per il provisioning di nuovi volumi e LUN.' 
+---
+= Personalizzazioni del report Storage Summary
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare i report Storage Summary per visualizzare e analizzare le informazioni sulla capacità dello storage in coppie ha. È possibile utilizzare i filtri per visualizzare l'utilizzo dello storage in base al modello di cluster, la capacità delle LUN più non assegnate e la capacità delle coppie ha disponibili per il provisioning di nuovi volumi e LUN.

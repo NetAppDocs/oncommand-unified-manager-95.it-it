@@ -1,0 +1,31 @@
+---
+permalink: online-help/concept-node-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Performance/Node Explorer fornisce una panoramica dettagliata delle performance di tutti i nodi all"interno di un cluster.' 
+---
+= Pagina Performance/Node Explorer (Esplora performance/nodo)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Performance/Node Explorer fornisce una panoramica dettagliata delle performance di tutti i nodi all'interno di un cluster.
+
+La pagina Performance/Node Explorer (Esplora prestazioni/nodo) consente di tenere traccia e confrontare le performance dei nodi durante un periodo di tempo specifico, consentendo di risolvere i problemi e ottimizzare le performance dei nodi.
+
+Utilizzando la funzionalità di visualizzazione e confronto è possibile confrontare le prestazioni di questo nodo con:
+
+* altri nodi nello stesso cluster
+* gli aggregati sul nodo
+* le porte sul nodo
+
+
+La pagina Performance/Node Explorer (Esplora prestazioni/nodo) consente di:
+
+* Visualizza i problemi relativi alle soglie e i relativi dettagli
+* Tenere traccia e confrontare i dati relativi alle performance dei nodi
+* Analizzare e risolvere i problemi relativi alla soglia
+* Analizzare e risolvere i problemi relativi alle prestazioni
+

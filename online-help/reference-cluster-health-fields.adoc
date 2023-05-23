@@ -1,0 +1,84 @@
+---
+permalink: online-help/reference-cluster-health-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: Il report Cluster Inventory fornisce informazioni sulle risorse disponibili per i componenti del cluster allo scopo di comprendere i possibili rischi causati da risorse insufficienti. 
+---
+= Report sull'inventario del cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il report Cluster Inventory fornisce informazioni sulle risorse disponibili per i componenti del cluster allo scopo di comprendere i possibili rischi causati da risorse insufficienti.
+
+
+
+== Vista tabulare del report di inventario del cluster
+
+* *Cluster*
++
+Visualizza il nome del cluster.
+
+* *Coppia ha*
++
+Visualizza il valore della coppia ha ottenuto formando due nodi.
+
+* Nodo *
++
+Visualizza il nome dei nodi.
+
+* *Modello*
++
+Visualizza il nome del modello.
+
+* *Versione del sistema operativo*
++
+Visualizza la versione di ONTAP utilizzata.
+
+* *Ottimizzato per la tecnologia all-flash*
++
+Visualizza se il nodo è configurato per supportare solo dischi a stato solido (SSD).
+
+* *Numero di serie*
++
+Visualizza il numero di serie del nodo.
+
+* *Versione firmware*
++
+Visualizza la versione del firmware del nodo.
+
+* *Numero SVM*
++
+Visualizza il numero di SVM contenute nel cluster.
+
+* *Numero di porte FC*
++
+Visualizza il numero di porte FC contenute nel nodo.
+
+* *Conteggio porte FCoE*
++
+Visualizza il numero di porte FCoE contenute nel nodo.
+
+* *Numero di porte Ethernet*
++
+Visualizza il numero di porte ethernet contenute nel nodo.
+
+* *Numero di schede flash*
++
+Visualizza il numero di schede flash installate nei nodi del data center in modo da poter monitorare eventuali problemi.
+
+* *Dimensioni della scheda flash (GB)*
++
+Visualizza le dimensioni delle schede flash installate sui nodi.
+
+* *Numero shelf di dischi*
++
+Visualizza il numero di shelf di dischi contenuti dal nodo.
+
+* *Numero di dischi*
++
+Visualizza il numero di dischi in un nodo.
+
+

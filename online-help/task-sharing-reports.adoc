@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-sharing-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile inviare e condividere i report tramite e-mail con uno o più utenti. 
+---
+= Condivisione di report
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile inviare e condividere i report tramite e-mail con uno o più utenti.
+
+
+
+== Fasi
+
+. Nel riquadro di spostamento di sinistra, fare clic su *Report*, quindi fare clic su *Esegui report* per il report desiderato.
++
+Viene visualizzata la pagina Dettagli report.
+
+. Fare clic su *azioni* > *Condividi*.
+. Nella finestra di dialogo *Share Report* (Condividi report), specificare l'indirizzo e-mail del destinatario con cui si desidera condividere il report.
++
+È possibile specificare uno o più indirizzi e-mail, separati da virgole.
+
+. Specificare l'oggetto dell'e-mail.
++
+Per impostazione predefinita, il nome del report viene visualizzato come oggetto dell'e-mail.
+
+. Selezionare il formato del report.
++
+L'opzione _PDF_ viene selezionata come formato predefinito del report. Se si seleziona il formato XHTML, il destinatario deve aprire il report inviato tramite e-mail utilizzando un browser Web supportato.
+
+. Fare clic su *Share* (Condividi).
+

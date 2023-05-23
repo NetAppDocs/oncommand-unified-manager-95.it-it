@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-viewing-the-aggregate-list-and-details.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Dalla pagina Health/aggregates inventory, è possibile monitorare l"inventario degli aggregati. La pagina Health/aggregates Capacity and Utilization (Stato/capacità e utilizzo aggregati) consente di visualizzare informazioni sulla capacità e sull"utilizzo degli aggregati in tutti i cluster.' 
+---
+= Visualizzazione dell'elenco aggregato e dei dettagli
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dalla pagina Health/aggregates inventory, è possibile monitorare l'inventario degli aggregati. La pagina Health/aggregates Capacity and Utilization (Stato/capacità e utilizzo aggregati) consente di visualizzare informazioni sulla capacità e sull'utilizzo degli aggregati in tutti i cluster.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+
+
+
+== A proposito di questa attività
+
+È possibile visualizzare dettagli quali capacità aggregata e configurazione e informazioni sui dischi dalla pagina Health/aggregate details (informazioni sullo stato/aggregato). È possibile utilizzare questi dettagli prima di configurare le impostazioni di soglia, se necessario.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Health* > *aggregates*.
+. Scegliere uno dei seguenti modi per visualizzare i dettagli dell'aggregato:
++
+** Per visualizzare informazioni sulla capacità e sull'utilizzo di tutti gli aggregati in tutti i cluster, nel menu View (Visualizza), selezionare *aggregate Capacity and Utilization* (capacità e utilizzo aggregati).
+** Per visualizzare dettagli minimi, posizionare il cursore sul nome dell'aggregato.
+** Per visualizzare i dettagli completi, fare clic sul nome dell'aggregato.
++
+È inoltre possibile visualizzare i dettagli completi facendo clic su *View Details* (Visualizza dettagli) nella finestra di dialogo Minimal Details (Dettagli minimi).
+
+
+
+. Visualizzare gli oggetti correlati all'aggregato facendo clic su *Visualizza correlati* nella finestra di dialogo Dettagli minimi.
+

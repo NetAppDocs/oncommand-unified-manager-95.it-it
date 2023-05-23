@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-create-resource-pool-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile utilizzare la finestra di dialogo Crea pool di risorse per assegnare un nome a un nuovo pool di risorse e per aggiungere aggregati ed eliminare aggregati da tale pool di risorse. 
+---
+= Finestra di dialogo Crea pool di risorse
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la finestra di dialogo Crea pool di risorse per assegnare un nome a un nuovo pool di risorse e per aggiungere aggregati ed eliminare aggregati da tale pool di risorse.
+
+
+
+== Nome pool di risorse
+
+Le caselle di testo consentono di aggiungere le seguenti informazioni per creare un pool di risorse:
+
+Consente di specificare un nome di pool di risorse.
+
+
+
+== Descrizione
+
+Consente di descrivere un pool di risorse.
+
+
+
+== Membri
+
+Visualizza i membri del pool di risorse. Puoi anche aggiungere ed eliminare membri.
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti operazioni:
+
+* *Aggiungi*
++
+Apre la finestra di dialogo aggregati, che consente di aggiungere aggregati da un cluster specifico al pool di risorse. È possibile aggiungere aggregati da cluster diversi, ma gli stessi aggregati non possono essere aggiunti a più di un pool di risorse.
+
+* *Rimuovi*
++
+Consente di rimuovere gli aggregati selezionati dal pool di risorse.
+
+* *Crea*
++
+Crea il pool di risorse. Questo pulsante non viene attivato fino a quando non vengono inserite informazioni nei campi Nome pool di risorse o Descrizione.
+
+* *Annulla*
++
+Elimina le modifiche e chiude la finestra di dialogo Crea pool di risorse.
+
+

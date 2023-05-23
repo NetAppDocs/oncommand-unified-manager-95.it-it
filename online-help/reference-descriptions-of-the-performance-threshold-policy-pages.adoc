@@ -1,0 +1,16 @@
+---
+permalink: online-help/reference-descriptions-of-the-performance-threshold-policy-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: La pagina Configuration/Performance Thresholds consente di creare, modificare, clonare, eliminare e visualizzare i criteri di soglia delle performance. 
+---
+= Descrizioni delle pagine dei criteri di soglia delle performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Configuration/Performance Thresholds consente di creare, modificare, clonare, eliminare e visualizzare i criteri di soglia delle performance.
+
+Gli argomenti riportati di seguito vengono visualizzati facendo clic su *Help* (Guida) nella pagina appropriata.

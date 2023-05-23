@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-and-monitoring-infinite-volumes.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile monitorare la capacità e la disponibilità delle macchine virtuali dello storage con Infinite Volume. Puoi gestire il posizionamento dei contenuti nella tua macchina virtuale di storage con Infinite Volume creando regole e policy sui dati. 
+---
+= Gestione e monitoraggio dei volumi Infinite
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puoi monitorare la capacità e la disponibilità delle tue macchine virtuali di storage (SVM) con Infinite Volume. Puoi gestire il posizionamento dei contenuti nella tua macchina virtuale di storage (SVM) con Infinite Volume creando regole e policy sui dati.

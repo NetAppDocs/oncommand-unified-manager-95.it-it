@@ -1,0 +1,47 @@
+---
+permalink: online-help/reference-available-iops-performance-counter-chart.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Il grafico del contatore IOPS disponibili di Performance Explorer visualizza il numero di operazioni di input/output al secondo attualmente disponibili sull"oggetto di storage selezionato.' 
+---
+= Tabella dei contatori delle performance IOPS disponibile
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il grafico del contatore IOPS disponibili di Performance Explorer visualizza il numero di operazioni di input/output al secondo attualmente disponibili (libere) sull'oggetto di storage selezionato.
+
+La finestra a comparsa visualizzata quando il cursore si trova nell'area del grafico mostra i valori specifici del contatore in orari specifici.
+
+Questa opzione di grafico si applica solo quando l'oggetto selezionato è un nodo o aggregato.
+
+Nella parte inferiore della pagina del grafico vengono visualizzate le informazioni relative alla capacità di performance minima, massima, media e 95° percentile utilizzata per l'intervallo di tempo selezionato.
+
+
+
+== IOPS disponibili - grafico contatore totale
+
+Visualizza il numero di operazioni di input/output al secondo attualmente disponibili (libere) sull'oggetto di storage selezionato. Questo numero è il risultato della sottrazione degli IOPS attualmente utilizzati dai IOPS totali che Unified Manager calcola che l'oggetto può eseguire.
+
+[NOTE]
+====
+I dati IOPS disponibili sono disponibili solo quando i nodi di un cluster sono installati con il software ONTAP 9.0 o versione successiva.
+
+====
+
+
+== Pulsante *Zoom View*
+
+Visualizza una vista ingrandita dei dati del contatore.
+
+* Eventi
++
+Il verificarsi di eventi critici, di avviso e informativi è indicato sulle righe temporali sopra i grafici.
+
+* Contatori
++
+I contatori nel riquadro di sinistra indicano i valori dei contatori visualizzati. Deselezione o selezione di image:../media/eye-icon.gif[""] associato a un contatore, nasconde e mostra le informazioni del contatore dal grafico e può essere di aiuto nel confronto degli oggetti.
+
+

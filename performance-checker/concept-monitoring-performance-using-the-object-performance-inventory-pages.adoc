@@ -1,0 +1,22 @@
+---
+permalink: performance-checker/concept-monitoring-performance-using-the-object-performance-inventory-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le pagine delle performance dell"inventario degli oggetti visualizzano informazioni sulle performance, eventi delle performance e stato degli oggetti per tutti gli oggetti all"interno di una categoria di tipi di oggetti. In questo modo viene fornita una panoramica immediata dello stato delle performance di ciascun oggetto all"interno di un cluster, ad esempio per tutti i nodi o tutti i volumi.' 
+---
+= Monitoraggio delle performance tramite le pagine Performance Inventory
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le pagine delle performance dell'inventario degli oggetti visualizzano informazioni sulle performance, eventi delle performance e stato degli oggetti per tutti gli oggetti all'interno di una categoria di tipi di oggetti. In questo modo viene fornita una panoramica immediata dello stato delle performance di ciascun oggetto all'interno di un cluster, ad esempio per tutti i nodi o tutti i volumi.
+
+Le pagine sulle performance dell'inventario degli oggetti offrono una panoramica di alto livello dello stato degli oggetti, consentendo di valutare le performance complessive di tutti gli oggetti e di confrontare i dati sulle performance degli oggetti. Puoi perfezionare il contenuto delle pagine di inventario degli oggetti ricercando, ordinando e filtrando. Ciò risulta vantaggioso quando si monitorano e si gestiscono le performance degli oggetti, in quanto consente di individuare rapidamente gli oggetti con problemi di performance e di avviare il processo di troubleshooting.
+
+image::../media/perf-node-inventory.gif[inventario del nodo perf]
+
+Per impostazione predefinita, gli oggetti nelle pagine di inventario delle performance vengono ordinati in base alla criticità delle performance degli oggetti. Gli oggetti con nuovi eventi critici relativi alle performance vengono elencati per primi e gli oggetti con eventi di avviso vengono elencati per secondi. Ciò fornisce un'indicazione visiva immediata dei problemi che devono essere risolti. Tutti i dati relativi alle performance si basano su una media di 72 ore.
+
+È possibile navigare facilmente dalla pagina delle prestazioni dell'inventario degli oggetti alla pagina dei dettagli di un oggetto facendo clic sul nome dell'oggetto nella colonna Nome oggetto. Ad esempio, nella pagina di inventario Performance/Nodes, fare clic su un oggetto nodo nella colonna *Nodes*. La pagina dei dettagli dell'oggetto fornisce informazioni e dettagli approfonditi sull'oggetto selezionato, incluso il confronto affiancato degli eventi attivi.

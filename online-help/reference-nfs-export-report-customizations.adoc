@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-nfs-export-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: Puoi personalizzare i report di esportazione NFS per analizzare le informazioni sulle policy di esportazione NFS e le regole per i volumi nei tuoi sistemi storage. Ad esempio, è possibile personalizzare i report per visualizzare volumi con percorsi di giunzione e volumi inaccessibili con il criterio di esportazione predefinito. 
+---
+= Personalizzazioni dei report di esportazione NFS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puoi personalizzare i report di esportazione NFS per analizzare le informazioni sulle policy di esportazione NFS e le regole per i volumi nei tuoi sistemi storage. Ad esempio, è possibile personalizzare i report per visualizzare volumi con percorsi di giunzione e volumi inaccessibili con il criterio di esportazione predefinito.

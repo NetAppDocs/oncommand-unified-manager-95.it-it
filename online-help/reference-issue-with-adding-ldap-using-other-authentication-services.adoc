@@ -1,0 +1,37 @@
+---
+permalink: online-help/reference-issue-with-adding-ldap-using-other-authentication-services.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= Problema con l'aggiunta di LDAP utilizzando altri servizi di autenticazione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+* *Problema*
++
+Quando si seleziona altri come servizio di autenticazione, l'utente e il groupObjectClass conservano i valori del modello precedentemente selezionato. Se il server LDAP non utilizza gli stessi valori, l'operazione potrebbe non riuscire.
+
+* *Causa*
++
+Gli utenti non sono configurati correttamente in OpenLDAP.
+
+* *Azione correttiva*
++
+È possibile risolvere manualmente questo problema utilizzando una delle seguenti soluzioni alternative.
+
++
+Se la classe di oggetti utente LDAP e la classe di oggetti gruppo sono rispettivamente utente e gruppo, eseguire la seguente procedura:
+
++
+.. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *Setup* > *Authentication*.
+.. Nel menu a discesa *Servizio di autenticazione*, selezionare *Active Directory*, quindi selezionare *altri*.
+.. Compilare i campi di testo. Se la classe di oggetti utente LDAP e la classe di oggetti di gruppo sono rispettivamente positxAccount e positxGroup, attenersi alla seguente procedura:
+.. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *Setup* > *Authentication*.
+.. Nel menu a discesa *Authentication Service*, selezionare *OpenLDAP*, quindi *altri*.
+.. Compilare i campi di testo. Se le prime due soluzioni alternative non sono valide, chiamare il `option-set` API e impostare `auth.ldap.userObjectClass` e. `auth.ldap.groupObjectClass` opzioni per i valori corretti.
+
+
+

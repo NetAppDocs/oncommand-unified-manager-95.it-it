@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-customizing-the-cluster-inventory-report-to-display-clusters-reaching-svm-count-limit.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile personalizzare il report Cluster Inventory per visualizzare i cluster, ordinati in base all"ordine decrescente del loro numero di SVM.' 
+---
+= Personalizzazione del report di inventario del cluster per visualizzare i cluster che raggiungono il limite di conteggio SVM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report Cluster Inventory per visualizzare i cluster, ordinati in base all'ordine decrescente del loro numero di SVM.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Per rimuovere il raggruppamento per cluster o nodo, attenersi alla seguente procedura:
++
+.. Fare clic nella colonna che deve essere raggruppata.
+.. Fare clic su image:../media/click-to-see-menu.gif[""] icona.
+.. Selezionare *Gruppo* > *Elimina gruppo interno*.
+
+
+. Per ordinare i cluster in base al numero di SVM, attenersi alla seguente procedura:
++
+.. Fare clic sulla colonna *SVM Count*.
+.. Fare clic su image:../media/click-to-see-menu.gif[""] icona.
+.. Selezionare *Gruppo* > *Elimina opzione gruppo interno*.
+
+
+. Selezionare *Filter* > *Top/Bottom N*.
+. Nella finestra di dialogo *Top/Bottom N*, selezionare *Top N* dal campo *Filter* e immettere un valore nel campo di testo.
+. Fare clic su *OK*.
+

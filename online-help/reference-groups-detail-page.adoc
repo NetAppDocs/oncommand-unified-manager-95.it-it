@@ -1,0 +1,64 @@
+---
+permalink: online-help/reference-groups-detail-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Dalla pagina dei dettagli dei gruppi, è possibile visualizzare i dettagli di un gruppo selezionato. È inoltre possibile visualizzare informazioni aggiuntive come le regole di gruppo e le azioni di gruppo associate al gruppo selezionato. 
+---
+= Pagina dei dettagli dei gruppi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dalla pagina dei dettagli dei gruppi, è possibile visualizzare i dettagli di un gruppo selezionato. È inoltre possibile visualizzare informazioni aggiuntive come le regole di gruppo e le azioni di gruppo associate al gruppo selezionato.
+
+
+
+== Pulsanti di comando
+
+* *Visualizza gruppi*
++
+Consente di accedere alla pagina gruppi.
+
+* *Azioni*
++
+Consente di modificare o eliminare il gruppo in base al proprio ruolo. È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+* *Gestisci regole di gruppo*
++
+Consente di accedere alla pagina regole di gruppo, che visualizza le regole per questo gruppo.
+
+* *Gestisci azioni di gruppo*
++
+Consente di accedere alla pagina Group Actions (azioni gruppo), che visualizza le azioni per questo gruppo.
+
+
+
+
+
+== Area di riepilogo
+
+È possibile visualizzare i seguenti dettagli del gruppo:
+
+* *Descrizione*
++
+Visualizza la descrizione fornita per il gruppo.
+
+* *Creato da*
++
+Visualizza il nome dell'utente che ha creato il gruppo.
+
+* *Data di creazione*
++
+Visualizza la data in cui è stato creato il gruppo.
+
+* *Regole associate*
++
+Visualizza tutte le regole di gruppo create per un gruppo, in formato tabulare. È possibile visualizzare i dettagli di ogni regola di gruppo, ad esempio il nome della regola, il tipo di oggetto associato e il numero di oggetti di storage del tipo di oggetto associato.
+
+* *Azioni associate*
++
+Visualizza tutte le azioni di gruppo, configurate per un gruppo, in formato tabulare. È possibile visualizzare i dettagli di ciascuna azione di gruppo, ad esempio la classifica, il nome, il tipo di azione e la descrizione.
+
+

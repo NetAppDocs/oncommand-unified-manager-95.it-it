@@ -1,0 +1,30 @@
+---
+permalink: online-help/concept-authentication-with-active-directory-or-openldap.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile attivare l"autenticazione remota sul server di gestione e configurare il server di gestione per comunicare con i server di autenticazione in modo che gli utenti all"interno dei server di autenticazione possano accedere. È possibile attivare l"autenticazione remota sul server di gestione e configurare il server di gestione in modo che comunichi con i server di autenticazione Che gli utenti all"interno dei server di autenticazione possano accedere a Unified Manager.' 
+---
+= Autenticazione con Active Directory o OpenLDAP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile attivare l'autenticazione remota sul server di gestione e configurare il server di gestione per comunicare con i server di autenticazione in modo che gli utenti all'interno dei server di autenticazione possano accedere. È possibile attivare l'autenticazione remota sul server di gestione e configurare il server di gestione in modo che comunichi con i server di autenticazione Che gli utenti all'interno dei server di autenticazione possano accedere a Unified Manager.
+
+È possibile utilizzare uno dei seguenti servizi di autenticazione predefiniti o specificare un servizio di autenticazione personalizzato:
+
+* Microsoft Active Directory
++
+[NOTE]
+====
+Non è possibile utilizzare Microsoft Lightweight Directory Services.
+
+====
+* OpenLDAP
+
+
+È possibile selezionare il servizio di autenticazione richiesto e aggiungere i server di autenticazione appropriati per consentire agli utenti remoti nel server di autenticazione di accedere a Unified Manager. Le credenziali per utenti o gruppi remoti vengono gestite dal server di autenticazione. Il server di gestione utilizza il protocollo LDAP (Lightweight Directory Access Protocol) per autenticare gli utenti remoti all'interno del server di autenticazione configurato.
+
+Per gli utenti locali creati in Unified Manager, il server di gestione gestisce il proprio database di nomi utente e password. Il server di gestione esegue l'autenticazione e non utilizza Active Directory o OpenLDAP per l'autenticazione.

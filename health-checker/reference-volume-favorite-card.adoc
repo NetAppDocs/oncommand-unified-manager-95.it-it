@@ -1,0 +1,57 @@
+---
+permalink: health-checker/reference-volume-favorite-card.html 
+sidebar: sidebar 
+keywords:  
+summary: La scheda Volume Favorite consente di visualizzare i dettagli relativi a capacità, protezione e performance dei volumi contrassegnati come preferiti. 
+---
+= Scheda Volume Favorite
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La scheda Volume Favorite consente di visualizzare i dettagli relativi a capacità, protezione e performance dei volumi contrassegnati come preferiti.
+
+
+
+== Attributi del volume
+
+La scheda Volume Favorite (Preferiti volume) visualizza i seguenti attributi di volume:
+
+* *Stato di integrità del volume*
++
+Un'icona che indica lo stato di salute del volume. I valori possibili sono normale, Avviso, errore e critico.
+
+* *Nome del volume*
++
+Nome del volume.
+
+* *Capacità*
++
+Percentuale di spazio libero disponibile sul volume e numero stimato di giorni fino al riempimento del volume.
+
+* *Protezione*
++
+Ruolo di protezione impostato per il volume. I valori possibili sono non protetti, non applicabili, protetti e destinazione.
+
+* *Prestazioni*
++
+Statistiche delle performance per il volume.
+
++
+** *IOPS*
++
+Numero medio di operazioni i/o al secondo nelle ultime 72 ore.
+
+** *Throughput*
++
+Throughput medio nelle ultime 72 ore, in Mbps.
+
+** *Latenza*
++
+Tempo medio di risposta richiesto per un'operazione, in millisecondi.
+
+
+
+

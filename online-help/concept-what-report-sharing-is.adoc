@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-report-sharing-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile condividere un report con uno o più utenti tramite e-mail utilizzando l"opzione Share (Condividi).' 
+---
+= Che cos'è la condivisione dei report
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile condividere un report con uno o più utenti tramite e-mail utilizzando l'opzione *Share*.
+
+È necessario salvare il report prima di condividerlo per assicurarsi che vengano visualizzate le modifiche recenti apportate al report.
+
+È possibile condividere il report in qualsiasi formato desiderato. L'opzione *Share* consente di condividere i report tramite e-mail all'istante, anche con persone che non hanno accesso a Unified Manager ma che dispongono di un indirizzo e-mail valido.

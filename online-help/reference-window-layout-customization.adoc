@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-window-layout-customization.html 
+sidebar: sidebar 
+keywords:  
+summary: Gestione unificata di OnCommand consente di personalizzare il layout delle informazioni nelle pagine degli oggetti di storage. Personalizzando le finestre, è possibile controllare quali dati visualizzare e come visualizzarli. 
+---
+= Personalizzazione del layout delle finestre
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gestione unificata di OnCommand consente di personalizzare il layout delle informazioni nelle pagine degli oggetti di storage. Personalizzando le finestre, è possibile controllare quali dati visualizzare e come visualizzarli.
+
+* *Ordinamento*
++
+È possibile fare clic sull'intestazione della colonna per modificare l'ordinamento delle voci della colonna. Quando si fa clic sull'intestazione della colonna, le frecce di ordinamento (image:../media/sort-asc-um60.gif["Icona per l'ordinamento delle colonne – crescente"] e. image:../media/sort-desc-um60.gif["Icona per l'ordinamento delle colonne - decrescente"]) viene visualizzato per la colonna.
+
+* *Filtraggio*
++
+È possibile applicare filtri per personalizzare la visualizzazione delle informazioni sulle pagine degli oggetti di storage in modo che vengano visualizzate solo le voci corrispondenti alle condizioni fornite. È possibile applicare i filtri dal riquadro Filters (filtri) o dalle colonne.
+
++
+Il pannello filtri consente di filtrare alcune colonne in base alle opzioni selezionate. Ad esempio, nella pagina Health/Volumes Inventory, è possibile utilizzare il pannello Filters (filtri) per filtrare solo le colonne Status (Stato) e state (Stato). Per visualizzare tutti i volumi offline, selezionare l'opzione di filtro appropriata in Stato.
+
++
+In alternativa, è possibile impostare i filtri sulle colonne utilizzando l'icona del filtro (image:../media/filtericon-um60.png["Icona per il filtro di colonna"]). È quindi possibile utilizzare il filtro dei caratteri jolly (?) o filtro con caratteri jolly (*) per restringere la ricerca. Ad esempio, nella pagina Health/Volumes Inventory, è possibile cercare un volume, vol234, utilizzando il filtro stringa nella colonna Volume. È possibile digitare `*vol`e tutti i volumi con nomi contenenti "`vol`". È possibile digitare `vol?` per visualizzare l'elenco di tutti i volumi con il nome contenente "`vol`" seguito da un altro carattere, ad esempio vol1 o vol2. È possibile digitare `vol` per visualizzare l'elenco di tutti i volumi con nomi che iniziano con "`vol`".
+
++
+Le colonne relative alla capacità in qualsiasi elenco visualizzano sempre i dati della capacità in unità appropriate arrotondate a due punti decimali. Ciò vale anche quando si filtrano le colonne di capacità. Ad esempio, se si utilizza il filtro nella colonna capacità totale dei dati nella pagina di inventario Salute/aggregati per filtrare i dati superiori a 20.45 GB, la capacità effettiva di 20.454 GB viene visualizzata come 20.45 GB. Analogamente, se si filtrano dati inferiori a 20.45 GB, la capacità effettiva di 20.449 GB viene visualizzata come 20.45 GB.
+
++
+Se si utilizza il filtro nella colonna Available Data % nella pagina Health/aggregates Inventory per filtrare i dati superiori al 20.45%, la capacità effettiva del 20.454% viene visualizzata come 20.45%. Analogamente, se si filtrano dati inferiori al 20.45%, la capacità effettiva del 20.449% viene visualizzata come 20.45%. Per le colonne che visualizzano i dati di capacità in percentuale, è possibile visualizzare i valori fino a quattro punti decimali spostando il puntatore del mouse sul valore visualizzato nella colonna.
+
+* *Nascondere o visualizzare nuovamente le colonne*
++
+È possibile fare clic sull'icona di visualizzazione delle colonne (image:../media/advanced-options.gif[""]) per selezionare le colonne da visualizzare.
+
+* *Esportazione dei dati*
++
+È possibile fare clic sull'icona di esportazione (image:../media/export-icon.gif["Icona per l'esportazione di dati separati da virgole da utilizzare nei report."]) per esportare i dati in valori separati da virgole (`.csv`) e utilizzare i dati esportati per creare i report.
+
+

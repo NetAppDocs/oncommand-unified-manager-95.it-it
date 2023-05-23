@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-editing-the-infinite-volume-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Per risolvere eventuali problemi relativi allo spazio di storage del volume Infinito, è possibile modificare le impostazioni di soglia della capacità del volume Infinito in base ai requisiti dell"organizzazione. Quando viene superata una soglia, vengono generati eventi e si ricevono notifiche se sono stati configurati avvisi per tali eventi.' 
+---
+= Modifica delle impostazioni di soglia del volume infinito
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando devi risolvere qualsiasi problema nello spazio di storage del tuo Infinite Volume, puoi modificare le impostazioni di soglia della capacità del volume Infinite in base ai requisiti della tua organizzazione. Quando viene superata una soglia, vengono generati eventi e si ricevono notifiche se sono stati configurati avvisi per tali eventi.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Health* > *SVM*.
+. Nella pagina di inventario *Health/Storage Virtual Machines*, selezionare una SVM con Infinite Volume.
+. Nella pagina dei dettagli di *Health/Storage Virtual Machine*, fare clic su *Actions* > *Edit thresholds*.
+. Nella finestra di dialogo *Edit SVM with Infinite Volume Thresholds* (Modifica SVM con soglie volume infinito), modificare le soglie come richiesto.
+. Fare clic su *Save and Close* (Salva e chiudi).
+

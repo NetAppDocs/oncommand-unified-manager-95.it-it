@@ -1,0 +1,40 @@
+---
+permalink: online-help/task-creating-a-snapmirror-policy-to-maximize-transfer-efficiency.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile creare un criterio SnapMirror per specificare la priorità di trasferimento di SnapMirror per le relazioni di protezione. Le policy di SnapMirror consentono di massimizzare l"efficienza del trasferimento dall"origine alla destinazione assegnando priorità in modo che i trasferimenti a priorità inferiore vengano pianificati per essere eseguiti dopo i trasferimenti a priorità normale.' 
+---
+= Creazione di una policy SnapMirror per massimizzare l'efficienza del trasferimento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile creare un criterio SnapMirror per specificare la priorità di trasferimento di SnapMirror per le relazioni di protezione. Le policy di SnapMirror consentono di massimizzare l'efficienza del trasferimento dall'origine alla destinazione assegnando priorità in modo che i trasferimenti a priorità inferiore vengano pianificati per essere eseguiti dopo i trasferimenti a priorità normale.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+* È necessario aver impostato l'automazione del flusso di lavoro.
+* Questa attività presuppone che l'area Destination Information (informazioni destinazione) sia già stata completata nella finestra di dialogo Configure Protection (Configura protezione).
+
+
+
+
+== Fasi
+
+. Dalla scheda *SnapMirror* della finestra di dialogo *Configura protezione*, fare clic sul collegamento *Crea policy* nell'area *Impostazioni relazione*.
++
+Viene visualizzata la finestra di dialogo Create SnapMirror Policy (Crea policy SnapMirror).
+
+. Nel campo *Policy Name* (Nome policy), digitare il nome che si desidera assegnare al criterio.
+. Nel campo *priorità trasferimento*, selezionare la priorità di trasferimento che si desidera assegnare al criterio.
+. Nel campo *Commento*, immettere un commento facoltativo per la policy.
+. Fare clic su *Create* (Crea).
++
+Il nuovo criterio viene visualizzato nell'elenco a discesa SnapMirror Policy (criterio SnapMirror).
+
+

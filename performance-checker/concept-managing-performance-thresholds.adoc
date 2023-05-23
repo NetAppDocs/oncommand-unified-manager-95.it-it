@@ -1,0 +1,22 @@
+---
+permalink: performance-checker/concept-managing-performance-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: 'I criteri di soglia delle performance consentono di determinare il punto in cui Unified Manager genera un evento per informare gli amministratori di sistema su problemi che potrebbero influire sulle performance dei workload. Questi criteri di soglia sono noti come soglie di performance definite dall"utente.' 
+---
+= Gestione delle soglie di performance definite dall'utente
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I criteri di soglia delle performance consentono di determinare il punto in cui Unified Manager genera un evento per informare gli amministratori di sistema su problemi che potrebbero influire sulle performance dei workload. Questi criteri di soglia sono noti come soglie di performance _definite dall'utente_.
+
+Questa versione supporta soglie di performance dinamiche, definite dall'utente e definite dal sistema. Con soglie di performance dinamiche e definite dal sistema, Unified Manager analizza l'attività del carico di lavoro per determinare il valore di soglia appropriato. Con le soglie definite dall'utente, è possibile definire i limiti di performance superiori per molti contatori di performance e per molti oggetti di storage.
+
+[NOTE]
+====
+Le soglie di performance definite dal sistema e le soglie di performance dinamiche vengono impostate da Unified Manager e non sono configurabili. Se si ricevono eventi non necessari da qualsiasi criterio di soglia delle performance definito dal sistema, è possibile disattivare singoli criteri dalla pagina Configurazione/Gestione eventi.
+
+====

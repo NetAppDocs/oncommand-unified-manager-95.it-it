@@ -1,0 +1,30 @@
+---
+permalink: online-help/concept-viewing-node-and-aggregate-performance-capacity-used-values.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile monitorare i valori della capacità di performance utilizzata per tutti i nodi o per tutti gli aggregati di un cluster oppure visualizzare i dettagli di un singolo nodo o aggregato. 
+---
+= Visualizzazione dei valori utilizzati per la capacità di nodo e le performance aggregate
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile monitorare i valori della capacità di performance utilizzata per tutti i nodi o per tutti gli aggregati di un cluster oppure visualizzare i dettagli di un singolo nodo o aggregato.
+
+I valori utilizzati per la capacità delle performance vengono visualizzati nella dashboard delle performance, nelle pagine Performance Inventory, nella pagina Top Performer, nella pagina Create Threshold Policy, nelle pagine Performance Explorer e nei grafici dettagliati. Ad esempio, la pagina Performance/aggregate Inventory fornisce una colonna Perf. Capacità utilizzata per visualizzare il valore utilizzato della capacità di performance per tutti gli aggregati.
+
+image::../media/node-inventory-used-headroom.gif[l'inventario dei nodi ha utilizzato spazio di crescita]
+
+Lo stato "`N/A`" viene visualizzato quando i nodi non sono installati con il software ONTAP 9.0 o versioni successive.
+
+Il monitoraggio del contatore della capacità di performance utilizzata consente di identificare quanto segue:
+
+* Sia che i nodi o gli aggregati di qualsiasi cluster abbiano un valore di utilizzo della capacità dalle performance elevate
+* Sia che i nodi o gli aggregati di qualsiasi cluster abbiano eventi attivi di utilizzo della capacità delle performance
+* I nodi e gli aggregati che hanno il valore più alto e più basso utilizzato per le performance in un cluster
+* Valori dei contatori di latenza e utilizzo in combinazione con nodi o aggregati che hanno valori elevati di utilizzo della capacità delle performance
+* In che modo la capacità di performance utilizzata per i nodi di una coppia ha sarà influenzata in caso di guasto di uno dei nodi
+* I volumi e le LUN più impegnativi su un aggregato che ha un valore di utilizzo della capacità dalle performance elevate
+

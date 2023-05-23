@@ -1,0 +1,44 @@
+---
+permalink: online-help/concept-what-report-importing-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile importare un report utilizzando l"opzione Importa report da Unified Manager e salvare il report importato con un nome e una breve descrizione. Importando i report, è possibile aggiungere report personalizzati al proprio ambiente oltre ai report standard forniti in Unified Manager.' 
+---
+= Che tipo di report importa
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile importare un report utilizzando l'opzione *Importa report* da Unified Manager e salvare il report importato con un nome e una breve descrizione. Importando i report, è possibile aggiungere report personalizzati al proprio ambiente oltre ai report standard forniti in Unified Manager.
+
+È possibile importare un `.rptdesign` file già creato. È possibile eseguire, condividere, pianificare ed eliminare un report importato.
+
+Unified Manager memorizza i file di log dei report di importazione nei file jboss.log, ocum-report.log e ocumserver-debug.log.
+
+[NOTE]
+====
+L'assistenza clienti non sarà di supporto nella progettazione dei report, ma ti aiuterà a risolvere i problemi riscontrati durante un'operazione di importazione dei report.
+
+====
+La funzionalità di importazione dei report include il seguente supporto:
+
+* Report con più intestazioni, in cui l'intervallo di colonne è impostato su 1 (`colspan=1`)
+* Solo report con grafici
+* Solo report con elenchi e griglie
+* Le password utilizzate nei report devono essere codificate in formato "`base64`". I report che utilizzano un'altra codifica, ad esempio il formato "`jce`", causano un errore durante il processo di importazione.
+* I report contenenti l'aggregazione dei dati devono includere l'elemento di colonna aggregato nei dati della tabella del report.
+
+
+I report in formato testo, CSV ed Excel sono supportati nei seguenti scenari:
+
+* Table Element (elemento tabella) solo in `.rptdesign` file
+* Una tabella con una sola riga di intestazione
+
+
+[NOTE]
+====
+Non è possibile importare report con un intervallo di colonne superiore a 1. Se un report in formato testo, CSV o Excel ha più di una riga di intestazione, viene presa in considerazione solo la prima riga di intestazione e il resto viene ignorato.
+
+====

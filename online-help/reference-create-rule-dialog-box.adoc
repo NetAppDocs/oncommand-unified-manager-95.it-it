@@ -1,0 +1,62 @@
+---
+permalink: online-help/reference-create-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare la finestra di dialogo Create Rule (Crea regola) per creare nuove regole per la policy sui dati. Ad esempio, se si desidera specificare il posizionamento del contenuto di un determinato tipo di file, è possibile utilizzare la finestra di dialogo Crea regola per creare la regola per la policy sui dati.' 
+---
+= Finestra di dialogo Create Rule (Crea regola)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la finestra di dialogo Create Rule (Crea regola) per creare nuove regole per la policy sui dati. Ad esempio, se si desidera specificare il posizionamento del contenuto di un determinato tipo di file, è possibile utilizzare la finestra di dialogo Crea regola per creare la regola per la policy sui dati.
+
+
+
+== Nome regola
+
+Specifica il nome della nuova regola.
+
+
+
+== Area dei modelli
+
+Visualizza l'elenco dei modelli di regola. È possibile selezionare un modello di regola appropriato dall'elenco per creare una regola per il criterio dati.
+
+
+
+== Criteri di corrispondenza
+
+Visualizza un elenco di condizioni relative al modello di regola selezionato. L'elenco delle condizioni cambia in base al modello di regola selezionato. Ad esempio, se si seleziona "`inserire tutti i file con i nomi dei proprietari specificati in una classe di storage adatta`", *elenco dei proprietari che...* viene visualizzato in criteri corrispondenti.
+
+* *Aggiungi*
++
+Consente di aggiungere una nuova proprietà della regola in base al modello di regola selezionato. Ad esempio, se è stato selezionato il modello di regola "`inserire tutti i file con i nomi dei proprietari specificati in una classe di storage adatta`", il pulsante *Aggiungi* consente di aggiungere il nome del proprietario.
+
+* *Elimina*
++
+Consente di eliminare una proprietà della regola selezionata.
+
+
+
+
+
+== Posizionamento dei contenuti
+
+Consente di selezionare una classe di storage appropriata per la regola dall'elenco.
+
+
+
+== Pulsanti di comando
+
+* *Crea*
++
+Crea una nuova regola per il criterio dati e chiude la finestra di dialogo Crea regola.
+
+* *Annulla*
++
+Annulla le modifiche recenti apportate alla regola e chiude la finestra di dialogo Crea regola.
+
+

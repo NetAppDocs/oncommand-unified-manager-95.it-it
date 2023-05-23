@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-user-access-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: In base alle impostazioni RBAC, è possibile aggiungere utenti dalla pagina Management/Users e assegnare ruoli appropriati a tali utenti per accedere e monitorare i cluster. 
+---
+= Descrizione delle finestre di accesso utente e delle finestre di dialogo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+In base alle impostazioni RBAC, è possibile aggiungere utenti dalla pagina Management/Users e assegnare ruoli appropriati a tali utenti per accedere e monitorare i cluster.

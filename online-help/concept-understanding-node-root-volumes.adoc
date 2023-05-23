@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-understanding-node-root-volumes.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile monitorare il volume root del nodo utilizzando Unified Manager. La Best practice consiste nel fatto che il volume root del nodo deve avere una capacità sufficiente a impedire il downdown del nodo. 
+---
+= Comprensione dei volumi root dei nodi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile monitorare il volume root del nodo utilizzando Unified Manager. La Best practice consiste nel fatto che il volume root del nodo deve avere una capacità sufficiente a impedire il downdown del nodo.
+
+Quando la capacità utilizzata del volume root del nodo supera il 80% della capacità totale del volume root del nodo, viene generato l'evento Node Root Volume Space quasi Full. È possibile configurare un avviso per l'evento per ricevere una notifica. È possibile intraprendere le azioni appropriate per impedire che il nodo si blocchi utilizzando Gestore di sistema di OnCommand o l'interfaccia utente di ONTAP.

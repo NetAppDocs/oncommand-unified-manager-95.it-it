@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-svm-inventory-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile creare report di inventario SVM per analizzare le informazioni sui volumi e visualizzare lo stato generale e la disponibilità dello storage. Ad esempio, è possibile creare report per visualizzare le SVM che raggiungono il numero massimo di volumi e analizzare le SVM interrotte. 
+---
+= Personalizzazioni dei report di inventario SVM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile creare report di inventario SVM per analizzare le informazioni sui volumi e visualizzare lo stato generale e la disponibilità dello storage. Ad esempio, è possibile creare report per visualizzare le SVM che raggiungono il numero massimo di volumi e analizzare le SVM interrotte.

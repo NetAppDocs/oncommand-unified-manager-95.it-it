@@ -1,0 +1,50 @@
+---
+permalink: health-checker/task-performing-suggested-remedial-actions-for-a-full-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Dopo aver ricevuto un evento di errore "Volume Space Full" (spazio volume pieno), si esaminano le azioni correttive suggerite nella pagina Dettagli evento e si decide di eseguire una delle azioni suggerite.' 
+---
+= Esecuzione delle azioni correttive suggerite per un volume completo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dopo aver ricevuto un evento di errore "`Volume Space Full`", esaminare le azioni correttive suggerite nella pagina Dettagli evento e decidere di eseguire una delle azioni suggerite.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+Un utente con qualsiasi ruolo può eseguire tutte le attività di questo flusso di lavoro che utilizzano Unified Manager.
+
+
+
+== A proposito di questa attività
+
+In questo esempio, è stato visualizzato un evento di errore Volume Space Full nella pagina Unified ManagerDashboards/Overview e si è fatto clic sul nome dell'evento.
+
+Le possibili azioni correttive che è possibile eseguire per un volume completo includono quanto segue:
+
+* Attivazione della crescita automatica, della deduplica o della compressione sul volume
+* Ridimensionamento o spostamento del volume
+* Eliminazione o spostamento dei dati dal volume
+
+
+Sebbene tutte queste azioni debbano essere eseguite da Gestore di sistema di OnCommand o dall'interfaccia utente di ONTAP, è possibile utilizzare Unified Manager per trovare le informazioni necessarie per determinare le azioni da intraprendere.
+
+
+
+== Fasi
+
+. Nella pagina dei dettagli *evento*, fare clic sul nome del volume nel campo origine per visualizzare i dettagli sul volume interessato.
+. Nella pagina dei dettagli *Health/Volume*, fare clic su *Configuration* (Configurazione) e verificare che deduplica e compressione siano già attivate sul volume.
++
+Si decide di ridimensionare il volume.
+
+. Nel riquadro *Related Devices* (periferiche correlate), fare clic sul nome dell'aggregato di hosting per vedere se l'aggregato può ospitare un volume più grande.
+. Nella pagina dei dettagli *integrità/aggregato*, l'aggregato che ospita l'intero volume ha una capacità non impegnata sufficiente, pertanto è possibile utilizzare Gestione di sistema di OnCommand per ridimensionare il volume, offrendo una maggiore capacità.
+

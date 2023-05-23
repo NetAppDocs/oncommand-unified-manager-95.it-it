@@ -1,0 +1,41 @@
+---
+permalink: online-help/generic-managing-storage-objects-using-the-favorite-option.html 
+sidebar: sidebar 
+keywords:  
+summary: 'L"opzione Favorites (Preferiti) consente di visualizzare e gestire gli oggetti di storage selezionati in Unified Manager contrassegnandoli come preferiti. È possibile visualizzare rapidamente lo stato degli oggetti di storage preferiti e risolvere i problemi prima che diventino critici.' 
+---
+= Gestione degli oggetti di storage mediante l'opzione Favorites (Preferiti)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'opzione Favorites (Preferiti) consente di visualizzare e gestire gli oggetti di storage selezionati in Unified Manager contrassegnandoli come preferiti. È possibile visualizzare rapidamente lo stato degli oggetti di storage preferiti e risolvere i problemi prima che diventino critici.
+
+
+
+== Attività che è possibile eseguire dalla dashboard Preferiti
+
+* Visualizzare l'elenco degli oggetti di storage contrassegnati come preferiti.
+* Aggiungere oggetti di storage all'elenco Favorites (Preferiti).
+* Rimuovere gli oggetti di storage dall'elenco Favorites (Preferiti).
+
+
+
+
+== Visualizzazione dell'elenco dei preferiti
+
+È possibile visualizzare i dettagli relativi a capacità, performance e protezione degli oggetti di storage selezionati dall'elenco Preferiti. I dettagli di un massimo di 20 oggetti di storage vengono visualizzati nell'elenco Favorites (Preferiti).
+
+
+
+== Aggiunta di oggetti di storage all'elenco Favorites (Preferiti)
+
+È possibile aggiungere oggetti di storage all'elenco Favorites (Preferiti) e monitorarli per verificare lo stato di salute, la capacità e le prestazioni. È possibile contrassegnare solo cluster, volumi e aggregati come preferiti.
+
+
+
+== Rimozione di oggetti di storage dall'elenco Preferiti
+
+È possibile rimuovere gli oggetti di storage dall'elenco Preferiti quando non è più necessario che siano contrassegnati come preferiti.

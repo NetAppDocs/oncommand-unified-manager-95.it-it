@@ -1,0 +1,39 @@
+---
+permalink: online-help/task-editing-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile modificare le impostazioni di un cluster esistente, ad esempio il nome host o l"indirizzo IP, il nome utente, la password, il protocollo e la porta, Utilizzando la finestra di dialogo Edit Cluster (Modifica cluster).' 
+---
+= Modifica dei cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare le impostazioni di un cluster esistente, ad esempio il nome host o l'indirizzo IP, il nome utente, la password, il protocollo e la porta, Utilizzando la finestra di dialogo Edit Cluster (Modifica cluster).
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o di amministratore dello storage di OnCommand.
+
+
+
+== A proposito di questa attività
+
+[NOTE]
+====
+Se si modifica l'indirizzo IP di un cluster in un indirizzo IP di un cluster monitorato esistente, tutti i dati del cluster esistente andranno persi quando viene rilevato il cluster precedente. Non viene visualizzato alcun messaggio di errore.
+
+====
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Configuration* > *Cluster Data Sources*.
+. Nella pagina *Configurazione/origini dati cluster*, selezionare il cluster che si desidera modificare, quindi fare clic su *Modifica*.
+. Nella finestra di dialogo *Edit Cluster* (Modifica cluster), modificare i valori secondo necessità.
+. Fare clic su *Invia*.
+

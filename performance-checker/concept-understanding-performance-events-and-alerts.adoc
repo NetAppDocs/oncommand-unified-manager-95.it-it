@@ -1,0 +1,16 @@
+---
+permalink: performance-checker/concept-understanding-performance-events-and-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: Gli eventi relativi alle performance sono notifiche generate automaticamente da Unified Manager quando si verifica una condizione predefinita o quando un valore del contatore delle performance supera una soglia. Gli eventi consentono di identificare i problemi di performance nei cluster monitorati. 
+---
+= Informazioni su eventi e avvisi relativi alle performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi relativi alle performance sono notifiche generate automaticamente da Unified Manager quando si verifica una condizione predefinita o quando un valore del contatore delle performance supera una soglia. Gli eventi consentono di identificare i problemi di performance nei cluster monitorati.
+
+È possibile configurare gli avvisi in modo che inviino automaticamente una notifica via email quando si verificano eventi di performance di determinati tipi di severità.

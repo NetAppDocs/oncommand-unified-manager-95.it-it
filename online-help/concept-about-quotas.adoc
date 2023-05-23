@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-about-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: Le quote consentono di limitare o tenere traccia dello spazio su disco e del numero di file utilizzati da un utente, un gruppo o un qtree. Specificare le quote usando il file /etc/quota. Le quote vengono applicate a un volume o qtree specifico. 
+---
+= Sulle quote
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le quote consentono di limitare o tenere traccia dello spazio su disco e del numero di file utilizzati da un utente, un gruppo o un qtree. Specificare le quote utilizzando `/etc/quotas` file. Le quote vengono applicate a un volume o qtree specifico.

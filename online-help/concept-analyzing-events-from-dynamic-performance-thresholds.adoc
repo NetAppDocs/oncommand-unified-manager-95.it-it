@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-analyzing-events-from-dynamic-performance-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi generati dalle soglie dinamiche indicano che il tempo di risposta effettivo (latenza) per un carico di lavoro è troppo alto o troppo basso rispetto all"intervallo di tempo di risposta previsto. La pagina Dettagli evento consente di analizzare l"evento relativo alle performance e, se necessario, di intraprendere azioni correttive per riportare le performance alla normalità.' 
+---
+= Analisi degli eventi dalle soglie di performance dinamiche
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi generati dalle soglie dinamiche indicano che il tempo di risposta effettivo (latenza) per un carico di lavoro è troppo alto o troppo basso rispetto all'intervallo di tempo di risposta previsto. La pagina Dettagli evento consente di analizzare l'evento relativo alle performance e, se necessario, di intraprendere azioni correttive per riportare le performance alla normalità.
+
+[NOTE]
+====
+Le soglie di performance dinamiche non sono attivate sui sistemi Cloud Volumes ONTAP, ONTAP Edge o ONTAP Select.
+
+====

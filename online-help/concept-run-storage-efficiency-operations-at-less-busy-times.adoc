@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-run-storage-efficiency-operations-at-less-busy-times.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile modificare la policy o la pianificazione che gestisce le operazioni di efficienza dello storage da eseguire quando i carichi di lavoro dei volumi interessati sono meno occupati. 
+---
+= Eseguire operazioni di efficienza dello storage in tempi meno impegnati
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare la policy o la pianificazione che gestisce le operazioni di efficienza dello storage da eseguire quando i carichi di lavoro dei volumi interessati sono meno occupati.
+
+Le operazioni di efficienza dello storage possono utilizzare un'elevata quantità di risorse CPU del cluster e diventare un bullo dei volumi su cui vengono eseguite le operazioni. Se i volumi delle vittime hanno un'attività elevata contemporaneamente all'esecuzione delle operazioni di efficienza dello storage, la latenza può aumentare e attivare un evento.
+
+Nella pagina Event Details (Dettagli evento), la sezione System Diagnosis (Diagnosi del sistema) visualizza i carichi di lavoro nel gruppo di policy QoS in base alla deviazione di picco nell'attività per identificare i carichi di lavoro ingombrati. Se nella parte superiore della tabella viene visualizzato "`sTorage Efficiency`" (efficienza del toraggio), queste operazioni sono in preda ai carichi di lavoro delle vittime. Modificando la policy di efficienza o la pianificazione da eseguire quando questi carichi di lavoro sono meno occupati, è possibile evitare che le operazioni di efficienza dello storage causino conflitti su un cluster.
+
+È possibile utilizzare Gestione di sistema di OnCommand per gestire le policy di efficienza. È possibile utilizzare i comandi ONTAP per gestire le policy e le pianificazioni di efficienza.

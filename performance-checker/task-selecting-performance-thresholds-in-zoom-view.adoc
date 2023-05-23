@@ -1,0 +1,32 @@
+---
+permalink: performance-checker/task-selecting-performance-thresholds-in-zoom-view.html 
+sidebar: sidebar 
+keywords:  
+summary: Applicazione delle soglie nella visualizzazione Zoom dei grafici dei contatori fornisce una vista dettagliata delle occorrenze degli eventi delle soglie delle prestazioni. In questo modo è possibile applicare o rimuovere le soglie e visualizzare immediatamente i risultati, cosa che può essere utile per decidere se la risoluzione dei problemi deve essere la fase successiva. 
+---
+= Selezione delle soglie di performance in Counter Chart Zoom View
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Applicazione delle soglie nella visualizzazione Zoom dei grafici dei contatori fornisce una vista dettagliata delle occorrenze degli eventi delle soglie delle prestazioni. In questo modo è possibile applicare o rimuovere le soglie e visualizzare immediatamente i risultati, cosa che può essere utile per decidere se la risoluzione dei problemi deve essere la fase successiva.
+
+
+
+== A proposito di questa attività
+
+La selezione delle soglie nella visualizzazione Zoom dei grafici dei contatori consente di visualizzare dati precisi sugli eventi delle soglie di performance. È possibile applicare qualsiasi soglia visualizzata nell'area *Policies* della vista Zoom Counter Chart.
+
+È possibile applicare un solo criterio alla volta all'oggetto nella vista Zoom Counter Chart.
+
+
+
+== Fasi
+
+. Selezionare o deselezionare image:../media/eye-icon.gif[""] associato a una policy.
++
+La soglia selezionata viene applicata alla vista Zoom Counter Chart. Le soglie critiche vengono visualizzate sotto forma di linea rossa; le soglie di avviso vengono visualizzate sotto forma di linea gialla.
+
+

@@ -1,0 +1,46 @@
+---
+permalink: online-help/concept-guidelines-for-adding-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile aggiungere avvisi in base a una risorsa, ad esempio un cluster, un nodo, un aggregato o un volume, nonché eventi di un particolare tipo di severità. Come procedura consigliata, è possibile aggiungere un avviso per qualsiasi oggetto critico dopo aver aggiunto il cluster a cui appartiene l"oggetto.' 
+---
+= Linee guida per l'aggiunta di avvisi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile aggiungere avvisi in base a una risorsa, ad esempio un cluster, un nodo, un aggregato o un volume, nonché eventi di un particolare tipo di severità. Come procedura consigliata, è possibile aggiungere un avviso per qualsiasi oggetto critico dopo aver aggiunto il cluster a cui appartiene l'oggetto.
+
+È possibile utilizzare le seguenti linee guida e considerazioni per creare avvisi per gestire i sistemi in modo efficace:
+
+* Descrizione dell'avviso
++
+È necessario fornire una descrizione per l'avviso, in modo che possa essere utile per tenere traccia degli avvisi in modo efficace.
+
+* Risorse
++
+È necessario decidere quale risorsa fisica o logica richiede un avviso. È possibile includere ed escludere le risorse, in base alle esigenze. Ad esempio, se si desidera monitorare attentamente gli aggregati configurando un avviso, è necessario selezionare gli aggregati richiesti dall'elenco delle risorse.
+
+* Severità dell'evento
++
+È necessario decidere se un evento con un tipo di severità specificato (critico, errore, Avviso) deve attivare l'avviso e, in caso affermativo, quale tipo di severità.
+
+* Nome dell'evento
++
+Se si aggiunge un avviso in base al tipo di evento generato, è necessario decidere quali eventi richiedono un avviso
+
+* Azioni
++
+È necessario fornire i nomi utente e gli indirizzi e-mail degli utenti che ricevono la notifica. È inoltre possibile specificare un trap SNMP come modalità di notifica. È possibile associare gli script a un avviso in modo che vengano eseguiti quando viene generato un avviso.
+
+* Frequenza delle notifiche
++
+È possibile configurare un avviso per inviare ripetutamente una notifica ai destinatari per un periodo di tempo specificato. È necessario determinare l'ora in cui la notifica dell'evento è attiva per l'avviso. Se si desidera che la notifica dell'evento venga ripetuta fino alla conferma dell'evento, è necessario determinare la frequenza con cui si desidera che la notifica venga ripetuta.
+
+* Esegui script
++
+È possibile associare lo script a un avviso. Lo script viene eseguito quando viene generato l'avviso.
+
+

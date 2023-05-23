@@ -1,0 +1,41 @@
+---
+permalink: health-checker/reference-description-of-event-severity-types.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Ogni evento è associato a un tipo di severità per aiutarti a definire la priorità degli eventi che richiedono un"azione correttiva immediata.' 
+---
+= Descrizione dei tipi di severità degli eventi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ogni evento è associato a un tipo di severità per aiutarti a definire la priorità degli eventi che richiedono un'azione correttiva immediata.
+
+* *Critico*
++
+Si è verificato un problema che potrebbe causare un'interruzione del servizio se non viene intrapresa immediatamente un'azione correttiva.
+
++
+Gli eventi critici relativi alle performance vengono inviati solo da soglie definite dall'utente.
+
+* *Errore*
++
+L'origine dell'evento continua a essere in esecuzione; tuttavia, è necessaria un'azione correttiva per evitare interruzioni del servizio.
+
+* *Attenzione*
++
+L'origine dell'evento ha riscontrato un evento di cui si dovrebbe essere a conoscenza oppure un contatore delle prestazioni per un oggetto cluster non rientra nell'intervallo normale e deve essere monitorato per assicurarsi che non raggiunga la severità critica. Gli eventi di questo livello di gravità non causano interruzioni del servizio e potrebbero non essere necessarie azioni correttive immediate.
+
++
+Gli eventi di avviso relativi alle performance vengono inviati da soglie definite dall'utente, definite dal sistema o dinamiche.
+
+* *Informazioni*
++
+L'evento si verifica quando viene rilevato un nuovo oggetto o quando viene eseguita un'azione dell'utente. Ad esempio, quando un oggetto di storage viene cancellato o quando vengono apportate modifiche alla configurazione, viene generato l'evento con tipo di severità informazioni.
+
++
+Gli eventi informativi vengono inviati direttamente da ONTAP quando rileva una modifica della configurazione.
+
+

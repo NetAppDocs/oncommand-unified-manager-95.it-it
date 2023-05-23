@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-understanding-more-about-events.html 
+sidebar: sidebar 
+keywords:  
+summary: La comprensione dei concetti relativi agli eventi consente di gestire i cluster e gli oggetti del cluster in modo efficiente e di definire gli avvisi in modo appropriato. 
+---
+= Ulteriori informazioni sugli eventi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La comprensione dei concetti relativi agli eventi consente di gestire i cluster e gli oggetti del cluster in modo efficiente e di definire gli avvisi in modo appropriato.

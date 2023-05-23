@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-aggregate-capacity-and-utilization-report-to-view-aggregates-reaching-full-capacity.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile personalizzare il report aggregato capacità e utilizzo per visualizzare gli aggregati ordinati in base all"ordine crescente di utilizzo della capacità aggregata. In questo modo è possibile visualizzare gli aggregati che raggiungono la capacità completa.' 
+---
+= Personalizzazione del report aggregato capacità e utilizzo per visualizzare gli aggregati che raggiungono la capacità completa
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report aggregato capacità e utilizzo per visualizzare gli aggregati ordinati in base all'ordine crescente di utilizzo della capacità aggregata. In questo modo è possibile visualizzare gli aggregati che raggiungono la capacità completa.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Per rimuovere il raggruppamento per cluster e per coppia ha, attenersi alla seguente procedura:
++
+.. Fare clic sulle colonne da rimuovere.
+.. Fare clic su image:../media/click-to-see-menu.gif[""] icona.
+.. Selezionare *Gruppo* > *Elimina opzione gruppo interno*.
+
+
+. Per ordinare gli aggregati che raggiungono la capacità completa, fare clic nella colonna *giorni a pieno* e fare clic sul pulsante image:../media/click-to-see-menu.gif[""] icona.
+. Selezionare *Filter* > *Top/Bottom N*.
+. Nella finestra di dialogo *N in alto/in basso*, selezionare *N in basso* dal campo *filtro* e immettere un valore nel campo di testo.
+. Fare clic su *OK*.
+

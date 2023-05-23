@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-add-disks-and-perform-aggregate-layout-reconstruction.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile aggiungere dischi a un aggregato per aumentare la capacità di storage e le performance di tale aggregato. Dopo aver aggiunto i dischi, si vede un miglioramento delle performance solo dopo la ricostruzione dell"aggregato.' 
+---
+= Aggiungere dischi ed eseguire la ricostruzione del layout aggregato
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile aggiungere dischi a un aggregato per aumentare la capacità di storage e le performance di tale aggregato. Dopo aver aggiunto i dischi, si vede un miglioramento delle performance solo dopo la ricostruzione dell'aggregato.
+
+Quando si riceve un evento di soglia definito dal sistema nella pagina Dettagli evento, il testo della descrizione dell'evento elenca il nome dell'aggregato che ha il problema. È possibile aggiungere dischi e ricostruire i dati su questo aggregato.
+
+I dischi aggiunti all'aggregato devono già esistere nel cluster. Se il cluster non dispone di dischi aggiuntivi, potrebbe essere necessario contattare l'amministratore o acquistare altri dischi. È possibile utilizzare Gestione di sistema di OnCommand o i comandi ONTAP per aggiungere dischi a un aggregato.
+
+http://www.netapp.com/us/media/tr-3838.pdf["Report tecnico 3838: Guida alla configurazione del sottosistema di storage"]

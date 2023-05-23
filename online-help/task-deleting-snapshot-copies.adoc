@@ -1,0 +1,55 @@
+---
+permalink: online-help/task-deleting-snapshot-copies.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile eliminare una copia Snapshot per risparmiare spazio o liberare spazio su disco, oppure eliminare la copia Snapshot se non è più necessaria. 
+---
+= Eliminazione delle copie Snapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile eliminare una copia Snapshot per risparmiare spazio o liberare spazio su disco, oppure eliminare la copia Snapshot se non è più necessaria.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+Il volume deve essere online.
+
+Per eliminare una copia Snapshot occupata o bloccata, è necessario rilasciare la copia Snapshot dall'applicazione che la stava utilizzando.
+
+
+
+== A proposito di questa attività
+
+* Non è possibile eliminare la copia Snapshot di base in un volume padre se un volume FlexClone utilizza tale copia Snapshot.
++
+La copia Snapshot di base è la copia Snapshot utilizzata per creare il volume FlexClone e visualizzare lo stato `Busy` E dipendenza dell'applicazione come `Busy,Vclone` nel volume padre.
+
+* Non è possibile eliminare una copia Snapshot bloccata utilizzata in una relazione SnapMirror.
++
+La copia Snapshot è bloccata ed è necessaria per il prossimo aggiornamento.
+
+
+
+
+
+== Fasi
+
+. Nel riquadro di spostamento di sinistra, fare clic su *Health* > *Volumes*.
+. Nella pagina di inventario *Health/Volumes*, selezionare il volume contenente le copie Snapshot che si desidera visualizzare.
++
+Viene visualizzato l'elenco delle copie Snapshot.
+
+. Nella pagina dei dettagli *Health/Volume*, fare clic sulla scheda *Capacity*.
+. Nel riquadro *Dettagli* della scheda *capacità*, nella sezione altri dettagli, fare clic sul collegamento accanto a *copie Snapshot*.
++
+Il numero di copie Snapshot è un collegamento che visualizza l'elenco delle copie Snapshot.
+
+. Nella vista *Snapshot Copies*, selezionare le copie Snapshot che si desidera eliminare, quindi fare clic su *Delete Selected* (Elimina selezionati).
+

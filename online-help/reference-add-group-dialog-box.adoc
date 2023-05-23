@@ -1,0 +1,42 @@
+---
+permalink: online-help/reference-add-group-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La finestra di dialogo Add Group (Aggiungi gruppo) consente di creare gruppi per includere cluster, volumi e SVM in base alle regole del gruppo.' 
+---
+= Finestra di dialogo Add Group (Aggiungi gruppo)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La finestra di dialogo Add Group (Aggiungi gruppo) consente di creare gruppi per includere cluster, volumi e SVM in base alle regole del gruppo.
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+* *Nome*
++
+Specifica il nome del gruppo. Immettere un nome univoco per il gruppo.
+
+* *Descrizione*
++
+Specifica una descrizione significativa del gruppo.
+
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di aggiungere o annullare la creazione di un nuovo gruppo.
+
+* *Aggiungi*
++
+Crea il nuovo gruppo.
+
+* *Annulla*
++
+Chiude la finestra di dialogo Aggiungi gruppo senza salvare le modifiche.
+
+

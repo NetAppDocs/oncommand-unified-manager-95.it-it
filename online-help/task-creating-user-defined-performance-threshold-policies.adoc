@@ -1,0 +1,92 @@
+---
+permalink: online-help/task-creating-user-defined-performance-threshold-policies.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Vengono creati criteri di soglia delle performance per gli oggetti storage in modo che le notifiche vengano inviate quando un contatore delle performance supera un valore specifico. La notifica dell"evento indica che il cluster sta riscontrando un problema di performance.' 
+---
+= Creazione di criteri di soglia delle performance definiti dall'utente
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vengono creati criteri di soglia delle performance per gli oggetti storage in modo che le notifiche vengano inviate quando un contatore delle performance supera un valore specifico. La notifica dell'evento indica che il cluster sta riscontrando un problema di performance.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore di OnCommand.
+
+
+
+== A proposito di questa attività
+
+È possibile creare criteri di soglia delle prestazioni immettendo i valori di soglia nella pagina Crea criterio di soglia. È possibile creare nuovi criteri definendo tutti i valori dei criteri in questa pagina oppure creare una copia di un criterio esistente e modificare i valori della copia (denominata _cloning_).
+
+I valori di soglia validi sono compresi tra 0.001 e 10,000,000 per i numeri, 0.001-100 per le percentuali e 0.001-200 per le percentuali di utilizzo della capacità di performance.
+
+[NOTE]
+====
+La release corrente fornisce soglie che inviano eventi quando un valore del contatore supera l'impostazione della soglia. Non è possibile impostare soglie che inviino eventi quando un valore del contatore scende al di sotto di un'impostazione di soglia.
+
+====
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, selezionare *Configurazione* > *soglie delle prestazioni*.
++
+Viene visualizzata la pagina Configuration/Performance Thresholds (soglie di configurazione/prestazioni).
+
+. Fare clic sul pulsante appropriato a seconda che si desideri creare un nuovo criterio o clonare un criterio simile e modificare la versione clonata.
++
+|===
+| Per... | Fare clic su... 
+
+
+ a| 
+Creare una nuova policy
+ a| 
+*Crea*
+
+
+
+ a| 
+Clonare un criterio esistente
+ a| 
+Selezionare un criterio esistente e fare clic su *Clone*
+
+|===
++
+Viene visualizzata la pagina Create Threshold Policy (Crea policy soglia) o Clone Threshold Policy (criterio soglia clone).
+
+. Definire il criterio di soglia specificando i valori di soglia del contatore delle prestazioni che si desidera impostare per oggetti di storage specifici:
++
+.. Selezionare il tipo di oggetto di storage e specificare un nome e una descrizione per il criterio.
+.. Selezionare il contatore delle prestazioni da tenere traccia e specificare i valori limite che definiscono gli eventi di avviso e critici.
++
+È necessario definire almeno un avviso o un limite critico. Non è necessario definire entrambi i tipi di limiti.
+
+.. Selezionare un contatore secondario delle prestazioni, se necessario, e specificare i valori limite per gli eventi critici e di avviso.
++
+L'inclusione di un contatore secondario richiede che entrambi i contatori superino i valori limite prima che la soglia venga violata e venga segnalato un evento. È possibile configurare solo determinati oggetti e contatori utilizzando un criterio di combinazione.
+
+.. Selezionare il periodo di tempo per il quale i valori limite devono essere violati per l'invio di un evento.
+
+
++
+Durante la clonazione di un criterio esistente, è necessario immettere un nuovo nome per il criterio.
+
+. Fare clic su *Save* (Salva) per salvare il criterio.
++
+Viene nuovamente visualizzata la pagina Configuration/Performance Thresholds (soglie di configurazione/prestazioni). Un messaggio di successo nella parte superiore della pagina conferma che il criterio di soglia è stato creato e fornisce un collegamento alla pagina di inventario per quel tipo di oggetto, in modo da poter applicare immediatamente il nuovo criterio agli oggetti di storage.
+
+
+
+
+
+== Al termine
+
+Se si desidera applicare il nuovo criterio di soglia agli oggetti di storage in questo momento, fare clic sul collegamento *Vai a Object_TYPE* per accedere alla pagina inventario.

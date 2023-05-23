@@ -1,0 +1,61 @@
+---
+permalink: online-help/task-disabling-unwanted-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Tutti gli eventi sono attivati per impostazione predefinita. È possibile disattivare gli eventi a livello globale per impedire la generazione di notifiche per eventi non importanti nel proprio ambiente. È possibile attivare gli eventi disattivati quando si desidera riprendere la ricezione delle notifiche. 
+---
+= Disattivazione o attivazione degli eventi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Tutti gli eventi sono attivati per impostazione predefinita. È possibile disattivare gli eventi a livello globale per impedire la generazione di notifiche per eventi non importanti nel proprio ambiente. È possibile attivare gli eventi disattivati quando si desidera riprendere la ricezione delle notifiche.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== A proposito di questa attività
+
+Quando si disattivano gli eventi, gli eventi precedentemente generati nel sistema vengono contrassegnati come obsoleti e gli avvisi configurati per tali eventi non vengono attivati. Quando si abilitano eventi disattivati, le notifiche per questi eventi vengono generate a partire dal ciclo di monitoraggio successivo.
+
+Quando si disattiva un evento per un oggetto (ad esempio, l' `vol offline` E successivamente si attiva l'evento, Unified Manager non genera nuovi eventi per gli oggetti che sono andati fuori linea quando l'evento si trovava nello stato disattivato. Unified Manager genera un nuovo evento solo quando si verifica una modifica nello stato dell'oggetto dopo la riattivazione dell'evento.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Configurazione* > *Gestisci eventi*.
+. Nella pagina *Configurazione/Gestione eventi*, disattivare o attivare gli eventi scegliendo una delle seguenti opzioni:
++
+|===
+| Se si desidera... | Quindi... 
+
+
+ a| 
+Disattivare gli eventi
+ a| 
+.. Fare clic su *Disable* (Disattiva).
+.. Nella finestra di dialogo Disable Events (Disattiva eventi), selezionare la severità dell'evento.
+.. Nella colonna corrispondente agli eventi, selezionare gli eventi che si desidera disattivare in base alla gravità dell'evento, quindi fare clic sulla freccia destra per spostarli nella colonna Disattiva eventi.
+.. Fare clic su *Save and Close* (Salva e chiudi).
+.. Verificare che gli eventi disattivati siano visualizzati nella vista elenco della pagina Configurazione/Gestione eventi.
+
+
+
+
+ a| 
+Attivare gli eventi
+ a| 
+.. Selezionare la casella di controllo relativa all'evento o agli eventi che si desidera attivare.
+.. Fare clic su *Enable* (attiva).
+
+
+|===
+

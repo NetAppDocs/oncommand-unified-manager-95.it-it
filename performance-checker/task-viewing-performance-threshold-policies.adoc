@@ -1,0 +1,32 @@
+---
+permalink: performance-checker/task-viewing-performance-threshold-policies.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile visualizzare tutti i criteri di soglia delle performance attualmente definiti dalla pagina Configuration/Performance Thresholds (Configurazione/soglie delle performance).' 
+---
+= Visualizzazione dei criteri di soglia delle performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile visualizzare tutti i criteri di soglia delle performance attualmente definiti dalla pagina Configuration/Performance Thresholds (Configurazione/soglie delle performance).
+
+
+
+== A proposito di questa attività
+
+L'elenco dei criteri di soglia è ordinato in ordine alfabetico in base al nome del criterio e include i criteri per tutti i tipi di oggetti di storage. È possibile fare clic sull'intestazione di una colonna per ordinare i criteri in base a tale colonna. Se stai cercando una policy specifica, utilizza il filtro e i meccanismi di ricerca per perfezionare l'elenco delle policy di soglia che appaiono nell'elenco di inventario.
+
+Per visualizzare i dettagli di configurazione del criterio, spostare il cursore del mouse sul nome del criterio e sul nome della condizione. Inoltre, è possibile utilizzare i pulsanti forniti per creare, clonare, modificare ed eliminare i criteri di soglia definiti dall'utente.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, selezionare *Configurazione* > *soglie delle prestazioni*.
++
+Viene visualizzata la pagina Configuration/Performance Thresholds (soglie di configurazione/prestazioni).
+
+

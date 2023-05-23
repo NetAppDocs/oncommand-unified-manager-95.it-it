@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-backup-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile visualizzare l"elenco dei backup dalla pagina di backup in Unified Manager. È possibile visualizzare il nome, le dimensioni e il tempo di creazione del backup elencati in questa pagina. È possibile modificare le impostazioni di backup del database dalla pagina Database Backup Settings (Impostazioni backup database).' 
+---
+= Descrizione delle finestre di backup e delle finestre di dialogo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile visualizzare l'elenco dei backup dalla pagina di backup in Unified Manager. È possibile visualizzare il nome, le dimensioni e il tempo di creazione del backup elencati in questa pagina. È possibile modificare le impostazioni di backup del database dalla pagina Database Backup Settings (Impostazioni backup database).

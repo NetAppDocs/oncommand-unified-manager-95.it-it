@@ -1,0 +1,94 @@
+---
+permalink: health-checker/reference-network-configuration-menu.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Il menu Configurazione di rete consente di gestire le impostazioni di rete. Utilizzare questo menu quando l"interfaccia utente di Unified Manager non è disponibile.' 
+---
+= Menu Network Configuration (Configurazione di rete)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il menu Configurazione di rete consente di gestire le impostazioni di rete. Utilizzare questo menu quando l'interfaccia utente di Unified Manager non è disponibile.
+
+[NOTE]
+====
+Questo menu non è disponibile se Unified Manager è installato su Red Hat Enterprise Linux, CentOS o Microsoft Windows.
+
+====
+Sono disponibili le seguenti opzioni di menu.
+
+* *Visualizza impostazioni indirizzo IP*
++
+Visualizza le impostazioni di rete correnti per l'appliance virtuale, inclusi indirizzo IP, rete, indirizzo di trasmissione, netmask, gateway, E server DNS.
+
+* *Modifica delle impostazioni dell'indirizzo IP*
++
+Consente di modificare le impostazioni di rete dell'appliance virtuale, inclusi l'indirizzo IP, la netmask, il gateway o i server DNS. Se si passa dalle impostazioni di rete DHCP alle reti statiche utilizzando la console di manutenzione, non è possibile modificare il nome host. Per apportare le modifiche, selezionare *Conferma modifiche*.
+
+* *Visualizza impostazioni di ricerca nome dominio*
++
+Visualizza l'elenco di ricerca dei nomi di dominio utilizzato per risolvere i nomi host.
+
+* *Modifica impostazioni di ricerca nome dominio*
++
+Consente di modificare i nomi di dominio di cui si desidera eseguire la ricerca durante la risoluzione dei nomi host. Per apportare le modifiche, selezionare *Conferma modifiche*.
+
+* *Visualizza percorsi statici*
++
+Visualizza i percorsi di rete statici correnti.
+
+* *Modifica percorsi statici*
++
+Consente di aggiungere o eliminare percorsi di rete statici. Per apportare le modifiche, selezionare *Conferma modifiche*.
+
++
+** *Aggiungi percorso*
++
+Consente di aggiungere un percorso statico.
+
+** *Elimina percorso*
++
+Consente di eliminare un percorso statico.
+
+** *Indietro*
++
+Consente di tornare al *Menu principale*.
+
+** *Esci*
++
+Consente di uscire dalla console di manutenzione.
+
+
+
+* *Disattiva interfaccia di rete*
++
+Disattiva tutte le interfacce di rete disponibili. Se è disponibile una sola interfaccia di rete, non è possibile disattivarla. Per apportare le modifiche, selezionare *Conferma modifiche*.
+
+* *Attiva interfaccia di rete*
++
+Abilita le interfacce di rete disponibili. Per apportare le modifiche, selezionare *Conferma modifiche*.
+
+* *Conferma modifiche*
++
+Applica le modifiche apportate alle impostazioni di rete dell'appliance virtuale. È necessario selezionare questa opzione per applicare le modifiche apportate, altrimenti le modifiche non si verificano.
+
+* *Ping di un host*
++
+Esegue il ping di un host di destinazione per confermare le modifiche dell'indirizzo IP o le configurazioni DNS.
+
+* *Ripristina impostazioni predefinite*
++
+Ripristina tutte le impostazioni predefinite. Per apportare le modifiche, selezionare *Conferma modifiche*.
+
+* *Indietro*
++
+Consente di tornare al *Menu principale*.
+
+* *Esci*
++
+Consente di uscire dalla console di manutenzione.
+
+

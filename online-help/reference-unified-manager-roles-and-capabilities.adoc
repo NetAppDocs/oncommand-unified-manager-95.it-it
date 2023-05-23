@@ -1,0 +1,227 @@
+---
+permalink: online-help/reference-unified-manager-roles-and-capabilities.html 
+sidebar: sidebar 
+keywords:  
+summary: In base al ruolo utente assegnato, è possibile determinare le operazioni che è possibile eseguire in Unified Manager. 
+---
+= Ruoli e funzionalità degli utenti di Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+In base al ruolo utente assegnato, è possibile determinare le operazioni che è possibile eseguire in Unified Manager.
+
+Nella tabella seguente sono riportate le funzioni che ciascun ruolo utente può eseguire:
+
+|===
+| Funzione | Operatore | Amministratore dello storage | Amministratore di OnCommand | Schema di integrazione | Schema del report 
+
+
+ a| 
+Visualizzare le informazioni sul sistema di storage
+ a| 
+•
+ a| 
+•
+ a| 
+•
+ a| 
+•
+ a| 
+•
+
+
+
+ a| 
+Visualizzare altri dati, ad esempio cronologie e trend di capacità
+ a| 
+•
+ a| 
+•
+ a| 
+•
+ a| 
+•
+ a| 
+•
+
+
+
+ a| 
+Visualizzare, assegnare e risolvere gli eventi
+ a| 
+•
+ a| 
+•
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Visualizzare gli oggetti del servizio di storage, ad esempio le associazioni SVM e i pool di risorse
+ a| 
+•
+ a| 
+•
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Visualizzare i criteri di soglia
+ a| 
+•
+ a| 
+•
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Gestire gli oggetti del servizio di storage, come associazioni SVM e pool di risorse
+ a| 
+ a| 
+•
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Definire gli avvisi
+ a| 
+ a| 
+•
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Gestire le opzioni di gestione dello storage
+ a| 
+ a| 
+•
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Gestire le policy di gestione dello storage
+ a| 
+ a| 
+•
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Gestire gli utenti
+ a| 
+ a| 
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Gestire le opzioni amministrative
+ a| 
+ a| 
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Definire i criteri di soglia
+ a| 
+ a| 
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Gestire l'accesso al database
+ a| 
+ a| 
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Gestire l'integrazione con WFA e fornire l'accesso alle viste del database
+ a| 
+ a| 
+ a| 
+ a| 
+•
+ a| 
+
+
+
+ a| 
+Fornire l'accesso in sola lettura ai report e ad altre viste del database
+ a| 
+ a| 
+ a| 
+ a| 
+ a| 
+•
+
+
+
+ a| 
+Pianificare e salvare i report
+ a| 
+•
+ a| 
+•
+ a| 
+•
+ a| 
+ a| 
+
+
+
+ a| 
+Importare ed eliminare i report importati
+ a| 
+ a| 
+ a| 
+•
+ a| 
+ a| 
+
+|===

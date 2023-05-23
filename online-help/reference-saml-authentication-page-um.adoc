@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-saml-authentication-page-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare la pagina SAML Authentication per configurare Unified Manager in modo che autentichi gli utenti remoti utilizzando SAML tramite un provider di identità sicuro prima che possano accedere all"interfaccia utente Web di Unified Manager.' 
+---
+= Pagina SAML Authentication
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la pagina SAML Authentication per configurare Unified Manager in modo che autentichi gli utenti remoti utilizzando SAML tramite un provider di identità sicuro (IdP) prima che possano accedere all'interfaccia utente Web di Unified Manager.
+
+* Per creare o modificare la configurazione OnCommand, è necessario disporre del ruolo di amministratore SAML.
+* È necessario aver configurato l'autenticazione remota.
+* È necessario aver configurato almeno un utente remoto o un gruppo remoto.
+
+
+Dopo aver configurato l'autenticazione remota e gli utenti remoti, selezionare la casella di controllo Enable SAML Authentication (attiva autenticazione SAML) per abilitare l'autenticazione utilizzando un provider di identità sicuro.
+
+* *IDP URI*
++
+L'URI per accedere all'IdP dal server Unified Manager. Di seguito sono elencati gli URI di esempio.
+
++
+URI di esempio ADFS:
+
++
+`+https://win2016-dc.ntap2016.local/federationmetadata/2007-06/federationmetadata.xml+`
+
++
+URI di esempio Shibboleth:
+
++
+`+https://centos7.ntap2016.local/idp/shibboleth+`
+
+* *Metadati IdP*
++
+I metadati IdP in formato XML.
+
++
+Se l'URL IdP è accessibile dal server di Unified Manager, fare clic sul pulsante *Fetch IdP Metadata* (Scarica metadati IdP) per compilare questo campo.
+
+* *Sistema host (FQDN)*
++
+L'FQDN del sistema host di Unified Manager come definito durante l'installazione. Se necessario, è possibile modificare questo valore.
+
+* *URI host*
++
+L'URI per accedere al sistema host di Unified Manager da IdP.
+
+* *Metadati host*
++
+I metadati del sistema host in formato XML.
+
+

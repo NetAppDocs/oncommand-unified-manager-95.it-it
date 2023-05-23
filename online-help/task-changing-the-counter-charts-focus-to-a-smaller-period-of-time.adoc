@@ -1,0 +1,39 @@
+---
+permalink: online-help/task-changing-the-counter-charts-focus-to-a-smaller-period-of-time.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare il mouse per ridurre l"intervallo di tempo per concentrarsi su un periodo di tempo specifico nel riquadro Counter Chart (grafico contatore) o nella finestra Counter Chart Zoom View (Vista zoom grafici contatore). In questo modo è possibile visualizzare in modo più granulare e microscopico qualsiasi parte della tempistica dei dati, degli eventi e delle soglie relativi alle performance.' 
+---
+= Modifica della messa a fuoco dei Counter Chart in un periodo di tempo più breve
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare il mouse per ridurre l'intervallo di tempo per concentrarsi su un periodo di tempo specifico nel riquadro Counter Chart (grafico contatore) o nella finestra Counter Chart Zoom View (Vista zoom grafici contatore). In questo modo è possibile visualizzare in modo più granulare e microscopico qualsiasi parte della tempistica dei dati, degli eventi e delle soglie relativi alle performance.
+
+
+
+== Prima di iniziare
+
+Il cursore deve essere stato modificato in una lente di ingrandimento per indicare che questa funzionalità è attiva.
+
+[NOTE]
+====
+Quando si utilizza questa funzione, che modifica la timeline per visualizzare i valori corrispondenti alla visualizzazione più granulare, l'intervallo di tempo e data sul selettore *intervallo di tempo* non cambia dai valori originali del grafico.
+
+====
+
+
+== Fasi
+
+. Per ingrandire un periodo di tempo specifico, fare clic utilizzando la lente di ingrandimento e trascinare il mouse per evidenziare l'area che si desidera visualizzare nei dettagli.
++
+I valori del contatore per il periodo di tempo selezionato riempiono il grafico del contatore.
+
+. Per tornare al periodo di tempo originale impostato nel selettore *Time Range* (intervallo di tempo), fare clic sul pulsante *Reset Chart Zoom* (Ripristina zoom grafico).
++
+Il grafico del contatore viene visualizzato nello stato originale.
+
+

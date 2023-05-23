@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-events-impacting-availability.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile personalizzare il report Eventi per visualizzare gli eventi classificati in base alla maggior parte degli incidenti e assegnati all"amministratore. È possibile filtrare il report in base al livello di impatto e al nome dell"amministratore.' 
+---
+= Personalizzazione del report Eventi per visualizzare gli eventi che influiscono sulla disponibilità
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report Eventi per visualizzare gli eventi classificati in base alla maggior parte degli incidenti e assegnati all'amministratore. È possibile filtrare il report in base al livello di impatto e al nome dell'amministratore.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Per filtrare gli eventi di disponibilità, fare clic nella colonna *Impact Area* e aprire la finestra di dialogo *Filter* facendo clic su image:../media/click-to-filter.gif[""] icona.
+. Dall'elenco a discesa *condizione*, selezionare *uguale a*.
+. Fare clic su *Seleziona valori* e selezionare *incidente*.
+. Fare clic su *OK*.
+

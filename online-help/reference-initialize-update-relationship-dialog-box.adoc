@@ -1,0 +1,85 @@
+---
+permalink: online-help/reference-initialize-update-relationship-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La finestra di dialogo Initialize/Update (Inizializza/Aggiorna) consente di eseguire un primo trasferimento baseline su una nuova relazione di protezione o di aggiornare una relazione se è già inizializzata e si desidera eseguire un aggiornamento incrementale manuale, non pianificato.' 
+---
+= Finestra di dialogo Initialize/Update
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La finestra di dialogo Initialize/Update (Inizializza/Aggiorna) consente di eseguire un primo trasferimento baseline su una nuova relazione di protezione o di aggiornare una relazione se è già inizializzata e si desidera eseguire un aggiornamento incrementale manuale, non pianificato.
+
+
+
+== Scheda Transfer Options (Opzioni di trasferimento)
+
+La scheda Transfer Options (Opzioni di trasferimento) consente di modificare la priorità di inizializzazione di un trasferimento e la larghezza di banda utilizzata durante i trasferimenti.
+
+* *Priorità trasferimento*
++
+La priorità di esecuzione del trasferimento. È possibile selezionare normale o basso. Relazioni con policy che specificano una normale priorità di trasferimento eseguite prima di quelle che specificano una bassa priorità di trasferimento. Normal (normale) è selezionato per impostazione predefinita.
+
+* *Velocità di trasferimento massima*
++
+Specifica la velocità massima con cui i dati vengono trasferiti tra cluster sulla rete. Se si sceglie di non utilizzare una velocità di trasferimento massima, il trasferimento di riferimento tra le relazioni è illimitato. Tuttavia, se si esegue ONTAP 8.2 e il cluster primario e secondario sono identici, questa impostazione viene ignorata. Se si seleziona più di una relazione con diverse velocità di trasferimento massime, è possibile specificare una delle seguenti impostazioni relative alla velocità di trasferimento massima:
+
++
+** Utilizzare i valori specificati durante la configurazione o la modifica delle singole relazioni
++
+Quando questa opzione è selezionata, le operazioni di inizializzazione e aggiornamento utilizzano la velocità di trasferimento massima specificata al momento della creazione o della modifica di ciascuna relazione. Questo campo è disponibile solo quando vengono inizializzate o aggiornate più relazioni con velocità di trasferimento diverse.
+
+** Senza limiti
++
+Indica che non esiste alcun limite di larghezza di banda per i trasferimenti tra le relazioni. Questo campo è disponibile solo quando vengono inizializzate o aggiornate più relazioni con velocità di trasferimento diverse.
+
+** Limitare la larghezza di banda a.
++
+Se selezionata, la larghezza di banda della rete è limitata al valore specificato. È possibile immettere un valore numerico e selezionare kilobyte per second (kbps), Megabyte per second (Mbps), Gigabyte per second (Gbps) o Terabyte per second (Tbps). La velocità di trasferimento massima specificata deve essere superiore a 1 kbps e inferiore a 4 Tbps.
+
+
+
+
+
+
+
+== Scheda copie Snapshot di origine
+
+La scheda Source Snapshot Copies (copie Snapshot di origine) visualizza le seguenti informazioni sulla copia Snapshot di origine utilizzata per il trasferimento di riferimento:
+
+* *Volume di origine*
++
+Visualizza i nomi dei volumi di origine corrispondenti.
+
+* *Volume di destinazione*
++
+Visualizza i nomi dei volumi di destinazione selezionati.
+
+* *Tipo di origine*
++
+Visualizza il tipo di volume. Il tipo può essere lettura/scrittura o protezione dati.
+
+* *Snapshot Copy*
++
+Visualizza la copia Snapshot utilizzata per il trasferimento dei dati. Facendo clic sul valore della copia Snapshot viene visualizzata la finestra di dialogo Select Source Snapshot Copy (Seleziona copia Snapshot di origine), in cui è possibile selezionare una copia Snapshot specifica per il trasferimento, a seconda del tipo di relazione di protezione in uso e dell'operazione che si sta eseguendo. L'opzione per specificare una copia Snapshot diversa non è disponibile per le origini del tipo di protezione dei dati.
+
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti operazioni:
+
+* *Annulla*
++
+Elimina le selezioni e chiude la finestra di dialogo Inizializza/Aggiorna.
+
+* *Invia*
++
+Salva le selezioni e avvia il processo di inizializzazione o aggiornamento.
+
+

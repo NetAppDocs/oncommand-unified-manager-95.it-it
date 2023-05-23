@@ -1,0 +1,50 @@
+---
+permalink: health-checker/task-creating-snapmirror-and-snapvault-schedules.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile creare pianificazioni SnapMirror e SnapVault di base o avanzate per consentire trasferimenti automatici della protezione dei dati su un volume di origine o primario in modo che i trasferimenti vengano effettuati con maggiore frequenza o meno frequenza, a seconda della frequenza con cui i dati cambiano sui volumi. 
+---
+= Creazione di pianificazioni SnapMirror e SnapVault
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile creare pianificazioni SnapMirror e SnapVault di base o avanzate per consentire trasferimenti automatici della protezione dei dati su un volume di origine o primario in modo che i trasferimenti vengano effettuati con maggiore frequenza o meno frequenza, a seconda della frequenza con cui i dati cambiano sui volumi.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+* È necessario aver già completato l'area Destination Information (informazioni destinazione) nella finestra di dialogo Configure Protection (Configura protezione).
+* Per eseguire questa attività, è necessario aver impostato l'automazione del flusso di lavoro.
+
+
+
+
+== Fasi
+
+. Dalla scheda *SnapMirror* o *SnapVault* della finestra di dialogo *Configura protezione*, fare clic sul collegamento *Crea pianificazione* nell'area *Impostazioni relazione*.
++
+Viene visualizzata la finestra di dialogo Create Schedule (Crea pianificazione).
+
+. Nel campo *Nome pianificazione*, digitare il nome che si desidera assegnare alla pianificazione.
+. Selezionare una delle seguenti opzioni:
++
+** *Di base*
++
+Selezionare questa opzione se si desidera creare una pianificazione di base in stile intervallo.
+
+** *Avanzate*
++
+Selezionare se si desidera creare un programma in stile cron.
+
+
+
+. Fare clic su *Create* (Crea).
++
+La nuova pianificazione viene visualizzata nell'elenco a discesa Pianificazione SnapMirror o Pianificazione SnapVault.
+
+

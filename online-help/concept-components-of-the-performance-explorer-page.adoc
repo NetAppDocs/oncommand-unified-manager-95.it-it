@@ -1,0 +1,72 @@
+---
+permalink: online-help/concept-components-of-the-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Performance Explorer (Esplora prestazioni) consente di confrontare le prestazioni di oggetti simili in un cluster, ad esempio tutti i volumi in un cluster. Ciò è vantaggioso quando si troubleshooting degli eventi relativi alle performance e si ottimizza la performance degli oggetti. È inoltre possibile confrontare gli oggetti con l"oggetto root, che rappresenta la base rispetto alla quale vengono effettuati altri confronti tra gli oggetti.' 
+---
+= Componenti della pagina Performance Explorer
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Performance Explorer (Esplora prestazioni) consente di confrontare le prestazioni di oggetti simili in un cluster, ad esempio tutti i volumi in un cluster. Ciò è vantaggioso quando si troubleshooting degli eventi relativi alle performance e si ottimizza la performance degli oggetti. È inoltre possibile confrontare gli oggetti con l'oggetto root, che rappresenta la base rispetto alla quale vengono effettuati altri confronti tra gli oggetti.
+
+È possibile fare clic sul pulsante *Preferiti* (image:../media/favorites-inactive.png[""]) per aggiungere questo oggetto all'elenco degli oggetti di storage preferiti. Un pulsante blu (image:../media/favorites-active.png[""]) indica che questo oggetto è già un preferito.
+
+È possibile fare clic sul pulsante *passa alla visualizzazione salute* per visualizzare la pagina dei dettagli sullo stato di salute dell'oggetto. In alcuni casi, è possibile ottenere importanti informazioni sulle impostazioni di configurazione dello storage per questo oggetto che potrebbero essere utili per la risoluzione di un problema.
+
+La pagina Performance Explorer (Esplora prestazioni) visualizza un elenco di oggetti cluster e dei relativi dati sulle prestazioni. In questa pagina vengono visualizzati tutti gli oggetti cluster dello stesso tipo (ad esempio, i volumi e le relative statistiche sulle prestazioni specifiche dell'oggetto) in formato tabulare. Questa vista offre una panoramica efficiente delle performance degli oggetti del cluster.
+
+[NOTE]
+====
+Se "`N/A`" viene visualizzato in una cella della tabella, significa che un valore per quel contatore non è disponibile perché al momento non c'è alcun i/o su quell'oggetto.
+
+====
+La pagina Performance Explorer contiene i seguenti componenti:
+
+* *Intervallo di tempo*
++
+Consente di selezionare un intervallo di tempo per i dati dell'oggetto.
+
++
+È possibile scegliere un intervallo predefinito o specificare un intervallo di tempo personalizzato.
+
+* *Visualizza e confronta*
++
+Consente di selezionare il tipo di oggetto correlato da visualizzare nella griglia.
+
++
+Le opzioni disponibili dipendono dal tipo di oggetto root e dai dati disponibili. Fare clic sull'elenco a discesa Visualizza e confronta per selezionare un tipo di oggetto. Il tipo di oggetto selezionato viene visualizzato nell'elenco.
+
+* *Filtraggio*
++
+Consente di ridurre la quantità di dati ricevuti in base alle preferenze.
+
++
+È possibile creare filtri applicabili ai dati dell'oggetto, ad esempio IOPS superiori a 4. È possibile aggiungere fino a quattro filtri simultanei.
+
+* *Confronto*
++
+Visualizza un elenco degli oggetti selezionati per il confronto con l'oggetto root.
+
++
+I dati degli oggetti nel pannello di confronto vengono visualizzati nei Counter Chart.
+
+* *Visualizza statistiche in*
++
+Per volumi e LUN, consente di selezionare se visualizzare le statistiche dopo ogni ciclo di raccolta (impostazione predefinita: 5 minuti) o se visualizzare le statistiche come media oraria. Questa funzionalità consente di visualizzare il grafico della latenza a supporto del programma "`Performance Guarantee`" di NetApp.
+
+* *Counter Chart*
++
+Visualizza i dati grafici per ciascuna categoria di prestazioni dell'oggetto.
+
++
+In genere, per impostazione predefinita vengono visualizzati solo tre o quattro grafici. Il componente Scegli grafici consente di visualizzare grafici aggiuntivi o di nascondere grafici specifici. Puoi anche scegliere di mostrare o nascondere la cronologia degli eventi.
+
+* *Cronologia eventi*
++
+Visualizza gli eventi relativi alle performance e allo stato di salute che si verificano nella sequenza temporale selezionata nel componente intervallo di tempo.
+
+

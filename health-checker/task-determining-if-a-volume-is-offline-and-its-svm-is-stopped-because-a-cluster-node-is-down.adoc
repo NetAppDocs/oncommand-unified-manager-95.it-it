@@ -1,0 +1,61 @@
+---
+permalink: health-checker/task-determining-if-a-volume-is-offline-and-its-svm-is-stopped-because-a-cluster-node-is-down.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare l"interfaccia utente Web di Unified Manager per confermare o eliminare la possibilità che un volume non sia in linea perché la macchina virtuale dello storage host (SVM) viene arrestata a causa del nodo che ospita il volume root di tale SVM.' 
+---
+= Determinare se un volume non è in linea e se il relativo SVM viene arrestato perché un nodo non è attivo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare l'interfaccia utente Web di Unified Manager per confermare o eliminare la possibilità che un volume non sia in linea perché la sua SVM (host Storage Virtual Machine) viene arrestata a causa del nodo che ospita il volume root di tale SVM.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+
+
+
+== A proposito di questa attività
+
+Per determinare se la condizione di volume offline ha causato l'arresto della SVM host perché il nodo che ospita il volume root di tale SVM non è attivo, eseguire le seguenti operazioni:
+
+
+
+== Fasi
+
+. Individuare e fare clic sul collegamento ipertestuale visualizzato sotto SVM nel riquadro *Related Devices* (dispositivi correlati) della pagina dei dettagli *Health/Volume* del volume offline.
+. Individuare e fare clic sul collegamento ipertestuale visualizzato sotto SVM nel riquadro *Related Devices* (dispositivi correlati) della pagina dei dettagli *Health/Volume* del volume offline.
++
+La pagina Health/Storage Virtual Machine Details (Dettagli macchina virtuale di stato/storage) visualizza lo stato "`running`" (in esecuzione) o "`sTop`" (superato) della SVM di hosting. Se lo stato SVM è in esecuzione, la condizione offline del volume non è causata dal nodo che ospita il volume root di tale SVM.
+
+. Se lo stato SVM viene arrestato, fare clic su *View SVM* (Visualizza SVM) per identificare ulteriormente la causa dell'arresto della SVM in hosting.
+. Nell'intestazione della colonna *Health/Storage Virtual Machines* Inventory pageSVM, fare clic sul simbolo del filtro image:../media/filtericon-um60.png["Icona per il filtro di colonna"] Quindi digitare il nome della SVM interrotta.
++
+Le informazioni relative a tale SVM vengono visualizzate in una tabella.
+
+. Nella pagina di inventario**Health/Storage Virtual Machines**, fare clic su image:../media/gridviewicon.gif["Icona per la vista a griglia"] Quindi selezionare l'opzione *Volume root*.
++
+La colonna Volume root viene aggiunta all'inventario SVM e visualizza il nome del volume root della SVM interrotta.
+
+. Nella colonna Volume root, fare clic sul nome del volume root per visualizzare la pagina dei dettagli *Health/Storage Virtual Machine* per quel volume.
++
+Se lo stato del volume root SVM è (Online), la condizione offline del volume originale non viene causata perché il nodo che ospita il volume root di tale SVM non è attivo.
+
+. Se lo stato del volume root SVM è (Offline), individuare e fare clic sul collegamento ipertestuale visualizzato sotto aggregato nel riquadro *Related Devices* (dispositivi correlati) della pagina dei dettagli *Health/Volume* del volume root SVM.
+. Individuare e fare clic sul collegamento ipertestuale visualizzato sotto nodo nel riquadro *dispositivi correlati* della pagina dei dettagli *Salute/aggregato* dell'aggregato.
++
+La scheda Nodes (nodi) nella pagina Health/Cluster Details (Dettagli integrità/cluster) visualizza lo stato della coppia di nodi ha a cui appartiene il nodo di hosting del volume root SVM. Lo stato del nodo viene indicato nel display.
+
+
+
+
+
+== Al termine
+
+Dopo aver confermato che la condizione di offline del volume è causata dalla condizione di offline SVM host del volume, causata dal nodo che ospita il volume root di tale SVM, contattare l'amministratore o l'operatore appropriato per riavviare manualmente il nodo inattivo.

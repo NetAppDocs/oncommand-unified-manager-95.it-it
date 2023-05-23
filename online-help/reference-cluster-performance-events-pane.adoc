@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-cluster-performance-events-pane.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Il pannello Cluster performance events (Eventi delle performance del cluster) visualizza le statistiche delle performance e tutti gli eventi attivi per il cluster. Ciò risulta particolarmente utile quando si monitorano i cluster e tutte le performance e gli eventi correlati al cluster.' 
+---
+= Pannello degli eventi relativi alle performance del cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il pannello Cluster performance events (Eventi delle performance del cluster) visualizza le statistiche delle performance e tutti gli eventi attivi per il cluster. Ciò risulta particolarmente utile quando si monitorano i cluster e tutte le performance e gli eventi correlati al cluster.
+
+
+
+== Tutti gli eventi in questo pannello del cluster
+
+Il riquadro tutti gli eventi di questo cluster visualizza tutti gli eventi attivi relativi alle prestazioni del cluster per le 72 ore precedenti. Il totale degli eventi attivi viene visualizzato all'estrema sinistra; questo numero rappresenta il totale di tutti gli eventi nuovi e riconosciuti per tutti gli oggetti di storage in questo cluster. È possibile fare clic sul collegamento Total Active Events (Eventi attivi totali) per accedere alla pagina Events Inventory (inventario eventi), che viene filtrata per visualizzare questi eventi.
+
+Il grafico a barre Total Active Events (Eventi attivi totali) del cluster visualizza il numero totale di eventi critici e di avviso attivi:
+
+* Latenza (totale per nodi, aggregati, SVM, volumi, LUN, e spazi dei nomi)
+* IOPS (totale per cluster, nodi, aggregati, SVM, volumi, LUN e spazi dei nomi)
+* Mbps (totale per cluster, nodi, aggregati, SVM, volumi, LUN, namespace, porte e LIFF)
+* Capacità di performance utilizzata (totale per nodi e aggregati)
+* Utilizzo (totale per nodi, aggregati e porte)
+* Altro (rapporto di perdita della cache per i volumi)
+
+
+L'elenco contiene eventi attivi relativi alle performance attivati da criteri di soglia definiti dall'utente, criteri di soglia definiti dal sistema e soglie dinamiche.
+
+I dati del grafico (barre dei contatori verticali) vengono visualizzati in rosso (image:../media/treemapred-png.gif["Icona di TreeMap – colore rosso"]) per gli eventi critici e giallo (image:../media/treemapstatus-warning-png.gif["Icona di TreeMap – Stato avviso"]) per gli eventi di avviso. Posizionare il cursore su ciascuna barra verticale del contatore per visualizzare il tipo e il numero di eventi effettivi. È possibile fare clic su *Refresh* (Aggiorna) per aggiornare i dati del pannello del contatore.
+
+È possibile visualizzare o nascondere gli eventi critici e di avviso nel grafico delle prestazioni degli eventi attivi totali facendo clic sulle icone *critico* e *Avviso* nella legenda. Se si nascondono determinati tipi di eventi, le icone della legenda vengono visualizzate in grigio.
+
+
+
+== Pannelli dei contatori
+
+I pannelli dei contatori visualizzano gli eventi relativi alle prestazioni e all'attività del cluster per le 72 ore precedenti e includono i seguenti contatori:
+
+* *Pannello contatore IOPS*
++
+IOPS indica la velocità operativa del cluster in numero di operazioni di input/output al secondo. Questo pannello del contatore fornisce una panoramica di alto livello dello stato degli IOPS del cluster per il periodo di 72 ore precedente. È possibile posizionare il cursore sulla linea di trend del grafico per visualizzare il valore IOPS per un tempo specifico.
+
+* *Pannello contatore Mbps*
++
+Mbps indica la quantità di dati trasferiti da e verso il cluster in megabyte al secondo. Questo pannello del contatore fornisce una panoramica di alto livello dello stato di Mbps del cluster per il periodo di 72 ore precedente. È possibile posizionare il cursore sulla linea di trend del grafico per visualizzare il valore Mbps per un determinato periodo di tempo.
+
+
+
+Il numero in alto a destra del grafico nella barra grigia è il valore medio delle ultime 72 ore. I numeri visualizzati nella parte inferiore e superiore del grafico a linee di trend sono i valori minimi e massimi per le ultime 72 ore. La barra grigia sotto il grafico contiene il numero di eventi attivi (nuovi e riconosciuti) e obsoleti degli ultimi 72 ore.
+
+I pannelli dei contatori contengono due tipi di eventi:
+
+* *Attivo*
++
+Indica che l'evento di performance è attualmente attivo (nuovo o confermato). Il problema che causa l'evento non è stato risolto o non è stato risolto. Il contatore delle performance per l'oggetto storage rimane al di sopra della soglia di performance.
+
+* *Obsoleto*
++
+Indica che l'evento non è più attivo. Il problema che ha causato l'evento è stato risolto o risolto. Il contatore delle performance per l'oggetto storage non è più al di sopra della soglia di performance.
+
+
+
+Per *Eventi attivi*, se è presente un evento, è possibile posizionare il cursore sull'icona dell'evento e fare clic sul numero dell'evento per accedere alla pagina Dettagli evento appropriata. Se sono presenti più eventi, è possibile fare clic su *View All Events* (Visualizza tutti gli eventi) per visualizzare la pagina Events Inventory (inventario eventi), che viene filtrata per visualizzare tutti gli eventi per il tipo di contatore a oggetti selezionato.

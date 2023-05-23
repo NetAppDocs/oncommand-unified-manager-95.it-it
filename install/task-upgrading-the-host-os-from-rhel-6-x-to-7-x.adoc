@@ -1,0 +1,68 @@
+---
+permalink: install/task-upgrading-the-host-os-from-rhel-6-x-to-7-x.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Se in precedenza è stato installato Unified Manager su un sistema Red Hat Enterprise Linux 6.x e ora è necessario eseguire l"aggiornamento a Red Hat Enterprise Linux 7.x, seguire una delle procedure elencate in questo argomento. In entrambi i casi, è necessario creare un backup di Unified Manager sul sistema Red Hat Enterprise Linux 6.x, quindi ripristinare il backup su un sistema Red Hat Enterprise Linux 7.x.' 
+---
+= Aggiornamento del sistema operativo host da Red Hat Enterprise Linux 6.x a 7.x.
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se in precedenza è stato installato Unified Manager su un sistema Red Hat Enterprise Linux 6.x e ora è necessario eseguire l'aggiornamento a Red Hat Enterprise Linux 7.x, seguire una delle procedure elencate in questo argomento. In entrambi i casi, è necessario creare un backup di Unified Manager sul sistema Red Hat Enterprise Linux 6.x, quindi ripristinare il backup su un sistema Red Hat Enterprise Linux 7.x.
+
+
+
+== A proposito di questa attività
+
+La differenza tra le due opzioni elencate di seguito è che in un caso si esegue il ripristino di Unified Manager su un nuovo server RHEL 7.x e nell'altro caso si esegue l'operazione di ripristino sullo stesso server.
+
+Poiché questa attività richiede la creazione di un backup di Unified Manager sul sistema Red Hat Enterprise Linux 6.x, è necessario creare il backup solo quando si è pronti a completare l'intero processo di aggiornamento in modo che Unified Manager non sia in linea per il periodo di tempo più breve. Le lacune nei dati raccolti verranno visualizzate nell'interfaccia utente di Unified Manager per il periodo di tempo durante il quale il sistema Red Hat Enterprise Linux 6.x viene spento e prima dell'avvio del nuovo Red Hat Enterprise Linux 7.x.
+
+Consultare la _Guida in linea di Unified Manager_ per istruzioni dettagliate sui processi di backup e ripristino.
+
+*Aggiornamento del sistema operativo host mediante un nuovo server*
+
+Seguire questa procedura se si dispone di un sistema libero su cui è possibile installare il software RHEL 7.x in modo da poter eseguire il ripristino di Unified Manager su quel sistema mentre il sistema RHEL 6.x è ancora disponibile.
+
+. Installa e configura un nuovo server con il software Red Hat Enterprise Linux 7.x.
++
+xref:reference-red-hat-and-centos-software-and-installation-requirements.adoc[Requisiti di installazione e software Red Hat]
+
+. Sul sistema Red Hat Enterprise Linux 7.x, installate la stessa versione del software Unified Manager presente sul sistema Red Hat Enterprise Linux 6.x.
++
+xref:concept-installing-unified-manager-on-rhel-or-centos.adoc[Installazione di Unified Manager su Red Hat Enterprise Linux]
+
++
+Non avviare l'interfaccia utente né configurare cluster, utenti o impostazioni di autenticazione al termine dell'installazione. Il file di backup inserisce queste informazioni durante il processo di ripristino.
+
+. Sul sistema Red Hat Enterprise Linux 6.x, dal menu Administration (Amministrazione) dell'interfaccia utente Web, creare un backup di Unified Manager e quindi copiare il file di backup in una posizione esterna.
+. Sul sistema Red Hat Enterprise Linux 6.x, arrestare Unified Manager.
+. Sul sistema Red Hat Enterprise Linux 7.x, copiare il file di backup dalla posizione esterna a. `/data/ocum-backup/`, Quindi immettere il seguente comando per ripristinare il database di Unified Manager dal file di backup:``um backup restore -f /opt/netapp/data/ocum-backup/<backup_file_name>``
+. Inserire l'indirizzo IP o l'URL in un browser Web supportato per avviare l'interfaccia utente Web di Unified Manager, quindi accedere al sistema.
+
+
+Una volta verificato il corretto funzionamento del sistema, è possibile rimuovere Unified Manager dal sistema Red Hat Enterprise Linux 6.x.
+
+*Aggiornamento del sistema operativo host sullo stesso server*
+
+Se non si dispone di un sistema libero su cui è possibile installare il software RHEL 7.x.
+
+. Dal menu Administration (Amministrazione) dell'interfaccia utente Web, creare un backup di Unified Manager, quindi copiare il file di backup in una posizione esterna.
+. Rimuovere l'immagine di Red Hat Enterprise Linux 6.x dal sistema e pulire completamente il sistema.
+. Installare e configurare il software Red Hat Enterprise Linux 7.x sullo stesso sistema.
++
+xref:reference-red-hat-and-centos-software-and-installation-requirements.adoc[Requisiti di installazione e software Red Hat]
+
+. Sul sistema Red Hat Enterprise Linux 7.x, installate la stessa versione del software Unified Manager del sistema Red Hat Enterprise Linux 6.x.
++
+xref:concept-installing-unified-manager-on-rhel-or-centos.adoc[Installazione di Unified Manager su Red Hat Enterprise Linux]
+
++
+Non avviare l'interfaccia utente né configurare cluster, utenti o impostazioni di autenticazione al termine dell'installazione. Il file di backup inserisce queste informazioni durante il processo di ripristino.
+
+. Copiare il file di backup dalla posizione esterna a. `/data/ocum-backup/`, Quindi immettere il seguente comando per ripristinare il database di Unified Manager dal file di backup:``um backup restore -f /opt/netapp/data/ocum-backup/<backup_file_name>``
+. Inserire l'indirizzo IP o l'URL in un browser Web supportato per avviare l'interfaccia utente Web di Unified Manager, quindi accedere al sistema.
+

@@ -1,0 +1,46 @@
+---
+permalink: online-help/reference-storage-pool-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: La finestra di dialogo Storage Pool consente di visualizzare i dettagli della cache dedicata degli SSD, nota anche come pool di storage. È possibile monitorare i pool di storage e visualizzare dettagli quali lo stato del pool di storage, la cache totale e disponibile e le allocazioni utilizzate e disponibili nel pool di storage. 
+---
+= Finestra di dialogo Storage Pool
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La finestra di dialogo Storage Pool consente di visualizzare i dettagli della cache dedicata degli SSD, nota anche come _pool di storage_. È possibile monitorare i pool di storage e visualizzare dettagli quali lo stato del pool di storage, la cache totale e disponibile e le allocazioni utilizzate e disponibili nel pool di storage.
+
+È possibile visualizzare i seguenti dettagli del pool di storage:
+
+* *Stato*
++
+Visualizza lo stato del pool di storage, che può essere integro o non funzionante.
+
+* *Allocazioni totali*
++
+Visualizza le unità di allocazione totali e le dimensioni del pool di storage.
+
+* *Dimensione unità di allocazione*
++
+Visualizza la quantità minima di spazio nel pool di storage che è possibile allocare a un aggregato.
+
+* *Dischi*
++
+Visualizza il numero di dischi utilizzati per creare il pool di storage. Se il numero di dischi nella colonna del pool di storage e il numero di dischi visualizzati nella scheda Disk Information (informazioni disco) per il pool di storage non corrispondono, significa che uno o più dischi sono rotti e che il pool di storage non è integro.
+
+* *Allocazioni della cache*
++
+** Allocazioni utilizzate
++
+Visualizza il numero e la dimensione delle unità di allocazione utilizzate dagli aggregati. È possibile fare clic sul nome dell'aggregato per visualizzare i dettagli dell'aggregato.
+
+** Allocazioni disponibili
++
+Visualizza il numero e le dimensioni delle unità di allocazione disponibili per i nodi. È possibile fare clic sul nome del nodo per visualizzare i dettagli dell'aggregato.
+
+
+
+

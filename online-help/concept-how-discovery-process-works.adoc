@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-how-discovery-process-works.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Dopo aver aggiunto il cluster a Unified Manager, il server rileva gli oggetti del cluster e li aggiunge al database. La comprensione del funzionamento del processo di rilevamento consente di gestire i cluster dell"organizzazione e i relativi oggetti.' 
+---
+= Come funziona il processo di rilevamento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dopo aver aggiunto il cluster a Unified Manager, il server rileva gli oggetti del cluster e li aggiunge al database. La comprensione del funzionamento del processo di rilevamento consente di gestire i cluster dell'organizzazione e i relativi oggetti.
+
+L'intervallo di monitoraggio predefinito è di 15 minuti: Se si aggiunge un cluster al server Unified Manager, sono necessari 15 minuti per visualizzare i dettagli del cluster nell'interfaccia utente di Unified Manager.
+
+La seguente immagine illustra il processo di rilevamento in Gestione unificata di OnCommand:
+
+image::../media/discovery-process-oc-6-0.gif[Come funziona il processo di rilevamento]

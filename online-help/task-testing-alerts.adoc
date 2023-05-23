@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-testing-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile verificare che un avviso sia stato configurato correttamente. Quando viene attivato un evento, viene generato un avviso e inviato un messaggio di posta elettronica ai destinatari configurati. È possibile verificare se la notifica viene inviata e se lo script viene eseguito utilizzando l"avviso di test.' 
+---
+= Test degli avvisi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile verificare che un avviso sia stato configurato correttamente. Quando viene attivato un evento, viene generato un avviso e inviato un messaggio di posta elettronica ai destinatari configurati. È possibile verificare se la notifica viene inviata e se lo script viene eseguito utilizzando l'avviso di test.
+
+
+
+== Prima di iniziare
+
+* È necessario aver configurato le impostazioni di notifica, ad esempio l'indirizzo e-mail dei destinatari, il server SMTP e il trap SNMP.
++
+Il server Unified Manager può utilizzare queste impostazioni per inviare notifiche agli utenti quando viene generato un evento.
+
+* È necessario aver assegnato uno script e configurato lo script per l'esecuzione quando viene generato l'avviso.
+* È necessario disporre del ruolo di amministratore di OnCommand.
+
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Configurazione* > *Avvisi*.
+. Nella pagina *Configurazione/Avvisi*, selezionare l'avviso che si desidera sottoporre a test, quindi fare clic su *Test*.
++
+Viene inviato un messaggio e-mail di avviso di test agli indirizzi e-mail specificati durante la creazione dell'avviso.
+
+

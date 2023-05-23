@@ -1,0 +1,25 @@
+---
+permalink: online-help/concept-managing-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gestione unificata di OnCommand consente di creare e gestire report in modo da visualizzare informazioni personalizzate sulla capacità, l"utilizzo e le performance degli oggetti di storage e degli eventi correlati agli oggetti di storage.' 
+---
+= Gestione dei report
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gestione unificata di OnCommand consente di creare e gestire report in modo da visualizzare informazioni personalizzate sulla capacità, l'utilizzo e le performance degli oggetti di storage e degli eventi correlati agli oggetti di storage.
+
+[NOTE]
+====
+L'implementazione della pianificazione e della generazione di report dall'opzione Report nel riquadro di navigazione sinistro sarà obsoleta in una release futura. È possibile estrarre i dati di salute e performance da Unified Manager utilizzando i seguenti metodi aggiuntivi:
+
+* Estrazione dei dati direttamente dalle pagine della griglia nella GUI
+* Utilizzo di Open Database per l'accesso a tutti gli oggetti disponibili
+* Esecuzione delle API REST di Unified Manager per restituire le informazioni che si desidera esaminare
+
+
+====

@@ -1,0 +1,30 @@
+---
+permalink: online-help/concept-overview-of-the-quota-process-um-6-1.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Le quote possono essere morbide o difficili. Le quote morbide fanno sì che ONTAP invii una notifica quando vengono superati i limiti specificati, mentre le quote rigide impediscono il successo di un"operazione di scrittura quando vengono superati i limiti specificati.' 
+---
+= Panoramica del processo di quota
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le quote possono essere morbide o difficili. Le quote morbide fanno sì che ONTAP invii una notifica quando vengono superati i limiti specificati, mentre le quote rigide impediscono il successo di un'operazione di scrittura quando vengono superati i limiti specificati.
+
+Quando ONTAP riceve una richiesta di scrittura su un volume FlexVol da parte di un utente o di un gruppo di utenti, verifica se le quote sono attivate su tale volume per l'utente o il gruppo di utenti e determina quanto segue:
+
+* Se verrà raggiunto il limite massimo
++
+In caso affermativo, l'operazione di scrittura non riesce quando viene raggiunto il limite massimo e viene inviata la notifica della quota rigida.
+
+* Se il limite di tolleranza verrà violato
++
+In caso affermativo, l'operazione di scrittura riesce quando il limite di tolleranza viene superato e viene inviata la notifica della quota di tolleranza.
+
+* Se un'operazione di scrittura non supera il limite di tolleranza
++
+In caso affermativo, l'operazione di scrittura ha esito positivo e non viene inviata alcuna notifica.
+
+

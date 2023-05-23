@@ -1,0 +1,34 @@
+---
+permalink: health-checker/task-importing-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: Se è stato creato un report al di fuori di Unified Manager, è possibile importare e salvare il file di report da utilizzare con Unified Manager. 
+---
+= Importazione di report
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se è stato creato un report al di fuori di Unified Manager, è possibile importare e salvare il file di report da utilizzare con Unified Manager.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore di OnCommand.
+
+È necessario assicurarsi che il report che si intende importare sia supportato da Unified Manager.
+
+
+
+== Fasi
+
+. Nel riquadro di spostamento di sinistra, fare clic su *Report*, quindi su *Importa report*.
+. Nella finestra di dialogo *Importa report*, fare clic su *Sfoglia* e selezionare il file che si desidera importare, quindi immettere un nome e una breve descrizione del report.
+. Fare clic su *Importa*.
++
+Se non è possibile importare il report, controllare il file di log per individuare l'errore che causa il problema.
+
+

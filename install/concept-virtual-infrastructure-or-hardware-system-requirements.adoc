@@ -1,0 +1,111 @@
+---
+permalink: install/concept-virtual-infrastructure-or-hardware-system-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: 'A seconda che si stia installando Unified Manager su un"infrastruttura virtuale o su un sistema fisico, deve soddisfare i requisiti minimi di memoria, CPU e spazio su disco.' 
+---
+= Infrastruttura virtuale e requisiti di sistema hardware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A seconda che si stia installando Unified Manager su un'infrastruttura virtuale o su un sistema fisico, deve soddisfare i requisiti minimi di memoria, CPU e spazio su disco.
+
+La seguente tabella mostra i valori consigliati per le risorse di memoria, CPU e spazio su disco. Questi valori sono stati qualificati in modo che Unified Manager soddisfi livelli di performance accettabili.
+
+|===
+| Configurazione dell'hardware | Impostazioni consigliate 
+
+
+ a| 
+RAM
+ a| 
+12 GB (requisito minimo 8 GB)
+
+
+
+ a| 
+Processori
+ a| 
+4 CPU
+
+
+
+ a| 
+Capacità del ciclo della CPU
+ a| 
+9572 MHz totali (requisito minimo 9572 MHz)
+
+
+
+ a| 
+Spazio libero su disco
+ a| 
+VMware:
+
+* 5 GB (thin provisioning)
+* 152 GB (con thick provisioning)
+
+
+
+
+ a| 
+Red Hat o CentOS: 150 GB, dove la capacità viene allocata come segue:
+
+* 50 GB assegnati alla partizione root
+* 100 GB di spazio libero su disco assegnato a `/opt/netapp/data` Directory, montata su un disco LVM o su un disco locale separato collegato al sistema di destinazione
+
+
+[NOTE]
+====
+Il `/tmp` La directory deve disporre di almeno 10 GB di spazio libero e di `/var/log` La directory deve disporre di almeno 16 GB di spazio libero.
+
+==== a| 
+Windows: 150 GB, in cui la capacità viene allocata come segue:
+
+* 100 GB di spazio su disco per la directory di installazione
+* 50 GB di spazio su disco per la directory dei dati MySQL
+
+
+|===
+Unified Manager può essere installato su sistemi con una piccola quantità di memoria, ma i 12 GB di RAM consigliati garantiscono che sia disponibile una quantità di memoria sufficiente per ottenere performance ottimali e che il sistema possa ospitare cluster e oggetti di storage aggiuntivi con la crescita della configurazione. Non è necessario impostare limiti di memoria sulla macchina virtuale in cui è implementato Unified Manager e non è necessario abilitare alcuna funzione (ad esempio, la bollatura) che impedisca al software di utilizzare la memoria allocata nel sistema.
+
+Inoltre, esiste un limite al numero di nodi che una singola istanza di Unified Manager può monitorare prima di installare una seconda istanza di Unified Manager. Per ulteriori informazioni, consulta la _Guida alle Best Practice_.
+
+http://www.netapp.com/us/media/tr-4621.pdf["Report tecnico 4621: Guida alle Best practice di Unified Manager"]
+
+Lo swapping della pagina di memoria influisce negativamente sulle prestazioni del sistema e dell'applicazione di gestione. La concorrenza per le risorse CPU non disponibili a causa dell'utilizzo complessivo dell'host può compromettere le prestazioni.
+
+
+
+== Requisito di utilizzo dedicato
+
+Il sistema fisico o virtuale su cui si installa Unified Manager deve essere utilizzato esclusivamente per Unified Manager e non deve essere condiviso con altre applicazioni. Altre applicazioni potrebbero consumare risorse di sistema e ridurre drasticamente le performance di Unified Manager.
+
+
+
+== Requisiti di spazio per i backup
+
+Se si intende utilizzare la funzione di backup e ripristino di Unified Manager, è necessario allocare ulteriore capacità in modo che la directory o il disco "`data`" disponga di 150 GB di spazio. Un backup può essere scritto in una destinazione locale o remota. La procedura consigliata consiste nell'identificare una postazione remota esterna al sistema host di Unified Manager che abbia almeno 150 GB di spazio.
+
+
+
+== Requisiti di connettività host
+
+Il sistema fisico o virtuale su cui si installa Unified Manager deve essere configurato in modo da poter essere correttamente configurato `ping` il nome host dell'host stesso. In caso di configurazione IPv6, è necessario verificarlo `ping6` Al nome host per garantire che l'installazione di Unified Manager abbia esito positivo.
+
+È possibile utilizzare il nome host (o l'indirizzo IP host) per accedere all'interfaccia utente Web del prodotto. Se è stato configurato un indirizzo IP statico per la rete durante l'implementazione, è stato designato un nome per l'host di rete. Se la rete è stata configurata utilizzando DHCP, è necessario ottenere il nome host dal DNS.
+
+Se si prevede di consentire agli utenti di accedere a Unified Manager utilizzando il nome breve invece di utilizzare il nome di dominio completo (FQDN) o l'indirizzo IP, la configurazione di rete deve risolvere questo nome breve in un FQDN valido.
+
+
+
+== Montato `/opt/netapp` oppure `/opt/netapp/data` requisiti
+
+È possibile montare `/opt/netapp` oppure `/opt/netapp/data` Su un dispositivo NAS o SAN. Si noti che l'utilizzo di punti di montaggio remoti può causare problemi di scalabilità. Se si utilizza un punto di montaggio remoto, assicurarsi che la rete SAN o NAS disponga di capacità sufficiente per soddisfare le esigenze di i/o di Unified Manager. Questa capacità varia e può aumentare in base al numero di cluster e oggetti di storage monitorati.
+
+Se è stato montato `/opt/netapp` oppure `/opt/netapp/data` Da qualsiasi altro punto del file system root e se SELinux è abilitato nel proprio ambiente, è necessario impostare il contesto corretto per le directory montate.
+
+Vedere l'argomento xref:task-selinux-requirements-for-mounting-opt-netapp-or-opt-netapp-data-on-an-nfs-or-cifs-share.adoc[Requisiti SELinux per il montaggio di /opt/netapp o /opt/netapp/data su una condivisione NFS o CIFS] Per informazioni sull'impostazione del contesto SELinux corretto.

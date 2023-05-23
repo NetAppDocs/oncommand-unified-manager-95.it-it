@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-adding-and-reviewing-notes-about-an-event.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Durante la gestione degli eventi, è possibile aggiungere informazioni sulla modalità di risoluzione del problema utilizzando l"area Note e aggiornamenti nella pagina Dettagli evento. Queste informazioni possono consentire a un altro utente assegnato di gestire l"evento. È inoltre possibile visualizzare le informazioni aggiunte dall"utente che ha indirizzato l"ultimo evento, in base alla data e all"ora recenti.' 
+---
+= Aggiunta e revisione di note relative a un evento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Durante la gestione degli eventi, è possibile aggiungere informazioni sulla modalità di risoluzione del problema utilizzando l'area Note e aggiornamenti nella pagina Dettagli evento. Queste informazioni possono consentire a un altro utente assegnato di gestire l'evento. È inoltre possibile visualizzare le informazioni aggiunte dall'utente che ha indirizzato l'ultimo evento, in base alla data e all'ora recenti.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Eventi*.
+. Dalla pagina di inventario *Eventi*, fare clic sull'evento per il quale si desidera aggiungere le informazioni relative all'evento.
+. Nella pagina dei dettagli *evento*, aggiungere le informazioni richieste nell'area *Note e aggiornamenti*.
+. Fare clic su *Post*.
+

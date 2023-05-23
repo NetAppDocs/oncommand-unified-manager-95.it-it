@@ -1,0 +1,126 @@
+---
+permalink: online-help/reference-event-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Dalla pagina Dettagli evento è possibile visualizzare i dettagli di un evento selezionato, ad esempio la gravità dell"evento, il livello di impatto, l"area di impatto e l"origine dell"evento. È inoltre possibile visualizzare ulteriori informazioni sulle possibili soluzioni per risolvere il problema.' 
+---
+= Pagina dei dettagli dell'evento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dalla pagina Dettagli evento è possibile visualizzare i dettagli di un evento selezionato, ad esempio la gravità dell'evento, il livello di impatto, l'area di impatto e l'origine dell'evento. È inoltre possibile visualizzare ulteriori informazioni sulle possibili soluzioni per risolvere il problema.
+
+* *Nome evento*
++
+Il nome dell'evento e l'ora dell'ultima visualizzazione dell'evento.
+
++
+Per gli eventi che non riguardano le performance, mentre l'evento si trova nello stato New (nuovo) o Acknowledged (confermato), le ultime informazioni visualizzate non sono note e pertanto nascoste.
+
+* *Descrizione dell'evento*
++
+Una breve descrizione dell'evento.
+
++
+In alcuni casi, nella descrizione dell'evento viene indicato un motivo per l'attivazione dell'evento.
+
+* *Componente in conflitto*
++
+Per gli eventi di performance dinamiche, questa sezione visualizza le icone che rappresentano i componenti logici e fisici del cluster. Se un componente è in conflitto, la relativa icona viene cerchiata ed evidenziata in rosso.
+
++
+Possono essere visualizzati i seguenti componenti:
+
++
+** *Rete*
++
+Rappresenta il tempo di attesa delle richieste di i/o da parte dei protocolli iSCSI o Fibre Channel (FC) sul cluster. Il tempo di attesa è il tempo trascorso in attesa del completamento delle transazioni iSCSI Ready to Transfer (R2T) o FCP Transfer Ready (XFER_RDY) prima che il cluster possa rispondere a una richiesta di i/O. Se il componente di rete è in conflitto, significa che il tempo di attesa elevato a livello di protocollo a blocchi influisce sulla latenza di uno o più carichi di lavoro.
+
+** *Elaborazione di rete*
++
+Rappresenta il componente software del cluster coinvolto nell'elaborazione i/o tra il livello di protocollo e il cluster. Il nodo che gestisce l'elaborazione di rete potrebbe essere cambiato da quando è stato rilevato l'evento. Se il componente di elaborazione di rete è in conflitto, significa che un utilizzo elevato nel nodo di elaborazione di rete influisce sulla latenza di uno o più carichi di lavoro.
+
+** *Policy QoS*
++
+Rappresenta il gruppo di criteri QoS (Quality of Service) dello storage di cui fa parte il carico di lavoro. Se il componente del gruppo di policy è in conflitto, significa che tutti i carichi di lavoro nel gruppo di policy vengono rallentati dal limite di throughput impostato, il che influisce sulla latenza di uno o più di tali carichi di lavoro.
+
+** *Interconnessione cluster*
++
+Rappresenta i cavi e gli adattatori con cui i nodi in cluster sono fisicamente connessi. Se il componente di interconnessione del cluster è in conflitto, significa che l'elevato tempo di attesa per le richieste di i/o dell'interconnessione del cluster influisce sulla latenza di uno o più carichi di lavoro.
+
+** *Elaborazione dei dati*
++
+Rappresenta il componente software del cluster coinvolto nell'elaborazione i/o tra il cluster e l'aggregato di storage che contiene il carico di lavoro. Il nodo che gestisce l'elaborazione dei dati potrebbe essere cambiato da quando è stato rilevato l'evento. Se il componente di elaborazione dei dati è in conflitto, significa che un utilizzo elevato nel nodo di elaborazione dei dati influisce sulla latenza di uno o più carichi di lavoro.
+
+** *Risorse MetroCluster*
++
+Rappresenta le risorse MetroCluster, tra cui NVRAM e ISL (Interswitch link), utilizzate per eseguire il mirroring dei dati tra cluster in una configurazione MetroCluster. Se il componente MetroCluster è in conflitto, significa che un elevato throughput di scrittura dai carichi di lavoro sul cluster locale o un problema di integrità del collegamento sta influenzando la latenza di uno o più carichi di lavoro sul cluster locale. Se il cluster non si trova in una configurazione MetroCluster, questa icona non viene visualizzata.
+
+** *Operazioni aggregate o aggregate SSD*
++
+Rappresenta l'aggregato di storage su cui vengono eseguiti i carichi di lavoro. Se il componente aggregato è in conflitto, significa che un utilizzo elevato dell'aggregato influisce sulla latenza di uno o più carichi di lavoro. Un aggregato è costituito da tutti gli HDD o da una combinazione di HDD e SSD (un aggregato di Flash Pool). Un "`Saggregato SD`" è costituito da tutti gli SSD (un aggregato all-flash) o da una combinazione di SSD e un Tier cloud (un aggregato FabricPool).
+
+** *Latenza cloud*
++
+Rappresenta il componente software del cluster coinvolto nell'elaborazione i/o tra il cluster e il livello cloud in cui vengono memorizzati i dati dell'utente. Se il componente di latenza del cloud è in conflitto, significa che una grande quantità di letture da volumi ospitati sul Tier cloud influisce sulla latenza di uno o più carichi di lavoro.
+
+** *Sync SnapMirror*
++
+Rappresenta il componente software del cluster coinvolto nella replica dei dati utente dal volume primario al volume secondario in una relazione sincrona di SnapMirror. Se il componente Sync SnapMirror è in conflitto, significa che l'attività delle operazioni di SnapMirror Synchronous influisce sulla latenza di uno o più carichi di lavoro.
+
+
+
+
+
+Le sezioni informazioni evento, Diagnosi del sistema e azioni consigliate sono descritte in altri argomenti.
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti operazioni:
+
+* Icona *Note*
++
+Consente di aggiungere o aggiornare una nota sull'evento e di rivedere tutte le note lasciate da altri utenti.
+
+
+
+*Menu azioni*
+
+* *Assegna a me*
++
+Assegna l'evento all'utente.
+
+* *Assegna ad altri*
++
+Apre la finestra di dialogo Assegna proprietario, che consente di assegnare o riassegnare l'evento ad altri utenti.
+
++
+Quando si assegna un evento a un utente, il nome dell'utente e l'ora in cui l'evento è stato assegnato vengono aggiunti all'elenco degli eventi selezionati.
+
++
+È inoltre possibile annullare l'assegnazione degli eventi lasciando vuoto il campo Ownership (proprietà).
+
+* *Riconoscere*
++
+Riconosce gli eventi selezionati in modo da non continuare a ricevere notifiche di avviso ripetute.
+
++
+Quando si riconosce un evento, il nome utente e l'ora in cui si è confermato l'evento vengono aggiunti all'elenco degli eventi (riconosciuti da) per gli eventi selezionati. Quando si riconosce un evento, si assume la responsabilità della gestione di tale evento.
+
+* *Contrassegna come risolto*
++
+Consente di modificare lo stato dell'evento in Resolved (risolto).
+
++
+Quando si risolve un evento, il nome utente e l'ora in cui l'evento è stato risolto vengono aggiunti all'elenco degli eventi (risolti da) per gli eventi selezionati. Dopo aver eseguito un'azione correttiva per l'evento, è necessario contrassegnare l'evento come risolto.
+
+* *Aggiungi avviso*
++
+Visualizza la finestra di dialogo Aggiungi avviso, che consente di aggiungere un avviso per l'evento selezionato.
+
+

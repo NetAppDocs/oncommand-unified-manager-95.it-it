@@ -1,0 +1,41 @@
+---
+permalink: online-help/task-testing-the-configuration-of-authentication-servers-um-6-0.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile convalidare la configurazione dei server di autenticazione per garantire che il server di gestione sia in grado di comunicare con essi. È possibile convalidare la configurazione ricercando un utente remoto o un gruppo remoto dai server di autenticazione e autenticandoli utilizzando le impostazioni configurate. 
+---
+= Verifica della configurazione dei server di autenticazione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile convalidare la configurazione dei server di autenticazione per garantire che il server di gestione sia in grado di comunicare con essi. È possibile convalidare la configurazione ricercando un utente remoto o un gruppo remoto dai server di autenticazione e autenticandoli utilizzando le impostazioni configurate.
+
+
+
+== Prima di iniziare
+
+* È necessario aver attivato l'autenticazione remota e configurato il servizio di autenticazione in modo che il server Unified Manager possa autenticare l'utente remoto o il gruppo remoto.
+* È necessario aggiungere i server di autenticazione in modo che il server di gestione possa cercare l'utente remoto o il gruppo remoto da questi server e autenticarli.
+* È necessario disporre del ruolo di amministratore di OnCommand.
+
+
+
+
+== A proposito di questa attività
+
+Se il servizio di autenticazione è impostato su Active Directory e si sta convalidando l'autenticazione degli utenti remoti che appartengono al gruppo primario del server di autenticazione, le informazioni sul gruppo primario non vengono visualizzate nei risultati dell'autenticazione.
+
+
+
+== Fasi
+
+. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *Authentication* nel menu Setup di sinistra.
+. Nella pagina *Setup/Authentication*, fare clic su *Test Authentication*.
+. Nella finestra di dialogo *Test User*, specificare il nome utente e la password dell'utente remoto o il nome utente del gruppo remoto, quindi fare clic su *Test*.
++
+Se si sta autenticando un gruppo remoto, non è necessario immettere la password.
+
+

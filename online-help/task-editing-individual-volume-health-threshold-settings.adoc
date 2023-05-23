@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-editing-individual-volume-health-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile modificare le impostazioni della soglia di integrità per capacità del volume, crescita, quota e riserva di spazio di uno o più volumi. Quando viene superata una soglia, vengono generati avvisi e vengono ricevute notifiche. Queste notifiche consentono di adottare misure preventive in base all"evento generato.' 
+---
+= Modifica delle impostazioni delle soglie di integrità dei singoli volumi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare le impostazioni della soglia di integrità per capacità del volume, crescita, quota e riserva di spazio di uno o più volumi. Quando viene superata una soglia, vengono generati avvisi e vengono ricevute notifiche. Queste notifiche consentono di adottare misure preventive in base all'evento generato.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== A proposito di questa attività
+
+In base alle modifiche apportate ai valori di soglia, gli eventi vengono generati o resi obsoleti nel ciclo di monitoraggio successivo.
+
+Si noti che quando la funzione di crescita automatica è attivata su un volume, le soglie di capacità vengono considerate violate in base alle dimensioni massime del volume impostate dalla crescita automatica, non in base alle dimensioni originali del volume.
+
+
+
+== Fasi
+
+. Nel riquadro di spostamento di sinistra, fare clic su *Health* > *Volumes*.
+. Nella pagina di inventario *Health/Volumes*, selezionare uno o più volumi, quindi fare clic su *Edit Thresholds* (Modifica soglie).
+. Nella finestra di dialogo *Edit Volume Thresholds* (Modifica soglie volume), modificare le impostazioni di soglia di una delle seguenti opzioni: Capacità, copie Snapshot, quota qtree, crescita o inode selezionando la casella di controllo appropriata e modificando le impostazioni.
+. Fare clic su *Save* (Salva).
+

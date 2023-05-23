@@ -1,0 +1,33 @@
+---
+permalink: online-help/task-editing-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile modificare le proprietà degli avvisi, ad esempio la risorsa a cui è associato l"avviso, gli eventi, i destinatari, le opzioni di notifica, la frequenza di notifica, e script associati.' 
+---
+= Modifica degli avvisi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare le proprietà degli avvisi, ad esempio la risorsa a cui è associato l'avviso, gli eventi, i destinatari, le opzioni di notifica, la frequenza di notifica, e script associati.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore di OnCommand.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Configurazione* > *Avvisi*.
+. Nella pagina *Configurazione/Avvisi*, selezionare l'avviso che si desidera modificare e fare clic su *Modifica*.
+. Nella finestra di dialogo *Edit Alert* (Modifica avviso), modificare le sezioni relative a nome, risorse, eventi e azioni, secondo necessità.
++
+È possibile modificare o rimuovere lo script associato all'avviso.
+
+. Fare clic su *Save* (Salva).
+

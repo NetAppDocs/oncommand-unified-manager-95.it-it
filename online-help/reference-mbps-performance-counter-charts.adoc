@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-mbps-performance-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'I grafici dei contatori di Performance Explorer Mbps visualizzano il numero di megabyte di dati trasferiti da e verso l"oggetto selezionato al secondo.' 
+---
+= Diagrammi dei contatori delle performance di Mbps
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I grafici dei contatori di Performance Explorer Mbps visualizzano il numero di megabyte di dati trasferiti da e verso l'oggetto selezionato al secondo.
+
+La finestra a comparsa visualizzata quando il cursore si trova nell'area del grafico mostra i valori specifici del contatore in orari specifici.
+
+Quando viene visualizzato nella vista Zoom, i grafici del volume e del LUN visualizzano anche le impostazioni della soglia massima di throughput in Mbps della qualità del servizio (QoS), se configurate in ONTAP.
+
+Quando si visualizza un volume o un LUN che condivide i Mbps di un criterio QoS condiviso, viene visualizzata una riga per "`Total workload Mbps`" (carico di lavoro totale Mbps) per visualizzare i Mbps utilizzati da tutti gli altri carichi di lavoro che condividono questo criterio.
+
+Nella parte inferiore della pagina del grafico vengono visualizzate le informazioni relative ai Mbps minimo, massimo, medio e 95° percentile per l'intervallo di tempo selezionato.
+
+Sono disponibili due tipi di grafici Mbps:
+
+
+
+== Mbps - grafico contatore totale
+
+Visualizza il numero di megabyte di dati trasferiti da e verso l'oggetto selezionato al secondo.
+
+
+
+== Mbps - grafico del contatore dei guasti
+
+Visualizza gli stessi dati Mbps separati in lettura disco, lettura Flash cache, scrittura e altre operazioni.
+
+Questa opzione di grafico si applica quando l'oggetto selezionato è una SVM, un nodo, un aggregato, un volume o un LUN.
+
+[NOTE]
+====
+I dati di Flash cache vengono visualizzati solo per i nodi e solo quando nel nodo è installato un modulo Flash cache.
+
+====
+
+
+== Pulsante *Zoom View*
+
+Visualizza una vista ingrandita dei dati del contatore.
+
+* Eventi
++
+Il verificarsi di eventi critici, di errore, di avviso e informativi è indicato nelle righe temporali sopra i grafici.
+
+* Soglie
++
+La linea orizzontale tratteggiata indica il valore di soglia dell'avviso di utilizzo impostato in Unified Manager.
+
++
+La linea rossa fissa indica il valore della soglia critica di utilizzo impostato in Unified Manager.
+
+* Contatori
++
+I contatori nel riquadro di sinistra indicano i valori dei contatori visualizzati. Deselezione o selezione di image:../media/eye-icon.gif[""] Che è associato a un contatore nasconde e mostra le informazioni del contatore dal grafico e può aiutare nel confronto di oggetti Mbps.
+
+

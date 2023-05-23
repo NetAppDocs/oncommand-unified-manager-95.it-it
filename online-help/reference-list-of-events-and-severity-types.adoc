@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-list-of-events-and-severity-types.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare l"elenco degli eventi per acquisire una maggiore familiarità con le categorie di eventi, i nomi degli eventi e il tipo di severità di ciascun evento visualizzato in Unified Manager. Gli eventi sono elencati in ordine alfabetico per categoria di oggetti.' 
+---
+= Elenco degli eventi e dei tipi di severità
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare l'elenco degli eventi per acquisire una maggiore familiarità con le categorie di eventi, i nomi degli eventi e il tipo di severità di ciascun evento visualizzato in Unified Manager. Gli eventi sono elencati in ordine alfabetico per categoria di oggetti.

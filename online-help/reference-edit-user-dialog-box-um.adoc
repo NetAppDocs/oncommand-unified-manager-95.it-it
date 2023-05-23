@@ -1,0 +1,62 @@
+---
+permalink: online-help/reference-edit-user-dialog-box-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La finestra di dialogo Edit User (Modifica utente) consente di modificare solo alcune impostazioni, a seconda dell"utente selezionato.' 
+---
+= Finestra di dialogo Edit User (Modifica utente)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La finestra di dialogo Edit User (Modifica utente) consente di modificare solo alcune impostazioni, a seconda dell'utente selezionato.
+
+
+
+== Dettagli
+
+L'area Details (Dettagli) consente di modificare le seguenti informazioni relative a un utente selezionato:
+
+* *Tipo*
++
+Questo campo non può essere modificato.
+
+* *Nome*
++
+Questo campo non può essere modificato.
+
+* *Password*
++
+Consente di modificare la password quando l'utente selezionato è un utente del database.
+
+* *Conferma password*
++
+Consente di modificare la password confermata quando l'utente selezionato è un utente del database.
+
+* *E-mail*
++
+Consente di modificare l'indirizzo e-mail dell'utente selezionato. Questo campo può essere modificato quando l'utente selezionato è un utente locale, un utente LDAP o un utente di manutenzione.
+
+* *Ruolo*
++
+Consente di modificare il ruolo assegnato all'utente. Questo campo può essere modificato quando l'utente selezionato è un utente locale, un utente remoto o un gruppo remoto.
+
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti operazioni:
+
+* *Salva*
++
+Salva le modifiche e chiude la finestra di dialogo Edit User (Modifica utente).
+
+* *Annulla*
++
+Annulla le modifiche e chiude la finestra di dialogo Edit User (Modifica utente).
+
+

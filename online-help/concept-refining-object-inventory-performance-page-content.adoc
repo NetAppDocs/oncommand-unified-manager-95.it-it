@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-refining-object-inventory-performance-page-content.html 
+sidebar: sidebar 
+keywords:  
+summary: Le pagine di inventario per gli oggetti performance contengono strumenti che consentono di perfezionare il contenuto dei dati di inventario degli oggetti, consentendo di individuare dati specifici in modo rapido e semplice. 
+---
+= Perfezionare il contenuto della pagina dell'inventario delle performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le pagine di inventario per gli oggetti performance contengono strumenti che consentono di perfezionare il contenuto dei dati di inventario degli oggetti, consentendo di individuare dati specifici in modo rapido e semplice.
+
+Le informazioni contenute nelle pagine di inventario degli oggetti Performance possono essere estese, spesso estendendosi su più pagine. Questo tipo di dati completi è eccellente per il monitoraggio, il monitoraggio e il miglioramento delle performance; tuttavia, l'individuazione di dati specifici richiede strumenti che consentono di individuare rapidamente i dati desiderati. Pertanto, le pagine di inventario degli oggetti Performance contengono funzionalità per la ricerca, l'ordinamento e il filtraggio. Inoltre, la ricerca e il filtraggio possono lavorare insieme per restringere ulteriormente i risultati.

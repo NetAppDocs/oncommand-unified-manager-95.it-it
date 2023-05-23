@@ -1,0 +1,29 @@
+---
+permalink: online-help/task-viewing-job-details.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Dopo aver avviato un lavoro, è possibile monitorarne l"avanzamento dalla pagina protezione/Dettagli lavoro e monitorare le attività associate alla ricerca di eventuali errori.' 
+---
+= Visualizzazione dei dettagli del lavoro
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dopo aver avviato un lavoro, è possibile monitorarne l'avanzamento dalla pagina protezione/Dettagli lavoro e monitorare le attività associate alla ricerca di eventuali errori.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== Fasi
+
+. Nel riquadro di spostamento di sinistra, fare clic su *protezione* > *lavori*.
+. Nella pagina *protezione/lavori*, fare clic sul nome di un lavoro nella colonna *Nome* per visualizzare l'elenco delle attività associate al lavoro.
+. Fare clic su un'attività per visualizzare ulteriori informazioni nel riquadro *Dettagli attività* e nel riquadro *messaggi attività* a destra dell'elenco attività.
+

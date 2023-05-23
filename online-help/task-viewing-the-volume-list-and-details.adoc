@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-viewing-the-volume-list-and-details.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Dalla pagina Health/Volumes Inventory, è possibile monitorare l"inventario dei volumi. La pagina Health/Volumes Capacity and Utilization (Stato/capacità e utilizzo dei volumi) consente di visualizzare informazioni sulla capacità e sull"utilizzo dei volumi in un cluster.' 
+---
+= Visualizzazione dell'elenco e dei dettagli dei volumi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dalla pagina Health/Volumes Inventory, è possibile monitorare l'inventario dei volumi. La pagina Health/Volumes Capacity and Utilization (Stato/capacità e utilizzo dei volumi) consente di visualizzare informazioni sulla capacità e sull'utilizzo dei volumi in un cluster.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile utilizzare la pagina Health/Volume Details per visualizzare informazioni dettagliate sui volumi monitorati, tra cui capacità, efficienza, configurazione e protezione dei volumi. È inoltre possibile visualizzare informazioni sulle periferiche correlate e sugli avvisi correlati per un volume specifico.
+
+
+
+== Fasi
+
+. Nel riquadro di spostamento di sinistra, fare clic su *Health* > *Volumes*.
+. Scegliere uno dei seguenti metodi per visualizzare i dettagli del volume:
++
+** Per visualizzare informazioni dettagliate sulla capacità e sull'utilizzo dei volumi in un cluster, nel menu View (Visualizza), selezionare *Volume Capacity and Utilization* (capacità e utilizzo del volume).
+** Per visualizzare dettagli minimi, posizionare il cursore sul nome del volume.
+** Per visualizzare i dettagli completi, fare clic sul nome del volume.
++
+È inoltre possibile visualizzare i dettagli completi facendo clic su *View Details* (Visualizza dettagli) nella finestra di dialogo Minimal Details (Dettagli minimi).
+
+
+
+. Visualizzare gli oggetti correlati al volume facendo clic su *Visualizza correlati* nella finestra di dialogo Dettagli minimi.
+

@@ -1,0 +1,83 @@
+---
+permalink: online-help/task-viewing-fabricpool-capacity-information.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile visualizzare le informazioni sulla capacità di FabricPool per cluster, aggregati e volumi nelle pagine dell"inventario e dei dettagli relativi a questi oggetti. È inoltre possibile visualizzare le informazioni FabricPool nel report aggregato capacità e utilizzo.' 
+---
+= Visualizzazione delle informazioni sulla capacità FabricPool
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile visualizzare le informazioni sulla capacità di FabricPool per cluster, aggregati e volumi nelle pagine dell'inventario e dei dettagli relativi a questi oggetti. È inoltre possibile visualizzare le informazioni FabricPool nel report aggregato capacità e utilizzo.
+
+
+
+== A proposito di questa attività
+
+In queste pagine vengono visualizzate informazioni quali la capacità disponibile sul Tier di performance locale e sul Tier cloud, la capacità utilizzata in entrambi i Tier, gli aggregati collegati a un Tier cloud, E quali volumi stanno implementando le funzionalità di FabricPool spostando determinate informazioni nel Tier cloud.
+
+
+
+== Fasi
+
+. Eseguire una delle seguenti operazioni:
++
+|===
+| Per visualizzare le informazioni sulla capacità per... | Eseguire questa operazione... 
+
+
+ a| 
+Cluster
+ a| 
+.. Nella pagina di inventario Health/Clusters, fare clic su un cluster.
+.. Nella pagina Health/Cluster Details (Dettagli integrità/cluster), fare clic sulla scheda *Configuration* (Configurazione).
++
+Il display mostra i nomi dei Tier cloud a cui è connesso il cluster.
+
+
+
+
+
+ a| 
+Aggregati
+ a| 
+.. Nella pagina di inventario salute/aggregati, fare clic su un aggregato in cui il campo tipo indica "`SSD (FabricPool)`".
+.. Nella pagina Health/aggregate details (informazioni sullo stato/aggregato), fare clic sulla scheda *Capacity* (capacità).
++
+Il display mostra la capacità totale, oltre allo spazio utilizzato e libero nel livello cloud.
+
+.. Fare clic sulla scheda *Disk Information* (informazioni disco).
++
+Il display mostra il nome del livello cloud e lo spazio disponibile.
+
+.. Fare clic sulla scheda *Configurazione*.
++
+Il display mostra il nome del livello cloud e altre informazioni dettagliate sull'archivio di oggetti.
+
+
+
+
+
+ a| 
+Volumi
+ a| 
+.. Nella pagina Health/Volumes inventory (Stato/volumi inventario), fare clic su un volume in cui viene visualizzato il nome di un criterio nel campo "`Tiering Policy`" (criterio di tiering).
+.. Nella pagina Health/Volume Details (Dettagli stato/volume), fare clic sulla scheda *Configuration* (Configurazione).
++
+Sul display viene visualizzato il nome del criterio di tiering FabricPool assegnato al volume.
+
+
+
+|===
+
+
+
+
+== Al termine
+
+Per ulteriori informazioni sugli aggregati FabricPool, consulta la _Guida all'alimentazione di dischi e aggregati ONTAP 9_.
+
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-psmg/home.html["Guida all'alimentazione di ONTAP 9 Disks and Aggregates"]

@@ -1,0 +1,46 @@
+---
+permalink: config/task-configuring-event-notification-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile configurare Unified Manager in modo che invii notifiche di avviso quando viene generato un evento o quando viene assegnato un evento a un utente. È possibile configurare il server SMTP utilizzato per inviare l"avviso e impostare vari meccanismi di notifica, ad esempio le notifiche di avviso possono essere inviate come e-mail o trap SNMP.' 
+---
+= Configurazione delle impostazioni di notifica degli eventi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile configurare Unified Manager in modo che invii notifiche di avviso quando viene generato un evento o quando viene assegnato un evento a un utente. È possibile configurare il server SMTP utilizzato per inviare l'avviso e impostare vari meccanismi di notifica, ad esempio le notifiche di avviso possono essere inviate come e-mail o trap SNMP.
+
+
+
+== Prima di iniziare
+
+È necessario disporre delle seguenti informazioni:
+
+* Indirizzo e-mail da cui viene inviata la notifica di avviso
++
+L'indirizzo e-mail viene visualizzato nel campo "`da`" nelle notifiche di avviso inviate. Se non è possibile recapitarlo per qualsiasi motivo, questo indirizzo e-mail viene utilizzato anche come destinatario per la posta non recapitabile.
+
+* Nome host del server SMTP, nome utente e password per accedere al server
+* Versione SNMP, indirizzo IP host di destinazione trap, porta trap in uscita e la community per configurare il trap SNMP
+
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== Fasi
+
+. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *Notifiche* nel menu Setup di sinistra.
+. Nella pagina *Setup/Notifications*, configurare le impostazioni appropriate e fare clic su *Save* (Salva).
++
+*Note:*
+
++
+** Se l'indirizzo da è pre-compilato con l'indirizzo "`OnCommand@localhost.com`", devi cambiarlo in un indirizzo e-mail reale e funzionante per assicurarti che tutte le notifiche e-mail siano inviate correttamente.
+** Se il nome host del server SMTP non può essere risolto, è possibile specificare l'indirizzo IP (IPv4 o IPv6) del server SMTP invece del nome host.
+
+
+

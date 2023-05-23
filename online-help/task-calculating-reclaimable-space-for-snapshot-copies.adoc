@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-calculating-reclaimable-space-for-snapshot-copies.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile calcolare la quantità di spazio su disco che è possibile recuperare se una o più copie Snapshot vengono eliminate. 
+---
+= Calcolo dello spazio recuperabile per le copie Snapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile calcolare la quantità di spazio su disco che è possibile recuperare se una o più copie Snapshot vengono eliminate.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+
+Il volume deve essere online.
+
+
+
+== Fasi
+
+. Nel riquadro di spostamento di sinistra, fare clic su *Health* > *Volumes*.
+. Nella pagina di inventario *Health/Volumes*, selezionare il volume contenente le copie Snapshot che si desidera visualizzare.
++
+Viene visualizzato l'elenco delle copie Snapshot.
+
+. Nella pagina dei dettagli *Health/Volume*, fare clic sulla scheda *Capacity*.
+. Nel riquadro *Dettagli* della scheda *capacità*, nella sezione altri dettagli, fare clic sul collegamento accanto a *copie Snapshot*.
++
+Il numero di copie Snapshot è un collegamento che visualizza l'elenco delle copie Snapshot.
+
+. Nella vista *Snapshot Copies*, selezionare le copie Snapshot per cui si desidera calcolare lo spazio recuperabile.
+. Fare clic su *Calcola*.
++
+Viene visualizzato lo spazio recuperabile (in percentuale e KB, MB, GB e così via) sul volume.
+
+. Per ricalcolare lo spazio recuperabile, selezionare le copie Snapshot richieste e fare clic su *Ricalcola*.
+

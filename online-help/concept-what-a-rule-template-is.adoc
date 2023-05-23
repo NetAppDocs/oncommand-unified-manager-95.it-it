@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-what-a-rule-template-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Un modello di regola è un modello predefinito che può essere utilizzato per creare regole in un criterio dati. Un modello di regola consente di creare una regola basata su tre categorie: Proprietario, tipo di file e percorso della directory.' 
+---
+= Che cos'è un modello di regola
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un modello di regola è un modello predefinito che può essere utilizzato per creare regole in un criterio dati. Un modello di regola consente di creare una regola basata su tre categorie: Proprietario, tipo di file e percorso della directory.
+
+
+
+== Esempio di modello di regola per i tipi di file
+
+Il modello di regola "`inserire tutti i file con le estensioni specificate in una classe di storage adatta`" inserisce tutti i file .mp3 scritti nel volume infinito in una classe di storage specificata dall'utente.

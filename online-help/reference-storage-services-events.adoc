@@ -1,0 +1,84 @@
+---
+permalink: online-help/reference-storage-services-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi relativi ai servizi di storage forniscono informazioni sulla creazione e l"abbonamento dei servizi di storage, in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all"area di impatto e includono il nome dell"evento e della trap, il livello di impatto, il tipo di origine e la severità.' 
+---
+= Eventi relativi ai servizi di storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi relativi ai servizi di storage forniscono informazioni sulla creazione e l'abbonamento dei servizi di storage, in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all'area di impatto e includono il nome dell'evento e della trap, il livello di impatto, il tipo di origine e la severità.
+
+
+
+== Area di impatto: Configurazione
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Servizio di storage creato (non applicabile)
+ a| 
+Evento
+ a| 
+Servizio di storage
+ a| 
+Informazioni
+
+
+
+ a| 
+Servizio di storage iscritto (non applicabile)
+ a| 
+Evento
+ a| 
+Servizio di storage
+ a| 
+Informazioni
+
+
+
+ a| 
+Servizio di storage non sottoscritto (non applicabile)
+ a| 
+Evento
+ a| 
+Servizio di storage
+ a| 
+Informazioni
+
+|===
+
+
+== Area di impatto: Protezione
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Eliminazione imprevista della RelationshippoumEvtStorageServiceUnsupportedRelationshipDeletion gestita da SnapMirror
+ a| 
+Rischio
+ a| 
+Servizio di storage
+ a| 
+Attenzione
+
+
+
+ a| 
+Eliminazione imprevista del volume membro del servizio di storage (ocumEvtStorageServiceUnespectedVolumeDeletion)
+ a| 
+Incidente
+ a| 
+Servizio di storage
+ a| 
+Critico
+
+|===

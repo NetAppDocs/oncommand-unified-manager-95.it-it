@@ -1,0 +1,48 @@
+---
+permalink: online-help/reference-edit-annotation-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile modificare le regole di annotazione create per aggiungere o rimuovere annotazioni sugli oggetti di storage. 
+---
+= Finestra di dialogo Edit Annotation Rule (Modifica regola annotazione)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare le regole di annotazione create per aggiungere o rimuovere annotazioni sugli oggetti di storage.
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+* *Nome*
++
+Visualizza il nome della regola di annotazione.
+
+* *Tipo di oggetto di destinazione*
++
+Visualizza il tipo di oggetto di storage che si desidera annotare. Non è possibile modificare il tipo di oggetto.
+
+* *Applica annotazione*
++
+Visualizza l'annotazione e il valore che è possibile utilizzare per annotare gli oggetti di storage quando vengono soddisfatte tutte le condizioni.
+
+* *Condizioni*
++
+Visualizza l'elenco delle condizioni per la regola di annotazione. È possibile modificare le condizioni per aggiungere o rimuovere l'annotazione sugli oggetti di storage.
+
+
+
+
+
+== Pulsanti di comando
+
+* *Salva*
++
+Salva le modifiche apportate e chiude la finestra di dialogo Edit Annotation Rule (Modifica regola annotazione).
+
+* *Annulla*
++
+Chiude la finestra di dialogo Edit Annotation Rule (Modifica regola annotazione) senza salvare le modifiche.
+
+

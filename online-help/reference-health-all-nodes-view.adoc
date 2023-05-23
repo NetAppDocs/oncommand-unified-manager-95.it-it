@@ -1,0 +1,151 @@
+---
+permalink: online-help/reference-health-all-nodes-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Health/Nodes Inventory (Stato/inventario nodi) consente di visualizzare informazioni dettagliate sui nodi di un cluster selezionato.' 
+---
+= Pagina di inventario salute/nodi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Health/Nodes Inventory (Stato/inventario nodi) consente di visualizzare informazioni dettagliate sui nodi di un cluster selezionato.
+
+
+
+== Pulsante di comando
+
+* *Esporta*
++
+Consente di esportare i dettagli di tutti i nodi monitorati in valori separati da virgole (`.csv`).
+
+
+
+
+
+== Nodes (nodi)
+
+L'elenco Nodes (nodi) visualizza le proprietà di tutti i nodi rilevati in un cluster. È possibile utilizzare i filtri di colonna per personalizzare i dati visualizzati.
+
+* *Stato*
++
+Icona che identifica lo stato corrente del nodo. Lo stato può essere critico (image:../media/sev-critical-um60.png["Icona per la severità dell'evento – critico"]), errore (image:../media/sev-error-um60.png["Icona per la severità dell'evento – errore"]), Avviso (image:../media/sev-warning-um60.png["Icona per la severità dell'evento – avviso"]), o normale (image:../media/sev-normal-um60.png["Icona per la severità dell'evento – normale"]).
+
++
+È possibile posizionare il cursore sull'icona per visualizzare ulteriori informazioni sull'evento o sugli eventi generati per il nodo.
+
+* Nodo *
++
+Il nome del nodo.
+
+* *Stato*
++
+Lo stato del nodo. Lo stato può essere su o Giù.
+
+* *Stato ha*
++
+Lo stato della coppia ha. Lo stato può essere Error (errore), Warning (Avviso), Normal (normale) o Not appliced (non applicabile)
+
+* *Tempo di inattività*
++
+Il tempo trascorso o l'indicazione dell'ora dall'inizio della offline del nodo. Se il tempo trascorso supera una settimana, viene visualizzato l'indicatore dell'ora in cui il nodo è stato scollegato.
+
+* *Cluster*
++
+Il nome del cluster a cui appartiene il nodo.
+
+* *Modello*
++
+Il modello del nodo.
+
+* *Versione del sistema operativo*
++
+Versione del software ONTAP in esecuzione nel nodo.
+
+* *Ottimizzato per la tecnologia all-flash*
++
+Se il nodo è ottimizzato per supportare solo dischi a stato solido (SSD).
+
+* *Numero di serie*
++
+Il numero di serie del nodo.
+
+* *Versione firmware*
++
+Il numero di versione del firmware del nodo.
+
+* *Proprietario*
++
+Il nome del proprietario del nodo.
+
+* *Posizione*
++
+La posizione del nodo.
+
+* *Capacità aggregata utilizzata*
++
+La quantità di spazio utilizzata per i dati negli aggregati del nodo.
+
+* *Capacità totale aggregata*
++
+Lo spazio totale disponibile per i dati negli aggregati del nodo.
+
+* *Capacità di riserva utilizzabile*
++
+La quantità di spazio disponibile nel nodo che può essere utilizzata per aumentare la capacità aggregata.
+
+* *Capacità raw utilizzabile*
++
+La quantità di spazio utilizzabile nel nodo.
+
+* *Capacità raw totale*
++
+Capacità di ogni disco non formattato nel nodo prima del dimensionamento corretto e della configurazione RAID.
+
+* *Numero SVM*
++
+Il numero di SVM contenute nel cluster.
+
+* *Numero di porte FC*
++
+Il numero di porte FC contenute nel nodo.
+
+* *Conteggio porte FCoE*
++
+Il numero di porte FCoE contenute nel nodo.
+
+* *Numero di porte Ethernet*
++
+Il numero di porte ethernet contenute nel nodo.
+
+* *Dimensioni della scheda flash*
++
+Le dimensioni delle schede flash installate sul nodo.
+
+* *Numero di schede flash*
++
+Il numero di schede flash installate nel nodo.
+
+* *Numero shelf di dischi*
++
+Il numero di shelf di dischi contenuti dal nodo.
+
+* *Numero di dischi*
++
+Il numero di dischi nel nodo.
+
+
+
+
+
+== Pannello Filters (filtri)
+
+Il pannello filtri consente di impostare i filtri per personalizzare il modo in cui le informazioni vengono visualizzate nell'elenco nodi. È possibile selezionare i filtri correlati alle colonne Status (Stato), state (Stato) e ha state (Stato ha).
+
+[NOTE]
+====
+I filtri specificati nel pannello filtri sovrascrivono i filtri specificati per le colonne nell'elenco nodi.
+
+====

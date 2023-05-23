@@ -1,0 +1,29 @@
+---
+permalink: health-checker/task-creating-a-project-using-birt.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Prima di creare un report per l"importazione in Unified Manager, è necessario creare un progetto utilizzando BIRT.' 
+---
+= Creazione di un progetto con BIRT
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Prima di creare un report per l'importazione in Unified Manager, è necessario creare un progetto utilizzando BIRT.
+
+
+
+== Prima di iniziare
+
+È necessario aver scaricato ed estratto il file .zip di BIRT.
+
+
+
+== Fasi
+
+. Dall'interfaccia di Eclipse, selezionare *file* > *nuovo* > *progetto*.
+. Espandere la cartella *Business Intelligence and Reporting Tools*, selezionare *Report Project* e fare clic su *Next*.
+. Digitare il nome del progetto e fare clic su *fine*.
+

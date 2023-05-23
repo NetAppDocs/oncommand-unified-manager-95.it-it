@@ -1,0 +1,36 @@
+---
+permalink: online-help/reference-description-of-event-impact-areas.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi sono suddivisi in cinque aree di impatto (disponibilità, capacità, configurazione, performance e protezione) per consentirti di concentrarti sui tipi di eventi di cui sei responsabile.' 
+---
+= Descrizione delle aree di impatto degli eventi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi sono suddivisi in cinque aree di impatto (disponibilità, capacità, configurazione, performance e protezione) per consentirti di concentrarti sui tipi di eventi di cui sei responsabile.
+
+* *Disponibilità*
++
+Gli eventi di disponibilità avvisano l'utente se un oggetto di storage passa fuori linea, se un servizio di protocollo non funziona, se si verifica un problema di failover dello storage o se si verifica un problema con l'hardware.
+
+* *Capacità*
++
+Gli eventi di capacità avvisano l'utente se aggregati, volumi, LUN o spazi dei nomi si stanno avvicinando o hanno raggiunto una soglia di dimensione o se il tasso di crescita è insolito per il proprio ambiente.
+
+* *Configurazione*
++
+Gli eventi di configurazione informano dell'individuazione, dell'eliminazione, dell'aggiunta, della rimozione o della ridenominazione degli oggetti di storage. Gli eventi di configurazione hanno un livello di impatto dell'evento e un tipo di gravità delle informazioni.
+
+* *Prestazioni*
++
+Gli eventi relativi alle performance avvisano l'utente di condizioni di risorse, configurazione o attività sul cluster che potrebbero influire negativamente sulla velocità di input o recupero dello storage dei dati sugli oggetti di storage monitorati.
+
+* *Protezione*
++
+Gli eventi di protezione avvisano l'utente di incidenti o rischi che coinvolgono relazioni SnapMirror, problemi con la capacità di destinazione, problemi con le relazioni SnapVault o problemi con i processi di protezione. Tutti gli oggetti ONTAP (in particolare aggregati, volumi e SVM) che ospitano volumi secondari e relazioni di protezione sono classificati nell'area di impatto della protezione.
+
+

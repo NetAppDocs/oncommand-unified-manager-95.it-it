@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-storage-summary-report-to-analyze-ha-pairs-for-available-capacity.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile personalizzare il report Storage Summary per visualizzare le coppie ha disponibili con capacità, in modo da poter eseguire il provisioning di nuovi volumi e LUN. Il report visualizza le coppie ha ordinate in ordine decrescente di capacità aggregata inutilizzata. 
+---
+= Personalizzazione del report Storage Summary per analizzare le coppie ha per la capacità disponibile per il provisioning di nuovi volumi e LUN
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report Storage Summary per visualizzare le coppie ha disponibili con capacità, in modo da poter eseguire il provisioning di nuovi volumi e LUN. Il report visualizza le coppie ha ordinate in ordine decrescente di capacità aggregata inutilizzata.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Per rimuovere il raggruppamento in base al cluster, attenersi alla seguente procedura:
++
+.. Fare clic nella colonna che deve essere raggruppata.
+.. Fare clic su image:../media/click-to-see-menu.gif[""] icona.
+.. Selezionare *Gruppo* > *Elimina gruppo interno*.
+
+
+. Per ordinare le coppie ha con la capacità disponibile, fare clic nella colonna *aggregate Unused Capacity (TB)* e fare clic sul pulsante image:../media/click-to-see-menu.gif[""] icona.
+. Selezionare *Filter* > *Top/Bottom N*.
+. Nella finestra di dialogo *Top/Bottom N*, selezionare *Top N* dal campo *Filter* e immettere un valore nel campo di testo.
+. Fare clic su *OK*.
+

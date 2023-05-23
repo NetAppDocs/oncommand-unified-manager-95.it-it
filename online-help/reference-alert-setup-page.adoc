@@ -1,0 +1,122 @@
+---
+permalink: online-help/reference-alert-setup-page.html 
+sidebar: sidebar 
+keywords:  
+summary: La pagina Configurazione/Avvisi visualizza un elenco di avvisi e fornisce informazioni sul nome, lo stato, il metodo di notifica e la frequenza di notifica degli avvisi. Da questa pagina è inoltre possibile aggiungere, modificare, rimuovere, attivare o disattivare gli avvisi. 
+---
+= Pagina Configuration/Alerting (Configurazione/Avvisi)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Configurazione/Avvisi visualizza un elenco di avvisi e fornisce informazioni sul nome, lo stato, il metodo di notifica e la frequenza di notifica degli avvisi. Da questa pagina è inoltre possibile aggiungere, modificare, rimuovere, attivare o disattivare gli avvisi.
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== Pulsanti di comando
+
+* *Aggiungi*
++
+Visualizza la finestra di dialogo Aggiungi avviso, che consente di aggiungere nuovi avvisi.
+
+* *Modifica*
++
+Visualizza la finestra di dialogo Modifica avviso, che consente di modificare gli avvisi selezionati.
+
+* *Elimina*
++
+Elimina gli avvisi selezionati.
+
+* *Enable* (attiva)
++
+Consente agli avvisi selezionati di inviare notifiche.
+
+* *Disattiva*
++
+Disattiva gli avvisi selezionati quando si desidera interrompere temporaneamente l'invio delle notifiche.
+
+* *Test*
++
+Verifica gli avvisi selezionati per verificarne la configurazione dopo l'aggiunta o la modifica.
+
+
+
+
+
+== Vista elenco
+
+La vista elenco visualizza, in formato tabulare, le informazioni sugli avvisi creati. È possibile utilizzare i filtri di colonna per personalizzare i dati visualizzati. È inoltre possibile selezionare un avviso per visualizzare ulteriori informazioni nell'area dei dettagli.
+
+* *Stato*
++
+Specifica se un avviso è attivato (image:../media/alert-status-enabled.gif[""]) o disattivato (image:../media/alert-status-disabled.gif[""]).
+
+* *Avviso*
++
+Visualizza il nome dell'avviso.
+
+* *Descrizione*
++
+Visualizza una descrizione dell'avviso.
+
+* *Metodo di notifica*
++
+Visualizza il metodo di notifica selezionato per l'avviso. È possibile inviare notifiche agli utenti tramite messaggi e-mail o trap SNMP.
+
+* *Frequenza di notifica*
++
+Specifica la frequenza (in minuti) con cui il server di gestione continua a inviare notifiche fino a quando l'evento non viene riconosciuto, risolto o spostato nello stato obsoleto.
+
+
+
+
+
+== Area dei dettagli
+
+L'area dei dettagli fornisce ulteriori informazioni sull'avviso selezionato.
+
+* *Nome avviso*
++
+Visualizza il nome dell'avviso.
+
+* *Descrizione avviso*
++
+Visualizza una descrizione dell'avviso.
+
+* *Eventi*
++
+Visualizza gli eventi per i quali si desidera attivare l'avviso.
+
+* *Risorse*
++
+Visualizza le risorse per le quali si desidera attivare l'avviso.
+
+* *Include*
++
+Visualizza il gruppo di risorse per cui si desidera attivare l'avviso.
+
+* *Esclusi*
++
+Visualizza il gruppo di risorse per cui non si desidera attivare l'avviso.
+
+* *Metodo di notifica*
++
+Visualizza il metodo di notifica per l'avviso.
+
+* *Frequenza di notifica*
++
+Visualizza la frequenza con cui il server di gestione continua a inviare notifiche di avviso fino a quando l'evento non viene riconosciuto, risolto o spostato nello stato obsoleto.
+
+* *Nome script*
++
+Visualizza il nome dello script associato all'avviso selezionato. Questo script viene eseguito quando viene generato un avviso.
+
+* *Destinatari email*
++
+Visualizza gli indirizzi e-mail degli utenti che ricevono la notifica di avviso.
+
+

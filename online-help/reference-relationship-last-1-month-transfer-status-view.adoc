@@ -1,0 +1,71 @@
+---
+permalink: online-help/reference-relationship-last-1-month-transfer-status-view.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Protection/Volume Transfer Status (Cronologia) consente di analizzare i trend di trasferimento dei volumi in un determinato periodo di tempo. Questa pagina visualizza anche se il trasferimento del volume è stato un successo o un errore.' 
+---
+= Pagina Protection/Volume Transfer Status (Cronologia)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Protection/Volume Transfer Status (Cronologia) consente di analizzare i trend di trasferimento dei volumi in un determinato periodo di tempo. Questa pagina visualizza anche se il trasferimento del volume è stato un successo o un errore.
+
+Utilizzare il pulsante *Esporta* per esportare i dettagli di tutti i volumi monitorati in valori separati da virgole (`.csv`).
+
+[NOTE]
+====
+Questa pagina visualizza le informazioni relative ai volumi solo nelle relazioni asincrone: I volumi nelle relazioni sincrone non vengono visualizzati.
+
+====
+* *Cluster di origine*
++
+Visualizza il nome del cluster di origine.
+
+* *SVM di origine*
++
+Visualizza il nome della SVM (Storage Virtual Machine).
+
+* *Volume di origine*
++
+Visualizza il nome del volume di origine.
+
+* *Cluster di destinazione*
++
+Visualizza il nome del cluster di destinazione.
+
+* *SVM di destinazione*
++
+Visualizza il nome SVM di destinazione.
+
+* *Volume di destinazione*
++
+Visualizza il nome del volume di destinazione.
+
+* *Risultato dell'operazione*
++
+Visualizza se il trasferimento del volume è stato eseguito correttamente.
+
+* *Ora di inizio trasferimento*
++
+Visualizza l'ora di inizio del trasferimento del volume.
+
+* *Ora di fine trasferimento*
++
+Visualizza l'ora di fine del trasferimento del volume.
+
+* *Durata trasferimento*
++
+Visualizza il tempo impiegato (in ore) per completare il trasferimento del volume.
+
+* *Dimensione trasferimento*
++
+Visualizza le dimensioni (in MB) del volume trasferito.
+
+* *Tipo di operazione*
++
+Visualizza il tipo di trasferimento del volume.
+
+

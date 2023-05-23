@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-monitoring-jobs.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare la pagina protezione/lavori per monitorare lo stato del lavoro e visualizzare le proprietà del lavoro, ad esempio il tipo di servizio di storage, lo stato, l"ora di inoltro e il tempo di completamento, per determinare se un lavoro è stato completato correttamente.' 
+---
+= Monitoraggio dei lavori
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la pagina protezione/lavori per monitorare lo stato del lavoro e visualizzare le proprietà del lavoro, ad esempio il tipo di servizio di storage, lo stato, l'ora di inoltro e il tempo di completamento, per determinare se un lavoro è stato completato correttamente.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== Fasi
+
+. Nel riquadro di spostamento di sinistra, fare clic su *protezione* > *lavori*.
++
+Viene visualizzata la pagina protezione/processi.
+
+. Visualizzare la colonna *Stato* per determinare lo stato dei job attualmente in esecuzione.
+. Fare clic sul nome di un lavoro per visualizzare i dettagli relativi a tale lavoro.
++
+Viene visualizzata la pagina protezione/Dettagli lavoro.
+
+

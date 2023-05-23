@@ -1,0 +1,64 @@
+---
+permalink: online-help/reference-dynamic-performance-event-chart-details.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Per gli eventi di performance dinamiche, la sezione System Diagnosis della pagina Event Details elenca i carichi di lavoro principali con la latenza o l"utilizzo più elevati del componente del cluster in conflitto. Le statistiche delle performance si basano sull"ora in cui l"evento è stato rilevato fino all"ultima volta in cui è stato analizzato l"evento. I grafici visualizzano anche le statistiche cronologiche delle performance per il componente del cluster in conflitto.' 
+---
+= Dettagli del grafico degli eventi delle performance dinamiche
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per gli eventi di performance dinamiche, la sezione System Diagnosis della pagina Event Details elenca i carichi di lavoro principali con la latenza o l'utilizzo più elevati del componente del cluster in conflitto. Le statistiche delle performance si basano sull'ora in cui l'evento è stato rilevato fino all'ultima volta in cui è stato analizzato l'evento. I grafici visualizzano anche le statistiche cronologiche delle performance per il componente del cluster in conflitto.
+
+Ad esempio, è possibile identificare i carichi di lavoro con un elevato utilizzo di un componente per determinare quale carico di lavoro spostare in un componente meno utilizzato. Lo spostamento del carico di lavoro ridurrebbe la quantità di lavoro sul componente corrente, possibilmente portando il componente fuori dai conflitti. Al di questa sezione si trova l'intervallo di tempo e data in cui un evento è stato rilevato e analizzato per l'ultima volta. Per gli eventi attivi (nuovi o confermati), l'ora dell'ultima analisi continua ad essere aggiornata.
+
+I grafici di latenza e attività visualizzano i nomi dei carichi di lavoro principali quando si sposta il cursore sul grafico. Facendo clic sul menu tipo di carico di lavoro a destra del grafico, è possibile ordinare i carichi di lavoro in base al loro ruolo nell'evento, tra cui _squali_, _bulli_ o _vittime_, e visualizzare i dettagli relativi alla latenza e al loro utilizzo sul componente del cluster in conflitto. È possibile confrontare il valore effettivo con il valore previsto per vedere quando il carico di lavoro non rientra nell'intervallo di latenza o utilizzo previsto. Vedere xref:concept-types-of-workloads-monitored-by-unified-manager.adoc[Carichi di lavoro monitorati da Unified Manager].
+
+[NOTE]
+====
+Quando si effettua l'ordinamento in base alla deviazione di picco nella latenza, i carichi di lavoro definiti dal sistema non vengono visualizzati nella tabella, perché la latenza si applica solo ai carichi di lavoro definiti dall'utente. I carichi di lavoro con valori di latenza molto bassi non vengono visualizzati nella tabella.
+
+====
+Per ulteriori informazioni sulle soglie di performance dinamiche, vedere xref:reference-performance-event-analysis-and-notification.adoc[Quali sono gli eventi]. Per informazioni su come Unified Manager classifica i carichi di lavoro e determina l'ordinamento, vedere xref:concept-how-unified-manager-determines-the-performance-impact-for-an-incident.adoc[In che modo Unified Manager determina l'impatto delle performance di un evento].
+
+I dati nei grafici mostrano 24 ore di statistiche delle performance prima dell'ultima analisi dell'evento. I valori effettivi e quelli previsti per ciascun carico di lavoro si basano sul tempo in cui il carico di lavoro è stato coinvolto nell'evento. Ad esempio, un carico di lavoro potrebbe essere coinvolto in un evento dopo il rilevamento dell'evento, pertanto le relative statistiche sulle prestazioni potrebbero non corrispondere ai valori al momento del rilevamento dell'evento. Per impostazione predefinita, i carichi di lavoro vengono ordinati in base alla deviazione di picco (massima) nella latenza.
+
+[NOTE]
+====
+Poiché Unified Manager conserva un massimo di 30 giorni di dati storici relativi alle performance e agli eventi di 5 minuti, se l'evento ha più di 30 giorni, non vengono visualizzati dati relativi alle performance.
+
+====
+* *Colonna ordinamento carico di lavoro*
++
+** *Grafico di latenza*
++
+Visualizza l'impatto dell'evento sulla latenza del carico di lavoro durante l'ultima analisi.
+
+** *Colonna utilizzo componente*
++
+Visualizza i dettagli sull'utilizzo del carico di lavoro del componente del cluster in conflitto. Nei grafici, l'utilizzo effettivo è una linea blu. Una barra rossa evidenzia la durata dell'evento, dal tempo di rilevamento all'ultimo tempo analizzato. Per ulteriori informazioni, vedere xref:reference-workload-performance-measurement-values.adoc[Misurazioni delle performance dei carichi di lavoro].
+
++
+[NOTE]
+====
+Per il componente di rete, poiché le statistiche delle performance di rete provengono dall'attività al di fuori del cluster, questa colonna non viene visualizzata.
+
+====
+** *Utilizzo dei componenti*
++
+Visualizza la cronologia dell'utilizzo, in percentuale, per l'elaborazione di rete, l'elaborazione dei dati e i componenti aggregati o la cronologia dell'attività, in percentuale, per il componente del gruppo di criteri QoS. Il grafico non viene visualizzato per i componenti di rete o di interconnessione. È possibile puntare alle statistiche per visualizzare le statistiche di utilizzo in un momento specifico.
+
+** *Total Write Mbps History*
++
+Solo per il componente risorse MetroCluster, mostra il throughput di scrittura totale, in megabyte al secondo (Mbps), per tutti i carichi di lavoro dei volumi sottoposti a mirroring nel cluster partner in una configurazione MetroCluster.
+
+** *Cronologia eventi*
++
+Visualizza linee ombreggiate in rosso per indicare gli eventi storici per il componente in conflitto. Per gli eventi obsoleti, il grafico visualizza gli eventi che si sono verificati prima del rilevamento e dopo la risoluzione dell'evento selezionato.
+
+
+
+

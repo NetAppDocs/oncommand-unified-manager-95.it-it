@@ -1,0 +1,14 @@
+---
+permalink: performance-checker/concept-applying-filtering-to-correlated-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: Il filtraggio consente di visualizzare un sottoinsieme di oggetti più piccolo e ben definito nella griglia. Ad esempio, se nella griglia sono presenti 25 volumi, il filtraggio consente di visualizzare solo i volumi con throughput inferiore a 90 Mbps o latenza superiore a 1 ms/op. 
+---
+= Applicare il filtraggio per ridurre l'elenco degli oggetti correlati nella griglia
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il filtraggio consente di visualizzare un sottoinsieme di oggetti più piccolo e ben definito nella griglia. Ad esempio, se nella griglia sono presenti 25 volumi, il filtraggio consente di visualizzare solo i volumi con throughput inferiore a 90 Mbps o latenza superiore a 1 ms/op.

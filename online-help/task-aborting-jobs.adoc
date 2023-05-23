@@ -1,0 +1,29 @@
+---
+permalink: online-help/task-aborting-jobs.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile utilizzare la pagina protezione/lavori per interrompere un lavoro se il completamento del lavoro richiede troppo tempo, se si verificano troppi errori o se non è più necessario. È possibile interrompere un lavoro solo se lo stato e il tipo lo consentono. È possibile interrompere qualsiasi processo in esecuzione. 
+---
+= Interruzione dei lavori
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la pagina protezione/lavori per interrompere un lavoro se il completamento del lavoro richiede troppo tempo, se si verificano troppi errori o se non è più necessario. È possibile interrompere un lavoro solo se lo stato e il tipo lo consentono. È possibile interrompere qualsiasi processo in esecuzione.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== Fasi
+
+. Nel riquadro di spostamento di sinistra, fare clic su *protezione* > *lavori*.
+. Dall'elenco dei job, selezionare un job, quindi fare clic su *Interrompi*.
+. Alla richiesta di conferma, fare clic su *Sì* per interrompere il lavoro selezionato.
+

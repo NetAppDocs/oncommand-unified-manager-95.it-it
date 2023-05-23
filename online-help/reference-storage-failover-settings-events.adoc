@@ -1,0 +1,99 @@
+---
+permalink: online-help/reference-storage-failover-settings-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi delle impostazioni di failover dello storage forniscono informazioni sulla disattivazione o meno del failover dello storage, in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all"area di impatto e includono il nome dell"evento e della trap, il livello di impatto, il tipo di origine e la severità.' 
+---
+= Eventi delle impostazioni di failover dello storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi delle impostazioni di failover dello storage (SFO) forniscono informazioni sulla disattivazione o meno del failover dello storage, in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all'area di impatto e includono il nome dell'evento e della trap, il livello di impatto, il tipo di origine e la severità.
+
+
+
+== Area di impatto: Disponibilità
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Storage failover Interconnect uno o più collegamenti non attivi(ocumEvtsfoInterconnectOneOrMoreLinksDown)
+ a| 
+Rischio
+ a| 
+Nodo
+ a| 
+Attenzione
+
+
+
+ a| 
+Failover dello storage disattivato (ocumEvtsfoSettingsDisabilitato)
+ a| 
+Rischio
+ a| 
+Nodo
+ a| 
+Errore
+
+
+
+ a| 
+Failover dello storage non configurato(ocumEvtSfoSettingsNotConfigured)
+ a| 
+Rischio
+ a| 
+Nodo
+ a| 
+Errore
+
+
+
+ a| 
+Stato di failover dello storage - Takeover (ocumEvtSfoStateTakeover)
+ a| 
+Rischio
+ a| 
+Nodo
+ a| 
+Attenzione
+
+
+
+ a| 
+Stato di failover dello storage - Giveback parziale(ocumEvtSfoStatePartialGiveback)
+ a| 
+Rischio
+ a| 
+Nodo
+ a| 
+Errore
+
+
+
+ a| 
+Stato del nodo di failover dello storage inattivo (ocumEvtsfoNodeStatusDown)
+ a| 
+Rischio
+ a| 
+Nodo
+ a| 
+Errore
+
+
+
+ a| 
+Takeover di failover dello storage non possibile (ocumEvtSfoTakeoverNotPosible)
+ a| 
+Rischio
+ a| 
+Nodo
+ a| 
+Errore
+
+|===

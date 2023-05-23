@@ -1,0 +1,126 @@
+---
+permalink: health-checker/reference-job-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: La pagina Dettagli protezione/lavoro consente di visualizzare lo stato e altre informazioni su specifiche attività di protezione in esecuzione, in coda o completate. È possibile utilizzare queste informazioni per monitorare lo stato di avanzamento dei lavori di protezione e per risolvere i problemi relativi agli errori dei lavori. 
+---
+= Pagina protezione/Dettagli lavoro
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Dettagli protezione/lavoro consente di visualizzare lo stato e altre informazioni su specifiche attività di protezione in esecuzione, in coda o completate. È possibile utilizzare queste informazioni per monitorare lo stato di avanzamento dei lavori di protezione e per risolvere i problemi relativi agli errori dei lavori.
+
+
+
+== Riepilogo del lavoro
+
+Il riepilogo dei lavori visualizza le seguenti informazioni:
+
+* ID lavoro
+* Tipo
+* Stato
+* Tempo di invio
+* Tempo di completamento
+* Durata
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti operazioni:
+
+* *Aggiorna*
++
+Aggiorna l'elenco delle attività e le proprietà associate a ciascuna attività.
+
+* *Visualizza job*
++
+Consente di tornare alla pagina protezione/lavori.
+
+
+
+
+
+== Elenco delle attività lavorative
+
+L'elenco Job Tasks (attività lavoro) visualizza in una tabella tutte le attività associate a un lavoro specifico e le proprietà correlate a ciascuna attività.
+
+* *Ora di inizio*
++
+Visualizza il giorno e l'ora di inizio dell'attività. Per impostazione predefinita, le attività più recenti vengono visualizzate nella parte superiore della colonna e quelle meno recenti nella parte inferiore.
+
+* *Tipo*
++
+Visualizza il tipo di attività.
+
+* *Stato*
++
+Stato di un'attività specifica:
+
++
+** *Completato*
++
+L'attività è terminata.
+
+** *In coda*
++
+L'attività sta per essere eseguita.
+
+** *In esecuzione*
++
+L'attività è in esecuzione.
+
+** *In attesa*
++
+Un lavoro è stato inoltrato e alcune attività associate sono in attesa di essere accodate ed eseguite.
+
+
+
+* *Stato*
++
+Visualizza lo stato dell'attività:
+
++
+** *Errore (image:../media/sev-error.gif[""])*
++
+Operazione non riuscita.
+
+** *Normale (image:../media/sev-normal.gif[""])*
++
+Operazione riuscita.
+
+** *Saltato (image:../media/icon-skipped.gif[""])*
++
+Un'attività non è riuscita, con conseguente omissione delle attività successive.
+
+
+
+* *Durata*
++
+Visualizza il tempo trascorso dall'inizio dell'attività.
+
+* *Tempo di completamento*
++
+Visualizza l'ora in cui l'attività è stata completata. Per impostazione predefinita, questa colonna è nascosta.
+
+* *ID attività*
++
+Visualizza il GUID che identifica una singola attività per un lavoro. La colonna può essere ordinata e filtrata. Per impostazione predefinita, questa colonna è nascosta.
+
+* *Ordine di dipendenza*
++
+Visualizza un numero intero che rappresenta la sequenza di attività in un grafico, con zero assegnato alla prima attività. Per impostazione predefinita, questa colonna è nascosta.
+
+* *Riquadro Dettagli attività*
++
+Visualizza informazioni aggiuntive su ciascuna attività di lavoro, tra cui il nome dell'attività, la descrizione dell'attività e, in caso di errore, il motivo dell'errore.
+
+* *Task messages pane*
++
+Visualizza i messaggi specifici dell'attività selezionata. I messaggi potrebbero includere un motivo dell'errore e suggerimenti per risolverlo. Non tutte le attività visualizzano messaggi di attività.
+
+

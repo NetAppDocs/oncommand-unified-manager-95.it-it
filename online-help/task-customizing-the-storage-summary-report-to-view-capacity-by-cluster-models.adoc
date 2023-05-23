@@ -1,0 +1,49 @@
+---
+permalink: online-help/task-customizing-the-storage-summary-report-to-view-capacity-by-cluster-models.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile personalizzare il report Storage Summary per analizzare la capacità dello storage e l"utilizzo dei cluster e per visualizzare gli aggregati inclusi nella capacità raw totale.' 
+---
+= Personalizzazione del report Storage Summary per visualizzare la capacità in base ai modelli di cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report Storage Summary per analizzare la capacità dello storage e l'utilizzo dei cluster e per visualizzare gli aggregati inclusi nella capacità raw totale.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Per rimuovere il raggruppamento in base al cluster, attenersi alla seguente procedura:
++
+.. Fare clic nella colonna che deve essere raggruppata.
+.. Fare clic su image:../media/click-to-see-menu.gif[""] icona.
+.. Selezionare *Gruppo* > *Elimina gruppo interno*.
+
+
+. Per raggruppare il report in base al nome del modello, attenersi alla seguente procedura:
++
+.. Fare clic sulla colonna *Model* e fare clic su image:../media/click-to-see-menu.gif[""] icona.
+.. Selezionare *Gruppo* > *Aggiungi gruppo*.
+
+
+. Per aggiungere aggregati alla capacità raw totale, attenersi alla seguente procedura:
++
+.. Fare clic sulla colonna *Total Raw Capacity* e fare clic su image:../media/click-to-see-menu.gif[""] icona.
+.. Selezionare *Aggregation*.
+.. Nella finestra di dialogo *aggregazione*, deselezionare la casella di controllo *livello tabella* e selezionare la casella di controllo *livello gruppo*.
+.. Se necessario, inserire il nome dell'etichetta nel campo *Inserisci etichetta*.
+
+
+. Fare clic su *OK*.
+. Per aggiungere aggregati alle altre colonne del report, ripetere i passaggi 3 e 4.
+

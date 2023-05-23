@@ -1,0 +1,49 @@
+---
+permalink: health-checker/task-configuring-conditions-for-annotation-rules.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: È possibile configurare una o più condizioni per creare regole di annotazione che Unified Manager applica agli oggetti di storage. Gli oggetti di storage che soddisfano la regola di annotazione vengono annotati con il valore specificato nella regola. 
+---
+= Configurazione delle condizioni per le regole di annotazione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile configurare una o più condizioni per creare regole di annotazione che Unified Manager applica agli oggetti di storage. Gli oggetti di storage che soddisfano la regola di annotazione vengono annotati con il valore specificato nella regola.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== Fasi
+
+. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *Annotazioni* nel menu Gestione di sinistra.
+. Nella scheda *Annotation Rules* (regole annotazione), fare clic su *Add* (Aggiungi).
+. Nella finestra di dialogo *Add Annotation Rule* (Aggiungi regola annotazione), immettere un nome per la regola.
+. Selezionare un tipo di oggetto dall'elenco Target Object Type, quindi selezionare un nome e un valore di annotazione dall'elenco.
+. Nella sezione *Condizioni* della finestra di dialogo, selezionare un operando e un operatore dall'elenco e immettere un valore di condizione oppure fare clic su *Aggiungi condizione* per creare una nuova condizione.
+. Fare clic su *Save and Add* (Salva e Aggiungi).
+
+
+
+
+== Esempio di configurazione di una condizione per una regola di annotazione
+
+Considerare una condizione per il tipo di oggetto SVM, in cui il nome dell'oggetto contiene "`svm_data`".
+
+Per configurare la condizione, eseguire le seguenti operazioni nella finestra di dialogo Add Annotation Rule (Aggiungi regola annotazione):
+
+. Inserire un nome per la regola di annotazione.
+. Selezionare il tipo di oggetto di destinazione come SVM.
+. Selezionare un'annotazione dall'elenco delle annotazioni e un valore.
+. Nel campo *Condizioni*, selezionare *Nome oggetto* come operando.
+. Selezionare *contiene* come operatore.
+. Inserire il valore con nome `svm_data`.
+. Fare clic su *Aggiungi*.
+

@@ -1,0 +1,34 @@
+---
+permalink: health-checker/concept-what-a-database-restore-is.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: 'Il ripristino del database è il processo di ripristino di un file di backup di Unified Manager esistente sullo stesso server o su un altro server Unified Manager. L"operazione di ripristino viene eseguita dalla console di Unified Manager.' 
+---
+= Che cos'è un ripristino del database
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il ripristino del database è il processo di ripristino di un file di backup di Unified Manager esistente sullo stesso server o su un altro server Unified Manager. L'operazione di ripristino viene eseguita dalla console di Unified Manager.
+
+Se si sta eseguendo un'operazione di ripristino sullo stesso sistema (locale) e i file di backup sono tutti memorizzati localmente, è possibile eseguire il comando di ripristino utilizzando il percorso predefinito. Se si esegue un'operazione di ripristino su un sistema Unified Manager diverso (un sistema remoto), è necessario copiare il file di backup, o i file, dallo storage secondario al disco locale prima di eseguire il comando di ripristino.
+
+Durante il processo di ripristino, l'utente viene disconnesso da Unified Manager. Una volta completato il processo di ripristino, è possibile accedere al sistema.
+
+La funzionalità di ripristino è specifica della versione e della piattaforma. È possibile ripristinare un backup di Unified Manager solo sulla stessa versione di Unified Manager. Unified Manager supporta il backup e il ripristino nei seguenti scenari di piattaforma:
+
+* Da appliance virtuale a appliance virtuale
+* Appliance virtuale per Red Hat Enterprise Linux o CentOS
+* Da Red Hat Enterprise Linux a Red Hat Enterprise Linux o CentOS
+* Da Windows a Windows
+
+
+Se si sta ripristinando l'immagine di backup su un nuovo server, al termine dell'operazione di ripristino è necessario generare un nuovo certificato di protezione HTTPS e riavviare il server Unified Manager. Sarà inoltre necessario riconfigurare le impostazioni di autenticazione SAML, se necessarie, quando si ripristina l'immagine di backup su un nuovo server.
+
+[NOTE]
+====
+I file di backup precedenti non possono essere utilizzati per ripristinare un'immagine dopo che Unified Manager è stato aggiornato a una versione più recente del software. Per risparmiare spazio, tutti i vecchi file di backup, ad eccezione del file più recente, vengono rimossi automaticamente quando si aggiorna Unified Manager.
+
+====

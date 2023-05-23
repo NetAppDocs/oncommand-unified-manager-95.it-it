@@ -1,0 +1,35 @@
+---
+permalink: health-checker/task-breaking-a-snapmirror-relationship-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile interrompere una relazione di protezione dalla pagina Health/Volume Details (Dettagli stato/volume) e interrompere i trasferimenti di dati tra un volume di origine e un volume di destinazione in una relazione SnapMirror. È possibile interrompere una relazione quando si desidera migrare i dati, per il disaster recovery o per il test delle applicazioni. Il volume di destinazione viene modificato in un volume di lettura/scrittura. Non è possibile interrompere una relazione SnapVault.' 
+---
+= Interruzione di una relazione SnapMirror dalla pagina Health/Volume Details
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile interrompere una relazione di protezione dalla pagina Health/Volume Details (Dettagli stato/volume) e interrompere i trasferimenti di dati tra un volume di origine e un volume di destinazione in una relazione SnapMirror. È possibile interrompere una relazione quando si desidera migrare i dati, per il disaster recovery o per il test delle applicazioni. Il volume di destinazione viene modificato in un volume di lettura/scrittura. Non è possibile interrompere una relazione SnapVault.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+* È necessario aver impostato l'automazione del flusso di lavoro.
+
+
+
+
+== Fasi
+
+. Nella scheda *Protection* della pagina dei dettagli *Health/Volume*, selezionare dalla topologia la relazione SnapMirror che si desidera interrompere.
+. Fare clic con il pulsante destro del mouse sulla destinazione e selezionare *Interrompi* dal menu.
++
+Viene visualizzata la finestra di dialogo Interrompi relazione.
+
+. Fare clic su *continua* per interrompere la relazione.
+. Nella topologia, verificare che la relazione sia interrotta.
+

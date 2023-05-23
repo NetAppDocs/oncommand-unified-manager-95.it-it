@@ -1,0 +1,41 @@
+---
+permalink: online-help/task-viewing-events-that-occurred-during-a-maintenance-window.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Se necessario, è possibile visualizzare gli eventi generati per tutti gli oggetti di storage durante una finestra di manutenzione di Unified Manager. La maggior parte degli eventi viene visualizzata nello stato obsoleto una volta completata la finestra di manutenzione e dopo aver eseguito il backup e l"esecuzione di tutte le risorse di sistema.' 
+---
+= Visualizzazione degli eventi verificatisi durante una finestra di manutenzione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se necessario, è possibile visualizzare gli eventi generati per tutti gli oggetti di storage durante una finestra di manutenzione di Unified Manager. La maggior parte degli eventi viene visualizzata nello stato obsoleto una volta completata la finestra di manutenzione e dopo aver eseguito il backup e l'esecuzione di tutte le risorse di sistema.
+
+
+
+== Prima di iniziare
+
+Almeno una finestra di manutenzione deve essere completata prima che siano disponibili eventi.
+
+
+
+== A proposito di questa attività
+
+Per impostazione predefinita, gli eventi che si sono verificati durante una finestra di manutenzione non vengono visualizzati nella pagina di inventario Eventi.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Eventi*.
++
+Per impostazione predefinita, tutti gli eventi attivi (nuovi e riconosciuti) vengono visualizzati nella pagina di inventario Eventi.
+
+. Dal riquadro *View* (Visualizza), selezionare l'opzione *All events generated during maintenance* (tutti gli eventi generati durante la manutenzione).
++
+Viene visualizzato l'elenco degli eventi che sono stati provati durante gli ultimi 7 giorni da tutte le sessioni della finestra di manutenzione e da tutti i cluster.
+
+. Se sono state visualizzate più finestre di manutenzione per un singolo cluster, fare clic sull'icona del calendario *ora di attivazione* e selezionare il periodo di tempo per gli eventi della finestra di manutenzione che si desidera visualizzare.
+

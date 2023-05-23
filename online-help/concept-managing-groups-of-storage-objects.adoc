@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-groups-of-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile gestire gli oggetti di storage nel proprio ambiente creando gruppi di oggetti di storage. Questi oggetti di storage devono soddisfare le regole di gruppo associate al gruppo. 
+---
+= Gestione di gruppi di oggetti storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile gestire gli oggetti di storage nel proprio ambiente creando gruppi di oggetti di storage. Questi oggetti di storage devono soddisfare le regole di gruppo associate al gruppo.

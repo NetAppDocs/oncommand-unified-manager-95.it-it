@@ -1,0 +1,50 @@
+---
+permalink: online-help/concept-what-happens-to-performance-threshold-policies-when-an-object-is-moved-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Poiché i criteri di soglia delle performance vengono assegnati agli oggetti di storage, se si sposta un oggetto, tutti i criteri di soglia assegnati rimangono associati all"oggetto dopo il completamento dello spostamento. Ad esempio, se si sposta un volume o un LUN in un aggregato diverso, i criteri di soglia rimangono attivi per il volume o il LUN sul nuovo aggregato.' 
+---
+= Cosa accade ai criteri di soglia delle performance quando un oggetto viene spostato
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Poiché i criteri di soglia delle performance vengono assegnati agli oggetti di storage, se si sposta un oggetto, tutti i criteri di soglia assegnati rimangono associati all'oggetto dopo il completamento dello spostamento. Ad esempio, se si sposta un volume o un LUN in un aggregato diverso, i criteri di soglia rimangono attivi per il volume o il LUN sul nuovo aggregato.
+
+Se esiste una condizione di contatore secondaria per il criterio di soglia (un criterio di combinazione), ad esempio se viene assegnata una condizione aggiuntiva a un aggregato o a un nodo, la condizione di contatore secondario viene applicata al nuovo aggregato o nodo a cui il volume o il LUN è stato spostato.
+
+Se esistono nuovi eventi attivi per gli oggetti che utilizzano il criterio di soglia modificato, gli eventi vengono contrassegnati come obsoleti e il criterio di soglia inizia a monitorare il contatore come criterio di soglia appena definito.
+
+Un'operazione di spostamento del volume fa in modo che ONTAP invii un evento di modifica informativo. Viene visualizzata un'icona di modifica degli eventi nella timeline degli eventi nella pagina Performance Explorer (Esplora prestazioni) e nella pagina Performance/Volume Details (Dettagli prestazioni/volume) per indicare l'ora in cui l'operazione di spostamento è stata completata.
+
+[NOTE]
+====
+Se si sposta un oggetto in un cluster diverso, il criterio di soglia definito dall'utente viene rimosso dall'oggetto. Se necessario, è necessario assegnare un criterio di soglia all'oggetto al termine dell'operazione di spostamento. Tuttavia, i criteri di soglia dinamici e definiti dal sistema vengono applicati automaticamente a un oggetto dopo che è stato spostato in un nuovo cluster.
+
+====
+
+
+== Funzionalità dei criteri di soglia durante il takeover e il giveback di ha
+
+Quando si verifica un'operazione di Takeover o giveback in una configurazione ad alta disponibilità (ha), gli oggetti spostati da un nodo all'altro mantengono le proprie policy di soglia nello stesso modo delle operazioni di spostamento manuale. Poiché Unified Manager verifica le modifiche alla configurazione del cluster ogni 15 minuti, l'impatto del passaggio al nuovo nodo non viene identificato fino al successivo polling della configurazione del cluster.
+
+[NOTE]
+====
+Se si verificano operazioni di Takeover e giveback entro un periodo di raccolta di modifiche alla configurazione di 15 minuti, le statistiche sulle performance potrebbero non spostarsi da un nodo all'altro.
+
+====
+
+
+== Funzionalità dei criteri di soglia durante il trasferimento dell'aggregato
+
+Se si sposta un aggregato da un nodo a un altro utilizzando `aggregate relocation start` comando, i criteri di soglia sia singoli che combinati vengono mantenuti su tutti gli oggetti e la parte di nodo del criterio di soglia viene applicata al nuovo nodo.
+
+
+
+== Funzionalità dei criteri di soglia durante lo switchover MetroCluster
+
+Gli oggetti che si spostano da un cluster a un altro in una configurazione MetroCluster non mantengono le impostazioni dei criteri di soglia definiti dall'utente. Se necessario, è possibile applicare criteri di soglia ai volumi e alle LUN che sono stati spostati nel cluster del partner. Dopo che un oggetto è stato spostato di nuovo nel cluster originale, il criterio di soglia definito dall'utente viene riapplicato automaticamente.
+
+xref:concept-volume-behavior-during-switchover-and-switchback.adoc[Comportamento del volume durante lo switchover e lo switchback]

@@ -1,0 +1,42 @@
+---
+permalink: online-help/reference-cache-miss-ratio-performance-counter-chart.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Il grafico del contatore Performance Explorer cache Miss Ratio (rapporto errori cache di Performance Explorer) visualizza la percentuale di richieste di lettura provenienti dalle applicazioni client restituite dal disco invece di essere restituite dalla cache.' 
+---
+= Tabella dei contatori delle performance di cache Miss Ratio
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il grafico del contatore Performance Explorer cache Miss Ratio (rapporto errori cache di Performance Explorer) visualizza la percentuale di richieste di lettura provenienti dalle applicazioni client restituite dal disco invece di essere restituite dalla cache.
+
+La finestra a comparsa visualizzata quando il cursore si trova nell'area del grafico mostra i valori specifici del contatore in orari specifici.
+
+Nella parte inferiore della pagina del grafico vengono visualizzate le informazioni relative al rapporto minimo, massimo, medio e percentuale di perdita della cache del 95° percentile per l'intervallo di tempo selezionato.
+
+
+
+== Cache Miss Ratio - grafico contatore totale
+
+Visualizza la percentuale di richieste di lettura provenienti dalle applicazioni client restituite dal disco invece di essere restituite dalla cache.
+
+Questa opzione di grafico si applica solo quando l'oggetto selezionato è un volume.
+
+
+
+== Pulsante *Zoom View*
+
+Visualizza una vista ingrandita dei dati del contatore.
+
+* Eventi
++
+Il verificarsi di eventi critici, di avviso e informativi è indicato sulle righe temporali sopra i grafici.
+
+* Contatori
++
+I contatori nel riquadro di sinistra indicano i valori dei contatori visualizzati. Deselezione o selezione di image:../media/eye-icon.gif[""] associato a un contatore, nasconde e mostra le informazioni del contatore dal grafico e può essere di aiuto nel confronto degli oggetti.
+
+

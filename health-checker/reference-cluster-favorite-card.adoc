@@ -1,0 +1,64 @@
+---
+permalink: health-checker/reference-cluster-favorite-card.html 
+sidebar: sidebar 
+keywords:  
+summary: La scheda Cluster Favorite consente di visualizzare i dettagli di capacità, configurazione e performance dei singoli cluster contrassegnati come preferiti. 
+---
+= Scheda preferita del cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La scheda Cluster Favorite consente di visualizzare i dettagli di capacità, configurazione e performance dei singoli cluster contrassegnati come preferiti.
+
+
+
+== Attributi del cluster
+
+La scheda Cluster Favorite (Preferiti cluster) visualizza i seguenti attributi dei singoli cluster:
+
+* *Stato di integrità del cluster*
++
+Un'icona che indica lo stato di salute del cluster. I valori possibili sono normale, Avviso, errore e critico.
+
+* *Nome cluster*
++
+Nome del cluster.
+
+* *Capacità*
++
+Spazio libero totale sul cluster.
+
+* *Configurazione*
++
+Dettagli di configurazione del cluster.
+
++
+** *Indirizzo IP*
++
+Indirizzo IP, o nome host, dell'interfaccia logica di gestione del cluster (LIF) utilizzata per aggiungere il cluster.
+
+** *Numero di nodi*
++
+Numero di nodi nel cluster.
+
+
+
+* *Prestazioni*
++
+Dettagli sulle performance del cluster.
+
++
+** *IOPS*
++
+Numero medio di operazioni i/o al secondo nelle ultime 72 ore.
+
+** *Throughput*
++
+Throughput medio nelle ultime 72 ore, in Mbps .
+
+
+
+

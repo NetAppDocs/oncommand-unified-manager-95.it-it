@@ -1,0 +1,53 @@
+---
+permalink: online-help/concept-how-a-data-policy-filters-data-written-to-an-infinite-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: Una policy sui dati filtra automaticamente i dati scritti nel volume infinito in diverse classi di storage. Tutti i file vengono scritti nel file system singolo nello spazio dei nomi del volume infinito e le regole della policy dei dati determinano la classe di storage in cui vengono memorizzati i dati dei file. 
+---
+= Come una policy sui dati filtra i dati scritti in un volume infinito
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Una policy sui dati filtra automaticamente i dati scritti nel volume infinito in diverse classi di storage. Tutti i file vengono scritti nel file system singolo nello spazio dei nomi del volume infinito e le regole della policy dei dati determinano la classe di storage in cui vengono memorizzati i dati dei file.
+
+Una policy di dati predefinita viene creata automaticamente per una macchina virtuale di storage (SVM) con Infinite Volume quando si crea Infinite Volume. Il criterio dati è attivo e contiene una regola predefinita. La regola predefinita memorizza i dati in entrata per i file come segue per i volumi Infinite con e senza classi di storage:
+
+|===
+| Per un volume infinito... | Il criterio dati predefinito esegue questa operazione... 
+
+
+ a| 
+Senza classi di storage
+ a| 
+Inserisce tutti i dati in entrata per i file nel volume infinito
+
+
+
+ a| 
+Con un'unica classe di storage
+ a| 
+Inserisce tutti i dati in entrata per i file nella classe di storage
+
+
+
+ a| 
+Con una o più classi di storage
+ a| 
+Inserisce tutti i dati in entrata per i file nella prima classe di storage creata
+
+|===
+[NOTE]
+====
+Per un volume infinito con due o più classi di storage, è necessario modificare la policy dei dati il prima possibile per creare regole che filtrino i dati per diversi tipi di file nelle diverse classi di storage. È necessario modificare la policy dei dati utilizzando Unified Manager.
+
+====
+La policy sui dati non influisce sulla posizione dei file nel file system nello spazio dei nomi di Infinite Volume e le classi di storage sono trasparenti per le applicazioni client. Il file system nello spazio dei nomi contiene i nomi dei file. La policy sui dati influisce solo sulla classe di storage utilizzata per memorizzare i dati dei file. Le policy sui dati sono utili quando si assegnano due o più classi di storage a un volume infinito.
+
+È possibile modificare il criterio dati per creare regole aggiuntive, ma non è possibile eliminare il criterio dati o la regola predefinita.
+
+Il diagramma seguente illustra come una policy di dati filtra i dati per un volume infinito. Il nome del file viene memorizzato nel componente dello spazio dei nomi e le regole del criterio dati specificano che i dati di questo particolare file vengono memorizzati nella classe di storage Silver.
+
+image::../media/how-a-data-policy-filters-data-written-to-an-infinite-volume.gif[Questo grafico è descritto dal testo circostante]

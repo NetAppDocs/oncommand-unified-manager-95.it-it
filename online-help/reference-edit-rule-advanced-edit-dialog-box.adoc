@@ -1,0 +1,46 @@
+---
+permalink: online-help/reference-edit-rule-advanced-edit-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile utilizzare la finestra di dialogo Modifica regola per modificare le proprietà di una regola che non viene creata utilizzando un modello. Le proprietà della regola che è possibile modificare includono i tipi di file, i percorsi di directory, i criteri di corrispondenza o i proprietari. È possibile selezionare una classe di storage appropriata per la regola. Ad esempio, è possibile modificare le condizioni specificate nei criteri di corrispondenza di una regola. 
+---
+= Finestra di dialogo Edit Rule (Modifica avanzata)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la finestra di dialogo Modifica regola per modificare le proprietà di una regola che non viene creata utilizzando un modello. Le proprietà della regola che è possibile modificare includono i tipi di file, i percorsi di directory, i criteri di corrispondenza o i proprietari. È possibile selezionare una classe di storage appropriata per la regola. Ad esempio, è possibile modificare le condizioni specificate nei criteri di corrispondenza di una regola.
+
+
+
+== Nome regola
+
+Visualizza il nome della regola.
+
+
+
+== Criteri di corrispondenza
+
+Visualizza un elenco di condizioni relative al modello di regola selezionato. L'elenco delle condizioni cambia in base al modello di regola selezionato. È possibile espandere le regole e modificare le proprietà della regola, in base alle esigenze.
+
+
+
+== Area di posizionamento dei contenuti
+
+Visualizza l'elenco delle classi di storage. È possibile selezionare una classe di storage appropriata per la regola selezionata.
+
+
+
+== Pulsanti di comando
+
+* *Aggiorna*
++
+Aggiorna le modifiche apportate alla regola e chiude la finestra di dialogo Modifica regola.
+
+* *Annulla*
++
+Annulla le modifiche recenti apportate alla regola e chiude la finestra di dialogo Modifica regola.
+
+

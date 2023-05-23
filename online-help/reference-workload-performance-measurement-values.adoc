@@ -1,0 +1,104 @@
+---
+permalink: online-help/reference-workload-performance-measurement-values.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager misura le performance dei carichi di lavoro su un cluster in base a valori statistici storici e previsti, che costituiscono l"intervallo di valori previsto per i carichi di lavoro. Confronta i valori statistici effettivi del carico di lavoro con l"intervallo previsto per determinare quando le performance del carico di lavoro sono troppo alte o troppo basse. Un carico di lavoro che non funziona come previsto attiva un report degli eventi di performance per ricevere una notifica.' 
+---
+= Valori di misurazione delle performance del carico di lavoro
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager misura le performance dei carichi di lavoro su un cluster in base a valori statistici storici e previsti, che costituiscono l'intervallo di valori previsto per i carichi di lavoro. Confronta i valori statistici effettivi del carico di lavoro con l'intervallo previsto per determinare quando le performance del carico di lavoro sono troppo alte o troppo basse. Un carico di lavoro che non funziona come previsto attiva un report degli eventi di performance per ricevere una notifica.
+
+Nella seguente illustrazione, il valore effettivo, in rosso, rappresenta le statistiche effettive delle performance nel periodo di tempo. Il valore effettivo ha superato la soglia di performance, che rappresenta i limiti superiori dell'intervallo previsto. Il picco è il valore effettivo più alto nell'intervallo di tempo. La deviazione misura la variazione tra i valori previsti e quelli effettivi, mentre la deviazione di picco indica la variazione più grande tra i valori attesi e quelli effettivi.
+
+image::../media/opm-wrkld-perf-measurement-png.gif[Misurazioni delle performance dei carichi di lavoro di Performance Manager]
+
+La seguente tabella elenca i valori di misurazione delle performance del carico di lavoro.
+
+|===
+| Misurazione | Descrizione 
+
+
+ a| 
+Attività
+ a| 
+La percentuale del limite di QoS utilizzato dai carichi di lavoro nel gruppo di criteri.
+
+[NOTE]
+====
+Se Unified Manager rileva una modifica a un gruppo di criteri, ad esempio l'aggiunta o la rimozione di un volume o la modifica del limite di QoS, i valori effettivi e previsti potrebbero superare il 100% del limite impostato. Se un valore supera il 100% del limite impostato, viene visualizzato come >100%. Se un valore è inferiore all'1% del limite impostato, viene visualizzato come <1%.
+
+====
+
+
+ a| 
+Effettivo
+ a| 
+Il valore misurato delle performance in un momento specifico per un determinato carico di lavoro.
+
+
+
+ a| 
+Deviazione
+ a| 
+Il cambiamento tra i valori previsti e quelli effettivi. Si tratta del rapporto tra il valore effettivo meno il valore previsto e il valore superiore dell'intervallo previsto meno il valore previsto.
+
+[NOTE]
+====
+Un valore di deviazione negativo indica che le performance del carico di lavoro sono inferiori al previsto, mentre un valore di deviazione positivo indica che le performance del carico di lavoro sono superiori al previsto. Se i valori previsti e quelli effettivi sono molto bassi, ad esempio in centesimi o millesimi di percentuale, la deviazione visualizza N/A.
+
+====
+
+
+ a| 
+Previsto
+ a| 
+I valori previsti si basano sull'analisi dei dati storici delle performance per un determinato carico di lavoro. Unified Manager analizza questi valori statistici per determinare l'intervallo di valori previsto.
+
+
+
+ a| 
+Intervallo previsto
+ a| 
+L'intervallo di valori previsto è una previsione, o previsione, dei valori di performance superiori e inferiori previsti in un momento specifico. Per la latenza del carico di lavoro, i valori superiori costituiscono la soglia di performance. Quando il valore effettivo supera la soglia di performance, Unified Manager attiva un avviso di performance event.
+
+
+
+ a| 
+Picco
+ a| 
+Il valore massimo misurato in un periodo di tempo.
+
+
+
+ a| 
+Deviazione di picco
+ a| 
+Il valore di deviazione massimo misurato in un periodo di tempo.
+
+
+
+ a| 
+Profondità della coda
+ a| 
+Il numero di richieste i/o in sospeso che sono in attesa sul componente di interconnessione.
+
+
+
+ a| 
+Utilizzo
+ a| 
+Per l'elaborazione di rete, l'elaborazione dei dati e i componenti aggregati, la percentuale di tempo occupato per completare le operazioni dei carichi di lavoro in un determinato periodo di tempo. Ad esempio, la percentuale di tempo in cui i componenti di elaborazione dati o di elaborazione di rete elaborano una richiesta di i/o o un aggregato deve soddisfare una richiesta di lettura o scrittura.
+
+
+
+ a| 
+Throughput in scrittura
+ a| 
+La quantità di throughput in scrittura, in megabyte al secondo (Mbps), dai carichi di lavoro su un cluster locale al cluster partner in una configurazione MetroCluster.
+
+|===

@@ -1,0 +1,69 @@
+---
+permalink: online-help/reference-snapshot-copies-on-a-volume-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare la finestra di dialogo Snapshot Copies on a Volume (copie Snapshot su un volume) per visualizzare l"elenco delle copie Snapshot. È possibile eliminare una copia Snapshot per risparmiare o liberare spazio su disco, oppure se la copia non è più necessaria. È inoltre possibile calcolare la quantità di spazio su disco che è possibile recuperare in caso di eliminazione di una o più copie Snapshot.' 
+---
+= Copie Snapshot in un volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la finestra di dialogo Snapshot Copies on a Volume (copie Snapshot su un volume) per visualizzare l'elenco delle copie Snapshot. È possibile eliminare una copia Snapshot per risparmiare o liberare spazio su disco, oppure se la copia non è più necessaria. È inoltre possibile calcolare la quantità di spazio su disco che è possibile recuperare in caso di eliminazione di una o più copie Snapshot.
+
+
+
+== Vista elenco
+
+La vista elenco visualizza, in formato tabulare, le informazioni sulle copie Snapshot del volume. È possibile utilizzare i filtri di colonna per personalizzare i dati visualizzati.
+
+* *Snapshot Copy*
++
+Visualizza il nome della copia Snapshot.
+
+* *Spazio utilizzato %*
++
+Visualizza, in percentuale, lo spazio totale utilizzato dalla copia Snapshot nel volume.
+
+* *Dimensione totale*
++
+Visualizza le dimensioni totali della copia Snapshot.
+
+* *Ora di creazione*
++
+Visualizza l'indicatore data e ora in cui è stata creata la copia Snapshot.
+
+* *Dipendenza*
++
+Visualizza le applicazioni che dipendono dalla copia Snapshot. I valori possibili sono SnapMirror, SnapVault, SnapLock, Dump, LUN, Vclone e Busy.
+
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti operazioni:
+
+* *Calcolare*
++
+Consente di calcolare lo spazio che può essere recuperato eliminando una o più copie Snapshot.
+
+* *Elimina selezionati*
++
+Elimina una o più copie Snapshot.
+
+* *Chiudi*
++
+Chiude la finestra di dialogo copie Snapshot su un volume.
+
+* *Ricalcola*
++
+Consente di calcolare lo spazio che può essere recuperato eliminando le copie Snapshot selezionate.
+
++
+Il pulsante *Ricalcola* viene attivato quando si apportano modifiche nella selezione delle copie Snapshot.
+
+

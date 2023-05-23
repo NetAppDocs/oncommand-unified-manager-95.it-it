@@ -1,0 +1,54 @@
+---
+permalink: online-help/task-changing-the-identity-provider-idp-used-for-saml-authentication-um.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile modificare il provider di identità utilizzato da Unified Manager per autenticare gli utenti remoti. 
+---
+= Modifica del provider di identità utilizzato per l'autenticazione SAML
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare il provider di identità (IdP) utilizzato da Unified Manager per autenticare gli utenti remoti.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre dell'URL IdP e dei metadati.
+* È necessario disporre dell'accesso all'IdP.
+
+
+
+
+== A proposito di questa attività
+
+Il nuovo IdP può essere configurato prima o dopo la configurazione di Unified Manager.
+
+
+
+== Fasi
+
+. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *Authentication* nel menu Setup di sinistra.
+. Nella pagina *Setup/Authentication*, selezionare la scheda *SAML Authentication*.
+. Inserire il nuovo URI IdP e i metadati IdP richiesti per connettere il server Unified Manager all'IdP.
++
+Se l'IdP è accessibile direttamente dal server di Unified Manager, è possibile fare clic sul pulsante *Fetch IdP Metadata* (Scarica metadati IdP) dopo aver immesso l'URL IdP per compilare automaticamente il campo IdP Metadata (metadati IdP).
+
+. Copiare l'URI dei metadati di Unified Manager o salvare i metadati in un file di testo XML.
+. Fare clic su *Save Configuration* (Salva configurazione).
++
+Viene visualizzata una finestra di messaggio per confermare che si desidera modificare la configurazione.
+
+. Fare clic su *OK*.
+
+
+
+
+== Al termine
+
+Accedere al nuovo IdP e immettere l'URI e i metadati del server Unified Manager per completare la configurazione.
+
+La volta successiva che gli utenti remoti autorizzati tenteranno di accedere all'interfaccia grafica di Unified Manager, inseriranno le proprie credenziali nella nuova pagina di accesso IdP anziché nella vecchia pagina di accesso IdP.

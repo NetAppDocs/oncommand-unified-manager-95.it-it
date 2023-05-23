@@ -1,0 +1,50 @@
+---
+permalink: online-help/task-creating-rules-to-generate-email-addresses.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile creare regole per specificare l"indirizzo e-mail in base alla quota utente associata a cluster, macchine virtuali di storage (SVM), volumi, qtree, utenti o gruppi di utenti. Quando si verifica una violazione delle quote, viene inviata una notifica all"indirizzo e-mail specificato.' 
+---
+= Creazione di regole per la generazione di indirizzi e-mail
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile creare regole per specificare l'indirizzo e-mail in base alla quota utente associata a cluster, storage virtual machine (SVM), volumi, qtree, utenti o gruppi di utenti. Quando si verifica una violazione delle quote, viene inviata una notifica all'indirizzo e-mail specificato.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+* È necessario aver esaminato le linee guida nella pagina regole per generare indirizzo email quota utente e gruppo.
+
+
+
+
+== A proposito di questa attività
+
+È necessario definire le regole per gli indirizzi email di quota e inserirle nell'ordine in cui si desidera eseguirli. Ad esempio, se si desidera utilizzare l'indirizzo e-mail qtree1@xyz.com per ricevere notifiche sulle violazioni delle quote per qtree1 e utilizzare l'indirizzo e-mail admin@xyz.com per tutti gli altri qtree, le regole devono essere elencate nel seguente ordine:
+
+* Se (€ QTREE == 'qtre1' ) allora qtree1@xyz.com
+* Se ( QTREE == * ) allora admin@xyz.com
+
+
+Se nessuno dei criteri per le regole specificate viene soddisfatto, viene utilizzata la regola predefinita:
+
+SE (@_USER_OR_GROUP == * ), ALLORA IL DOMINIO DI UN UTENTE O DI UN GRUPPO
+
+
+
+== Fasi
+
+. Nella barra degli strumenti, fare clic su *image:../media/clusterpage-settings-icon.gif[""]*, quindi fare clic su *quota Email* nel menu Setup di sinistra.
+. Nella pagina delle opzioni *Setup*, fare clic su *Address Rules* (regole indirizzo), quindi inserire la regola in base ai criteri.
+. Fare clic su *Validate* (convalida) per convalidare la sintassi della regola.
++
+Se la sintassi della regola non è corretta, viene visualizzato un messaggio di errore. Correggere la sintassi e fare nuovamente clic su *Validate*.
+
+. Fare clic su *Save and Close* (Salva e chiudi).
+. Verificare che l'indirizzo e-mail creato sia visualizzato nella scheda *quote utente e gruppo* della pagina dei dettagli *Health/Storage Virtual Machine*.
+

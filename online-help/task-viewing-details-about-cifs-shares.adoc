@@ -1,0 +1,41 @@
+---
+permalink: online-help/task-viewing-details-about-cifs-shares.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile utilizzare la pagina Health/Storage Virtual Machine Details per visualizzare informazioni dettagliate sulla condivisione CIFS ospitata dalla macchina virtuale di storage selezionata. È possibile visualizzare dettagli come il nome della condivisione, il percorso di giunzione, gli oggetti, le impostazioni di sicurezza e i criteri di esportazione definiti per la condivisione. 
+---
+= Visualizzazione delle condivisioni CIFS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la pagina Health/Storage Virtual Machine Details per visualizzare informazioni dettagliate sulla condivisione CIFS ospitata dalla macchina virtuale di storage (SVM) selezionata. È possibile visualizzare dettagli come il nome della condivisione, il percorso di giunzione, gli oggetti, le impostazioni di sicurezza e i criteri di esportazione definiti per la condivisione.
+
+
+
+== Prima di iniziare
+
+* La licenza CIFS deve essere attivata sul cluster.
+* È necessario configurare le LIF che servono le condivisioni CIFS.
+* È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+
+
+
+
+== A proposito di questa attività
+
+[NOTE]
+====
+Le condivisioni nelle cartelle non vengono visualizzate nella scheda condivisioni CIFS.
+
+====
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Health* > *SVM*.
+. Selezionare la SVM per la quale si desidera visualizzare i dettagli della condivisione CIFS.
+. Nella pagina dei dettagli di *Health/Storage Virtual Machine*, fare clic sulla scheda *CIFS Shares*.
+

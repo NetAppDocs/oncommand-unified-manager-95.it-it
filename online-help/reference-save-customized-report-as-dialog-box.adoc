@@ -1,0 +1,46 @@
+---
+permalink: online-help/reference-save-customized-report-as-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile utilizzare la finestra di dialogo Salva report personalizzato con nome per salvare un report dopo averlo personalizzato. 
+---
+= Finestra di dialogo Save Customized Report As (Salva report personalizzato con nome
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la finestra di dialogo Salva report personalizzato con nome per salvare un report dopo averlo personalizzato.
+
+
+
+== Proprietà
+
+È possibile personalizzare e salvare un report specificando proprietà come il nome e la descrizione.
+
+* *Nome report*
++
+Visualizza il nome del report. Il nome del report originale viene visualizzato per impostazione predefinita. È possibile modificare il nome del report in base alla personalizzazione. Il nome del report non può superare i 255 caratteri.
+
+* *Descrizione*
++
+Specifica la descrizione della personalizzazione effettuata sul report. La descrizione non può superare i 150 caratteri.
+
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti operazioni:
+
+* *Salva*
++
+Salva il report personalizzato .
+
+* *Annulla*
++
+Annulla le modifiche recenti e chiude la finestra di dialogo Salva report personalizzato con nome.
+
+

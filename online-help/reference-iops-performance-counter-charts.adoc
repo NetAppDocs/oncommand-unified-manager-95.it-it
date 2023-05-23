@@ -1,0 +1,80 @@
+---
+permalink: online-help/reference-iops-performance-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'I grafici del contatore IOPS di Performance Explorer visualizzano il numero di operazioni di input/output elaborate al secondo dall"oggetto di storage selezionato.' 
+---
+= Tabelle dei contatori delle performance IOPS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I grafici del contatore IOPS di Performance Explorer visualizzano il numero di operazioni di input/output elaborate al secondo dall'oggetto di storage selezionato.
+
+La finestra a comparsa visualizzata quando il cursore si trova nell'area del grafico mostra i valori specifici del contatore in orari specifici.
+
+Quando viene visualizzato nella vista Zoom, i grafici IOPS del volume e del LUN visualizzano anche le impostazioni della soglia massima e minima di throughput della qualità del servizio (QoS), se configurate in ONTAP. I grafici IOPS/TB visualizzano le impostazioni di picco QoS e di soglia di throughput previsto, se configurate.
+
+Quando si visualizza un volume o un LUN che condivide gli IOPS di una policy QoS condivisa, viene visualizzata una riga per "`Total workload IOPS`" per mostrare gli IOPS utilizzati da tutti gli altri carichi di lavoro che condividono questa policy.
+
+Nella parte inferiore della pagina del grafico vengono visualizzate le informazioni relative agli IOPS minimo, massimo, medio e 95° percentile per l'intervallo di tempo selezionato.
+
+Sono disponibili quattro tipi di carte IOPS:
+
+
+
+== IOPS - grafico contatore totale
+
+Visualizza il numero di operazioni di input/output elaborate al secondo.
+
+
+
+== IOPS - grafico del contatore dei guasti
+
+Visualizza gli stessi dati IOPS separati in lettura, scrittura e altri IOPS.
+
+Questa opzione di grafico si applica quando l'oggetto selezionato è una SVM, un nodo, un aggregato, un volume o un LUN.
+
+
+
+== IOPS - grafico dei contatori dei protocolli
+
+Visualizza gli stessi dati IOPS, ma per le SVM i dati delle performance sono separati in singoli componenti per il traffico dei protocolli CIFS, NFS, FCP, NVMe e iSCSI.
+
+
+
+== IOPS/TB - grafico contatore totale
+
+Visualizza il numero di operazioni di input/output elaborate al secondo in base allo spazio logico totale consumato dal volume, in terabyte. Detto anche densità di i/o, questo contatore misura la quantità di performance che possono essere fornite da una determinata quantità di capacità di storage.
+
+Questa opzione di grafico è disponibile solo quando l'oggetto selezionato è un volume. Visualizza i dati sulle prestazioni solo quando la capacità logica utilizzata dal volume è maggiore o uguale a 1 TB. I gap vengono visualizzati nel grafico quando la capacità utilizzata scende al di sotto di 1 TB durante il periodo di tempo selezionato.
+
+[NOTE]
+====
+In alcune situazioni, il grafico IOPS/TB potrebbe mostrare grandi picchi nei dati, mentre il grafico IOPS non mostra lo stesso comportamento. Si tratta di un limite noto in cui alcuni dati relativi alle performance vengono acquisiti con minore frequenza rispetto ad altri dati relativi alle performance. In genere, questo grafico torna al funzionamento normale in 5 o 10 minuti quando i cicli di raccolta sono sincronizzati.
+
+====
+
+
+== Pulsante *Zoom View*
+
+Visualizza una vista ingrandita dei dati del contatore.
+
+* Eventi
++
+Il verificarsi di eventi critici, di errore, di avviso e informativi è indicato nelle righe temporali sopra i grafici.
+
+* Soglie
++
+La linea orizzontale tratteggiata indica il valore di soglia dell'avviso di utilizzo impostato in Unified Manager.
+
++
+La linea rossa fissa indica il valore della soglia critica di utilizzo impostato in Unified Manager.
+
+* Contatori
++
+I contatori nel riquadro di sinistra indicano i valori dei contatori visualizzati. Deselezione o selezione di image:../media/eye-icon.gif[""] Che è associato a un contatore nasconde e mostra le informazioni del contatore dal grafico e può aiutare nel confronto degli IOPS degli oggetti.
+
+

@@ -1,0 +1,55 @@
+---
+permalink: online-help/reference-dashboards-cluster-view-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Dashboards/Cluster View (Dashboard/visualizzazione cluster) visualizza informazioni generali sui cluster che si stanno gestendo.' 
+---
+= Dashboard/pagina visualizzazione cluster
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Dashboards/Cluster View (Dashboard/visualizzazione cluster) visualizza informazioni generali sui cluster che si stanno gestendo.
+
+Facendo clic su *Manage Clusters* (Gestisci cluster) si accede alla pagina Configuration/Cluster Data Sources (origini dati di configurazione/cluster).
+
+Facendo clic su un cluster vengono visualizzate informazioni generali sullo stato del monitoraggio, sullo stato della capacità e sullo stato delle performance del cluster.
+
+La dashboard Cluster View è composta da due sezioni principali: Cluster gestiti (a sinistra) e Dettagli cluster (a destra).
+
+
+
+== Sezione Managed Clusters
+
+Elenca tutti i cluster monitorati da Unified Manager. Per ciascun cluster dell'elenco vengono forniti i seguenti dettagli:
+
+* Icona di stato del cluster: Lo stato può essere critico (image:../media/sev-critical-um60.png["Icona per la severità dell'evento – critico"]), errore (image:../media/sev-error-um60.png["Icona per la severità dell'evento – errore"]), Avviso (image:../media/sev-warning-um60.png["Icona per la severità dell'evento – avviso"]), o normale (image:../media/sev-normal-um60.png["Icona per la severità dell'evento – normale"]).
+* IP address or host name (Indirizzo IP o nome host): Indica il nome host del cluster e l'indirizzo IP o FQDN.
+* Cluster Health (Stato cluster): Fornisce informazioni sullo stato di salute del cluster, monitorate da Unified Manager.
++
+Lo stato di salute può avere uno dei seguenti valori: OK, OK con sospeso, degradato e componenti non raggiungibili.
+
+
+
+
+
+== Sezione Cluster Details (Dettagli cluster)
+
+Fornisce informazioni sullo stato, la capacità e le performance del cluster selezionato per il monitoraggio.
+
+* Monitoring Status (Stato monitoraggio): Visualizza lo stato di monitoraggio dello stato di salute e delle performance in corso.
++
+Lo stato di monitoraggio può avere i seguenti valori: Rilevamento, polling completato, polling non riuscito o non disponibile. Lo stato di monitoraggio visualizza un messaggio di errore quando il lavoro di monitoraggio corrispondente (stato di salute o prestazioni) non riesce.
+
+* Capacity (capacità): Visualizza la capacità di storage totale, utilizzata e libera del cluster selezionato.
+* Performance (prestazioni): Visualizza la velocità operativa media del cluster in numero di IOPS (operazioni di input/output al secondo) e il throughput medio del cluster selezionato in Mbps (megabyte al secondo).
+
+
+La sezione Dettagli fornisce inoltre collegamenti di navigazione alle singole pagine dei dettagli del cluster delle applicazioni di Unified Manager di OnCommand:
+
+* Il collegamento Health (Stato) consente di accedere alla pagina Health/Cluster Details (Dettagli stato/cluster) del cluster selezionato.
+* Il collegamento Performance (prestazioni) consente di accedere alla pagina Performance/Cluster Details (Dettagli prestazioni/cluster) del cluster selezionato.
+* Il collegamento Gestore di sistema consente di accedere alla pagina di accesso di Gestore di sistema di OnCommand in modo da poter gestire le impostazioni del cluster.
+

@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-viewing-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile visualizzare l"elenco delle regole create dalla scheda Data Policy (Policy dati) prima di modificare il criterio dati per SVM con Infinite Volume.' 
+---
+= Regole di visualizzazione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile visualizzare l'elenco delle regole create dalla scheda Data Policy (Policy dati) prima di modificare il criterio dati per SVM con Infinite Volume.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+* Il cluster contenente SVM con Infinite Volume con classi di storage deve essere aggiunto al database di Unified Manager.
+
+
+
+
+== A proposito di questa attività
+
+La scheda Data Policy (Policy dati) è visibile solo per una SVM con Infinite Volume (Volume infinito).
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Health* > *SVM*.
+. Nella pagina di inventario *Health/Storage Virtual Machines*, selezionare la SVM appropriata.
+. Fare clic su *Data Policy*.
+
+
+
+
+== Risultati
+
+Viene visualizzato l'elenco delle regole nella policy dei dati per la SVM selezionata. È possibile utilizzare Filter by Storage Class (filtro per classe di storage) per visualizzare le regole relative a una classe di storage specifica.

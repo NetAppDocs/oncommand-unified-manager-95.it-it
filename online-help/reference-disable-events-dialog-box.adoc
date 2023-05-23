@@ -1,0 +1,59 @@
+---
+permalink: online-help/reference-disable-events-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La finestra di dialogo Disable Events (Disattiva eventi) visualizza l"elenco dei tipi di evento per i quali è possibile disattivare gli eventi. È possibile disattivare gli eventi per un tipo di evento in base a una determinata severità o a una serie di eventi.' 
+---
+= Finestra di dialogo Disattiva eventi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La finestra di dialogo Disable Events (Disattiva eventi) visualizza l'elenco dei tipi di evento per i quali è possibile disattivare gli eventi. È possibile disattivare gli eventi per un tipo di evento in base a una determinata severità o a una serie di eventi.
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== Area Event Properties (Proprietà evento
+
+L'area Proprietà evento specifica le seguenti proprietà dell'evento:
+
+* *Severità evento*
++
+Consente di selezionare gli eventi in base al tipo di severità, che può essere critico, errore, Avviso o informazioni.
+
+* *Il nome dell'evento contiene*
++
+Consente di filtrare gli eventi il cui nome contiene i caratteri specificati.
+
+* *Eventi corrispondenti*
++
+Visualizza l'elenco degli eventi corrispondenti al tipo di severità dell'evento e alla stringa di testo specificata.
+
+* *Disattiva eventi*
++
+Visualizza l'elenco degli eventi selezionati per la disattivazione.
+
++
+Viene inoltre visualizzata la severità dell'evento insieme al nome dell'evento.
+
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti attività per gli eventi selezionati:
+
+* *Salva e chiudi*
++
+Disattiva il tipo di evento e chiude la finestra di dialogo.
+
+* *Annulla*
++
+Elimina le modifiche e chiude la finestra di dialogo.
+
+

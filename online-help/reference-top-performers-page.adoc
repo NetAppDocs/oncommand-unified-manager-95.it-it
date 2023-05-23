@@ -1,0 +1,77 @@
+---
+permalink: online-help/reference-top-performers-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Top Performer visualizza gli oggetti storage con le performance più elevate o più basse, in base al contatore delle performance selezionato. Ad esempio, nella categoria SVM, è possibile visualizzare le SVM con IOPS più elevati, latenza più elevata o Mbps più bassi. Questa pagina mostra anche se uno qualsiasi dei migliori esecutori ha eventi di performance attivi (nuovi o riconosciuti).' 
+---
+= Pagina Top Performers
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Top Performer visualizza gli oggetti storage con le performance più elevate o più basse, in base al contatore delle performance selezionato. Ad esempio, nella categoria SVM, è possibile visualizzare le SVM con IOPS più elevati, latenza più elevata o Mbps più bassi. Questa pagina mostra anche se uno qualsiasi dei migliori esecutori ha eventi di performance attivi (nuovi o riconosciuti).
+
+La pagina Top Performer visualizza un massimo di 10 oggetti. Si noti che l'oggetto Volume include sia volumi FlexVol che volumi FlexGroup; non include FlexGroup costituenti o volumi Infinite.
+
+* *Intervallo di tempo*
++
+È possibile selezionare un intervallo di tempo per visualizzare le prestazioni principali; l'intervallo di tempo selezionato si applica a tutti gli oggetti di storage. Intervalli di tempo disponibili:
+
++
+** Ultima ora
+** Ultime 24 ore
+** Ultime 72 ore (impostazione predefinita)
+** Ultimi 7 giorni
+
+
+* *Metrico*
++
+Fare clic sul menu *Metrico* per selezionare un contatore diverso. Le opzioni del contatore sono univoche per il tipo di oggetto. Ad esempio, i contatori disponibili per l'oggetto *Volumes* sono *Latency*, *IOPS* e *Mbps*. La modifica del contatore consente di ricaricare i dati del pannello con i principali performer in base al contatore selezionato.
+
++
+Contatori disponibili:
+
++
+** Latenza
+** IOPS
+** Mbps
+** Capacità di performance utilizzata (per nodi e aggregati)
+** Utilizzo (per nodi e aggregati)
+
+
+* *Ordina*
++
+Fare clic sul menu *Ordina* per selezionare un ordine crescente o decrescente per l'oggetto e il contatore selezionati. Le opzioni disponibili sono: Da *massimo a minimo* e da *minimo a massimo*. Queste opzioni consentono di visualizzare gli oggetti con le performance più elevate o più basse.
+
+* *Barra del contatore*
++
+La barra del contatore nel grafico mostra le statistiche delle performance per ciascun oggetto, rappresentato come una barra per quell'elemento. I grafici a barre sono codificati a colori. Se il contatore non supera una soglia di performance, la barra del contatore viene visualizzata in blu. Se è attiva una violazione di soglia (un evento nuovo o confermato), la barra viene visualizzata a colori per l'evento: Gli eventi di avviso vengono visualizzati in giallo (image:../media/treemapstatus-warning-png.gif["Icona di TreeMap – Stato avviso"]) e gli eventi critici sono visualizzati in rosso (image:../media/treemapred-png.gif["Icona di TreeMap – colore rosso"]). Le violazioni di soglia sono inoltre indicate dalle icone degli indicatori degli eventi di severità per gli eventi critici e di avviso.
+
++
+image::../media/top-10-example.gif[top 10 esempio]
+
++
+Per ciascun grafico, l'asse X visualizza le prestazioni superiori per il tipo di oggetto selezionato. L'asse Y visualizza le unità applicabili al contatore selezionato. Facendo clic sul collegamento relativo al nome dell'oggetto sotto ciascun elemento del grafico a barre verticale, si accede alla pagina di destinazione delle prestazioni per l'oggetto selezionato.
+
+* *Indicatore di evento di severità*
++
+L'icona dell'indicatore *evento di severità* viene visualizzata a sinistra del nome di un oggetto per Active Critical (image:../media/sev-critical-um60.png["Icona per la severità dell'evento – critico"]) o avviso (image:../media/sev-warning-um60.png["Icona per la severità dell'evento – avviso"]) nei grafici con le migliori performance. Fare clic sull'icona dell'indicatore *evento di severità* per visualizzare:
+
++
+** *Un evento*
++
+Consente di accedere alla pagina Dettagli evento relativa all'evento.
+
+** *Due o più eventi*
++
+Consente di accedere alla pagina Event Inventory (inventario eventi), che viene filtrata per visualizzare tutti gli eventi per l'oggetto selezionato.
+
+
+
+* *Pulsante Esporta*
++
+Crea un `.csv` file contenente i dati visualizzati nella barra del contatore. È possibile scegliere di creare il file per il singolo cluster visualizzato o per tutti i cluster del data center.
+
+

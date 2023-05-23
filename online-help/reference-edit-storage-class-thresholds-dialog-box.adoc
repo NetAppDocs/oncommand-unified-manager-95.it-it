@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-edit-storage-class-thresholds-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare la finestra di dialogo Edit Storage Class Thresholds (Modifica soglie classe di storage) per modificare i valori di soglia predefiniti di varie classi di storage in ogni SVM con Infinite Volume in base ai requisiti dell"organizzazione. I valori di soglia predefiniti indicano il livello di attività che deve essere raggiunto in una classe di storage prima che venga attivato un evento.' 
+---
+= Finestra di dialogo Modifica soglie classe di storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la finestra di dialogo Edit Storage Class Thresholds (Modifica soglie classe di storage) per modificare i valori di soglia predefiniti di varie classi di storage in ogni SVM con Infinite Volume in base ai requisiti dell'organizzazione. I valori di soglia predefiniti indicano il livello di attività che deve essere raggiunto in una classe di storage prima che venga attivato un evento.
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== Capacità
+
+L'area Capacity (capacità) consente di impostare le condizioni di soglia della capacità per la classe di storage selezionata.
+
+* *Spazio quasi pieno*
++
+Specifica la percentuale in cui una classe di storage in SVM con Infinite Volume viene considerata quasi piena. Visualizza anche lo spazio corrispondente (in GB, MB o TB) nella classe di storage. Ad esempio, se si dispone di una classe di storage di 10 GB e la soglia spazio quasi pieno è del 80%, vengono visualizzate le seguenti informazioni: (8 GB di 10 GB).
+
++
+È inoltre possibile utilizzare il dispositivo di scorrimento per impostare il valore di soglia.
+
+* *Spazio pieno*
++
+Specifica la percentuale in cui la classe di storage in SVM con Infinite Volume viene considerata piena. Visualizza anche lo spazio corrispondente (in GB, MB o TB) nella classe di storage. Ad esempio, se si dispone di una classe di storage di 10 GB e la soglia spazio pieno è del 90%, vengono visualizzate le seguenti informazioni: (9 GB di 10 GB).
+
++
+È inoltre possibile utilizzare il dispositivo di scorrimento per impostare il valore di soglia.
+
+* *Limite di utilizzo Snapshot*
++
+Specifica il limite, in percentuale, dello spazio riservato per le copie Snapshot nella classe di storage.
+
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire attività per un volume selezionato.
+
+* *Ripristina impostazioni predefinite globali*
++
+Consente di ripristinare le impostazioni di soglia ai valori correnti impostati a livello globale.
+
+* *Salva*
++
+Salva tutte le impostazioni di soglia.
+
+* *Salva e chiudi*
++
+Salva tutte le impostazioni di soglia e chiude la finestra di dialogo Modifica soglie classe di storage.
+
+* *Annulla*
++
+Annulla le modifiche (se presenti) alle impostazioni di soglia e chiude la finestra di dialogo Edit Storage Class Thresholds (Modifica soglie classe di storage).
+
+

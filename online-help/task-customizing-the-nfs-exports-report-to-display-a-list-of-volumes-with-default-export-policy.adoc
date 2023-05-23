@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-nfs-exports-report-to-display-a-list-of-volumes-with-default-export-policy.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile personalizzare il report delle esportazioni NFS per visualizzare un elenco di volumi con criteri di esportazione predefiniti. 
+---
+= Personalizzazione del report delle esportazioni NFS per visualizzare un elenco di volumi con policy di esportazione predefinite
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report delle esportazioni NFS per visualizzare un elenco di volumi con criteri di esportazione predefiniti.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Per rimuovere il raggruppamento per cluster o volume, attenersi alla seguente procedura:
++
+.. Fare clic sulle colonne da rimuovere.
+.. Fare clic su image:../media/click-to-see-menu.gif[""] icona.
+.. Selezionare *Gruppo* > *Elimina gruppo interno*.
+
+
+. Per filtrare i volumi con criteri di esportazione predefiniti, fare clic sulla colonna *Export Policy* (criterio di esportazione) e aprire la finestra di dialogo *Filter* (filtro) facendo clic sul image:../media/click-to-filter.gif[""] icona.
+. Dall'elenco *condizione*, selezionare *uguale a*.
+. Fare clic su *Select Values* (Seleziona valori) e selezionare *Default*.
+. Fare clic su *OK*.
+

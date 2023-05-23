@@ -1,0 +1,16 @@
+---
+permalink: health-checker/concept-what-the-diagnostic-user-does.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Lo scopo dell"accesso diagnostico è quello di consentire al supporto tecnico di fornire assistenza nella risoluzione dei problemi e utilizzarlo solo quando richiesto dal supporto tecnico.' 
+---
+= Funzionalità diagnostiche per l'utente
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lo scopo dell'accesso diagnostico è quello di consentire al supporto tecnico di fornire assistenza nella risoluzione dei problemi e utilizzarlo solo quando richiesto dal supporto tecnico.
+
+L'utente della diagnostica può eseguire comandi a livello di sistema operativo quando richiesto dal supporto tecnico, a scopo di risoluzione dei problemi.

@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-groups-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile utilizzare la pagina Gestione/gruppi per visualizzare e gestire tutti i gruppi. È inoltre possibile configurare le regole di gruppo e le azioni per gli oggetti di storage dalla scheda regole di gruppo e azioni di gruppo. 
+---
+= Descrizione delle finestre di dialogo e dei gruppi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la pagina Gestione/gruppi per visualizzare e gestire tutti i gruppi. È inoltre possibile configurare le regole di gruppo e le azioni per gli oggetti di storage dalla scheda regole di gruppo e azioni di gruppo.

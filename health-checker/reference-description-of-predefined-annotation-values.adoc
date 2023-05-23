@@ -1,0 +1,28 @@
+---
+permalink: health-checker/reference-description-of-predefined-annotation-values.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Data-priority è un"annotazione predefinita con i valori Mission Critical, High e Low. Questi valori consentono di annotare gli oggetti di storage in base alla priorità dei dati in essi contenuti. Non è possibile modificare o eliminare i valori di annotazione predefiniti.' 
+---
+= Descrizione dei valori di annotazione predefiniti
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+*Data-priority* è un'annotazione predefinita con i valori Mission Critical, High e Low. Questi valori consentono di annotare gli oggetti di storage in base alla priorità dei dati in essi contenuti. Non è possibile modificare o eliminare i valori di annotazione predefiniti.
+
+* *Priorità dei dati: Mission-critical*
++
+Questa annotazione viene applicata agli oggetti di storage che contengono dati mission-critical. Ad esempio, gli oggetti che contengono applicazioni di produzione possono essere considerati mission-critical.
+
+* *Priorità dei dati: Alta*
++
+Questa annotazione viene applicata agli oggetti di storage che contengono dati ad alta priorità. Ad esempio, gli oggetti che ospitano applicazioni di business possono essere considerati ad alta priorità.
+
+* *Priorità dei dati:bassa*
++
+Questa annotazione viene applicata agli oggetti di storage che contengono dati a bassa priorità. Ad esempio, gli oggetti che si trovano sullo storage secondario, come le destinazioni di backup e mirror, potrebbero avere una priorità bassa.
+
+

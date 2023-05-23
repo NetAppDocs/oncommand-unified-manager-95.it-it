@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-customizing-the-volume-capacity-and-utilization-report-to-display-volumes-with-noncompliant-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile personalizzare il report Volume Capacity and Utilization (capacità e utilizzo dei volumi) per visualizzare volumi non conformi alle policy aziendali. Ad esempio, se è necessario attivare la deduplica su tutti i volumi, è possibile creare un report che elenca tutti i volumi in cui la deduplica è disattivata.' 
+---
+= Personalizzazione del report Volume Capacity and Utilization (capacità e utilizzo del volume) per visualizzare i volumi con una configurazione non conforme
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report Volume Capacity and Utilization (capacità e utilizzo dei volumi) per visualizzare volumi non conformi alle policy aziendali. Ad esempio, se è necessario attivare la deduplica su tutti i volumi, è possibile creare un report che elenca tutti i volumi in cui la deduplica è disattivata.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Per rimuovere il raggruppamento in base a SVM, cluster o volume, attenersi alla seguente procedura:
++
+.. Fare clic nella colonna che deve essere raggruppata.
+.. Fare clic su image:../media/click-to-see-menu.gif[""] icona.
+.. Selezionare *Gruppo* > *Elimina gruppo interno*.
+
+
+. Nascondere tutte le colonne ad eccezione delle colonne Cluster, Storage Virtual Machine, Volume, Deduplica e Deduplica Space Savings (GB):
++
+.. Fare clic nella colonna e fare clic su image:../media/click-to-see-menu.gif[""] icona.
+.. Dal menu, selezionare *colonna* > *Nascondi colonna*.
+
+
+. Per filtrare i volumi disattivati dalla deduplica, fare clic nella colonna *deduplica* e aprire la finestra di dialogo *filtro* facendo clic sul image:../media/click-to-filter.gif[""] icona.
+. Dall'elenco *condizione*, selezionare *uguale a*.
+. Fare clic su *Seleziona valori* e selezionare *Disattivato*.
+. Fare clic su *OK*.
+. Per ordinare i volumi in base al risparmio di spazio derivante dalla deduplica, fare clic sulla colonna *Deduplica Space Savings (GB)* e fare clic su image:../media/sort-desc.gif[""] icona.
+

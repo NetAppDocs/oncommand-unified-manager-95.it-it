@@ -1,0 +1,79 @@
+---
+permalink: online-help/reference-aggregate-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Utilizzare la pagina Performance/aggregate Information per visualizzare un elenco degli attributi fisici e logici dell"aggregato. Queste informazioni potrebbero essere utili per rispondere alle domande relative alle performance.' 
+---
+= Pagina performance/aggregate Information
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilizzare la pagina Performance/aggregate Information per visualizzare un elenco degli attributi fisici e logici dell'aggregato. Queste informazioni potrebbero essere utili per rispondere alle domande relative alle performance.
+
+
+
+== Aggregare gli attributi
+
+* *Tipo di aggregato*
++
+Il tipo di aggregato:
+
++
+** DISCO RIGIDO
+** Ibrido
++
+Combina HDD e SSD, ma Flash Pool non è stato attivato.
+
+** Ibrido (Flash Pool)
++
+Combina HDD e SSD ed è stato attivato Flash Pool.
+
+** SSD
+** SSD (FabricPool)
++
+Combina SSD e un Tier cloud
+
+** VMDisk (SDS)
++
+Dischi virtuali all'interno di una macchina virtuale
+
+** VMDisk (FabricPool)
++
+Combina dischi virtuali e un Tier cloud
+
+** LUN (FlexArray)
+
+
+* *Cluster*
++
+Il nome del cluster a cui appartiene l'aggregato. È possibile fare clic sul nome per visualizzare i dettagli del cluster nella pagina Performance/Cluster Explorer (Esplora prestazioni/cluster).
+
+* Nodo *
++
+Il nome del nodo a cui appartengono i dischi dell'aggregato. È possibile fare clic sul nome per visualizzare i dettagli del nodo nella pagina Performance/Node Explorer (Esplora prestazioni/nodo).
+
+* *Flash Pool*
++
+Se si tratta di un aggregato di Flash Pool: Sì o no
+
++
+Un aggregato Flash Pool è un aggregato ibrido costituito da SSD e HDD.
+
+* *FabricPool*
++
+Se si tratta di un aggregato FabricPool: Sì o No
+
++
+Un aggregato FabricPool è un aggregato costituito da SSD e da un Tier cloud.
+
+* *Inactive Data Reporting*
++
+Se la funzionalità di reporting dei dati inattivi è attivata o disattivata su questo aggregato. Quando questa opzione è attivata, i volumi di questo aggregato visualizzano la quantità di dati cold nella pagina di inventario Performance/Volumes.
+
++
+Il valore in questo campo è "`N/A`" quando la versione di ONTAP non supporta il reporting dei dati inattivi.
+
+

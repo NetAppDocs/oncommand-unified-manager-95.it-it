@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-status-report-to-view-volumes-based-on-specific-time.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile personalizzare il rapporto Volume Transfer Status (storico) per visualizzare i dettagli del volume a intervalli di tempo specifici.' 
+---
+= Personalizzazione del report Volume Transfer Status (storico) per visualizzare i volumi a intervalli di tempo specifici
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report Stato trasferimento volume (storico) per visualizzare i dettagli del volume a intervalli di tempo specifici.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Rimuovi raggruppamento per cluster:
++
+.. Fare clic nella colonna che si desidera separare.
+.. Fare clic su image:../media/click-to-see-menu.gif[""] icona.
+.. Selezionare *Gruppo* > *Elimina gruppo interno*.
+
+
+. Per visualizzare i dettagli del volume a un intervallo di tempo specifico, fare clic nella colonna *ora di inizio*, quindi fare clic su image:../media/click-to-filter.gif[""] icona.
+. Nella finestra di dialogo *filtro*, fare clic su *Seleziona valori*, quindi selezionare la data e l'ora specifiche dall'elenco a discesa.
++
+Vengono visualizzati i dettagli del volume per l'intervallo di tempo selezionato.
+
+

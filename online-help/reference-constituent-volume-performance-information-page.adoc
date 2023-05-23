@@ -1,0 +1,70 @@
+---
+permalink: online-help/reference-constituent-volume-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Utilizzare la pagina informazioni sulle prestazioni/volume costituente per visualizzare un elenco degli attributi fisici e logici del volume costituente FlexGroup. Queste informazioni potrebbero essere utili per rispondere alle domande relative alle performance. 
+---
+= Pagina Performance/costituente Volume Information (informazioni sulle performance/volumi costituenti)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilizzare la pagina informazioni sulle prestazioni/volume costituente per visualizzare un elenco degli attributi fisici e logici del volume costituente FlexGroup. Queste informazioni potrebbero essere utili per rispondere alle domande relative alle performance.
+
+
+
+== Attributi del volume costituente
+
+* *Tipo*
++
+Il tipo del costituente: Lettura-scrittura (RW) o protezione dati (DP).
+
+* *Stile*
++
+Lo stile del volume; si tratta di un volume costituente di un volume FlexGroup.
+
+* *Cluster*
++
+Il nome del cluster a cui appartiene questo volume FlexGroup costituente. È possibile fare clic sul nome per visualizzare i dettagli del cluster nella pagina Performance/Cluster Explorer (Esplora prestazioni/cluster).
+
+* *Aggregato*
++
+Il nome dell'aggregato su cui risiede questo volume costituente FlexGroup. È possibile fare clic sul nome per visualizzare i dettagli aggregati nella pagina Esplora prestazioni/aggregato.
+
+* *FlexGroup*
++
+Il nome del volume FlexGroup a cui appartiene questo costituente. È possibile fare clic sul nome per visualizzare i dettagli del volume FlexGroup nella pagina Esplora prestazioni/FlexGroup.
+
+* *Storage Virtual Machine*
++
+Il nome della SVM a cui appartiene questo volume FlexGroup costituente. È possibile fare clic sul nome per visualizzare i dettagli SVM nella pagina Performance/SVM Explorer (Esplora prestazioni/SVM).
+
+* *Policy di tiering*
++
+Il criterio di tiering impostato sul volume. Il criterio viene applicato solo quando il volume viene distribuito su un aggregato FabricPool. Le policy disponibili sono:
+
++
+** Nessuno. I dati di questo volume rimangono sempre nel Tier di performance.
+** Solo Snapshot. Solo i dati Snapshot vengono spostati automaticamente nel Tier cloud. Tutti gli altri dati rimangono nel Tier di performance.
+** Backup. Sui volumi di data Protection, tutti i dati utente trasferiti iniziano nel Tier cloud, ma le letture client successive possono causare lo spostamento dei dati hot nel Tier di performance.
+** Automatico. I dati su questo volume vengono spostati automaticamente tra il livello di performance e il livello cloud quando ONTAP determina che i dati sono "`hot`" o "`cold`".
+
+
+* *Tipo RAID*
++
+Il tipo di ridondanza utilizzato sull'aggregato in cui risiede questo costituente. Tipi possibili:
+
++
+** RAID0
+** RAID4
+** RAID-DP
+** RAID-TEC
+
+
+* *Capacità (libera/totale)*
++
+Lo storage totale disponibile sul componente, in gigabyte, e la quantità di storage attualmente disponibile.
+
+

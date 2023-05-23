@@ -1,0 +1,91 @@
+---
+permalink: install/reference-windows-software-and-installation-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: Per una corretta installazione di Unified Manager su Windows, è necessario assicurarsi che il sistema su cui viene installato Unified Manager soddisfi i requisiti software. 
+---
+= Software Windows e requisiti di installazione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+:pp: &#43;&#43;
+
+
+[role="lead"]
+Per una corretta installazione di Unified Manager su Windows, è necessario assicurarsi che il sistema su cui viene installato Unified Manager soddisfi i requisiti software.
+
+
+
+== Software del sistema operativo
+
+Unified Manager viene eseguito solo su un sistema operativo Windows a 64 bit in lingua inglese. È possibile installare Unified Manager sulle seguenti piattaforme Windows:
+
+* Microsoft Windows Server 2012 Standard e Datacenter Edition
+* Microsoft Windows Server 2012 R2 Standard e Datacenter Edition
+* Microsoft Windows Server 2016 Standard e Datacenter Edition
+
+
+[NOTE]
+====
+In Windows Server 2012 R2, l'aggiornamento Windows KB2919355 deve essere installato sul sistema di destinazione, altrimenti l'installazione avrà esito negativo.
+
+====
+Si noti che Windows Server 2008 non è supportato come nelle versioni precedenti. Consultare la matrice di interoperabilità per l'elenco completo e aggiornato delle versioni di Windows supportate.
+
+http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
+
+Il server deve essere dedicato all'esecuzione di Unified Manager; non devono essere installate altre applicazioni sul server.
+
+Sono richiesti i seguenti pacchetti di terze parti:
+
+* Microsoft Visual C& 43; 43; 2015 Redistributable Package versione 14.0.24212
+* Microsoft Visual C& 43; 43; Redistributable Packages per Visual Studio 2013 versione 12.0.40660
+* MySQL Community Edition versione 5.7.23 o versioni successive della famiglia 5.7
+* OpenJDK versione 11
+* p7zip versione 18.01 o successiva
+
+
+Se questi pacchetti di terze parti non sono installati, Unified Manager li installa come parte dell'installazione.
+
+[NOTE]
+====
+A partire da Unified Manager 9.5, OpenJDK viene fornito nel pacchetto di installazione di Unified Manager e installato automaticamente. Oracle Java non è supportato a partire da Unified Manager 9.5.
+
+====
+Se MySQL è preinstallato, devi assicurarti che:
+
+* Sta utilizzando la porta predefinita.
+* I database di esempio non sono installati.
+* Il nome del servizio è "`MYSQL`".
+
+
+[NOTE]
+====
+Se si prevede di aggiornare un software di terze parti dopo l'esecuzione di Unified Manager, è necessario prima arrestare Unified Manager. Una volta completata l'installazione del software di terze parti, è possibile riavviare Unified Manager.
+
+====
+
+
+== Requisiti di installazione
+
+* È necessario installare Microsoft .NET 4.5 o versione successiva.
+* È necessario riservare 2 GB di spazio su disco per `temp` directory per estrarre i file di installazione.
+* È necessario riservare 2 GB di spazio su disco nell'unità Windows per il caching dei file MSI di Unified Manager.
+* Il Microsoft Windows Server su cui si desidera installare Unified Manager deve essere configurato con un FQDN (Fully Qualified Domain Name) in modo tale che `ping` Le risposte al nome host e all'FQDN sono riuscite.
+* È necessario disattivare il servizio di pubblicazione Web internazionale di Microsoft IIS e assicurarsi che le porte 80 e 443 siano libere.
+* Durante l'installazione, assicurarsi che l'impostazione Remote Desktop Session host per "`Windows Installer RDS Compatibility`" (compatibilità RDS di Windows Installer) sia disattivata.
+* La porta UDP 514 deve essere libera e non deve essere utilizzata da altri servizi.
+
+
+[NOTE]
+====
+Il programma di installazione di Unified Manager configura le seguenti esclusioni in Windows Defender:
+
+* Directory dei dati di Unified Manager (solo Windows Server 2016)
+* Directory di installazione di Unified Manager
+* Directory dei dati MySQL
+
+
+Se sul server è installato un altro antivirus, è necessario configurare queste esclusioni manualmente.
+
+====

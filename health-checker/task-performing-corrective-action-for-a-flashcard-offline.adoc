@@ -1,0 +1,67 @@
+---
+permalink: health-checker/task-performing-corrective-action-for-a-flashcard-offline.html 
+sidebar: sidebar 
+keywords:  
+summary: Dopo aver esaminato la descrizione nel campo causa della pagina Dettagli evento offline scheda flash, è possibile cercare ulteriori informazioni utili per risolvere la condizione. 
+---
+= Esecuzione dell'azione correttiva per una scheda flash offline
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dopo aver esaminato la descrizione nel campo causa della pagina Dettagli evento offline scheda flash, è possibile cercare ulteriori informazioni utili per risolvere la condizione.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+
+
+
+== A proposito di questa attività
+
+In questo scenario di esempio, il riepilogo degli eventi fornito nella pagina Dettagli evento contiene le seguenti informazioni sulla condizione della scheda flash offline:
+
+[listing]
+----
+Severity: Critical
+State: New
+Impact Level: Incident
+Impact Area: Availability
+Source: alpha-node
+Source Type: Node
+Acknowledged By:
+Resolved By:
+Assigned To:
+Cause: Flash cards at slot numbers 3 are offline.
+Alert Settings:
+----
+Le informazioni sull'evento indicano che la scheda flash installata nello slot 3 nel nodo del cluster denominato "`Alpha-Node`" non è in linea.
+
+Le informazioni localizzano la condizione offline della scheda flash in uno slot specifico di un nodo cluster specifico, ma non suggeriscono un motivo per cui la scheda flash è offline.
+
+
+
+== Fasi
+
+. Per ottenere ulteriori dettagli che potrebbero aiutare a diagnosticare la condizione offline della scheda flash, fare clic sul nome dell'origine dell'evento.
++
+In questo esempio, l'origine dell'evento è il nodo del cluster "`Alpha-node`". Facendo clic sul nome del nodo, nella scheda Nodes (nodi) della pagina Health/Cluster Details (Dettagli integrità/cluster) del cluster interessato viene visualizzato il campo ha Details (Dettagli ha). I dettagli ha visualizzati visualizzano informazioni sulla coppia ha a cui appartiene il nodo.
+
++
+In questo esempio, le informazioni pertinenti sono contenute nella tabella riepilogativa degli eventi nei dettagli ha. La tabella specifica l'evento offline della scheda flash, l'ora in cui è stato generato l'evento e, di nuovo, il nodo del cluster da cui ha avuto origine l'evento.
+
+. Utilizzando l'interfaccia utente di ONTAP o Gestione sistema di OnCommand, accedere ai registri del sistema di gestione eventi per il cluster interessato.
++
+In questo esempio, si utilizzano il nome dell'evento, l'ora dell'evento e l'origine dell'evento per trovare il report EMS su questo evento. Il report EMS sull'evento contiene una descrizione dettagliata dell'evento e spesso consigli per rimediare alla condizione indicata dall'evento.
+
+
+
+
+
+== Al termine
+
+Dopo aver diagnosticato il problema, contattare l'amministratore o l'operatore appropriato per completare la procedura manuale necessaria per ripristinare la scheda flash online.

@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-viewing-the-svm-list-and-details.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Dalla pagina di inventario delle macchine virtuali per lo storage/lo stato di salute, è possibile monitorare l"inventario delle macchine virtuali per lo storage (SVM). È possibile utilizzare la pagina Health/Storage Virtual Machine Details per visualizzare informazioni dettagliate sulle SVM monitorate.' 
+---
+= Visualizzazione dell'elenco SVM e dei dettagli
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dalla pagina di inventario delle macchine virtuali per lo storage/lo stato di salute, è possibile monitorare l'inventario delle macchine virtuali per lo storage (SVM). È possibile utilizzare la pagina Health/Storage Virtual Machine Details per visualizzare informazioni dettagliate sulle SVM monitorate.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+
+
+
+== A proposito di questa attività
+
+È possibile visualizzare i dettagli di SVM, ad esempio la capacità, l'efficienza e la configurazione di una SVM. È inoltre possibile visualizzare informazioni sui dispositivi correlati e sugli avvisi correlati per la SVM.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Health* > *SVM*.
+. Scegliere uno dei seguenti modi per visualizzare i dettagli SVM:
++
+** Per visualizzare dettagli minimi, posizionare il cursore sul nome SVM.
+** Per visualizzare i dettagli completi, fare clic sul nome SVM.
++
+È inoltre possibile visualizzare i dettagli completi facendo clic su *View Details* (Visualizza dettagli) nella finestra di dialogo Minimal Details (Dettagli minimi).
+
+
+
+. Visualizzare gli oggetti correlati alla SVM facendo clic su *Visualizza correlati* nella finestra di dialogo Dettagli minimi.
+

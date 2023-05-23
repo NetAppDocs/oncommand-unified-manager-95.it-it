@@ -1,0 +1,69 @@
+---
+permalink: health-checker/task-performing-corrective-action-for-storage-failover-interconnect-links-down.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Quando si visualizza la pagina Dettagli evento di un evento correlato al failover dello storage, è possibile esaminare le informazioni riepilogative della pagina per determinare l"urgenza dell"evento, la possibile causa del problema e la possibile risoluzione del problema.' 
+---
+= Esecuzione di un'azione correttiva per i collegamenti di interconnessione per il failover dello storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando si visualizza la pagina Dettagli evento di un evento correlato al failover dello storage, è possibile esaminare le informazioni riepilogative della pagina per determinare l'urgenza dell'evento, la possibile causa del problema e la possibile risoluzione del problema.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+
+
+
+== A proposito di questa attività
+
+In questo scenario di esempio, il riepilogo degli eventi fornito nella pagina Dettagli evento contiene le seguenti informazioni sulla condizione di inattività del collegamento di interconnessione per il failover dello storage:
+
+[listing]
+----
+Event: Storage Failover Interconnect One or More Links Down
+
+Summary
+
+Severity: Warning
+State: New
+Impact Level: Risk
+Impact Area: Availability
+Source: aardvark
+Source Type: Node
+Acknowledged By:
+Resolved By:
+Assigned To:
+Cause: At least one storage failover interconnected link
+       between the nodes aardvark and bonobo is down.
+       RDMA interconnect is up (Link0 up, Link1 down)
+----
+Le informazioni sull'evento di esempio indicano che un collegamento di interconnessione di failover dello storage, Link1, tra i nodi di coppia ha aardvark e bonobo è inattivo, ma che il collegamento 0 tra Apple e Boy è attivo. Poiché un collegamento è attivo, l'accesso remoto alla memoria dinamica (RDMA) è ancora in funzione e un processo di failover dello storage può ancora avere successo.
+
+Tuttavia, per garantire che la protezione del failover dello storage e i collegamenti non siano attivi sia completamente disattivata, si decide di diagnosticare ulteriormente il motivo per cui il collegamento 1 non funziona.
+
+
+
+== Fasi
+
+. Dalla pagina dei dettagli *evento*, è possibile fare clic sul collegamento all'evento specificato nel campo origine per ottenere ulteriori dettagli su altri eventi che potrebbero essere correlati alla condizione di inattività del collegamento di interconnessione per il failover dello storage.
++
+In questo esempio, l'origine dell'evento è il nodo denominato aardvark. Facendo clic sul nome del nodo vengono visualizzati i dettagli ha per la coppia ha interessata, aardvark e bonobo, nella scheda nodi della pagina Health/Cluster Details e gli altri eventi che si sono verificati di recente sulla coppia ha interessata.
+
+. Per ulteriori informazioni sull'evento, consultare i *Dettagli ha*.
++
+In questo esempio, le informazioni rilevanti sono nella tabella Eventi. La tabella mostra l'evento "torage failover Connection one or More link Down `S`", l'ora in cui è stato generato l'evento e, ancora una volta, il nodo da cui ha avuto origine l'evento.
+
+
+
+
+
+== Al termine
+
+Utilizzando le informazioni sulla posizione del nodo in ha Details (Dettagli ha), richiedere o completare personalmente un'ispezione fisica e la riparazione del problema di failover dello storage sui nodi di coppia ha interessati.

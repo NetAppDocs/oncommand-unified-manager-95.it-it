@@ -1,0 +1,33 @@
+---
+permalink: online-help/reference-fans-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi Fans ti forniscono informazioni sullo stato delle ventole sui nodi del tuo data center, in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all"area di impatto e includono il nome dell"evento e della trap, il livello di impatto, il tipo di origine e la severità.' 
+---
+= Eventi dei fan
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi Fans ti forniscono informazioni sullo stato delle ventole sui nodi del tuo data center, in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all'area di impatto e includono il nome dell'evento e della trap, il livello di impatto, il tipo di origine e la severità.
+
+
+
+== Area di impatto: Disponibilità
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Una o più ventole non riuscite(ocumEvtFansOneOrMoreFailed)
+ a| 
+Incidente
+ a| 
+Nodo
+ a| 
+Critico
+
+|===

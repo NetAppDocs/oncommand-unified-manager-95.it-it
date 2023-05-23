@@ -1,0 +1,44 @@
+---
+permalink: install/task-configuring-existing-unified-manager-setup-to-high-availability.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile aggiornare l"installazione di Unified Manager esistente e configurare l"ambiente di installazione per la disponibilità elevata.' 
+---
+= Aggiornamento di una configurazione di Unified Manager esistente per garantire la disponibilità elevata
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile aggiornare l'installazione di Unified Manager esistente e configurare l'ambiente di installazione per la disponibilità elevata.
+
+
+
+== Prima di iniziare
+
+* È necessario aver creato un bundle di backup e supporto dei dati esistenti.
+* È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+* È necessario aggiungere un secondo nodo al cluster e installare Veritas Cluster Server (VCS) sul secondo nodo.
++
+Consultare la _Guida all'installazione di Veritas Cluster Server 6.2.1_.
+
+* Il nodo appena aggiunto deve essere configurato per accedere alla stessa posizione condivisa del nodo esistente nell'installazione ad alta disponibilità.
+
+
+
+
+== Fasi
+
+. Accedere al nuovo nodo del cluster.
+. Installare Unified Manager sul nodo.
++
+xref:concept-installing-unified-manager-on-rhel-or-centos.adoc[Installazione di Unified Manager su Red Hat Enterprise Linux o CentOS]
+
+. Configurare il server Unified Manager utilizzando gli script di configurazione sul nodo esistente con i dati.
+. Avviare il failover manuale sul secondo nodo.
+. Eseguire `perl ha_setup.pl --join -t vcs -f``mount_path` Sul secondo nodo del cluster, in modo che i dati del server Unified Manager punti alla LUN condivisa.
+. Se OnCommand Workflow Automation (WFA) è configurato per Unified Manager, disattivare e riconfigurare la connessione WFA.
+. Se SnapProtect è configurato con Unified Manager, riconfigurare SnapProtect con un nuovo indirizzo IP del cluster e le policy di storage esistenti.
+. Rigenerare i report personalizzati e aggiungerli a Unified Manager con il nuovo indirizzo IP del cluster.
+

@@ -1,0 +1,64 @@
+---
+permalink: online-help/task-customizing-the-qtree-capacity-and-utilization-report-to-display-qtrees-that-have-breached-the-file-soft-limit.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile personalizzare il report Qtree Capacity and Utilization (capacità e utilizzo Qtree) per visualizzare i qtree che hanno superato il limite software del file. È possibile filtrare e ordinare in base al file utilizzato, al limite massimo del file e al limite massimo del file.' 
+---
+= Personalizzazione del report Qtree Capacity and Utilization (capacità e utilizzo Qtree) per visualizzare i qtree che hanno superato il limite software del file
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report Qtree Capacity and Utilization (capacità e utilizzo Qtree) per visualizzare i qtree che hanno superato il limite software del file. È possibile filtrare e ordinare in base al file utilizzato, al limite massimo del file e al limite massimo del file.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Per rimuovere il raggruppamento in base a SVM, cluster o volume, attenersi alla seguente procedura:
++
+.. Fare clic sulle colonne da rimuovere.
+.. Fare clic su image:../media/click-to-see-menu.gif[""] icona.
+.. Selezionare *Gruppo* > *Elimina gruppo interno*.
+
+
+. Per filtrare i qtree che non hanno un limite massimo di file, fare clic nella colonna *limite massimo file* e aprire la finestra di dialogo *filtro* facendo clic su image:../media/click-to-filter.gif[""] icona.
++
+.. Dall'elenco a discesa *condizione*, selezionare *non uguale a*.
+.. Fare clic su *Select Values* (Seleziona valori) e selezionare *Unlimited*.
+.. Fare clic su *OK*.
+
+
+. Per filtrare i qtree che non dispongono di un limite software di file illimitato, fare clic sulla colonna *file Soft Limit* e aprire la finestra di dialogo *Filter* facendo clic su image:../media/click-to-filter.gif[""] icona.
++
+.. Dall'elenco a discesa *condizione*, selezionare *non uguale a*.
+.. Fare clic su *Select Values* (Seleziona valori) e selezionare *Unlimited*.
+.. Fare clic su *OK*.
+
+
+. Per aggiungere una colonna per i qtree che hanno superato il limite software del file, attenersi alla seguente procedura:
++
+.. Fare clic sulla colonna *file Soft Limit*, quindi fare clic su image:../media/click-to-see-menu.gif[""] E selezionare *colonna* > *Nuova colonna calcolata*
+.. Nella finestra di dialogo *Nuova colonna calcolata*, digitare `Breached File Soft Limit Capacity` Nel campo *etichetta colonna*.
+.. Dall'elenco Seleziona categoria, selezionare *testo*.
+.. Dall'elenco a discesa *Select function* (Seleziona funzione), selezionare *Advanced* (Avanzate).
+.. Nel campo *Inserisci espressione*, digitare `IF(([qtreeFileUsedPercent]*[fileLimit]/100 > [softFileLimit]), "Yes", "No")`.
+.. Fare clic su *OK*.
+
+
+. Per filtrare i qtree che hanno superato il limite di soft file, fare clic nella colonna *Breached file Soft Limit Capacity* e aprire la finestra di dialogo *Filter* facendo clic su image:../media/click-to-filter.gif[""] icona.
++
+.. Dall'elenco a discesa *condizione*, selezionare *uguale a*.
+.. Fare clic su *Select Values* (Seleziona valori) e selezionare *Yes* (Sì).
+.. Fare clic su *OK*.
+
+
+

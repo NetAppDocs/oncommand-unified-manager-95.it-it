@@ -1,0 +1,128 @@
+---
+permalink: performance-checker/task-configuring-a-connection-between-a-unified-manager-server-and-an-external-data-provider.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager può inviare i dati delle performance del cluster a un server esterno. È possibile specificare il tipo di dati statistici inviati e l"intervallo di invio dei dati.' 
+---
+= Configurazione di una connessione da un server Unified Manager a un provider di dati esterno
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager può inviare i dati delle performance del cluster a un server esterno. È possibile specificare il tipo di dati statistici inviati e l'intervallo di invio dei dati.
+
+
+
+== Prima di iniziare
+
+* È necessario disporre di un ID utente autorizzato per accedere alla console di manutenzione del server Unified Manager.
+* È necessario disporre delle seguenti informazioni sul provider di dati esterno:
++
+** Nome del server o indirizzo IP (IPv4 o IPv6)
+** Porta predefinita del server (se non si utilizza la porta predefinita 2003)
+
+
+* È necessario aver configurato il server remoto e il software di terze parti in modo che possa ricevere dati statistici dal server Unified Manager.
+* È necessario sapere quale gruppo di statistiche si desidera inviare:
++
+** PERFORMANCE_INDICATOR: Statistiche del monitor delle performance
+** RESOURCE_UTILIZATION: Statistiche di monitoraggio dell'utilizzo delle risorse e delle performance
+** DRILL_DOWN: Tutte le statistiche
+
+
+* È necessario conoscere l'intervallo di tempo in cui si desidera trasmettere le statistiche: 5, 10 o 15 minuti
++
+Per impostazione predefinita, Unified Manager raccoglie le statistiche a intervalli di 5 minuti. Se si imposta l'intervallo di trasmissione su 10 (o 15) minuti, la quantità di dati inviati durante ciascuna trasmissione è due (o tre) volte maggiore rispetto all'intervallo predefinito di 5 minuti.
+
++
+[NOTE]
+====
+Se si modifica l'intervallo di raccolta delle prestazioni di Unified Manager su 10 o 15 minuti, è necessario modificare l'intervallo di trasmissione in modo che sia uguale o superiore all'intervallo di raccolta di Unified Manager.
+
+====
+
+
+
+
+== A proposito di questa attività
+
+È possibile configurare una connessione tra un server Unified Manager e un server del provider di dati esterno.
+
+
+
+== Fasi
+
+. Accedere come utente di manutenzione alla console di manutenzione del server Unified Manager.
++
+Vengono visualizzati i prompt della console di Unified Managermaintenance.
+
+. Nella console di manutenzione, digitare il numero dell'opzione di menu *External Data Provider*.
++
+Viene visualizzato il menu connessione server esterno.
+
+. Digitare il numero dell'opzione di menu *Aggiungi/Modifica connessione server*.
++
+Vengono visualizzate le informazioni correnti sulla connessione al server.
+
+. Quando richiesto, digitare `y` per continuare.
+. Quando richiesto, inserire l'indirizzo IP o il nome del server di destinazione e le informazioni sulla porta del server (se diversa dalla porta predefinita 2003).
+. Quando richiesto, digitare `y` per verificare che le informazioni immesse siano corrette.
+. Premere un tasto qualsiasi per tornare al menu connessione server esterno.
+. Digitare il numero dell'opzione di menu *Modify Server Configuration* (Modifica configurazione server).
++
+Vengono visualizzate le informazioni di configurazione del server corrente.
+
+. Quando richiesto, digitare `y` per continuare.
+. Quando richiesto, inserire il tipo di statistiche da inviare, l'intervallo di tempo in cui le statistiche vengono inviate e se si desidera attivare la trasmissione delle statistiche:
++
+|===
+| Per.. | Inserisci... 
+
+
+ a| 
+ID gruppo statistiche
+ a| 
+`0` - PERFORMANCE_INDICATOR (predefinito)
+
+`1` - RESOURCE_UTILIZATION
+
+`2` - DRILL_DOWN
+
+
+
+ a| 
+Tag del vendor
+ a| 
+Un nome descrittivo per la cartella in cui verranno memorizzate le statistiche sul server esterno. "`netapp-performance`" è il nome predefinito, ma è possibile immettere un altro valore.
+
+Utilizzando la notazione con punti è possibile definire una struttura gerarchica di cartelle. Ad esempio, immettendo `stats.performance.netapp` le statistiche si trovano in *stats* > *performance* > *netapp*.
+
+
+
+ a| 
+Intervallo di trasmissione
+ a| 
+`5` (impostazione predefinita), `10`, o. `15` minuti
+
+
+
+ a| 
+Attiva/disattiva
+ a| 
+`0` - Disable (Disattiva)
+
+`1` - Enable (attiva) (impostazione predefinita)
+
+|===
+. Quando richiesto, digitare `y` per verificare che le informazioni immesse siano corrette.
+. Premere un tasto qualsiasi per tornare al menu connessione server esterno.
+. Tipo `x` per uscire dalla console di manutenzione.
+
+
+
+
+== Risultati
+
+Una volta configurata la connessione, i dati delle prestazioni selezionati vengono inviati al server di destinazione all'intervallo di tempo specificato. Sono necessari alcuni minuti prima che le metriche inizino a comparire in grafite. Potrebbe essere necessario aggiornare il browser per visualizzare le nuove metriche nella gerarchia delle metriche.

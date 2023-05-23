@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-dashboard-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina Dashboards/Overview (Dashboard/Panoramica) visualizza, sotto forma di grafico, lo stato degli oggetti storage come cluster, aggregati e macchine virtuali di storage (SVM). In base alla disponibilità, alla capacità, alle performance e agli eventi correlati alla protezione generati, questi oggetti storage vengono classificati come sani, a rischio o con incidenti o come sani, di avviso o di errore per gli eventi correlati alla protezione.' 
+---
+= Dashboard/pagina Panoramica
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Dashboards/Overview (Dashboard/Panoramica) visualizza, sotto forma di grafico, lo stato degli oggetti storage come cluster, aggregati e macchine virtuali di storage (SVM). In base alla disponibilità, alla capacità, alle performance e agli eventi correlati alla protezione generati, questi oggetti storage vengono classificati come sani, a rischio o con incidenti o come sani, di avviso o di errore per gli eventi correlati alla protezione.
+
+
+
+== Barra del cluster non raggiungibile
+
+Quando un cluster non è raggiungibile, Unified Manager visualizza i dettagli in una barra nella parte superiore di ogni pagina. Se tutti i cluster sono raggiungibili, questo riquadro è nascosto.
+
+È possibile aggiornare le informazioni visualizzate nel riquadro premendo F5. Questa azione garantisce che il riquadro visualizzi le informazioni più recenti sui cluster attualmente non raggiungibili. Ad esempio, se un cluster con un evento Cluster non raggiungibile viene rimosso o se lo stato di un evento è obsoleto, le informazioni sull'evento vengono rimosse quando si aggiorna il riquadro.
+
+È possibile visualizzare informazioni dettagliate su un cluster non raggiungibile facendo clic sul pulsante *Dettagli*. Questa azione apre la pagina dell'inventario degli eventi. Una volta chiusa, la barra viene nuovamente visualizzata solo quando si effettua nuovamente l'accesso a Unified Manager.
+
+
+
+== Area panoramica
+
+* *Pannello disponibilità*
++
+Visualizza informazioni sulla disponibilità di cluster, aggregati e SVM monitorati da Unified Manager. Gli oggetti storage sono classificati come sani, a rischio o con incidenti. Ad esempio, lo stato di un cluster privo di dischi di riserva viene visualizzato come a rischio.
+
++
+Questo riquadro visualizza anche il numero di oggetti di storage in ciascuna categoria. Facendo clic su uno dei totali dell'oggetto si accede alla pagina dell'oggetto. Ad esempio, facendo clic sul totale del cluster si accede alla pagina di inventario Health/Clusters. Facendo clic sui numeri nella parte superiore di una colonna, si accede alla pagina di inventario Eventi.
+
+* *Riquadro capacità*
++
+Visualizza informazioni sulla capacità di aggregati e SVM monitorati da Unified Manager. Gli oggetti storage sono classificati come sani, a rischio o con incidenti. Ad esempio, lo stato di un aggregato la cui capacità utilizzata ha raggiunto il valore di soglia completo viene visualizzato come a rischio.
+
++
+Questo riquadro visualizza anche il numero di oggetti di storage in ciascuna categoria.
+
+* *Pannello delle performance*
++
+Visualizza informazioni sulle performance di cluster, SVM e volumi monitorati da Unified Manager. In base agli incidenti relativi alle performance generati, gli oggetti storage vengono classificati come sani, a rischio o con incidenti. Ad esempio, lo stato di un volume il cui tempo di risposta i/o al proprio carico di lavoro ha raggiunto il valore di soglia massimo viene visualizzato come incidenti.
+
++
+Questo riquadro visualizza anche il numero totale di cluster, SVM e volumi monitorati da Unified Manager. Facendo clic su uno dei totali dell'oggetto si accede alla pagina dell'oggetto. Ad esempio, facendo clic sul totale del cluster si accede alla pagina Performance/Cluster Inventory.
+
+* *Pannello di protezione*
++
+Visualizza informazioni sulle relazioni di protezione monitorate da Unified Manager. Le relazioni di protezione sono classificate come sane, Warning o Error. Ad esempio, una relazione che ha una durata di ritardo superiore alla soglia di avviso di ritardo viene visualizzata come Avviso.
+
++
+Questo riquadro visualizza anche il numero totale di oggetti di storage in ciascuna categoria di protezione. Facendo clic sui collegamenti per le categorie Lag Status, Asynchronous Vault, Asynchronous Mirror o Synchronous si accede a un elenco filtrato di tali oggetti nella pagina Protection/Volume Relands.
+
+

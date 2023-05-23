@@ -1,0 +1,59 @@
+---
+permalink: online-help/concept-understanding-the-um-recommendations-to-tier-data-to-the-cloud.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La pagina di inventario Performance/Volumes (prestazioni/volumi) visualizza le informazioni relative alle dimensioni dei dati utente memorizzati nel volume inattivo. In alcuni casi, Unified Manager identifica alcuni volumi che trarrebbero beneficio dal tiering dei dati inattivi nel Tier cloud (cloud provider o StorageGRID) di un aggregato abilitato a FabricPool.' 
+---
+= Comprendere le raccomandazioni di Unified Manager per il Tier dei dati nel cloud
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina di inventario Performance/Volumes (prestazioni/volumi) visualizza le informazioni relative alle dimensioni dei dati utente memorizzati nel volume inattivo (freddo). In alcuni casi, Unified Manager identifica alcuni volumi che trarrebbero beneficio dal tiering dei dati inattivi nel Tier cloud (cloud provider o StorageGRID) di un aggregato abilitato a FabricPool.
+
+[NOTE]
+====
+FabricPool è stato introdotto in ONTAP 9.2, quindi se si utilizza una versione del software ONTAP precedente alla 9.2, la raccomandazione di Unified Manager per i dati di Tier richiede l'aggiornamento del software ONTAP. Inoltre, il `auto` La policy di tiering è stata introdotta in ONTAP 9.4, quindi se si consiglia di utilizzare `auto` Policy di tiering, è necessario eseguire l'aggiornamento a ONTAP 9.4 o superiore.
+
+====
+I tre campi seguenti nella pagina di inventario Performance/Volumes forniscono informazioni sulla possibilità di migliorare l'utilizzo del disco del sistema storage e risparmiare spazio sul Tier di performance spostando i dati inattivi sul Tier cloud.
+
+* *Policy di tiering*
++
+La policy di tiering determina se i dati sul volume rimangono nel Tier di performance o se alcuni dei dati vengono spostati dal Tier di performance al Tier cloud.
+
++
+Il valore in questo campo indica il criterio di tiering impostato sul volume, anche se il volume non risiede attualmente in un aggregato FabricPool. La policy di tiering ha effetto solo quando il volume si trova su un aggregato FabricPool.
+
+* *Dati a freddo*
++
+I dati cold visualizzano le dimensioni dei dati utente memorizzati nel volume inattivo (freddo).
+
++
+Un valore viene visualizzato solo quando si utilizza ONTAP 9.4 o un software superiore, perché richiede che l'aggregato su cui viene distribuito il volume disponga di `inactive data reporting` parametro impostato su `enabled`e che sia stata raggiunta la soglia minima di giorni di raffreddamento (per i volumi che utilizzano `snapshot-only` oppure `auto` policy di tiering). In caso contrario, il valore viene elencato come "`N/A`".
+
+* *Cloud Recommendation*
++
+Una volta acquisita una quantità sufficiente di informazioni sull'attività dei dati sul volume, Unified Manager può determinare che non è richiesta alcuna azione o che è possibile risparmiare spazio sul Tier delle performance eseguendo il tiering dei dati inattivi sul Tier del cloud.
+
+
+
+[NOTE]
+====
+Il campo Cold Data viene aggiornato ogni 15 minuti, ma il campo Cloud Recommendation viene aggiornato ogni 7 giorni quando l'analisi dei dati cold viene eseguita sul volume. Pertanto, la quantità esatta di dati cold può differire tra i campi. Il campo Cloud Recommendation visualizza la data in cui è stata eseguita l'analisi.
+
+====
+Quando Inactive Data Reporting è attivato, il campo Cold Data (dati a freddo) visualizza la quantità esatta di dati inattivi. Senza la funzionalità di reporting dei dati inattiva, Unified Manager utilizza le statistiche delle performance per determinare se i dati sono inattivi su un volume. In questo caso, la quantità di dati inattivi non viene visualizzata nel campo dati a freddo, ma viene visualizzata quando si sposta il cursore sulla parola *Tier* per visualizzare la raccomandazione cloud.
+
+I consigli sul cloud che vedrai sono:
+
+* *Formazione*. Non sono stati raccolti dati sufficienti per fornire consigli.
+* *Tier*. L'analisi ha determinato che il volume contiene dati inattivi (cold) e che è necessario configurare il volume per spostare tali dati nel Tier cloud. In alcuni casi, potrebbe essere necessario spostare prima il volume in un aggregato abilitato a FabricPool. In altri casi in cui il volume si trova già su un aggregato FabricPool, è sufficiente modificare la policy di tiering.
+* *Nessuna azione*. Il volume contiene pochissimi dati inattivi, il volume è già impostato sul criterio di tiering "`auto`" su un aggregato FabricPool oppure il volume è un volume di protezione dei dati. Questo valore viene visualizzato anche quando il volume è offline o quando viene utilizzato in una configurazione MetroCluster.
+
+
+Per spostare un volume o modificare il criterio di tiering del volume o le impostazioni di reporting dei dati inattivi aggregati, utilizzare Gestione di sistema di OnCommand, i comandi dell'interfaccia utente di ONTAP o una combinazione di questi strumenti.
+
+Se si è connessi a Unified Manager con il ruolo di amministratore dello storage o amministratore dello storage di OnCommand, il collegamento *Configura volume* è disponibile nella raccomandazione cloud quando si sposta il cursore del mouse sulla parola *livello*. Fare clic su questo pulsante per aprire la pagina Volumes (volumi) in System Manager (Gestione sistema) e apportare le modifiche consigliate.

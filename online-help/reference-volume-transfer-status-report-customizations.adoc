@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-transfer-status-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile personalizzare il report Stato trasferimento volume per visualizzare e analizzare le informazioni sui trasferimenti di volume a intervalli di tempo specifici. È possibile utilizzare i filtri per visualizzare i dettagli di trasferimento del volume tra due date. 
+---
+= Personalizzazioni del report Volume Transfer Status (storico)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report Stato trasferimento volume (storico) per visualizzare e analizzare le informazioni sui trasferimenti di volume a intervalli di tempo specifici. È possibile utilizzare i filtri per visualizzare i dettagli di trasferimento del volume tra due date.

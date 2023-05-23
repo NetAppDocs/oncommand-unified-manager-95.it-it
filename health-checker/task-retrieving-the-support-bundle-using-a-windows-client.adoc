@@ -1,0 +1,42 @@
+---
+permalink: health-checker/task-retrieving-the-support-bundle-using-a-windows-client.html 
+sidebar: sidebar 
+keywords:  
+summary: Gli utenti Windows possono scaricare e installare uno strumento per recuperare il pacchetto di supporto dal server Unified Manager. È possibile inviare il pacchetto di supporto al supporto tecnico per una diagnosi più dettagliata di un problema. FileZilla o WinSCP sono esempi di strumenti che è possibile utilizzare. 
+---
+= Recupero del bundle di supporto utilizzando un client Windows
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli utenti Windows possono scaricare e installare uno strumento per recuperare il pacchetto di supporto dal server Unified Manager. È possibile inviare il pacchetto di supporto al supporto tecnico per una diagnosi più dettagliata di un problema. FileZilla o WinSCP sono esempi di strumenti che è possibile utilizzare.
+
+
+
+== Prima di iniziare
+
+Per eseguire questa attività, è necessario essere l'utente che esegue la manutenzione.
+
+È necessario utilizzare uno strumento che supporti SCP o SFTP.
+
+
+
+== Fasi
+
+. Scaricare e installare uno strumento per recuperare il pacchetto di supporto.
+. Aprire lo strumento.
+. Connettersi al server di gestione di Unified Manager tramite SFTP.
++
+Lo strumento visualizza il contenuto di `/support` ed è possibile visualizzare tutti i pacchetti di supporto esistenti.
+
+. Selezionare la directory di destinazione del pacchetto di supporto che si desidera copiare.
+. Selezionare il pacchetto di supporto che si desidera copiare e utilizzare lo strumento per copiare il file dal server Unified Manager al sistema locale.
+
+
+*Informazioni correlate*
+
+https://filezilla-project.org/["Filezilla - https://filezilla-project.org/"]
+
+http://winscp.net["WinSCP - http://winscp.net"]

@@ -1,0 +1,33 @@
+---
+permalink: online-help/task-viewing-the-list-of-monitored-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare la pagina Configuration/Cluster Data Sources per visualizzare l"inventario dei cluster. È possibile visualizzare i dettagli dei cluster, ad esempio il nome o l"indirizzo IP e lo stato della comunicazione.' 
+---
+= Visualizzazione dell'elenco dei cluster monitorati
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare la pagina Configuration/Cluster Data Sources per visualizzare l'inventario dei cluster. È possibile visualizzare i dettagli dei cluster, ad esempio il nome o l'indirizzo IP e lo stato della comunicazione.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di operatore, amministratore OnCommand o amministratore dello storage.
+
+
+
+== A proposito di questa attività
+
+L'elenco dei cluster viene ordinato in base alla colonna del livello di severità dello stato di raccolta. È possibile fare clic sull'intestazione di una colonna per ordinare i cluster in base a colonne diverse.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Configuration* > *Cluster Data Sources*.
+

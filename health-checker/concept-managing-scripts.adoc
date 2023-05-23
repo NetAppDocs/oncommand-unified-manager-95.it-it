@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-managing-scripts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile utilizzare gli script per modificare o aggiornare automaticamente più oggetti di storage in Unified Manager. Lo script è associato a un avviso. Quando un evento attiva un avviso, lo script viene eseguito. È possibile caricare script personalizzati e testarne l"esecuzione quando viene generato un avviso.' 
+---
+= Gestione degli script
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare gli script per modificare o aggiornare automaticamente più oggetti di storage in Unified Manager. Lo script è associato a un avviso. Quando un evento attiva un avviso, lo script viene eseguito. È possibile caricare script personalizzati e testarne l'esecuzione quando viene generato un avviso.

@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-user-and-group-quota-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi di quota di utenti e gruppi forniscono informazioni sulla capacità della quota di utenti e gruppi di utenti, nonché sui limiti di file e dischi, in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all"area di impatto e includono il nome dell"evento e della trap, il livello di impatto, il tipo di origine e la severità.' 
+---
+= Eventi quota utente e gruppo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi di quota di utenti e gruppi forniscono informazioni sulla capacità della quota di utenti e gruppi di utenti, nonché sui limiti di file e dischi, in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all'area di impatto e includono il nome dell'evento e della trap, il livello di impatto, il tipo di origine e la severità.
+
+
+
+== Area di impatto: Capacità
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Limite minimo spazio su disco quota utente o gruppo superato(ocumEvtUserOrGroupQuotaDiskSpaceSoftLimitBreached)
+ a| 
+Rischio
+ a| 
+Quota utente o di gruppo
+ a| 
+Attenzione
+
+
+
+ a| 
+Limite massimo di spazio su disco per quota utente o gruppo raggiunto (ocumEvtUserOrGroupQuotaDiskSpaceHardLimitReached)
+ a| 
+Incidente
+ a| 
+Quota utente o di gruppo
+ a| 
+Critico
+
+
+
+ a| 
+Numero di file di quota utente o gruppo - limite minimo superato (ocumEvtUserOrGroupQuotaFileCountSoftLimitBreached)
+ a| 
+Rischio
+ a| 
+Quota utente o di gruppo
+ a| 
+Attenzione
+
+
+
+ a| 
+Numero di file di quota utente o gruppo - limite massimo raggiunto (ocumEvtUserOrGroupQuotaFileCountHardLimitReached)
+ a| 
+Incidente
+ a| 
+Quota utente o di gruppo
+ a| 
+Critico
+
+|===

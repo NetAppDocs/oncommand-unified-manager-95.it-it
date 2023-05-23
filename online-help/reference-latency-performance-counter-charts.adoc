@@ -1,0 +1,65 @@
+---
+permalink: online-help/reference-latency-performance-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: 'I grafici del contatore di latenza di Performance Explorer visualizzano il numero di millisecondi necessari affinché l"oggetto di storage selezionato risponda alle richieste dell"applicazione.' 
+---
+= Tabelle dei contatori delle performance di latenza
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I grafici del contatore di latenza di Performance Explorer visualizzano il numero di millisecondi necessari affinché l'oggetto di storage selezionato risponda alle richieste dell'applicazione.
+
+La finestra a comparsa visualizzata quando il cursore si trova nell'area del grafico mostra i valori specifici del contatore in orari specifici.
+
+Nella parte inferiore della pagina del grafico vengono visualizzate le informazioni relative alla latenza minima, massima, media e 95° percentile per l'intervallo di tempo selezionato.
+
+Sono disponibili tre tipi di grafici di latenza:
+
+
+
+== Tabella dei contatori di latenza - totale
+
+Visualizza il numero di millisecondi necessari per rispondere alle richieste dell'applicazione. I valori medi di latenza sono ponderati in i/O.
+
+
+
+== Latenza - grafico del contatore dei guasti
+
+Visualizza gli stessi dati di latenza separati in lettura, scrittura e altre latenza.
+
+Questa opzione di grafico si applica quando l'oggetto selezionato è una SVM, un nodo, un aggregato, un volume o un LUN.
+
+
+
+== Latenza - grafico dei contatori dei componenti del cluster
+
+Visualizza i dati di latenza per componente del cluster. In questo modo è possibile identificare il componente del cluster responsabile della latenza. Passando il puntatore del mouse sul grafico è possibile visualizzare l'esatto contributo di latenza per ciascun componente.
+
+Questa opzione di grafico si applica quando l'oggetto selezionato è una SVM, un nodo, un aggregato, un volume o un LUN.
+
+
+
+== Pulsante *Zoom View*
+
+Visualizza una vista ingrandita dei dati del contatore.
+
+* Eventi
++
+Il verificarsi di eventi critici, di avviso e informativi è indicato sulle righe temporali sopra i grafici.
+
+* Soglie
++
+La linea orizzontale tratteggiata indica il valore di soglia dell'avviso di utilizzo impostato in Unified Manager.
+
++
+La linea rossa fissa indica il valore della soglia critica di utilizzo impostato in Unified Manager.
+
+* Contatori
++
+I contatori nel riquadro di sinistra indicano i valori dei contatori visualizzati. Deselezione o selezione di image:../media/eye-icon.gif[""] associata a un contatore, nasconde e mostra le informazioni del contatore dal grafico e può essere di aiuto nel confronto della latenza dell'oggetto.
+
+

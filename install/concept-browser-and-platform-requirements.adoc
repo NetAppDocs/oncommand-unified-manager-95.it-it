@@ -1,0 +1,34 @@
+---
+permalink: install/concept-browser-and-platform-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Per accedere all"interfaccia utente di Unified Manager, è necessario utilizzare un browser supportato.' 
+---
+= Browser supportati
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per accedere all'interfaccia utente di Unified Manager, è necessario utilizzare un browser supportato.
+
+Unified Manager è stato testato con i seguenti browser; altri browser potrebbero funzionare, ma non sono stati qualificati. Consultare la matrice di interoperabilità per l'elenco completo delle versioni del browser supportate.
+
+http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
+
+* Mozilla Firefox ESR 60
+* Google Chrome versione 68 e 69
+* Microsoft Internet Explorer 11
+
+
+Per tutti i browser, la disattivazione dei blocchi dei popup garantisce che le funzionalità software vengano visualizzate correttamente.
+
+Per Internet Explorer, assicurarsi che la visualizzazione compatibilità sia disattivata e che la modalità documento sia impostata sui valori predefiniti. Per informazioni su queste impostazioni, consultare la documentazione di Microsoft IE.
+
+[NOTE]
+====
+Firefox e Chrome sono i browser preferiti in quanto in alcuni casi le pagine dell'interfaccia utente complesse vengono caricate più lentamente quando si utilizza Internet Explorer.
+
+====
+Se si intende configurare Unified Manager per l'autenticazione SAML in modo che un provider di identità (IdP) autentichi gli utenti, controllare anche l'elenco dei browser supportati da IdP.

@@ -1,0 +1,55 @@
+---
+permalink: online-help/reference-scheduled-reports-page.html 
+sidebar: sidebar 
+keywords:  
+summary: La pagina Report consente di visualizzare informazioni dettagliate sui report generati. È possibile cercare un report specifico, salvarlo ed eliminarlo. È inoltre possibile pianificare, condividere e importare un report. 
+---
+= Pagina dei report
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Report consente di visualizzare informazioni dettagliate sui report generati. È possibile cercare un report specifico, salvarlo ed eliminarlo. È inoltre possibile pianificare, condividere e importare un report.
+
+La pagina Report visualizza gruppi categorizzati di report sui quali è possibile ottenere dettagli specifici. Per impostazione predefinita, i gruppi di report si espandono per visualizzare i tipi di report, una panoramica dei report e i collegamenti che consentono di personalizzare i report. È possibile visualizzare un solo report alla volta. È possibile fare clic sul pulsante *Esegui report* per visualizzare un report per un gruppo specifico di report.
+
+[NOTE]
+====
+L'implementazione della pianificazione e della generazione di report dalla pagina Report sarà obsoleta in una release futura. È possibile estrarre i dati di salute e performance da Unified Manager utilizzando i seguenti metodi aggiuntivi:
+
+* Estrazione dei dati direttamente dalle pagine della griglia nella GUI
+* Utilizzo di Open Database per l'accesso a tutti gli oggetti disponibili
+* Esecuzione delle API REST di Unified Manager per restituire le informazioni che si desidera esaminare
+
+
+====
+Di seguito viene riportato un elenco dei gruppi di report e dei tipi di report visualizzati nella pagina Report:
+
+* Report sull'utilizzo della capacità
++
+** Riepilogo dello storage
+** Capacità e utilizzo aggregati
+** Capacità e utilizzo dei volumi
+** Capacità e utilizzo del qtree
+
+
+* Report operativi - Eventi
+* Report di inventario
++
+** Inventario del cluster
+** Esportazioni NFS
+** Inventario SVM
+
+
+* Report importati
+* Report sulla protezione dei dati
++
+** Configurazione della protezione dei dati del volume
+** Inventario delle relazioni con i volumi
+** Stato trasferimento volume (storico)
+** Velocità di trasferimento del volume (cronologia)
+
+
+

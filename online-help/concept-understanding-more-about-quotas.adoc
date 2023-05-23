@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-understanding-more-about-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: La comprensione dei concetti relativi alle quote consente di gestire in modo efficiente le quote degli utenti e dei gruppi di utenti. 
+---
+= Ulteriori informazioni sulle quote
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La comprensione dei concetti relativi alle quote consente di gestire in modo efficiente le quote degli utenti e dei gruppi di utenti.

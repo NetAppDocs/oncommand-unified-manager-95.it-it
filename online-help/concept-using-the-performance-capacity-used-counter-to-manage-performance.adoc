@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-using-the-performance-capacity-used-counter-to-manage-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: 'In genere, le organizzazioni desiderano operare con una percentuale di capacità utilizzata per le performance inferiore a 100, in modo che le risorse vengano utilizzate in modo efficiente, riservando al tempo stesso una capacità di performance aggiuntiva per supportare le richieste di periodi di picco. È possibile utilizzare i criteri di soglia per personalizzare l"invio di avvisi per i valori di capacità utilizzata dalle performance elevate.' 
+---
+= Utilizzo della capacità di performance utilizzata per gestire le performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+In genere, le organizzazioni desiderano operare con una percentuale di capacità utilizzata per le performance inferiore a 100, in modo che le risorse vengano utilizzate in modo efficiente, riservando al tempo stesso una capacità di performance aggiuntiva per supportare le richieste di periodi di picco. È possibile utilizzare i criteri di soglia per personalizzare l'invio di avvisi per i valori di capacità utilizzata dalle performance elevate.
+
+Puoi stabilire obiettivi specifici in base ai tuoi requisiti di performance. Ad esempio, le società di servizi finanziari potrebbero riservare una maggiore capacità di performance per garantire la tempestiva esecuzione delle negoziazioni. Queste aziende potrebbero voler impostare le soglie di utilizzo della capacità di performance nell'intervallo del 70-80%. Le aziende manifatturiere con margini inferiori potrebbero scegliere di riservare una capacità di performance inferiore se sono disposte a rischiare le performance per gestire meglio i costi IT. Queste aziende potrebbero impostare le soglie di utilizzo della capacità di performance nell'intervallo del 85-95%.
+
+Quando il valore della capacità di performance utilizzata supera la percentuale impostata in un criterio di soglia definito dall'utente, Unified Manager invia un'email di avviso e aggiunge l'evento alla pagina Event Inventory. Ciò consente di gestire i potenziali problemi prima che influiscano sulle performance. Questi eventi possono anche essere utilizzati come indicatori necessari per spostare i carichi di lavoro e apportare modifiche all'interno dei nodi e degli aggregati.

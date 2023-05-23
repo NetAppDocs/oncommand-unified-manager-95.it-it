@@ -1,0 +1,65 @@
+---
+permalink: online-help/task-searching-for-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Per accedere rapidamente a un oggetto specifico, è possibile utilizzare il campo Search All Storage Objects (Cerca tutti gli oggetti di storage) nella parte superiore destra dell"interfaccia. Questo metodo di ricerca globale in tutti gli oggetti consente di individuare rapidamente oggetti specifici in base al tipo. I risultati della ricerca sono ordinati in base al tipo di oggetto di storage ed è possibile filtrarli ulteriormente in base all"oggetto utilizzando il menu a discesa tipo.' 
+---
+= Ricerca di oggetti storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per accedere rapidamente a un oggetto specifico, è possibile utilizzare il campo *Search All Storage Objects* (Cerca tutti gli oggetti di storage) nella parte superiore destra dell'interfaccia. Questo metodo di ricerca globale in tutti gli oggetti consente di individuare rapidamente oggetti specifici in base al tipo. I risultati della ricerca sono ordinati in base al tipo di oggetto di storage ed è possibile filtrarli ulteriormente in base all'oggetto utilizzando il menu a discesa *Type*.
+
+
+
+== Prima di iniziare
+
+* Per eseguire questa attività, è necessario disporre di uno dei seguenti ruoli: Operatore, Amministratore OnCommand o Amministratore dello storage.
+* Una ricerca valida deve contenere almeno tre caratteri.
+
+
+
+
+== A proposito di questa attività
+
+Quando si utilizza il valore del menu a discesa tipo "`tutti`", la ricerca globale visualizza il numero totale di risultati trovati in tutte le categorie di oggetti, con un massimo di 25 risultati di ricerca per ciascuna categoria di oggetti. È possibile selezionare un tipo di oggetto specifico dal menu a discesa tipo per perfezionare la ricerca all'interno di un tipo di oggetto specifico. In questo caso, l'elenco restituito non è limitato ai primi 25 oggetti.
+
+I tipi di oggetti che è possibile cercare includono:
+
+* Cluster
+* Nodi
+* SVM
+* Aggregati
+* Volumi
+* Qtree
+* Condivisioni CIFS
+* Quote utente o di gruppo
+* LUN
+* NVMe Namespace
+* Gruppi di iniziatori
+* Iniziatori
+
+
+È possibile fare clic su qualsiasi oggetto nei risultati della ricerca per accedere alla pagina Health details relativa all'oggetto. Se non esiste una pagina di integrità diretta per un oggetto, viene visualizzata la pagina di integrità dell'oggetto padre. Ad esempio, durante la ricerca di un LUN specifico, viene visualizzata la pagina dei dettagli SVM in cui risiede il LUN.
+
+[NOTE]
+====
+Le porte non sono ricercabili nella barra di ricerca globale.
+
+====
+
+
+== Fasi
+
+. Selezionare un tipo di oggetto dal menu *Type* per perfezionare i risultati della ricerca solo per un singolo tipo di oggetto.
+. Digitare almeno tre caratteri del nome dell'oggetto nel campo *Cerca tutti gli oggetti di storage*.
++
+In questo esempio, nella casella a discesa *Type* è selezionato il tipo di oggetto Volumes. Digitando "`vol1`" nel campo *Search All Storage Objects* viene visualizzato un elenco di tutti i volumi i cui nomi contengono questi caratteri.
+
++
+image::../media/opm-search-field-jpg.gif[Campo di ricerca in Unified Manager]
+
+

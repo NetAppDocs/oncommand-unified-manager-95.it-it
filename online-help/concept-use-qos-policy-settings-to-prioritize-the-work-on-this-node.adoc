@@ -1,0 +1,26 @@
+---
+permalink: online-help/concept-use-qos-policy-settings-to-prioritize-the-work-on-this-node.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile impostare un limite su un gruppo di criteri QoS per controllare il limite di throughput di i/o al secondo (IOPS) o Mbps per i carichi di lavoro in esso contenuti. Se i carichi di lavoro si trovano in un gruppo di policy senza limiti impostati, ad esempio il gruppo di policy predefinito, o se il limite impostato non soddisfa le esigenze, è possibile aumentare il limite impostato o spostare i carichi di lavoro in un gruppo di policy nuovo o esistente con il limite desiderato.' 
+---
+= Utilizzare le impostazioni dei criteri QoS per assegnare priorità al lavoro su questo nodo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile impostare un limite su un gruppo di criteri QoS per controllare il limite di throughput di i/o al secondo (IOPS) o Mbps per i carichi di lavoro in esso contenuti. Se i carichi di lavoro si trovano in un gruppo di policy senza limiti impostati, ad esempio il gruppo di policy predefinito, o se il limite impostato non soddisfa le esigenze, è possibile aumentare il limite impostato o spostare i carichi di lavoro in un gruppo di policy nuovo o esistente con il limite desiderato.
+
+Se un evento di performance su un nodo è causato da un eccessivo utilizzo delle risorse del nodo da parte dei carichi di lavoro, la descrizione dell'evento nella pagina Dettagli evento visualizza un collegamento all'elenco dei volumi coinvolti. Nella pagina Performance/Volumes (prestazioni/volumi), è possibile ordinare i volumi interessati in base a IOPS e Mbps per vedere quali carichi di lavoro hanno il massimo utilizzo che potrebbe aver contribuito all'evento.
+
+Assegnando i volumi che stanno utilizzando in eccesso le risorse del nodo a un'impostazione di gruppo di criteri più restrittiva, il gruppo di criteri limita i carichi di lavoro per limitare la loro attività, riducendo così l'utilizzo delle risorse su quel nodo.
+
+È possibile utilizzare Gestione di sistema di OnCommand o i comandi ONTAP per gestire i gruppi di criteri, incluse le seguenti attività:
+
+* Creazione di un gruppo di criteri
+* Aggiunta o rimozione di workload in un gruppo di policy
+* Spostamento di un workload tra gruppi di policy
+* Modifica del limite di throughput di un gruppo di criteri
+

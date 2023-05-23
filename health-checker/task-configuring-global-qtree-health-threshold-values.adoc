@@ -1,0 +1,38 @@
+---
+permalink: health-checker/task-configuring-global-qtree-health-threshold-values.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile configurare i valori della soglia di integrità globale per tutti i qtree per tenere traccia di qualsiasi violazione di soglia. Gli eventi appropriati vengono generati per le violazioni delle soglie di salute ed è possibile adottare misure preventive in base a tali eventi. È possibile configurare i valori globali in base alle impostazioni delle Best practice per le soglie applicabili a tutti i qtree monitorati. 
+---
+= Configurazione dei valori globali delle soglie di integrità del qtree
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile configurare i valori della soglia di integrità globale per tutti i qtree per tenere traccia di qualsiasi violazione di soglia. Gli eventi appropriati vengono generati per le violazioni delle soglie di salute ed è possibile adottare misure preventive in base a tali eventi. È possibile configurare i valori globali in base alle impostazioni delle Best practice per le soglie applicabili a tutti i qtree monitorati.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== A proposito di questa attività
+
+Le opzioni di soglia hanno valori predefiniti per un migliore monitoraggio, tuttavia è possibile modificare i valori in base ai requisiti dell'ambiente.
+
+Gli eventi vengono generati per un qtree solo quando è stata impostata una quota Qtree o una quota predefinita nel qtree. Gli eventi non vengono generati se lo spazio definito in una quota utente o di gruppo ha superato la soglia.
+
+
+
+== Fasi
+
+. Nel riquadro di spostamento di sinistra, fare clic su *Configurazione* > *soglie di integrità*.
+. Nella pagina *Configuration/Health Thresholds* (soglie di configurazione/integrità), fare clic su *Qtree*.
+. Configurare i valori di soglia della capacità appropriati.
+. Fare clic su *Save* (Salva).
+

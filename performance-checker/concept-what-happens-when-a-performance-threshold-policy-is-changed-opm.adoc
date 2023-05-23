@@ -1,0 +1,24 @@
+---
+permalink: performance-checker/concept-what-happens-when-a-performance-threshold-policy-is-changed-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: Se si regola il valore del contatore o la durata di un criterio di soglia delle prestazioni esistente, la modifica del criterio viene applicata a tutti gli oggetti di storage che utilizzano il criterio. La nuova impostazione viene eseguita immediatamente e Unified Manager inizia a confrontare i valori dei contatori delle performance con le nuove impostazioni di soglia per tutti i dati delle performance appena raccolti. 
+---
+= Cosa accade quando viene modificata una policy di soglia delle performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se si regola il valore del contatore o la durata di un criterio di soglia delle prestazioni esistente, la modifica del criterio viene applicata a tutti gli oggetti di storage che utilizzano il criterio. La nuova impostazione viene eseguita immediatamente e Unified Manager inizia a confrontare i valori dei contatori delle performance con le nuove impostazioni di soglia per tutti i dati delle performance appena raccolti.
+
+Se esistono eventi attivi per oggetti che utilizzano il criterio di soglia modificato, gli eventi vengono contrassegnati come obsoleti e il criterio di soglia inizia a monitorare il contatore come criterio di soglia appena definito.
+
+Quando si visualizza il contatore su cui è stata applicata la soglia nella visualizzazione dettagliata dei grafici dei contatori, le righe di soglia critiche e di avviso riflettono le impostazioni di soglia correnti. Le impostazioni di soglia originali non vengono visualizzate in questa pagina anche se si visualizzano i dati storici quando era attiva la vecchia impostazione di soglia.
+
+[NOTE]
+====
+Poiché le impostazioni di soglia precedenti non vengono visualizzate nella visualizzazione dettagliata dei grafici dei contatori, è possibile che vengano visualizzati eventi storici al di sotto delle righe di soglia correnti.
+
+====

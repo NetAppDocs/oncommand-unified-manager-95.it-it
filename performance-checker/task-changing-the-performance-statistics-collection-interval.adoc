@@ -1,0 +1,54 @@
+---
+permalink: performance-checker/task-changing-the-performance-statistics-collection-interval.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: 'L"intervallo di raccolta predefinito per le statistiche delle performance è di 5 minuti. È possibile modificare questo intervallo in 10 o 15 minuti se si rileva che le raccolte di cluster di grandi dimensioni non vengono terminate entro il tempo predefinito. Questa impostazione influisce sulla raccolta di statistiche di tutti i cluster monitorati da questa istanza di Unified Manager.' 
+---
+= Modifica dell'intervallo di raccolta delle statistiche delle performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'intervallo di raccolta predefinito per le statistiche delle performance è di 5 minuti. È possibile modificare questo intervallo in 10 o 15 minuti se si rileva che le raccolte di cluster di grandi dimensioni non vengono terminate entro il tempo predefinito. Questa impostazione influisce sulla raccolta di statistiche di tutti i cluster monitorati da questa istanza di Unified Manager.
+
+
+
+== Prima di iniziare
+
+Per accedere alla console di manutenzione del server Unified Manager, è necessario disporre di un ID utente e di una password autorizzati.
+
+
+
+== A proposito di questa attività
+
+Il problema delle raccolte di statistiche delle performance che non terminano in tempo è indicato dai messaggi banner `Unable to consistently collect from cluster <cluster_name>` oppure `Data collection is taking too long on cluster <cluster_name>`.
+
+È necessario modificare l'intervallo di raccolta solo quando richiesto a causa di un problema di raccolta di statistiche. Non modificare questa impostazione per altri motivi.
+
+[NOTE]
+====
+La modifica di questo valore dall'impostazione predefinita di 5 minuti può influire sul numero e sulla frequenza degli eventi relativi alle performance segnalati da Unified Manager. Ad esempio, le soglie di performance definite dal sistema attivano eventi quando il criterio viene superato per 30 minuti. Quando si utilizzano raccolte di 5 minuti, la policy deve essere superata per sei raccolte consecutive. Per le raccolte di 15 minuti, la policy deve essere superata solo per due periodi di raccolta.
+
+====
+Un messaggio nella parte inferiore della pagina origini dati cluster indica l'intervallo di raccolta dati statistici corrente.
+
+
+
+== Fasi
+
+. Accedere utilizzando SSH come utente di manutenzione all'host di Unified Manager.
++
+Vengono visualizzati i prompt della console di Unified Managermaintenance.
+
+. Digitare il numero dell'opzione di menu *Performance polling Interval Configuration* (Configurazione intervallo di polling delle prestazioni), quindi premere Invio.
+. Se richiesto, inserire nuovamente la password utente per la manutenzione.
+. Digitare il numero del nuovo intervallo di polling che si desidera impostare, quindi premere Invio.
+
+
+
+
+== Al termine
+
+Se l'intervallo di raccolta di Unified Manager è stato modificato su 10 o 15 minuti e si dispone di una connessione corrente a un provider di dati esterno (ad esempio Graphite), è necessario modificare l'intervallo di trasmissione del provider di dati in modo che sia uguale o superiore all'intervallo di raccolta di Unified Manager.

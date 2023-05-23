@@ -1,0 +1,33 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-status-report-schedules.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile personalizzare le pianificazioni per il report Volume Transfer Status (storico) per visualizzare i dettagli del volume in base a diverse pianificazioni. È possibile visualizzare, modificare o eliminare le pianificazioni di report esistenti e aggiungere nuove pianificazioni per i report.' 
+---
+= Personalizzazione delle pianificazioni dei report Cronologia (Volume Transfer Status)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare le pianificazioni del report Stato trasferimento volume (storico) per visualizzare i dettagli del volume in base a diverse pianificazioni. È possibile visualizzare, modificare o eliminare le pianificazioni di report esistenti e aggiungere nuove pianificazioni per i report.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Nella pagina del report *Volume Transfer Status (Cronologia)*, fare clic su *Manage Report Schedules* (Gestisci pianificazioni report).
+. Nella finestra di dialogo *Manage Report Schedules* (Gestisci pianificazioni report), immettere dettagli specifici come nome della pianificazione del destinatario, indirizzo e-mail, formato del report, frequenza e report.
+. Selezionare *Inventory* come categoria report.
+. Fare clic su *Save and Close* (Salva e chiudi).
++
+Il report Volume Transfer Status (storico) viene inviato automaticamente via email a uno o più destinatari in base alla pianificazione.
+
+

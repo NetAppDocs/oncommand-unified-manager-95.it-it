@@ -1,0 +1,51 @@
+---
+permalink: online-help/task-customizing-the-svm-inventory-report-to-display-a-list-of-svms-reaching-maximum-volume-limit.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile personalizzare il report di inventario SVM per visualizzare un elenco di SVM che stanno raggiungendo il limite massimo di volume ordinando i volumi in ordine crescente. 
+---
+= Personalizzazione del report di inventario SVM per visualizzare un elenco di SVM che raggiungono il limite massimo di volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report di inventario SVM per visualizzare un elenco di SVM che stanno raggiungendo il limite massimo di volume ordinando i volumi in ordine crescente.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Per rimuovere il raggruppamento in base al cluster, attenersi alla seguente procedura:
++
+.. Fare clic all'interno della colonna che deve essere raggruppata.
+.. Fare clic su image:../media/click-to-see-menu.gif[""] icona.
+.. Selezionare *Gruppo* > *Elimina gruppo interno*.
+
+
+. Per filtrare le SVM che non dispongono di un numero illimitato di volumi consentiti, fare clic sulla colonna *Maximum Allowed Volumes* (volumi massimi consentiti) e aprire la finestra di dialogo *Filter* (filtro) facendo clic su image:../media/click-to-filter.gif[""] icona.
+. Nel campo *Data type*, selezionare *String* e fare clic su *OK*.
+. Dall'elenco a discesa *condizione*, selezionare *non uguale a*.
+. Fare clic su *Select Values* (Seleziona valori) e selezionare *Unlimited*.
+. Per aggiungere una nuova colonna calcolata, attenersi alla seguente procedura:
++
+.. Selezionare una colonna e fare clic su image:../media/click-to-see-menu.gif[""] E selezionare *colonna* > *Nuova colonna calcolata*.
+.. Nella finestra di dialogo *Nuova colonna calcolata*, digitare `Available Volume` Nel campo *etichetta colonna*.
+.. Dall'elenco Select Category (Seleziona categoria), selezionare *Math*.
+.. Dall'elenco a discesa *Select function* (Seleziona funzione), selezionare *Advanced* (Avanzate).
+.. Nel campo *Inserisci espressione*, digitare `[maximumVolumes]-[volumeCount]`.
+.. Fare clic su *OK*.
+
+
+. Per ordinare le SVM in ordine crescente, fare clic nella colonna *Volume disponibile* e fare clic su image:../media/click-to-see-menu.gif[""] icona.
+. Selezionare *Filter* > *Top/Bottom N*.
+. Nella finestra di dialogo *N in alto/in basso*, selezionare *N in basso* dal campo *filtro* e immettere un valore nel campo di testo.
+. Fare clic su *OK*.
+

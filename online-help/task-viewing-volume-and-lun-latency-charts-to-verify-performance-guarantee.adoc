@@ -1,0 +1,32 @@
+---
+permalink: online-help/task-viewing-volume-and-lun-latency-charts-to-verify-performance-guarantee.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile visualizzare i volumi e le LUN sottoscritti al programma "Performance Guarantee" per verificare che la latenza non superi il livello garantito.' 
+---
+= Visualizzazione dei diagrammi di latenza del volume e del LUN per verificare la garanzia delle performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puoi visualizzare i volumi e le LUN che hai sottoscritto al programma "`Performance Guarantee`" per verificare che la latenza non superi il livello garantito.
+
+
+
+== A proposito di questa attività
+
+La garanzia delle performance di latenza è un valore di millisecondo per operazione che non deve essere superato. Si basa su una media oraria, non sul periodo predefinito di raccolta delle performance di cinque minuti.
+
+
+
+== Fasi
+
+. Nella pagina di inventario *Performance Volumes* o *Performance LUN*, selezionare il volume o il LUN desiderato.
+. Nella pagina *Performance Explorer* del volume o LUN selezionato, selezionare *Hourly Average* (Media oraria) dal selettore *View statistics in* (Visualizza statistiche in).
++
+La riga orizzontale nel grafico di latenza mostra una linea più uniforme quando le raccolte di cinque minuti vengono sostituite con la media oraria.
+
+. Se nello stesso aggregato sono presenti altri volumi che rientrano nella garanzia delle performance, è possibile aggiungere tali volumi per visualizzarne il valore di latenza nello stesso grafico.
+

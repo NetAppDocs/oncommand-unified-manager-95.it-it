@@ -1,0 +1,50 @@
+---
+permalink: online-help/reference-share-report-dialog-box-um-6-2.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile condividere un report con uno o più utenti tramite e-mail. Dopo aver personalizzato un report, è necessario salvare le modifiche prima di condividerlo per assicurarsi che le modifiche vengano visualizzate. 
+---
+= Finestra di dialogo Share Report (Condividi report)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile condividere un report con uno o più utenti tramite e-mail. Dopo aver personalizzato un report, è necessario salvare le modifiche prima di condividerlo per assicurarsi che le modifiche vengano visualizzate.
+
+
+
+== Proprietà
+
+È possibile condividere un report specificando proprietà come l'indirizzo e-mail dell'utente, l'oggetto del messaggio e-mail e il formato del report.
+
+* *Indirizzo e-mail destinatario*
++
+Specifica l'indirizzo e-mail dell'utente con cui si desidera condividere il report. È possibile specificare una o più voci, separate da virgole. Questo è un campo obbligatorio.
+
+* *Soggetto*
++
+Specifica l'oggetto del messaggio di posta elettronica. Per impostazione predefinita, viene visualizzato il nome del report.
+
+* *Formato report*
++
+Specifica il formato in cui si desidera condividere il report. L'opzione _PDF_ è selezionata per impostazione predefinita. Se è selezionato il formato XHTML, aprire il report inviato tramite e-mail utilizzando un browser Web supportato.
+
+
+
+
+
+== Pulsanti di comando
+
+I pulsanti di comando consentono di eseguire le seguenti operazioni:
+
+* *Condividi*
++
+Condivide il report con la configurazione salvata e chiude la finestra di dialogo Share Report (Condividi report).
+
+* *Annulla*
++
+Chiude la finestra di dialogo Share Report (Condividi report) mentre viene visualizzato un messaggio per salvare la configurazione del report.
+
+

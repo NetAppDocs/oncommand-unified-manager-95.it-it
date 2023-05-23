@@ -1,0 +1,41 @@
+---
+permalink: performance-checker/concept-performance-capacity-used-threshold-conditions.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile creare criteri di soglia delle performance definiti dall"utente in modo che gli eventi vengano attivati quando il valore della capacità di performance utilizzata per un nodo o aggregato supera l"impostazione di soglia definita per la capacità di performance utilizzata.' 
+---
+= La capacità di performance ha utilizzato le condizioni di soglia delle performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile creare criteri di soglia delle performance definiti dall'utente in modo che gli eventi vengano attivati quando il valore della capacità di performance utilizzata per un nodo o aggregato supera l'impostazione di soglia definita per la capacità di performance utilizzata.
+
+Inoltre, i nodi possono essere configurati con un criterio di soglia "`Performance Capacity used Takeover`". Questo criterio di soglia totalizza la capacità di performance utilizzata dalle statistiche per entrambi i nodi di una coppia ha per determinare se uno dei due nodi non dispone di capacità sufficiente in caso di guasto dell'altro nodo. Poiché il carico di lavoro durante il failover è la combinazione dei carichi di lavoro dei due nodi partner`, la stessa capacità di performance utilizzata per la policy di takeover può essere applicata a entrambi i nodi.
+
+[NOTE]
+====
+Questa equivalenza di capacità di performance utilizzata è generalmente vera tra i nodi. Tuttavia, se il traffico tra nodi è significativamente maggiore per uno dei nodi attraverso il partner di failover, la capacità di performance totale utilizzata per l'esecuzione di tutti i carichi di lavoro su un nodo partner rispetto all'altro nodo partner potrebbe essere leggermente diversa a seconda del nodo guasto.
+
+====
+Le condizioni di utilizzo della capacità di performance possono anche essere utilizzate come impostazioni di soglia delle performance secondarie per creare una policy di soglia combinata quando si definiscono le soglie per LUN e volumi. La condizione di capacità di performance utilizzata viene applicata all'aggregato o al nodo su cui risiede il volume o il LUN. Ad esempio, è possibile creare una combinazione di criteri di soglia utilizzando i seguenti criteri:
+
+|===
+| Oggetto di storage | Contatore delle performance | Soglia di avviso | Soglia critica | Durata 
+
+
+ a| 
+Volume
+ a| 
+Latenza
+ a| 
+15 ms/op
+ a| 
+25 ms/op
+ a| 
+20 minuti
+
+|===
+I criteri di soglia combinati causano la generazione di un evento solo quando entrambe le condizioni vengono violate per l'intera durata.

@@ -1,0 +1,52 @@
+---
+permalink: online-help/concept-event-state-definitions.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Lo stato di un evento aiuta a identificare se è necessaria un"azione correttiva appropriata. Un evento può essere nuovo, confermato, risolto o obsoleto. Si noti che sia gli eventi nuovi che quelli confermati sono considerati eventi attivi.' 
+---
+= Definizioni dello stato dell'evento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lo stato di un evento aiuta a identificare se è necessaria un'azione correttiva appropriata. Un evento può essere nuovo, confermato, risolto o obsoleto. Si noti che sia gli eventi nuovi che quelli confermati sono considerati eventi attivi.
+
+Gli stati dell'evento sono i seguenti:
+
+* *Nuovo*
++
+Lo stato di un nuovo evento.
+
+* *Riconosciuto*
++
+Lo stato di un evento confermato.
+
+* *Risolto*
++
+Lo stato di un evento quando viene contrassegnato come risolto.
+
+* *Obsoleto*
++
+Lo stato di un evento quando viene corretto automaticamente o quando la causa dell'evento non è più valida.
+
++
+[NOTE]
+====
+Non è possibile riconoscere o risolvere un evento obsoleto.
+
+====
+
+
+
+
+== Esempio di stati diversi di un evento
+
+I seguenti esempi illustrano le modifiche manuali e automatiche dello stato degli eventi.
+
+Quando viene attivato l'evento Cluster Not Reachable (Cluster non raggiungibile), lo stato dell'evento è New (nuovo). Quando si riconosce l'evento, lo stato dell'evento diventa confermato. Una volta eseguita un'azione correttiva appropriata, è necessario contrassegnare l'evento come risolto. Lo stato dell'evento diventa Resolved (risolto).
+
+Se l'evento Cluster Not Reachable (Cluster non raggiungibile) viene generato a causa di un'interruzione dell'alimentazione, quando viene ripristinata l'alimentazione, il cluster inizia a funzionare senza alcun intervento dell'amministratore. Pertanto, l'evento Cluster Not Reachable non è più valido e lo stato dell'evento diventa obsoleto nel ciclo di monitoraggio successivo.
+
+Unified Manager invia un avviso quando un evento si trova nello stato obsoleto o risolto. L'oggetto dell'e-mail e il contenuto dell'e-mail di un avviso forniscono informazioni sullo stato dell'evento. Un trap SNMP include anche informazioni sullo stato dell'evento.

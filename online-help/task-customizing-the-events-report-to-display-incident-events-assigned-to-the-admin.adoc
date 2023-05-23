@@ -1,0 +1,34 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-incident-events-assigned-to-the-admin.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile personalizzare il report Eventi per visualizzare gli eventi incidente assegnati all"amministratore, filtrati in base al livello di impatto e al nome dell"amministratore.' 
+---
+= Personalizzazione del report Eventi per visualizzare gli eventi incidenti assegnati all'amministratore
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile personalizzare il report Eventi per visualizzare gli eventi incidente assegnati all'amministratore, filtrati in base al livello di impatto e al nome dell'amministratore.
+
+
+
+== A proposito di questa attività
+
+È inoltre possibile eseguire questa attività accedendo alla pagina Report e facendo clic su *Esegui report* per il report appropriato.
+
+
+
+== Fasi
+
+. Per filtrare gli eventi incidente, fare clic nella colonna *Impact Level* e aprire la finestra di dialogo *Filter* facendo clic su image:../media/click-to-filter.gif[""] icona.
+. Dall'elenco *condizione*, selezionare *uguale a*.
+. Fare clic su *Seleziona valori* e selezionare *incidente*.
+. Fare clic su *OK*.
+. Per assegnare questi incidenti all'amministratore, fare clic nella colonna *assegnato a* e aprire la finestra di dialogo *filtro* facendo clic su image:../media/click-to-filter.gif[""] icona.
+. Dall'elenco a discesa *condizione*, selezionare *uguale a*.
+. Fare clic su *Select Values* (Seleziona valori) e selezionare *Admin Name* (Nome amministratore).
+. Fare clic su *OK*.
+

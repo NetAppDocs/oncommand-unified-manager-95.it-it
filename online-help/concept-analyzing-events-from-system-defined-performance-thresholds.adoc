@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-analyzing-events-from-system-defined-performance-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi generati dalle soglie delle performance definite dal sistema indicano che un contatore delle performance, o un insieme di contatori delle performance, per un determinato oggetto di storage ha superato la soglia di un criterio definito dal sistema. Ciò indica che l"oggetto storage, ad esempio un aggregato o un nodo, sta riscontrando un problema di performance.' 
+---
+= Analisi degli eventi dalle soglie di performance definite dal sistema
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi generati dalle soglie delle performance definite dal sistema indicano che un contatore delle performance, o un insieme di contatori delle performance, per un determinato oggetto di storage ha superato la soglia di un criterio definito dal sistema. Ciò indica che l'oggetto storage, ad esempio un aggregato o un nodo, sta riscontrando un problema di performance.
+
+La pagina Dettagli evento consente di analizzare l'evento relativo alle performance e, se necessario, di intraprendere azioni correttive per riportare le performance alla normalità.
+
+[NOTE]
+====
+I criteri di soglia definiti dal sistema non sono abilitati sui sistemi Cloud Volumes ONTAP, ONTAP Edge o ONTAP Select.
+
+====

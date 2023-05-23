@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-identifying-the-best-node-for-a-busy-lif-using-the-cli.html 
+sidebar: sidebar 
+keywords:  
+summary: 'È possibile visualizzare informazioni su tutte le porte di un cluster. È possibile visualizzare informazioni quali il ruolo della porta di rete (cluster, dati o gestione dei nodi), lo stato del collegamento, il numero massimo di unità di trasmissione (MTU), l"impostazione della velocità e lo stato operativo e il gruppo di interfacce della porta, se applicabile.' 
+---
+= Identificazione del nodo migliore per un LIF occupato utilizzando la CLI
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile visualizzare informazioni su tutte le porte di un cluster. È possibile visualizzare informazioni quali il ruolo della porta di rete (cluster, dati o gestione dei nodi), lo stato del collegamento, l'unità di trasmissione massima (MTU), l'impostazione della velocità e lo stato operativo e il gruppo di interfacce della porta, se applicabile.
+
+
+
+== Fasi
+
+. Per visualizzare le informazioni sulla porta, immettere il seguente comando: `network port show`
++
+Nell'esempio seguente vengono visualizzate informazioni sulle porte di rete che hanno un ruolo dati e sono installate nel cluster:
+
++
+[listing]
+----
+cluster1::> network port show  -role data -link up
+                                   Auto-Negot Duplex      Speed (Mbps)
+Node Port Role         Link  MTU   Admin/Oper Admin/Oper  Admin/Oper
+---- ---- -----        ----  ----  ---------- ----------  ----------
+node1
+     e0M  data         up    1500  true/true  full/full   auto/100
+     e0b  data         up    1500  true/true  full/full   auto/1000
+
+node2
+     e0b  data         up    1500  true/true  full/full   auto/1000
+----
+. Controllare le porte di destinazione che si trovano nella stessa rete della porta home di origine e del nodo home.
++
+Ad esempio, la porta home di destinazione e il nodo home devono trovarsi sulla stessa VLAN, dove applicabile.
+
+. Per identificare la porta meno occupata, scegliere una porta dati con il minor numero di connessioni.
+

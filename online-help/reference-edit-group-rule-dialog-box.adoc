@@ -1,0 +1,48 @@
+---
+permalink: online-help/reference-edit-group-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: È possibile modificare le regole di gruppo create per includere il numero massimo di oggetti di storage in un gruppo. 
+---
+= Finestra di dialogo Edit Group Rule (Modifica regola gruppo)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare le regole di gruppo create per includere il numero massimo di oggetti di storage in un gruppo.
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+* *Nome regola*
++
+Visualizza il nome della regola.
+
+* *Tipo di oggetto di destinazione*
++
+Visualizza l'oggetto di storage da aggiungere a un gruppo selezionato. Non è possibile modificare il tipo di oggetto.
+
+* *Gruppo associato*
++
+Visualizza il gruppo associato. È possibile selezionare un altro gruppo per la regola di gruppo.
+
+* *Condizione*
++
+Visualizza l'elenco delle condizioni per un gruppo selezionato. È possibile modificare le condizioni. Gli oggetti di storage vengono rimossi o aggiunti a un gruppo selezionato in base alle modifiche.
+
+
+
+
+
+== Pulsanti di comando
+
+* *Salva*
++
+Salva le modifiche apportate e chiude la finestra di dialogo.
+
+* *Annulla*
++
+Chiude la finestra di dialogo Modifica regola gruppo senza salvare le modifiche.
+
+

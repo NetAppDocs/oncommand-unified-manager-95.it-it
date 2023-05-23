@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-editing-storage-class-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Per risolvere eventuali problemi relativi allo spazio di storage nelle classi di storage, è possibile modificare le impostazioni di soglia della capacità della classe di storage in base ai requisiti dell"organizzazione. Quando la soglia viene superata, vengono generati eventi e si ricevono notifiche se sono stati configurati avvisi per tali eventi.' 
+---
+= Modifica delle impostazioni di soglia delle classi di storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per risolvere eventuali problemi relativi allo spazio di storage nelle classi di storage, è possibile modificare le impostazioni di soglia della capacità della classe di storage in base ai requisiti dell'organizzazione. Quando la soglia viene superata, vengono generati eventi e si ricevono notifiche se sono stati configurati avvisi per tali eventi.
+
+
+
+== Prima di iniziare
+
+È necessario disporre del ruolo di amministratore dello storage o amministratore dello storage di OnCommand.
+
+
+
+== Fasi
+
+. Nel riquadro di navigazione a sinistra, fare clic su *Health* > *SVM*.
+. Nella pagina di inventario *Health/Storage Virtual Machines*, selezionare una SVM con Infinite Volume.
+. Nella pagina dei dettagli di *Health/Storage Virtual Machine*, fare clic su *Actions* > *Edit thresholds*.
+. Nella finestra di dialogo *Edit Storage Class Thresholds* (Modifica soglie classe di storage), modificare le soglie in base alle esigenze.
+. Fare clic su *Save and Close* (Salva e chiudi).
+

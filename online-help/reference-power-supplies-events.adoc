@@ -1,0 +1,33 @@
+---
+permalink: online-help/reference-power-supplies-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Gli eventi relativi agli alimentatori forniscono informazioni sullo stato dell"hardware in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all"area di impatto e includono il nome dell"evento e della trap, il livello di impatto, il tipo di origine e la severità.' 
+---
+= Eventi relativi agli alimentatori
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli eventi relativi agli alimentatori forniscono informazioni sullo stato dell'hardware in modo da poter monitorare eventuali problemi. Gli eventi sono raggruppati in base all'area di impatto e includono il nome dell'evento e della trap, il livello di impatto, il tipo di origine e la severità.
+
+
+
+== Area di impatto: Disponibilità
+
+|===
+| Nome evento (nome trap) | Livello di impatto | Tipo di origine | Severità 
+
+
+ a| 
+Uno o più alimentatori non funzionanti (ocumEvtPowerSupplyOneOrMoreFailed)
+ a| 
+Incidente
+ a| 
+Nodo
+ a| 
+Critico
+
+|===
