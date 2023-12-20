@@ -45,7 +45,7 @@ Se non si ricevono gli eventi EMS di ONTAP a cui si è abbonati, potrebbe esserc
 Per visualizzare i nomi degli eventi EMS a cui è possibile iscriversi, dalla shell del cluster ONTAP, è possibile utilizzare `event route show` (Prima di ONTAP 9) o il `event catalog show` Command (ONTAP 9 o versioni successive). Per istruzioni dettagliate sull'identificazione dei singoli eventi EMS, consultare la risposta 1072320 della Knowledge base.
 
 +
-https://kb.netapp.com/app/answers/answer_view/a_id/1072320["KB 1072320 - come configurare le sottoscrizioni agli eventi EMS di ONTAP in Unified Manager"]
+https://kb.netapp.com/mgmt/AIQUM/How_to_configure_and_receive_alerts_from_ONTAP_EMS_Event_Subscription_in_Active_IQ_Unified_Manager["Come configurare e ricevere avvisi dall'abbonamento eventi EMS ONTAP in Active IQ Unified Manager"^]
 
 . Fare clic su *Aggiungi*.
 +

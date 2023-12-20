@@ -9630,8 +9630,6 @@
   <block id="3b009217b3e9de332b058081a14a6695" category="paragraph">Se la sintassi della regola non è corretta, viene visualizzato un messaggio di errore. Correggere la sintassi e fare nuovamente clic su *Validate*.</block>
   <block id="2a4d6d8757087e90ff262ae457cb5cfe" category="list-text">Verificare che l'indirizzo e-mail creato sia visualizzato nella scheda *quote utente e gruppo* della pagina dei dettagli *Health/Storage Virtual Machine*.</block>
   <block id="93f88d6c3be8dc08239feb316ead84f9" category="paragraph">Per visualizzare i nomi degli eventi EMS a cui è possibile iscriversi, dalla shell del cluster ONTAP, è possibile utilizzare<block ref="600519f6c6d0b7df8b905133fe79eb47" prefix=" " category="inline-code"></block> (Prima di ONTAP 9) o il<block ref="83c19f62b32dae15ee31be017a321335" prefix=" " category="inline-code"></block> Command (ONTAP 9 o versioni successive). Per istruzioni dettagliate sull'identificazione dei singoli eventi EMS, consultare la risposta 1072320 della Knowledge base.</block>
-  <block id="b7ea02fe1dbdcd1a4d97e075ed656e5d" category="inline-link">KB 1072320 - come configurare le sottoscrizioni agli eventi EMS di ONTAP in Unified Manager</block>
-  <block id="31217e322cc07a0593ddf09e0d4549b2" category="paragraph"><block ref="31217e322cc07a0593ddf09e0d4549b2" category="inline-link-rx"></block></block>
   <block id="dff65bde881dfda52349f364cf922c0a" category="summary">Le modifiche alla configurazione del cluster, come un disco guasto, il failover ha o un volume spostato, potrebbero avere un impatto negativo sulle performance del volume e causare una maggiore latenza.</block>
   <block id="6f0cfac0f8e5652df3a983e05f8b9ced" category="doc">Esaminare l'impatto delle modifiche alla configurazione sulle performance del carico di lavoro</block>
   <block id="8a2b6f8d0f51f0dceb8b4ef3a80d1819" category="paragraph">In Unified Manager, è possibile esaminare la pagina Performance/Volume Details (Dettagli performance/volume) per verificare quando si è verificata una recente modifica della configurazione e confrontarla con le operazioni e la latenza (tempo di risposta) per verificare se si è verificata una modifica nell'attività per il carico di lavoro del volume selezionato.</block>
@@ -12161,7 +12159,6 @@
   <block id="aa193eacf5a35a85044e44de3fa9c91a" category="sidebar">Video di Unified Manager</block>
   <block id="197833bfff97d501603036a0febb7a95" category="sidebar">Blog di Unified Manager</block>
   <block id="7c59cc884d6b9ef97e305e34cc436310" category="sidebar">Documentazione per la versione più recente di Unified Manager</block>
-  <block id="85f73dd16ea214346164b0deea26773b" category="sidebar">Unified Manager</block>
   <block id="09d454f0bf432593d99fbfd84c9f9293" category="sidebar">Eseguire attività amministrative e di configurazione</block>
   <block id="6f047d4c177cc734ed65cb347cf6bd42" category="sidebar">Monitorare e gestire le performance del cluster</block>
   <block id="4b0328860e78aedfa91cfff7d0e5fa9d" category="sidebar">Gestione delle soglie di performance definite dall'utente (performance del cluster)</block>
@@ -12216,4 +12213,6 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="1acf808d5167e8d3738f46ff5b4e301e" category="inline-link">Come configurare e ricevere avvisi dall'abbonamento eventi EMS ONTAP in Active IQ Unified Manager</block>
+  <block id="9df7d5af79770924171ad1bae7e6fd64" category="paragraph"><block ref="9df7d5af79770924171ad1bae7e6fd64" category="inline-link-rx"></block></block>
 </blocks>
