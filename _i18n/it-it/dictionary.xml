@@ -2359,7 +2359,6 @@
   <block id="b26b53cf6810080df88192bbe06ef9ae" category="image-alt">tabelle dei contatori di spazio per l'intestazione</block>
   <block id="dea6a44f1acbd73729580434b2cd1271" category="list-text">Se si desidera visualizzare uno dei grafici in un formato a dimensione intera, fare clic su *Zoom View* (Vista zoom).</block>
   <block id="227f5acbef95998ccbfd9c680d0dab46" category="paragraph">In questo modo è possibile aprire più diagrammi di contatore in una finestra separata per confrontare i valori di capacità delle performance utilizzati con i valori IOPS o Mbps nello stesso intervallo di tempo.</block>
-  <block id="b1d05b1498f934fd9fdb5242af6b4ee6" category="summary">Documentazione per OnCommand Unified Manager</block>
   <block id="a26233650deb6cb0bb9c28069615b351" category="doc">Documentazione di OnCommand Unified Manager</block>
   <block id="c8f77957e9ffb0880479d735e0bb1202" category="summary">È necessario scaricare e installare i driver MySQL Connector/J in una posizione specifica. È possibile utilizzare questi driver per creare un'origine dati che connette il report a Unified Manager.</block>
   <block id="f81a86a33b34e41758137d0988284eec" category="doc">Scaricare e installare MySQL Connector/J.</block>
@@ -12215,4 +12214,5 @@
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="1acf808d5167e8d3738f46ff5b4e301e" category="inline-link">Come configurare e ricevere avvisi dall'abbonamento eventi EMS ONTAP in Active IQ Unified Manager</block>
   <block id="9df7d5af79770924171ad1bae7e6fd64" category="paragraph"><block ref="9df7d5af79770924171ad1bae7e6fd64" category="inline-link-rx"></block></block>
+  <block id="31787eb1cdcbc7b2acf891b9fa7f133e" category="sidebar">Gestione unificata di OnCommand consente di monitorare e gestire lo stato e le performance dei sistemi storage ONTAP da un'unica interfaccia. Questa libreria di documentazione include informazioni sulla versione 9,5.</block>
 </blocks>
