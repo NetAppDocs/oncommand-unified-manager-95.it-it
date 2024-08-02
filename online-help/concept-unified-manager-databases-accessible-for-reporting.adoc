@@ -71,4 +71,4 @@ Dati relativi allo stato di salute e ai problemi di performance dell'applicazion
 |===
 Un utente di reporting -- un utente di database con il ruolo Schema report -- è in grado di accedere ai dati in queste tabelle. Questo utente ha accesso in sola lettura ai report e ad altre viste del database direttamente dal database di Unified Manager. Si noti che questo utente non dispone dell'autorizzazione per accedere alle tabelle che contengono dati utente o informazioni sulle credenziali del cluster.
 
-Vedere http://www.netapp.com/us/media/tr-4565.pdf["Report tecnico per Unified Manager Reporting"] (TR-4565) per ulteriori dettagli.
+Consulta la https://www.netapp.com/pdf.html?item=/media/16308-tr-4565pdf.pdf["Report tecnico per Unified Manager Reporting"^] (TR-4565) per ulteriori informazioni.

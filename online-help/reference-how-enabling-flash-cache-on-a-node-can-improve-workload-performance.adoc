@@ -21,4 +21,4 @@ In Unified Manager, nella pagina Dettagli evento, l'icona del componente del clu
 
 Per ulteriori informazioni su Flash cache e sui requisiti per il suo utilizzo, consulta il seguente report tecnico:
 
-http://www.netapp.com/us/media/tr-3832.pdf["Report tecnico 3832: Guida alle Best practice per la cache flash"]
+https://www.netapp.com/pdf.html?item=/media/19754-tr-3832.pdf["Report tecnico 3832: Guida alle Best practice per la cache flash"^]

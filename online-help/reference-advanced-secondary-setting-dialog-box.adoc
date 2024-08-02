@@ -88,4 +88,4 @@ Elimina le selezioni e chiude la finestra di dialogo Advanced Destination Settin
 
 *Informazioni correlate*
 
-http://www.netapp.com/us/media/tr-3966.pdf["Report tecnico NetApp 3966: Guida all'implementazione e all'implementazione della compressione e deduplica dei dati NetApp (Clustered Data ONTAP)"]
+https://www.netapp.com/pdf.html?item=/media/19753-tr-3966.pdf["Report tecnico NetApp 3966: Guida all'implementazione e all'implementazione della compressione e deduplica dei dati NetApp (Clustered Data ONTAP)"^]

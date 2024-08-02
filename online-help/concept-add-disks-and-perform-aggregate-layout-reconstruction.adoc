@@ -17,4 +17,4 @@ Quando si riceve un evento di soglia definito dal sistema nella pagina Dettagli 
 
 I dischi aggiunti all'aggregato devono già esistere nel cluster. Se il cluster non dispone di dischi aggiuntivi, potrebbe essere necessario contattare l'amministratore o acquistare altri dischi. È possibile utilizzare Gestione di sistema di OnCommand o i comandi ONTAP per aggiungere dischi a un aggregato.
 
-http://www.netapp.com/us/media/tr-3838.pdf["Report tecnico 3838: Guida alla configurazione del sottosistema di storage"]
+https://www.netapp.com/pdf.html?item=/media/19675-tr-3838.pdf["Report tecnico 3838: Guida alla configurazione del sottosistema di storage"^]

@@ -74,7 +74,7 @@ Unified Manager può essere installato su sistemi con una piccola quantità di m
 
 Inoltre, esiste un limite al numero di nodi che una singola istanza di Unified Manager può monitorare prima di installare una seconda istanza di Unified Manager. Per ulteriori informazioni, consulta la _Guida alle Best Practice_.
 
-http://www.netapp.com/us/media/tr-4621.pdf["Report tecnico 4621: Guida alle Best practice di Unified Manager"]
+https://www.netapp.com/pdf.html?item=/media/13504-tr4621pdf.pdf["Report tecnico 4621: Guida alle Best practice di Unified Manager"^]
 
 Lo swapping della pagina di memoria influisce negativamente sulle prestazioni del sistema e dell'applicazione di gestione. La concorrenza per le risorse CPU non disponibili a causa dell'utilizzo complessivo dell'host può compromettere le prestazioni.
 
